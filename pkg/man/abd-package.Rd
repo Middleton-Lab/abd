@@ -3,9 +3,8 @@
 \alias{abd}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
-}
+The abd package contains data sets and sample code for the book, "The Analysis of Biological Data" by Michael Whitlock and Dolph Schluter (2008; Roberts & Company Publishers).}
+
 \description{
 More about what it does (maybe more than one line)
 ~~ A concise (1-5 lines) description of the package ~~
@@ -22,13 +21,12 @@ LazyLoad: \tab yes\cr
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Kevin M. Middleton
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Kevin M. Middleton <kmm@csusb.edu>
 }
 \references{
-~~ Literature or other references for background information ~~
+Whitlock, M.C. and D. Schluter. 2008. The Analysis of Biological Data. Roberts and Company Publishers. ISBN: 0981519407
 }
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
 ~~ documentation directory ~~
