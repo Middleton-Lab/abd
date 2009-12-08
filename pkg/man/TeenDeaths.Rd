@@ -2,30 +2,30 @@
 \alias{TeenDeaths}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+Causes of Teenage Deaths
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages 15-19.
 }
+
 \usage{data(TeenDeaths)}
+
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{Cause}}{a factor with levels \code{Accidents} \code{All other causes} \code{Cerebrovascular diseases} \code{Chronic respiratory disease} \code{Congenital abnormalities} \code{Heart disease} \code{Homicide} \code{Influenza and pneumonia} \code{Malignant tumor} \code{Other tumor} \code{Suicide}}
+    \item{\code{Cause}}{a character vector}
     \item{\code{No.deaths}}{a numeric vector}
   }
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
+
 \source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
+Anderson, R.N. 2001. Deaths: Leading causes for 1999. National vital statistics reports 49(11):1-88. National Center for Health Statistics; Hyattsville, Maryland.}
+
 \examples{
 data(TeenDeaths)
-## maybe str(TeenDeaths) ; plot(TeenDeaths) ...
+str(TeenDeaths)
+TeenDeaths
 }
+
 \keyword{datasets}
