@@ -3,8 +3,8 @@ Type: Package
 Title: The Analysis of Biological Data
 Version: 0.1
 Date: 2009-12-06
-Author: Kevin M. Middleton
+Author: Kevin M. Middleton <kmm@csusb.edu>
 Maintainer: Kevin M. Middleton <kmm@csusb.edu>
-Description: The abd package contains data sets and sample code for the book, "The Analysis of Biological Data" by Michael Whitlock and Dolph Schluter (2008; Roberts & Company Publishers).
-License: GPL
+Description: The abd package contains data sets and sample code for the book, "The Analysis of Biological Data" by Michael Whitlock and Dolph Schluter (2009; Roberts & Company Publishers).
+License: GPL-2
 LazyLoad: yes
