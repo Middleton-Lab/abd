@@ -24,8 +24,17 @@ Anderson, R.N. 2001. Deaths: Leading causes for 1999. National vital statistics 
 
 \examples{
 data(TeenDeaths)
+
+op <- par(no.readonly = TRUE)
+par(mai = c(2, 0.82, 0.25, 0.42))
 str(TeenDeaths)
 TeenDeaths
+barplot(TeenDeaths$No.deaths, names.arg = TeenDeaths$Cause, las = 3, 
+	cex.axis = 0.75, cex.names = 0.75, ylim = c(0, 7000),
+	ylab = 'Number of Cases (frequency)',
+	col = 'red')
+par(op)
+
 }
 
 \keyword{datasets}

@@ -1,3 +1,14 @@
+2.3		GreatTitMalaria.csv
+2.4		HemoglobinHighAltitude.csv
+2.5a	GuppyAttractiveness.csv
+2.5b	LynxPopulationCycles.csv
+2.6		EndangeredSpecies.csv
+2.10	ShuttleDisaster.csv
+2.16	CriminalConvictions.csv
+2.17	ConvictionsAndIncome.csv
+2.18	FireflySpermatophoreMass.csv
+2.23	NeotropicalTreePhotosynthesis.csv
+
 AntillesImmigrationDates.csv
 AspirinCancer.csv
 BeeGeneExpression.csv
@@ -15,14 +26,11 @@ CichlidsGnRH.csv
 Clearcuts.csv
 CocaineHighCollinsBell.csv
 CocaineHighVolkowEtal.csv
-2.17	ConvictionsAndIncome.csv
 CricketImmunitySpermViability.csv
-2.16	CriminalConvictions.csv
 DEETMosquiteBites.csv
 DaphniaParasiteLongevity.csv
 DaphniaResistance.csv
 DayOfBirth.csv
-2.1b	DesertBirds.csv
 DietBreadthElVerde.csv
 Dioecy.csv
 DisordersAndGeneExpression.csv
@@ -32,19 +40,14 @@ EarthwormsAndNitrogen.csv
 EarwigForceps.csv
 EelgrassGenotypes.csv
 ElectricFish.csv
-2.6		EndangeredSpecies.csv
 ExploitedLarvalFish.csv
 FingerRatioCAGRepeats.csv
 FireflyFlash.csv
-2.18	FireflySpermatophoreMass.csv
 FlycatcherPatch.csv
 GlidingSnakeUndulations.csv
 GodwitArrivalDates.csv
 GrasslandNutrientsPlantSpecies.csv
-2.3		GreatTitMalaria.csv
 GreenSpaceBiodiversity.csv
-2.5a	GuppyAttractiveness.csv
-2.4		HemoglobinHighAltitude.csv
 HippocampusLesions.csv
 HornedLizards.csv
 HumanGeneLengths.csv
@@ -67,7 +70,6 @@ LizardSprintSpeed.csv
 Lobsters.csv
 LodgepolePineCones.csv
 LupusProneMice.csv
-2.5b	LynxPopulationCycles.csv
 MarineReserve.csv
 MassExtinctions.csv
 MoleRatLayabouts.csv
@@ -76,7 +78,6 @@ Mosquitoes.csv
 MouseEmpathy.csv
 NeanderthalBrainSize.csv
 NematodeLifespan.csv
-2.23	NeotropicalTreePhotosynthesis.csv
 Newts.csv
 NoSmokingDay.csv
 NorthSeaCodRecruits.csv
@@ -101,11 +102,9 @@ Seedlings.csv
 SexualSelection.csv
 ShadParasites.csv
 ShrinkingSeals.csv
-2.10	ShuttleDisaster.csv
 SilverswordWaitingTimes.csv
 SleepAndPerformance.csv
 SocialSpiderColonies.csv
-2.1c	SockeyeFemaleBodyMass.csv
 SparrowReproductiveSuccess.csv
 SpiderRunningAmputation.csv
 StalkieEyespan.csv
@@ -142,3 +141,5 @@ selection.csv
 DONE
 -------------------------------
 2.1a	TeenDeaths.csv
+2.1b	DesertBirds.csv
+2.1c	SockeyeFemaleBodyMass.csv
