@@ -4,6 +4,12 @@ AspirinCancer
 
 ***
 
+TeenDeaths.csv
+	TeenDeaths$Cause <- as.character(TeenDeaths$Cause)
+
+DesertBirds.csv
+	DesertBirds$Species <- as.character(DesertBirds$Species)
+
 ConvictionsAndIncome.csv
 	Added header for 3rd column (n)
 

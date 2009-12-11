@@ -42,6 +42,16 @@ hist(DesertBirds$Count,
   main = '',
   col = 'red')
 
+# Similar to Fig. 2.1-1
+Count.sort <- sort(DesertBirds$Count)
+Count.relfreq <- cumsum(Count.sort)/max(cumsum(Count.sort))
+plot(Count.sort, Count.relfreq,
+  type = 'l',
+  col = 'red',
+  xlim = c(0, 700),
+  xlab = 'Species abundance',
+  ylab = 'Cumulative relative frequency')
+
 }
 
 \keyword{datasets}

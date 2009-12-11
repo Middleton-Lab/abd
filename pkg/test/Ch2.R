@@ -1,11 +1,10 @@
 # Chapter 2
 
-setwd('~/Dropbox/Classes/BIOL 490 - 2010-01 Biometry/Whitlock/abd-12/pkg')
+library(abd)
 
 ##########################################################################
 # 2.1-1
-# TeenDeaths$Cause <- as.character(TeenDeaths$Cause)
-load('pkg/data/TeenDeaths.rda')
+data(TeenDeaths.rda)
 
 str(TeenDeaths)
 TeenDeaths
@@ -28,8 +27,7 @@ par(op)
 
 ##########################################################################
 # 2.1-2
-# ***** as.character
-load('pkg/data/DesertBirds.rda')
+data(DesertBirds)
 
 str(DesertBirds)
 DesertBirds
@@ -41,9 +39,19 @@ hist(DesertBirds$Count,
   main = '',
   col = 'red')
 
+# Similar to Fig. 2.1-1
+Count.sort <- sort(DesertBirds$Count)
+Count.relfreq <- cumsum(Count.sort)/max(cumsum(Count.sort))
+plot(Count.sort, Count.relfreq,
+  type = 'l',
+  col = 'red',
+  xlim = c(0, 700),
+  xlab = 'Species abundance',
+  ylab = 'Cumulative relative frequency')
+
 ##########################################################################
 # 2.1-4
-load('pkg/data/SockeyeFemaleBodyMass.rda')
+data(SockeyeFemaleBodyMass)
 
 str(SockeyeFemaleBodyMass)
 summary(SockeyeFemaleBodyMass)
@@ -64,3 +72,42 @@ for (breaks in c(30, 10, 5)){
 }
 
 par(op)
+
+##########################################################################
+# 2.3-1
+data(GreatTitMalaria)
+
+str(GreatTitMalaria)
+GreatTitMalaria
+
+# Table 2.3-1
+# see https://stat.ethz.ch/pipermail/r-help/2009-January/185561.html
+# for discussion of expand.dft(). Modified for GreatTitMalaria data.
+expand.dft <- function(x, na.strings = 'NA', as.is = FALSE, dec = '.'){
+  DF <- sapply(1:nrow(x), function(i) x[rep(i, each = x$Freq[i]), ], 
+    simplify = FALSE)
+  DF <- subset(do.call('rbind', DF), select = -Frequency)
+  for (i in 1:ncol(DF)){
+    DF[[i]] <- type.convert(as.character(DF[[i]]),
+      na.strings = na.strings, as.is = as.is, dec = dec)
+  }
+DF
+} 
+
+GTM.raw <- expand.dft(GreatTitMalaria)
+
+require(gmodels)
+CrossTable(GTM.raw$Treatment, GTM.raw$Response,
+  expected = FALSE,
+  prop.r = FALSE,
+  prop.c = FALSE,
+  prop.chisq = FALSE, 
+  prop.t = FALSE)
+
+# Fig. 2.3-1
+require(ggplot2)
+bar <- ggplot(GreatTitMalaria, aes(Treatment, Frequency, fill = Response))
+bar + geom_bar(stat = 'identity', position = 'dodge')
+
+# Fig. 2.3-2
+bar + geom_bar(stat = 'identity', position = 'fill')
