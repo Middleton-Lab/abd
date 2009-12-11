@@ -111,3 +111,34 @@ bar + geom_bar(stat = 'identity', position = 'dodge')
 
 # Fig. 2.3-2
 bar + geom_bar(stat = 'identity', position = 'fill')
+
+
+##########################################################################
+# 2.4-1
+data(HemoglobinHighAltitude)
+
+str(HemoglobinHighAltitude)
+
+# Fig. 2.4-1
+require(ggplot2)
+p <- ggplot(HemoglobinHighAltitude, aes(haemoglobin, relative.frequency))
+p + geom_bar(stat="identity", fill = 'red')  +
+  facet_grid(group ~ .) +
+  scale_x_continuous('Hemoglobin concentration (g/dL)') +
+  scale_y_continuous('Relative frequency')
+
+# TODO
+# Fig. 2.4-2
+
+##########################################################################
+# 2.5-1
+data(GuppyAttractiveness)
+
+str(GuppyAttractiveness)
+plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
+  xlab = "Father's ornamentation",
+  ylab = "Son's attractiveness",
+  pch = 16,
+  col = 'red',
+  ylim = c(-0.5, 1.5))
+

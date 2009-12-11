@@ -7,7 +7,7 @@ GuppyAttractiveness
 }
 
 \description{
-GuppyAttractiveness
+The father's ornamentation (composite score of color and brightness) and son's attractiveness (relative rates of visits by females) in male guppies (\emph{Poecilia reticulata}).
 }
 
 \usage{data(GuppyAttractiveness)}
@@ -23,17 +23,25 @@ GuppyAttractiveness
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Brooks, R. 2000. Negative genetic correlation between male sexual attractiveness and survival. \emph{Nature} 406: 67-70.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v406/n6791/abs/406067a0.html}
+}
 
 \examples{
 data(GuppyAttractiveness)
-## maybe str(GuppyAttractiveness) ; plot(GuppyAttractiveness) ...
+
+str(GuppyAttractiveness)
+plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
+  xlab = "Father's ornamentation",
+  ylab = "Son's attractiveness",
+  pch = 16,
+  col = 'red',
+  ylim = c(-0.5, 1.5))
+
 }
 
 \keyword{datasets}
