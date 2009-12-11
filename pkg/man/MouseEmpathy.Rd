@@ -1,12 +1,15 @@
 \name{MouseEmpathy}
 \alias{MouseEmpathy}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+MouseEmpathy
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+MouseEmpathy
 }
+
 \usage{data(MouseEmpathy)}
 \format{
   A data frame with 42 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{treatment}}{a factor with levels \code{bw} \code{isolated} \code{ow}}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(MouseEmpathy)
 ## maybe str(MouseEmpathy) ; plot(MouseEmpathy) ...
 }
+
 \keyword{datasets}

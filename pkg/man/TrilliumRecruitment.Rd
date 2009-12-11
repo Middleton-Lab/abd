@@ -1,12 +1,15 @@
 \name{TrilliumRecruitment}
 \alias{TrilliumRecruitment}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+TrilliumRecruitment
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+TrilliumRecruitment
 }
+
 \usage{data(TrilliumRecruitment)}
 \format{
   A data frame with 8 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{recruitment}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(TrilliumRecruitment)
 ## maybe str(TrilliumRecruitment) ; plot(TrilliumRecruitment) ...
 }
+
 \keyword{datasets}

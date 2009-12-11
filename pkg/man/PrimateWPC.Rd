@@ -1,12 +1,15 @@
 \name{PrimateWPC}
 \alias{PrimateWPC}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+PrimateWPC
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+PrimateWPC
 }
+
 \usage{data(PrimateWPC)}
 \format{
   A data frame with 9 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{WPC.more}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(PrimateWPC)
 ## maybe str(PrimateWPC) ; plot(PrimateWPC) ...
 }
+
 \keyword{datasets}

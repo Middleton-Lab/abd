@@ -1,12 +1,15 @@
 \name{Truffles}
 \alias{Truffles}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+Truffles
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Truffles
 }
+
 \usage{data(Truffles)}
 \format{
   A data frame with 5 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{Frequency}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(Truffles)
 ## maybe str(Truffles) ; plot(Truffles) ...
 }
+
 \keyword{datasets}

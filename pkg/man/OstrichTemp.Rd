@@ -1,12 +1,15 @@
 \name{OstrichTemp}
 \alias{OstrichTemp}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+OstrichTemp
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+OstrichTemp
 }
+
 \usage{data(OstrichTemp)}
 \format{
   A data frame with 6 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{brain.temp}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(OstrichTemp)
 ## maybe str(OstrichTemp) ; plot(OstrichTemp) ...
 }
+
 \keyword{datasets}

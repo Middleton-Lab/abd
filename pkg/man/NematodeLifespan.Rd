@@ -1,12 +1,15 @@
 \name{NematodeLifespan}
 \alias{NematodeLifespan}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+NematodeLifespan
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+NematodeLifespan
 }
+
 \usage{data(NematodeLifespan)}
 \format{
   A data frame with 200 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{lifespan}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(NematodeLifespan)
 ## maybe str(NematodeLifespan) ; plot(NematodeLifespan) ...
 }
+
 \keyword{datasets}

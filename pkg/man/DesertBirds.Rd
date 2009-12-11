@@ -35,10 +35,12 @@ Sauer, J.R., J.E. Hines, and J. Fallon. 2003. The North American breeding bird s
 data(DesertBirds)
 str(DesertBirds)
 
-hist(DesertBirds$Count, breaks = 12,
-	ylab = 'Frequency (Number of Species)',
-	xlab = 'Abundance',
-	main = '', col = 'red')
+hist(DesertBirds$Count,
+  breaks = 12,
+  ylab = 'Frequency (Number of Species)',
+  xlab = 'Abundance',
+  main = '',
+  col = 'red')
 
 }
 

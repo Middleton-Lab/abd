@@ -1,12 +1,15 @@
 \name{ChimpBrains}
 \alias{ChimpBrains}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+ChimpBrains
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+ChimpBrains
 }
+
 \usage{data(ChimpBrains)}
 \format{
   A data frame with 20 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{Rounded.AQ}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(ChimpBrains)
 ## maybe str(ChimpBrains) ; plot(ChimpBrains) ...
 }
+
 \keyword{datasets}

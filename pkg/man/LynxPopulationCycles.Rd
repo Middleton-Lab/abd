@@ -1,12 +1,15 @@
 \name{LynxPopulationCycles}
 \alias{LynxPopulationCycles}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+LynxPopulationCycles
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+LynxPopulationCycles
 }
+
 \usage{data(LynxPopulationCycles)}
 \format{
   A data frame with 68 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{no.pelts}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(LynxPopulationCycles)
 ## maybe str(LynxPopulationCycles) ; plot(LynxPopulationCycles) ...
 }
+
 \keyword{datasets}

@@ -1,12 +1,15 @@
 \name{AspirinCancer}
 \alias{AspirinCancer}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+AspirinCancer
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+AspirinCancer
 }
+
 \usage{data(AspirinCancer)}
 \format{
   A data frame with 4 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{Frequency}}{a factor with levels \code{.} \code{1427} \code{1438} \code{18496}}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(AspirinCancer)
 ## maybe str(AspirinCancer) ; plot(AspirinCancer) ...
 }
+
 \keyword{datasets}

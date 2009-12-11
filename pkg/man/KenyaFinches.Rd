@@ -1,12 +1,15 @@
 \name{KenyaFinches}
 \alias{KenyaFinches}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+KenyaFinches
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+KenyaFinches
 }
+
 \usage{data(KenyaFinches)}
 \format{
   A data frame with 45 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{beaklength.mm}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(KenyaFinches)
 ## maybe str(KenyaFinches) ; plot(KenyaFinches) ...
 }
+
 \keyword{datasets}

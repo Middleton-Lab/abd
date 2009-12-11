@@ -1,12 +1,15 @@
 \name{Sumo}
 \alias{Sumo}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+Sumo
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Sumo
 }
+
 \usage{data(Sumo)}
 \format{
   A data frame with 16 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{Count}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(Sumo)
 ## maybe str(Sumo) ; plot(Sumo) ...
 }
+
 \keyword{datasets}

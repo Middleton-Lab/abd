@@ -1,12 +1,15 @@
 \name{PrimateMassMetabolicRate}
 \alias{PrimateMassMetabolicRate}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+PrimateMassMetabolicRate
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+PrimateMassMetabolicRate
 }
+
 \usage{data(PrimateMassMetabolicRate)}
 \format{
   A data frame with 17 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{bmr.watts}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(PrimateMassMetabolicRate)
 ## maybe str(PrimateMassMetabolicRate) ; plot(PrimateMassMetabolicRate) ...
 }
+
 \keyword{datasets}

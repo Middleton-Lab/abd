@@ -1,12 +1,15 @@
 \name{NeotropicalTreePhotosynthesis}
 \alias{NeotropicalTreePhotosynthesis}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+NeotropicalTreePhotosynthesis
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+NeotropicalTreePhotosynthesis
 }
+
 \usage{data(NeotropicalTreePhotosynthesis)}
 \format{
   A data frame with 9 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{photosynthetic.capacity}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(NeotropicalTreePhotosynthesis)
 ## maybe str(NeotropicalTreePhotosynthesis) ; plot(NeotropicalTreePhotosynthesis) ...
 }
+
 \keyword{datasets}

@@ -1,12 +1,15 @@
 \name{KneesWhoSayNight}
 \alias{KneesWhoSayNight}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+KneesWhoSayNight
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+KneesWhoSayNight
 }
+
 \usage{data(KneesWhoSayNight)}
 \format{
   A data frame with 22 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{shift}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(KneesWhoSayNight)
 ## maybe str(KneesWhoSayNight) ; plot(KneesWhoSayNight) ...
 }
+
 \keyword{datasets}

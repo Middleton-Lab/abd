@@ -1,12 +1,15 @@
 \name{YeastRegulatoryGenes}
 \alias{YeastRegulatoryGenes}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+YeastRegulatoryGenes
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+YeastRegulatoryGenes
 }
+
 \usage{data(YeastRegulatoryGenes)}
 \format{
   A data frame with 6 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{frequency}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(YeastRegulatoryGenes)
 ## maybe str(YeastRegulatoryGenes) ; plot(YeastRegulatoryGenes) ...
 }
+
 \keyword{datasets}

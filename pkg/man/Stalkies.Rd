@@ -1,12 +1,15 @@
 \name{Stalkies}
 \alias{Stalkies}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+Stalkies
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Stalkies
 }
+
 \usage{data(Stalkies)}
 \format{
   A data frame with 9 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{eye.span..mm.}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(Stalkies)
 ## maybe str(Stalkies) ; plot(Stalkies) ...
 }
+
 \keyword{datasets}

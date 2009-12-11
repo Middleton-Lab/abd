@@ -1,12 +1,15 @@
 \name{NoSmokingDay}
 \alias{NoSmokingDay}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+NoSmokingDay
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+NoSmokingDay
 }
+
 \usage{data(NoSmokingDay)}
 \format{
   A data frame with 10 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{Injuries.on.NSD}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(NoSmokingDay)
 ## maybe str(NoSmokingDay) ; plot(NoSmokingDay) ...
 }
+
 \keyword{datasets}

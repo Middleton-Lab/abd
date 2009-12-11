@@ -1,12 +1,15 @@
 \name{PlantPopulationPersistence}
 \alias{PlantPopulationPersistence}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+PlantPopulationPersistence
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+PlantPopulationPersistence
 }
+
 \usage{data(PlantPopulationPersistence)}
 \format{
   A data frame with 16 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{treatment}}{a factor with levels \code{Continuous} \code{Isolated} \code{Long} \code{Medium}}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(PlantPopulationPersistence)
 ## maybe str(PlantPopulationPersistence) ; plot(PlantPopulationPersistence) ...
 }
+
 \keyword{datasets}

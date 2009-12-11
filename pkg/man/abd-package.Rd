@@ -3,7 +3,7 @@
 \alias{abd}
 \docType{package}
 \title{
-The \verb{abd} package contains data sets and sample code for the book, \emph{The Analysis of Biological Data} by Michael Whitlock and Dolph Schluter (2009; Roberts & Company Publishers).
+The \code{abd} package contains data sets and sample code for the book, \emph{The Analysis of Biological Data} by Michael Whitlock and Dolph Schluter (2009; Roberts \& Company Publishers).
 }
 
 %\description{
@@ -31,7 +31,7 @@ Maintainer: Kevin M. Middleton <kmm@csusb.edu>
 }
 
 \references{
-Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
+Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of Biological Data}. Roberts \& Company Publishers. ISBN: 0981519407.
 }
 
 \keyword{ package }

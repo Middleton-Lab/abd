@@ -1,6 +1,7 @@
 \name{SockeyeFemaleBodyMass}
 \alias{SockeyeFemaleBodyMass}
 \docType{data}
+
 \title{
 Body Masses of Female Sockeye Salmon
 }
@@ -36,17 +37,21 @@ str(SockeyeFemaleBodyMass)
 summary(SockeyeFemaleBodyMass)
 
 op <- par(no.readonly = TRUE)
-dev.new(width = 9, height = 3)
-par(mfrow = c(1, 3), xaxs = 'i', yaxs = 'i')
-for (breaks in c(30, 10, 5)){
-	hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
-	xlim = c(1, 4),
-	col = 'red',
-	ylab = 'Frequency',
-	xlab = 'Body mass (kg)',
-	main = '')
-	}
-par(op)
 
+dev.new(width = 9, height = 3)
+par(mfrow = c(1, 3),
+  xaxs = 'i',
+  yaxs = 'i')
+for (breaks in c(30, 10, 5)){
+  hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
+  xlim = c(1, 4),
+  col = 'red',
+  ylab = 'Frequency',
+  xlab = 'Body mass (kg)',
+  main = '')
 }
+
+par(op)
+}
+
 \keyword{datasets}

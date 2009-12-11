@@ -1,12 +1,15 @@
 \name{WillsPresidents}
 \alias{WillsPresidents}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+WillsPresidents
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+WillsPresidents
 }
+
 \usage{data(WillsPresidents)}
 \format{
   A data frame with 16 observations on the following 5 variables.
@@ -18,17 +21,22 @@
     \item{\code{Difference}}{a factor with levels \code{.} \code{1} \code{20} \code{23} \code{26} \code{27} \code{36} \code{4} \code{41}}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(WillsPresidents)
 ## maybe str(WillsPresidents) ; plot(WillsPresidents) ...
 }
+
 \keyword{datasets}

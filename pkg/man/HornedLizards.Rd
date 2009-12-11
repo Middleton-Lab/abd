@@ -1,12 +1,15 @@
 \name{HornedLizards}
 \alias{HornedLizards}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+HornedLizards
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+HornedLizards
 }
+
 \usage{data(HornedLizards)}
 \format{
   A data frame with 185 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{Survive}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(HornedLizards)
 ## maybe str(HornedLizards) ; plot(HornedLizards) ...
 }
+
 \keyword{datasets}

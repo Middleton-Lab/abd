@@ -1,12 +1,15 @@
 \name{ParasiteBrainWarp}
 \alias{ParasiteBrainWarp}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+ParasiteBrainWarp
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+ParasiteBrainWarp
 }
+
 \usage{data(ParasiteBrainWarp)}
 \format{
   A data frame with 6 observations on the following 3 variables.
@@ -16,17 +19,22 @@
     \item{\code{frequency}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(ParasiteBrainWarp)
 ## maybe str(ParasiteBrainWarp) ; plot(ParasiteBrainWarp) ...
 }
+
 \keyword{datasets}

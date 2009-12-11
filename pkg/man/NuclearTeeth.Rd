@@ -1,12 +1,15 @@
 \name{NuclearTeeth}
 \alias{NuclearTeeth}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+NuclearTeeth
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+NuclearTeeth
 }
+
 \usage{data(NuclearTeeth)}
 \format{
   A data frame with 20 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{estimated}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(NuclearTeeth)
 ## maybe str(NuclearTeeth) ; plot(NuclearTeeth) ...
 }
+
 \keyword{datasets}

@@ -1,12 +1,15 @@
 \name{ZebraFinchBeaks}
 \alias{ZebraFinchBeaks}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+ZebraFinchBeaks
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+ZebraFinchBeaks
 }
+
 \usage{data(ZebraFinchBeaks)}
 \format{
   A data frame with 10 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{preference}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(ZebraFinchBeaks)
 ## maybe str(ZebraFinchBeaks) ; plot(ZebraFinchBeaks) ...
 }
+
 \keyword{datasets}

@@ -1,12 +1,15 @@
 \name{Lobsters}
 \alias{Lobsters}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+Lobsters
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Lobsters
 }
+
 \usage{data(Lobsters)}
 \format{
   A data frame with 15 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{Orientation}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(Lobsters)
 ## maybe str(Lobsters) ; plot(Lobsters) ...
 }
+
 \keyword{datasets}

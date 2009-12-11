@@ -1,12 +1,15 @@
 \name{CocaineHighVolkowEtal}
 \alias{CocaineHighVolkowEtal}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+CocaineHighVolkowEtal
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+CocaineHighVolkowEtal
 }
+
 \usage{data(CocaineHighVolkowEtal)}
 \format{
   A data frame with 34 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{high}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(CocaineHighVolkowEtal)
 ## maybe str(CocaineHighVolkowEtal) ; plot(CocaineHighVolkowEtal) ...
 }
+
 \keyword{datasets}

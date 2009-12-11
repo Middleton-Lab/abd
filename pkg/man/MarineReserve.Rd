@@ -1,12 +1,15 @@
 \name{MarineReserve}
 \alias{MarineReserve}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+MarineReserve
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+MarineReserve
 }
+
 \usage{data(MarineReserve)}
 \format{
   A data frame with 32 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{Biomass.ratio}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(MarineReserve)
 ## maybe str(MarineReserve) ; plot(MarineReserve) ...
 }
+
 \keyword{datasets}

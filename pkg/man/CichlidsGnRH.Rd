@@ -2,11 +2,13 @@
 \alias{CichlidsGnRH}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+CichlidsGnRH
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+CichlidsGnRH
 }
+
 \usage{data(CichlidsGnRH)}
 \format{
   A data frame with 11 observations on the following 2 variables.
@@ -15,17 +17,22 @@
     \item{\code{GnRH.mRNA.level}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(CichlidsGnRH)
 ## maybe str(CichlidsGnRH) ; plot(CichlidsGnRH) ...
 }
+
 \keyword{datasets}

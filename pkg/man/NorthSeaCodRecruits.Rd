@@ -1,12 +1,15 @@
 \name{NorthSeaCodRecruits}
 \alias{NorthSeaCodRecruits}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+NorthSeaCodRecruits
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+NorthSeaCodRecruits
 }
+
 \usage{data(NorthSeaCodRecruits)}
 \format{
   A data frame with 39 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{log10.recruits}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(NorthSeaCodRecruits)
 ## maybe str(NorthSeaCodRecruits) ; plot(NorthSeaCodRecruits) ...
 }
+
 \keyword{datasets}

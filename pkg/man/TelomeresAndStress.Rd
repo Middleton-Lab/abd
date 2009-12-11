@@ -1,12 +1,15 @@
 \name{TelomeresAndStress}
 \alias{TelomeresAndStress}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+TelomeresAndStress
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+TelomeresAndStress
 }
+
 \usage{data(TelomeresAndStress)}
 \format{
   A data frame with 39 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{telomere.length}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(TelomeresAndStress)
 ## maybe str(TelomeresAndStress) ; plot(TelomeresAndStress) ...
 }
+
 \keyword{datasets}

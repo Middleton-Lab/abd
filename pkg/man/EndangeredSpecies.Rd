@@ -1,13 +1,16 @@
 \name{EndangeredSpecies}
 \alias{EndangeredSpecies}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+EndangeredSpecies
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+EndangeredSpecies
 }
 \usage{data(EndangeredSpecies)}
+
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
@@ -15,17 +18,22 @@
     \item{\code{no.species}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(EndangeredSpecies)
 ## maybe str(EndangeredSpecies) ; plot(EndangeredSpecies) ...
 }
+
 \keyword{datasets}

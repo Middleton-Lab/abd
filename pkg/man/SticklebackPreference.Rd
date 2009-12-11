@@ -1,12 +1,15 @@
 \name{SticklebackPreference}
 \alias{SticklebackPreference}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+SticklebackPreference
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+SticklebackPreference
 }
+
 \usage{data(SticklebackPreference)}
 \format{
   A data frame with 9 observations on the following variable.
@@ -14,17 +17,22 @@
     \item{\code{Preference.index}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(SticklebackPreference)
 ## maybe str(SticklebackPreference) ; plot(SticklebackPreference) ...
 }
+
 \keyword{datasets}

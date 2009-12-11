@@ -1,12 +1,15 @@
 \name{LodgepolePineCones}
 \alias{LodgepolePineCones}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+LodgepolePineCones
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+LodgepolePineCones
 }
+
 \usage{data(LodgepolePineCones)}
 \format{
   A data frame with 16 observations on the following 2 variables.
@@ -15,17 +18,22 @@
     \item{\code{conemass}}{a numeric vector}
   }
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(LodgepolePineCones)
 ## maybe str(LodgepolePineCones) ; plot(LodgepolePineCones) ...
 }
+
 \keyword{datasets}

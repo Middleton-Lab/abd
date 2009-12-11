@@ -1,12 +1,15 @@
 \name{selection}
 \alias{selection}
 \docType{data}
+
 \title{
-%%   ~~ data name/kind ... ~~
+selection
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+selection
 }
+
 \usage{data(selection)}
 \format{
   A data frame with 814 observations on the following 8 variables.
@@ -19,17 +22,22 @@
     \item{\code{year}}{a numeric vector}
     \item{\code{journal}}{a factor with XX levels}
 }
-\details{
+
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
+%}
+
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
+%}
+
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(selection)
 ## maybe str(selection) ; plot(selection) ...
 }
+
 \keyword{datasets}
