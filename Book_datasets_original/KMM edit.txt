@@ -1,0 +1,22 @@
+AspirinCancer
+	Check missing data
+
+
+***
+
+ConvictionsAndIncome.csv
+	Added header for 3rd column (n)
+
+ElectricFish.csv
+	Added '.' to column 2 & 3 headers
+	Resaved with UTF-8 character encoding
+	Removed non-ASCII characters
+
+Seedlings.csv
+	Deleted odd character from row 8
+	Added '.' to column 2 & 3 headers
+	Resaved with UTF-8 character encoding
+
+ZebraFinchBeaks.csv
+	Deleted odd character from row 9
+	Resaved with UTF-8 character encoding

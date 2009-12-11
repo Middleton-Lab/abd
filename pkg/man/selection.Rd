@@ -21,6 +21,8 @@ selection
     \item{\code{authors}}{a factor with XX levels}
     \item{\code{year}}{a numeric vector}
     \item{\code{journal}}{a factor with XX levels}
+    \item{\code{vol.p.p}}{a factor with XX levels}
+  }
 }
 
 %\details{

@@ -18,17 +18,17 @@ Clearcuts
   }
 }
 
-\details{
+%\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
-}
+%}
 
-\source{
+%\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
+%}
 
-\references{
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
 
 \examples{
 data(Clearcuts)
