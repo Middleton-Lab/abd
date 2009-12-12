@@ -23,13 +23,13 @@ NeotropicalTreePhotosynthesis
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Wheelwright, N.T. and B.A. Logan. 2004. Previous-year reproduction reduces photosynthetic capacity and slows lifetime growth in females of a neotropical tree. \emph{Proceedings of the National Academy of Sciences (USA)} 101: 8051-8055. 
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.pnas.org/content/101/21/8051.long}
+}
 
 \examples{
 data(NeotropicalTreePhotosynthesis)

@@ -23,13 +23,13 @@ EndangeredSpecies
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+U.S. Fish and Wildlife Service. 2001. Number of U.S. listed species per calendar year.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.fws.gov/endangered/wildlife.html}
+}
 
 \examples{
 data(EndangeredSpecies)

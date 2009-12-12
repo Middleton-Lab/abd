@@ -130,6 +130,7 @@ p + geom_bar(stat="identity", fill = 'red')  +
 # TODO
 # Fig. 2.4-2
 
+
 ##########################################################################
 # 2.5-1
 data(GuppyAttractiveness)
@@ -142,3 +143,24 @@ plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
   col = 'red',
   ylim = c(-0.5, 1.5))
 
+
+##########################################################################
+# 2.5-1
+data(LynxPopulationCycles)
+
+plot(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
+  type = 'l',
+  xlab = 'Year',
+  ylab = 'Lynx fur returns')
+points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
+  col = 'red',
+  pch = 16)
+
+# Alternate form converting to Date class
+Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '%d%b%Y')
+LynxPopulationCycles <- cbind(LynxPopulationCycles, yr)
+require(ggplot2)
+p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
+p + geom_line() + 
+  geom_point(color = 'red') +
+  scale_y_continuous('Lynx fur returns')

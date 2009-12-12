@@ -7,7 +7,7 @@ LynxPopulationCycles
 }
 
 \description{
-LynxPopulationCycles
+Number of lynx pelts reported in Canada per year from 1752 to 1819.
 }
 
 \usage{data(LynxPopulationCycles)}
@@ -23,9 +23,9 @@ LynxPopulationCycles
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Elton, C. and M. Nicholson. 1942. The ten-year cycle in numbers of the lynx in Canada. \emph{Journal of Animal Ecology} 11: 215-244.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,24 @@ LynxPopulationCycles
 
 \examples{
 data(LynxPopulationCycles)
-## maybe str(LynxPopulationCycles) ; plot(LynxPopulationCycles) ...
+
+plot(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
+  type = 'l',
+  xlab = 'Year',
+  ylab = 'Lynx fur returns')
+points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
+  col = 'red',
+  pch = 16)
+
+# Alternate form converting to Date class
+Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '%d%b%Y')
+LynxPopulationCycles <- cbind(LynxPopulationCycles, yr)
+require(ggplot2)
+p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
+p + geom_line() + 
+  geom_point(color = 'red') +
+  scale_y_continuous('Lynx fur returns')
+
 }
 
 \keyword{datasets}

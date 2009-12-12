@@ -24,13 +24,13 @@ ConvictionsAndIncome
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Farrington, D.P. 1994. Cambridge Study in Delinquent Development [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university Consortium for Political and Social Research, Ann Arbor, MI.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://webapp.icpsr.umich.edu/cocoon/NACJD-STUDY/08488.xml}
+}
 
 \examples{
 data(ConvictionsAndIncome)

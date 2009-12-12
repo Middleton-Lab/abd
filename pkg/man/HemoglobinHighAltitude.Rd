@@ -44,9 +44,6 @@ p + geom_bar(stat="identity", fill = 'red')  +
   scale_x_continuous('Hemoglobin concentration (g/dL)') +
   scale_y_continuous('Relative frequency')
 
-# TODO
-# Fig. 2.4-2
-
 }
 
 \keyword{datasets}

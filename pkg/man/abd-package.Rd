@@ -42,6 +42,6 @@ Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of Biological Data}. Ro
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %}
 
-%\examples{
-%#simple examples of the most important functions
-%}
+\examples{
+example(DesertBirds)
+}

@@ -28,9 +28,9 @@ Two-by-two contingency table of malaria (\emph{Plasmodium}) infection frequencie
 Oppliger, A., P. Christe, and H. Richner. 1996. Clutch size and malaria resistance. \emph{Nature} 381: 565.
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v381/n6583/abs/381565a0.html}
+}
 
 \examples{
 data(GreatTitMalaria)

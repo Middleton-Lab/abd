@@ -23,9 +23,9 @@ ShuttleDisaster
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk Analysis of the Space Shuttle: Pre-Challenger Prediction of Failure. \emph{Journal of the American Statistical Association} 408: 945-957. 
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
