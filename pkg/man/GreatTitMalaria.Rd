@@ -63,12 +63,14 @@ CrossTable(GTM.raw$Treatment, GTM.raw$Response,
   prop.t = FALSE)
 
 # Fig. 2.3-1
+\dontrun{
 require(ggplot2)
-bar <- ggplot(GreatTitMalaria, aes(Treatment, Frequency, fill = Response))
+bar <- ggplot(GreatTitMalaria, aes(x = Treatment, y = Frequency, fill = Response))
 bar + geom_bar(stat = 'identity', position = 'dodge')
 
 # Fig. 2.3-2
 bar + geom_bar(stat = 'identity', position = 'fill')
+}
 
 }
 

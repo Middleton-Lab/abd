@@ -32,7 +32,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 \examples{
 data(AntillesImmigrationDates)
-## maybe str(AntillesImmigrationDates) ; plot(AntillesImmigrationDates) ...
 }
 
 \keyword{datasets}
