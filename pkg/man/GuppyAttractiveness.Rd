@@ -42,6 +42,15 @@ plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
   col = 'red',
   ylim = c(-0.5, 1.5))
 
+# with ggplot2
+\dontrun{
+require(ggplot2)
+p <- ggplot(GuppyAttractiveness, aes(x = father.ornament, y = son.attract))
+p + geom_point(color = 'red', size = 3) +
+  scale_x_continuous("Father's ornamentation") +
+  scale_y_continuous("Son's attractiveness")
+}
+
 }
 
 \keyword{datasets}

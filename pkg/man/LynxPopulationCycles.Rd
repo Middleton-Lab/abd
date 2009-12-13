@@ -42,14 +42,19 @@ points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
   col = 'red',
   pch = 16)
 
-# Alternate form converting to Date class
-Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '%d%b%Y')
-LynxPopulationCycles <- cbind(LynxPopulationCycles, yr)
+\dontrun{
+# Alternate form converting to Date class.
+Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '\%d\%b\%Y')
+LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
+
 require(ggplot2)
 p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
 p + geom_line() + 
   geom_point(color = 'red') +
-  scale_y_continuous('Lynx fur returns')
+  scale_y_continuous('Lynx fur returns') +
+  opts(panel.grid.minor = theme_blank()) +
+  opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))
+}
 
 }
 

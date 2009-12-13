@@ -13,6 +13,7 @@ selection
 \usage{data(selection)}
 \format{
   A data frame with 814 observations on the following 8 variables.
+  
   \describe{
     \item{\code{species}}{a factor with XX levels}
     \item{\code{traitname}}{a factor with XX levels}

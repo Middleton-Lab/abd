@@ -4,7 +4,7 @@ library(abd)
 
 ##########################################################################
 # 2.1-1
-data(TeenDeaths.rda)
+data(TeenDeaths)
 
 str(TeenDeaths)
 TeenDeaths
@@ -39,6 +39,14 @@ hist(DesertBirds$Count,
   main = '',
   col = 'red')
 
+# with ggplot2
+require(ggplot2)
+p <- ggplot(DesertBirds, aes(Count))
+p + geom_histogram(binwidth = 40, fill = 'red') +
+  scale_x_continuous('Abundance') +
+  scale_y_continuous('Frequency (Number of Species)')
+
+
 # Similar to Fig. 2.1-1
 Count.sort <- sort(DesertBirds$Count)
 Count.relfreq <- cumsum(Count.sort)/max(cumsum(Count.sort))
@@ -49,6 +57,12 @@ plot(Count.sort, Count.relfreq,
   xlab = 'Species abundance',
   ylab = 'Cumulative relative frequency')
 
+p <- ggplot(data.frame(Count.sort, Count.relfreq), aes(Count.sort, Count.relfreq))
+p + geom_step(direction = "vh") +
+  scale_x_continuous('Species abundance') +
+  scale_y_continuous('Cumulative relative frequency')
+
+
 ##########################################################################
 # 2.1-4
 data(SockeyeFemaleBodyMass)
@@ -56,9 +70,8 @@ data(SockeyeFemaleBodyMass)
 str(SockeyeFemaleBodyMass)
 summary(SockeyeFemaleBodyMass)
 
-op <- par(no.readonly = TRUE)
-
 dev.new(width = 9, height = 3)
+op <- par(no.readonly = TRUE)
 par(mfrow = c(1, 3),
   xaxs = 'i',
   yaxs = 'i')
@@ -106,7 +119,7 @@ CrossTable(GTM.raw$Treatment, GTM.raw$Response,
 
 # Fig. 2.3-1
 require(ggplot2)
-bar <- ggplot(GreatTitMalaria, aes(Treatment, Frequency, fill = Response))
+bar <- ggplot(GreatTitMalaria, aes(x = Treatment, y = Frequency, fill = Response))
 bar + geom_bar(stat = 'identity', position = 'dodge')
 
 # Fig. 2.3-2
@@ -121,11 +134,19 @@ str(HemoglobinHighAltitude)
 
 # Fig. 2.4-1
 require(ggplot2)
+
+labels <- data.frame( # Create a data.frame to hold the labels
+  Elev = c('4000 m', '3530 m', '4000 m', '0 m'),
+  group = c('Andes', 'Ethiopia', 'Tibet', 'USA'),
+  x = rep(24, times = 4),
+  y = rep(0.4, times = 4))
+
 p <- ggplot(HemoglobinHighAltitude, aes(haemoglobin, relative.frequency))
 p + geom_bar(stat="identity", fill = 'red')  +
   facet_grid(group ~ .) +
   scale_x_continuous('Hemoglobin concentration (g/dL)') +
-  scale_y_continuous('Relative frequency')
+  scale_y_continuous('Relative frequency') +
+  geom_text(data = labels, aes(x, y, label = Elev), hjust = 1, size = 3)
 
 # TODO
 # Fig. 2.4-2
@@ -143,6 +164,12 @@ plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
   col = 'red',
   ylim = c(-0.5, 1.5))
 
+# with ggplot2
+require(ggplot2)
+p <- ggplot(GuppyAttractiveness, aes(x = father.ornament, y = son.attract))
+p + geom_point(color = 'red', size = 3) +
+  scale_x_continuous("Father's ornamentation") +
+  scale_y_continuous("Son's attractiveness")
 
 ##########################################################################
 # 2.5-1
@@ -156,11 +183,14 @@ points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
   col = 'red',
   pch = 16)
 
-# Alternate form converting to Date class
+# Alternate form converting to Date class and ggplot2
 Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '%d%b%Y')
-LynxPopulationCycles <- cbind(LynxPopulationCycles, yr)
+LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
+
 require(ggplot2)
 p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
 p + geom_line() + 
   geom_point(color = 'red') +
-  scale_y_continuous('Lynx fur returns')
+  scale_y_continuous('Lynx fur returns') +
+  opts(panel.grid.minor = theme_blank()) +
+  opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))

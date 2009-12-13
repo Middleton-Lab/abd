@@ -26,9 +26,9 @@ Body Masses of Female Sockeye Salmon
 Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition Dependence and Adaptation-by-Time: Breeding Date, Life History, and Energy Allocation within a Population of Salmon. \emph{Oikos} 85: 499-514.
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.jstor.org/stable/3546699}
+}
 
 \examples{
 data(SockeyeFemaleBodyMass)
@@ -36,9 +36,8 @@ data(SockeyeFemaleBodyMass)
 str(SockeyeFemaleBodyMass)
 summary(SockeyeFemaleBodyMass)
 
-op <- par(no.readonly = TRUE)
-
 dev.new(width = 9, height = 3)
+op <- par(no.readonly = TRUE)
 par(mfrow = c(1, 3),
   xaxs = 'i',
   yaxs = 'i')
@@ -52,6 +51,7 @@ for (breaks in c(30, 10, 5)){
 }
 
 par(op)
+
 }
 
 \keyword{datasets}
