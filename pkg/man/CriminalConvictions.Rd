@@ -7,7 +7,7 @@ CriminalConvictions
 }
 
 \description{
-CriminalConvictions
+Data on frequency of convictions for a cohort of 395 boys.
 }
 
 \usage{data(CriminalConvictions)}
@@ -24,7 +24,7 @@ CriminalConvictions
 %}
 
 \source{
-Farrington, D.P. 1994. Cambridge Study in Delinquent Development [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university Consortium for Political and Social Research, Ann Arbor, MI.
+Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university Consortium for Political and Social Research, Ann Arbor, MI.
 }
 
 \references{
@@ -33,7 +33,8 @@ Farrington, D.P. 1994. Cambridge Study in Delinquent Development [Great Britain]
 
 \examples{
 data(CriminalConvictions)
-## maybe str(CriminalConvictions) ; plot(CriminalConvictions) ...
+str(CriminalConvictions)
+CriminalConvictions
 }
 
 \keyword{datasets}

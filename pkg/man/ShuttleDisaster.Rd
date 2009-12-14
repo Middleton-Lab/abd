@@ -7,7 +7,7 @@ ShuttleDisaster
 }
 
 \description{
-ShuttleDisaster
+Data on temperature and number of O-ring failures for 23 space shuttle launches.
 }
 
 \usage{data(ShuttleDisaster)}
@@ -27,13 +27,14 @@ ShuttleDisaster
 Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk Analysis of the Space Shuttle: Pre-Challenger Prediction of Failure. \emph{Journal of the American Statistical Association} 408: 945-957. 
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+Tufte, E.R. 1997. \emph{Visual Explanations: Images and Quantities, Evidence and Narrative}. Graphics Press.
+}
 
 \examples{
 data(ShuttleDisaster)
-## maybe str(ShuttleDisaster) ; plot(ShuttleDisaster) ...
+str(ShuttleDisaster)
+ShuttleDisaster
 }
 
 \keyword{datasets}

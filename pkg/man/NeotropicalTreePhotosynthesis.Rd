@@ -7,7 +7,7 @@ NeotropicalTreePhotosynthesis
 }
 
 \description{
-NeotropicalTreePhotosynthesis
+Photosynthetic capacity (\code{photosynthetic.capacity}) and number of fruits produced in the previous season (\code{previous.fruits})of 9 females of \emph{Ocotea tenera}.
 }
 
 \usage{data(NeotropicalTreePhotosynthesis)}
@@ -33,7 +33,8 @@ NeotropicalTreePhotosynthesis
 
 \examples{
 data(NeotropicalTreePhotosynthesis)
-## maybe str(NeotropicalTreePhotosynthesis) ; plot(NeotropicalTreePhotosynthesis) ...
+str(NeotropicalTreePhotosynthesis)
+NeotropicalTreePhotosynthesis
 }
 
 \keyword{datasets}

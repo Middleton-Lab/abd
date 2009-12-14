@@ -194,3 +194,67 @@ p + geom_line() +
   scale_y_continuous('Lynx fur returns') +
   opts(panel.grid.minor = theme_blank()) +
   opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))
+
+##########################################################################
+# 2q6
+data(EndangeredSpecies)
+#EndangeredSpecies$taxon <- as.character(EndangeredSpecies$taxon)
+#save(EndangeredSpecies, file = 'EndangeredSpecies.rda')
+str(EndangeredSpecies)
+EndangeredSpecies
+
+##########################################################################
+# 2q10
+data(ShuttleDisaster)
+str(ShuttleDisaster)
+ShuttleDisaster
+
+##########################################################################
+# 2q16
+data(CriminalConvictions)
+str(CriminalConvictions)
+CriminalConvictions
+
+##########################################################################
+# 2q17
+data(ConvictionsAndIncome)
+str(ConvictionsAndIncome)
+ConvictionsAndIncome
+
+# see https://stat.ethz.ch/pipermail/r-help/2009-January/185561.html
+# for discussion of expand.dft(). Modified for ConvictionsAndIncome data.
+expand.dft <- function(x, na.strings = 'NA', as.is = FALSE, dec = '.'){
+  DF <- sapply(1:nrow(x), function(i) x[rep(i, each = x$n[i]), ], 
+    simplify = FALSE)
+  DF <- subset(do.call('rbind', DF), select = -n)
+  for (i in 1:ncol(DF)){
+    DF[[i]] <- type.convert(as.character(DF[[i]]),
+      na.strings = na.strings, as.is = as.is, dec = dec)
+  }
+DF
+} 
+
+Conv.raw <- expand.dft(ConvictionsAndIncome)
+
+xtabs(data = Conv.raw)
+
+require(gmodels)
+CrossTable(Conv.raw$has.convictions, Conv.raw$income.level,
+  expected = FALSE,
+  prop.r = FALSE,
+  prop.c = FALSE,
+  prop.chisq = FALSE, 
+  prop.t = FALSE)
+
+##########################################################################
+# 2q18
+data(FireflySpermatophoreMass)
+str(FireflySpermatophoreMass)
+FireflySpermatophoreMass
+
+##########################################################################
+# 2q23
+data(NeotropicalTreePhotosynthesis)
+str(NeotropicalTreePhotosynthesis)
+NeotropicalTreePhotosynthesis
+

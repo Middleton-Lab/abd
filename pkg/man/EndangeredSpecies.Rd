@@ -7,14 +7,14 @@ EndangeredSpecies
 }
 
 \description{
-EndangeredSpecies
+Frequency of taxon groups on the U.S. Fish and Wildlife Service list of endangered and threatened species (2002).
 }
 \usage{data(EndangeredSpecies)}
 
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{taxon}}{a factor with levels \code{Amphibians} \code{Arachnids} \code{Birds} \code{Clams} \code{Crustaceans} \code{Fish} \code{Insects} \code{Mammals} \code{Plants} \code{Reptiles} \code{Snails}}
+    \item{\code{taxon}}{a character vector}
     \item{\code{no.species}}{a numeric vector}
   }
 }
@@ -33,7 +33,8 @@ U.S. Fish and Wildlife Service. 2001. Number of U.S. listed species per calendar
 
 \examples{
 data(EndangeredSpecies)
-## maybe str(EndangeredSpecies) ; plot(EndangeredSpecies) ...
+str(EndangeredSpecies)
+EndangeredSpecies
 }
 
 \keyword{datasets}

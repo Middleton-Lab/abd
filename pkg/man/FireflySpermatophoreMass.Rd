@@ -7,7 +7,7 @@ FireflySpermatophoreMass
 }
 
 \description{
-FireflySpermatophoreMass
+Measurements of spermatophore mass in 35 fireflies.
 }
 
 \usage{data(FireflySpermatophoreMass)}
@@ -22,17 +22,18 @@ FireflySpermatophoreMass
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Cratsley, C.K. and S.M. Lewis. 2003. Female preference for male courtship flashes in \emph{Photinus ignitus} fireflies. \emph{Behavioral Ecology} 14: 135-140.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://beheco.oxfordjournals.org/cgi/content/abstract/14/1/135}
+}
 
 \examples{
 data(FireflySpermatophoreMass)
-## maybe str(FireflySpermatophoreMass) ; plot(FireflySpermatophoreMass) ...
+str(FireflySpermatophoreMass)
+FireflySpermatophoreMass
 }
 
 \keyword{datasets}

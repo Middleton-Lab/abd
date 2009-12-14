@@ -1,12 +1,5 @@
 Fig. 2.4-2
 
-2q6		EndangeredSpecies.csv
-2.10	ShuttleDisaster.csv
-2.16	CriminalConvictions.csv
-2.17	ConvictionsAndIncome.csv
-2.18	FireflySpermatophoreMass.csv
-2.23	NeotropicalTreePhotosynthesis.csv
-
 AntillesImmigrationDates.csv
 AspirinCancer.csv
 BeeGeneExpression.csv
@@ -145,3 +138,9 @@ DONE
 2.4		HemoglobinHighAltitude.csv
 2.5a	GuppyAttractiveness.csv
 2.5b	LynxPopulationCycles.csv
+2q6		EndangeredSpecies.csv
+2q10	ShuttleDisaster.csv
+2q16	CriminalConvictions.csv
+2q17	ConvictionsAndIncome.csv
+2q18	FireflySpermatophoreMass.csv
+2q23	NeotropicalTreePhotosynthesis.csv
