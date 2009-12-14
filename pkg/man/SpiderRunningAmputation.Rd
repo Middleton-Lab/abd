@@ -7,7 +7,7 @@ SpiderRunningAmputation
 }
 
 \description{
-SpiderRunningAmputation
+Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) amputation of the pedipals (\url{http://en.wikipedia.org/wiki/Pedipalp}) in the spider genus \emph{Tidarren} (\url{http://en.wikipedia.org/wiki/Tidarren}).
 }
 
 \usage{data(SpiderRunningAmputation)}
@@ -23,13 +23,13 @@ SpiderRunningAmputation
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an evolutionary conflict: Removal of a reproductive organ greatly increases locomotor performance. \emph{Proceedings of the National Academy of Sciences (USA)} 101: 4883-4887.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.pnas.org/content/101/14/4883}
+}
 
 \examples{
 data(SpiderRunningAmputation)

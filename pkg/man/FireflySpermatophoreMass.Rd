@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-FireflySpermatophoreMass
+Spermatophore mass in fireflies
 }
 
 \description{
-Measurements of spermatophore mass in 35 fireflies.
+Measurements of spermatophore mass in 35 fireflies (\url{http://en.wikipedia.org/wiki/Firefly}).
 }
 
 \usage{data(FireflySpermatophoreMass)}

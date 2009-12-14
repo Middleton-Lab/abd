@@ -10,3 +10,4 @@ Suggests: ggplot2, gmodels
 Description: The abd package contains data sets and sample code for the book, The Analysis of Biological Data by Michael Whitlock and Dolph Schluter (2009; Roberts & Company Publishers).
 License: GPL-2
 LazyLoad: yes
+Encoding: UTF-8

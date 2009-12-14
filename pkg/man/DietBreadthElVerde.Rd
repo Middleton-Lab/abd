@@ -23,9 +23,8 @@ DietBreadthElVerde
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Waide R. B. and W.B. Reagan, eds. 1996. \emph{The food web of a tropical rainforest}. University of Chicago Press, Chicago. }
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

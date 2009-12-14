@@ -14,7 +14,7 @@ VasopressinVoles
 \format{
   A data frame with 31 observations on the following 2 variables.
   \describe{
-    \item{\code{treatment}}{a factor with levels \code{control} \code{enhanced}}
+    \item{\code{treatment}}{a factor with levels \code{control} and \code{enhanced}}
     \item{\code{percent}}{a numeric vector}
   }
 }
@@ -23,13 +23,13 @@ VasopressinVoles
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Lim, M.M., Z. Wang, D.E. \enc{Olazábal}{Olazabal}, X. Ren, E.F. Terwilliger, and L.J. Young. 2004. Enhanced partner preference in a promiscuous species by manipulating the expression of a single gene. \emph{Nature} 429: 754-757.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v429/n6993/full/nature02539.html}
+}
 
 \examples{
 data(VasopressinVoles)

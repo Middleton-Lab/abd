@@ -23,13 +23,12 @@ SticklebackPlates
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Colosimo, P.F., C.L. Peichel, K. Nereng, B.K. Blackman, M.D. Shapiro, D. Schluter, and D.M. Kingsley. 2004. The genetic architecture of parallel armor plate reduction in threespine sticklebacks. \emph{PLOS Biology} 2: 635-641.}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}
+}
 
 \examples{
 data(SticklebackPlates)

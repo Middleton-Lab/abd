@@ -14,7 +14,7 @@ KenyaFinches
 \format{
   A data frame with 45 observations on the following 3 variables.
   \describe{
-    \item{\code{species}}{a factor with levels \code{CRU.WAXB} \code{CUTTHROA} \code{WB.SPARW}}
+    \item{\code{species}}{a factor with levels \code{CRU.WAXB}, \code{CUTTHROA}, and \code{WB.SPARW}}
     \item{\code{mass.g}}{a numeric vector}
     \item{\code{beaklength.mm}}{a numeric vector}
   }
@@ -24,13 +24,13 @@ KenyaFinches
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Schluter, D. 1988. The evolution of finch communities on islands and continents: Kenya vs. Galapagos. \emph{Ecological Monographs} 58: 229-249.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.jstor.org/pss/1942538}
+}
 
 \examples{
 data(KenyaFinches)

@@ -6,7 +6,7 @@ Desert bird census data
 }
 
 \description{
-Desert bird census data
+Census data for desert birds.
 }
 
 \usage{data(DesertBirds)}
@@ -44,12 +44,13 @@ hist(DesertBirds$Count,
   main = '',
   col = 'red')
 
+\dontrun{
 # With ggplot2
 require(ggplot2)
 p <- ggplot(DesertBirds, aes(Count))
 p + geom_histogram(binwidth = 40, fill = 'red') +
   scale_x_continuous('Abundance') +
-  scale_y_continuous('Frequency (Number of Species)')
+  scale_y_continuous('Frequency (Number of Species)')}
 
 
 # Similar to Fig. 2.1-1
@@ -62,10 +63,11 @@ plot(Count.sort, Count.relfreq,
   xlab = 'Species abundance',
   ylab = 'Cumulative relative frequency')
 
+\dontrun{
 p <- ggplot(data.frame(Count.sort, Count.relfreq), aes(Count.sort, Count.relfreq))
 p + geom_step(direction = "vh") +
   scale_x_continuous('Species abundance') +
-  scale_y_continuous('Cumulative relative frequency')
+  scale_y_continuous('Cumulative relative frequency')}
 
 }
 

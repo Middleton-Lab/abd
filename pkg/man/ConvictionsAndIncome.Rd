@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-ConvictionsAndIncome
+Convictions and income level in a cohort of English boys
 }
 
 \description{

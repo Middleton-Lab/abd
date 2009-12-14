@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LynxPopulationCycles
+Population cycles of lynx in Canada 1752-1819
 }
 
 \description{
-Number of lynx pelts reported in Canada per year from 1752 to 1819.
+Number of lynx pelts (\code{no.pelts}) reported in Canada per year from 1752 to 1819.
 }
 
 \usage{data(LynxPopulationCycles)}
@@ -53,8 +53,7 @@ p + geom_line() +
   geom_point(color = 'red') +
   scale_y_continuous('Lynx fur returns') +
   opts(panel.grid.minor = theme_blank()) +
-  opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))
-}
+  opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))}
 
 }
 

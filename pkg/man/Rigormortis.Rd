@@ -7,7 +7,7 @@ Rigormortis
 }
 
 \description{
-Rigormortis
+Postmortem changes and time of death
 }
 
 \usage{data(Rigormortis)}
@@ -23,9 +23,9 @@ Rigormortis
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Pounder, D.J. 1995. Postmortem changes and time of death. University of Dundee. \url{http://www.dundee.ac.uk/forensicmedicine/llb/timedeath.htm}.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

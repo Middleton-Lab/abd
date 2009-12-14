@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Body Masses of Female Sockeye Salmon
+Body masses of female Sockeye Salmon
 }
 
 \description{
-Body Masses of Female Sockeye Salmon
+Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka}; \url{http://www.nmfs.noaa.gov/pr/species/fish/sockeyesalmon.htm})
 }
 
 \usage{data(SockeyeFemaleBodyMass)}
@@ -23,7 +23,7 @@ Body Masses of Female Sockeye Salmon
 %}
 
 \source{
-Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition Dependence and Adaptation-by-Time: Breeding Date, Life History, and Energy Allocation within a Population of Salmon. \emph{Oikos} 85: 499-514.
+Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition dependence and adaptation-by-time: Breeding date, life history, and energy allocation within a population of salmon. \emph{Oikos} 85: 499-514.
 }
 
 \references{
@@ -49,7 +49,6 @@ for (breaks in c(30, 10, 5)){
   xlab = 'Body mass (kg)',
   main = '')
 }
-
 par(op)
 
 }

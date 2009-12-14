@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-ShuttleDisaster
+Ambient temperature and O-ring failures
 }
 
 \description{
-Data on temperature and number of O-ring failures for 23 space shuttle launches.
+Data on \code{temperature} and number of O-ring \code{failures} for 23 space shuttle launches.
 }
 
 \usage{data(ShuttleDisaster)}

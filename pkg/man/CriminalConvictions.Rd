@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-CriminalConvictions
+Frequency of convictions for a cohort of English boys
 }
 
 \description{

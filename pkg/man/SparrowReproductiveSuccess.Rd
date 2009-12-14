@@ -24,9 +24,9 @@ SparrowReproductiveSuccess
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Jensen, H., B.-E. \enc{Sæther}{Saether}, T.H. Ringsby, J. Tufto, S.C. Griffith, and H. Ellegren. 2004. Lifetime reproductive success in relation to morphology in the house sparrow \emph{Passer domesticus}. \emph{Journal of Animal Ecology} 73: 599-611.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
