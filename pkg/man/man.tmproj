@@ -16,9 +16,15 @@
 			<key>filename</key>
 			<string>../TODO</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T01:14:22Z</date>
+			<date>2009-12-14T07:54:33Z</date>
 			<key>selected</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>../DESCRIPTION</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:18:23Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -30,7 +36,7 @@
 			<key>filename</key>
 			<string>AntillesImmigrationDates.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-13T20:10:58Z</date>
+			<date>2009-12-14T07:40:28Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -51,6 +57,8 @@
 		<dict>
 			<key>filename</key>
 			<string>BirdSexRatio.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:48:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -102,7 +110,7 @@
 			<key>filename</key>
 			<string>ConvictionsAndIncome.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T00:57:05Z</date>
+			<date>2009-12-14T07:50:39Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -112,7 +120,7 @@
 			<key>filename</key>
 			<string>CriminalConvictions.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T00:42:52Z</date>
+			<date>2009-12-14T07:50:42Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -138,11 +146,13 @@
 			<key>filename</key>
 			<string>DesertBirds.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-13T20:25:35Z</date>
+			<date>2009-12-14T07:49:39Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>DietBreadthElVerde.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T05:08:30Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -180,7 +190,7 @@
 			<key>filename</key>
 			<string>EndangeredSpecies.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T00:33:54Z</date>
+			<date>2009-12-14T07:51:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -198,7 +208,7 @@
 			<key>filename</key>
 			<string>FireflySpermatophoreMass.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T01:09:09Z</date>
+			<date>2009-12-14T07:51:35Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -207,6 +217,8 @@
 		<dict>
 			<key>filename</key>
 			<string>GlidingSnakeUndulations.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:35:55Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -220,7 +232,7 @@
 			<key>filename</key>
 			<string>GreatTitMalaria.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-13T20:10:59Z</date>
+			<date>2009-12-14T07:52:00Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -230,7 +242,7 @@
 			<key>filename</key>
 			<string>GuppyAttractiveness.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-13T20:46:26Z</date>
+			<date>2009-12-14T07:52:32Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -281,6 +293,8 @@
 		<dict>
 			<key>filename</key>
 			<string>KenyaFinches.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T04:47:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -315,6 +329,8 @@
 		<dict>
 			<key>filename</key>
 			<string>LizardSprintSpeed.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:53:24Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -332,7 +348,7 @@
 			<key>filename</key>
 			<string>LynxPopulationCycles.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-13T20:48:28Z</date>
+			<date>2009-12-14T07:53:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -370,7 +386,7 @@
 			<key>filename</key>
 			<string>NeotropicalTreePhotosynthesis.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T01:14:22Z</date>
+			<date>2009-12-14T07:40:31Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -379,6 +395,8 @@
 		<dict>
 			<key>filename</key>
 			<string>NorthSeaCodRecruits.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T04:52:49Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -443,6 +461,8 @@
 		<dict>
 			<key>filename</key>
 			<string>Rigormortis.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T04:49:15Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -476,7 +496,7 @@
 			<key>filename</key>
 			<string>ShuttleDisaster.Rd</string>
 			<key>lastUsed</key>
-			<date>2009-12-14T00:40:30Z</date>
+			<date>2009-12-14T07:54:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -493,14 +513,20 @@
 		<dict>
 			<key>filename</key>
 			<string>SockeyeFemaleBodyMass.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:54:33Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>SparrowReproductiveSuccess.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:21:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>SpiderRunningAmputation.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:45:20Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -513,6 +539,8 @@
 		<dict>
 			<key>filename</key>
 			<string>SticklebackPlates.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:45:12Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -565,6 +593,8 @@
 		<dict>
 			<key>filename</key>
 			<string>VasopressinVoles.Rd</string>
+			<key>lastUsed</key>
+			<date>2009-12-14T07:28:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -624,7 +654,7 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>231</integer>
 	<key>metaData</key>
 	<dict>
 		<key>../../Book_datasets_original/KMM edit.txt</key>
@@ -646,14 +676,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>2</integer>
 				<key>line</key>
-				<integer>120</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>99</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -664,6 +694,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{130, 6}, {1005, 932}}</string>
+	<string>{{143, 8}, {1005, 932}}</string>
 </dict>
 </plist>
