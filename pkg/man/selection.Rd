@@ -40,7 +40,6 @@ selection
 
 \examples{
 data(selection)
-## maybe str(selection) ; plot(selection) ...
 }
 
 \keyword{datasets}
