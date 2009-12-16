@@ -10,7 +10,6 @@ Implement a manual viewer:
 Fig. 2.4-2
 -------------------------------
 
-03e2	SpiderRunningAmputation.csv
 03e3	SticklebackPlates.csv
 03q04	KenyaFinches.csv
 03q09	Rigormortis.csv
@@ -41,3 +40,4 @@ DONE
 2q18	FireflySpermatophoreMass.csv
 2q23	NeotropicalTreePhotosynthesis.csv
 03e1	GlidingSnakeUndulations.csv
+03e2	SpiderRunningAmputation.csv

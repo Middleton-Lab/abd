@@ -35,7 +35,35 @@ sqrt(s2)
 (CV <- s/Ybar*100)
 round(CV)
 
-
 ##########################################################################
 # 03e2
 data(SpiderRunningAmputation)
+
+SpiderRunningAmputation
+median(SpiderRunningAmputation$speed.before)
+
+# Note that the values for the 1st and 3rd quartiles reported
+# differ from those given on p. 68. See footnote 5.
+(SRA.summary <- summary(SpiderRunningAmputation$speed.before))
+
+# Interquartile range
+SRA.summary[[5]] - SRA.summary[[2]]
+
+# Reformat data to 'long' format for boxplots
+SRA.long <- stack(SpiderRunningAmputation)
+names(SRA.long) <- c('speed', 'amputation.status')
+boxplot(speed ~ amputation.status, data = SRA.long,
+  names = c('After amputation', 'Before amputation'),
+  ylab = 'Running speed (cm/s)')
+
+\dontrun{
+# Using ggplot()
+require(ggplot2)
+p <- ggplot(SRA.long, aes(amputation.status, speed))
+p + geom_boxplot() +
+  scale_x_discrete('', labels = c('After amputation', 'Before amputation')) +
+  scale_y_continuous('Running speed (cm/s)')
+}
+
+
+

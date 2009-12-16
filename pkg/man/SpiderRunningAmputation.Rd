@@ -7,7 +7,7 @@ SpiderRunningAmputation
 }
 
 \description{
-Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) amputation of the pedipals (\url{http://en.wikipedia.org/wiki/Pedipalp}) in the spider genus \emph{Tidarren} (\url{http://en.wikipedia.org/wiki/Tidarren}).
+Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) amputation of a pedipalp (\url{http://en.wikipedia.org/wiki/Pedipalp}) in the spider genus \emph{Tidarren} (\url{http://en.wikipedia.org/wiki/Tidarren}).
 }
 
 \usage{data(SpiderRunningAmputation)}
@@ -33,7 +33,32 @@ Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an evolutionary
 
 \examples{
 data(SpiderRunningAmputation)
-## maybe str(SpiderRunningAmputation) ; plot(SpiderRunningAmputation) ...
+
+SpiderRunningAmputation
+median(SpiderRunningAmputation$speed.before)
+
+# Note that the values for the 1st and 3rd quartiles reported
+# differ from those given on p. 68. See footnote 5.
+(SRA.summary <- summary(SpiderRunningAmputation$speed.before))
+
+# Interquartile range
+SRA.summary[[5]] - SRA.summary[[2]]
+
+# Reformat data to 'long' format for boxplots
+SRA.long <- stack(SpiderRunningAmputation)
+names(SRA.long) <- c('speed', 'amputation.status')
+boxplot(speed ~ amputation.status, data = SRA.long,
+  names = c('After amputation', 'Before amputation'),
+  ylab = 'Running speed (cm/s)')
+
+\dontrun{
+# Using ggplot()
+require(ggplot2)
+p <- ggplot(SRA.long, aes(amputation.status, speed))
+p + geom_boxplot() +
+  scale_x_discrete('', labels = c('After amputation', 'Before amputation')) +
+  scale_y_continuous('Running speed (cm/s)')}
+
 }
 
 \keyword{datasets}
