@@ -33,7 +33,6 @@ DisordersAndGeneExpression
 
 \examples{
 data(DisordersAndGeneExpression)
-## maybe str(DisordersAndGeneExpression) ; plot(DisordersAndGeneExpression) ...
 }
 
 \keyword{datasets}

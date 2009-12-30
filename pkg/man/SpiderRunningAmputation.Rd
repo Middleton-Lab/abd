@@ -56,7 +56,8 @@ boxplot(speed ~ amputation.status, data = SRA.long,
 require(ggplot2)
 p <- ggplot(SRA.long, aes(amputation.status, speed))
 p + geom_boxplot() +
-  scale_x_discrete('', labels = c('After amputation', 'Before amputation')) +
+  scale_x_discrete('',
+    labels = c('After amputation', 'Before amputation')) +
   scale_y_continuous('Running speed (cm/s)')}
 
 }

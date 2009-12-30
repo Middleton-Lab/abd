@@ -34,7 +34,6 @@ ZooplanktonDepredation
 
 \examples{
 data(ZooplanktonDepredation)
-## maybe str(ZooplanktonDepredation) ; plot(ZooplanktonDepredation) ...
 }
 
 \keyword{datasets}

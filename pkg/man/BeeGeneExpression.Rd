@@ -34,7 +34,6 @@ BeeGeneExpression
 
 \examples{
 data(BeeGeneExpression)
-## maybe str(BeeGeneExpression) ; plot(BeeGeneExpression) ...
 }
 
 \keyword{datasets}

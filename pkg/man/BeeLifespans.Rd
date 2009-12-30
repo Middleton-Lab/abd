@@ -32,7 +32,6 @@ BeeLifespans
 
 \examples{
 data(BeeLifespans)
-## maybe str(BeeLifespans) ; plot(BeeLifespans) ...
 }
 
 \keyword{datasets}

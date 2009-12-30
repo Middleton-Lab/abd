@@ -33,7 +33,6 @@ LefthandednessAndViolence
 
 \examples{
 data(LefthandednessAndViolence)
-## maybe str(LefthandednessAndViolence) ; plot(LefthandednessAndViolence) ...
 }
 
 \keyword{datasets}

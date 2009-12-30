@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-KenyaFinches
+Body mass and beak length in three species of finches in Kenya
 }
 
 \description{
-KenyaFinches
+Data on body mass and beak length in three species of finches: Crimson-rumped waxbill (\code{CRU.WAXB}), Cutthroat finch (\code{CUTTHROA}), and White-browed sparrow weaver (\code{WB.SPARW}).
 }
 
 \usage{data(KenyaFinches)}
@@ -34,7 +34,9 @@ Schluter, D. 1988. The evolution of finch communities on islands and continents:
 
 \examples{
 data(KenyaFinches)
-## maybe str(KenyaFinches) ; plot(KenyaFinches) ...
+levels(KenyaFinches$species)
+
+KenyaFinches
 }
 
 \keyword{datasets}

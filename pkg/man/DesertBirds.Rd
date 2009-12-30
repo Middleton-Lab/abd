@@ -64,7 +64,8 @@ plot(Count.sort, Count.relfreq,
   ylab = 'Cumulative relative frequency')
 
 \dontrun{
-p <- ggplot(data.frame(Count.sort, Count.relfreq), aes(Count.sort, Count.relfreq))
+p <- ggplot(data.frame(Count.sort, Count.relfreq), 
+  aes(Count.sort, Count.relfreq))
 p + geom_step(direction = "vh") +
   scale_x_continuous('Species abundance') +
   scale_y_continuous('Cumulative relative frequency')}

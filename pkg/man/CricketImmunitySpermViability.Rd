@@ -33,7 +33,6 @@ CricketImmunitySpermViability
 
 \examples{
 data(CricketImmunitySpermViability)
-## maybe str(CricketImmunitySpermViability) ; plot(CricketImmunitySpermViability) ...
 }
 
 \keyword{datasets}

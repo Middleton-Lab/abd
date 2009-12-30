@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-AntillesImmigrationDates
+Antilles immigration dates
 }
 
 \description{
-AntillesImmigrationDates
+Approximate dates of immigration (\code{immigration.date}) for 37 species of birds in the Lesser Antilles.
 }
 
 \usage{data(AntillesImmigrationDates)}
@@ -31,6 +31,7 @@ AntillesImmigrationDates
 
 \examples{
 data(AntillesImmigrationDates)
+AntillesImmigrationDates$immigration.date
 }
 
 \keyword{datasets}

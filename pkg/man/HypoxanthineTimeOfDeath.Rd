@@ -33,7 +33,6 @@ HypoxanthineTimeOfDeath
 
 \examples{
 data(HypoxanthineTimeOfDeath)
-## maybe str(HypoxanthineTimeOfDeath) ; plot(HypoxanthineTimeOfDeath) ...
 }
 
 \keyword{datasets}

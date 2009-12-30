@@ -44,7 +44,8 @@ points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
 
 \dontrun{
 # Alternate form converting to Date class.
-Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '\%d\%b\%Y')
+Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''),
+  '\%d\%b\%Y')
 LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
 
 require(ggplot2)

@@ -1,5 +1,5 @@
 Implement a manual viewer:
-	function () 
+abd.manual <- function () 
 	{
 	    viewer <- getOption("pdfviewer")
 	    file <- system.file("doc/Sleuth2-manual.pdf", package = "Sleuth2")
@@ -8,21 +8,138 @@ Implement a manual viewer:
 	}
 
 Fig. 2.4-2
+Fig. 4.3-1
 -------------------------------
 
-03e3	SticklebackPlates.csv
-03q04	KenyaFinches.csv
-03q09	Rigormortis.csv
-03q10	NorthSeaCodRecruits.csv
-03q11	VasopressinVoles.csv
-03q12	AntillesImmigrationDates.csv
-03q13	DietBreadthElVerde.csv
-03q18	SparrowReproductiveSuccess.csv
-
-04e1	HumanGeneLengths.csv
 04q06	FireflyFlash.csv
 04q11	NumberGenesRegulated.csv
 
+08e1	DayOfBirth.csv
+08e5	NumberOfBoys.csv
+08e6	MassExtinctions.csv
+08q02	Powerball.csv
+08q03	ShadParasites.csv
+08q04	Seedlings.csv
+08q05	WorldCup.csv
+08q06	Sumo.csv
+08q14	Cavalry.csv
+08q16	Truffles.csv
+08q17	WrasseSexes.csv
+08q18	Hurricanes.csv
+
+09e2	AspirinCancer.csv
+09e3	ParasiteBrainWarp.csv
+09e4	VampireBites.csv
+
+11e2	Stalkies.csv
+11e3	Temperature.csv
+11q02	WolfTeeth.csv
+11q10	SyrupSwimming.csv
+11q13	DolphinsClockwise.csv
+11q14	SticklebackPreference.csv
+
+12e2	BlackbirdTestosterone.csv
+12e3	HornedLizards.csv
+12e4	BrookTrout.csv
+12q02	NoSmokingDay.csv
+12q03	Iguanas.csv
+12q05	MonogamousTestes.csv
+12q09	Cichlids.csv
+12q10	Tobacco.csv
+12q11	WillsPresidents.csv
+12q13	OstrichTemp.csv
+12q15	PrimateWPC.csv
+12q16	StalkieEyespan.csv
+12q19	ElectricFish.csv
+12q23	WeddellSeals.csv
+
+13e1	MarineReserve.csv
+13e4	SexualSelection.csv
+13e5	SagebrushCrickets.csv
+13q05	Lobsters.csv
+13q06	Lions.csv
+13q08	Newts.csv
+13q13	dioecy.csv
+13q14	Mosquitoes.csv
+13q16	ZebraFinches.csv
+13q18	CichlidsGnRH.csv
+13q19	Vines.csv
+13q20	SalmonColor.csv
+13q22	BirdSexRatio.csv
+13q23	Clearcuts.csv
+13q24	ZebraFinchBeaks.csv
+
+15e1	KneesWhoSayNight.csv
+15e6	WalkingStickFemurs.csv
+15q01	PlantPopulationPersistence.csv
+15q05	EelgrassGenotypes.csv
+15q06	DisordersAndGeneExpression.csv
+15q11	DungBeetleCondition.csv
+15q13	DaphniaResistance.csv
+15q14	TsetseLearning.csv
+15q19	NematodeLifespan.csv
+15q21	WalkingStickHeads.csv
+15q22	LodgepolePineCones.csv
+15q23	LupusProneMice.csv
+15q24	LizardSprintSpeed.csv
+
+16e1	FingerRatioCAGRepeats.csv
+16e2	InbreedingWolves.csv
+16e5	IndianRopeTrick.csv
+16q03	GodwitArrivalDates Gunnarsson et al 2004 replica.csv
+16q08	EarwigForceps Tomkins & Brown 2004 replica.csv
+16q10	CricketImmunitySpermViability Simmons and Roberts 2005 replica.csv
+16q11	PufferfishMimicry Caley & Schluter 2003.csv
+16q12	TelomeresAndStress Epel etal 2004 replica.csv
+16q13	LanguageGreyMatter Mechelli et al 2004 replica.csv
+16q14	GreenSpaceBiodiversity Fuller etal 2004.csv
+16q16	LiverPreparation Smallwood et al 1998 replica.csv
+16q17	SleepAndPerformance Huber et al 2004 replica.csv
+16q19	LefthandednessAndViolence Faurie and Raymond 2005 replica.csv
+16q20	TrilliumRecruitment Jules and Rathcke 1999.csv
+16q21	CocaineHigh Volkow etal 1997 replica.csv
+16q22	CocaineHigh Collins & Bell 2004 replica.csv
+
+17e1	LionAges Whitman et al 2004 replica.csv
+17e3	ChickadeeAlarmsCalls Templeton et al 2005 replica.csv
+17e8	ShrinkingSeals Trites 1996.csv
+17q02	ZooMortality Clubb and Mason 2003 replica.csv
+17q03	ProgesteroneExercise Brutsaert etal 2002 replica.csv
+17q04	BodyFatHeatLoss Sloan and Keatinge 1973 replica.csv
+17q07	HybridPollenSterility Moyle et al 2004 replica.csv
+17q08	RattlesnakeDigestion Tattersall et al 2004 replica.csv
+17q09	LizardBite Lappin and Husak 2005 replica.csv
+17q11	HypoxanthineTimeOfDeath.csv James etal 1997 replica.csv
+17q12	SocialSpiderColonies.csv
+17q14	GrasslandNutrientsPlantSpecies.csv
+17q15	EarthwormsAndNitrogen.csv
+17q16	PrimateMassMetabolicRate.csv
+17q18	FlycatcherPatch.csv
+17q19	TreeSeedlingsAndSunflecks.csv
+17q20	PenguinTreadmill.csv
+17q21	BeetleWingsAndHorns.csv
+17q22	DaphniaParasiteLongevity.csv
+17q24	DEETMosquiteBites.csv
+17q25	NuclearTeeth.csv
+
+18e1	MouseEmpathy.csv
+18e2	ZooplanktonDepredation.csv
+18e3	IntertidalAlgae.csv
+18e4	MoleRatLayabouts.csv
+18q06	HippocampusLesions.csv
+18q07	BeeGeneExpression.csv
+18q09	NeanderthalBrainSize.csv
+18q11	ExploitedLarvalFish.csv
+
+19e2	Pseudoscorpions.csv
+19e3	ChimpBrains.csv
+
+20q07	YeastRegulatoryGenes.csv
+20q08	SilverswordWaitingTimes.csv
+20q15	VoleDispersal.csv
+20q18	BeeLifespans.csv
+
+selection.txt
 
 DONE
 -------------------------------
@@ -41,3 +158,12 @@ DONE
 2q23	NeotropicalTreePhotosynthesis.csv
 03e1	GlidingSnakeUndulations.csv
 03e2	SpiderRunningAmputation.csv
+03e3	SticklebackPlates.csv
+03q04	KenyaFinches.csv
+03q09	Rigormortis.csv
+03q10	NorthSeaCodRecruits.csv
+03q11	VasopressinVoles.csv
+03q12	AntillesImmigrationDates.csv
+03q13	DietBreadthElVerde.csv
+03q18	SparrowReproductiveSuccess.csv
+04e1	HumanGeneLengths.csv

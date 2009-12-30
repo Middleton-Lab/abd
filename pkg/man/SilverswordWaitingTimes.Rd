@@ -32,7 +32,6 @@ SilverswordWaitingTimes
 
 \examples{
 data(SilverswordWaitingTimes)
-## maybe str(SilverswordWaitingTimes) ; plot(SilverswordWaitingTimes) ...
 }
 
 \keyword{datasets}

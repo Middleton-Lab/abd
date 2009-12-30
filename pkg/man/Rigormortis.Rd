@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Rigormortis
+Rigormortis and time of death
 }
 
 \description{
-Postmortem changes and time of death
+Number of bodies reaching rigormortis in each hour after death.
 }
 
 \usage{data(Rigormortis)}
@@ -33,7 +33,7 @@ Pounder, D.J. 1995. Postmortem changes and time of death. University of Dundee. 
 
 \examples{
 data(Rigormortis)
-## maybe str(Rigormortis) ; plot(Rigormortis) ...
+Rigormortis
 }
 
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-DietBreadthElVerde
+Diet breadth in a rainforest community
 }
 
 \description{
-DietBreadthElVerde
+Number of different species (\code{breadth}) in 127 species (\code{no.species}) in the rainforest community at El Verde, Puerto Rico
 }
 
 \usage{data(DietBreadthElVerde)}
@@ -24,7 +24,7 @@ DietBreadthElVerde
 %}
 
 \source{
-Waide R. B. and W.B. Reagan, eds. 1996. \emph{The food web of a tropical rainforest}. University of Chicago Press, Chicago. }
+Waide R.B. and W.B. Reagan, eds. 1996. \emph{The food web of a tropical rainforest}. University of Chicago Press, Chicago.}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -32,7 +32,8 @@ Waide R. B. and W.B. Reagan, eds. 1996. \emph{The food web of a tropical rainfor
 
 \examples{
 data(DietBreadthElVerde)
-## maybe str(DietBreadthElVerde) ; plot(DietBreadthElVerde) ...
+DietBreadthElVerde
+sum(DietBreadthElVerde$no.species)
 }
 
 \keyword{datasets}

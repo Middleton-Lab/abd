@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-SparrowReproductiveSuccess
+Lifetime reproductive success in house sparrows
 }
 
 \description{
-SparrowReproductiveSuccess
+Lifetime reproductive success (\code{LifetimeRS}) in female and male house sparrows \emph{Passer domesticus} in Norway.
 }
 
 \usage{data(SparrowReproductiveSuccess)}
@@ -34,7 +34,7 @@ Jensen, H., B.-E. \enc{Sæther}{Saether}, T.H. Ringsby, J. Tufto, S.C. Griffith,
 
 \examples{
 data(SparrowReproductiveSuccess)
-## maybe str(SparrowReproductiveSuccess) ; plot(SparrowReproductiveSuccess) ...
+SparrowReproductiveSuccess
 }
 
 \keyword{datasets}

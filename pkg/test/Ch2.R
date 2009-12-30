@@ -57,7 +57,8 @@ plot(Count.sort, Count.relfreq,
   xlab = 'Species abundance',
   ylab = 'Cumulative relative frequency')
 
-p <- ggplot(data.frame(Count.sort, Count.relfreq), aes(Count.sort, Count.relfreq))
+p <- ggplot(data.frame(Count.sort, Count.relfreq),
+  aes(Count.sort, Count.relfreq))
 p + geom_step(direction = "vh") +
   scale_x_continuous('Species abundance') +
   scale_y_continuous('Cumulative relative frequency')
@@ -77,11 +78,11 @@ par(mfrow = c(1, 3),
   yaxs = 'i')
 for (breaks in c(30, 10, 5)){
   hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
-  xlim = c(1, 4),
-  col = 'red',
-  ylab = 'Frequency',
-  xlab = 'Body mass (kg)',
-  main = '')
+    xlim = c(1, 4),
+    col = 'red',
+    ylab = 'Frequency',
+    xlab = 'Body mass (kg)',
+    main = '')
 }
 
 par(op)
@@ -119,7 +120,8 @@ CrossTable(GTM.raw$Treatment, GTM.raw$Response,
 
 # Fig. 2.3-1
 require(ggplot2)
-bar <- ggplot(GreatTitMalaria, aes(x = Treatment, y = Frequency, fill = Response))
+bar <- ggplot(GreatTitMalaria,
+  aes(x = Treatment, y = Frequency, fill = Response))
 bar + geom_bar(stat = 'identity', position = 'dodge')
 
 # Fig. 2.3-2
@@ -141,7 +143,8 @@ labels <- data.frame( # Create a data.frame to hold the labels
   x = rep(24, times = 4),
   y = rep(0.4, times = 4))
 
-p <- ggplot(HemoglobinHighAltitude, aes(haemoglobin, relative.frequency))
+p <- ggplot(HemoglobinHighAltitude,
+  aes(haemoglobin, relative.frequency))
 p + geom_bar(stat="identity", fill = 'red')  +
   facet_grid(group ~ .) +
   scale_x_continuous('Hemoglobin concentration (g/dL)') +
@@ -166,7 +169,8 @@ plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
 
 # with ggplot2
 require(ggplot2)
-p <- ggplot(GuppyAttractiveness, aes(x = father.ornament, y = son.attract))
+p <- ggplot(GuppyAttractiveness,
+  aes(x = father.ornament, y = son.attract))
 p + geom_point(color = 'red', size = 3) +
   scale_x_continuous("Father's ornamentation") +
   scale_y_continuous("Son's attractiveness")
@@ -184,7 +188,8 @@ points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
   pch = 16)
 
 # Alternate form converting to Date class and ggplot2
-Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''), '%d%b%Y')
+Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''),
+  '%d%b%Y')
 LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
 
 require(ggplot2)

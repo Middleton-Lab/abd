@@ -34,7 +34,6 @@ AspirinCancer
 
 \examples{
 data(AspirinCancer)
-## maybe str(AspirinCancer) ; plot(AspirinCancer) ...
 }
 
 \keyword{datasets}

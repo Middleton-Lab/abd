@@ -3,7 +3,7 @@
 library(abd)
 
 ##########################################################################
-# 03e1
+# 03e1 GlidingSnakeUndulations
 data(GlidingSnakeUndulations)
 
 hist(GlidingSnakeUndulations$undulation.rate,
@@ -35,8 +35,9 @@ sqrt(s2)
 (CV <- s/Ybar*100)
 round(CV)
 
+
 ##########################################################################
-# 03e2
+# 03e2 SpiderRunningAmputation
 data(SpiderRunningAmputation)
 
 SpiderRunningAmputation
@@ -61,9 +62,88 @@ boxplot(speed ~ amputation.status, data = SRA.long,
 require(ggplot2)
 p <- ggplot(SRA.long, aes(amputation.status, speed))
 p + geom_boxplot() +
-  scale_x_discrete('', labels = c('After amputation', 'Before amputation')) +
+  scale_x_discrete('', 
+    labels = c('After amputation', 'Before amputation')) +
   scale_y_continuous('Running speed (cm/s)')
 }
 
 
+##########################################################################
+# 03e2 SticklebackPlates
+data(SticklebackPlates)
 
+op <- par(no.readonly = TRUE)
+par(mfrow = c(3, 1),
+  xaxs = 'i',
+  yaxs = 'i')
+for (i in c('mm', 'Mm', 'MM')){
+  subset.by.genotype <- subset(SticklebackPlates, genotype == i)
+  hist(subset.by.genotype$no.plates,
+    breaks = 30,
+    xlim = c(0, 70),
+    ylim = c(0, 50),
+    col = 'red',
+    ylab = 'Frequency',
+    xlab = 'Number of Lateral Body Plates',
+    main = paste(i))
+}
+par(op)
+
+\dontrun{
+require(ggplot2)
+p1 <- ggplot(SticklebackPlates, aes(no.plates))
+p1 + geom_histogram(fill = 'red', binwidth = 2) +
+  facet_grid(genotype ~ .) +
+  scale_x_continuous('Number of Lateral Body Plates') +
+  scale_y_continuous('Frequency')
+  
+p2 <- ggplot(SticklebackPlates, aes(genotype, no.plates))
+  p2 + geom_boxplot() +
+  scale_x_discrete('Genotype') +
+  scale_y_continuous('Number of Lateral Body Plates')
+}
+
+
+##########################################################################
+# 03q04	KenyaFinches.csv
+data(KenyaFinches)
+levels(KenyaFinches$species)
+
+KenyaFinches
+
+
+##########################################################################
+# 03q09	Rigormortis.csv
+data(Rigormortis)
+Rigormortis
+
+
+##########################################################################
+# 03q10	NorthSeaCodRecruits.csv
+data(NorthSeaCodRecruits)
+NorthSeaCodRecruits$log10.recruits
+
+
+##########################################################################
+# 03q11	VasopressinVoles.csv
+data(VasopressinVoles)
+VasopressinVoles
+
+
+##########################################################################
+# 03q12	AntillesImmigrationDates.csv
+data(AntillesImmigrationDates)
+AntillesImmigrationDates$immigration.date
+
+
+##########################################################################
+# 03q13	DietBreadthElVerde.csv
+data(DietBreadthElVerde)
+DietBreadthElVerde
+sum(DietBreadthElVerde$no.species)
+
+
+##########################################################################
+# 03q18	SparrowReproductiveSuccess.csv
+data(SparrowReproductiveSuccess)
+SparrowReproductiveSuccess

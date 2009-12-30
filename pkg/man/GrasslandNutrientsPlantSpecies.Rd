@@ -33,7 +33,5 @@ GrasslandNutrientsPlantSpecies
 
 \examples{
 data(GrasslandNutrientsPlantSpecies)
-## maybe str(GrasslandNutrientsPlantSpecies) ; plot(GrasslandNutrientsPlantSpecies) ...
-}
 
 \keyword{datasets}

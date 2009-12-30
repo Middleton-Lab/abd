@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-NorthSeaCodRecruits
+Atlantic cod recruits
 }
 
 \description{
-NorthSeaCodRecruits
+Size (log10 transformed; \code{log10.recruits}) of Atlantic cod (\emph{Gadus morhua}) recruits in the North Sea in 39 years
 }
 
 \usage{data(NorthSeaCodRecruits)}
@@ -32,7 +32,7 @@ NorthSeaCodRecruits
 
 \examples{
 data(NorthSeaCodRecruits)
-## maybe str(NorthSeaCodRecruits) ; plot(NorthSeaCodRecruits) ...
+NorthSeaCodRecruits$log10.recruits
 }
 
 \keyword{datasets}

@@ -46,7 +46,8 @@ labels <- data.frame( # Create a data.frame to hold the labels
   x = rep(24, times = 4),
   y = rep(0.4, times = 4))
 
-p <- ggplot(HemoglobinHighAltitude, aes(haemoglobin, relative.frequency))
+p <- ggplot(HemoglobinHighAltitude,
+  aes(haemoglobin, relative.frequency))
 p + geom_bar(stat="identity", fill = 'red')  +
   facet_grid(group ~ .) +
   scale_x_continuous('Hemoglobin concentration (g/dL)') +

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-VasopressinVoles
+Vasopressin manipulation in the meadow vole
 }
 
 \description{
-VasopressinVoles
+Time spent with a female (\code{percent}) in control and vasopressin-enhanced groups (\code{treatment}) of meadow voles (\emph{Microtus pennsylvanicus}).
 }
 
 \usage{data(VasopressinVoles)}
@@ -33,7 +33,7 @@ VasopressinVoles
 
 \examples{
 data(VasopressinVoles)
-## maybe str(VasopressinVoles) ; plot(VasopressinVoles) ...
+VasopressinVoles
 }
 
 \keyword{datasets}
