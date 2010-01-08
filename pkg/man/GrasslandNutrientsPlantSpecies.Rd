@@ -33,5 +33,6 @@ GrasslandNutrientsPlantSpecies
 
 \examples{
 data(GrasslandNutrientsPlantSpecies)
+}
 
 \keyword{datasets}
