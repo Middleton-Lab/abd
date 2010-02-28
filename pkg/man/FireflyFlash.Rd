@@ -7,7 +7,8 @@ FireflyFlash
 }
 
 \description{
-FireflyFlash
+Flash duration (ms) of a sample of male fireflies (\emph{Photinus ignitus};
+  \emph{n}=35).
 }
 
 \usage{data(FireflyFlash)}
@@ -35,8 +36,6 @@ FireflyFlash
 \examples{
 data(FireflyFlash)
 str(FireflyFlash)
-
-## maybe plot(FireflyFlash) ...
 }
 
 \keyword{datasets}
