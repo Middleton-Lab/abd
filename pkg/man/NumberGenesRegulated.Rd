@@ -37,6 +37,7 @@ Guelzim, N., S. Bottani, P. Bourgine and F. Képès. 2002. Topological and
 \examples{
 data(NumberGenesRegulated)
 str(NumberGenesRegulated)
+NumberGenesRegulated
 }
 
 \keyword{datasets}

@@ -111,3 +111,12 @@ for (n in c(20, 100, 500)){
 ##########################################################################
 # 04q06	FireflyFlash.csv
 data(FireflyFlash)
+str(FireflyFlash)
+FireflyFlash
+
+##########################################################################
+# 04q11	NumberGenesRegulated.csv
+data(NumberGenesRegulated)
+str(NumberGenesRegulated)
+NumberGenesRegulated
+

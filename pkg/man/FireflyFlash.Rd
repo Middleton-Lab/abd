@@ -36,6 +36,7 @@ Flash duration (ms) of a sample of male fireflies (\emph{Photinus ignitus};
 \examples{
 data(FireflyFlash)
 str(FireflyFlash)
+FireflyFlash
 }
 
 \keyword{datasets}
