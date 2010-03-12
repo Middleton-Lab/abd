@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-MassExtinctions
+Mass Extinction Frequency
 }
 
 \description{
-MassExtinctions
+The frequency of mass extinctions in the fossil record.
 }
 
 \usage{data(MassExtinctions)}
@@ -23,13 +23,13 @@ MassExtinctions
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the marine fossil record. \emph{Science} 215: 1501-1503.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sciencemag.org/cgi/content/abstract/sci;215/4539/1501}
+}
 
 \examples{
 data(MassExtinctions)
