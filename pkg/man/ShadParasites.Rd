@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-ShadParasites
+Shad Parasites
 }
 
 \description{
-ShadParasites
+Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 }
 
 \usage{data(ShadParasites)}
@@ -23,17 +23,18 @@ ShadParasites
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Shaw, D.J., B.T. Grenfell, and A.P. Dobson. 1998. Patterns of macroparasite aggregation in wildlife host populations. \emph{Parasitology} 117: 597-610.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://journals.cambridge.org/action/displayAbstract?aid=24297}
+}
 
 \examples{
 data(ShadParasites)
-## maybe str(ShadParasites) ; plot(ShadParasites) ...
+str(ShadParasites)
+ShadParasites
 }
 
 \keyword{datasets}

@@ -75,12 +75,105 @@ chisq.test(observed, p = expected2, rescale.p = TRUE)
 data(MassExtinctions)
 MassExtinctions
 
-sum((MassExtinctions$Number.of.extinctions * MassExtinctions$Frequency) / 76)
-(wt.mean <- weighted.mean(MassExtinctions$Number.of.extinctions, MassExtinctions$Frequency))
+sum((MassExtinctions$Number.of.extinctions *
+  MassExtinctions$Frequency) / 76)
+(wt.mean <- weighted.mean(MassExtinctions$Number.of.extinctions,
+  MassExtinctions$Frequency))
 
-n.extinctions <- rep(MassExtinctions$Number.of.extinctions, times = MassExtinctions$Frequency)
-hist(n.extinctions, prob = TRUE)
-lines(dpois(10000, wt.mean), type = 'p')
+n.extinctions <- rep(MassExtinctions$Number.of.extinctions,
+  times = MassExtinctions$Frequency)
+hist(n.extinctions,
+  ylim = c(0, 30),
+  xlab = "Number of Extinctions",
+  main = "Frequency of Mass Extinctions")
+
+(Pr.3 <- (exp(-wt.mean) * wt.mean^3) / factorial(3))
+76 * Pr.3
+
+# Calculate expected
+expected <- (exp(-wt.mean) * wt.mean^c(0:21) /
+  factorial(c(0:21))) * 76
+
+# Collapse some rows into a single expected value
+expected2 <- c(sum(expected[1:2]), expected[3:8], sum(expected[9:22]))
+expected2
+
+MassExtinctions2 <- rbind(MassExtinctions[-c(1, 9:21), ], c(8, 9))
+MassExtinctions2
+
+chisq <- sum((MassExtinctions2$Frequency - expected2)^2 / expected2)
+chisq
+pchisq(chisq, df = 6, lower.tail = FALSE)
+
+# Alternate using chisq.test()
+chisq.test(MassExtinctions2$Frequency, p = expected2, rescale.p = TRUE)
+
+# Second alternate using goodfit() from vcd package
+require(vcd)
+extinctions.fit <- goodfit(MassExtinctions$Frequency, type = "poisson",
+  method = "ML", par = list(lambda = wt.mean))
+summary(extinctions.fit)
+plot(extinctions.fit)
 
 
+##########################################################################
+# 08q02	Powerball.csv
+data(Powerball)
+Powerball$Day <- as.character(Powerball$Day)
+save(Powerball, file = "Powerball.rda")
 
+data(Powerball)
+Powerball
+
+
+##########################################################################
+# 08q03	ShadParasites.csv
+data(ShadParasites)
+names(ShadParasites)[1] <- "Number.of.parasites"
+save(ShadParasites, file = "ShadParasites.rda")
+
+data(ShadParasites)
+str(ShadParasites)
+ShadParasites
+
+
+##########################################################################
+# 08q04	Seedlings.csv
+data(Seedlings)
+Seedlings
+
+
+##########################################################################
+# 08q05	WorldCup.csv
+data(WorldCup)
+WorldCup
+
+
+##########################################################################
+# 08q06	Sumo.csv
+data(Sumo)
+Sumo
+
+
+##########################################################################
+# 08q14	Cavalry.csv
+data(Cavalry)
+Cavalry
+
+
+##########################################################################
+# 08q16	Truffles.csv
+data(Truffles)
+Truffles
+
+
+##########################################################################
+# 08q17	WrasseSexes.csv
+data(WrasseSexes)
+WrasseSexes
+
+
+##########################################################################
+# 08q18	Hurricanes.csv
+data(Hurricanes)
+Hurricanes

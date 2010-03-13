@@ -9,20 +9,10 @@ abd.manual <- function ()
 
 Fig. 2.4-2
 Fig. 4.3-1
--------------------------------
+Fig. 8.1-1 ggplot
+8.6 Add poisson chi-squared
 
-08e1	DayOfBirth.csv
-08e5	NumberOfBoys.csv
-08e6	MassExtinctions.csv
-08q02	Powerball.csv
-08q03	ShadParasites.csv
-08q04	Seedlings.csv
-08q05	WorldCup.csv
-08q06	Sumo.csv
-08q14	Cavalry.csv
-08q16	Truffles.csv
-08q17	WrasseSexes.csv
-08q18	Hurricanes.csv
+-------------------------------
 
 09e2	AspirinCancer.csv
 09e3	ParasiteBrainWarp.csv
@@ -164,3 +154,15 @@ DONE
 03q13	DietBreadthElVerde.csv
 03q18	SparrowReproductiveSuccess.csv
 04e1	HumanGeneLengths.csv
+08e1	DayOfBirth.csv
+08e5	NumberOfBoys.csv
+08e6	MassExtinctions.csv
+08q02	Powerball.csv
+08q03	ShadParasites.csv
+08q04	Seedlings.csv
+08q05	WorldCup.csv
+08q06	Sumo.csv
+08q14	Cavalry.csv
+08q16	Truffles.csv
+08q17	WrasseSexes.csv
+08q18	Hurricanes.csv

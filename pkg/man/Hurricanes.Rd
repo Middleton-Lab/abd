@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Hurricanes
+Hurricane Intensities
 }
 
 \description{
-Hurricanes
+Number of hurricanes greater than or equal to category 3 on the Safir-Simpson scale during the 20th century.
 }
 
 \usage{data(Hurricanes)}
@@ -23,17 +23,17 @@ Hurricanes
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Blake, E.S., E.N. Rappaport, J.D. Jarrell, and C.W. Landsea. 2005. The deadliest, costliest, and most intense United States tropical cyclones from 1851 to 2006 (and other frequently requested hurricane facts). \emph{NOAA Technical Memorandum NWS TPC-4}.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.aoml.noaa.gov/hrd/Landsea/Blakeetal_noaamemoApr2007.pdf}
+}
 
 \examples{
 data(Hurricanes)
-## maybe str(Hurricanes) ; plot(Hurricanes) ...
+Hurricanes
 }
 
 \keyword{datasets}

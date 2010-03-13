@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Sumo
+Sumo wrestling wins
 }
 
 \description{
-Sumo
+Counts of number of wins for sumo wrestlers.
 }
 
 \usage{data(Sumo)}
@@ -23,9 +23,9 @@ Sumo
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Duggan, M. and S.D. Leavitt. 2002. Winning isn't everything: Corruption in sumo wrestling. \emph{The American Economic Review} 92: 1594-1605.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,7 @@ Sumo
 
 \examples{
 data(Sumo)
-## maybe str(Sumo) ; plot(Sumo) ...
+Sumo
 }
 
 \keyword{datasets}

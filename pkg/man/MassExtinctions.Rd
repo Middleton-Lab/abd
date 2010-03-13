@@ -33,7 +33,47 @@ Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the marine fossil re
 
 \examples{
 data(MassExtinctions)
-## maybe str(MassExtinctions) ; plot(MassExtinctions) ...
+MassExtinctions
+
+sum((MassExtinctions$Number.of.extinctions *
+  MassExtinctions$Frequency) / 76)
+(wt.mean <- weighted.mean(MassExtinctions$Number.of.extinctions,
+  MassExtinctions$Frequency))
+
+n.extinctions <- rep(MassExtinctions$Number.of.extinctions,
+  times = MassExtinctions$Frequency)
+hist(n.extinctions,
+  ylim = c(0, 30),
+  xlab = "Number of Extinctions",
+  main = "Frequency of Mass Extinctions")
+
+(Pr.3 <- (exp(-wt.mean) * wt.mean^3) / factorial(3))
+76 * Pr.3
+
+# Calculate expected
+expected <- (exp(-wt.mean) * wt.mean^c(0:21) /
+  factorial(c(0:21))) * 76
+
+# Collapse some rows into a single expected value
+expected2 <- c(sum(expected[1:2]), expected[3:8], sum(expected[9:22]))
+expected2
+
+MassExtinctions2 <- rbind(MassExtinctions[-c(1, 9:21), ], c(8, 9))
+MassExtinctions2
+
+chisq <- sum((MassExtinctions2$Frequency - expected2)^2 / expected2)
+chisq
+pchisq(chisq, df = 6, lower.tail = FALSE)
+
+# Alternate using chisq.test()
+chisq.test(MassExtinctions2$Frequency, p = expected2, rescale.p = TRUE)
+
+# Second alternate using goodfit() from vcd package
+require(vcd)
+extinctions.fit <- goodfit(MassExtinctions$Frequency, type = "poisson",
+  method = "ML", par = list(lambda = wt.mean))
+summary(extinctions.fit)
+plot(extinctions.fit)
 }
 
 \keyword{datasets}

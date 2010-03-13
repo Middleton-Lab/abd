@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-WrasseSexes
+Distribution of Wrasses
 }
 
 \description{
-WrasseSexes
+Number and sex of adult wrasses in a section of the Great Barrier Reef.
 }
 
 \usage{data(WrasseSexes)}
@@ -34,7 +34,7 @@ WrasseSexes
 
 \examples{
 data(WrasseSexes)
-## maybe str(WrasseSexes) ; plot(WrasseSexes) ...
+WrasseSexes
 }
 
 \keyword{datasets}

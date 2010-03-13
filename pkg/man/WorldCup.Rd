@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-WorldCup
+World Cup goals
 }
 
 \description{
-WorldCup
+Number of goals per team during the 2002 World Cup.
 }
 
 \usage{data(WorldCup)}
@@ -33,7 +33,7 @@ WorldCup
 
 \examples{
 data(WorldCup)
-## maybe str(WorldCup) ; plot(WorldCup) ...
+WorldCup
 }
 
 \keyword{datasets}

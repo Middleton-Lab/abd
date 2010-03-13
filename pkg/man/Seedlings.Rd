@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Seedlings
+Number of seedlings per quadrat
 }
 
 \description{
-Seedlings
+Data on frequency of seeding per quadrat for 80 hypothetical quadrats.
 }
 
 \usage{data(Seedlings)}
@@ -33,7 +33,7 @@ Seedlings
 
 \examples{
 data(Seedlings)
-## maybe str(Seedlings) ; plot(Seedlings) ...
+Seedlings
 }
 
 \keyword{datasets}

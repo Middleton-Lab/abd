@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Cavalry
+Deaths from horse kicks
 }
 
 \description{
-Cavalry
+Numbers of deaths resulting from horse kicks per regiment-years for the Prussian army.
 }
 
 \usage{data(Cavalry)}
@@ -23,9 +23,9 @@ Cavalry
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Bortkiewicz, L. 1898. Das Gesetz der Kleinen Zahlen (Teubner, Leipzig), \emph{as cited in} Larson, R.J. and M.L. Marx. 1981. \emph{An Introduction to Mathematical Statistics and its Applications}. Prentice-Hall: Englewood Cliffs, NJ.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,7 @@ Cavalry
 
 \examples{
 data(Cavalry)
-## maybe str(Cavalry) ; plot(Cavalry) ...
+Cavalry
 }
 
 \keyword{datasets}

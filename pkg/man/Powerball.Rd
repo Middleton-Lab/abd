@@ -3,18 +3,18 @@
 \docType{data}
 
 \title{
-Powerball
+Powerball Tickets Sold
 }
 
 \description{
-Powerball
+The number of Powerball tickets sold per day of the week for three years.
 }
 
 \usage{data(Powerball)}
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{Day}}{a factor with levels \code{Friday} \code{Monday} \code{Saturday} \code{Sunday} \code{Thursday} \code{Tuesday} \code{Wednesday}}
+    \item{\code{Day}}{a character vector}
     \item{\code{Millions.of.tickets.sold}}{a numeric vector}
   }
 }
@@ -23,17 +23,17 @@ Powerball
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Oster, E. 2004. Dreaming big: Why do people play Powerball? \emph{Chance News} 13.02.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.dartmouth.edu/~chance/chance_news/recent_news/chance_news_13.02.html}
+}
 
 \examples{
 data(Powerball)
-## maybe str(Powerball) ; plot(Powerball) ...
+Powerball
 }
 
 \keyword{datasets}
