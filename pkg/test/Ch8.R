@@ -91,11 +91,15 @@ hist(n.extinctions,
 76 * Pr.3
 
 # Calculate expected
-expected <- (exp(-wt.mean) * wt.mean^c(0:21) /
-  factorial(c(0:21))) * 76
+expected <- (exp(-wt.mean) * wt.mean^c(0:20) /
+  factorial(c(0:20))) * 76
+# Alternately with dpois()
+expected.dpois <- dpois((0:20), lambda = wt.mean) * 76
+# Compare the two
+data.frame(expected, expected.dpois)
 
 # Collapse some rows into a single expected value
-expected2 <- c(sum(expected[1:2]), expected[3:8], sum(expected[9:22]))
+expected2 <- c(sum(expected[1:2]), expected[3:8], sum(expected[9:21]))
 expected2
 
 MassExtinctions2 <- rbind(MassExtinctions[-c(1, 9:21), ], c(8, 9))
@@ -103,18 +107,20 @@ MassExtinctions2
 
 chisq <- sum((MassExtinctions2$Frequency - expected2)^2 / expected2)
 chisq
-pchisq(chisq, df = 6, lower.tail = FALSE)
+1 - pchisq(chisq, df = 6)
 
-# Alternate using chisq.test()
-chisq.test(MassExtinctions2$Frequency, p = expected2, rescale.p = TRUE)
+# Alternate using chisq.test(). Note that df=7 here, because mu
+# is not estimated from the data.
+chisq.test(MassExtinctions2$Frequency, p = expected2,
+  rescale.p = TRUE)
 
 # Second alternate using goodfit() from vcd package
 require(vcd)
-extinctions.fit <- goodfit(MassExtinctions$Frequency, type = "poisson",
-  method = "ML", par = list(lambda = wt.mean))
+extinctions.fit <- goodfit(MassExtinctions2$Frequency)
 summary(extinctions.fit)
-plot(extinctions.fit)
 
+# Variance
+var(n.extinctions)
 
 ##########################################################################
 # 08q02	Powerball.csv
