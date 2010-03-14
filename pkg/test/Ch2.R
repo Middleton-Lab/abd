@@ -95,19 +95,6 @@ str(GreatTitMalaria)
 GreatTitMalaria
 
 # Table 2.3-1
-# see https://stat.ethz.ch/pipermail/r-help/2009-January/185561.html
-# for discussion of expand.dft(). Modified for GreatTitMalaria data.
-expand.dft <- function(x, na.strings = 'NA', as.is = FALSE, dec = '.'){
-  DF <- sapply(1:nrow(x), function(i) x[rep(i, each = x$Freq[i]), ], 
-    simplify = FALSE)
-  DF <- subset(do.call('rbind', DF), select = -Frequency)
-  for (i in 1:ncol(DF)){
-    DF[[i]] <- type.convert(as.character(DF[[i]]),
-      na.strings = na.strings, as.is = as.is, dec = dec)
-  }
-DF
-} 
-
 GTM.raw <- expand.dft(GreatTitMalaria)
 
 require(gmodels)
@@ -119,13 +106,15 @@ CrossTable(GTM.raw$Treatment, GTM.raw$Response,
   prop.t = FALSE)
 
 # Fig. 2.3-1
+\dontrun{
 require(ggplot2)
-bar <- ggplot(GreatTitMalaria,
+bar <- ggplot(GreatTitMalaria, 
   aes(x = Treatment, y = Frequency, fill = Response))
-bar + geom_bar(stat = 'identity', position = 'dodge')
+bar + geom_bar(stat = "identity", position = "dodge")
 
 # Fig. 2.3-2
-bar + geom_bar(stat = 'identity', position = 'fill')
+bar + geom_bar(stat = "identity", position = "fill")
+}
 
 
 ##########################################################################
@@ -226,19 +215,7 @@ data(ConvictionsAndIncome)
 str(ConvictionsAndIncome)
 ConvictionsAndIncome
 
-# see https://stat.ethz.ch/pipermail/r-help/2009-January/185561.html
-# for discussion of expand.dft(). Modified for ConvictionsAndIncome data.
-expand.dft <- function(x, na.strings = 'NA', as.is = FALSE, dec = '.'){
-  DF <- sapply(1:nrow(x), function(i) x[rep(i, each = x$n[i]), ], 
-    simplify = FALSE)
-  DF <- subset(do.call('rbind', DF), select = -n)
-  for (i in 1:ncol(DF)){
-    DF[[i]] <- type.convert(as.character(DF[[i]]),
-      na.strings = na.strings, as.is = as.is, dec = dec)
-  }
-DF
-} 
-
+names(ConvictionsAndIncome)[3] <- "Frequency"
 Conv.raw <- expand.dft(ConvictionsAndIncome)
 
 xtabs(data = Conv.raw)
@@ -250,6 +227,7 @@ CrossTable(Conv.raw$has.convictions, Conv.raw$income.level,
   prop.c = FALSE,
   prop.chisq = FALSE, 
   prop.t = FALSE)
+}
 
 ##########################################################################
 # 2q18

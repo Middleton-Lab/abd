@@ -7,19 +7,19 @@ library(abd)
 data(GlidingSnakeUndulations)
 
 hist(GlidingSnakeUndulations$undulation.rate,
-  col = 'red',
+  col = "red",
   breaks = 7,
-  main = '',
-  xlab = 'Undulation rate (Hz)',
-  ylab = 'Frequency')
+  main = "",
+  xlab = "Undulation rate (Hz)",
+  ylab = "Frequency")
 
 \dontrun{
 # Using ggplot()
 require(ggplot2)
 p <- ggplot(GlidingSnakeUndulations, aes(undulation.rate))
-p + geom_histogram(fill = 'red', binwidth = 0.2) +
-  scale_x_continuous('Undulation rate (Hz)') +
-  scale_y_continuous('Frequency')
+p + geom_histogram(fill = "red", binwidth = 0.2) +
+  scale_x_continuous("Undulation rate (Hz)") +
+  scale_y_continuous("Frequency")
 }
 
 # Mean, variance, standard deviation
@@ -50,21 +50,21 @@ median(SpiderRunningAmputation$speed.before)
 # Interquartile range
 SRA.summary[[5]] - SRA.summary[[2]]
 
-# Reformat data to 'long' format for boxplots
+# Reformat data to "long" format for boxplots
 SRA.long <- stack(SpiderRunningAmputation)
-names(SRA.long) <- c('speed', 'amputation.status')
+names(SRA.long) <- c("speed", "amputation.status")
 boxplot(speed ~ amputation.status, data = SRA.long,
-  names = c('After amputation', 'Before amputation'),
-  ylab = 'Running speed (cm/s)')
+  names = c("After amputation", "Before amputation"),
+  ylab = "Running speed (cm/s)")
 
 \dontrun{
 # Using ggplot()
 require(ggplot2)
 p <- ggplot(SRA.long, aes(amputation.status, speed))
 p + geom_boxplot() +
-  scale_x_discrete('', 
-    labels = c('After amputation', 'Before amputation')) +
-  scale_y_continuous('Running speed (cm/s)')
+  scale_x_discrete("", 
+    labels = c("After amputation", "Before amputation")) +
+  scale_y_continuous("Running speed (cm/s)")
 }
 
 
@@ -74,17 +74,17 @@ data(SticklebackPlates)
 
 op <- par(no.readonly = TRUE)
 par(mfrow = c(3, 1),
-  xaxs = 'i',
-  yaxs = 'i')
-for (i in c('mm', 'Mm', 'MM')){
+  xaxs = "i",
+  yaxs = "i")
+for (i in c("mm", "Mm", "MM")){
   subset.by.genotype <- subset(SticklebackPlates, genotype == i)
   hist(subset.by.genotype$no.plates,
     breaks = 30,
     xlim = c(0, 70),
     ylim = c(0, 50),
-    col = 'red',
-    ylab = 'Frequency',
-    xlab = 'Number of Lateral Body Plates',
+    col = "red",
+    ylab = "Frequency",
+    xlab = "Number of Lateral Body Plates",
     main = paste(i))
 }
 par(op)
@@ -92,15 +92,15 @@ par(op)
 \dontrun{
 require(ggplot2)
 p1 <- ggplot(SticklebackPlates, aes(no.plates))
-p1 + geom_histogram(fill = 'red', binwidth = 2) +
+p1 + geom_histogram(fill = "red", binwidth = 2) +
   facet_grid(genotype ~ .) +
-  scale_x_continuous('Number of Lateral Body Plates') +
-  scale_y_continuous('Frequency')
+  scale_x_continuous("Number of Lateral Body Plates") +
+  scale_y_continuous("Frequency")
   
 p2 <- ggplot(SticklebackPlates, aes(genotype, no.plates))
   p2 + geom_boxplot() +
-  scale_x_discrete('Genotype') +
-  scale_y_continuous('Number of Lateral Body Plates')
+  scale_x_discrete("Genotype") +
+  scale_y_continuous("Number of Lateral Body Plates")
 }
 
 

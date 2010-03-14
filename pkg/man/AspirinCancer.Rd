@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-AspirinCancer
+Effects of Aspirin on Cancer Rates
 }
 
 \description{
-AspirinCancer
+Frequency of cancer in 39,876 women taking and not taking aspirin.
 }
 
 \usage{data(AspirinCancer)}
@@ -16,7 +16,7 @@ AspirinCancer
   \describe{
     \item{\code{Aspirin.treatment}}{a factor with levels \code{Aspirin} \code{Placebo}}
     \item{\code{Cancer}}{a factor with levels \code{no} \code{yes}}
-    \item{\code{Frequency}}{a factor with levels \code{.} \code{1427} \code{1438} \code{18496}}
+    \item{\code{Frequency}}{a numeric vector}
   }
 }
 
@@ -35,6 +35,20 @@ Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Henn
 \examples{
 data(AspirinCancer)
 AspirinCancer
+
+AspirinCancer.expanded <- expand.dft(AspirinCancer)
+str(AspirinCancer.expanded)
+
+# Plot 2X2 Contingency tables
+plot( ~ Aspirin.treatment + Cancer, data = AspirinCancer.expanded)
+plot(table(AspirinCancer.expanded), main = "")
+
+# Calculate odds
+(Pr.asp <- 18496 / (18496 + 1438))
+(Odds.asp <- Pr.asp / (1 - Pr.asp))
+(Pr.no.asp <- 18515 / (18515 + 1427))
+(Odds.no.asp <- Pr.no.asp / (1 - Pr.no.asp))
+Odds.asp / Odds.no.asp
 }
 
 \keyword{datasets}

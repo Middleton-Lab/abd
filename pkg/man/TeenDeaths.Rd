@@ -30,8 +30,8 @@ TeenDeaths
 
 op <- par(no.readonly = TRUE)
 par(mai = c(2, 0.82, 0.25, 0.42),
-  xaxs = 'i',
-  yaxs = 'i')
+  xaxs = "i",
+  yaxs = "i")
 
 barplot(TeenDeaths$No.deaths,
   names.arg = TeenDeaths$Cause,
@@ -39,8 +39,8 @@ barplot(TeenDeaths$No.deaths,
   cex.axis = 0.75,
   cex.names = 0.75,
   ylim = c(0, 7000),
-  ylab = 'Number of Cases (frequency)',
-	col = 'red')
+  ylab = "Number of Cases (frequency)",
+	col = "red")
 
 par(op)
 }

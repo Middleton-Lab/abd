@@ -36,19 +36,19 @@ Socha, J.J. 2002. Gliding flight in the paradise tree snake. \emph{Nature} 418: 
 data(GlidingSnakeUndulations)
 
 hist(GlidingSnakeUndulations$undulation.rate,
-  col = 'red',
+  col = "red",
   breaks = 7,
-  main = '',
-  xlab = 'Undulation rate (Hz)',
-  ylab = 'Frequency')
+  main = "",
+  xlab = "Undulation rate (Hz)",
+  ylab = "Frequency")
 
 \dontrun{
 # Using ggplot()
 require(ggplot2)
 p <- ggplot(GlidingSnakeUndulations, aes(undulation.rate))
-p + geom_histogram(fill = 'red', binwidth = 0.2) +
-  scale_x_continuous('Undulation rate (Hz)') +
-  scale_y_continuous('Frequency')}
+p + geom_histogram(fill = "red", binwidth = 0.2) +
+  scale_x_continuous("Undulation rate (Hz)") +
+  scale_y_continuous("Frequency")}
 
 # Mean, variance, standard deviation
 #   Wrapping in () prints the output to the console
