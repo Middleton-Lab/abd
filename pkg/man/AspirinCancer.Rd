@@ -24,16 +24,17 @@ AspirinCancer
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the primary prevention of cancer. Journal of the American Medical Association 294: 47-55.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jama.ama-assn.org/cgi/content/abstract/294/1/47}
+}
 
 \examples{
 data(AspirinCancer)
+AspirinCancer
 }
 
 \keyword{datasets}
