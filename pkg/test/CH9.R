@@ -40,3 +40,24 @@ exp(CI.high)
 
 ##########################################################################
 # 09e3	ParasiteBrainWarp.csv
+data(ParasiteBrainWarp)
+ParasiteBrainWarp
+
+names(ParasiteBrainWarp)[3] <- "Frequency"
+save(ParasiteBrainWarp, file = "ParasiteBrainWarp.rda")
+
+data(ParasiteBrainWarp)
+ParasiteBrainWarp
+
+ParasiteBrainWarp.long <- expand.dft(ParasiteBrainWarp)
+table(ParasiteBrainWarp.long)
+xtabs(~ eaten + infection.status, data = ParasiteBrainWarp.long)
+
+require(gmodels)
+CrossTable(ParasiteBrainWarp.long$eaten, ParasiteBrainWarp.long$infection.status,
+  expected = TRUE,
+  prop.r = FALSE,
+  prop.c = FALSE,
+  prop.chisq = TRUE, 
+  prop.t = FALSE)
+}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-ParasiteBrainWarp
+Frequencies of fish eaten by nematode infection level
 }
 
 \description{
-ParasiteBrainWarp
+Frequencies of killifish (\emph{Fundulus parvipinnis}) eaten by birds depending on level of infection by the trematode \emph{Euhaplorchis californiensis}.
 }
 
 \usage{data(ParasiteBrainWarp)}
@@ -16,7 +16,7 @@ ParasiteBrainWarp
   \describe{
     \item{\code{infection.status}}{a factor with levels \code{high} \code{light} \code{uninfected}}
     \item{\code{eaten}}{a factor with levels \code{no} \code{yes}}
-    \item{\code{frequency}}{a numeric vector}
+    \item{\code{Frequency}}{a numeric vector}
   }
 }
 
@@ -24,9 +24,9 @@ ParasiteBrainWarp
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized killifish increases susceptibility to predation by bird final hosts. \emph{Ecology} 77: 1390-1397.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -34,7 +34,20 @@ ParasiteBrainWarp
 
 \examples{
 data(ParasiteBrainWarp)
-## maybe str(ParasiteBrainWarp) ; plot(ParasiteBrainWarp) ...
+ParasiteBrainWarp
+
+ParasiteBrainWarp.long <- expand.dft(ParasiteBrainWarp)
+table(ParasiteBrainWarp.long)
+xtabs(~ eaten + infection.status, data = ParasiteBrainWarp.long)
+
+require(gmodels)
+CrossTable(ParasiteBrainWarp.long$eaten, ParasiteBrainWarp.long$infection.status,
+  expected = TRUE,
+  prop.r = FALSE,
+  prop.c = FALSE,
+  prop.chisq = TRUE, 
+  prop.t = FALSE)
+}
 }
 
 \keyword{datasets}
