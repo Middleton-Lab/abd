@@ -7,7 +7,7 @@ Ornamentation and attractiveness in guppies
 }
 
 \description{
-The father's ornamentation (composite score of color and brightness) and son's attractiveness (relative rates of visits by females) in male guppies (\emph{Poecilia reticulata}).
+The father"s ornamentation (composite score of color and brightness) and son"s attractiveness (relative rates of visits by females) in male guppies (\emph{Poecilia reticulata}).
 }
 
 \usage{data(GuppyAttractiveness)}
@@ -36,10 +36,10 @@ data(GuppyAttractiveness)
 
 str(GuppyAttractiveness)
 plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
-  xlab = "Father's ornamentation",
-  ylab = "Son's attractiveness",
+  xlab = "Father"s ornamentation",
+  ylab = "Son"s attractiveness",
   pch = 16,
-  col = 'red',
+  col = "red",
   ylim = c(-0.5, 1.5))
 
 # with ggplot2
@@ -47,9 +47,9 @@ plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
 require(ggplot2)
 p <- ggplot(GuppyAttractiveness,
   aes(x = father.ornament, y = son.attract))
-p + geom_point(color = 'red', size = 3) +
-  scale_x_continuous("Father's ornamentation") +
-  scale_y_continuous("Son's attractiveness")
+p + geom_point(color = "red", size = 3) +
+  scale_x_continuous("Father"s ornamentation") +
+  scale_y_continuous("Son"s attractiveness")
 }
 
 }

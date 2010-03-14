@@ -48,7 +48,16 @@ plot(table(AspirinCancer.expanded), main = "")
 (Odds.asp <- Pr.asp / (1 - Pr.asp))
 (Pr.no.asp <- 18515 / (18515 + 1427))
 (Odds.no.asp <- Pr.no.asp / (1 - Pr.no.asp))
-Odds.asp / Odds.no.asp
+(Odds <- Odds.asp / Odds.no.asp)
+ln.Odds <- log(Odds)
+
+(SE.Odds <- sqrt(sum(1/AspirinCancer$Frequency)))
+Z <- 1.96
+(CI.low <- ln.Odds - Z * SE.Odds)
+(CI.high <- ln.Odds + Z * SE.Odds)
+
+exp(CI.low)
+exp(CI.high)
 }
 
 \keyword{datasets}

@@ -35,26 +35,26 @@ Elton, C. and M. Nicholson. 1942. The ten-year cycle in numbers of the lynx in C
 data(LynxPopulationCycles)
 
 plot(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  type = 'l',
-  xlab = 'Year',
-  ylab = 'Lynx fur returns')
+  type = "l",
+  xlab = "Year",
+  ylab = "Lynx fur returns")
 points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  col = 'red',
+  col = "red",
   pch = 16)
 
 \dontrun{
 # Alternate form converting to Date class.
-Year <- as.Date(paste('01jan', LynxPopulationCycles$date, sep = ''),
-  '\%d\%b\%Y')
+Year <- as.Date(paste("01jan", LynxPopulationCycles$date, sep = ""),
+  "\%d\%b\%Y")
 LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
 
 require(ggplot2)
 p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
 p + geom_line() + 
-  geom_point(color = 'red') +
-  scale_y_continuous('Lynx fur returns') +
+  geom_point(color = "red") +
+  scale_y_continuous("Lynx fur returns") +
   opts(panel.grid.minor = theme_blank()) +
-  opts(panel.grid.major = theme_line(size = 0.25, colour = 'white'))}
+  opts(panel.grid.major = theme_line(size = 0.25, colour = "white"))}
 
 }
 

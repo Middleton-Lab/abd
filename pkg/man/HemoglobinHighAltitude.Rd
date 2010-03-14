@@ -41,17 +41,17 @@ str(HemoglobinHighAltitude)
 require(ggplot2)
 
 labels <- data.frame( # Create a data.frame to hold the labels
-  Elev = c('4000 m', '3530 m', '4000 m', '0 m'),
-  group = c('Andes', 'Ethiopia', 'Tibet', 'USA'),
+  Elev = c("4000 m", "3530 m", "4000 m", "0 m"),
+  group = c("Andes", "Ethiopia", "Tibet", "USA"),
   x = rep(24, times = 4),
   y = rep(0.4, times = 4))
 
 p <- ggplot(HemoglobinHighAltitude,
   aes(haemoglobin, relative.frequency))
-p + geom_bar(stat="identity", fill = 'red')  +
+p + geom_bar(stat="identity", fill = "red")  +
   facet_grid(group ~ .) +
-  scale_x_continuous('Hemoglobin concentration (g/dL)') +
-  scale_y_continuous('Relative frequency') +
+  scale_x_continuous("Hemoglobin concentration (g/dL)") +
+  scale_y_continuous("Relative frequency") +
   geom_text(data = labels, aes(x, y, label = Elev), hjust = 1, size = 3)
 }
 

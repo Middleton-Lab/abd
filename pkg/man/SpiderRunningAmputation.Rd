@@ -44,21 +44,21 @@ median(SpiderRunningAmputation$speed.before)
 # Interquartile range
 SRA.summary[[5]] - SRA.summary[[2]]
 
-# Reformat data to 'long' format for boxplots
+# Reformat data to "long" format for boxplots
 SRA.long <- stack(SpiderRunningAmputation)
-names(SRA.long) <- c('speed', 'amputation.status')
+names(SRA.long) <- c("speed", "amputation.status")
 boxplot(speed ~ amputation.status, data = SRA.long,
-  names = c('After amputation', 'Before amputation'),
-  ylab = 'Running speed (cm/s)')
+  names = c("After amputation", "Before amputation"),
+  ylab = "Running speed (cm/s)")
 
 \dontrun{
 # Using ggplot()
 require(ggplot2)
 p <- ggplot(SRA.long, aes(amputation.status, speed))
 p + geom_boxplot() +
-  scale_x_discrete('',
-    labels = c('After amputation', 'Before amputation')) +
-  scale_y_continuous('Running speed (cm/s)')}
+  scale_x_discrete("",
+    labels = c("After amputation", "Before amputation")) +
+  scale_y_continuous("Running speed (cm/s)")}
 
 }
 

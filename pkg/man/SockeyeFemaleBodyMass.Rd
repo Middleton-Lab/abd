@@ -39,15 +39,15 @@ summary(SockeyeFemaleBodyMass)
 dev.new(width = 9, height = 3)
 op <- par(no.readonly = TRUE)
 par(mfrow = c(1, 3),
-  xaxs = 'i',
-  yaxs = 'i')
+  xaxs = "i",
+  yaxs = "i")
 for (breaks in c(30, 10, 5)){
   hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
     xlim = c(1, 4),
-    col = 'red',
-    ylab = 'Frequency',
-    xlab = 'Body mass (kg)',
-    main = '')
+    col = "red",
+    ylab = "Frequency",
+    xlab = "Body mass (kg)",
+    main = "")
 }
 par(op)
 
