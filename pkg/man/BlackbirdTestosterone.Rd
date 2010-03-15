@@ -3,14 +3,15 @@
 \docType{data}
 
 \title{
-BlackbirdTestosterone
+Testosterone Levels in Blackbirds
 }
 
 \description{
-BlackbirdTestosterone
+Experimental manipulation of testosterone levels in male Red-winged Blackbirds and resulting changes in antibody levels
 }
 
 \usage{data(BlackbirdTestosterone)}
+
 \format{
   A data frame with 13 observations on the following 6 variables.
   \describe{
@@ -27,9 +28,9 @@ BlackbirdTestosterone
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Hasselquist, D., J.A. Marsh, P.W. Sherman, and J.C. Wingfield. 1999. Is avian immunocompetence suppressed by testosterone? \emph{Behavioral Ecology and Sociobiology} 45: 167-175.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

@@ -48,6 +48,6 @@ CrossTable(ParasiteBrainWarp.long$eaten, ParasiteBrainWarp.long$infection.status
   prop.chisq = TRUE, 
   prop.t = FALSE)
 }
-}
+
 
 \keyword{datasets}

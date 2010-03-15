@@ -1,20 +1,21 @@
 \name{HornedLizards}
 \alias{HornedLizards}
+
 \docType{data}
 
 \title{
-HornedLizards
+Horn length and predation status of 184 lizards
 }
-
 \description{
-HornedLizards
+Squamosal horn length (mm; \code{Squamosal.horn.length}) and predation status (\code{Survive}; 1 = living; 0 = killed) for 184 horned lizards (\emph{Phrynosoma mcalli}).
 }
 
 \usage{data(HornedLizards)}
+
 \format{
-  A data frame with 185 observations on the following 2 variables.
+  A data frame with 184 observations on the following 2 variables.
   \describe{
-    \item{\code{Squamosal.horn.length}}{a factor with levels \code{.} \code{13.1} \code{15.2} \code{15.5} \code{15.7} \code{17.2} \code{17.7} \code{18.5} \code{19} \code{19.2} \code{19.3} \code{19.7} \code{19.9} \code{20} \code{20.2} \code{20.5} \code{20.6} \code{20.7} \code{20.8} \code{20.9} \code{21} \code{21.1} \code{21.3} \code{21.4} \code{21.5} \code{21.6} \code{21.7} \code{21.9} \code{22} \code{22.4} \code{22.5} \code{22.6} \code{22.7} \code{22.8} \code{22.9} \code{23} \code{23.1} \code{23.2} \code{23.3} \code{23.4} \code{23.5} \code{23.6} \code{23.7} \code{23.8} \code{23.9} \code{24} \code{24.1} \code{24.2} \code{24.3} \code{24.4} \code{24.5} \code{24.6} \code{24.7} \code{24.8} \code{24.9} \code{25} \code{25.1} \code{25.2} \code{25.3} \code{25.4} \code{25.5} \code{25.6} \code{25.7} \code{25.8} \code{25.9} \code{26} \code{26.1} \code{26.3} \code{26.4} \code{26.5} \code{26.6} \code{26.7} \code{26.8} \code{26.9} \code{27} \code{27.1} \code{27.2} \code{27.3} \code{27.4} \code{27.5} \code{27.6} \code{27.7} \code{28} \code{28.1} \code{28.2} \code{28.8} \code{29.1} \code{29.5} \code{30.3}}
+    \item{\code{Squamosal.horn.length}}{a numeric vector}
     \item{\code{Survive}}{a numeric vector}
   }
 }
@@ -23,17 +24,65 @@ HornedLizards
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Young, K.V., E.D. Brodie, Jr., and E.D. Brodie, III. 2004. How the horned lizard got its horns. \emph{Science} 304: 65.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sciencemag.org/cgi/pdf_extract/304/5667/65}
+}
 
 \examples{
 data(HornedLizards)
-## maybe str(HornedLizards) ; plot(HornedLizards) ...
+str(HornedLizards)
+
+# Subset living and killed. Drop the Survive column as well.
+living <- subset(HornedLizards, Survive == 1)$Squamosal.horn.length
+killed <- subset(HornedLizards, Survive == 0)$Squamosal.horn.length
+
+# Plot histograms of living and killed
+dev.new()
+par(mfrow = c(2, 1))
+hist(living, main = "Living", xlab = "Horn Length (mm)")
+hist(killed, main = "Killed", xlab = "Horn Length (mm)")
+
+# Confidence interval for the difference of two means
+df.l <- 153
+df.k <- 29
+df.tot <- df.l + df.k
+(y.bar.l <- mean(living))
+(y.bar.k <- mean(killed))
+(y.bar.diff <- y.bar.l - y.bar.k)
+
+(var.pooled <- (df.l * var(living) + df.k * var(killed)) / df.tot)
+
+# Note that se below uses n (not n - 1)
+(se.diff.means <- sqrt(var.pooled * (1/154 + 1/30)))
+
+# A two-sided test, so we need 0.05/2 on each side
+(t.crit <- qt(1-(0.05/2), df = df.tot))
+
+# Lower 95%
+y.bar.diff - t.crit * se.diff.means
+
+# Upper 95%
+y.bar.diff + t.crit * se.diff.means
+
+# Calculate the t-statistic for a two-sample t-test
+(t.stat <- y.bar.diff / se.diff.means)
+pt(t.stat, df = df.tot, lower.tail = FALSE)
+
+# 1. t-test assuming equal variances with t.test()
+t.test(living, killed, var.equal = TRUE)
+
+# 2. Convert Survive to a factor and use t.test() with a formula
+#    Not necessary to convert to factor, but useful for pretty output
+HornedLizards$Survive <- factor(HornedLizards$Survive, levels = c(1, 0), labels = c("Living", "Killed"))
+str(HornedLizards)
+t.test(Squamosal.horn.length ~ Survive, data = HornedLizards, var.equal = TRUE)
+
+# 3. Welch's t-test not assuming equal variances, the t.test() default
+t.test(living, killed, var.equal = FALSE)
 }
 
 \keyword{datasets}
