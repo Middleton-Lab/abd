@@ -11,20 +11,20 @@ str(HumanGeneLengths)
 genes.under.15k <- subset(HumanGeneLengths, gene.length < 15000)
 
 # Remove default space between the origin and the axes
-par(xaxs = 'i', yaxs = 'i')
+par(xaxs = "i", yaxs = "i")
 
 hist(genes.under.15k$gene.length,
   breaks = 30,
   ylim = c(0, 3000),
-  xlab = 'Gene length (number of nucleotides)',
-  col = 'red')
+  xlab = "Gene length (number of nucleotides)",
+  col = "red")
 
 \dontrun{
 require(ggplot2)
 p <- ggplot(genes.under.15k, aes(gene.length))
-p + geom_histogram(fill = 'red') +
-  scale_x_continuous('Gene length (number of nucleotides)') +
-  scale_y_continuous('Frequency')
+p + geom_histogram(fill = "red") +
+  scale_x_continuous("Gene length (number of nucleotides)") +
+  scale_y_continuous("Frequency")
 }
 
 
@@ -38,11 +38,12 @@ set.seed(1234) # For repeatability
 random.gene.lenghts <- sample(HumanGeneLengths$gene.length, size = 100)
 # Note that random.gene.lengths is a vector, rather than a data.frame
 
-par(xaxs = 'i', yaxs = 'i')
+par(xaxs = "i", yaxs = "i")
 hist(random.gene.lenghts,
   breaks = 30,
-  xlab = 'Gene length (number of nucleotides)',
-  col = 'red')
+  xlab = "Gene length (number of nucleotides)",
+  col = "red")
+
 
 # Sample mean and standard deviation
 mean(random.gene.lenghts)
@@ -60,22 +61,16 @@ for (i in 1:nreps){
   sample.mean[i] <- mean(random.sample)
   }
 
-par(xaxs = 'i', yaxs = 'i')
+par(xaxs = "i", yaxs = "i")
 hist(sample.mean,
   breaks = 30,
-  xlab = 'Sample mean length (nucleotides)',
-  col = 'red')
+  xlab = "Sample mean length (nucleotides)",
+  col = "red")
 
 # Comparison of the distribution of sample means and standard errors
 # for different sample sizes
-
-# Define a function to calculate standard error
-se <- function(x){
-  sd(x)/sqrt(length(x))
-  }
-
 set.seed(6)
-par(xaxs = 'i', yaxs = 'i')
+par(xaxs = "i", yaxs = "i")
 par(mfrow = c(3, 1))
 nreps = 10000
 for (n in c(20, 100, 500)){
@@ -92,20 +87,20 @@ for (n in c(20, 100, 500)){
 
   hist.bins <- hist(sample.mean, breaks = 30, plot = FALSE)
 
-  par(xaxs = 'i', yaxs = 'i')
+  par(xaxs = "i", yaxs = "i")
   hist(sample.mean,
     breaks = 30,
     xlim = c(1000, 5000),
-    xlab = 'Sample mean length (nucleotides)',
-    col = 'red',
-    main = '')
-  abline(v = mean(sample.mean), col = 'blue', lwd = 2)
+    xlab = "Sample mean length (nucleotides)",
+    col = "red",
+    main = "")
+  abline(v = mean(sample.mean), col = "blue", lwd = 2)
   text(x = 3000, y = 0.7 * max(hist.bins$counts), 
     pos = 4,
-    paste('n = ', n, 
-      '\nmean = ', round(mean(sample.mean), digits = 2), 
-      '\nsd = ', round(mean(sample.sd), digits = 2), 
-      '\nse = ', round(mean(sample.se), digits = 2), sep = ''))
+    paste("n = ", n, 
+      "\nmean = ", round(mean(sample.mean), digits = 2), 
+      "\nsd = ", round(mean(sample.sd), digits = 2), 
+      "\nse = ", round(mean(sample.se), digits = 2), sep = ""))
 }
 
 ##########################################################################

@@ -97,12 +97,6 @@ hist(sample.mean,
 
 # Comparison of the distribution of sample means and standard errors
 # for different sample sizes
-
-# Define a function to calculate standard error
-se <- function(x){
-  sd(x)/sqrt(length(x))
-  }
-
 set.seed(6)
 par(xaxs = "i", yaxs = "i")
 par(mfrow = c(3, 1))

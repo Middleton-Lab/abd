@@ -13,10 +13,6 @@ Fig. 8.1-1 ggplot
 
 -------------------------------
 
-09e3	ParasiteBrainWarp.csv
-09e4	VampireBites.csv
-
-11e2	Stalkies.csv
 11e3	Temperature.csv
 11q02	WolfTeeth.csv
 11q10	SyrupSwimming.csv
@@ -165,3 +161,6 @@ DONE
 08q17	WrasseSexes.csv
 08q18	Hurricanes.csv
 09e2	AspirinCancer.csv
+09e3	ParasiteBrainWarp.csv
+09e4	VampireBites.csv
+11e2	Stalkies.csv

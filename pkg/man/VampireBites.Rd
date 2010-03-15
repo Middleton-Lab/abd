@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-VampireBites
+Vampire Bat Bites
 }
 
 \description{
-VampireBites
+Numbers of cattle bitten by the cow's estrous cycle.
 }
 
 \usage{data(VampireBites)}
@@ -24,9 +24,9 @@ VampireBites
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Turner, D.C. 1975. \emph{The vampire bat: a field study in behavior and ecology}. Johns Hopkins Press: Baltimore, MD.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -34,7 +34,15 @@ VampireBites
 
 \examples{
 data(VampireBites)
-## maybe str(VampireBites) ; plot(VampireBites) ...
+VampireBites
+
+fisher.test(matrix(VampireBites$Frequency, ncol = 2))
+
+# With G-test
+# Source from http://www.psych.ualberta.ca/~phurd/cruft/
+source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
+g.test(matrix(VampireBites$Frequency, ncol = 2))
+g.test(matrix(VampireBites$Frequency, ncol = 2))$expected
 }
 
 \keyword{datasets}

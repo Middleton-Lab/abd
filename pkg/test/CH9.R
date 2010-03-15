@@ -6,10 +6,10 @@ setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/t
 
 ##########################################################################
 # 09e2	AspirinCancer.csv
-data(AspirinCancer)
-AspirinCancer
-AspirinCancer$Frequency <- c(1438, 18496, 1427, 18515)
-save(AspirinCancer, file = "AspirinCancer.rda")
+#data(AspirinCancer)
+#AspirinCancer
+#AspirinCancer$Frequency <- c(1438, 18496, 1427, 18515)
+#save(AspirinCancer, file = "AspirinCancer.rda")
 
 data(AspirinCancer)
 AspirinCancer
@@ -40,11 +40,10 @@ exp(CI.high)
 
 ##########################################################################
 # 09e3	ParasiteBrainWarp.csv
-data(ParasiteBrainWarp)
-ParasiteBrainWarp
-
-names(ParasiteBrainWarp)[3] <- "Frequency"
-save(ParasiteBrainWarp, file = "ParasiteBrainWarp.rda")
+#data(ParasiteBrainWarp)
+#ParasiteBrainWarp
+#names(ParasiteBrainWarp)[3] <- "Frequency"
+#save(ParasiteBrainWarp, file = "ParasiteBrainWarp.rda")
 
 data(ParasiteBrainWarp)
 ParasiteBrainWarp
@@ -61,3 +60,22 @@ CrossTable(ParasiteBrainWarp.long$eaten, ParasiteBrainWarp.long$infection.status
   prop.chisq = TRUE, 
   prop.t = FALSE)
 }
+
+
+##########################################################################
+# 09e4	VampireBites.csv
+#data(VampireBites)
+#VampireBites
+#names(VampireBites)[3] <- "Frequency"
+#save(VampireBites, file = "VampireBites.rda")
+
+data(VampireBites)
+VampireBites
+
+fisher.test(matrix(VampireBites$Frequency, ncol = 2))
+
+# With G-test
+# Source from http://www.psych.ualberta.ca/~phurd/cruft/
+source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
+g.test(matrix(VampireBites$Frequency, ncol = 2))
+g.test(matrix(VampireBites$Frequency, ncol = 2))$expected
