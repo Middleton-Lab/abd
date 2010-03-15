@@ -13,12 +13,6 @@ Fig. 8.1-1 ggplot
 
 -------------------------------
 
-11e3	Temperature.csv
-11q02	WolfTeeth.csv
-11q10	SyrupSwimming.csv
-11q13	DolphinsClockwise.csv
-11q14	SticklebackPreference.csv
-
 12e2	BlackbirdTestosterone.csv
 12e3	HornedLizards.csv
 12e4	BrookTrout.csv
@@ -164,3 +158,8 @@ DONE
 09e3	ParasiteBrainWarp.csv
 09e4	VampireBites.csv
 11e2	Stalkies.csv
+11e3	Temperature.csv
+11q02	WolfTeeth.csv
+11q10	SyrupSwimming.csv
+11q13	DolphinsClockwise.csv
+11q14	SticklebackPreference.csv
