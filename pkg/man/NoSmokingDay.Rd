@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-NoSmokingDay
+No Smoking Day
 }
 
 \description{
-NoSmokingDay
+Number of workplace injuries on No Smoking Day (\code{Injuries.on.NSD}) compared to the same Wednesday in the previous year (\code{Injuries.before.NSD}) for 1987-1996.
 }
 
 \usage{data(NoSmokingDay)}
@@ -24,17 +24,17 @@ NoSmokingDay
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Waters, A.J., M.J. Jarvis, and S.R. Sutton. 1998. Nicotine withdrawal and accident rates. \emph{Nature} 394: 137.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nosmokingday.org.uk/}
+}
 
 \examples{
 data(NoSmokingDay)
-## maybe str(NoSmokingDay) ; plot(NoSmokingDay) ...
+NoSmokingDay
 }
 
 \keyword{datasets}

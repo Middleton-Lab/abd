@@ -3,20 +3,20 @@
 \docType{data}
 
 \title{
-ElectricFish
+Electric Fish
 }
 
 \description{
-ElectricFish
+Species abundance of electric fish upstream and downstream of the entrance of a tributary in the Amazon basin.
 }
 
 \usage{data(ElectricFish)}
 \format{
   A data frame with 12 observations on the following 3 variables.
   \describe{
-    \item{\code{Tributary}}{a charactervector}
-    \item{\code{Species.upstream}}{a numeric vector}
-    \item{\code{Species.downstream}}{a numeric vector}
+    \item{\code{Tributary}}{a character vector}
+    \item{\code{Species.upstream}}{a numeric vector of the number of species of electric fish present upstream of the tributary}
+    \item{\code{Species.downstream}}{a numeric vector of the number of species of electric fish present downstream of the tributary}
   }
 }
 
@@ -24,17 +24,17 @@ ElectricFish
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Fernandes, C.C., J. Podos, and J.G. Lundberg. 2004. Amazonian ecology: tributaries enhance the diversity of electric fishes. \emph{Science} 305: 1960-1962.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sciencemag.org/cgi/content/abstract/305/5692/1960}
+}
 
 \examples{
 data(ElectricFish)
-## maybe str(ElectricFish) ; plot(ElectricFish) ...
+ElectricFish
 }
 
 \keyword{datasets}

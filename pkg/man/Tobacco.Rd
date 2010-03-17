@@ -3,20 +3,20 @@
 \docType{data}
 
 \title{
-Tobacco
+Flower Length in Tobacco Plants
 }
 
 \description{
-Tobacco
+Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 }
 
 \usage{data(Tobacco)}
 \format{
   A data frame with 13 observations on the following 3 variables.
   \describe{
-    \item{\code{Flower.Length}}{a numeric vector}
-    \item{\code{f1}}{a factor with levels \code{.} \code{0} \code{10} \code{3} \code{4} \code{40} \code{41} \code{75}}
-    \item{\code{f2}}{a numeric vector}
+    \item{\code{Flower.Length}}{a numeric vector of flower length in mm}
+    \item{\code{f1}}{a numeric vector of the number of F1 plants with flower lengths in this size range}
+    \item{\code{f2}}{a numeric vector of the number of F2 plants with flower lengths in this size range}
   }
 }
 
@@ -24,17 +24,19 @@ Tobacco
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+East, E.M. 1916. Studies On Size Inheritance in \emph{Nicotiana}. Genetics 1: 164-176.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.genetics.org/content/vol1/issue2/}
+
+\url{http://en.wikipedia.org/wiki/Nicotiana}
+}
 
 \examples{
 data(Tobacco)
-## maybe str(Tobacco) ; plot(Tobacco) ...
+Tobacco
 }
 
 \keyword{datasets}

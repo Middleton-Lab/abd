@@ -13,19 +13,71 @@ Fig. 8.1-1 ggplot
 
 -------------------------------
 
-12e3	HornedLizards.csv
-12e4	BrookTrout.csv
-12q02	NoSmokingDay.csv
-12q03	Iguanas.csv
-12q05	MonogamousTestes.csv
-12q09	Cichlids.csv
-12q10	Tobacco.csv
-12q11	WillsPresidents.csv
-12q13	OstrichTemp.csv
-12q15	PrimateWPC.csv
-12q16	StalkieEyespan.csv
-12q19	ElectricFish.csv
-12q23	WeddellSeals.csv
+X 02.1a	TeenDeaths.csv
+X 02.1b	DesertBirds.csv
+X 02.1c	SockeyeFemaleBodyMass.csv
+X 02.3		GreatTitMalaria.csv
+X 02.4		HemoglobinHighAltitude.csv
+X 02.5a	GuppyAttractiveness.csv
+X 02.5b	LynxPopulationCycles.csv
+X 02q6		EndangeredSpecies.csv
+X 02q10	ShuttleDisaster.csv
+X 02q16	CriminalConvictions.csv
+X 02q17	ConvictionsAndIncome.csv
+X 02q18	FireflySpermatophoreMass.csv
+X 02q23	NeotropicalTreePhotosynthesis.csv
+
+X 03e1	GlidingSnakeUndulations.csv
+X 03e2	SpiderRunningAmputation.csv
+X 03e3	SticklebackPlates.csv
+X 03q04	KenyaFinches.csv
+X 03q09	Rigormortis.csv
+X 03q10	NorthSeaCodRecruits.csv
+X 03q11	VasopressinVoles.csv
+X 03q12	AntillesImmigrationDates.csv
+X 03q13	DietBreadthElVerde.csv
+X 03q18	SparrowReproductiveSuccess.csv
+
+X 04e1	HumanGeneLengths.csv
+
+X 08e1	DayOfBirth.csv
+X 08e5	NumberOfBoys.csv
+X 08e6	MassExtinctions.csv
+X 08q02	Powerball.csv
+X 08q03	ShadParasites.csv
+X 08q04	Seedlings.csv
+X 08q05	WorldCup.csv
+X 08q06	Sumo.csv
+X 08q14	Cavalry.csv
+X 08q16	Truffles.csv
+X 08q17	WrasseSexes.csv
+X 08q18	Hurricanes.csv
+
+X 09e2	AspirinCancer.csv
+X 09e3	ParasiteBrainWarp.csv
+X 09e4	VampireBites.csv
+
+X 11e2	Stalkies.csv
+X 11e3	Temperature.csv
+X 11q02	WolfTeeth.csv
+X 11q10	SyrupSwimming.csv
+X 11q13	DolphinsClockwise.csv
+X 11q14	SticklebackPreference.csv
+
+X 12e2	BlackbirdTestosterone.csv
+X 12e3	HornedLizards.csv
+X 12e4	BrookTrout.csv
+X 12q02	NoSmokingDay.csv
+X 12q03	Iguanas.csv
+X 12q05	MonogamousTestes.csv
+X 12q09	Cichlids.csv
+X 12q10	Tobacco.csv
+X 12q11	WillsPresidents.csv
+X 12q13	OstrichTemp.csv
+X 12q15	PrimateWPC.csv
+X 12q16	StalkieEyespan.csv
+X 12q19	ElectricFish.csv
+X 12q23	WeddellSeals.csv
 
 13e1	MarineReserve.csv
 13e4	SexualSelection.csv
@@ -114,52 +166,3 @@ Fig. 8.1-1 ggplot
 20q18	BeeLifespans.csv
 
 selection.txt
-
-DONE
--------------------------------
-2.1a	TeenDeaths.csv
-2.1b	DesertBirds.csv
-2.1c	SockeyeFemaleBodyMass.csv
-2.3		GreatTitMalaria.csv
-2.4		HemoglobinHighAltitude.csv
-2.5a	GuppyAttractiveness.csv
-2.5b	LynxPopulationCycles.csv
-2q6		EndangeredSpecies.csv
-2q10	ShuttleDisaster.csv
-2q16	CriminalConvictions.csv
-2q17	ConvictionsAndIncome.csv
-2q18	FireflySpermatophoreMass.csv
-2q23	NeotropicalTreePhotosynthesis.csv
-03e1	GlidingSnakeUndulations.csv
-03e2	SpiderRunningAmputation.csv
-03e3	SticklebackPlates.csv
-03q04	KenyaFinches.csv
-03q09	Rigormortis.csv
-03q10	NorthSeaCodRecruits.csv
-03q11	VasopressinVoles.csv
-03q12	AntillesImmigrationDates.csv
-03q13	DietBreadthElVerde.csv
-03q18	SparrowReproductiveSuccess.csv
-04e1	HumanGeneLengths.csv
-08e1	DayOfBirth.csv
-08e5	NumberOfBoys.csv
-08e6	MassExtinctions.csv
-08q02	Powerball.csv
-08q03	ShadParasites.csv
-08q04	Seedlings.csv
-08q05	WorldCup.csv
-08q06	Sumo.csv
-08q14	Cavalry.csv
-08q16	Truffles.csv
-08q17	WrasseSexes.csv
-08q18	Hurricanes.csv
-09e2	AspirinCancer.csv
-09e3	ParasiteBrainWarp.csv
-09e4	VampireBites.csv
-11e2	Stalkies.csv
-11e3	Temperature.csv
-11q02	WolfTeeth.csv
-11q10	SyrupSwimming.csv
-11q13	DolphinsClockwise.csv
-11q14	SticklebackPreference.csv
-12e2	BlackbirdTestosterone.csv

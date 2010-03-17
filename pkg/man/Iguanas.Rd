@@ -3,36 +3,36 @@
 \docType{data}
 
 \title{
-Iguanas
+Iguana Body Length Changes
 }
 
 \description{
-Iguanas
+Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus cristatus}) that survived the 1992-1993 El Niño event.
 }
 
 \usage{data(Iguanas)}
+
 \format{
-  A data frame with 64 observations on the following variable.
-  \describe{
-    \item{\code{Change.in.length..mm.}}{a numeric vector}
-  }
+  The format is:
+ int [1:64] -1 -11 38 -46 -16 -21 5 -14 -33 -27 ...
 }
 
 %\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Wikelski, M. and C. Thom. 2000. Marine iguanas shrink to survive El Niño. \emph{Nature} 403: 37-38.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Marine_iguana}
+}
 
 \examples{
 data(Iguanas)
-## maybe str(Iguanas) ; plot(Iguanas) ...
+str{Iguanas}
+hist(Iguanas, breaks = 10)
 }
 
 \keyword{datasets}

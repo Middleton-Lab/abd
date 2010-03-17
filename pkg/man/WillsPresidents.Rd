@@ -3,22 +3,20 @@
 \docType{data}
 
 \title{
-WillsPresidents
+Presidential "Wills"
 }
 
 \description{
-WillsPresidents
+Number of times a presidential candidate said "will," "shall," or "going to" in presidential debates from 1960-2004 (years incomplete).
 }
 
 \usage{data(WillsPresidents)}
 \format{
-  A data frame with 16 observations on the following 5 variables.
+  A data frame with 16 observations on the following 3 variables.
   \describe{
-    \item{\code{Candidate}}{a factor with levels \code{Bush} \code{Carter} \code{Clinton} \code{Dole} \code{Dukakis} \code{Ford} \code{Gore} \code{Kennedy} \code{Kerry} \code{Nixon} \code{Reagan}}
-    \item{\code{Winner.}}{a factor with levels \code{n} \code{y}}
+    \item{\code{Candidate}}{a character vector with the candidate's name}
+    \item{\code{Winner}}{a factor with levels \code{n} \code{y} indicating whether the candidate won the election \code{y} or not.}
     \item{\code{Rounded.wills}}{a numeric vector}
-    \item{\code{Loser}}{a factor with levels \code{.} \code{122} \code{149} \code{18} \code{32} \code{33} \code{48} \code{75} \code{85}}
-    \item{\code{Difference}}{a factor with levels \code{.} \code{1} \code{20} \code{23} \code{26} \code{27} \code{36} \code{4} \code{41}}
   }
 }
 
@@ -36,7 +34,7 @@ WillsPresidents
 
 \examples{
 data(WillsPresidents)
-## maybe str(WillsPresidents) ; plot(WillsPresidents) ...
+WillsPresidents
 }
 
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-WeddellSeals
+Energetic Cost of Diving
 }
 
 \description{
-WeddellSeals
+Comparison of oxygen consumption in feeding vs. non-feeding dives of the same length in the Weddell seal (\emph{Leptonychotes weddellii}).
 }
 
 \usage{data(WeddellSeals)}
@@ -24,17 +24,17 @@ WeddellSeals
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Williams, T.M., L.A. Fuiman, M. Horning, and R.W. Davis. 2004. The cost of foraging by a marine predator, the Weddell seal \emph{Leptonychotes weddellii}: pricing by the stroke \emph{Journal of Experimental Biology} 207: 973-982.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jeb.biologists.org/cgi/content/full/207/6/973}
+}
 
 \examples{
 data(WeddellSeals)
-## maybe str(WeddellSeals) ; plot(WeddellSeals) ...
+WeddellSeals
 }
 
 \keyword{datasets}

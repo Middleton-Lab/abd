@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Cichlids
+Cichlid Mating Preference
 }
 
 \description{
-Cichlids
+Preference index in F1 and F2 crosses of two species of cichlids from Lake Victoria, \emph{Pundamilia pundamilia} and \emph{P. nyererei}.
 }
 
 \usage{data(Cichlids)}
@@ -23,9 +23,9 @@ Cichlids
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Haeslery, M.P. and O. Seehausen. 2005. \emph{Proceedings of the Royal Society of London, Series B, Biological Sciences} 272: 237-245.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,13 @@ Cichlids
 
 \examples{
 data(Cichlids)
-## maybe str(Cichlids) ; plot(Cichlids) ...
+str(Cichlids)
+
+require(plyr)
+ddply(Cichlids, .(Genotype),
+  function(df)c(mean = mean(df$preference),
+                standard.deviation = sd(df$preference),
+                n = length(df$preference)))
 }
 
 \keyword{datasets}

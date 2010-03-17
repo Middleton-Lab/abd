@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-PrimateWPC
+Primate White Blood Cell Counts and Promiscuity
 }
 
 \description{
-PrimateWPC
+White blood cell (WBC) counts in pairs of closely related primate species
 }
 
 \usage{data(PrimateWPC)}
@@ -23,9 +23,9 @@ PrimateWPC
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Nunn, C.L., J.L. Gittleman, and J. Antonovics. 2000. Promiscuity and the primate immune system. \emph{Science} 290: 1168-1170.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,7 @@ PrimateWPC
 
 \examples{
 data(PrimateWPC)
-## maybe str(PrimateWPC) ; plot(PrimateWPC) ...
+PrimateWPC
 }
 
 \keyword{datasets}

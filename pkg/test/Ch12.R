@@ -97,10 +97,191 @@ t.test(living, killed, var.equal = FALSE)
 
 ##########################################################################
 # 12e4	BrookTrout.csv
-data(BrookTrout)
-names(BrookTrout)[1] <- "brook.trout"
-BrookTrout$brook.trout <- as.character(BrookTrout$brook.trout)
-BrookTrout$brook.trout <- ifelse(BrookTrout$brook.trout == "+", "present", "absent")
-BrookTrout$brook.trout <- factor(BrookTrout$brook.trout)
-str(BrookTrout)
+#data(BrookTrout)
+#names(BrookTrout)[1] <- "brook.trout"
+#BrookTrout$brook.trout <- as.character(BrookTrout$brook.trout)
+#BrookTrout$brook.trout <- ifelse(BrookTrout$brook.trout == "+", "present", "absent")
+#BrookTrout$brook.trout <- factor(BrookTrout$brook.trout)
+#str(BrookTrout)
+#salmon.released <- BrookTrout$Number.released
+#salmon.surviving <- BrookTrout$Number.survivors
+#proportion.surviving <- BrookTrout$chinook.survival.1998
+#
+#BrookTrout2 <- data.frame(brook.trout = BrookTrout$brook.trout,
+#  salmon.released, salmon.surviving, proportion.surviving)
+#BrookTrout2
+#BrookTrout2 <- BrookTrout2[order(BrookTrout2$brook.trout), ]
+#str(BrookTrout2)
+#BrookTrout <- BrookTrout2
+#save(BrookTrout, file = "BrookTrout.rda")
+#prompt(BrookTrout)
 
+data(BrookTrout)
+str(BrookTrout)
+BrookTrout
+
+# Aggregate the data using ddply()
+require(plyr)
+salmon.aggregate <- ddply(BrookTrout, .(brook.trout),
+  function(x)c(sum(x$salmon.released - x$salmon.surviving), sum(x$salmon.surviving)))
+names(salmon.aggregate)[c(2,3)] <- c("Survived", "Died")
+salmon.aggregate
+
+# Boxplot
+boxplot(proportion.surviving ~ brook.trout, data = BrookTrout,
+  ylab = "Proportion Surviving",
+  names = c("Trout Absent", "Trout Present"))
+
+# Dotplot
+require(lattice)
+dotplot(proportion.surviving ~ brook.trout, data = BrookTrout)
+
+# Aggregate again, calculating mean, standard deviation, and n
+require(plyr)
+salmon.aggregate2 <- ddply(BrookTrout, .(brook.trout),
+  function(x)c(mean(x$proportion.surviving),
+               sd(x$proportion.surviving),
+               length(x$proportion.surviving)))
+names(salmon.aggregate2) <- c("Group", "Sample Mean",
+                              "Sample Standard Deviation", "Sample Size")
+salmon.aggregate2
+
+# Use Welch's t-test, because the variances are not equal
+t.test(proportion.surviving ~ brook.trout, data = BrookTrout,
+  var.equal = FALSE)
+
+# Comparing variances
+# Levene's Test
+require(car)
+levene.test(proportion.surviving ~ brook.trout, data = BrookTrout)
+
+# Exploring differences in variance
+set.seed(2)
+x1 <- rnorm(40, sd = 1)
+x2 <- rnorm(40, sd = 1)
+
+x12 <- c(x1, x2)
+A <- factor(rep(1:2, each = 40))
+
+plot(density(x12), type = "n", ylim = c(0, 0.5))
+lines(density(x1), col = "blue")
+lines(density(x2), col = "red")
+
+levene.test(x12 ~ A)
+
+# Same Mean; Different sd
+x2 <- rnorm(40, sd = 2)
+x12 <- c(x1, x2)
+dev.new()
+plot(density(x12), type = "n", ylim = c(0, 0.5))
+lines(density(x1), col = "blue")
+lines(density(x2), col = "red")
+levene.test(x12 ~ A)
+
+
+##########################################################################
+# 12q02	NoSmokingDay.csv
+data(NoSmokingDay)
+NoSmokingDay
+
+
+##########################################################################
+# 12q03	Iguanas.csv
+#data(Iguanas)
+#Iguanas <- Iguanas$Change.in.length..mm.
+#save(Iguanas, file = "Iguanas.rda")
+#prompt(Iguanas)
+
+data(Iguanas)
+str(Iguanas)
+hist(Iguanas, breaks = 10)
+
+
+##########################################################################
+# 12q05 MonogamousTestes
+#data(MonogamousTestes)
+#MonogamousTestes
+#names(MonogamousTestes)[1] <- "Mating.system"
+#save(MonogamousTestes, file = "MonogamousTestes.rda")
+#prompt(MonogamousTestes)
+
+data(MonogamousTestes)
+str(MonogamousTestes)
+MonogamousTestes
+
+
+##########################################################################
+# 12q09	Cichlids.csv
+data(Cichlids)
+str(Cichlids)
+
+require(plyr)
+ddply(Cichlids, .(Genotype),
+  function(df)c(mean = mean(df$preference),
+                standard.deviation = sd(df$preference),
+                n = length(df$preference)))
+
+
+##########################################################################
+# 12q10	Tobacco.csv
+#data(Tobacco)
+#Tobacco
+#Tobacco$f1[8:13] <- 0
+#Tobacco$f1 <- as.numeric(as.character(Tobacco$f1))
+#str(Tobacco)
+#save(Tobacco, file = "Tobacco.rda")
+#prompt(Tobacco)
+
+data(Tobacco)
+Tobacco
+
+
+##########################################################################
+# 12q11	WillsPresidents.csv
+#data(WillsPresidents)
+#WillsPresidents
+#WillsPresidents <- WillsPresidents[, -c(4:5)]
+#WillsPresidents
+#names(WillsPresidents)[2] <- "Winner"
+#WillsPresidents$Candidate <- as.character(WillsPresidents$Candidate)
+#save(WillsPresidents, file = "WillsPresidents.rda")
+#prompt(WillsPresidents)
+
+data(WillsPresidents)
+WillsPresidents
+
+
+##########################################################################
+# 12q13	OstrichTemp.csv
+data(OstrichTemp)
+OstrichTemp
+
+
+##########################################################################
+# 12q15	PrimateWPC.csv
+data(PrimateWPC)
+PrimateWPC
+
+##########################################################################
+# 12q16	StalkieEyespan.csv
+#data(StalkieEyespan)
+#StalkieEyespan
+#names(StalkieEyespan)[2] <- "Eye.span"
+#save(StalkieEyespan, file = "StalkieEyespan.rda")
+#prompt(StalkieEyespan)
+
+data(StalkieEyespan)
+StalkieEyespan
+str(StalkieEyespan)
+
+
+##########################################################################
+# 12q19	ElectricFish.csv
+data(ElectricFish)
+ElectricFish
+
+
+##########################################################################
+# 12q23	WeddellSeals.csv
+data(WeddellSeals)
+WeddellSeals

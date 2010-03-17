@@ -1,20 +1,20 @@
 \name{MonogamousTestes}
 \alias{MonogamousTestes}
 \docType{data}
-
 \title{
-MonogamousTestes
+Testes size in Flies
 }
 
 \description{
-MonogamousTestes
+Testes size (mm^2; \code{Testes.area}) in 8 populations of common yellow dung flies (\emph{Scathophaga stercoraria}) with different mating systems (\code{Mating.system}).
 }
 
 \usage{data(MonogamousTestes)}
+
 \format{
   A data frame with 8 observations on the following 2 variables.
   \describe{
-    \item{\code{Column.1}}{a factor with levels \code{Monogamous} \code{Polyandrous}}
+    \item{\code{Mating.system}}{a factor with levels \code{Monogamous} \code{Polyandrous}}
     \item{\code{Testes.area}}{a numeric vector}
   }
 }
@@ -23,17 +23,18 @@ MonogamousTestes
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Hosken, D.J. and P.I. Ward. 2001.  Experimental evidence for testis size evolution via sperm competition. \emph{Ecology Letters} 4: 10-13.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Scathophaga_stercoraria}
+}
 
 \examples{
 data(MonogamousTestes)
-## maybe str(MonogamousTestes) ; plot(MonogamousTestes) ...
+str(MonogamousTestes)
+MonogamousTestes
 }
 
 \keyword{datasets}
