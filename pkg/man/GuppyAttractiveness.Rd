@@ -36,8 +36,8 @@ data(GuppyAttractiveness)
 
 str(GuppyAttractiveness)
 plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
-  xlab = "Father"s ornamentation",
-  ylab = "Son"s attractiveness",
+  xlab = "Father's ornamentation",
+  ylab = "Son's attractiveness",
   pch = 16,
   col = "red",
   ylim = c(-0.5, 1.5))

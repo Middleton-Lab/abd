@@ -14,7 +14,7 @@ Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{No.of.parasites}}{a numeric vector}
+    \item{\code{Number.of.parasites}}{a numeric vector}
     \item{\code{Frequency}}{a numeric vector}
   }
 }
