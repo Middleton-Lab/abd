@@ -3,36 +3,34 @@
 \docType{data}
 
 \title{
-Lobsters
+Lobster Orientation
 }
 
 \description{
-Lobsters
+Orientation of 15 lobsters relative to initial position.
 }
 
 \usage{data(Lobsters)}
 \format{
-  A data frame with 15 observations on the following variable.
-  \describe{
-    \item{\code{Orientation}}{a numeric vector}
-  }
+  The format is:
+ int [1:15] 80 38 25 15 10 13 -2 -10 -30 -26 ...
 }
 
 %\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Boles, L. C., and K. J. Lohmann. 2003. True navigation and magnetic maps in spiny lobsters. \emph{Nature} 421: 60-63.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.unc.edu/depts/geomag/PDFGeomag/BolesandLohmann2003.pdf}
+}
 
 \examples{
 data(Lobsters)
-## maybe str(Lobsters) ; plot(Lobsters) ...
+Lobsters
 }
 
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Dioecy
+Dioecy vs. Monomorphism in Plants
 }
 
 \description{
-Dioecy
+Number of \code{dioecious} and \code{monomorphic} taxa among pairs of closely related plants.
 }
 
 \usage{data(Dioecy)}
@@ -23,9 +23,9 @@ Dioecy
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Heilbuth, J.C. 2000. Lower species richness in dioecious clades. \emph{The American Naturalist} 156: 221-241.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,7 @@ Dioecy
 
 \examples{
 data(Dioecy)
-## maybe str(Dioecy) ; plot(Dioecy) ...
+Dioecy
 }
 
 \keyword{datasets}

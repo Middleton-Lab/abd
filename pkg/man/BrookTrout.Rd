@@ -14,10 +14,10 @@ Total numbers of salmon released (\code{salmon.released}) and salmon surviving (
 \format{
   A data frame with 12 observations on the following 4 variables.
   \describe{
-    \item{\code{brook.trout}}{a factor with levels \code{absent} \code{present}}
-    \item{\code{salmon.released}}{a numeric vector}
-    \item{\code{salmon.surviving}}{a numeric vector}
-    \item{\code{proportion.surviving}}{a numeric vector}
+    \item{\code{brook.trout}}{a factor with levels \code{absent} and \code{present} indicating whether brook trout are absent or present in the stream}
+    \item{\code{salmon.released}}{a numeric vector of the total number of salmon released}
+    \item{\code{salmon.surviving}}{a numeric vector of the number of salmon surviving}
+    \item{\code{proportion.surviving}}{a numeric vector of the proportion of salmon surviving}
   }
 }
 

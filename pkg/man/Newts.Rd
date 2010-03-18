@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Newts
+Tetrodotoxin resistance in Garter Snakes
 }
 
 \description{
-Newts
+Percent reduction in crawl speed (\code{whole.animal.resistance}) in the garter snake after injection of the neurotoxin tetrodotoxin from the rough-skinned newt (\emph{Taricha granulosa}).
 }
 
 \usage{data(Newts)}
@@ -23,17 +23,17 @@ Newts
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Geffeney, S., E.D. Brodie, Jr., P.C. Ruben, and E.D. Brodie III. 2002. Mechanisms of adaptation in a predator-prey arms race: TTX-resistant sodium channels. \emph{Science} 297: 1336-1339.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sciencemag.org/cgi/content/abstract/297/5585/1336}
+}
 
 \examples{
 data(Newts)
-## maybe str(Newts) ; plot(Newts) ...
+Newts
 }
 
 \keyword{datasets}

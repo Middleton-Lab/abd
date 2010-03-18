@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-SexualSelection
+Sexual Conflict
 }
 
 \description{
-SexualSelection
+Number of species in each of two taxa in closely related taxon pairings and the difference between the two groups. One taxon has multiple matings (\code{Polyandrous.clade.richness}) and one has only single matings (\code{Monandrous.clade.richness}).
 }
 
 \usage{data(SexualSelection)}
@@ -24,17 +24,31 @@ SexualSelection
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Arnqvist, G., M. Edvardsson, U. Friberg, and T. Nilsson. 2000. \emph{Sexual conflict promotes speciation in insects}. Proceedings of the National Academy of Sciences (USA) 97: 10460-10464.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.egs.uu.se/evbiol/Persons/Urban/1.pdf}
+}
 
 \examples{
 data(SexualSelection)
-## maybe str(SexualSelection) ; plot(SexualSelection) ...
+SexualSelection
+
+hist(SexualSelection$Difference, breaks = 20)
+
+# Calculate the number of tests and the number of negative tests
+(n <- length(SexualSelection$Difference))
+(n.neg <- sum(SexualSelection$Difference < 0))
+
+2 * pbinom(q = n.neg, size = n, prob = 0.5)
+
+# With SIGN.test() from PSAWR package
+#  alternative = "two.sided" is the default, but we'll include
+#  it just to be sure.
+require(PASWR)
+SIGN.test(SexualSelection$Difference, alternative = "two.sided")
 }
 
 \keyword{datasets}

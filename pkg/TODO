@@ -79,15 +79,15 @@ X 12q16	StalkieEyespan.csv
 X 12q19	ElectricFish.csv
 X 12q23	WeddellSeals.csv
 
-13e1	MarineReserve.csv
-13e4	SexualSelection.csv
-13e5	SagebrushCrickets.csv
-13q05	Lobsters.csv
-13q06	Lions.csv
-13q08	Newts.csv
-13q13	dioecy.csv
-13q14	Mosquitoes.csv
-13q16	ZebraFinches.csv
+X 13e1	MarineReserve.csv
+X 13e4	SexualSelection.csv
+X 13e5	SagebrushCrickets.csv
+X 13q05	Lobsters.csv
+X 13q06	Lions.csv
+X 13q08	Newts.csv
+X 13q13	Dioecy.csv
+X 13q14	Mosquitoes.csv
+X 13q16	ZebraFinches.csv
 13q18	CichlidsGnRH.csv
 13q19	Vines.csv
 13q20	SalmonColor.csv

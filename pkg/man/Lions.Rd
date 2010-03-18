@@ -3,19 +3,19 @@
 \docType{data}
 
 \title{
-Lions
+Time to Reproduction in Female Lions
 }
 
 \description{
-Lions
+Time to reproduction (\code{Days}) based on whether death was due to infanticide (\code{New}) or accidental (\code{Same}).
 }
 
 \usage{data(Lions)}
 \format{
   A data frame with 14 observations on the following 2 variables.
   \describe{
-    \item{\code{New.Male}}{a factor with levels \code{New} \code{Same}}
-    \item{\code{Days.to.next.cub..Days.}}{a numeric vector}
+    \item{\code{New.Male}}{a factor with levels \code{New} and \code{Same}}
+    \item{\code{Days}}{a numeric vector}
   }
 }
 
@@ -23,17 +23,15 @@ Lions
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Packer, C. and A.E. Pusey. 1983. Adaptations of female lions to infanticide by incoming males. \emph{The American Naturalist} 121: 716-728.
+}
 
-%\references{
+\references{
 %%  ~~ possibly secondary sources and usages ~~
-%}
-
+}
 \examples{
 data(Lions)
 ## maybe str(Lions) ; plot(Lions) ...
 }
-
 \keyword{datasets}

@@ -1,30 +1,27 @@
 \name{BirdSexRatio}
 \alias{BirdSexRatio}
 \docType{data}
-
 \title{
-BirdSexRatio
+Sex Ratios in Birds
 }
 
 \description{
-BirdSexRatio
+Correlation coefficient of sex ratio in bird offspring.
 }
 
 \usage{data(BirdSexRatio)}
 \format{
-  A data frame with 15 observations on the following variable.
-  \describe{
-    \item{\code{corr.coeff}}{a numeric vector}
-  }
+  The format is:
+ num [1:15] -0.16 -0.037 0.034 0.144 0.137 0.118 0.395 0.363 0.35 0.376 ...
 }
 
 %\details{
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+West, S.A. and B.C. Sheldon. 2002. Constraints in the evolution of sex ratio adjustment. \emph{Science} 295: 1695-1688.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -32,7 +29,7 @@ BirdSexRatio
 
 \examples{
 data(BirdSexRatio)
-## maybe str(BirdSexRatio) ; plot(BirdSexRatio) ...
+BirdSexRatio
 }
 
 \keyword{datasets}

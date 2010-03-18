@@ -16,7 +16,7 @@ Numbers of cattle bitten by the cow's estrous cycle.
   \describe{
     \item{\code{estrous}}{a factor with levels \code{no} \code{yes}}
     \item{\code{bitten}}{a factor with levels \code{no} \code{yes}}
-    \item{\code{frequency}}{a numeric vector}
+    \item{\code{Frequency}}{a numeric vector}
   }
 }
 

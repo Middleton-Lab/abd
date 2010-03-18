@@ -1,19 +1,20 @@
 \name{CichlidsGnRH}
 \alias{CichlidsGnRH}
 \docType{data}
+
 \title{
-CichlidsGnRH
+GnRH Levels in Cichlids
 }
 
 \description{
-CichlidsGnRH
+Levels of mRNA for gonadotropin-releasing hormone in cichlids (\emph{Haplochromis burtoni}) that are (\code{T}; \emph{n} = 5) and are not (\code{NT}; \emph{n} = 6) territorial.
 }
 
 \usage{data(CichlidsGnRH)}
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{Territorial.status}}{a factor with levels \code{NT} \code{T}}
+    \item{\code{Territorial.status}}{a factor with levels \code{NT} and \code{T}}
     \item{\code{GnRH.mRNA.level}}{a numeric vector}
   }
 }
@@ -22,17 +23,17 @@ CichlidsGnRH
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+White, S. A., T. Nguyen, and R. D. Fernald. 2002. Social regulation of gonadotropin-releasing hormone. \emph{Journal of Experimental Biology} 205: 2567-2581.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jeb.biologists.org/cgi/content/abstract/205/17/2567}
+}
 
 \examples{
 data(CichlidsGnRH)
-## maybe str(CichlidsGnRH) ; plot(CichlidsGnRH) ...
+CichlidsGnRH
 }
 
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-Mosquitoes
+Body Size Mosquitoes
 }
 
 \description{
-Mosquitoes
+Weights of female and male mosquitos (\emph{Anopheles darlingi})
 }
 
 \usage{data(Mosquitoes)}
@@ -15,7 +15,7 @@ Mosquitoes
   A data frame with 20 observations on the following 2 variables.
   \describe{
     \item{\code{weight}}{a numeric vector}
-    \item{\code{sex}}{a factor with levels \code{female} \code{male}}
+    \item{\code{sex}}{a factor with levels \code{female} and \code{male}}
   }
 }
 
@@ -23,17 +23,17 @@ Mosquitoes
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Lounibos, L.P., N. Nishimura, J. Conn, and R. Lourenco-de-Oliveira. 1995. Life history correlates of adult size in the malaria vector \emph{Anopheles darlingi}. \emph{Memórias do Instituto Oswaldo Cruz} 90: 769-774.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.bioline.org.br/request?oc95154}
+}
 
 \examples{
 data(Mosquitoes)
-## maybe str(Mosquitoes) ; plot(Mosquitoes) ...
+Mosquitoes
 }
 
 \keyword{datasets}
