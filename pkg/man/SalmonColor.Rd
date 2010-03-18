@@ -33,7 +33,16 @@ Craig, J.K. and C. Foote. 2001. Countergradient variation and secondary sexual c
 
 \examples{
 data(SalmonColor)
-## maybe str(SalmonColor) ; plot(SalmonColor) ...
+SalmonColor
+
+dev.new()
+par(mfrow = c(2, 1))
+hist(subset(SalmonColor, species == "kokanee")$skin.color,
+  xlab = "Skin Color Measure", main = "Kokanee",
+  xlim = c(0.5, 2.5), breaks = 10)
+hist(subset(SalmonColor, species == "sockeye")$skin.color,
+  xlab = "Skin Color Measure", main = "Sockeye",
+  xlim = c(0.5, 2.5), breaks = 3)
 }
 
 \keyword{datasets}

@@ -166,6 +166,59 @@ data(Vines)
 Vines
 
 
+##########################################################################
+# 13q20	SalmonColor.csv
+data(SalmonColor)
+SalmonColor
+
+dev.new()
+par(mfrow = c(2, 1))
+hist(subset(SalmonColor, species == "kokanee")$skin.color,
+  xlab = "Skin Color Measure", main = "Kokanee",
+  xlim = c(0.5, 2.5), breaks = 10)
+hist(subset(SalmonColor, species == "sockeye")$skin.color,
+  xlab = "Skin Color Measure", main = "Sockeye",
+  xlim = c(0.5, 2.5), breaks = 3)
+
+##########################################################################
+# 13q22	BirdSexRatio.csv
+#data(BirdSexRatio)
+#BirdSexRatio
+#BirdSexRatio <- BirdSexRatio$corr.coeff
+#save(BirdSexRatio, file = "BirdSexRatio.rda")
+#prompt(BirdSexRatio)
+
+data(BirdSexRatio)
+BirdSexRatio
+hist(BirdSexRatio, breaks = 10,
+  xlab = "Correlation Coefficient")
+
+##########################################################################
+# 13q23	Clearcuts.csv
+#data(Clearcuts)
+#Clearcuts
+#Clearcuts <- Clearcuts$Biomass.change
+#save(Clearcuts, file = "Clearcuts")
+#prompt(Clearcuts)
+
+data(Clearcuts)
+Clearcuts
+hist(Clearcuts)
+
+
+##########################################################################
+# 13q24	ZebraFinchBeaks.csv
+#data(ZebraFinchBeaks)
+#ZebraFinchBeaks
+#ZebraFinchBeaks <- ZebraFinchBeaks$preference
+#ZebraFinchBeaks[9] <- -65
+#save(ZebraFinchBeaks, file = "ZebraFinchBeaks.rda")
+#prompt(ZebraFinchBeaks)
+
+data(ZebraFinchBeaks)
+ZebraFinchBeaks
+
+
 
 
 

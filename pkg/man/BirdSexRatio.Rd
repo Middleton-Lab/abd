@@ -30,6 +30,8 @@ West, S.A. and B.C. Sheldon. 2002. Constraints in the evolution of sex ratio adj
 \examples{
 data(BirdSexRatio)
 BirdSexRatio
+hist(BirdSexRatio, breaks = 10,
+  xlab = "Correlation Coefficient")
 }
 
 \keyword{datasets}
