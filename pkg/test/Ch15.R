@@ -73,11 +73,15 @@ summary(aov.obj)
 
 ##########################################################################
 # 15e6	WalkingStickFemurs.csv
+#data(WalkingStickFemurs)
+#WalkingStickFemurs
+#WalkingStickFemurs$specimen <- factor(WalkingStickFemurs$specimen)
+#save(WalkingStickFemurs, file = "WalkingStickFemurs.rda")
+#prompt(WalkingStickFemurs)
+
 data(WalkingStickFemurs)
 WalkingStickFemurs
-
-# Convert specimen to factor
-WalkingStickFemurs$specimen <- factor(WalkingStickFemurs$specimen)
+str(WalkingStickFemurs)
 
 aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
 aovfit

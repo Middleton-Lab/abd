@@ -3,19 +3,19 @@
 \docType{data}
 
 \title{
-WalkingStickFemurs
+Walking Stick Femur Length
 }
 
 \description{
-WalkingStickFemurs
+Two measures of femur length for each of 25 walking sticks (\emph{Timema cristinae}).
 }
 
 \usage{data(WalkingStickFemurs)}
 \format{
   A data frame with 50 observations on the following 2 variables.
   \describe{
-    \item{\code{specimen}}{a numeric vector}
-    \item{\code{femurlength}}{a numeric vector}
+    \item{\code{specimen}}{a factor with levels \code{1-25}}
+    \item{\code{femurlength}}{a numeric vector of femur length}
   }
 }
 
@@ -24,12 +24,12 @@ WalkingStickFemurs
 %}
 
 \source{
-Nosil, P. and B.J. Crespi. 2006. \emph{Proceedings of the National Academy of Sciences, USA} 103: 9090-9095.
+Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences, USA} 103: 9090-9095.
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}
+}
 
 \examples{
 data(WalkingStickFemurs)
