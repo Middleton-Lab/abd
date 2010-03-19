@@ -24,7 +24,7 @@ Shift in circadian rhythm (hours; \code{shift}) in three light treatments (\code
 %}
 
 \source{
-\emph{inferred from} Wright, K.P., Jr. and C.A. Czeisler 2002. Absence of circadian phase resetting in response to bright light behind the knees. \underline{Science} 297: 571.
+\emph{inferred from} Wright, K.P., Jr. and C.A. Czeisler 2002. Absence of circadian phase resetting in response to bright light behind the knees. \emph{Science} 297: 571.
 }
 
 \references{

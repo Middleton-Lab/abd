@@ -95,8 +95,8 @@ X 13q22	BirdSexRatio.csv
 X 13q23	Clearcuts.csv
 X 13q24	ZebraFinchBeaks.csv
 
-15e1	KneesWhoSayNight.csv
-15e6	WalkingStickFemurs.csv
+X 15e1	KneesWhoSayNight.csv
+X 15e6	WalkingStickFemurs.csv
 15q01	PlantPopulationPersistence.csv
 15q05	EelgrassGenotypes.csv
 15q06	DisordersAndGeneExpression.csv
@@ -112,18 +112,18 @@ X 13q24	ZebraFinchBeaks.csv
 16e1	FingerRatioCAGRepeats.csv
 16e2	InbreedingWolves.csv
 16e5	IndianRopeTrick.csv
-16q03	GodwitArrivalDates Gunnarsson et al 2004 replica.csv
-16q08	EarwigForceps Tomkins & Brown 2004 replica.csv
-16q10	CricketImmunitySpermViability Simmons and Roberts 2005 replica.csv
-16q11	PufferfishMimicry Caley & Schluter 2003.csv
-16q12	TelomeresAndStress Epel etal 2004 replica.csv
-16q13	LanguageGreyMatter Mechelli et al 2004 replica.csv
-16q14	GreenSpaceBiodiversity Fuller etal 2004.csv
-16q16	LiverPreparation Smallwood et al 1998 replica.csv
-16q17	SleepAndPerformance Huber et al 2004 replica.csv
-16q19	LefthandednessAndViolence Faurie and Raymond 2005 replica.csv
-16q20	TrilliumRecruitment Jules and Rathcke 1999.csv
-16q21	CocaineHigh Volkow etal 1997 replica.csv
+16q03	GodwitArrivalDates
+16q08	EarwigForceps
+16q10	CricketImmunitySpermViability
+16q11	PufferfishMimicry
+16q12	TelomeresAndStress
+16q13	LanguageGreyMatter
+16q14	GreenSpaceBiodiversity
+16q16	LiverPreparation
+16q17	SleepAndPerformance
+16q19	LefthandednessAndViolence
+16q20	TrilliumRecruitment
+16q21	CocaineHighVolkowEtal 1997 replica.csv
 16q22	CocaineHigh Collins & Bell 2004 replica.csv
 
 17e1	LionAges Whitman et al 2004 replica.csv
