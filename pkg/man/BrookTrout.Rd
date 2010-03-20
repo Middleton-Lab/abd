@@ -41,7 +41,8 @@ BrookTrout
 # Aggregate the data using ddply()
 require(plyr)
 salmon.aggregate <- ddply(BrookTrout, .(brook.trout),
-  function(x)c(sum(x$salmon.released - x$salmon.surviving), sum(x$salmon.surviving)))
+  function(x)c(sum(x$salmon.released - x$salmon.surviving),
+    sum(x$salmon.surviving)))
 names(salmon.aggregate)[c(2,3)] <- c("Survived", "Died")
 salmon.aggregate
 
@@ -61,7 +62,7 @@ salmon.aggregate2 <- ddply(BrookTrout, .(brook.trout),
                sd(x$proportion.surviving),
                length(x$proportion.surviving)))
 names(salmon.aggregate2) <- c("Group", "Sample Mean",
-                              "Sample Standard Deviation", "Sample Size")
+  "Sample Standard Deviation", "Sample Size")
 salmon.aggregate2
 
 # Use Welch's t-test, because the variances are not equal

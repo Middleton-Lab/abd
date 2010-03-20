@@ -25,7 +25,7 @@ Frequency of cancer in 39,876 women taking and not taking aspirin.
 %}
 
 \source{
-Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the primary prevention of cancer. Journal of the American Medical Association 294: 47-55.
+Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the primary prevention of cancer. \emph{Journal of the American Medical Association} 294: 47-55.
 }
 
 \references{

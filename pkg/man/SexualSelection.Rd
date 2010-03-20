@@ -25,7 +25,7 @@ Number of species in each of two taxa in closely related taxon pairings and the 
 %}
 
 \source{
-Arnqvist, G., M. Edvardsson, U. Friberg, and T. Nilsson. 2000. \emph{Sexual conflict promotes speciation in insects}. Proceedings of the National Academy of Sciences (USA) 97: 10460-10464.
+Arnqvist, G., M. Edvardsson, U. Friberg, and T. Nilsson. 2000. Sexual conflict promotes speciation in insects. \emph{Proceedings of the National Academy of Sciences (USA)} 97: 10460-10464.
 }
 
 \references{

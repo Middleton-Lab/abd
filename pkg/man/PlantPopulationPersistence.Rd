@@ -3,19 +3,20 @@
 \docType{data}
 
 \title{
-PlantPopulationPersistence
+Population Persistence Times
 }
 
 \description{
-PlantPopulationPersistence
+Persistence times (\code{generations}) in the annual plant \emph{Cardamine pensylvanica} in four experimental populations (\code{treatment}).
 }
 
 \usage{data(PlantPopulationPersistence)}
+
 \format{
   A data frame with 16 observations on the following 2 variables.
   \describe{
     \item{\code{generations}}{a numeric vector}
-    \item{\code{treatment}}{a factor with levels \code{Continuous} \code{Isolated} \code{Long} \code{Medium}}
+    \item{\code{treatment}}{a factor with levels: \code{Isolated}, \code{Medium}, \code{Long}, and \code{Continuous}}
   }
 }
 
@@ -23,9 +24,9 @@ PlantPopulationPersistence
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Molofsky, J. and J.-B. Ferdy. 2005. Extinction dynamics in experimental metapopulations. \emph{Proceedings of the National Academy of Sciences (USA)} 102: 3726-3731.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +34,8 @@ PlantPopulationPersistence
 
 \examples{
 data(PlantPopulationPersistence)
-## maybe str(PlantPopulationPersistence) ; plot(PlantPopulationPersistence) ...
+PlantPopulationPersistence
+str(PlantPopulationPersistence)
 }
 
 \keyword{datasets}

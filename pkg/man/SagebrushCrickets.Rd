@@ -37,7 +37,8 @@ SagebrushCrickets
 str(SagebrushCrickets)
 
 # Subset and extract the Time.to.mating data
-starved <- subset(SagebrushCrickets, Feeding == "starved")$Time.to.mating
+starved <- subset(SagebrushCrickets,
+  Feeding == "starved")$Time.to.mating
 fed <- subset(SagebrushCrickets, Feeding == "fed")$Time.to.mating
 
 dev.new()
@@ -61,7 +62,8 @@ sorted
 (sum.starved <- sum(sorted$rank[sorted$Feeding == "starved"]))
 
 # Calculate U for each group
-(u.starved <- n.starved * n.fed + (n.starved * (n.starved + 1) / 2) - sum.starved)
+(u.starved <- n.starved * n.fed + 
+  (n.starved * (n.starved + 1) / 2) - sum.starved)
 (u.fed <- n.fed * n.starved - u.starved)
 
 # Choose the larger U

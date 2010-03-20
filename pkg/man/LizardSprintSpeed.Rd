@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LizardSprintSpeed
+Sprint Speeds in Canyon Lizards
 }
 
 \description{
-LizardSprintSpeed
+Sprint speeds in 34 canyon lizards (\emph{Sceloporous merriami}) measured in successive years in Big Bend National Park.
 }
 
 \usage{data(LizardSprintSpeed)}
@@ -24,17 +24,17 @@ LizardSprintSpeed
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Huey, R.B. and A.E. Dunham. 1987. he repeatability of locomotor performance in natural populations of the lizard \emph{Sceloporus} merriami. \emph{Evolution} 42: 1116-1120.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Sceloporus_merriami}
+}
 
 \examples{
 data(LizardSprintSpeed)
-## maybe str(LizardSprintSpeed) ; plot(LizardSprintSpeed) ...
+LizardSprintSpeed
 }
 
 \keyword{datasets}

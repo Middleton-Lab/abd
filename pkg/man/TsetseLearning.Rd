@@ -3,18 +3,18 @@
 \docType{data}
 
 \title{
-TsetseLearning
+Dietary Learning in Tsetse Flies
 }
 
 \description{
-TsetseLearning
+Dietary conditioning \code{treatment} and subsequent proportion of tsetse flies (\emph{Glossina palpalis}) feeding on cow blood in each of 13 cohorts.
 }
 
 \usage{data(TsetseLearning)}
 \format{
   A data frame with 13 observations on the following 2 variables.
   \describe{
-    \item{\code{treatment}}{a factor with levels \code{cow} \code{lizard}}
+    \item{\code{treatment}}{a factor with levels \code{cow} and \code{lizard}}
     \item{\code{proportion.cow}}{a numeric vector}
   }
 }
@@ -23,17 +23,18 @@ TsetseLearning
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Bouyer, J., M. Pruvot, Z. Bengaly, P.M. Guerin, and R. Lancelot. 2007. Learning influences host choice in tsetse. \emph{Biology Letters} 3: 113-116.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://rsbl.royalsocietypublishing.org/content/3/2/113.full}
+}
 
 \examples{
 data(TsetseLearning)
-## maybe str(TsetseLearning) ; plot(TsetseLearning) ...
+TsetseLearning
+str(TsetseLearning)
 }
 
 \keyword{datasets}

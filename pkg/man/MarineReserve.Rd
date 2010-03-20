@@ -7,7 +7,7 @@ Marine Reserve Biomass
 }
 
 \description{
-%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+Relative biomass in 32 marine reserves.
 }
 
 \usage{data(MarineReserve)}

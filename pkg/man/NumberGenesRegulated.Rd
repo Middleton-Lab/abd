@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-NumberGenesRegulated
+Gene Regulation in Saccharomyces
 }
 
 \description{
@@ -25,7 +25,7 @@ Number of genes regulated by 109 regulatory genes of \emph{Saccharomyces
 %}
 
 \source{
-Guelzim, N., S. Bottani, P. Bourgine and F. Képès. 2002. Topological and
+Guelzim, N., S. Bottani, P. Bourgine and F. K√©p√®s. 2002. Topological and
   causal structure of the yeast transcriptional regulatory network.
   \emph{Nature Genetics} 31: 60-63.
 }

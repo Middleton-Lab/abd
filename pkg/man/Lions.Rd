@@ -27,11 +27,13 @@ Time to reproduction (\code{Days}) based on whether death was due to infanticide
 Packer, C. and A.E. Pusey. 1983. Adaptations of female lions to infanticide by incoming males. \emph{The American Naturalist} 121: 716-728.
 }
 
-\references{
+%\references{
 %%  ~~ possibly secondary sources and usages ~~
-}
+%}
+
 \examples{
 data(Lions)
-## maybe str(Lions) ; plot(Lions) ...
+Lions
 }
+
 \keyword{datasets}

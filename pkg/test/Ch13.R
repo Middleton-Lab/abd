@@ -124,12 +124,14 @@ Lobsters
 
 ##########################################################################
 # 13q06	Lions.csv
+#data(Lions)
+#Lions
+#names(Lions)[2] <- "Days"
+#save(Lions, file = "Lions.rda")
+#prompt(Lions)
+
 data(Lions)
 Lions
-names(Lions)[2] <- "Days"
-save(Lions, file = "Lions.rda")
-prompt(Lions)
-
 
 ##########################################################################
 # 13q08	Newts.csv

@@ -6,15 +6,15 @@ Variance Components
 }
 
 \description{
-Extract variance components from a mixed-model ANOVA.
+Extract variance components from a mixed-model ANOVA (i.e., fit with \code{+ Error(...)}).
 }
 
 \usage{
 varcomps(fm, n)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
-  \item{fm}{an object of class "aov"}
+  \item{fm}{an fitted model of class \code{aov}}
   \item{n}{an integer giving the within-group sample size}
 }
 
@@ -23,15 +23,15 @@ varcomps(fm, n)
 %}
 
 \value{
-List of class "varcomps" with the following components:
-\item{MS.groups}{xxx}
-\item{MS.error}{xxx}
-\item{F}{xxx}
-\item{df1}{xxx}
-\item{df2}{xxx}
-\item{p}{xxx}
-\item{var.within}{xxx}
-\item{var.among}{xxx}
+\code{varcomps} returns a list of \link{class} \code{varcomps} with the following components:
+\item{MS.groups}{Group mean square}
+\item{MS.error}{Error mean square}
+\item{F}{\emph{F}-statistic}
+\item{df1}{Numerator degrees of freedom}
+\item{df2}{Denominator degrees of freedom}
+\item{p}{\emph{p}-value}
+\item{var.within}{Within-group variance}
+\item{var.among}{Among group variance; equals \code{MS.error}}
 }
 
 %\references{
@@ -52,11 +52,11 @@ Kevin M. Middleton (kmm@csusb.edu)
 
 \examples{
 data(WalkingStickFemurs)
-WalkingStickFemurs$specimen <- factor(WalkingStickFemurs$specimen)
 aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
 vc <- varcomps(aovfit, n = 2)
 vc
-repeatability(vc)
+R.varcomps <- repeatability(vc)
+R.varcomps
 }
 
 \keyword{ univar }

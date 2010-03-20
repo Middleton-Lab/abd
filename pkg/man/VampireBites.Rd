@@ -25,7 +25,7 @@ Numbers of cattle bitten by the cow's estrous cycle.
 %}
 
 \source{
-Turner, D.C. 1975. \emph{The vampire bat: a field study in behavior and ecology}. Johns Hopkins Press: Baltimore, MD.
+Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior and Ecology}. Johns Hopkins Press: Baltimore, MD.
 }
 
 %\references{

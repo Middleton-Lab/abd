@@ -31,7 +31,7 @@ expand.dft(x, na.strings = "NA", as.is = FALSE, dec = ".")
 See https://stat.ethz.ch/pipermail/r-help/2009-January/185561.html for discussion of expand.dft().}
 
 \author{
-Modified for the \code{abd} package from a function posted by Marc Schwartz to the r-help mailing list by Kevin Middleton.
+Modified for the \code{abd} package by Kevin Middleton from a function posted by Marc Schwartz to the r-help mailing list.
 }
 
 %\note{

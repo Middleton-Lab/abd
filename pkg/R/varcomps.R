@@ -18,7 +18,6 @@ varcomps <- function(fm, n){
                       "p" = p,
                       "var.within" = var.within,
                       "var.among" = var.among)
-  
   class(varcomp.obj) <- "varcomps"
   varcomp.obj
 }

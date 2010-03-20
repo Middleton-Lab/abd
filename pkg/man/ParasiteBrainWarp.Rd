@@ -41,7 +41,8 @@ table(ParasiteBrainWarp.long)
 xtabs(~ eaten + infection.status, data = ParasiteBrainWarp.long)
 
 require(gmodels)
-CrossTable(ParasiteBrainWarp.long$eaten, ParasiteBrainWarp.long$infection.status,
+CrossTable(ParasiteBrainWarp.long$eaten,
+  ParasiteBrainWarp.long$infection.status,
   expected = TRUE,
   prop.r = FALSE,
   prop.c = FALSE,

@@ -57,7 +57,8 @@ control.sd <- sd(control)
 knee.sd <- sd(knee)
 eyes.sd <- sd(eyes)
 
-(SS.error <- ((control.sd^2 * (control.n - 1)) + (knee.sd^2 * (knee.n - 1)) +
+(SS.error <- ((control.sd^2 * (control.n - 1)) +
+  (knee.sd^2 * (knee.n - 1)) +
   (eyes.sd^2 * (eyes.n - 1))))
 (MS.error <- SS.error / (n - k))
 

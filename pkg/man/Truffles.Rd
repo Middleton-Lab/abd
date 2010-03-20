@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Truffle distribution
+Truffle Distribution
 }
 
 \description{

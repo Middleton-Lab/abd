@@ -16,11 +16,11 @@ Fig. 8.1-1 ggplot
 X 02.1a	TeenDeaths.csv
 X 02.1b	DesertBirds.csv
 X 02.1c	SockeyeFemaleBodyMass.csv
-X 02.3		GreatTitMalaria.csv
-X 02.4		HemoglobinHighAltitude.csv
+X 02.3	GreatTitMalaria.csv
+X 02.4	HemoglobinHighAltitude.csv
 X 02.5a	GuppyAttractiveness.csv
 X 02.5b	LynxPopulationCycles.csv
-X 02q6		EndangeredSpecies.csv
+X 02q6	EndangeredSpecies.csv
 X 02q10	ShuttleDisaster.csv
 X 02q16	CriminalConvictions.csv
 X 02q17	ConvictionsAndIncome.csv
@@ -97,17 +97,17 @@ X 13q24	ZebraFinchBeaks.csv
 
 X 15e1	KneesWhoSayNight.csv
 X 15e6	WalkingStickFemurs.csv
-15q01	PlantPopulationPersistence.csv
-15q05	EelgrassGenotypes.csv
-15q06	DisordersAndGeneExpression.csv
-15q11	DungBeetleCondition.csv
-15q13	DaphniaResistance.csv
-15q14	TsetseLearning.csv
-15q19	NematodeLifespan.csv
-15q21	WalkingStickHeads.csv
-15q22	LodgepolePineCones.csv
-15q23	LupusProneMice.csv
-15q24	LizardSprintSpeed.csv
+X 15q01	PlantPopulationPersistence.csv
+X 15q05	EelgrassGenotypes.csv
+X 15q06	DisordersAndGeneExpression.csv
+X 15q11	DungBeetleCondition.csv
+X 15q13	DaphniaResistance.csv
+X 15q14	TsetseLearning.csv
+X 15q19	NematodeLifespan.csv
+X 15q21	WalkingStickHeads.csv
+X 15q22	LodgepolePineCones.csv
+X 15q23	LupusProneMice.csv
+X 15q24	LizardSprintSpeed.csv
 
 16e1	FingerRatioCAGRepeats.csv
 16e2	InbreedingWolves.csv

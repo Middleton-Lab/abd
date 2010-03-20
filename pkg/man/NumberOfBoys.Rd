@@ -7,7 +7,7 @@ Number of boys in two-child families
 }
 
 \description{
-The number of boys in a sample of 2444 two-child families.
+The number of boys in a sample of 2,444 two-child families.
 }
 
 \usage{data(NumberOfBoys)}

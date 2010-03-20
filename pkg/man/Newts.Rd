@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Tetrodotoxin resistance in Garter Snakes
+Tetrodotoxin Resistance in Garter Snakes
 }
 
 \description{

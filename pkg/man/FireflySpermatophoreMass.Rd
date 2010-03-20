@@ -7,7 +7,7 @@ Spermatophore mass in fireflies
 }
 
 \description{
-Measurements of spermatophore mass in 35 fireflies (\url{http://en.wikipedia.org/wiki/Firefly}).
+Measurements of spermatophore mass in 35 fireflies.
 }
 
 \usage{data(FireflySpermatophoreMass)}
@@ -28,6 +28,8 @@ Measurements of spermatophore mass in 35 fireflies (\url{http://en.wikipedia.org
 
 \references{
 \url{http://beheco.oxfordjournals.org/cgi/content/abstract/14/1/135}
+
+\url{http://en.wikipedia.org/wiki/Firefly}
 }
 
 \examples{

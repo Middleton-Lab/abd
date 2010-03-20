@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Lifetime reproductive success in house sparrows
+Lifetime Reproductive Success in House Sparrows
 }
 
 \description{

@@ -7,7 +7,7 @@ NeotropicalTreePhotosynthesis
 }
 
 \description{
-Photosynthetic capacity (\code{photosynthetic.capacity}) and number of fruits produced in the previous season (\code{previous.fruits})of 9 females of \emph{Ocotea tenera}.
+Photosynthetic capacity (\code{photosynthetic.capacity}) and number of fruits produced in the previous season (\code{previous.fruits}) of 9 females of \emph{Ocotea tenera}.
 }
 
 \usage{data(NeotropicalTreePhotosynthesis)}

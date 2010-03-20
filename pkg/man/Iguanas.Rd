@@ -31,7 +31,7 @@ Wikelski, M. and C. Thom. 2000. Marine iguanas shrink to survive El Niño. \emph
 
 \examples{
 data(Iguanas)
-str{Iguanas}
+str(Iguanas)
 hist(Iguanas, breaks = 10)
 }
 

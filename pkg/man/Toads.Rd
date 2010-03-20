@@ -14,7 +14,7 @@ Hypothetical probability of a toad being right-handed
 \format{
   A data frame with 19 observations on the following 2 variables.
   \describe{
-    \item{\code{n}}{a numeric vector}
+    \item{\code{n.toads}}{a numeric vector}
     \item{\code{prob}}{a numeric vector}
   }
 }

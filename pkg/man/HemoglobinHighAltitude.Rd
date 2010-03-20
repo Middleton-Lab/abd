@@ -25,7 +25,7 @@ Relative rates of hemoglobin concentration in four populations of humans.
 %}
 
 \source{
-\emph{inferred from} Beall, C.M., M.J. Decker, G.M. Bittenham, I. Kushner, A. Gebremedhin, K.P. Strohl. 2002. An Ethiopian pattern of human adaptation to high-altitude hypoxia. \emph{Proc Natl Acad Sci U S A} 99(26): 17215-17218.}
+\emph{inferred from} Beall, C.M., M.J. Decker, G.M. Bittenham, I. Kushner, A. Gebremedhin, K.P. Strohl. 2002. An Ethiopian pattern of human adaptation to high-altitude hypoxia. \emph{Proceeding of the National Academy of Sciences (USA)} 99(26): 17215-17218.}
 
 \references{
 \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC139295/}

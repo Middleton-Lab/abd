@@ -27,7 +27,7 @@ Shoemaker, A. L. 1996. What’s normal? -- Temperature, gender, and heart rate. 
 \references{
 \url{http://www.amstat.org/publications/jse/v4n2/datasets.shoemaker.html}
 
-Mackowiak, P.A., Wasserman, S.S., and Levine, M.M. 1992. A critical appraisal of 98.6 degrees f, the upper limit of the normal body temperature, and other legacies of Carl Reinhold August Wunderlich. \emph{Journal of the American Medical Association} 268: 1578-1580.
+Mackowiak, P.A., Wasserman, S.S., and Levine, M.M. 1992. A critical appraisal of 98.6 degrees F, the upper limit of the normal body temperature, and other legacies of Carl Reinhold August Wunderlich. \emph{Journal of the American Medical Association} 268: 1578-1580.
 }
 
 \examples{

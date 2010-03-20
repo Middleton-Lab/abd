@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-WalkingStickHeads
+Walking Stick Head Width
 }
 
 \description{
-WalkingStickHeads
+Two measures of head width (\code{headwidth}) for each of 25 walking sticks (\emph{Timema cristinae}).
 }
 
 \usage{data(WalkingStickHeads)}
@@ -23,17 +23,17 @@ WalkingStickHeads
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences, USA} 103: 9090-9095.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}
+}
 
 \examples{
 data(WalkingStickHeads)
-## maybe str(WalkingStickHeads) ; plot(WalkingStickHeads) ...
+WalkingStickHeads
 }
 
 \keyword{datasets}

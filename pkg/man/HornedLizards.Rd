@@ -77,9 +77,11 @@ t.test(living, killed, var.equal = TRUE)
 
 # 2. Convert Survive to a factor and use t.test() with a formula
 #    Not necessary to convert to factor, but useful for pretty output
-HornedLizards$Survive <- factor(HornedLizards$Survive, levels = c(1, 0), labels = c("Living", "Killed"))
+HornedLizards$Survive <- factor(HornedLizards$Survive,
+  levels = c(1, 0), labels = c("Living", "Killed"))
 str(HornedLizards)
-t.test(Squamosal.horn.length ~ Survive, data = HornedLizards, var.equal = TRUE)
+t.test(Squamosal.horn.length ~ Survive, data = HornedLizards,
+  var.equal = TRUE)
 
 # 3. Welch's t-test not assuming equal variances, the t.test() default
 t.test(living, killed, var.equal = FALSE)

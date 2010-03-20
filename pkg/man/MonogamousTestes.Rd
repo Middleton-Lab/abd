@@ -6,7 +6,7 @@ Testes size in Flies
 }
 
 \description{
-Testes size (mm^2; \code{Testes.area}) in 8 populations of common yellow dung flies (\emph{Scathophaga stercoraria}) with different mating systems (\code{Mating.system}).
+Testes size (square mm; \code{Testes.area}) in 8 populations of common yellow dung flies (\emph{Scathophaga stercoraria}) with different mating systems (\code{Mating.system}).
 }
 
 \usage{data(MonogamousTestes)}

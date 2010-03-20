@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Ostrich Temperatures
+Ostrich Body and Brain Temperatures
 }
 
 \description{

@@ -8,7 +8,7 @@ FireflyFlash
 
 \description{
 Flash duration (ms) of a sample of male fireflies (\emph{Photinus ignitus};
-  \emph{n}=35).
+  \emph{n} = 35).
 }
 
 \usage{data(FireflyFlash)}

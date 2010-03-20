@@ -7,7 +7,7 @@ Ornamentation and attractiveness in guppies
 }
 
 \description{
-The father"s ornamentation (composite score of color and brightness) and son"s attractiveness (relative rates of visits by females) in male guppies (\emph{Poecilia reticulata}).
+The father's ornamentation (composite score of color and brightness) and son's attractiveness (relative rates of visits by females) in male guppies (\emph{Poecilia reticulata}).
 }
 
 \usage{data(GuppyAttractiveness)}
@@ -35,7 +35,8 @@ The father"s ornamentation (composite score of color and brightness) and son"s a
 data(GuppyAttractiveness)
 
 str(GuppyAttractiveness)
-plot(GuppyAttractiveness$father.ornament, GuppyAttractiveness$son.attract,
+plot(GuppyAttractiveness$father.ornament,
+  GuppyAttractiveness$son.attract,
   xlab = "Father's ornamentation",
   ylab = "Son's attractiveness",
   pch = 16,

@@ -24,7 +24,7 @@ Relative swimming speed (speed in syrup / speed in water) for 18 swimmers.
 %}
 
 \source{
-Gettelfinger, B. and E. L. Cussler. 2004. Will Humans Swim Faster or Slower in Syrup?. \emph{AIChE Journal} 50: 2646-2647.
+Gettelfinger, B. and E. L. Cussler. 2004. Will Humans Swim Faster or Slower in Syrup? \emph{AIChE Journal} 50: 2646-2647.
 }
 
 \references{

@@ -68,8 +68,8 @@ p <- ggplot(data.frame(Count.sort, Count.relfreq),
   aes(Count.sort, Count.relfreq))
 p + geom_step(direction = "vh") +
   scale_x_continuous("Species abundance") +
-  scale_y_continuous("Cumulative relative frequency")}
-
+  scale_y_continuous("Cumulative relative frequency")
+}
 }
 
 \keyword{datasets}

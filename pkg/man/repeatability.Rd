@@ -1,21 +1,22 @@
 \name{repeatability}
+
 \alias{repeatability}
+\alias{print.repeatability}
 
 \title{
 Repeatability
 }
 
 \description{
-Calculate the repeatability of observations in a random effects ANOVA.
+Calculate the repeatability of observations in a random effects ANOVA fit by \code{\link{aov}} or a or a linear mixed effects model fit by \code{\link{lme}}.
 }
 
 \usage{
-repeatability(vc)
+repeatability(x)
 }
 
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{vc}{an object of class "varcomp"}
+  \item{x}{an object of class \code{varcomps} (from \code{\link{varcomps}}) or \code{lme} (from \code{\link{lme}})}
 }
 
 %\details{
@@ -23,7 +24,7 @@ repeatability(vc)
 %}
 
 \value{
-Returns a numeric value of the repeatability with a class "vc."
+\code{repeatability} returns a numeric value of the repeatability with a \link{class} \code{repeatability} and \code{rep.aov} \emph{or} \code{rep.lme}, depending on the class of \code{vc}.
 }
 
 %\references{
@@ -39,16 +40,17 @@ Kevin M. Middleton (kmm@csusb.edu)
 %}
 
 \seealso{
-\code{\link{varcomps}}
+  \code{\link{varcomps}},
+  \code{\link{lme}}
 }
 
 \examples{
 data(WalkingStickFemurs)
-WalkingStickFemurs$specimen <- factor(WalkingStickFemurs$specimen)
 aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
 vc <- varcomps(aovfit, n = 2)
 vc
-repeatability(vc)
+R.varcomps <- repeatability(vc)
+R.varcomps
 }
 
 \keyword{ univar }

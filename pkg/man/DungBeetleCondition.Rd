@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-DungBeetleCondition
+Heritability of Body Condition in Dung Beetles
 }
 
 \description{
-DungBeetleCondition
+Body condition (\code{offspring.condition}) in 36 dung beetles (\emph{Onthophagus taurus}) from 12 \code{male}s each mated to 3 different virgin females.
 }
 
 \usage{data(DungBeetleCondition)}
@@ -23,17 +23,22 @@ DungBeetleCondition
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Kotiaho, J.S., L.W. Simmons, and J.L. Tomkins. 2001. Towards a resolution of the lek paradox. \emph{Nature} 410: 684-686.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Dung_beetle}
+
+\url{http://www.nature.com/nature/journal/v410/n6829/abs/410684a0.html}
+}
 
 \examples{
 data(DungBeetleCondition)
-## maybe str(DungBeetleCondition) ; plot(DungBeetleCondition) ...
+str(DungBeetleCondition)
+
+DungBeetleCondition$male <- factor(DungBeetleCondition$male)
+str(DungBeetleCondition)
 }
 
 \keyword{datasets}
