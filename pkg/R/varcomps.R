@@ -21,3 +21,14 @@ varcomps <- function(fm, n){
   class(varcomp.obj) <- "varcomps"
   varcomp.obj
 }
+
+print.varcomps <- function(x, ...){
+  cat("Mean Squares\n")
+  cat("\tGroups\t", x$MS.groups, "\n")
+  cat("\tError\t", x$MS.error, "\n")
+  cat("Variance Components\n")
+  cat("\tWithin\t", x$var.within, "\n")
+  cat("\tAmong\t", x$var.among, "\n")
+  cat("F = ", x$F, "\n")
+  cat("p = ", x$p, "on", x$df1, "and", x$df2, "degrees of freedom.\n")
+}

@@ -1,11 +1,10 @@
 Implement a manual viewer:
-abd.manual <- function () 
-	{
-	    viewer <- getOption("pdfviewer")
-	    file <- system.file("doc/Sleuth2-manual.pdf", package = "Sleuth2")
-	    system(paste(viewer, file, sep = " "))
-	    invisible()
-	}
+abd.manual <- function(){
+  viewer <- getOption("pdfviewer")
+  file <- system.file("doc/abd-manual.pdf", package = "abd")
+  system(paste(viewer, file, sep = " "))
+  invisible()
+}
 
 Fig. 2.4-2
 Fig. 4.3-1

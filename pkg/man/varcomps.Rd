@@ -1,5 +1,7 @@
 \name{varcomps}
+
 \alias{varcomps}
+\alias{print.varcomps}
 
 \title{
 Variance Components
@@ -30,8 +32,8 @@ varcomps(fm, n)
 \item{df1}{Numerator degrees of freedom}
 \item{df2}{Denominator degrees of freedom}
 \item{p}{\emph{p}-value}
-\item{var.within}{Within-group variance}
-\item{var.among}{Among group variance; equals \code{MS.error}}
+\item{var.within}{Within-group variance; equals \code{MS.error}}
+\item{var.among}{Among group variance}
 }
 
 %\references{

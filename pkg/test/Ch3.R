@@ -2,6 +2,8 @@
 
 library(abd)
 
+setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/test")
+
 ##########################################################################
 # 03e1 GlidingSnakeUndulations
 data(GlidingSnakeUndulations)
@@ -132,8 +134,13 @@ VasopressinVoles
 
 ##########################################################################
 # 03q12	AntillesImmigrationDates.csv
+#data(AntillesImmigrationDates)
+#AntillesImmigrationDates <- AntillesImmigrationDates$immigration.date
+#save(AntillesImmigrationDates, file = "AntillesImmigrationDates.rda")
+#prompt(AntillesImmigrationDates)
+
 data(AntillesImmigrationDates)
-AntillesImmigrationDates$immigration.date
+AntillesImmigrationDates
 
 
 ##########################################################################

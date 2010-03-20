@@ -3,19 +3,17 @@
 \docType{data}
 
 \title{
-Antilles immigration dates
+Antilles Bird Immigration Dates
 }
 
 \description{
-Approximate dates of immigration (\code{immigration.date}) for 37 species of birds in the Lesser Antilles.
+Approximate dates of immigration for 37 species of birds in the Lesser Antilles.
 }
 
 \usage{data(AntillesImmigrationDates)}
 \format{
-  A data frame with 37 observations on the following variable.
-  \describe{
-    \item{\code{immigration.date}}{a numeric vector}
-  }
+  The format is:
+ num [1:37] 0 0 0 0.2 0.3 0.5 0.6 0.9 1 1.3 ...
 }
 
 % \details{
@@ -31,7 +29,7 @@ Approximate dates of immigration (\code{immigration.date}) for 37 species of bir
 
 \examples{
 data(AntillesImmigrationDates)
-AntillesImmigrationDates$immigration.date
+AntillesImmigrationDates
 }
 
 \keyword{datasets}
