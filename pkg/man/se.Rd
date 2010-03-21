@@ -5,7 +5,7 @@ Standard Error of the Mean
 }
 
 \description{
-Calculate the standard error of the mean of a vector.
+\code{se} calculates the standard error of the mean of a vector.
 }
 
 \usage{
@@ -21,7 +21,7 @@ se(x)
 %}
 
 \value{
-A single value of the standard error of the mean
+A single numeric value of the standard error of the mean
 }
 
 %\references{
@@ -29,7 +29,7 @@ A single value of the standard error of the mean
 %}
 
 \author{
-Kevin Middleton
+Kevin M. Middleton (kmm@csusb.edu)
 }
 
 %\note{
@@ -37,16 +37,18 @@ Kevin Middleton
 %}
 
 \seealso{
-\code{\link{mean}}, \code{\link{sd}}
+\code{\link{mean}} for the mean of a vector
+\code{\link{sd}} for the standard deviation of a vector
 }
 
 \examples{
 set.seed(2)
 n <- 10
 y <- rnorm(n)
-mean(y)
+
 sd(y)
 sd(y)/sqrt(n)
+
 se(y)
 }
 

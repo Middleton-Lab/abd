@@ -10,6 +10,15 @@ Fig. 2.4-2
 Fig. 4.3-1
 Fig. 8.1-1 ggplot
 
+Functions
+  sign.test()
+  ci()
+
+Error Checking
+  sum.of.products()
+  sum.of.squares()
+  se()
+
 -------------------------------
 
 X 02.1a	TeenDeaths.csv
@@ -108,7 +117,7 @@ X 15q22	LodgepolePineCones.csv
 X 15q23	LupusProneMice.csv
 X 15q24	LizardSprintSpeed.csv
 
-16e1	FingerRatioCAGRepeats.csv
+X 16e1	FingerRatioCAGRepeats.csv
 16e2	InbreedingWolves.csv
 16e5	IndianRopeTrick.csv
 16q03	GodwitArrivalDates
