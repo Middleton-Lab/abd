@@ -18,6 +18,14 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
 	LazyLoad: \tab yes\cr
 }
 
+\tabular{ll}{
+Overview\tab file.show(system.file("README", package = "abd"))\cr
+News\tab RShowDoc("NEWS", package = "abd")\cr
+Acknowledgements\tab RShowDoc("THANKS", package = "abd")\cr
+This File\tab package?dyn\cr
+Help file\tab ?dyn\cr
+}
+
 }
 
 \author{
