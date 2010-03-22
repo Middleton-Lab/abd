@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-GodwitArrivalDates
+Godwit Arrival Dates
 }
 
 \description{
-GodwitArrivalDates
+Arrival dates for males and females in 10 pairs of Black-tailed Godwits (\code{Limosa limosa})
 }
 
 \usage{data(GodwitArrivalDates)}
@@ -23,17 +23,17 @@ GodwitArrivalDates
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Gunnarsson, T.G., J.A. Gill, T. Sigurbjörnsson, and W.J. Sutherland. 2004. Pair bonds: Arrival synchrony in migratory birds. \emph{Nature} 431: 646.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Black-tailed_godwit}
+}
 
 \examples{
 data(GodwitArrivalDates)
-## maybe str(GodwitArrivalDates) ; plot(GodwitArrivalDates) ...
+GodwitArrivalDates
 }
 
 \keyword{datasets}

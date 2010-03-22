@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-EarwigForceps
+Earwig Density and Forceps
 }
 
 \description{
-EarwigForceps
+Earwig (\emph{Forficula auricularia}) density and the proportion of trapped earwigs with abdominal forceps (used for fighting and courtship).
 }
 
 \usage{data(EarwigForceps)}
@@ -23,17 +23,21 @@ EarwigForceps
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the local evolution of a threshold dimorphism. \emph{Nature} 431: 1099-1103.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Forficula_auricularia}
+
+\url{http://www.arkive.org/common-european-earwig/forficula-auricularia/}
+
+\url{http://eol.org/pages/473785}
+}
 
 \examples{
 data(EarwigForceps)
-## maybe str(EarwigForceps) ; plot(EarwigForceps) ...
+EarwigForceps
 }
 
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-CricketImmunitySpermViability
+Immunity and Sperm Viability in Crickets
 }
 
 \description{
-CricketImmunitySpermViability
+Sperm viability and immune function, measured by lysozyme activity in crickets. Each data point is a mean for a single family of males.
 }
 
 \usage{data(CricketImmunitySpermViability)}
@@ -23,9 +23,9 @@ CricketImmunitySpermViability
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Simmons, L.W. and B. Roberts. 2005. Bacterial immunity traded for sperm viability in male crickets. \emph{Science} 309: 2031.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

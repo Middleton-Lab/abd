@@ -112,6 +112,39 @@ cor.test(IndianRopeTrick$years,
   IndianRopeTrick$impressiveness.score, method = "spearman")
 
 
+##########################################################################
+# 16q03	GodwitArrivalDates
+data(GodwitArrivalDates)
+GodwitArrivalDates
+
+
+##########################################################################
+# 16q08	EarwigForceps
+data(EarwigForceps)
+EarwigForceps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

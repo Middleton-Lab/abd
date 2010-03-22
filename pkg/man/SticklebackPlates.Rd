@@ -33,6 +33,7 @@ Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimw
 \examples{
 data(SticklebackPlates)
 
+\dontrun{
 op <- par(no.readonly = TRUE)
 par(mfrow = c(3, 1),
   xaxs = "i",
@@ -50,7 +51,6 @@ for (i in c("mm", "Mm", "MM")){
 }
 par(op)
 
-\dontrun{
 require(ggplot2)
 p1 <- ggplot(SticklebackPlates, aes(no.plates))
 p1 + geom_histogram(fill = "red", binwidth = 2) +
