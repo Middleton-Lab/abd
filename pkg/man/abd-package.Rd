@@ -29,8 +29,6 @@ This File\tab ?abd\cr
 
 \author{
 Kevin M. Middleton \url{kmm@csusb.edu}
-
-Maintainer: Kevin M. Middleton \url{kmm@csusb.edu}
 }
 
 \references{Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of Biological Data}. Roberts and Company Publishers. ISBN: 0981519407. \url{http://www.roberts-publishers.com/whitlock/}}

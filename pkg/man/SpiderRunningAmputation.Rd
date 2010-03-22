@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-SpiderRunningAmputation
+Spider Running Speeds after Amputation
 }
 
 \description{
-Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) amputation of a pedipalp (\url{http://en.wikipedia.org/wiki/Pedipalp}) in the spider genus \emph{Tidarren} (\url{http://en.wikipedia.org/wiki/Tidarren}).
+Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) amputation of a pedipalp in the spider genus \emph{Tidarren}.
 }
 
 \usage{data(SpiderRunningAmputation)}
@@ -29,6 +29,10 @@ Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an evolutionary
 
 \references{
 \url{http://www.pnas.org/content/101/14/4883}
+
+\url{http://en.wikipedia.org/wiki/Pedipalp}
+
+\url{http://en.wikipedia.org/wiki/Tidarren}
 }
 
 \examples{

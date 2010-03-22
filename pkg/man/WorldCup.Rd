@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-World Cup goals
+World Cup Goals
 }
 
 \description{

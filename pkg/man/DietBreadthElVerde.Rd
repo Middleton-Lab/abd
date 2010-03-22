@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Diet breadth in a rainforest community
+Diet Breadth in a Rainforest Community
 }
 
 \description{

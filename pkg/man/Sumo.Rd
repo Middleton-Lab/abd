@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Sumo wrestling wins
+Sumo Wrestling Wins
 }
 
 \description{

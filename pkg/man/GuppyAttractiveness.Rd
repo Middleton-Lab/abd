@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Ornamentation and attractiveness in guppies
+Ornamentation and Attractiveness in Guppies
 }
 
 \description{

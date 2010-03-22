@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-NeotropicalTreePhotosynthesis
+Photosynthesis in Neotropical Trees
 }
 
 \description{

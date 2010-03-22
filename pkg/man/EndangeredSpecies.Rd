@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Taxon groups on the U.S. Fish and Wildlife Service list of endangered and threatened species
+Endangered and Threatened Species
 }
 
 \description{

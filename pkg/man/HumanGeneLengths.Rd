@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Human gene lengths
+Human Gene Lengths
 }
 
 \description{

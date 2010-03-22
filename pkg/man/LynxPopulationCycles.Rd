@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Population cycles of lynx in Canada 1752-1819
+Population Cycles of Lynx in Canada 1752-1819
 }
 
 \description{

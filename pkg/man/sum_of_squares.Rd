@@ -1,24 +1,25 @@
-\name{sum.of.squares}
+\name{sum_of_squares}
 
-\alias{sum.of.squares}
-\alias{sum.of.products}
+\alias{sum_of_squares}
+\alias{sum_of_products}
 
 \title{
 Sum of Squares and Sum of Products
 }
 
 \description{
-Calculate the sum of squares (\code{sum.of.squares}) or sum of products (\code{sum.of.products}) of a numeric vector or pair of numeric vectors
+Calculate the sum of squares (\code{sum_of_squares}) or sum of products (\code{sum_of_products}) of a numeric vector or pair of numeric vectors
 }
 
 \usage{
-sum.of.squares(x)
+sum_of_squares(x)
 
-sum.of.products(x, y)
+sum_of_products(x, y)
 }
 
 \arguments{
-  \item{x}{a vector of values}
+  \item{x}{a vector of numeric values}
+  \item{y}{a vector of numeric values}
 }
 
 %\details{
@@ -41,17 +42,17 @@ Kevin M. Middleton (kmm@csusb.edu)
 %%  ~~further notes~~
 %}
 
-\seealso{
-\code{\link{sum.of.products}}
-}
+%\seealso{
+%\code{\link{sum_of_products}}
+%}
 
 \examples{
 set.seed(4)
 x <- rnorm(10)
-sum.of.squares(x)
+sum_of_squares(x)
 
 y <- rnorm(10)
-sum.of.products(x, y)
+sum_of_products(x, y)
 }
 
 \keyword{ univar }

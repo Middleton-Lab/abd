@@ -21,7 +21,7 @@ Body temperature for 25 randomly chosen health people
 %}
 
 \source{
-Shoemaker, A. L. 1996. What’s normal? -- Temperature, gender, and heart rate. \emph{Journal of Statistics Education} 4(2).
+Shoemaker, A. L. 1996. What's normal? -- Temperature, gender, and heart rate. \emph{Journal of Statistics Education} 4(2).
 }
 
 \references{

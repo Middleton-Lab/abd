@@ -7,7 +7,7 @@ Stalk-eyed Fly Eyespan
 }
 
 \description{
-Eyespan width (mm; \code{Eye.span}) in 45 stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}) fed a corn or cotton diet \code{Food}.
+Eyespan width (mm; \code{Eye.span}) in 45 stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}) fed a corn or cotton diet (\code{Food}).
 }
 
 \usage{data(StalkieEyespan)}

@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-HemoglobinHighAltitude
+Hemoglobin Levels in High Altitude Populations
 }
 
 \description{
-Relative rates of hemoglobin concentration in four populations of humans.
+Relative rates of hemoglobin concentration in four populations of humans living at different altitudes.
 }
 
 \usage{data(HemoglobinHighAltitude)}
@@ -15,7 +15,7 @@ Relative rates of hemoglobin concentration in four populations of humans.
   A data frame with 40 observations on the following 3 variables.
   \describe{
     \item{\code{haemoglobin}}{a numeric vector}
-    \item{\code{group}}{a factor with levels \code{Andes}, \code{Ethiopia}, \code{Tibet}, and \code{USA}}
+    \item{\code{group}}{a factor with levels: \code{Andes}, \code{Ethiopia}, \code{Tibet}, and \code{USA}}
     \item{\code{relative.frequency}}{a numeric vector}
   }
 }

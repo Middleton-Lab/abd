@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Number of seedlings per quadrat
+Number of Seedlings Per Quadrat
 }
 
 \description{

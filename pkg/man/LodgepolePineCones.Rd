@@ -25,12 +25,14 @@ Masses of cones of lodgepole pines (\code{conemass}) from 16 different habitat t
 %}
 
 \source{
-Edelaar, P. and C. W. Benkman. 2006. Replicated population divergence caused by localised coevolution? A test of three hypotheses in the red crossbill-lodgepole pine system. \emph{Journal of Evolutionary Biology} 19: 1651-1659.
+Edelaar, P. and C. W. Benkman. 2006. Replicated population divergence caused by localised coevolution? A test of three hypotheses in the Red Crossbill-lodgepole pine system. \emph{Journal of Evolutionary Biology} 19: 1651-1659.
 }
 
-%\references{
-%\url{http://www.uwyo.edu/benkman/PDFs%2520of%2520papers/Edelaar&Benkman2006.pdf}
-%}
+\references{
+\url{http://en.wikipedia.org/wiki/Lodgepole_pine}
+
+\url{http://en.wikipedia.org/wiki/Red_crossbill}
+}
 
 \examples{
 data(LodgepolePineCones)

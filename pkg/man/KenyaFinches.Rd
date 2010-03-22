@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Body mass and beak length in three species of finches in Kenya
+Body Mass and Beak Length in Three Species of Finches in Kenya
 }
 
 \description{
@@ -14,7 +14,7 @@ Data on body mass and beak length in three species of finches: Crimson-rumped wa
 \format{
   A data frame with 45 observations on the following 3 variables.
   \describe{
-    \item{\code{species}}{a factor with levels \code{CRU.WAXB}, \code{CUTTHROA}, and \code{WB.SPARW}}
+    \item{\code{species}}{a factor with levels: \code{CRU.WAXB}, \code{CUTTHROA}, and \code{WB.SPARW}}
     \item{\code{mass.g}}{a numeric vector}
     \item{\code{beaklength.mm}}{a numeric vector}
   }

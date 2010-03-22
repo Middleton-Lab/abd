@@ -3,19 +3,17 @@
 \docType{data}
 
 \title{
-Atlantic cod recruits
+Atlantic Cod Recruits
 }
 
 \description{
-Size (log10 transformed; \code{log10.recruits}) of Atlantic cod (\emph{Gadus morhua}) recruits in the North Sea in 39 years
+Size (log10 transformed) of Atlantic cod (\emph{Gadus morhua}) recruits in the North Sea in 39 years.
 }
 
 \usage{data(NorthSeaCodRecruits)}
 \format{
-  A data frame with 39 observations on the following variable.
-  \describe{
-    \item{\code{log10.recruits}}{a numeric vector}
-  }
+  The format is:
+ num [1:39] 5 5.1 5.2 5.2 5.2 5.2 5.2 5.2 5.3 5.3 ...
 }
 
 %\details{
@@ -32,7 +30,7 @@ Size (log10 transformed; \code{log10.recruits}) of Atlantic cod (\emph{Gadus mor
 
 \examples{
 data(NorthSeaCodRecruits)
-NorthSeaCodRecruits$log10.recruits
+NorthSeaCodRecruits
 }
 
 \keyword{datasets}

@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Rigormortis and time of death
+Rigormortis and Time of Death
 }
 
 \description{

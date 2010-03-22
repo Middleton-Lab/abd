@@ -122,8 +122,13 @@ Rigormortis
 
 ##########################################################################
 # 03q10	NorthSeaCodRecruits.csv
+#data(NorthSeaCodRecruits)
+#NorthSeaCodRecruits <- NorthSeaCodRecruits$log10.recruits
+#save(NorthSeaCodRecruits, file = "NorthSeaCodRecruits.rda")
+#prompt(NorthSeaCodRecruits)
+
 data(NorthSeaCodRecruits)
-NorthSeaCodRecruits$log10.recruits
+NorthSeaCodRecruits
 
 
 ##########################################################################

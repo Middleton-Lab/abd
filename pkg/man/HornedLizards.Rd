@@ -4,7 +4,7 @@
 \docType{data}
 
 \title{
-Horn length and predation status of 184 lizards
+Horn Length and Predation Status of Horned Lizards
 }
 \description{
 Squamosal horn length (mm; \code{Squamosal.horn.length}) and predation status (\code{Survive}; 1 = living; 0 = killed) for 184 horned lizards (\emph{Phrynosoma mcalli}).

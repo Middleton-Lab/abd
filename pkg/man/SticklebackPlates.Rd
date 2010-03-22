@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Number of lateral plates in sticklebacks
+Number of Lateral Plates in Sticklebacks
 }
 
 \description{
@@ -27,13 +27,12 @@ Number of lateral plates (\code{no.plates}) in threespine sticklebacks (\emph{Ga
 Colosimo, P.F., C.L. Peichel, K. Nereng, B.K. Blackman, M.D. Shapiro, D. Schluter, and D.M. Kingsley. 2004. The genetic architecture of parallel armor plate reduction in threespine sticklebacks. \emph{PLOS Biology} 2: 635-641. \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}}
 
 \references{
-Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimwood, J Schmutz, R.M. Myers, D. Schluter, D.M. Kingsley. 2005. Widespread parallel evolution in sticklebacks by repeated fixation of Ectodysplasin alleles. 307: 1928-33. \url{http://www.sciencemag.org/cgi/content/full/307/5717/1928}
+Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimwood, J Schmutz, R.M. Myers, D. Schluter, D.M. Kingsley. 2005. Widespread parallel evolution in sticklebacks by repeated fixation of ectodysplasin alleles. 307: 1928-33. \url{http://www.sciencemag.org/cgi/content/full/307/5717/1928}
 }
 
 \examples{
 data(SticklebackPlates)
 
-\dontrun{
 op <- par(no.readonly = TRUE)
 par(mfrow = c(3, 1),
   xaxs = "i",
@@ -51,6 +50,7 @@ for (i in c("mm", "Mm", "MM")){
 }
 par(op)
 
+\dontrun{
 require(ggplot2)
 p1 <- ggplot(SticklebackPlates, aes(no.plates))
 p1 + geom_histogram(fill = "red", binwidth = 2) +

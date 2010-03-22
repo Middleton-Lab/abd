@@ -2,6 +2,8 @@
 
 library(abd)
 
+setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/test")
+
 ##########################################################################
 # 2.1-1
 data(TeenDeaths)
@@ -66,6 +68,11 @@ p + geom_step(direction = "vh") +
 
 ##########################################################################
 # 2.1-4
+#data(SockeyeFemaleBodyMass)
+#SockeyeFemaleBodyMass <- SockeyeFemaleBodyMass$mass
+#save(SockeyeFemaleBodyMass, file = "SockeyeFemaleBodyMass.rda")
+#prompt(SockeyeFemaleBodyMass)
+
 data(SockeyeFemaleBodyMass)
 
 str(SockeyeFemaleBodyMass)
@@ -77,7 +84,7 @@ par(mfrow = c(1, 3),
   xaxs = "i",
   yaxs = "i")
 for (breaks in c(30, 10, 5)){
-  hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
+  hist(SockeyeFemaleBodyMass, breaks = breaks,
     xlim = c(1, 4),
     col = "red",
     ylab = "Frequency",
@@ -232,6 +239,11 @@ CrossTable(Conv.raw$has.convictions, Conv.raw$income.level,
 
 ##########################################################################
 # 2q18
+#data(FireflySpermatophoreMass)
+#FireflySpermatophoreMass <- FireflySpermatophoreMass$spmass.mg
+#save(FireflySpermatophoreMass, file = "FireflySpermatophoreMass.rda")
+#prompt(FireflySpermatophoreMass)
+
 data(FireflySpermatophoreMass)
 str(FireflySpermatophoreMass)
 FireflySpermatophoreMass

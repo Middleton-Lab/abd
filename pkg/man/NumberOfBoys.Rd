@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Number of boys in two-child families
+Number of Boys in Two-Child Families
 }
 
 \description{

@@ -35,7 +35,8 @@ The ratio of the lengths of the index finger to the ring finger in 46 males and 
 data(FingerRatioCAGRepeats)
 str(FingerRatioCAGRepeats)
 
-plot(FingerRatioCAGRepeats$CAGrepeats, FingerRatioCAGRepeats$finger.ratio,
+plot(FingerRatioCAGRepeats$CAGrepeats,
+  FingerRatioCAGRepeats$finger.ratio,
   xlab = "Number of CAG Repeats",
   ylab = "2D:4D Ratio",
   pch = 16, col = "red")
@@ -44,22 +45,26 @@ plot(FingerRatioCAGRepeats$CAGrepeats, FingerRatioCAGRepeats$finger.ratio,
 repeats <- FingerRatioCAGRepeats$CAGrepeats
 ratio <- FingerRatioCAGRepeats$finger.ratio
 
-(sum.products <- sum((repeats - mean(repeats)) * (ratio - mean(ratio))))
+(sum.products <- sum((repeats - mean(repeats)) *
+  (ratio - mean(ratio))))
 (SS.repeats <- sum((repeats - mean(repeats))^2))
 (SS.ratio <- sum((ratio - mean(ratio))^2))
 
 (r <- sum.products / (sqrt(SS.repeats) * sqrt(SS.ratio)))
 
 # Functions from abd package to calculate the same values
-sum.products <- sum.of.products((repeats, ratio))
-SS.repeats <- sum.of.squares(repeats)
-SS.ratio <- sum.of.squares(ratio)
+sum.products <- sum_of_products(repeats, ratio)
+SS.repeats <- sum_of_squares(repeats)
+SS.ratio <- sum_of_squares(ratio)
 sum.products / (sqrt(SS.repeats) * sqrt(SS.ratio))
 
-# cor() does the calculation in one step. Deault is Pearson's correlation
-cor(FingerRatioCAGRepeats$CAGrepeats, FingerRatioCAGRepeats$finger.ratio)
+# cor() does the calculation in one step.
+# Default is Pearson's correlation.
+cor(FingerRatioCAGRepeats$CAGrepeats,
+  FingerRatioCAGRepeats$finger.ratio)
 
-# Standard error of r. Use nrow() to get the number of observations.
+# Standard error of r.
+# Use nrow() to get the number of observations.
 n <- nrow(FingerRatioCAGRepeats)
 (SE.r <- sqrt((1 - r^2) / (n - 2)))
 
@@ -74,6 +79,7 @@ z.crit <- qnorm((1 - 0.05/2))
 
 # Backtransformation
 (exp(2 * ci.lower) - 1) / (exp(2 * ci.lower) + 1)
-(exp(2 * ci.upper) - 1) / (exp(2 * ci.upper) + 1)}
+(exp(2 * ci.upper) - 1) / (exp(2 * ci.upper) + 1)
+}
 
 \keyword{datasets}

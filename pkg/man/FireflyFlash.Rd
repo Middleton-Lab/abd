@@ -3,20 +3,18 @@
 \docType{data}
 
 \title{
-FireflyFlash
+Firefly Flash Duration
 }
 
 \description{
-Flash duration (ms) of a sample of male fireflies (\emph{Photinus ignitus};
+Flash duration (measured in millisecons) of a sample of male fireflies (\emph{Photinus ignitus};
   \emph{n} = 35).
 }
 
 \usage{data(FireflyFlash)}
 \format{
-  A data frame with 35 observations on the following variable.
-  \describe{
-    \item{\code{flash.ms}}{a numeric vector}
-  }
+  The format is:
+ int [1:35] 79 80 82 83 86 85 86 86 88 87 ...
 }
 
 %\details{

@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Body masses of female Sockeye Salmon
+Body Masses of Female Sockeye Salmon
 }
 
 \description{
@@ -12,10 +12,8 @@ Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka}; \url{http:/
 
 \usage{data(SockeyeFemaleBodyMass)}
 \format{
-  A data frame with 228 observations on the following variable.
-  \describe{
-    \item{\code{mass}}{a numeric vector}
-  }
+  The format is:
+ num [1:228] 3.09 2.91 3.06 2.69 2.88 2.98 1.61 2.16 1.56 1.76 ...
 }
 
 %\details{
@@ -42,15 +40,15 @@ par(mfrow = c(1, 3),
   xaxs = "i",
   yaxs = "i")
 for (breaks in c(30, 10, 5)){
-  hist(SockeyeFemaleBodyMass$mass, breaks = breaks,
+  hist(SockeyeFemaleBodyMass, breaks = breaks,
     xlim = c(1, 4),
     col = "red",
     ylab = "Frequency",
     xlab = "Body mass (kg)",
     main = "")
 }
-par(op)
 
+par(op)
 }
 
 \keyword{datasets}

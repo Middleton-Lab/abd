@@ -2,7 +2,7 @@
 \alias{DesertBirds}
 \docType{data}
 \title{
-Desert bird census data
+Desert Bird Census Data
 }
 
 \description{

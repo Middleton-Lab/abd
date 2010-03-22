@@ -7,7 +7,7 @@ Ostrich Body and Brain Temperatures
 }
 
 \description{
-Body and brain temperatures (C) in free-ranging ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding Centre, Lichtenburg, South Africa.
+Body and brain temperatures (degrees C) in free-ranging ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding Centre, Lichtenburg, South Africa.
 }
 
 \usage{data(OstrichTemp)}
@@ -30,6 +30,8 @@ Fuller, A., P.R. Kamerman, S.K. Maloney, G. Mitchell, and D. Mitchell. 2003. Var
 
 \references{
 \url{http://jeb.biologists.org/cgi/content/abstract/206/7/1171}
+
+\url{http://www.sa-venues.com/game-reserves/nwp_lichtenburg.htm}
 }
 
 \examples{

@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Eye widths in stalk-eyed flies
+Eye Widths in Stalk-Eyed Flies
 }
 
 \description{
@@ -12,10 +12,8 @@ Eye width in 9 male stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}).
 
 \usage{data(Stalkies)}
 \format{
-  A data frame with 9 observations on the following variable.
-  \describe{
-    \item{\code{eye.span}}{a numeric vector}
-  }
+  The format is:
+ num [1:9] 8.69 8.15 9.25 9.45 8.96 8.65 8.43 8.79 8.63
 }
 
 %\details{
@@ -34,9 +32,9 @@ Data provided by Kevin Fowler, University College, London.
 data(Stalkies)
 Stalkies
 
-n <- length(Stalkies$eye.span)
-(y.bar <- mean(Stalkies$eye.span))
-(y.s <- sd(Stalkies$eye.span))
+n <- length(Stalkies)
+(y.bar <- mean(Stalkies))
+(y.s <- sd(Stalkies))
 (SE.y.bar <- y.s / sqrt(n))
 df <- n - 1
 (t.crit <- qt(0.05/2, df = df, lower.tail = FALSE))
@@ -48,8 +46,8 @@ y.bar + (t.crit * SE.y.bar)
 
 # Or use ci() from the gmodels package
 require(gmodels)
-ci(Stalkies$eye.span)
-ci(Stalkies$eye.span, confidence = 0.99)
+ci(Stalkies)
+ci(Stalkies, confidence = 0.99)
 }
 
 \keyword{datasets}

@@ -14,7 +14,7 @@ Data on cell-mediated immunocompetence (\code{PHA}) and humoral immunity (\code{
 \format{
   A data frame with 20 observations on the following 3 variables.
   \describe{
-    \item{\code{treatment}}{a factor with levels \code{CAROT} and \code{NO}}
+    \item{\code{treatment}}{a factor with levels: \code{CAROT} and \code{NO}}
     \item{\code{PHA}}{a numeric vector}
     \item{\code{SRBC}}{a numeric vector}
   }

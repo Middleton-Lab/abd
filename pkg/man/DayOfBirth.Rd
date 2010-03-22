@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-DayOfBirth
+Day of Birth
 }
 
 \description{

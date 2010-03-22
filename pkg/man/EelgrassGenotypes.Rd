@@ -34,6 +34,8 @@ Number of shoots (\code{shoots}) surviving in each of 32 experimental plots plan
 \examples{
 data(EelgrassGenotypes)
 EelgrassGenotypes
+
+# Convert treatment.genotypes to a factor
 EelgrassGenotypes$treatment.genotypes <-
   factor(EelgrassGenotypes$treatment.genotypes)
 str(EelgrassGenotypes)

@@ -14,7 +14,7 @@ Time to mating (\code{Time.to.mating}) in fed and unfed (\code{Feeding}) sagebru
 \format{
   A data frame with 24 observations on the following 2 variables.
   \describe{
-    \item{\code{Feeding}}{a factor with levels \code{fed} \code{starved}}
+    \item{\code{Feeding}}{a factor with levels: \code{fed} and \code{starved}}
     \item{\code{Time.to.mating}}{a numeric vector}
   }
 }

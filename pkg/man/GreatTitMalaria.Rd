@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Infection frequencies in control and egg-removal populations of Great Tit
+Malaria Frequencies in Populations of Great Tit
 }
 
 \description{

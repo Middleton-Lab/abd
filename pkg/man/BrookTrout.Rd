@@ -2,11 +2,11 @@
 \alias{BrookTrout}
 \docType{data}
 \title{
-Salmon survival
+Salmon Survival in the Presence of Brook Trout
 }
 
 \description{
-Total numbers of salmon released (\code{salmon.released}) and salmon surviving (\code{salmon.surviving}) in 12 streams, 6 with brook trout \code{present} and 6 with brook trout \code{absent}. The proportion of salmon surviving (\code{proportion.surviving}) is given for each stream.
+Total numbers of salmon released (\code{salmon.released}) and surviving (\code{salmon.surviving}) in 12 streams, 6 with brook trout \code{present} and 6 with brook trout \code{absent}. The proportion of salmon surviving (\code{proportion.surviving}) is given for each stream.
 }
 
 \usage{data(BrookTrout)}

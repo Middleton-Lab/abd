@@ -25,7 +25,7 @@ Sprint speeds in 34 canyon lizards (\emph{Sceloporous merriami}) measured in suc
 %}
 
 \source{
-\emph{inferred from} Huey, R.B. and A.E. Dunham. 1987. he repeatability of locomotor performance in natural populations of the lizard \emph{Sceloporus} merriami. \emph{Evolution} 42: 1116-1120.
+\emph{inferred from} Huey, R.B. and A.E. Dunham. 1987. he repeatability of locomotor performance in natural populations of the lizard \emph{Sceloporus merriami}. \emph{Evolution} 42: 1116-1120.
 }
 
 \references{

@@ -14,7 +14,7 @@ Percent reduction in crawl speed (\code{whole.animal.resistance}) in the garter 
 \format{
   A data frame with 12 observations on the following 2 variables.
   \describe{
-    \item{\code{locality}}{a factor with levels \code{Benton} \code{Warrenton}}
+    \item{\code{locality}}{a factor with levels: \code{Benton} and \code{Warrenton}}
     \item{\code{whole.animal.resistance}}{a numeric vector}
   }
 }

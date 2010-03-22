@@ -12,12 +12,17 @@ setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/t
 #names(Stalkies)[1] <- "eye.span"
 #save(Stalkies, file = "Stalkies.rda")
 
+#data(Stalkies)
+#Stalkies <- Stalkies$eye.span
+#save(Stalkies, file = "Stalkies.rda")
+#prompt(Stalkies)
+
 data(Stalkies)
 Stalkies
 
-n <- length(Stalkies$eye.span)
-(y.bar <- mean(Stalkies$eye.span))
-(y.s <- sd(Stalkies$eye.span))
+n <- length(Stalkies)
+(y.bar <- mean(Stalkies))
+(y.s <- sd(Stalkies))
 (SE.y.bar <- y.s / sqrt(n))
 df <- n - 1
 (t.crit <- qt(0.05/2, df = df, lower.tail = FALSE))
@@ -29,8 +34,8 @@ y.bar + (t.crit * SE.y.bar)
 
 # Or use ci() from the gmodels package
 require(gmodels)
-ci(Stalkies$eye.span)
-ci(Stalkies$eye.span, confidence = 0.99)
+ci(Stalkies)
+ci(Stalkies, confidence = 0.99)
 
 
 ##########################################################################

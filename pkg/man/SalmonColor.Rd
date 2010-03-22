@@ -7,7 +7,7 @@ Pacific Salmon Color
 }
 
 \description{
-Skin color sockeye and kokanee morphs of the Pacific salmon (\emph{Oncorhynchus nerka}) raised raised in a low cartoenoid environment.
+Skin color sockeye and kokanee morphs of the Pacific salmon (\emph{Oncorhynchus nerka}) raised  in a low carotenoid environment.
 }
 
 \usage{data(SalmonColor)}

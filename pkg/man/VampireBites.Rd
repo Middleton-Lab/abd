@@ -14,8 +14,8 @@ Numbers of cattle bitten by the cow's estrous cycle.
 \format{
   A data frame with 4 observations on the following 3 variables.
   \describe{
-    \item{\code{estrous}}{a factor with levels \code{no} \code{yes}}
-    \item{\code{bitten}}{a factor with levels \code{no} \code{yes}}
+    \item{\code{estrous}}{a factor with levels: \code{no} and \code{yes}}
+    \item{\code{bitten}}{a factor with levels: \code{no} and \code{yes}}
     \item{\code{Frequency}}{a numeric vector}
   }
 }

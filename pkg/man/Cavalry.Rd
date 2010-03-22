@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Deaths from horse kicks
+Deaths from Horse Kicks
 }
 
 \description{

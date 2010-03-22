@@ -2,6 +2,8 @@
 
 library(abd)
 
+setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/test")
+
 ##########################################################################
 # 04e1	HumanGeneLengths.csv
 data(HumanGeneLengths)
@@ -105,9 +107,14 @@ for (n in c(20, 100, 500)){
 
 ##########################################################################
 # 04q06	FireflyFlash.csv
+#data(FireflyFlash)
+#str(FireflyFlash)
+#FireflyFlash <- FireflyFlash$flash.ms
+#save(FireflyFlash, file = "FireflyFlash.rda")
+#prompt(FireflyFlash)
+
 data(FireflyFlash)
 str(FireflyFlash)
-FireflyFlash
 
 ##########################################################################
 # 04q11	NumberGenesRegulated.csv

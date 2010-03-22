@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Vasopressin manipulation in the meadow vole
+Vasopressin Manipulation in the Meadow Vole
 }
 
 \description{

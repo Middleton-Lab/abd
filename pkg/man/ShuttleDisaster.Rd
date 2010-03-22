@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Ambient temperature and O-ring failures
+Ambient Temperature and O-Ring Failures
 }
 
 \description{
@@ -29,6 +29,8 @@ Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk Analysis of the Space Shut
 
 \references{
 Tufte, E.R. 1997. \emph{Visual Explanations: Images and Quantities, Evidence and Narrative}. Graphics Press.
+
+\url{http://www.edwardtufte.com/tufte/}
 }
 
 \examples{

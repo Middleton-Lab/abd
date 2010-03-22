@@ -3,19 +3,17 @@
 \docType{data}
 
 \title{
-Spermatophore mass in fireflies
+Spermatophore Mass in Fireflies
 }
 
 \description{
-Measurements of spermatophore mass in 35 fireflies.
+Measurements of spermatophore mass (milligrams) in 35 fireflies (\emph{Photinus ignitus}).
 }
 
 \usage{data(FireflySpermatophoreMass)}
 \format{
-  A data frame with 35 observations on the following variable.
-  \describe{
-    \item{\code{spmass.mg}}{a numeric vector}
-  }
+  The format is:
+ num [1:35] 0.047 0.037 0.041 0.045 0.039 0.064 0.064 0.065 0.079 0.07 ...
 }
 
 %\details{

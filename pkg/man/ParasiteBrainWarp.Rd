@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Frequencies of fish eaten by nematode infection level
+Frequencies of Fish Eaten by Trematode Infection Level
 }
 
 \description{
@@ -14,8 +14,8 @@ Frequencies of killifish (\emph{Fundulus parvipinnis}) eaten by birds depending 
 \format{
   A data frame with 6 observations on the following 3 variables.
   \describe{
-    \item{\code{infection.status}}{a factor with levels \code{high} \code{light} \code{uninfected}}
-    \item{\code{eaten}}{a factor with levels \code{no} \code{yes}}
+    \item{\code{infection.status}}{a factor with levels: \code{high}, \code{light}, and \code{uninfected}}
+    \item{\code{eaten}}{a factor with levels: \code{no} and \code{yes}}
     \item{\code{Frequency}}{a numeric vector}
   }
 }
