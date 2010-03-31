@@ -1,5 +1,5 @@
-\name{CricketImmunitySpermViability}
-\alias{CricketImmunitySpermViability}
+\name{CricketImmunity}
+\alias{CricketImmunity}
 \docType{data}
 
 \title{
@@ -7,10 +7,10 @@ Immunity and Sperm Viability in Crickets
 }
 
 \description{
-Sperm viability and immune function, measured by lysozyme activity in crickets. Each data point is a mean for a single family of males.
+Sperm viability and immune function, measured by lysozyme activity in crickets. Each observation is a mean for a single family of males.
 }
 
-\usage{data(CricketImmunitySpermViability)}
+\usage{data(CricketImmunity)}
 \format{
   A data frame with 41 observations on the following 2 variables.
   \describe{
@@ -32,7 +32,8 @@ Simmons, L.W. and B. Roberts. 2005. Bacterial immunity traded for sperm viabilit
 %}
 
 \examples{
-data(CricketImmunitySpermViability)
+data(CricketImmunity)
+CricketImmunity
 }
 
 \keyword{datasets}

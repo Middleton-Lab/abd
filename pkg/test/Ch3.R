@@ -6,9 +6,14 @@ setwd("/Users/kmm/Dropbox/Classes/BIOL_490_-_2010-01_Biometry/Whitlock/abd/pkg/t
 
 ##########################################################################
 # 03e1 GlidingSnakeUndulations
+#data(GlidingSnakeUndulations)
+#GlidingSnakeUndulations <- GlidingSnakeUndulations$undulation.rate
+#save(GlidingSnakeUndulations, file = "GlidingSnakeUndulations.rda")
+#prompt(GlidingSnakeUndulations)
+
 data(GlidingSnakeUndulations)
 
-hist(GlidingSnakeUndulations$undulation.rate,
+hist(GlidingSnakeUndulations,
   col = "red",
   breaks = 7,
   main = "",
@@ -18,7 +23,9 @@ hist(GlidingSnakeUndulations$undulation.rate,
 \dontrun{
 # Using ggplot()
 require(ggplot2)
-p <- ggplot(GlidingSnakeUndulations, aes(undulation.rate))
+GlidingSnakeUndulations.df <- 
+  data.frame(undulation.rate = GlidingSnakeUndulations)
+p <- ggplot(GlidingSnakeUndulations.df, aes(undulation.rate))
 p + geom_histogram(fill = "red", binwidth = 0.2) +
   scale_x_continuous("Undulation rate (Hz)") +
   scale_y_continuous("Frequency")
@@ -26,9 +33,9 @@ p + geom_histogram(fill = "red", binwidth = 0.2) +
 
 # Mean, variance, standard deviation
 #   Wrapping in () prints the output to the console
-(Ybar <- mean(GlidingSnakeUndulations$undulation.rate))
-(s2 <- var(GlidingSnakeUndulations$undulation.rate))
-(s <- sd(GlidingSnakeUndulations$undulation.rate))
+(Ybar <- mean(GlidingSnakeUndulations))
+(s2 <- var(GlidingSnakeUndulations))
+(s <- sd(GlidingSnakeUndulations))
 
 # Standard deviation equals the square root of the variance
 sqrt(s2)

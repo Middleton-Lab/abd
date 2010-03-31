@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-PufferfishMimicry
+Pufferfish Mimicry
 }
 
 \description{
-PufferfishMimicry
+Number of \code{predators} approaching models painted to resemble pufferfish (\emph{Canthigaster valentini}) across a range of similarities (\code{resemblance})
 }
 
 \usage{data(PufferfishMimicry)}
@@ -23,13 +23,17 @@ PufferfishMimicry
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a tropical reef fish. \emph{Proceedings of the Royal Society of London Series B, Biological Sciences} 270: 667-672.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://rspb.royalsocietypublishing.org/content/270/1516/667.full.pdf}
+
+\url{http://en.wikipedia.org/wiki/Canthigaster_valentini}
+
+\url{http://www.fishbase.org/Summary/SpeciesSummary.php?id=6544}
+}
 
 \examples{
 data(PufferfishMimicry)

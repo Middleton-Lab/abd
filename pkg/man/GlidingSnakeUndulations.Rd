@@ -12,10 +12,8 @@ Undulation rate (Hz) of 8 paradise tree snakes (\emph{Chrysopelea paradisi}).
 
 \usage{data(GlidingSnakeUndulations)}
 \format{
-  A data frame with 8 observations on the following variable.
-  \describe{
-    \item{\code{undulation.rate}}{a numeric vector}
-  }
+  The format is:
+ num [1:8] 0.9 1.2 1.2 1.3 1.4 1.4 1.6 2
 }
 
 %\details{
@@ -35,7 +33,7 @@ Socha, J.J. 2002. Gliding flight in the paradise tree snake. \emph{Nature} 418: 
 \examples{
 data(GlidingSnakeUndulations)
 
-hist(GlidingSnakeUndulations$undulation.rate,
+hist(GlidingSnakeUndulations,
   col = "red",
   breaks = 7,
   main = "",
@@ -45,16 +43,19 @@ hist(GlidingSnakeUndulations$undulation.rate,
 \dontrun{
 # Using ggplot()
 require(ggplot2)
-p <- ggplot(GlidingSnakeUndulations, aes(undulation.rate))
+GlidingSnakeUndulations.df <- 
+  data.frame(undulation.rate = GlidingSnakeUndulations)
+p <- ggplot(GlidingSnakeUndulations.df, aes(undulation.rate))
 p + geom_histogram(fill = "red", binwidth = 0.2) +
   scale_x_continuous("Undulation rate (Hz)") +
-  scale_y_continuous("Frequency")}
+  scale_y_continuous("Frequency")
+}
 
 # Mean, variance, standard deviation
 #   Wrapping in () prints the output to the console
-(Ybar <- mean(GlidingSnakeUndulations$undulation.rate))
-(s2 <- var(GlidingSnakeUndulations$undulation.rate))
-(s <- sd(GlidingSnakeUndulations$undulation.rate))
+(Ybar <- mean(GlidingSnakeUndulations))
+(s2 <- var(GlidingSnakeUndulations))
+(s <- sd(GlidingSnakeUndulations))
 
 # Standard deviation equals the square root of the variance
 sqrt(s2)
@@ -62,7 +63,6 @@ sqrt(s2)
 # Coefficient of variation
 (CV <- s/Ybar*100)
 round(CV)
-
 }
 
 \keyword{datasets}

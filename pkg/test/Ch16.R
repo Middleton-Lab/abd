@@ -124,12 +124,19 @@ data(EarwigForceps)
 EarwigForceps
 
 
+##########################################################################
+# 16q10	CricketImmunity
+#CricketImmunity <- CricketImmunitySpermViability
+#save(CricketImmunity, file = "CricketImmunity.rda")
+
+data(CricketImmunity)
+CricketImmunity
 
 
-
-
-
-
+##########################################################################
+# 16q11	PufferfishMimicry
+data(PufferfishMimicry)
+PufferfishMimicry
 
 
 
