@@ -33,6 +33,15 @@ Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimw
 \examples{
 data(SticklebackPlates)
 
+mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "MM"])
+median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "MM"])
+
+mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "Mm"])
+median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "Mm"])
+
+mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "mm"])
+median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "mm"])
+
 \dontrun{
 op <- par(no.readonly = TRUE)
 par(mfrow = c(3, 1),

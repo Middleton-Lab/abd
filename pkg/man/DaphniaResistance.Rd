@@ -14,7 +14,7 @@ Resistance of \emph{Daphnia} eggs to different levels of cyanobacteria (\code{cy
 \format{
   A data frame with 32 observations on the following 2 variables.
   \describe{
-    \item{\code{cyandensity}}{a factor with levels \code{high} \code{low} \code{med}}
+    \item{\code{cyandensity}}{a factor with levels: \code{high}, \code{low}, and \code{med}}
     \item{\code{resistance}}{a numeric vector}
   }
 }
