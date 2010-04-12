@@ -12,10 +12,10 @@ Data on speed before (\code{speed.before}) and speed after (\code{speed.after}) 
 
 \usage{data(SpiderRunningAmputation)}
 \format{
-  A data frame with 16 observations on the following 2 variables.
+  A data frame with 32 observations on the following 2 variables.
   \describe{
-    \item{\code{speed.before}}{a numeric vector}
-    \item{\code{speed.after}}{a numeric vector}
+    \item{\code{speed}}{a numeric vector}
+    \item{\code{amputation.status}}{a factor with levels \code{after} and \code{before}}
   }
 }
 
@@ -39,26 +39,36 @@ Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an evolutionary
 data(SpiderRunningAmputation)
 
 SpiderRunningAmputation
-median(SpiderRunningAmputation$speed.before)
+before <- subset(SpiderRunningAmputation, amputation.status == "before")
+median(before$speed)
 
-# Note that the values for the 1st and 3rd quantiles reported
-# differ from the interquartile range given on p. 68. 
-# See footnote 5.
-(SRA.summary <- summary(SpiderRunningAmputation$speed.before))
+after <- subset(SpiderRunningAmputation, amputation.status == "after")
+median(after$speed)
+
+# Note that summary() returns quantiles.
+(SRA.summary <- summary(before$speed))
 
 # Interquantile range
 SRA.summary[[5]] - SRA.summary[[2]]
 
-# fivenum() matches the book
-fivenum(SpiderRunningAmputation$speed.before)
+# fivenum() produces quartiles, which matches the calculation on p. 69
+SRA.5num <- fivenum(before$speed)
+SRA.5num[[4]] - SRA.5num[[2]]
 
-# Reformat data to "long" format for boxplots
-SRA.long <- stack(SpiderRunningAmputation)
-names(SRA.long) <- c("speed", "amputation.status")
-boxplot(speed ~ amputation.status, data = SRA.long,
+boxplot(speed ~ amputation.status, data = SpiderRunningAmputation,
   names = c("After amputation", "Before amputation"),
   ylab = "Running speed (cm/s)")
 
+\dontrun{
+# Using ggplot()
+require(ggplot2)
+p <- ggplot(SpiderRunningAmputation, aes(amputation.status, speed))
+p + geom_boxplot() +
+  scale_x_discrete("Amputation Status", 
+    breaks = levels(SpiderRunningAmputation$amputation.status),
+    labels = c("After amputation", "Before amputation")) +
+  scale_y_continuous("Running speed (cm/s)")
+}
 }
 
 \keyword{datasets}
