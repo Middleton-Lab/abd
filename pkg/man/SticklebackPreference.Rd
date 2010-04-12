@@ -15,8 +15,7 @@ Mating preference in 9 populations of three-spined sticklebacks
 \usage{data(SticklebackPreference)}
 
 \format{
-  The format is:
- num [1:9] -32 -29.8 -40.6 -90.8 -29.2 -28.8 -78.4 -59.2 -74.3
+A numeric vector with 9 observations.
 }
 
 %\details{

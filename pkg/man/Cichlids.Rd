@@ -14,7 +14,7 @@ Preference index in F1 and F2 crosses of two species of cichlids from Lake Victo
 \format{
   A data frame with 53 observations on the following 2 variables.
   \describe{
-    \item{\code{Genotype}}{a factor with levels \code{F1} \code{F2}}
+    \item{\code{Genotype}}{a factor with levels \code{F1} and \code{F2}}
     \item{\code{preference}}{a numeric vector}
   }
 }

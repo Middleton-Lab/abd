@@ -13,8 +13,7 @@ Flash duration (measured in millisecons) of a sample of male fireflies (\emph{Ph
 
 \usage{data(FireflyFlash)}
 \format{
-  The format is:
- int [1:35] 79 80 82 83 86 85 86 86 88 87 ...
+A numeric vector with 35 observations.
 }
 
 %\details{

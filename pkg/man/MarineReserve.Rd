@@ -12,8 +12,7 @@ Relative biomass in 32 marine reserves.
 
 \usage{data(MarineReserve)}
 \format{
-  The format is:
- num [1:32] 1.34 1.96 2.49 1.27 1.19 1.15 1.29 1.05 1.1 1.21 ...
+A numeric vector with 32 observations.
 }
 
 %\details{

@@ -36,8 +36,8 @@ data(HemoglobinHighAltitude)
 
 str(HemoglobinHighAltitude)
 
-# Fig. 2.4-1
 \dontrun{
+# Fig. 2.4-1
 require(ggplot2)
 
 labels <- data.frame( # Create a data.frame to hold the labels
@@ -54,7 +54,6 @@ p + geom_bar(stat="identity", fill = "red")  +
   scale_y_continuous("Relative frequency") +
   geom_text(data = labels, aes(x, y, label = Elev), hjust = 1, size = 3)
 }
-
 }
 
 \keyword{datasets}

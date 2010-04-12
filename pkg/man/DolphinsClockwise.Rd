@@ -12,8 +12,7 @@ Percentage of time spent swimming clockwise in 8 Southern Hemisphere dolphins
 \usage{data(DolphinsClockwise)}
 
 \format{
-  The format is:
- num [1:8] 77.7 84.8 79.4 84 99.6 93.6 89.4 97.2
+A numeric vector with 8 observations.
 }
 
 %\details{

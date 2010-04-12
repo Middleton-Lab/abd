@@ -7,13 +7,12 @@ Biomass Change in Rainforests near Clearcuts
 }
 
 \description{
-Biomass change in 36 Amazonian rainforests following clearcuts ranging from 50m to several kilometers.
+Biomass change in 36 Amazonian rainforests following clearcuts ranging from 50 m to several kilometers.
 }
 
 \usage{data(Clearcuts)}
 \format{
-  The format is:
- num [1:36] -10.8 -4.9 -2.6 -1.6 -3 -6.2 -6.5 -9.2 -3.6 -1.8 ...
+A numeric vector with 36 observations.
 }
 
 %\details{

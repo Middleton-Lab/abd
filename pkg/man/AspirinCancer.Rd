@@ -14,8 +14,8 @@ Frequency of cancer in 39,876 women taking and not taking aspirin.
 \format{
   A data frame with 4 observations on the following 3 variables.
   \describe{
-    \item{\code{Aspirin.treatment}}{a factor with levels \code{Aspirin} \code{Placebo}}
-    \item{\code{Cancer}}{a factor with levels \code{no} \code{yes}}
+    \item{\code{Aspirin.treatment}}{a factor with levels \code{Aspirin} and \code{Placebo}}
+    \item{\code{Cancer}}{a factor with levels \code{no} and \code{yes}}
     \item{\code{Frequency}}{a numeric vector}
   }
 }

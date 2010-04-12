@@ -49,8 +49,8 @@ CrossTable(GTM.raw$Treatment, GTM.raw$Response,
   prop.chisq = FALSE, 
   prop.t = FALSE)
 
-# Fig. 2.3-1
 \dontrun{
+# Fig. 2.3-1
 require(ggplot2)
 bar <- ggplot(GreatTitMalaria, 
   aes(x = Treatment, y = Frequency, fill = Response))

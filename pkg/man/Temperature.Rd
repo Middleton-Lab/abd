@@ -12,8 +12,7 @@ Body temperature for 25 randomly chosen health people
 \usage{data(Temperature)}
 
 \format{
-  The format is:
- num [1:25] 98.4 98.6 97.8 98.8 97.9 99 98.2 98.8 98.8 99 ...
+A numeric vector with 25 observations.
 }
 
 %\details{

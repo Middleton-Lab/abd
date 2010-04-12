@@ -12,8 +12,7 @@ Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka}; \url{http:/
 
 \usage{data(SockeyeFemaleBodyMass)}
 \format{
-  The format is:
- num [1:228] 3.09 2.91 3.06 2.69 2.88 2.98 1.61 2.16 1.56 1.76 ...
+A numeric vector with 228 observations.
 }
 
 %\details{

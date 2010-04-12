@@ -36,8 +36,8 @@ data(DaphniaResistance)
 str(DaphniaResistance)
 
 DaphniaResistance$cyandensity <-
-  factor(as.character(DaphniaResistance$cyandensity), levels = 
-  c("low", "med", "high"))
+  factor(as.character(DaphniaResistance$cyandensity), 
+  levels = c("low", "med", "high"))
 
 \dontrun{
 require(ggplot2)

@@ -12,8 +12,7 @@ Percentage of time that a female spent next to a carotenoid-supplemented male Ze
 
 \usage{data(ZebraFinchBeaks)}
 \format{
-  The format is:
- num [1:10] 23 27 57 15 15 54 34 37 -65 12
+A numeric vector with 10 observations.
 }
 
 %\details{

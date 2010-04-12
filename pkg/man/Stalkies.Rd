@@ -12,8 +12,7 @@ Eye width in 9 male stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}).
 
 \usage{data(Stalkies)}
 \format{
-  The format is:
- num [1:9] 8.69 8.15 9.25 9.45 8.96 8.65 8.43 8.79 8.63
+A numeric vector with 9 observations.
 }
 
 %\details{

@@ -12,8 +12,7 @@ Size (log10 transformed) of Atlantic cod (\emph{Gadus morhua}) recruits in the N
 
 \usage{data(NorthSeaCodRecruits)}
 \format{
-  The format is:
- num [1:39] 5 5.1 5.2 5.2 5.2 5.2 5.2 5.2 5.3 5.3 ...
+A numeric vector with 39 observations.
 }
 
 %\details{

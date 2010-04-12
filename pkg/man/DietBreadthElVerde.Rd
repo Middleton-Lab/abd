@@ -24,7 +24,7 @@ Number of different species (\code{breadth}) in 127 species (\code{no.species}) 
 %}
 
 \source{
-Waide R.B. and W.B. Reagan, eds. 1996. \emph{The food web of a tropical rainforest}. University of Chicago Press, Chicago.}
+Waide R.B. and W.B. Reagan, eds. 1996. \emph{The Food Web of a Tropical Rainforest}. University of Chicago Press, Chicago.}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

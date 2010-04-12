@@ -13,8 +13,7 @@ Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus cristatus}
 \usage{data(Iguanas)}
 
 \format{
-  The format is:
- int [1:64] -1 -11 38 -46 -16 -21 5 -14 -33 -27 ...
+A numeric vector with 64 observations.
 }
 
 %\details{

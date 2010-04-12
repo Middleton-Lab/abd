@@ -12,8 +12,7 @@ Undulation rate (Hz) of 8 paradise tree snakes (\emph{Chrysopelea paradisi}).
 
 \usage{data(GlidingSnakeUndulations)}
 \format{
-  The format is:
- num [1:8] 0.9 1.2 1.2 1.3 1.4 1.4 1.6 2
+A numeric vector with 8 observations.
 }
 
 %\details{

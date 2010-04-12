@@ -14,7 +14,7 @@ Levels of mRNA for gonadotropin-releasing hormone in cichlids (\emph{Haplochromi
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{Territorial.status}}{a factor with levels \code{NT} and \code{T}}
+    \item{\code{Territorial.status}}{a factor with levels \code{NT} and \code{T}, indicating whether a fish is not territorial (\code{NT}) or territorial (\code{T}).}
     \item{\code{GnRH.mRNA.level}}{a numeric vector}
   }
 }
@@ -24,7 +24,7 @@ Levels of mRNA for gonadotropin-releasing hormone in cichlids (\emph{Haplochromi
 %}
 
 \source{
-White, S. A., T. Nguyen, and R. D. Fernald. 2002. Social regulation of gonadotropin-releasing hormone. \emph{Journal of Experimental Biology} 205: 2567-2581.
+White, S.A., T. Nguyen, and R.D. Fernald. 2002. Social regulation of gonadotropin-releasing hormone. \emph{Journal of Experimental Biology} 205: 2567-2581.
 }
 
 \references{

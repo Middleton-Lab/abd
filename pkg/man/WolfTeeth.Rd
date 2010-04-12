@@ -12,8 +12,7 @@ Measurement (cm) of the distance between the canine and last molar teeth in 35 w
 \usage{data(WolfTeeth)}
 
 \format{
-  The format is:
- num [1:35] 10.2 10.4 9.9 10.7 10.3 9.7 10.3 10.7 10.1 10.6 ...
+A numeric vector with 35 observations.
 }
 
 %\details{

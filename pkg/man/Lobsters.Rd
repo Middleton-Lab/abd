@@ -12,8 +12,7 @@ Orientation of 15 lobsters relative to initial position.
 
 \usage{data(Lobsters)}
 \format{
-  The format is:
- int [1:15] 80 38 25 15 10 13 -2 -10 -30 -26 ...
+A numeric vector with 15 observations.
 }
 
 %\details{
