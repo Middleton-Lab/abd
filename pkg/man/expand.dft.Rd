@@ -5,15 +5,16 @@ Expand a data.frame
 }
 
 \description{
-This function expands a \code{data.frame} based on it's \code{Frequency} column. Useful for generating contingency tables from "summary" tables.
+This function expands a \code{data.frame} based on a column (\code{col.exp}). Useful for generating contingency tables from "summary" tables.
 }
 
 \usage{
-expand.dft(x, na.strings = "NA", as.is = FALSE, dec = ".")
+expand.dft(x, col.exp, na.strings = "NA", as.is = FALSE, dec = ".")
 }
 
 \arguments{
   \item{x}{a \code{data.frame}}
+  \item{col.exp}{a character string of the column name to use for "expansion"}
   \item{na.strings}{passed to \code{type.convert}}
   \item{as.is}{passed to \code{type.convert}}
   \item{dec}{passed to \code{type.convert}}
@@ -46,7 +47,7 @@ Modified for the \code{abd} package by Kevin Middleton from a function posted by
 data(AspirinCancer)
 AspirinCancer
 
-AspirinCancer.expanded <- expand.dft(AspirinCancer)
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
 str(AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables

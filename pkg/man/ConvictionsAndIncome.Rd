@@ -37,8 +37,7 @@ data(ConvictionsAndIncome)
 str(ConvictionsAndIncome)
 ConvictionsAndIncome
 
-names(ConvictionsAndIncome)[3] <- "Frequency"
-Conv.raw <- expand.dft(ConvictionsAndIncome)
+Conv.raw <- expand.dft(ConvictionsAndIncome, "n")
 
 xtabs(data = Conv.raw)
 

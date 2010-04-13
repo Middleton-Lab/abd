@@ -36,7 +36,7 @@ Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Henn
 data(AspirinCancer)
 AspirinCancer
 
-AspirinCancer.expanded <- expand.dft(AspirinCancer)
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
 str(AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables

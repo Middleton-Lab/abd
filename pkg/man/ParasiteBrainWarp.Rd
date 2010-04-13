@@ -36,7 +36,7 @@ Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized killifish 
 data(ParasiteBrainWarp)
 ParasiteBrainWarp
 
-ParasiteBrainWarp.long <- expand.dft(ParasiteBrainWarp)
+ParasiteBrainWarp.long <- expand.dft(ParasiteBrainWarp, "Frequency")
 table(ParasiteBrainWarp.long)
 xtabs(~ eaten + infection.status, data = ParasiteBrainWarp.long)
 

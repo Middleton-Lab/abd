@@ -39,7 +39,7 @@ str(GreatTitMalaria)
 GreatTitMalaria
 
 # Table 2.3-1
-GTM.raw <- expand.dft(GreatTitMalaria)
+GTM.raw <- expand.dft(GreatTitMalaria, "Frequency")
 
 require(gmodels)
 CrossTable(GTM.raw$Treatment, GTM.raw$Response,
