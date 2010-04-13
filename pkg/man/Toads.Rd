@@ -38,7 +38,6 @@ barplot(Toads$prob,
   ylim = c(0, 0.20),
   names.arg = Toads$n,
   cex.names = 0.75)
-}
 
 # Using dbinom()
 barplot(dbinom(0:18, 18, prob = 0.5),
@@ -48,5 +47,6 @@ barplot(dbinom(0:18, 18, prob = 0.5),
 
 # Exact two-tailed P-value for n >= 14 right-handed toads
 2 * sum(dbinom(14:18, 18, 0.5))
+}
 
 \keyword{datasets}
