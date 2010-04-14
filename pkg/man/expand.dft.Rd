@@ -9,12 +9,12 @@ This function expands a \code{data.frame} based on a column (\code{col.exp}). Us
 }
 
 \usage{
-expand.dft(x, col.exp, na.strings = "NA", as.is = FALSE, dec = ".")
+  expand.dft(x, col.exp, na.strings = "NA", as.is = FALSE, dec = ".")
 }
 
 \arguments{
   \item{x}{a \code{data.frame}}
-  \item{col.exp}{a character string of the column name to use for "expansion"}
+  \item{col.exp}{a character string of the column name or the column number to use for "expansion"}
   \item{na.strings}{passed to \code{type.convert}}
   \item{as.is}{passed to \code{type.convert}}
   \item{dec}{passed to \code{type.convert}}
@@ -47,7 +47,12 @@ Modified for the \code{abd} package by Kevin Middleton from a function posted by
 data(AspirinCancer)
 AspirinCancer
 
+# Specifying col.exp as character
 AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
+str(AspirinCancer.expanded)
+
+# Specifying col.exp as numeric
+AspirinCancer.expanded <- expand.dft(AspirinCancer, 3)
 str(AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables
