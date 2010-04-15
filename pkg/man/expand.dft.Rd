@@ -5,7 +5,7 @@ Expand a data.frame
 }
 
 \description{
-This function expands a \code{data.frame} based on a column (\code{col.exp}). Useful for generating contingency tables from "summary" tables.
+This function expands a \code{data.frame} based on a column (\code{col.exp}). Useful for generating long tables from contingency tables.
 }
 
 \usage{
@@ -39,9 +39,9 @@ Modified for the \code{abd} package by Kevin Middleton from a function posted by
 %%  ~~further notes~~
 %}
 
-%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+\seealso{
+  \code{\link{table}}
+}
 
 \examples{
 data(AspirinCancer)

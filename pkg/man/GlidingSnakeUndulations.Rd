@@ -51,7 +51,6 @@ p + geom_histogram(fill = "red", binwidth = 0.2) +
 }
 
 # Mean, variance, standard deviation
-#   Wrapping in () prints the output to the console
 (Ybar <- mean(GlidingSnakeUndulations))
 
 # Calculate variance via sum_of_squares()
