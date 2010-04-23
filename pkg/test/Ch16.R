@@ -139,10 +139,15 @@ data(PufferfishMimicry)
 PufferfishMimicry
 
 
+##########################################################################
+# 16q12	TelomeresAndStress
+data(TelomeresAndStress)
 
-
-
-
+plot(telomere.length ~ years, data = TelomeresAndStress,
+  col = "red",
+  pch = 16,
+  xlab = "Chronicity (years)",
+  ylab = "Telomere length (ratio)")
 
 
 

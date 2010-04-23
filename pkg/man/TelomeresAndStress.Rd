@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-TelomeresAndStress
+Telomere Shortening
 }
 
 \description{
-TelomeresAndStress
+Telomere length (ratio) and years since their child's diagnosis with chronic illness.
 }
 
 \usage{data(TelomeresAndStress)}
@@ -23,9 +23,9 @@ TelomeresAndStress
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Epel, E.S., E.H. Blackburn, J. Lin, F.S. Dhabhar, N.E. Adler, J.D. Morrow, and R.M. Cawthon. 2004. Accelerated telomere shortening in response to life stress. \emph{Proceedings of the National Academy of Sciences (USA)} 101: 17312-17315.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,12 @@ TelomeresAndStress
 
 \examples{
 data(TelomeresAndStress)
-## maybe str(TelomeresAndStress) ; plot(TelomeresAndStress) ...
+
+plot(telomere.length ~ years, data = TelomeresAndStress,
+  col = "red",
+  pch = 16,
+  xlab = "Chronicity (years)",
+  ylab = "Telomere length (ratio)")
 }
 
 \keyword{datasets}

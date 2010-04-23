@@ -13,11 +13,12 @@ Fig. 8.1-1 ggplot
 Functions
   sign.test()
   ci()
+  Agresti-Coull CI for binomial
 
 Error Checking
   sum.of.products()
   sum.of.squares()
-  se()
+  se() to sem()
 
 -------------------------------
 
@@ -126,7 +127,7 @@ X 16q03	GodwitArrivalDates
 X 16q08	EarwigForceps
 X 16q10	CricketImmunity
 X 16q11	PufferfishMimicry
-16q12	TelomeresAndStress
+X 16q12	TelomeresAndStress
 16q13	LanguageGreyMatter
 16q14	GreenSpaceBiodiversity
 16q16	LiverPreparation
