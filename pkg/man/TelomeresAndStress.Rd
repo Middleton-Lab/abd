@@ -27,9 +27,9 @@ Telomere length (ratio) and years since their child's diagnosis with chronic ill
 Epel, E.S., E.H. Blackburn, J. Lin, F.S. Dhabhar, N.E. Adler, J.D. Morrow, and R.M. Cawthon. 2004. Accelerated telomere shortening in response to life stress. \emph{Proceedings of the National Academy of Sciences (USA)} 101: 17312-17315.
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.pnas.org/content/101/49/17312}
+}
 
 \examples{
 data(TelomeresAndStress)

@@ -13,12 +13,13 @@ Fig. 8.1-1 ggplot
 Functions
   sign.test()
   ci()
-  Agresti-Coull CI for binomial
+  Wald adjusted prop.ci
 
 Error Checking
   sum.of.products()
   sum.of.squares()
   se() to sem()
+  prop.ci()
 
 -------------------------------
 
