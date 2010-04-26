@@ -35,13 +35,16 @@ Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the marine fossil re
 data(MassExtinctions)
 MassExtinctions
 
-sum((MassExtinctions$Number.of.extinctions *
-  MassExtinctions$Frequency) / 76)
+# Calculate weighted mean
+# with expand.dft()
+n.extinctions <- expand.dft(MassExtinctions,
+  "Frequency")$Number.of.extinctions
+wt.mean <- mean(n.extinctions)
+
+# With weighted.mean()
 (wt.mean <- weighted.mean(MassExtinctions$Number.of.extinctions,
   MassExtinctions$Frequency))
 
-n.extinctions <- rep(MassExtinctions$Number.of.extinctions,
-  times = MassExtinctions$Frequency)
 hist(n.extinctions,
   ylim = c(0, 30),
   xlab = "Number of Extinctions",
@@ -50,11 +53,15 @@ hist(n.extinctions,
 (Pr.3 <- (exp(-wt.mean) * wt.mean^3) / factorial(3))
 76 * Pr.3
 
+# With dpois()
+76 * dpois(3, wt.mean)
+
 # Calculate expected
 expected <- (exp(-wt.mean) * wt.mean^c(0:20) /
   factorial(c(0:20))) * 76
 # Alternately with dpois()
 expected.dpois <- dpois((0:20), lambda = wt.mean) * 76
+
 # Compare the two
 data.frame(expected, expected.dpois)
 

@@ -17,7 +17,7 @@ prop.ci(X, n, conf.int = 0.95)
 
 \arguments{
   \item{X}{an integer number of successes}
-  \item{n}{an interger number of trials}
+  \item{n}{an integer number of trials}
   \item{conf.int}{the confidence level for interval estimation; defaults to 0.95}
 }
 

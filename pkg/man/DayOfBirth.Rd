@@ -46,16 +46,17 @@ observed <- DayOfBirth$Number.of.births
 sum(observed)
 
 n.days.1999 <- c(52, 52, 52, 52, 52, 53, 52)
-expected <- n.days.1999 / 365 * 350
+(expected <- n.days.1999 / 365 * 350)
 
-chisq <- sum((observed - expected)^2 / expected)
-chisq
+(chisq <- sum((observed - expected)^2 / expected))
 
 # Two methods for calculating a p value
 1 - pchisq(chisq, df = 6)
 pchisq(chisq, df = 6, lower.tail = FALSE)
 
 # Using chisq.test()
+# Because the expected frequencies do not sum to 1,
+# we need to use rescale.p = TRUE
 chisq.test(observed, p = expected, rescale.p = TRUE)
 
 }
