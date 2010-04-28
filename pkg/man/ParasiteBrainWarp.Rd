@@ -36,18 +36,14 @@ Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized killifish 
 data(ParasiteBrainWarp)
 ParasiteBrainWarp
 
-ParasiteBrainWarp.long <- expand.dft(ParasiteBrainWarp, "Frequency")
-table(ParasiteBrainWarp.long)
-xtabs(~ eaten + infection.status, data = ParasiteBrainWarp.long)
+# Convert Frequency into a 2 X 3 contingency table
+Freq <- matrix(ParasiteBrainWarp$Frequency, nrow = 2)
+chisq.test(Freq)
 
-require(gmodels)
-CrossTable(ParasiteBrainWarp.long$eaten,
-  ParasiteBrainWarp.long$infection.status,
-  expected = TRUE,
-  prop.r = FALSE,
-  prop.c = FALSE,
-  prop.chisq = TRUE, 
-  prop.t = FALSE)
+# xtabs() can accomplish the same result, including the
+# chi-squared test.
+xtabs(Frequency ~ eaten + infection.status, data = ParasiteBrainWarp)
+summary(xtabs(Frequency ~ eaten + infection.status, data = ParasiteBrainWarp))
 }
 
 

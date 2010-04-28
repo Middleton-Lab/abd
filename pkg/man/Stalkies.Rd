@@ -43,10 +43,9 @@ y.bar - (t.crit * SE.y.bar)
 # Upper 95%
 y.bar + (t.crit * SE.y.bar)
 
-# Or use ci() from the gmodels package
-require(gmodels)
+# Or use ci() from abd package
 ci(Stalkies)
-ci(Stalkies, confidence = 0.99)
+ci(Stalkies, conf.int = 0.99)
 }
 
 \keyword{datasets}

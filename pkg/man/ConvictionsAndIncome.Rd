@@ -40,14 +40,6 @@ ConvictionsAndIncome
 Conv.raw <- expand.dft(ConvictionsAndIncome, "n")
 
 xtabs(data = Conv.raw)
-
-require(gmodels)
-CrossTable(Conv.raw$has.convictions, Conv.raw$income.level,
-  expected = FALSE,
-  prop.r = FALSE,
-  prop.c = FALSE,
-  prop.chisq = FALSE, 
-  prop.t = FALSE)
 }
 
 \keyword{datasets}

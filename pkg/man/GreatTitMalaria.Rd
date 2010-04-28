@@ -41,13 +41,7 @@ GreatTitMalaria
 # Table 2.3-1
 GTM.raw <- expand.dft(GreatTitMalaria, "Frequency")
 
-require(gmodels)
-CrossTable(GTM.raw$Treatment, GTM.raw$Response,
-  expected = FALSE,
-  prop.r = FALSE,
-  prop.c = FALSE,
-  prop.chisq = FALSE, 
-  prop.t = FALSE)
+table(GTM.raw)
 
 \dontrun{
 # Fig. 2.3-1

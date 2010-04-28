@@ -66,18 +66,20 @@ expected.dpois <- dpois((0:20), lambda = wt.mean) * 76
 data.frame(expected, expected.dpois)
 
 # Collapse some rows into a single expected value
-expected2 <- c(sum(expected[1:2]), expected[3:8], sum(expected[9:21]))
+expected2 <- c(sum(expected[1:2]), expected[3:8], 
+  sum(expected[9:21]))
 expected2
 
 MassExtinctions2 <- rbind(MassExtinctions[-c(1, 9:21), ], c(8, 9))
 MassExtinctions2
 
-chisq <- sum((MassExtinctions2$Frequency - expected2)^2 / expected2)
+chisq <- sum((MassExtinctions2$Frequency - expected2)^2 / 
+  expected2)
 chisq
 1 - pchisq(chisq, df = 6)
 
-# Alternate using chisq.test(). Note that df=7 here, because mu
-# is not estimated from the data.
+# Alternate using chisq.test(). Note that df = 7 here, because 
+# chisq.test() doesn't know that mu was estimated from the data.
 chisq.test(MassExtinctions2$Frequency, p = expected2,
   rescale.p = TRUE)
 

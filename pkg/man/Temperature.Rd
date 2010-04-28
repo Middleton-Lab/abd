@@ -46,7 +46,6 @@ t.test(Temperature, mu = 98.6, alternative = "two.sided")
 qt(0.05/2, 24, lower.tail = FALSE)
 
 # 95% Confidence interval
-require(gmodels)
 ci(Temperature)
 }
 

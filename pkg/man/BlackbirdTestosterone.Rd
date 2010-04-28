@@ -56,7 +56,6 @@ hist(BlackbirdTestosterone$dif.in.logs,
 (n <- length(BlackbirdTestosterone$dif.in.logs))
 (se.d <- se(BlackbirdTestosterone$dif.in.logs))
 
-require(gmodels)
 ci(BlackbirdTestosterone$dif.in.logs)
 
 (t.stat <- (d.bar - 0)/se.d)

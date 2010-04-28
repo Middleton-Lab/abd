@@ -36,6 +36,8 @@ Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior and Ecology}
 data(VampireBites)
 VampireBites
 
+xtabs(Frequency ~ estrous + bitten, data = VampireBites)
+
 fisher.test(matrix(VampireBites$Frequency, ncol = 2))
 
 # With G-test

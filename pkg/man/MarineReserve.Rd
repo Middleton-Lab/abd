@@ -53,12 +53,11 @@ hist(log.biomass)
 t.test(log.biomass, mu = 0, var.equal = TRUE)
 
 # Confidence intervals
-require(gmodels)
 (cis <- ci(log.biomass))
 
 # Back transform
-exp(cis[2])
-exp(cis[3])
+exp(cis$lower)
+exp(cis$upper)
 }
 
 \keyword{datasets}
