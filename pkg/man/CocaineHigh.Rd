@@ -1,5 +1,5 @@
-\name{CocaineHighVolkowEtal}
-\alias{CocaineHighVolkowEtal}
+\name{CocaineHigh}
+\alias{CocaineHigh}
 \docType{data}
 
 \title{
@@ -10,7 +10,7 @@ Effects of Cocaine on Dopamine Receptors
 Percent of dopamine receptors blocked (\code{percent.bocked}) and the perceived level of high as determined by PET scans (\code{high}) in 34 humans.
 }
 
-\usage{data(CocaineHighVolkowEtal)}
+\usage{data(CocaineHigh)}
 \format{
   A data frame with 34 observations on the following 2 variables.
   \describe{
@@ -32,9 +32,9 @@ Volkow, N.D., G.-J. Wang, R.W. Foltin, J.S. Fowler, N.N. Abumrad,  S. Vitkun, J.
 }
 
 \examples{
-data(CocaineHighVolkowEtal)
-str(CocaineHighVolkowEtal)
-CocaineHighVolkowEtal
+data(CocaineHigh)
+str(CocaineHigh)
+CocaineHigh
 }
 
 \keyword{datasets}
