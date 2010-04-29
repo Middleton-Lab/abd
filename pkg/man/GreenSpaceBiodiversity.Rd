@@ -3,18 +3,18 @@
 \docType{data}
 
 \title{
-GreenSpaceBiodiversity
+Diversity in Urban Green Space
 }
 
 \description{
-GreenSpaceBiodiversity
+Measures of biodiversity in 15 urban green spaces in Sheffield, England.
 }
 
 \usage{data(GreenSpaceBiodiversity)}
 \format{
   A data frame with 15 observations on the following 6 variables.
   \describe{
-    \item{\code{site}}{a factor with levels \code{A} \code{B} \code{C} \code{D} \code{E} \code{F} \code{G} \code{H} \code{I} \code{J} \code{K} \code{L} \code{M} \code{N} \code{O}}
+    \item{\code{site}}{a factor with levels \code{A} - \code{O}}
     \item{\code{attachment}}{a numeric vector}
     \item{\code{area.ha}}{a numeric vector}
     \item{\code{butterfly}}{a numeric vector}
@@ -27,17 +27,18 @@ GreenSpaceBiodiversity
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Fuller, R.A., K.N. Irvine, P. Devine-Wright, P.H. Warren, and K.J. Gaston. 2007. Psychological benefits of greenspace increase with biodiversity. \emph{Biology Letters} 3: 390-394.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://rsbl.royalsocietypublishing.org/content/3/4/390.abstract}
+}
 
 \examples{
 data(GreenSpaceBiodiversity)
-## maybe str(GreenSpaceBiodiversity) ; plot(GreenSpaceBiodiversity) ...
+str(GreenSpaceBiodiversity)
+GreenSpaceBiodiversity
 }
 
 \keyword{datasets}

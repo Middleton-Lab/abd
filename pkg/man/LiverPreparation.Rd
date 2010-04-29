@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LiverPreparation
+Liver Preparation
 }
 
 \description{
-LiverPreparation
+The unbound fraction of taurocholate for each of five concentrations of administered taurocholate.
 }
 
 \usage{data(LiverPreparation)}
@@ -23,17 +23,18 @@ LiverPreparation
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998. Effect of a protein binding change on unbound and total plasma concentrations for drugs of intermediate hepatic extraction. \emph{Journal of Pharmacokinetics and Pharmacodynamics} 16:397-411.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.springerlink.com/content/p134310534nw8j72}
+}
 
 \examples{
 data(LiverPreparation)
-## maybe str(LiverPreparation) ; plot(LiverPreparation) ...
+str(LiverPreparation)
+LiverPreparation
 }
 
 \keyword{datasets}

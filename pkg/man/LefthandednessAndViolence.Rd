@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LefthandednessAndViolence
+Left-handedness and Rates of Violence
 }
 
 \description{
-LefthandednessAndViolence
+Prevalence of left-handedness (\code{percent.left}) and homicide rates (\code{murder}) for 8 societies.
 }
 
 \usage{data(LefthandednessAndViolence)}
@@ -23,16 +23,18 @@ LefthandednessAndViolence
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Faurie, C. and M. Raymond. 2005. Handedness, homicide and negative frequency-dependent selection. \emph{Proceedings of the Royal Society of London B} 272: 25-28.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://rspb.royalsocietypublishing.org/content/272/1558/25.abstract}
+}
 
 \examples{
 data(LefthandednessAndViolence)
+str(LefthandednessAndViolence)
+LefthandednessAndViolence
 }
 
 \keyword{datasets}

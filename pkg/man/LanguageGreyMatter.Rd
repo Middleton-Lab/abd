@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LanguageGreyMatter
+Brain Structure in Bilingual Humans
 }
 
 \description{
-LanguageGreyMatter
+Proficiency score (summary of reading, writing, and speech) in subjects' second language and density of gray matter in the left inferior parietal region.
 }
 
 \usage{data(LanguageGreyMatter)}
@@ -23,9 +23,9 @@ LanguageGreyMatter
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Mechelli, A., J.T. Crinion, U. Noppeney, J. O'Doherty, J. Ashburner, R.S. Frackowiak, and C.J. Price. 2004. Structural plasticity in the bilingual brain. \emph{Nature} 431: 757.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,8 @@ LanguageGreyMatter
 
 \examples{
 data(LanguageGreyMatter)
-## maybe str(LanguageGreyMatter) ; plot(LanguageGreyMatter) ...
+str(LanguageGreyMatter)
+LanguageGreyMatter
 }
 
 \keyword{datasets}

@@ -128,14 +128,14 @@ X 16q08	EarwigForceps
 X 16q10	CricketImmunity
 X 16q11	PufferfishMimicry
 X 16q12	TelomeresAndStress
-16q13	LanguageGreyMatter
-16q14	GreenSpaceBiodiversity
-16q16	LiverPreparation
-16q17	SleepAndPerformance
-16q19	LefthandednessAndViolence
-16q20	TrilliumRecruitment
-16q21	CocaineHighVolkowEtal
-16q22	CocaineHighCollinsBell
+X 16q13	LanguageGreyMatter
+X 16q14	GreenSpaceBiodiversity
+X 16q16	LiverPreparation
+X 16q17	SleepAndPerformance
+X 16q19	LefthandednessAndViolence
+X 16q20	TrilliumRecruitment
+X 16q21	CocaineHighVolkowEtal
+X 16q22	CocaineHighCollinsBell [CO2GrowthRate]
 
 17e1	LionAges
 17e3	ChickadeeAlarmsCalls

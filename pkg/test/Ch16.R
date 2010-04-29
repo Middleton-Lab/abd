@@ -150,16 +150,63 @@ plot(telomere.length ~ years, data = TelomeresAndStress,
   ylab = "Telomere length (ratio)")
 
 
+##########################################################################
+# 16q13	LanguageGreyMatter
+data(LanguageGreyMatter)
+str(LanguageGreyMatter)
+LanguageGreyMatter
 
 
+##########################################################################
+# 16q14	GreenSpaceBiodiversity
+data(GreenSpaceBiodiversity)
+str(GreenSpaceBiodiversity)
+GreenSpaceBiodiversity
 
 
+##########################################################################
+# 16q16	LiverPreparation
+data(LiverPreparation)
+str(LiverPreparation)
+LiverPreparation
 
 
+##########################################################################
+# 16q17	SleepAndPerformance
+data(SleepAndPerformance)
+str(SleepAndPerformance)
+SleepAndPerformance
 
 
+##########################################################################
+# 16q19	LefthandednessAndViolence
+data(LefthandednessAndViolence)
+str(LefthandednessAndViolence)
+LefthandednessAndViolence
 
 
+##########################################################################
+# 16q20	TrilliumRecruitment
+data(TrilliumRecruitment)
+str(TrilliumRecruitment)
+TrilliumRecruitment
 
 
+##########################################################################
+# 16q21	CocaineHighVolkowEtal
+data(CocaineHighVolkowEtal)
+str(CocaineHighVolkowEtal)
+CocaineHighVolkowEtal
 
+##########################################################################
+# 16q22	CocaineHighCollinsBell
+#data(CocaineHighCollinsBell)
+#CocaineHighCollinsBell
+#CO2GrowthRate <- CocaineHighCollinsBell
+#CO2GrowthRate$treatment <- factor(CO2GrowthRate$treatment, labels = c("Normal", "High"))
+#CO2GrowthRate
+#save(CO2GrowthRate, file = "CO2GrowthRate.rda")
+#prompt(CO2GrowthRate)
+
+data(CO2GrowthRate)
+CO2GrowthRate

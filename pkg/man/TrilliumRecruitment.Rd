@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-TrilliumRecruitment
+Trillium Recruitment near Clearcuts
 }
 
 \description{
-TrilliumRecruitment
+Recruitment of \emph{Trillium} and distance to nearest clearcut in eight populations in southwestern Oregon.
 }
 
 \usage{data(TrilliumRecruitment)}
@@ -24,17 +24,18 @@ TrilliumRecruitment
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Jules, E. S. and B. J. Rathcke. 1999.  Mechanisms of reduced trillium recruitment along edges of old-growth forest fragments. \emph{Conservation Biology} 13:784-793
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.jstor.org/stable/2641693}
+}
 
 \examples{
 data(TrilliumRecruitment)
-## maybe str(TrilliumRecruitment) ; plot(TrilliumRecruitment) ...
+str(TrilliumRecruitment)
+TrilliumRecruitment
 }
 
 \keyword{datasets}
