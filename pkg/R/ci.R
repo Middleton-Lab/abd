@@ -1,5 +1,5 @@
 # Confidence interval for the mean of a normal distribution
-# Kevin Middleton
+# Written by Kevin Middleton
 
 ci <- function(x, conf.int = 0.95){
   

@@ -62,10 +62,11 @@ ci(BlackbirdTestosterone$dif.in.logs)
 2 * pt(t.stat, df = 12, lower.tail = TRUE)
 
 qt(0.05/2, df = 12, lower.tail = FALSE)
-}
 
 t.test(BlackbirdTestosterone$log.before,
   BlackbirdTestosterone$log.after,
   paired = TRUE, var.equal = TRUE)
+}
+
 
 \keyword{datasets}
