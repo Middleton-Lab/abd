@@ -43,8 +43,8 @@ BlackbirdTestosterone
 plot(log.after ~ log.before, data = BlackbirdTestosterone,
   xlim = c(3.9, 5.1), ylim = c(3.9, 5.1),
   pch = 16, col = "red",
-  ylab = "Antibody production after implant",
-  xlab = "Antibody production before implant")
+  ylab = "log Antibody production after implant",
+  xlab = "log Antibody production before implant")
 abline(b = 1, a = 0)
 
 hist(BlackbirdTestosterone$dif.in.logs,
@@ -63,5 +63,9 @@ ci(BlackbirdTestosterone$dif.in.logs)
 
 qt(0.05/2, df = 12, lower.tail = FALSE)
 }
+
+t.test(BlackbirdTestosterone$log.before,
+  BlackbirdTestosterone$log.after,
+  paired = TRUE, var.equal = TRUE)
 
 \keyword{datasets}

@@ -56,7 +56,7 @@ df.tot <- df.l + df.k
 
 (var.pooled <- (df.l * var(living) + df.k * var(killed)) / df.tot)
 
-# Note that se below uses n (not n - 1)
+# Note that se below uses n
 (se.diff.means <- sqrt(var.pooled * (1/154 + 1/30)))
 
 # A two-sided test, so we need 0.05/2 on each side
