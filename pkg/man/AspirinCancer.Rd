@@ -58,6 +58,13 @@ Z <- 1.96
 
 exp(CI.low)
 exp(CI.high)
+
+# Using odds.ratio()
+# First reformat the data so that "No cancer" is in column 1
+# and "Aspirin" is in row 2.
+x <- matrix(c(18515, 18496, 1427, 1438), nrow = 2)
+x
+odds.ratio(x)
 }
 
 \keyword{datasets}

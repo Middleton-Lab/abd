@@ -44,7 +44,7 @@ Kevin Middleton (kmm@csusb.edu)
 %}
 
 \seealso{
-\code{\link{chisq.test}}
+\code{\link{chisq.test}}, \code{\link{AspirinCancer}}
 }
 
 \examples{
