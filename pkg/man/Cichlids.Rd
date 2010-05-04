@@ -24,12 +24,12 @@ Preference index in F1 and F2 crosses of two species of cichlids from Lake Victo
 %}
 
 \source{
-Haeslery, M.P. and O. Seehausen. 2005. \emph{Proceedings of the Royal Society of London, Series B, Biological Sciences} 272: 237-245.
+Haeslery, M.P. and O. Seehausen. 2005. Inheritance of female mating preference in a sympatric sibling species pair of Lake Victoria cichlids: implications for speciation. \emph{Proceedings of the Royal Society of London, Series B, Biological Sciences} 272: 237-245.
 }
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://rspb.royalsocietypublishing.org/content/272/1560/237.full.pdf}
+}
 
 \examples{
 data(Cichlids)

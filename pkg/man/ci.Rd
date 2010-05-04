@@ -7,7 +7,7 @@
 Calculate the Confidence Interval for the Mean of a Normal Distribution
 }
 \description{
-This function calculates the confidence interval (default is 95 precent) for the mean of a normal distribution.
+This function calculates the confidence interval (default is 95 percent) for the mean of a normal distribution.
 }
 \usage{
   ci(x, conf.int = 0.95)
