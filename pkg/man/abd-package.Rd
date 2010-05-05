@@ -19,10 +19,10 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
 }
 
 \tabular{ll}{
-Overview\tab file.show(system.file("README", package = "abd"))\cr
-News\tab RShowDoc("NEWS", package = "abd")\cr
-Acknowledgements\tab RShowDoc("THANKS", package = "abd")\cr
-This File\tab ?abd\cr
+Overview\tab \code{file.show(system.file("README", package = "abd"))}\cr
+News\tab \code{RShowDoc("NEWS", package = "abd")}\cr
+Acknowledgements\tab \code{RShowDoc("THANKS", package = "abd")}\cr
+This File\tab \code{?abd}\cr
 }
 
 }
