@@ -37,13 +37,6 @@ hist(MarineReserve)
 qqnorm(MarineReserve, datax = TRUE)
 qqline(MarineReserve, datax = TRUE)
 
-# Compare with a normal distribution of the same n
-#  with the same mean
-set.seed(3)
-y <- rnorm(length(MarineReserve), mean = mean(MarineReserve))
-qqnorm(y, datax = TRUE)
-qqline(y, datax = TRUE)
-
 # Natural log transformation
 log.biomass <- log(MarineReserve)
 hist(log.biomass)
