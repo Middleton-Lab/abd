@@ -35,7 +35,7 @@ a numeric value
 %}
 
 \author{
-Kevin M. Middleton (kmm@csusb.edu)
+Kevin M. Middleton (\email{kmm@csusb.edu})
 }
 
 %\note{

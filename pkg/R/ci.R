@@ -9,7 +9,7 @@ ci <- function(x, conf.int = 0.95){
   x.bar <- mean(x)
   x.se <- sd(x) / sqrt(n)
   df <- n-1
-  t.crit <- qt((1-conf.int)/2, df = df, lower.tail = FALSE)
+  t.crit <- abs(qt((1-conf.int)/2, df = df, lower.tail = FALSE))
   lower <- x.bar - (t.crit * x.se)
   upper <- x.bar + (t.crit * x.se)
   zz <- list(x = x, x.bar = x.bar, n = n, x.se = x.se,

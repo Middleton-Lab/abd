@@ -39,7 +39,7 @@ Agresti, A. and B.A. Coull. 1998. Approximate is better than "exact" for interva
 }
 
 \author{
-Kevin M. Middleton (kmm@csusb.edu)
+Kevin M. Middleton (\email{kmm@csusb.edu})
 }
 
 %\note{

@@ -36,7 +36,7 @@ odds.ratio(x, conf.int = 0.95)
 %}
 
 \author{
-Kevin Middleton (kmm@csusb.edu)
+Kevin Middleton (\email{kmm@csusb.edu})
 }
 
 %\note{

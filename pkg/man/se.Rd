@@ -29,7 +29,7 @@ A single numeric value of the standard error of the mean
 %}
 
 \author{
-Kevin M. Middleton (kmm@csusb.edu)
+Kevin M. Middleton (\email{kmm@csusb.edu})
 }
 
 %\note{

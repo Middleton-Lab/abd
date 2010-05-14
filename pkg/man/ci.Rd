@@ -37,7 +37,7 @@ This function calculates the confidence interval (default is 95 percent) for the
 %}
 
 \author{
-Kevin Middleton (kmm@csusb.edu)
+Kevin Middleton (\email{kmm@csusb.edu})
 }
 
 %\note{
