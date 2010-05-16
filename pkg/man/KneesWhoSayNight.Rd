@@ -79,7 +79,7 @@ dev.new()
 par(xaxs = "i", yaxs = "i")
 (fcrit <- qf(0.05, 2, 19, lower.tail = FALSE))
 curve(df(x, 2, 19), from = 0, to = 10,
-  ylab = "Proability Density", 
+  ylab = "Probability Density", 
   xlab = expression(F[paste("2,19")]))
 x <- seq(fcrit, 10, length = 100)
 y <- df(x, 2, 19)
