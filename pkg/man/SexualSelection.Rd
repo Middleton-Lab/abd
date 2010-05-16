@@ -44,11 +44,8 @@ hist(SexualSelection$Difference, breaks = 20)
 
 2 * pbinom(q = n.neg, size = n, prob = 0.5)
 
-# With SIGN.test() from PSAWR package
-#  alternative = "two.sided" is the default, but we'll include
-#  it just to be sure.
-require(PASWR)
-SIGN.test(SexualSelection$Difference, alternative = "two.sided")
+# With a binomial test
+binom.test(n.neg, n, p = 0.5)
 }
 
 \keyword{datasets}
