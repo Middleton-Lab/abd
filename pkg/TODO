@@ -19,6 +19,7 @@ Error Checking
   sum.of.products()
   sum.of.squares()
   se() to sem()
+  Fix varcomps to take either Error() or one-way aov
 
 -------------------------------
 
