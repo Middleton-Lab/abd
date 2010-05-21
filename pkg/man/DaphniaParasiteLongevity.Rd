@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-DaphniaParasiteLongevity
+Daphnia Parasite Longevity
 }
 
 \description{
-DaphniaParasiteLongevity
+Number of spores and host longevity in the crestacean \emph{Daphnia magna}.
 }
 
 \usage{data(DaphniaParasiteLongevity)}
@@ -20,20 +20,20 @@ DaphniaParasiteLongevity
 }
 
 %\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Jensen, K.H., T.J. Little, A. Skorping, and D. Ebert. 2006. Empirical support for optimal virulence in a castrating parasite. \emph{PLoS Biology} 4(7): e197
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0040197}
+}
 
 \examples{
 data(DaphniaParasiteLongevity)
-## maybe str(DaphniaParasiteLongevity) ; plot(DaphniaParasiteLongevity) ...
+str(DaphniaParasiteLongevity)
+DaphniaParasiteLongevity
 }
 
 \keyword{datasets}

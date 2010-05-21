@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-FlycatcherPatch
+Forehead Patch Size in Collared Flycatachers
 }
 
 \description{
-FlycatcherPatch
+Forehead patch size in 30 male Collared Flycatachers measured in two consecutive years.
 }
 
 \usage{data(FlycatcherPatch)}
@@ -23,9 +23,9 @@ FlycatcherPatch
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Griffith, S. C. and B. C. Sheldon. 2001. Phenotypic plasticity in the expression of a sexually selected trait: neglected components of variation. \emph{Animal Behaviour} 61: 987-993.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,8 @@ FlycatcherPatch
 
 \examples{
 data(FlycatcherPatch)
-## maybe str(FlycatcherPatch) ; plot(FlycatcherPatch) ...
+str(FlycatcherPatch)
+FlycatcherPatch
 }
 
 \keyword{datasets}

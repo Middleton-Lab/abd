@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-NuclearTeeth
+Radioactive Teeth
 }
 
 \description{
-NuclearTeeth
+Actual birth year and birth year estimated from relative radioactivity of the enamel for 20 samples.
 }
 
 \usage{data(NuclearTeeth)}
@@ -23,17 +23,18 @@ NuclearTeeth
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Spalding, K.L., B.A. Buchholz, L.-E. Bergman, H. Druid, and J. Frisén. 2005. Age written in teeth by nuclear tests. \emph{Nature} 437: 333-334.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v437/n7057/full/437333a.html}
+}
 
 \examples{
 data(NuclearTeeth)
-## maybe str(NuclearTeeth) ; plot(NuclearTeeth) ...
+str(NuclearTeeth)
+NuclearTeeth
 }
 
 \keyword{datasets}

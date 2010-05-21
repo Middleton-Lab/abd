@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-PrimateMassMetabolicRate
+Primate Metabolic Rates
 }
 
 \description{
-PrimateMassMetabolicRate
+Body mass (g) and metabolic rate (watts) for 17 species of primates.
 }
 
 \usage{data(PrimateMassMetabolicRate)}
@@ -23,17 +23,18 @@ PrimateMassMetabolicRate
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Heusner, A. A. 1991. Size and power in mammals. Journal of Experimental Biology 160: 25-54.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jeb.biologists.org/cgi/content/abstract/160/1/25}
+}
 
 \examples{
 data(PrimateMassMetabolicRate)
-## maybe str(PrimateMassMetabolicRate) ; plot(PrimateMassMetabolicRate) ...
+str(PrimateMassMetabolicRate)
+PrimateMassMetabolicRate
 }
 
 \keyword{datasets}

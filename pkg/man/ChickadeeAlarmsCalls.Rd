@@ -3,18 +3,18 @@
 \docType{data}
 
 \title{
-ChickadeeAlarmsCalls
+Alarm Calls in Chickadees
 }
 
 \description{
-ChickadeeAlarmsCalls
+Number of "dee" notes per call in Black-capped Chickadees (\emph{Poecile atricapilla}) for 13 predator species with differing body masses.
 }
 
 \usage{data(ChickadeeAlarmsCalls)}
 \format{
   A data frame with 13 observations on the following 3 variables.
   \describe{
-    \item{\code{species}}{a factor with levels \code{ American kestrel} \code{ Coopers hawk} \code{ Great gray owl} \code{ Great horned owl} \code{ Gyrfalcon} \code{ Merlin} \code{ Northern pygmy-owl} \code{ Peregrine falcon} \code{ Prairie falcon} \code{ Red-tailed hawk} \code{ Rough-legged hawk} \code{ Saw-whet owl} \code{ Short-eared owl}}
+  \item{\code{species}}{a character vector}
     \item{\code{mass}}{a numeric vector}
     \item{\code{dees}}{a numeric vector}
   }
@@ -24,17 +24,28 @@ ChickadeeAlarmsCalls
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Templeton, C.N., E. Greene, and K. Davis. 2005. Allometry of alarm calls: black-capped chickadees encode information about predator size. \emph{Science} 308: 1934-1937.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.sciencemag.org/cgi/content/short/308/5730/1934}
+}
 
 \examples{
 data(ChickadeeAlarmsCalls)
-## maybe str(ChickadeeAlarmsCalls) ; plot(ChickadeeAlarmsCalls) ...
+str(ChickadeeAlarmsCalls)
+ChickadeeAlarmsCalls
+
+lm.fit <- lm(dees ~ mass, data = ChickadeeAlarmsCalls)
+
+plot(dees ~ mass, data = ChickadeeAlarmsCalls,
+  col = "red", pch = 16,
+  xlab = "Predator body mass (kg)",
+  ylab = "'Dees' per call")
+abline(lm.fit)
+
+summary(lm.fit)
 }
 
 \keyword{datasets}

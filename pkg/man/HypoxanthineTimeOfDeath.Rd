@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-HypoxanthineTimeOfDeath
+Hypoxanthine and Time Since Death
 }
 
 \description{
-HypoxanthineTimeOfDeath
+Hypoxanthine levels in the vitreous humour of the eye and time since death (hours) for 48 subjects.
 }
 
 \usage{data(HypoxanthineTimeOfDeath)}
@@ -23,9 +23,9 @@ HypoxanthineTimeOfDeath
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+James, R.A., P.A. Hoadley, and B.G. Sampson. 1997. Determination of postmortem interval by sampling vitreous humor. \emph{American Journal of Forensic Medicine and Pathology} 18: 158-162.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,6 +33,7 @@ HypoxanthineTimeOfDeath
 
 \examples{
 data(HypoxanthineTimeOfDeath)
+HypoxanthineTimeOfDeath
 }
 
 \keyword{datasets}

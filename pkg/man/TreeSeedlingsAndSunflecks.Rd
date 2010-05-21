@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-TreeSeedlingsAndSunflecks
+Tree Seedlings and Sunflecks
 }
 
 \description{
-TreeSeedlingsAndSunflecks
+Fleck duration (min) and relative seedling growth rate (mm/mm/week) for 21 seedlings of \emph{Shorea leprosula}.
 }
 
 \usage{data(TreeSeedlingsAndSunflecks)}
@@ -23,17 +23,18 @@ TreeSeedlingsAndSunflecks
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Leakey, A.D.B., J.D. Scholes, and M.C. Press. 2005. Physiological and ecological significance of sunflecks for dipterocarp seedlings. \emph{Journal of Experimental Botany} 56: 469-482.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jxb.oxfordjournals.org/cgi/content/short/56/411/469}
+}
 
 \examples{
 data(TreeSeedlingsAndSunflecks)
-## maybe str(TreeSeedlingsAndSunflecks) ; plot(TreeSeedlingsAndSunflecks) ...
+str(TreeSeedlingsAndSunflecks)
+TreeSeedlingsAndSunflecks
 }
 
 \keyword{datasets}

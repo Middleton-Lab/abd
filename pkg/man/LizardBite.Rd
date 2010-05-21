@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-LizardBite
+Bite Force in Collard Lizards
 }
 
 \description{
-LizardBite
+Bite force (N) and territory area in 11 male collared lizards (\emph{Crotaphytus collaris}).
 }
 
 \usage{data(LizardBite)}
@@ -23,9 +23,9 @@ LizardBite
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Lappin, A. K., and J. F. Husak. 2005. Weapon performance, not size, determines mating success and potential reproductive output in the collared lizard (\emph{Crotaphytus collaris}). \emph{American Naturalist} 166: 426-436.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,8 @@ LizardBite
 
 \examples{
 data(LizardBite)
-## maybe str(LizardBite) ; plot(LizardBite) ...
+str(LizardBite)
+LizardBite
 }
 
 \keyword{datasets}

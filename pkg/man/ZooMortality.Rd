@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-ZooMortality
+Home Range Size and Mortality
 }
-
+   
 \description{
-ZooMortality
+Home range size (\eqn{\log_{10}}{log10}) and captive infant mortality (\%) for 20 species of carnivores.
 }
 
 \usage{data(ZooMortality)}
@@ -23,17 +23,17 @@ ZooMortality
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Clubb, R. and G. Mason. 2003. Captivity effects on wide ranging carnivores. \emph{Nature} 425: 473-474.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v425/n6957/full/425473a.html}
+}
 
 \examples{
 data(ZooMortality)
-## maybe str(ZooMortality) ; plot(ZooMortality) ...
+str(ZooMortality)
 }
 
 \keyword{datasets}

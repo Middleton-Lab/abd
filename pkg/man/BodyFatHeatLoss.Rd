@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-BodyFatHeatLoss
+Heat Loss and Body Fat
 }
 
 \description{
-BodyFatHeatLoss
+Heat loss during exercise and relative body fat in 12 boys.
 }
 
 \usage{data(BodyFatHeatLoss)}
@@ -23,17 +23,18 @@ BodyFatHeatLoss
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Sloan, R. E. G. and W. R. Keatinge. 1973. Cooling rates of young people swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.ncbi.nlm.nih.gov/pubmed/4732330}
+}
 
 \examples{
 data(BodyFatHeatLoss)
-## maybe str(BodyFatHeatLoss) ; plot(BodyFatHeatLoss) ...
+str(BodyFatHeatLoss)
+BodyFatHeatLoss
 }
 
 \keyword{datasets}

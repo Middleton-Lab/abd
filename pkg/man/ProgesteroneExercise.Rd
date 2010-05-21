@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-ProgesteroneExercise
+Progesterone and Exercise
 }
 
 \description{
-ProgesteroneExercise
+Progesterone levels and rates of ventilation during submaximal exercise in 30 women.
 }
 
 \usage{data(ProgesteroneExercise)}
@@ -23,17 +23,18 @@ ProgesteroneExercise
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Brutsaert, T.D., H. Spielvogel, E. Caceres, M. Araoz, R.T. Chatterton, V.J. Vitzthum. 2002. Effect of menstrual cycle phase on exercise performance of high-altitude native women at 3600 m. \emph{Journal of Experimental Biology} 205: 233-239
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jeb.biologists.org/cgi/content/abstract/205/2/233}
+}
 
 \examples{
 data(ProgesteroneExercise)
-## maybe str(ProgesteroneExercise) ; plot(ProgesteroneExercise) ...
+str(ProgesteroneExercise)
+ProgesteroneExercise
 }
 
 \keyword{datasets}

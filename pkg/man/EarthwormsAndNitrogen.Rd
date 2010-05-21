@@ -3,12 +3,11 @@
 \docType{data}
 
 \title{
-EarthwormsAndNitrogen
+Earthworm Diversity and Nitrogen
 }
 
 \description{
-EarthwormsAndNitrogen
-}
+Number of earthworm species and total nitrogen content in the soil in 39 hardwood forest plots.}
 
 \usage{data(EarthwormsAndNitrogen)}
 \format{
@@ -23,17 +22,18 @@ EarthwormsAndNitrogen
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Gundale, M.J., W.M. Jolly, and T.H. Deluca. 2005. Susceptibility of a northern hardwood forest to exotic earthworm invasion. \emph{Conservation Biology} 19: 1075-1083.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www3.interscience.wiley.com/journal/118701215/abstract}
+}
 
 \examples{
 data(EarthwormsAndNitrogen)
-## maybe str(EarthwormsAndNitrogen) ; plot(EarthwormsAndNitrogen) ...
+str(EarthwormsAndNitrogen)
+EarthwormsAndNitrogen
 }
 
 \keyword{datasets}

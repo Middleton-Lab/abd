@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-GrasslandNutrientsPlantSpecies
+Grassland Diversity
 }
 
 \description{
-GrasslandNutrientsPlantSpecies
+Species diversity in 10 experimental plots in the Park Grass Experiment at Rothamsted Experimental Station to which varying numbers of nutrients have been added.
 }
 
 \usage{data(GrasslandNutrientsPlantSpecies)}
@@ -23,16 +23,17 @@ GrasslandNutrientsPlantSpecies
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Harpole, W. S. and D. Tilman. 2007. Grassland species loss due to reduced niche dimension. \emph{Nature} 446: 791-793.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.rothamsted.ac.uk/}
+}
 
 \examples{
 data(GrasslandNutrientsPlantSpecies)
+GrasslandNutrientsPlantSpecies
 }
 
 \keyword{datasets}

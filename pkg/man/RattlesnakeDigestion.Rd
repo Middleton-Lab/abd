@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-RattlesnakeDigestion
+Temperature Change and Meal Size in Rattlesnakes
 }
 
 \description{
-RattlesnakeDigestion
+Temperature change after a meal (\% of body mass) in 17 South American rattlesnakes (\emph{Crotalus durissus}).
 }
 
 \usage{data(RattlesnakeDigestion)}
@@ -23,17 +23,18 @@ RattlesnakeDigestion
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Tattersall, G.J., W.K. Milsom, A.S. Abe, S.P. Brito, and D.V. Andrade. 2004. The thermogenesis of digestion in rattlesnakes. \emph{Journal of Experimental Biology} 207: 579-585.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://jeb.biologists.org/cgi/content/abstract/207/4/579}
+}
 
 \examples{
 data(RattlesnakeDigestion)
-## maybe str(RattlesnakeDigestion) ; plot(RattlesnakeDigestion) ...
+str(RattlesnakeDigestion)
+RattlesnakeDigestion
 }
 
 \keyword{datasets}

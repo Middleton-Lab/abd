@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-BeetleWingsAndHorns
+Beetle Wings and Horns
 }
 
 \description{
-BeetleWingsAndHorns
+Relative size of the horns and wings in 19 female \emph{Onthophagus sagittarius} beetles.
 }
 
 \usage{data(BeetleWingsAndHorns)}
@@ -23,17 +23,18 @@ BeetleWingsAndHorns
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Emlen, D.J. 2001. Costs and the diversification of exaggerated animal structures. \emph{Science} 291: 1534-1536.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.scienceonline.org/cgi/content/abstract/291/5508/1534}
+}
 
 \examples{
 data(BeetleWingsAndHorns)
-## maybe str(BeetleWingsAndHorns) ; plot(BeetleWingsAndHorns) ...
+str(BeetleWingsAndHorns)
+BeetleWingsAndHorns
 }
 
 \keyword{datasets}

@@ -138,43 +138,43 @@ X 16q20	TrilliumRecruitment
 X 16q21	CocaineHighVolkowEtal
 X 16q22	CocaineHighCollinsBell [CO2GrowthRate]
 
-17e1	LionAges
-17e3	ChickadeeAlarmsCalls
-17e8	ShrinkingSeals
-17q02	ZooMortality
-17q03	ProgesteroneExercise
-17q04	BodyFatHeatLoss
-17q07	HybridPollenSterility Moyle et al 2004 replica.csv
-17q08	RattlesnakeDigestion Tattersall et al 2004 replica.csv
-17q09	LizardBite Lappin and Husak 2005 replica.csv
-17q11	HypoxanthineTimeOfDeath.csv James etal 1997 replica.csv
-17q12	SocialSpiderColonies.csv
-17q14	GrasslandNutrientsPlantSpecies.csv
-17q15	EarthwormsAndNitrogen.csv
-17q16	PrimateMassMetabolicRate.csv
-17q18	FlycatcherPatch.csv
-17q19	TreeSeedlingsAndSunflecks.csv
-17q20	PenguinTreadmill.csv
-17q21	BeetleWingsAndHorns.csv
-17q22	DaphniaParasiteLongevity.csv
-17q24	DEETMosquiteBites.csv
-17q25	NuclearTeeth.csv
+X 17e1	LionAges
+X 17e3	ChickadeeAlarmsCalls
+X 17e8	ShrinkingSeals
+X 17q02	ZooMortality
+X 17q03	ProgesteroneExercise
+X 17q04	BodyFatHeatLoss
+X 17q07	HybridPollenSterility
+X 17q08	RattlesnakeDigestion
+X 17q09	LizardBite
+X 17q11	HypoxanthineTimeOfDeath
+X 17q12	SocialSpiderColonies
+X 17q14	GrasslandNutrientsPlantSpecies
+X 17q15	EarthwormsAndNitrogen
+X 17q16	PrimateMassMetabolicRate
+X 17q18	FlycatcherPatch
+X 17q19	TreeSeedlingsAndSunflecks
+X 17q20	PenguinTreadmill
+X 17q21	BeetleWingsAndHorns
+X 17q22	DaphniaParasiteLongevity
+X 17q24	DEETMosquiteBites
+X 17q25	NuclearTeeth
 
-18e1	MouseEmpathy.csv
-18e2	ZooplanktonDepredation.csv
-18e3	IntertidalAlgae.csv
-18e4	MoleRatLayabouts.csv
-18q06	HippocampusLesions.csv
-18q07	BeeGeneExpression.csv
-18q09	NeanderthalBrainSize.csv
-18q11	ExploitedLarvalFish.csv
+18e1	MouseEmpathy
+18e2	ZooplanktonDepredation
+18e3	IntertidalAlgae
+18e4	MoleRatLayabouts
+18q06	HippocampusLesions
+18q07	BeeGeneExpression
+18q09	NeanderthalBrainSize
+18q11	ExploitedLarvalFish
 
-19e2	Pseudoscorpions.csv
-19e3	ChimpBrains.csv
+19e2	Pseudoscorpions
+19e3	ChimpBrains
 
-20q07	YeastRegulatoryGenes.csv
-20q08	SilverswordWaitingTimes.csv
-20q15	VoleDispersal.csv
-20q18	BeeLifespans.csv
+20q07	YeastRegulatoryGenes
+20q08	SilverswordWaitingTimes
+20q15	VoleDispersal
+20q18	BeeLifespans
 
 selection.txt

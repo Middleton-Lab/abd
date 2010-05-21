@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-DEETMosquiteBites
+DEET and Mosquito Bites
 }
 
 \description{
-DEETMosquiteBites
+Administered dose of DEET and number of mosquito bites for 52 women.
 }
 
 \usage{data(DEETMosquiteBites)}
@@ -23,9 +23,9 @@ DEETMosquiteBites
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Golenda, C. F., et al. 1999. Gender-related efficacy difference to an extended duration formulation of topical N,N-diethyl-\emph{m}-toluamide (DEET). \emph{American Journal of Tropical Medicine and Hygiene} 60: 654-657.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,8 @@ DEETMosquiteBites
 
 \examples{
 data(DEETMosquiteBites)
-## maybe str(DEETMosquiteBites) ; plot(DEETMosquiteBites) ...
+str(DEETMosquiteBites)
+DEETMosquiteBites
 }
 
 \keyword{datasets}
