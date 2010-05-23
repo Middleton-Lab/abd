@@ -24,7 +24,7 @@ Heat loss during exercise and relative body fat in 12 boys.
 %}
 
 \source{
-Sloan, R. E. G. and W. R. Keatinge. 1973. Cooling rates of young people swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
+Sloan, R.E.G. and W.R. Keatinge. 1973. Cooling rates of young people swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
 }
 
 \references{

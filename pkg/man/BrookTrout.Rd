@@ -70,9 +70,8 @@ t.test(proportion.surviving ~ brook.trout, data = BrookTrout,
   var.equal = FALSE)
 
 # Comparing variances
-# Levene's Test
-require(car)
-levene.test(proportion.surviving ~ brook.trout, data = BrookTrout)
+# Bartlett Test
+bartlett.test(proportion.surviving ~ brook.trout, data = BrookTrout)
 
 # Exploring differences in variance
 set.seed(2)
@@ -86,7 +85,7 @@ plot(density(x12), type = "n", ylim = c(0, 0.5))
 lines(density(x1), col = "blue")
 lines(density(x2), col = "red")
 
-levene.test(x12 ~ A)
+bartlett.test(x12 ~ A)
 
 # Same Mean; Different sd
 x2 <- rnorm(40, sd = 2)
@@ -95,6 +94,7 @@ dev.new()
 plot(density(x12), type = "n", ylim = c(0, 0.5))
 lines(density(x1), col = "blue")
 lines(density(x2), col = "red")
-levene.test(x12 ~ A)
+bartlett.test(x12 ~ A)
 }
+
 \keyword{datasets}

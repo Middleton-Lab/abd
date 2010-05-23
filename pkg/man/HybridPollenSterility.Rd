@@ -24,7 +24,7 @@ Genetic distance between pairs of species of the genus \emph{Silene} and proport
 %}
 
 \source{
-Moyle, L. C., M. S. Olson, and P. Tiffin. 2004. Patterns of reproductive isolation in three angiosperm genera. \emph{Evolution} 58: 1195-1208.
+Moyle, L.C., M.S. Olson, and P. Tiffin. 2004. Patterns of reproductive isolation in three angiosperm genera. \emph{Evolution} 58: 1195-1208.
 }
 
 %\references{

@@ -59,6 +59,10 @@ n <- nrow(InbreedingWolves)
 
 # Or using rounded values from p. 440
 2 * pt(-3.60, 22)
+
+# With cor.test()
+cor.test(InbreedingWolves$inbreeding.coefficient,
+  InbreedingWolves$pups)
 }
 
 \keyword{datasets}

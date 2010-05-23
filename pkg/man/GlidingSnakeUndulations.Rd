@@ -7,7 +7,7 @@ GlidingSnakeUndulations
 }
 
 \description{
-Undulation rate (Hz) of 8 paradise tree snakes (\emph{Chrysopelea paradisi}).
+Undulation rate (\emph{Hz}) of 8 paradise tree snakes (\emph{Chrysopelea paradisi}).
 }
 
 \usage{data(GlidingSnakeUndulations)}
@@ -47,8 +47,7 @@ GlidingSnakeUndulations.df <-
 p <- ggplot(GlidingSnakeUndulations.df, aes(undulation.rate))
 p + geom_histogram(fill = "red", binwidth = 0.2) +
   scale_x_continuous("Undulation rate (Hz)") +
-  scale_y_continuous("Frequency")
-}
+  scale_y_continuous("Frequency")}
 
 # Mean, variance, standard deviation
 (Ybar <- mean(GlidingSnakeUndulations))

@@ -24,7 +24,7 @@ Expression levels of the proteolipid protein 1 gene (PLP1; \code{PLP1.expression
 %}
 
 \source{
-\emph{inferred from} Tkachev, D., M.L. Mimmack , M.M. Ryan , M. Wayland , T. Freeman , P.B. Jones , M. Starkey , M.J. Webster , R.H. Yolken , S. Bahn. 2003. Oligodendrocyte dysfunction in schizophrenia and bipolar disorder. \emph{Lancet} 362(9386): 798-805.
+\emph{inferred from} Tkachev, D., M.L. Mimmack, M.M. Ryan, M. Wayland, T. Freeman, P.B. Jones, M. Starkey, M.J. Webster, R.H. Yolken, S. Bahn. 2003. Oligodendrocyte dysfunction in schizophrenia and bipolar disorder. \emph{Lancet} 362(9386): 798-805.
 }
 
 %\references{

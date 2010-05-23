@@ -25,7 +25,7 @@ Number of "dee" notes per call in Black-capped Chickadees (\emph{Poecile atricap
 %}
 
 \source{
-Templeton, C.N., E. Greene, and K. Davis. 2005. Allometry of alarm calls: black-capped chickadees encode information about predator size. \emph{Science} 308: 1934-1937.
+Templeton, C.N., E. Greene, and K. Davis. 2005. Allometry of alarm calls: Black-capped Chickadees encode information about predator size. \emph{Science} 308: 1934-1937.
 }
 
 \references{

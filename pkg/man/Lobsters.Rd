@@ -20,7 +20,7 @@ A numeric vector with 15 observations.
 %}
 
 \source{
-Boles, L. C., and K. J. Lohmann. 2003. True navigation and magnetic maps in spiny lobsters. \emph{Nature} 421: 60-63.
+Boles, L.C. and K.J. Lohmann. 2003. True navigation and magnetic maps in spiny lobsters. \emph{Nature} 421: 60-63.
 }
 
 \references{

@@ -53,8 +53,7 @@ require(ggplot2)
 p <- ggplot(genes.under.15k, aes(gene.length))
 p + geom_histogram(fill = "red") +
   scale_x_continuous("Gene length (number of nucleotides)") +
-  scale_y_continuous("Frequency")
-}
+  scale_y_continuous("Frequency")}
 
 
 # Population mean and standard deviation

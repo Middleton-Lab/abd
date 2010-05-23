@@ -52,8 +52,7 @@ p + geom_bar(stat="identity", fill = "red")  +
   facet_grid(group ~ .) +
   scale_x_continuous("Hemoglobin concentration (g/dL)") +
   scale_y_continuous("Relative frequency") +
-  geom_text(data = labels, aes(x, y, label = Elev), hjust = 1, size = 3)
-}
+  geom_text(data = labels, aes(x, y, label = Elev), hjust = 1, size = 3)}
 }
 
 \keyword{datasets}

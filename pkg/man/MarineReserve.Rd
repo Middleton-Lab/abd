@@ -20,7 +20,7 @@ A numeric vector with 32 observations.
 %}
 
 \source{
-Halpern, B. S. 2003. The impact of marine reserves: do reserves work and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
+Halpern, B.S. 2003. The impact of marine reserves: do reserves work and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
 }
 
 \references{

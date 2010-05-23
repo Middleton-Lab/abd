@@ -51,8 +51,7 @@ bar <- ggplot(GreatTitMalaria,
 bar + geom_bar(stat = "identity", position = "dodge")
 
 # Fig. 2.3-2
-bar + geom_bar(stat = "identity", position = "fill")
-}
+bar + geom_bar(stat = "identity", position = "fill")}
 
 }
 

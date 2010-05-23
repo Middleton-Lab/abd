@@ -7,7 +7,7 @@ Atlantic Cod Recruits
 }
 
 \description{
-Size (log10 transformed) of Atlantic cod (\emph{Gadus morhua}) recruits in the North Sea in 39 years.
+Size (\eqn{\log_{10}}{log10} transformed) of Atlantic cod (\emph{Gadus morhua}) recruits in the North Sea in 39 years.
 }
 
 \usage{data(NorthSeaCodRecruits)}

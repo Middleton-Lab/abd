@@ -50,9 +50,7 @@ p <- ggplot(GuppyAttractiveness,
   aes(x = father.ornament, y = son.attract))
 p + geom_point(color = "red", size = 3) +
   scale_x_continuous("Father's ornamentation") +
-  scale_y_continuous("Son's attractiveness")
-}
-
+  scale_y_continuous("Son's attractiveness")}
 }
 
 \keyword{datasets}

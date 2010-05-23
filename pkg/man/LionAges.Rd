@@ -7,7 +7,7 @@ Lion Age and Nose Coloration
 }
 
 \description{
-Ages (in years; \code{age})of 32 male lions and relative coloration of their noses (\code{proportion.black}).
+Ages (in years; \code{age}) of 32 male lions and relative coloration of their noses (\code{proportion.black}).
 }
 
 \usage{data(LionAges)}

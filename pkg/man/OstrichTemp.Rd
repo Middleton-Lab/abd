@@ -7,7 +7,7 @@ Ostrich Body and Brain Temperatures
 }
 
 \description{
-Body and brain temperatures (degrees C) in free-ranging ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding Centre, Lichtenburg, South Africa.
+Body and brain temperatures (\eqn{^{\circ}}{degrees }C) in free-ranging ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding Centre, Lichtenburg, South Africa.
 }
 
 \usage{data(OstrichTemp)}
@@ -15,8 +15,8 @@ Body and brain temperatures (degrees C) in free-ranging ostriches (\emph{Struthi
   A data frame with 6 observations on the following 3 variables.
   \describe{
     \item{\code{ostrich}}{a numeric vector identifying ostrich number}
-    \item{\code{body.temp}}{a numeric vector of body temperature in degrees C}
-    \item{\code{brain.temp}}{a numeric vector of brain temperature in degrees C}
+    \item{\code{body.temp}}{a numeric vector of body temperature in \eqn{^{\circ}}{degrees }C}
+    \item{\code{brain.temp}}{a numeric vector of brain temperature in \eqn{^{\circ}}{degrees }C}
   }
 }
 

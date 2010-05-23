@@ -24,7 +24,7 @@ Administered dose of DEET and number of mosquito bites for 52 women.
 %}
 
 \source{
-Golenda, C. F., et al. 1999. Gender-related efficacy difference to an extended duration formulation of topical N,N-diethyl-\emph{m}-toluamide (DEET). \emph{American Journal of Tropical Medicine and Hygiene} 60: 654-657.
+Golenda, C.F., V.B. Solberg, R. Burge, J.M. Gambel, and R.A. Wirtz. 1999. Gender-related efficacy difference to an extended duration formulation of topical N,N-diethyl-\emph{m}-toluamide (DEET). \emph{American Journal of Tropical Medicine and Hygiene} 60: 654-657.
 }
 
 %\references{
