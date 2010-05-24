@@ -53,13 +53,11 @@ fit2 <- lm(lnenergy ~ lnmass + caste,
 anova(fit2)
 
 # The data aren't balanced, so we need to do a "Type III"
-# sums of squares ANOVA.
-\dontrun{
+# sums of squares ANOVA using Anova() from the car package.
 require(car)
-Anova(fit2, type = "III")}
+Anova(fit2, type = "III")
 
 # Also using ancova() for the HH package
-\dontrun{
 require(HH)
 fit3 <- ancova(lnenergy ~ lnmass * caste,
   data = MoleRatLayabouts)
@@ -67,7 +65,7 @@ print.ancova(fit3)
 
 fit4 <- ancova(lnenergy ~ lnmass + caste,
   data = MoleRatLayabouts)
-print.ancova(fit4)}
+print.ancova(fit4)
 }
 
 \keyword{datasets}

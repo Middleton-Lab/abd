@@ -48,11 +48,10 @@ hist(boot.median, breaks = 50, col = "red")
 mean(boot.median)
 sd(boot.median) # Bootstrap standard error
 
-\dontrun{
 # Using boot()
 require(boot)
 boot.median <- function(x, i) median(x[i])
-boot(ChimpBrains$Rounded.AQ, boot.median, 10000)}
+boot(ChimpBrains$Rounded.AQ, boot.median, 10000)
 }
 
 \keyword{datasets}

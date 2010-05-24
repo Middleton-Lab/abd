@@ -7,7 +7,7 @@ Godwit Arrival Dates
 }
 
 \description{
-Arrival dates for males and females in 10 pairs of Black-tailed Godwits (\code{Limosa limosa})
+Arrival dates for males and females in 10 pairs of Black-tailed Godwits (\emph{Limosa limosa})
 }
 
 \usage{data(GodwitArrivalDates)}

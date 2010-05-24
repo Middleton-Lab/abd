@@ -24,7 +24,7 @@ Number of shoots (\code{shoots}) surviving in each of 32 experimental plots plan
 %}
 
 \source{
-\emph{inferred from} Reusch, T.B.H., A. Ehlers, A. Hämmerli, and B. Worm. 2005. Ecosystem recovery after climatic extremes enhanced by genotypic diversity. \emph{Proceedings of the National Academy of Sciences USA} 102: 2826-2831.
+\emph{inferred from} Reusch, T.B.H., A. Ehlers, A. Hämmerli, and B. Worm. 2005. Ecosystem recovery after climatic extremes enhanced by genotypic diversity. \emph{Proceedings of the National Academy of Sciences (USA)} 102: 2826-2831.
 }
 
 \references{

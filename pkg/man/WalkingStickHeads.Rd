@@ -24,7 +24,7 @@ Two measures of head width (\code{headwidth}) for each of 25 walking sticks (\em
 %}
 
 \source{
-Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences, USA} 103: 9090-9095.
+Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences (USA)} 103: 9090-9095.
 }
 
 \references{

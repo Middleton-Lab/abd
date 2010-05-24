@@ -7,7 +7,7 @@ Daphnia Parasite Longevity
 }
 
 \description{
-Number of spores and host longevity in the crestacean \emph{Daphnia magna}.
+Number of spores and host longevity in the crustacean \emph{Daphnia magna}.
 }
 
 \usage{data(DaphniaParasiteLongevity)}

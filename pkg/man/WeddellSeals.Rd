@@ -25,7 +25,7 @@ Comparison of oxygen consumption in feeding vs. non-feeding dives of the same le
 %}
 
 \source{
-Williams, T.M., L.A. Fuiman, M. Horning, and R.W. Davis. 2004. The cost of foraging by a marine predator, the Weddell seal \emph{Leptonychotes weddellii}: pricing by the stroke \emph{Journal of Experimental Biology} 207: 973-982.
+Williams, T.M., L.A. Fuiman, M. Horning, and R.W. Davis. 2004. The cost of foraging by a marine predator, the Weddell seal \emph{Leptonychotes weddellii}: pricing by the stroke. \emph{Journal of Experimental Biology} 207: 973-982.
 }
 
 \references{

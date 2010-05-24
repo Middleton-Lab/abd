@@ -24,10 +24,10 @@ Number of lateral plates (\code{no.plates}) in threespine sticklebacks (\emph{Ga
 %}
 
 \source{
-Colosimo, P.F., C.L. Peichel, K. Nereng, B.K. Blackman, M.D. Shapiro, D. Schluter, and D.M. Kingsley. 2004. The genetic architecture of parallel armor plate reduction in threespine sticklebacks. \emph{PLOS Biology} 2: 635-641. \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}}
+Colosimo, P.F., C.L. Peichel, K. Nereng, B.K. Blackman, M.D. Shapiro, D. Schluter, and D.M. Kingsley. 2004. The genetic architecture of parallel armor plate reduction in threespine sticklebacks. \emph{PLoS Biology} 2: 635-641. \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}}
 
 \references{
-Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimwood, J Schmutz, R.M. Myers, D. Schluter, D.M. Kingsley. 2005. Widespread parallel evolution in sticklebacks by repeated fixation of ectodysplasin alleles. 307: 1928-33. \url{http://www.sciencemag.org/cgi/content/full/307/5717/1928}
+Colosimo P.F., K.E. Hosemann, S. Balabhadra, G. Villarreal, M. Dickson, J. Grimwood, J Schmutz, R.M. Myers, D. Schluter, D.M. Kingsley. 2005. Widespread parallel evolution in sticklebacks by repeated fixation of ectodysplasin alleles. \emph{Science }307: 1928-33. \url{http://www.sciencemag.org/cgi/content/full/307/5717/1928}
 }
 
 \examples{

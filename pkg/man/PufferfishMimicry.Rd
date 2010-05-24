@@ -37,7 +37,8 @@ Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a tropical reef f
 
 \examples{
 data(PufferfishMimicry)
-## maybe str(PufferfishMimicry) ; plot(PufferfishMimicry) ...
+str(PufferfishMimicry)
+PufferfishMimicry
 }
 
 \keyword{datasets}

@@ -24,7 +24,7 @@ Body mass (g) and metabolic rate (watts) for 17 species of primates.
 %}
 
 \source{
-Heusner, A. A. 1991. Size and power in mammals. Journal of Experimental Biology 160: 25-54.
+Heusner, A.A. 1991. Size and power in mammals. \emph{Journal of Experimental Biology} 160: 25-54.
 }
 
 \references{

@@ -3,7 +3,7 @@
 \docType{data}
 
 \title{
-Earthworm Diversity and Nitrogen
+Earthworm Diversity and Soil Nitrogen Levels
 }
 
 \description{

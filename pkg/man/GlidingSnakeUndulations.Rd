@@ -63,7 +63,7 @@ sum_of_squares(GlidingSnakeUndulations) /
 sqrt(s2)
 
 # Coefficient of variation
-(CV <- s/Ybar*100)
+(CV <- s / Ybar * 100)
 round(CV)
 }
 

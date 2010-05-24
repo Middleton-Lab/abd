@@ -24,7 +24,7 @@ Two measures of femur length for each of 25 walking sticks (\emph{Timema cristin
 %}
 
 \source{
-Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences, USA} 103: 9090-9095.
+Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes divergence in adaptive radiation. \emph{Proceedings of the National Academy of Sciences (USA)} 103: 9090-9095.
 }
 
 \references{

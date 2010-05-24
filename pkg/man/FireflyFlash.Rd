@@ -7,7 +7,7 @@ Firefly Flash Duration
 }
 
 \description{
-Flash duration (measured in millisecons) of a sample of male fireflies (\emph{Photinus ignitus};
+Flash duration (measured in milliseconds) of a sample of male fireflies (\emph{Photinus ignitus};
   \emph{n} = 35).
 }
 
