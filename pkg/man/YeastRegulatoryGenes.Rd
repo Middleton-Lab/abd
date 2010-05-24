@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-YeastRegulatoryGenes
+Yeast Regulatory Genes
 }
 
 \description{
-YeastRegulatoryGenes
+Number of genes regulated by 109 yeast regulatory genes.
 }
 
 \usage{data(YeastRegulatoryGenes)}
@@ -23,9 +23,9 @@ YeastRegulatoryGenes
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Guelzim, N., S. Bottani, P. Bourgine and F. Képès. 2002. Topological and causal structure of the yeast transcriptional regulatory network. \emph{Nature Genetics} 31: 60-63.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,8 @@ YeastRegulatoryGenes
 
 \examples{
 data(YeastRegulatoryGenes)
-## maybe str(YeastRegulatoryGenes) ; plot(YeastRegulatoryGenes) ...
+str(YeastRegulatoryGenes)
+YeastRegulatoryGenes
 }
 
 \keyword{datasets}

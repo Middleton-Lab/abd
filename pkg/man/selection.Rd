@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-selection
+Data for Meta-analysis
 }
 
 \description{
-selection
+Data for meta-analysis on the relationship between testosterone and aggression.
 }
 
 \usage{data(selection)}
@@ -15,14 +15,14 @@ selection
   A data frame with 814 observations on the following 8 variables.
   
   \describe{
-    \item{\code{species}}{a factor with XX levels}
-    \item{\code{traitname}}{a factor with XX levels}
-    \item{\code{Strength.of.selection}}{a numeric vector}
-    \item{\code{Sample.size}}{a numeric vector}
-    \item{\code{authors}}{a factor with XX levels}
-    \item{\code{year}}{a numeric vector}
-    \item{\code{journal}}{a factor with XX levels}
-    \item{\code{vol.p.p}}{a factor with XX levels}
+	  \item{\code{species}}{a character vector}
+	  \item{\code{traitname}}{a character vector}
+	  \item{\code{Strength.of.selection}}{a numeric vector}
+	  \item{\code{Sample.size}}{a numeric vector}
+	  \item{\code{authors}}{a character vector}
+	  \item{\code{year}}{a numeric vector}
+	  \item{\code{journal}}{a character vector}
+	  \item{\code{vol.p.p}}{a character vector}
   }
 }
 
@@ -30,9 +30,8 @@ selection
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Kingsolver, J.G., H.E. Hoekstra, J.M. Hoekstra, D. Berrigan, S.N. Vignieri, C.E. Hill, A. Hoang, P. Gibert, and P. Beerli. 2001. The strength of phenotypic selection in natural populations. \emph{The American Naturalist} 157: 245-261.}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~

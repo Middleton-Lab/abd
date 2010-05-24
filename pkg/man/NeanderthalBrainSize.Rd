@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-NeanderthalBrainSize
+Cranial Capacity in Neanderthals and Modern Humans
 }
 
 \description{
-NeanderthalBrainSize
+Brain size (\code{lnbrain}) and body mass (\code{lnmass}) in Neanderthals and early modern humans (\code{species}).
 }
 
 \usage{data(NeanderthalBrainSize)}
@@ -24,9 +24,9 @@ NeanderthalBrainSize
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Ruff, C.B., E. Trinkaus, and T.W. Holliday. 1997. Body mass and encephalization in Pleistocene \emph{Homo}. \emph{Nature} 387: 173-176.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -34,7 +34,7 @@ NeanderthalBrainSize
 
 \examples{
 data(NeanderthalBrainSize)
-## maybe str(NeanderthalBrainSize) ; plot(NeanderthalBrainSize) ...
+NeanderthalBrainSize
 }
 
 \keyword{datasets}

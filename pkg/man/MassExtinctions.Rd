@@ -83,10 +83,11 @@ chisq
 chisq.test(MassExtinctions2$Frequency, p = expected2,
   rescale.p = TRUE)
 
+\dontrun{
 # Second alternate using goodfit() from vcd package
 require(vcd)
 extinctions.fit <- goodfit(MassExtinctions2$Frequency)
-summary(extinctions.fit)
+summary(extinctions.fit)}
 
 # Variance
 var(n.extinctions)

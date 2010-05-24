@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-SilverswordWaitingTimes
+Rate of Speciation in Silverswords
 }
 
 \description{
-SilverswordWaitingTimes
+Speciation "waiting times" in Hawaiian silverswords (\emph{Dubautia}).
 }
 
 \usage{data(SilverswordWaitingTimes)}
@@ -22,9 +22,9 @@ SilverswordWaitingTimes
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Baldwin, B. G. and M. J. Sanderson 1998. Age and rate of diversification of the Hawaiian silversword alliance (Compositae). \emph{Proceedings of the National Academy of Sciences (USA)} 95: 9402-9406.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -32,6 +32,7 @@ SilverswordWaitingTimes
 
 \examples{
 data(SilverswordWaitingTimes)
+SilverswordWaitingTimes
 }
 
 \keyword{datasets}

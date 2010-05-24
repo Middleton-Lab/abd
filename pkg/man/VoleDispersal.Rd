@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-VoleDispersal
+Home Range Size in Field Voles
 }
 
 \description{
-VoleDispersal
+Home range size size in field voles (\emph{Microtus agrestis}).
 }
 
 \usage{data(VoleDispersal)}
@@ -16,7 +16,7 @@ VoleDispersal
   \describe{
     \item{\code{homeranges}}{a numeric vector}
     \item{\code{frequency}}{a numeric vector}
-    \item{\code{sex}}{a factor with levels \code{female} \code{male}}
+    \item{\code{sex}}{a factor with levels \code{female} and \code{male}}
   }
 }
 
@@ -24,9 +24,9 @@ VoleDispersal
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Sandell, M., J. Agrell, S. Erlinge, and J. Nelson. 1991. Adult philopatry and dispersal in the field vole \emph{Microtus agrestis}. \emph{Oecologia} 86: 153-158.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -34,7 +34,8 @@ VoleDispersal
 
 \examples{
 data(VoleDispersal)
-## maybe str(VoleDispersal) ; plot(VoleDispersal) ...
+str(VoleDispersal)
+VoleDispersal
 }
 
 \keyword{datasets}

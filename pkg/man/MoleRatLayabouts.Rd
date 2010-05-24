@@ -3,18 +3,18 @@
 \docType{data}
 
 \title{
-MoleRatLayabouts
+Energy Expenditure in Mole Rats
 }
 
 \description{
-MoleRatLayabouts
+Energy expenditure (\code{lnenergy}) in two castes (\code{caste}) of Damaraland mole rats (\emph{Cryptomys damarensis}) with body mass (\code{lnmass}) as a covariate.
 }
 
 \usage{data(MoleRatLayabouts)}
 \format{
   A data frame with 35 observations on the following 3 variables.
   \describe{
-    \item{\code{caste}}{a factor with levels \code{lazy} \code{worker}}
+    \item{\code{caste}}{a factor with levels \code{lazy} and \code{worker}}
     \item{\code{lnmass}}{a numeric vector}
     \item{\code{lnenergy}}{a numeric vector}
   }
@@ -24,17 +24,50 @@ MoleRatLayabouts
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Scantlebury, M., J.R. Speakman, M.K. Oosthuizen, T.J. Roper and N.C. Bennett. 2006. Energetics reveals physiologically distinct castes in a eusocial mammal. \emph{Nature} 440: 795-797.
+}
 
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
+\references{
+\url{http://www.nature.com/nature/journal/v440/n7085/abs/nature04578.html}
+}
 
 \examples{
 data(MoleRatLayabouts)
-## maybe str(MoleRatLayabouts) ; plot(MoleRatLayabouts) ...
+MoleRatLayabouts
+
+plot(lnenergy ~ lnmass, data = MoleRatLayabouts,
+  pch = ifelse(MoleRatLayabouts$caste == "worker", 1, 16),
+  col = "red",
+  xlab = "Ln Body Mass",
+  ylab = "Ln Daily Energy Expenditure")
+
+# Full model with interaction
+fit1 <- lm(lnenergy ~ caste * lnmass,
+  data = MoleRatLayabouts)
+anova(fit1)
+
+# Drop interaction
+fit2 <- lm(lnenergy ~ lnmass + caste,
+  data = MoleRatLayabouts)
+anova(fit2)
+
+# The data aren't balanced, so we need to do a "Type III"
+# sums of squares ANOVA.
+\dontrun{
+require(car)
+Anova(fit2, type = "III")}
+
+# Also using ancova() for the HH package
+\dontrun{
+require(HH)
+fit3 <- ancova(lnenergy ~ lnmass * caste,
+  data = MoleRatLayabouts)
+print.ancova(fit3)
+
+fit4 <- ancova(lnenergy ~ lnmass + caste,
+  data = MoleRatLayabouts)
+print.ancova(fit4)}
 }
 
 \keyword{datasets}

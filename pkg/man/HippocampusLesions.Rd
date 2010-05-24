@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-HippocampusLesions
+Memory and the Hippocampus
 }
 
 \description{
-HippocampusLesions
+Spatial memory score (\code{memory}) and percent lesion of the hippocampus (\code{lesion}).
 }
 
 \usage{data(HippocampusLesions)}
@@ -23,9 +23,9 @@ HippocampusLesions
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Broadbent, N.J., L.R. Squire, and R.E. Clark. 2004. Spatial memory, recognition memory, and the hippocampus. \emph{Proceedings of the National Academy of Sciences (USA)} 101: 14515-14520.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -33,7 +33,10 @@ HippocampusLesions
 
 \examples{
 data(HippocampusLesions)
-## maybe str(HippocampusLesions) ; plot(HippocampusLesions) ...
+HippocampusLesions
+
+plot(memory ~ lesion, data = HippocampusLesions,
+  pch = 16, col = "red")
 }
 
 \keyword{datasets}

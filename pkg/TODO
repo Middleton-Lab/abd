@@ -160,21 +160,21 @@ X 17q22	DaphniaParasiteLongevity
 X 17q24	DEETMosquiteBites
 X 17q25	NuclearTeeth
 
-18e1	MouseEmpathy
-18e2	ZooplanktonDepredation
-18e3	IntertidalAlgae
-18e4	MoleRatLayabouts
-18q06	HippocampusLesions
-18q07	BeeGeneExpression
-18q09	NeanderthalBrainSize
-18q11	ExploitedLarvalFish
+X 18e1	MouseEmpathy
+X 18e2	ZooplanktonDepredation
+X 18e3	IntertidalAlgae
+X 18e4	MoleRatLayabouts
+X 18q06	HippocampusLesions
+X 18q07	BeeGeneExpression
+X 18q09	NeanderthalBrainSize
+X 18q11	ExploitedLarvalFish
 
-19e2	Pseudoscorpions
-19e3	ChimpBrains
+X 19e2	Pseudoscorpions
+X 19e3	ChimpBrains
 
-20q07	YeastRegulatoryGenes
-20q08	SilverswordWaitingTimes
-20q15	VoleDispersal
-20q18	BeeLifespans
+X 20q07	YeastRegulatoryGenes
+X 20q08	SilverswordWaitingTimes
+X 20q15	VoleDispersal
+X 20q18	BeeLifespans
 
-selection.txt
+X selection.txt

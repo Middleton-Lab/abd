@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-BeeGeneExpression
+Foraging Gene Expression
 }
 
 \description{
-BeeGeneExpression
+Levels of expression of the foraging gene (\emph{for}; \code{Expression}) in two worker types (\code{type}) in three bee colonies (\code{colony}). Note that \code{colony} is not coded as a factor.
 }
 
 \usage{data(BeeGeneExpression)}
@@ -24,9 +24,9 @@ BeeGeneExpression
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+Ben-Shahar, Y., A. Robichon, M.B. Sokolowski, and G.E. Robinson. 2002. Influence of gene action across different time scales on behavior. \emph{Science} 296: 741-744.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -34,6 +34,8 @@ BeeGeneExpression
 
 \examples{
 data(BeeGeneExpression)
+str(BeeGeneExpression)
+BeeGeneExpression
 }
 
 \keyword{datasets}

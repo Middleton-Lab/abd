@@ -51,9 +51,10 @@ boxplot(proportion.surviving ~ brook.trout, data = BrookTrout,
   ylab = "Proportion Surviving",
   names = c("Trout Absent", "Trout Present"))
 
+\dontrun{
 # Dotplot
 require(lattice)
-dotplot(proportion.surviving ~ brook.trout, data = BrookTrout)
+dotplot(proportion.surviving ~ brook.trout, data = BrookTrout)}
 
 # Aggregate again, calculating mean, standard deviation, and n
 require(plyr)

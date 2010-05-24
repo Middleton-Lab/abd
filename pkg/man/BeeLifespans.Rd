@@ -3,11 +3,11 @@
 \docType{data}
 
 \title{
-BeeLifespans
+Bee Lifespans
 }
 
 \description{
-BeeLifespans
+Lifespan of 33 foraging honey bees.
 }
 
 \usage{data(BeeLifespans)}
@@ -22,9 +22,9 @@ BeeLifespans
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-%\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-%}
+\source{
+\emph{inferred from} Visscher, P.K. and R. Dukas. 1997. Survivorship of foraging honey bees. \emph{Insectes Sociaux} 44: 1-5.
+}
 
 %\references{
 %%  ~~ possibly secondary sources and usages ~~
@@ -32,6 +32,7 @@ BeeLifespans
 
 \examples{
 data(BeeLifespans)
+BeeLifespans
 }
 
 \keyword{datasets}
