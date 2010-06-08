@@ -48,6 +48,14 @@ hist(boot.median, breaks = 50, col = "red")
 mean(boot.median)
 sd(boot.median) # Bootstrap standard error
 
+sorted.boot <- sort(boot.median)
+
+# Lower
+sorted.boot[250]
+
+# Upper
+sorted.boot[9751]
+
 # Using boot()
 require(boot)
 boot.median <- function(x, i) median(x[i])

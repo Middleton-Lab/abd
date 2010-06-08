@@ -52,7 +52,7 @@ for (i in 1:n){
     mean(rand.broods[PS$tx == "DM"])
 }
 
-sum(diffs < obs.diff)/n
+2 * sum(diffs < obs.diff)/n
 
 hist(diffs, breaks = 50)
 abline(v = obs.diff, col = "red")
@@ -68,7 +68,7 @@ for (i in 1:n){
   ts[i] <- t.test(rand.broods ~ tx, data = PS)$statistic
 }
 
-sum(ts > obs.t)/n
+2 * sum(ts > obs.t)/n
 
 hist(ts, breaks = 50)
 abline(v = obs.t, col = "red")
