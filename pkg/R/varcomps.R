@@ -2,17 +2,17 @@ varcomps <- function(fm, n){
   summ <- summary(fm)
   MS.groups <- summ[[1]][[1]]$"Mean Sq"
   MS.error <- summ[[2]][[1]]$"Mean Sq"
-  F <- MS.groups / MS.error
+  Fstat <- MS.groups / MS.error
   df1 <- summ[[1]][[1]]$"Df"
   df2 <- summ[[2]][[1]]$"Df"
-  p <- pf(F, df1, df2, lower.tail = FALSE)
+  p <- pf(Fstat, df1, df2, lower.tail = FALSE)
   
   var.within <- MS.error
   var.among <- (MS.groups - MS.error) / n
   
   varcomp.obj <- list("MS.groups" = MS.groups,
                       "MS.error" = MS.error,
-                      "F" = F,
+                      "Fstat" = Fstat,
                       "df1" = df1,
                       "df2" = df2,
                       "p" = p,
@@ -29,6 +29,6 @@ print.varcomps <- function(x, ...){
   cat("Variance Components\n")
   cat("\tWithin\t", x$var.within, "\n")
   cat("\tAmong\t", x$var.among, "\n")
-  cat("F = ", x$F, "\n")
+  cat("F = ", x$Fstat, "\n")
   cat("p = ", x$p, "on", x$df1, "and", x$df2, "degrees of freedom.\n")
 }
