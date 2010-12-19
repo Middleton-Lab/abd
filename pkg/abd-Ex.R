@@ -2164,7 +2164,7 @@ anova(fit2)
 require(car)
 Anova(fit2, type = "III")
 
-# Also using ancova() for the HH package
+# Also using ancova() from the HH package
 require(HH)
 fit3 <- ancova(lnenergy ~ lnmass * caste,
   data = MoleRatLayabouts)
@@ -3088,7 +3088,7 @@ y.bar + (t.crit * SE.y.bar)
 
 # Or use ci() from abd package
 ci(Stalkies)
-ci(Stalkies, conf.int = 0.99)
+ci(Stalkies, conf.level = 0.99)
 
 
 
@@ -3809,6 +3809,23 @@ plot(table(AspirinCancer.expanded), main = "")
 
 
 cleanEx()
+nameEx("interval")
+### * interval
+
+flush(stderr()); flush(stdout())
+
+### Name: interval
+### Title: Confidence Interval
+### Aliases: interval interval.htest
+### Keywords: univar
+
+### ** Examples
+
+interval(t.test(rnorm(100)))
+
+
+
+cleanEx()
 nameEx("odds.ratio")
 ### * odds.ratio
 
@@ -3847,7 +3864,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 prop.ci(7, 50)
-prop.ci(7, 50, conf.int = 0.99)
+prop.ci(7, 50, conf.level = 0.99)
 
 
 

@@ -12,13 +12,13 @@ Calculate the confidence interval for a "small sample" binomial proportion using
 }
 
 \usage{
-prop.ci(X, n, conf.int = 0.95)
+prop.ci(X, n, conf.level = 0.95)
 }
 
 \arguments{
   \item{X}{an integer number of successes}
   \item{n}{an integer number of trials}
-  \item{conf.int}{the confidence level for interval estimation; defaults to 0.95}
+  \item{conf.level}{the confidence level for interval estimation; defaults to 0.95}
 }
 
 %\details{
@@ -29,7 +29,7 @@ prop.ci(X, n, conf.int = 0.95)
 Returns an object of type \code{prop.ci}, which includes:
   \item{X}{the number of successes}
   \item{n}{the number of trials}
-  \item{conf.int}{the confidence interval level}
+  \item{conf.level}{the confidence interval level}
   \item{lower}{the lower bound of the confidence interval}
   \item{upper}{the upper bound of the confidence interval}
 }
@@ -54,7 +54,7 @@ Kevin M. Middleton (\email{kmm@csusb.edu})
 
 \examples{
 prop.ci(7, 50)
-prop.ci(7, 50, conf.int = 0.99)
+prop.ci(7, 50, conf.level = 0.99)
 }
 
 \keyword{ univar }

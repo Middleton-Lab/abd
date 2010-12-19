@@ -13,7 +13,7 @@ Fig. 8.1-1 ggplot
 Functions
   sign.test()
   Wald adjusted prop.ci
-  Use odds.ratio() from HH
+  Use odds.ratio() from HH; write print method
 
 Error Checking
   sum.of.products()

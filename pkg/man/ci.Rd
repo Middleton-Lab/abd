@@ -10,12 +10,12 @@ Confidence Interval for the Mean of a Normal Distribution
 This function calculates the confidence interval (default is 95\%) for the mean of a normal distribution.
 }
 \usage{
-  ci(x, conf.int = 0.95)
+  ci(x, conf.level = 0.95)
 }
 
 \arguments{
   \item{x}{a vector of values}
-  \item{conf.int}{the confidence level for interval estimation; defaults to 0.95}
+  \item{conf.level}{the confidence level for interval estimation; defaults to 0.95}
 }
 %\details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -29,7 +29,7 @@ This function calculates the confidence interval (default is 95\%) for the mean 
   \item{df}{the degrees of freedom used to calculate the critical \emph{t}-statistic}
   \item{lower}{the lower bound of the confidence interval}
   \item{upper}{the upper bound of the confidence interval}
-  \item{conf.int}{the confidence interval level}
+  \item{conf.level}{the confidence interval level}
 }
 
 %\references{

@@ -57,7 +57,7 @@ anova(fit2)
 require(car)
 Anova(fit2, type = "III")
 
-# Also using ancova() for the HH package
+# Also using ancova() from the HH package
 require(HH)
 fit3 <- ancova(lnenergy ~ lnmass * caste,
   data = MoleRatLayabouts)

@@ -45,7 +45,7 @@ y.bar + (t.crit * SE.y.bar)
 
 # Or use ci() from abd package
 ci(Stalkies)
-ci(Stalkies, conf.int = 0.99)
+ci(Stalkies, conf.level = 0.99)
 }
 
 \keyword{datasets}

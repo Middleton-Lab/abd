@@ -6,16 +6,16 @@
 Odds Ratio for 2X2 Contingency Tables
 }
 \description{
-This function calculates the odds ratio for a 2 X 2 contingency table and a confidence interval (default is 95 percent) for the estimated odds ratio. \code{x} should be a matrix or data.frame. "Successes" should be located in column 1 of \code{x}, and the treatment of interest should be located in row 2. The odds ratio is calculated as (Odds row 2) / (Odds row 1). The confidence interval is calculated from the log(OR) and backtransformed.
+This function calculates the odds ratio for a 2 X 2 contingency table and a confidence interval (default \code{conf.level} is 95 percent) for the estimated odds ratio. \code{x} should be a matrix or data.frame. "Successes" should be located in column 1 of \code{x}, and the treatment of interest should be located in row 2. The odds ratio is calculated as (Odds row 2) / (Odds row 1). The confidence interval is calculated from the log(OR) and backtransformed.
 }
 
 \usage{
-odds.ratio(x, conf.int = 0.95)
+odds.ratio(x, conf.level = 0.95)
 }
 
 \arguments{
   \item{x}{a 2 X 2 matrix or data.frame of counts}
-  \item{conf.int}{the confidence interval level}
+  \item{conf.level}{the confidence interval level}
 }
 
 %\details{
@@ -28,7 +28,7 @@ odds.ratio(x, conf.int = 0.95)
   \item{OR}{Odds ratio}
   \item{lower}{the lower bound of the confidence interval}
   \item{upper}{the upper bound of the confidence interval}
-  \item{conf.int}{the confidence interval level}
+  \item{conf.level}{the confidence interval level}
 }
 
 %\references{
