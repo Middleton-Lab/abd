@@ -1,13 +1,18 @@
 \name{interval}
 \alias{interval}
+\alias{pval}
+\alias{pval.htest}
 \alias{interval.htest}
 
 \title{Confidence Interval}
 \description{
-Extract a confidence interval from an htest object.
+Extract a confidence intervals or p-values from an \code{htest} object.
 }
 
-\usage{interval(x, ...)}
+\usage{
+interval(x, ...)
+pval(x, ...)
+}
 
 \arguments{
   \item{x}{An object of class \code{htest}.}
@@ -46,6 +51,10 @@ Randall Pruim (rpruim@calvin.edu)
 
 \examples{
 interval(t.test(rnorm(100)))
+pval(t.test(rnorm(100)))
+interval(var.test(rnorm(10,sd=1), rnorm(20, sd=2)))
+pval(var.test(rnorm(10,sd=1), rnorm(20, sd=2)))
 }
 
 \keyword{ univar }
+\keyword{ stats }

@@ -3816,12 +3816,15 @@ flush(stderr()); flush(stdout())
 
 ### Name: interval
 ### Title: Confidence Interval
-### Aliases: interval interval.htest
-### Keywords: univar
+### Aliases: interval pval pval.htest interval.htest
+### Keywords: univar stats
 
 ### ** Examples
 
 interval(t.test(rnorm(100)))
+pval(t.test(rnorm(100)))
+interval(var.test(rnorm(10,sd=1), rnorm(20, sd=2)))
+pval(var.test(rnorm(10,sd=1), rnorm(20, sd=2)))
 
 
 
