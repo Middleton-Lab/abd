@@ -11,10 +11,11 @@ favstats(x, na.rm = TRUE)
   \item{x}{ numeric vector }
   \item{na.rm}{ boolean indicating whether missing data should be ignored }
 }
-\value{A vector of statistical summaries}
+\value{A vector of (named) statistical summaries}
 
 \examples{
 favstats(1:10)
 favstats(faithful$eruptions)
 }
-% add key words?
+\keyword{ stats }
+\keyword{ univar }

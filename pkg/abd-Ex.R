@@ -2816,6 +2816,24 @@ hist(subset(SalmonColor, species == "sockeye")$skin.color,
 
 graphics::par(get("par.postscript", pos = 'CheckExEnv'))
 cleanEx()
+nameEx("Sample")
+### * Sample
+
+flush(stderr()); flush(stdout())
+
+### Name: Sample
+### Title: Random Samples and Permutations
+### Aliases: Sample Sample.data.frame Sample.default
+### Keywords: manip
+
+### ** Examples
+
+x <- data.frame(letter=letters[1:10], number=1:10)
+Sample(x,3)
+
+
+
+cleanEx()
 nameEx("Seedlings")
 ### * Seedlings
 
@@ -3926,6 +3944,7 @@ flush(stderr()); flush(stdout())
 ### Name: favstats
 ### Title: Some favorite statistical summaries
 ### Aliases: favstats
+### Keywords: stats univar
 
 ### ** Examples
 
