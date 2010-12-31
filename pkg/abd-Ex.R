@@ -1087,6 +1087,46 @@ round(CV)
 
 
 cleanEx()
+nameEx("GlidingSnakes")
+### * GlidingSnakes
+
+flush(stderr()); flush(stdout())
+
+### Name: GlidingSnakes
+### Title: GlidingSnakes
+### Aliases: GlidingSnakes
+### Keywords: datasets
+
+### ** Examples
+
+data(GlidingSnakes)
+
+histogram(~undulation.rate , data=GlidingSnakes, n=7,
+  xlab = "Undulation rate (Hz)",
+  type='count')
+
+
+# Mean, variance, standard deviation
+n <- length(GlidingSnakes$undulation.rate)
+sum(GlidingSnakes$undulation.rate)/n
+mean(GlidingSnakes$undulation.rate)
+
+# Calculate variance by hand
+with(GlidingSnakes, sum( (undulation.rate - mean(undulation.rate))^2 ) / (n-1))
+# Calculate variance using built-in function
+var(GlidingSnakes$undulation.rate)
+# Standard deviation equals the square root of the variance
+sd(GlidingSnakes$undulation.rate)
+sd(GlidingSnakes$undulation.rate)^2 - var(GlidingSnakes$undulation.rate)
+
+# Coefficient of variation
+CV <- sd(GlidingSnakes$undulation.rate) / mean(GlidingSnakes$undulation.rate) 
+signif(CV,3)
+cv(GlidingSnakes$undulation.rate)
+
+
+
+cleanEx()
 nameEx("GodwitArrivalDates")
 ### * GodwitArrivalDates
 
@@ -1242,7 +1282,7 @@ str(HemoglobinHighAltitude)
 ##D   y = rep(0.4, times = 4))
 ##D 
 ##D p <- ggplot(HemoglobinHighAltitude,
-##D   aes(haemoglobin, relative.frequency))
+##D   aes(hemoglobin, relative.frequency))
 ##D p + geom_bar(stat="identity", fill = "red")  +
 ##D   facet_grid(group ~ .) +
 ##D   scale_x_continuous("Hemoglobin concentration (g/dL)") +
@@ -2936,6 +2976,39 @@ SocialSpiderColonies
 
 
 cleanEx()
+nameEx("SockeyeFemale")
+### * SockeyeFemale
+
+flush(stderr()); flush(stdout())
+
+### Name: SockeyeFemale
+### Title: Body Masses of Female Sockeye Salmon
+### Aliases: SockeyeFemale
+### Keywords: datasets
+
+### ** Examples
+
+data(SockeyeFemale)
+str(SockeyeFemale)
+summary(SockeyeFemale)
+# Figure 2.1-4 from Analysis of Biological Data
+plots <- list()
+for (b in c(0.1, 0.3, 0.5)) {
+  p <- histogram(~BodyMass, data=SockeyeFemale, 
+  		breaks = seq(1,4,by=b),
+   	 	col = "red",
+		type='count',
+   	 	xlab = "Body mass (kg)"
+	)
+	plots <- c(plots,list(p))
+}
+for (i in 1:3)  {
+	print(plots[[i]], split=c(i,1,3,1), more=(i<3))
+}
+
+
+
+cleanEx()
 nameEx("SockeyeFemaleBodyMass")
 ### * SockeyeFemaleBodyMass
 
@@ -3775,6 +3848,42 @@ flush(stderr()); flush(stdout())
 
 data(Stalkies)
 ci(Stalkies)
+
+
+
+cleanEx()
+nameEx("cumfreq")
+### * cumfreq
+
+flush(stderr()); flush(stdout())
+
+### Name: cumfreq
+### Title: Cumulative Frequency Plots
+### Aliases: cumfreq cumfreq.formula cumfreq.default panel.cumfreq
+###   prepanel.cumfreq
+### Keywords: graphics
+
+### ** Examples
+
+cumfreq(~Sepal.Length, groups=Species, data=iris)
+cumfreq(~Sepal.Length, groups=Species, data=iris, type='step')
+
+
+
+cleanEx()
+nameEx("cv")
+### * cv
+
+flush(stderr()); flush(stdout())
+
+### Name: cv
+### Title: Coefficient of Variation
+### Aliases: cv
+### Keywords: univar stats
+
+### ** Examples
+
+cv(GlidingSnakes$undulation.rate)
 
 
 

@@ -14,7 +14,7 @@ Relative rates of hemoglobin concentration in four populations of humans living 
 \format{
   A data frame with 40 observations on the following 3 variables.
   \describe{
-    \item{\code{haemoglobin}}{a numeric vector}
+    \item{\code{hemoglobin}}{a numeric vector}
     \item{\code{group}}{a factor with levels: \code{Andes}, \code{Ethiopia}, \code{Tibet}, and \code{USA}}
     \item{\code{relative.frequency}}{a numeric vector}
   }
@@ -47,7 +47,7 @@ labels <- data.frame( # Create a data.frame to hold the labels
   y = rep(0.4, times = 4))
 
 p <- ggplot(HemoglobinHighAltitude,
-  aes(haemoglobin, relative.frequency))
+  aes(hemoglobin, relative.frequency))
 p + geom_bar(stat="identity", fill = "red")  +
   facet_grid(group ~ .) +
   scale_x_continuous("Hemoglobin concentration (g/dL)") +
