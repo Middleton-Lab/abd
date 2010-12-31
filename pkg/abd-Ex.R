@@ -3918,6 +3918,23 @@ plot(table(AspirinCancer.expanded), main = "")
 
 
 cleanEx()
+nameEx("favstats")
+### * favstats
+
+flush(stderr()); flush(stdout())
+
+### Name: favstats
+### Title: Some favorite statistical summaries
+### Aliases: favstats
+
+### ** Examples
+
+favstats(1:10)
+favstats(faithful$eruptions)
+
+
+
+cleanEx()
 nameEx("interval")
 ### * interval
 
