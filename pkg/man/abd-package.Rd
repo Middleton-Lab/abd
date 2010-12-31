@@ -12,8 +12,8 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
   \tabular{ll}{
 	Package: \tab abd\cr
 	Type: \tab Package\cr
-	Version: \tab 0.1-2\cr
-	Date: \tab 2009-12-30\cr
+	Version: \tab 0.1-3\cr
+	Date: \tab 2009-12-31\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
 }
