@@ -1,0 +1,143 @@
+path
+02/02e1aCausesTeenageDeaths.csv
+02/02e1bDesertBirdCensus.csv
+02/02e1cSockeyeFemaleBodyMass.csv
+02/02e3GreatTitMalaria.csv
+02/02e4HemoglobinHighAltitude.csv
+02/02e5aGuppyAttractiveness.csv
+02/02e5bLynxPopulationCycles.csv
+02/02q06EndangeredSpecies.csv
+02/02q10ShuttleDisaster.csv
+02/02q16CriminalConvictions.csv
+02/02q17ConvictionsAndIncome.csv
+02/02q18FireflySpermatophoreMass.csv
+02/02q23NeotropicalTreePhotosynthesis.csv
+03/03e1GlidingSnakeUndulations.csv
+03/03e2SpiderRunningAmputation.csv
+03/03e3SticklebackPlates.csv
+03/03q04KenyaFinches.csv
+03/03q09Rigormortis.csv
+03/03q10NorthSeaCodRecruits.csv
+03/03q11VasopressinVoles.csv
+03/03q12AntillesImmigrationDates.csv
+03/03q13DietBreadthElVerde.csv
+03/03q18SparrowReproductiveSuccess.csv
+04/04e1HumanGeneLengths.csv
+04/04q06FireflyFlash.csv
+04/04q11NumberGenesRegulated.csv
+08/08e1DayOfBirth.csv
+08/08e5NumberOfBoys.csv
+08/08e6MassExtinctions.csv
+08/08q02Powerball.csv
+08/08q03ShadParasites.csv
+08/08q04Seedlings.csv
+08/08q05WorldCup.csv
+08/08q06Sumo.csv
+08/08q14Cavalry.csv
+08/08q16Truffles.csv
+08/08q17WrasseSexes.csv
+08/08q18Hurricanes.csv
+09/09e2AspirinCancer.csv
+09/09e3ParasiteBrainWarp.csv
+09/09e4VampireBites.csv
+11/11e2Stalkies.csv
+11/11e3Temperature.csv
+11/11q02WolfTeeth.csv
+11/11q10SyrupSwimming.csv
+11/11q13DolphinsClockwise.csv
+11/11q14SticklebackPreference.csv
+12/12e2BlackbirdTestosterone.csv
+12/12e3HornedLizards.csv
+12/12e4BrookTrout.csv
+12/12e4BrookTroutModified.csv
+12/12q02NoSmokingDay.csv
+12/12q03Iguanas.csv
+12/12q05MonogamousTestes.csv
+12/12q09Cichlids.csv
+12/12q10Tobacco.csv
+12/12q11WillsDebates.csv
+12/12q11WillsPresidents.csv
+12/12q13OstrichTemp.csv
+12/12q15PrimateWBC.csv
+12/12q16StalkieEyespan.csv
+12/12q19ElectricFish.csv
+12/12q23WeddellSeals.csv
+13/13e1MarineReserve.csv
+13/13e4SexualSelection.csv
+13/13e5SagebrushCrickets.csv
+13/13q05Lobsters.csv
+13/13q06Lions.csv
+13/13q08Newts.csv
+13/13q13dioecy.csv
+13/13q14Mosquitoes.csv
+13/13q16ZebraFinches.csv
+13/13q18CichlidsGnRH.csv
+13/13q19Vines.csv
+13/13q20SalmonColor.csv
+13/13q22BirdSexRatio.csv
+13/13q23Clearcuts.csv
+13/13q24ZebraFinchBeaks.csv
+15/15e1KneesWhoSayNight.csv
+15/15e6WalkingStickFemurs.csv
+15/15q01PlantPopulationPersistence.csv
+15/15q05EelgrassGenotypes.csv
+15/15q06DisordersAndGeneExpression.csv
+15/15q11DungBeetleCondition.csv
+15/15q13DaphniaResistance.csv
+15/15q14TsetseLearning.csv
+15/15q19NematodeLifespan.csv
+15/15q21WalkingStickHeads.csv
+15/15q22LodgepolePineCones.csv
+15/15q23LupusProneMice.csv
+15/15q24LizardSprintSpeed.csv
+16/16e1FingerRatioCAGRepeats.csv
+16/16e2InbreedingWolves.csv
+16/16e5IndianRopeTrick.csv
+16/16q03GodwitArrivalDates Gunnarsson et al 2004 replica.csv
+16/16q08EarwigForceps Tomkins & Brown 2004 replica.csv
+16/16q10CricketImmunitySpermViability Simmons and Roberts 2005 replica.csv
+16/16q11PufferfishMimicry Caley & Schluter 2003.csv
+16/16q12TelomeresAndStress Epel etal 2004 replica.csv
+16/16q13LanguageGreyMatter Mechelli et al 2004 replica.csv
+16/16q14GreenSpaceBiodiversity Fuller etal 2004.csv
+16/16q16LiverPreparation Smallwood et al 1998 replica.csv
+16/16q17SleepAndPerformance Huber et al 2004 replica.csv
+16/16q19LefthandednessAndViolence Faurie and Raymond 2005 replica.csv
+16/16q20TrilliumRecruitment Jules and Rathcke 1999.csv
+16/16q21CocaineHigh Volkow etal 1997 replica.csv
+16/16q22CocaineHigh Collins & Bell 2004 replica.csv
+17/17e1LionAges Whitman et al 2004 replica.csv
+17/17e3ChickadeeAlarmsCalls Templeton et al 2005 replica.csv
+17/17e8ShrinkingSeals Trites 1996.csv
+17/17q02ZooMortality Clubb and Mason 2003 replica.csv
+17/17q03ProgesteroneExercise Brutsaert etal 2002 replica.csv
+17/17q04BodyFatHeatLoss Sloan and Keatinge 1973 replica.csv
+17/17q07HybridPollenSterility Moyle et al 2004 replica.csv
+17/17q08RattlesnakeDigestion Tattersall et al 2004 replica.csv
+17/17q09LizardBite Lappin and Husak 2005 replica.csv
+17/17q11HypoxanthineTimeOfDeath.csv James etal 1997 replica.csv
+17/17q12SocialSpiderColonies.csv
+17/17q14GrasslandNutrientsPlantSpecies.csv
+17/17q15EarthwormsAndNitrogen.csv
+17/17q16PrimateMassMetabolicRate.csv
+17/17q18FlycatcherPatch.csv
+17/17q19TreeSeedlingsAndSunflecks.csv
+17/17q20PenguinTreadmill.csv
+17/17q21BeetleWingsAndHorns.csv
+17/17q22DaphniaParasiteLongevity.csv
+17/17q24DEETMosquiteBites.csv
+17/17q25NuclearTeeth.csv
+18/18e1MouseEmpathy.csv
+18/18e2ZooplanktonDepredation.csv
+18/18e3IntertidalAlgae.csv
+18/18e4MoleRatLayabouts.csv
+18/18q06HippocampusLesions.csv
+18/18q07BeeGeneExpression.csv
+18/18q09NeanderthalBrainSize.csv
+18/18q11ExploitedLarvalFish.csv
+19/19e2Pseudoscorpions.csv
+19/19e3ChimpBrains.csv
+20/20q07YeastRegulatoryGenes.csv
+20/20q08SilverswordWaitingTimes.csv
+20/20q15VoleDispersal.csv
+20/20q18BeeLifespans.csv
