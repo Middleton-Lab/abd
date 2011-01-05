@@ -1,7 +1,7 @@
 Package: abd
 Type: Package
 Title: The Analysis of Biological Data
-Version: 0.1-7
+Version: 0.1-8
 Date: 2011-1-5
 Author: Kevin M. Middleton <kmm@csusb.edu>
 Maintainer: Kevin M. Middleton <kmm@csusb.edu>

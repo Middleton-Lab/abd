@@ -12,7 +12,7 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
   \tabular{ll}{
 	Package: \tab abd\cr
 	Type: \tab Package\cr
-	Version: \tab 0.1-7\cr
+	Version: \tab 0.1-8\cr
 	Date: \tab 2011-1-5\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr

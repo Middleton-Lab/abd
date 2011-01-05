@@ -43,7 +43,7 @@ col.abd <- function (bw = FALSE, lty = 1:7)
 			box.umbrella = list(col = "darkred"), 
             dot.line = list(col = "#e8e8e8"), 
 			dot.symbol = list(col = "darkred", pch = 16), 
-			plot.line = list(lwd = 2, col = 'black'), 
+			plot.line = list(lwd = 2, col = 'darkred'), 
 			plot.symbol = list(col = "darkred", pch = 16), 
 			# regions = list(col = heat.colors(100)), 
     		regions = list(col= colorRampPalette(c("red", "darkorange", "orange", "yellow", "white"))(100)),

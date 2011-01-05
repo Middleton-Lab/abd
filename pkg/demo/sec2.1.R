@@ -18,7 +18,6 @@ plots <- list()
 for (b in c(0.1, 0.3, 0.5)) {
   p <- histogram(~mass, data=SockeyeFemales, 
   		breaks = seq(1,4,by=b),
-   	 	col = "red",
 		type='count',
    	 	xlab = "Body mass (kg)"
 	)
