@@ -14,8 +14,8 @@ Number of genes regulated by 109 yeast regulatory genes.
 \format{
   A data frame with 6 observations on the following 2 variables.
   \describe{
-    \item{\code{ngenes}}{a numeric vector}
-    \item{\code{frequency}}{a numeric vector}
+    \item{\code{genes.controlled}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -34,7 +34,7 @@ Guelzim, N., S. Bottani, P. Bourgine and F. Képès. 2002. Topological and causa
 \examples{
 data(YeastRegulatoryGenes)
 str(YeastRegulatoryGenes)
-YeastRegulatoryGenes
+barchart(count ~ genes.controlled , YeastRegulatoryGenes, horizontal=FALSE)
 }
 
 \keyword{datasets}

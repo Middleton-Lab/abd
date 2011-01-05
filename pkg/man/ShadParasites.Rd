@@ -14,8 +14,8 @@ Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{Number.of.parasites}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{parasites}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,6 @@ Shaw, D.J., B.T. Grenfell, and A.P. Dobson. 1998. Patterns of macroparasite aggr
 
 \examples{
 data(ShadParasites)
-str(ShadParasites)
 ShadParasites
 }
 

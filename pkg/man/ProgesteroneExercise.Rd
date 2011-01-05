@@ -34,7 +34,7 @@ Brutsaert, T.D., H. Spielvogel, E. Caceres, M. Araoz, R.T. Chatterton, V.J. Vitz
 \examples{
 data(ProgesteroneExercise)
 str(ProgesteroneExercise)
-ProgesteroneExercise
+xyplot(ventilation ~ progesterone, ProgesteroneExercise)
 }
 
 \keyword{datasets}

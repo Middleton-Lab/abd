@@ -14,8 +14,8 @@ Day of the week for 350 U.S. births in 1999.
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{Day}}{a character vector}
-    \item{\code{Number.of.births}}{a numeric vector}
+    \item{\code{day}}{a character vector}
+    \item{\code{births}}{a numeric vector}
   }
 }
 
@@ -34,15 +34,23 @@ Ventura, S.J., J.A. Martin, S.C. Curtin, F. Menacker, and B.E. Hamilton. 2001. B
 \examples{
 data(DayOfBirth)
 DayOfBirth
+barchart( day ~ births, DayOfBirth)
 
-barplot(DayOfBirth$Number.of.births,
+# fix bad ordering of days
+DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels=day))
+barchart( oday ~ births, DayOfBirth)
+barchart( births ~ oday, DayOfBirth, horizontal=FALSE)
+barchart( births ~ oday, DayOfBirth, horizontal=FALSE, 
+	scales=list(x=list(rot=45)))
+
+barplot(DayOfBirth$births,
   ylim = c(0, 70),
-  names.arg = DayOfBirth$Day,
+  names.arg = DayOfBirth$day,
   las = 2,
   mgp = c(3, 0.75, 0))
 
 # Calculating Chi-squared goodness-of-fit test manually
-observed <- DayOfBirth$Number.of.births
+observed <- DayOfBirth$births
 sum(observed)
 
 n.days.1999 <- c(52, 52, 52, 52, 52, 53, 52)

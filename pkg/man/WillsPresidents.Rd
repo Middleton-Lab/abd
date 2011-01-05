@@ -14,9 +14,12 @@ Number of times a presidential candidate said "will," "shall," or "going to" in 
 \format{
   A data frame with 16 observations on the following 3 variables.
   \describe{
-    \item{\code{Candidate}}{a character vector with the candidate's name}
-    \item{\code{Winner}}{a factor with levels \code{n} \code{y} indicating whether the candidate won the election \code{y} or not.}
-    \item{\code{Rounded.wills}}{a numeric vector}
+    \item{\code{candidate}}{a character vector with the candidate's name}
+    \item{\code{winner}}{a factor with levels \code{n} \code{y} indicating whether the candidate won the election \code{y} or not.}
+    \item{\code{wills}}{a numeric vector}
+    \item{\code{loser.wills}}{a numeric vector}
+    \item{\code{difference}}{a numeric vector}
+    \item{\code{year}}{a numeric vector}
   }
 }
 
@@ -32,9 +35,10 @@ Number of times a presidential candidate said "will," "shall," or "going to" in 
 %%  ~~ possibly secondary sources and usages ~~
 %}
 
+\seealso{\code{\link{WillsDebates}}}
+
 \examples{
 data(WillsPresidents)
-WillsPresidents
 }
 
 \keyword{datasets}

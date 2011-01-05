@@ -14,8 +14,8 @@ Census data for desert birds.
 \format{
   A data frame with 43 observations on the following 2 variables.
   \describe{
-    \item{\code{Species}}{a character vector}
-    \item{\code{Count}}{a numeric vector}
+    \item{\code{species}}{a character vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -35,9 +35,8 @@ Sauer, J.R., J.E. Hines, and J. Fallon. 2003. The North American breeding bird s
 data(DesertBirds)
 
 str(DesertBirds)
-DesertBirds
 
-hist(DesertBirds$Count,
+hist(DesertBirds$count,
   breaks = 12,
   ylab = "Frequency (Number of Species)",
   xlab = "Abundance",
@@ -47,16 +46,16 @@ hist(DesertBirds$Count,
 \dontrun{
 # With ggplot2
 require(ggplot2)
-p <- ggplot(DesertBirds, aes(Count))
+p <- ggplot(DesertBirds, aes(count))
 p + geom_histogram(binwidth = 40, fill = "red") +
   scale_x_continuous("Abundance") +
   scale_y_continuous("Frequency (Number of Species)")}
 
 
 # Similar to Fig. 2.1-1
-Count.sort <- sort(DesertBirds$Count)
-Count.relfreq <- cumsum(Count.sort)/max(cumsum(Count.sort))
-plot(Count.sort, Count.relfreq,
+count.sort <- sort(DesertBirds$count)
+count.relfreq <- cumsum(count.sort)/max(cumsum(count.sort))
+plot(count.sort, count.relfreq,
   type = "l",
   col = "red",
   xlim = c(0, 700),
@@ -64,8 +63,8 @@ plot(Count.sort, Count.relfreq,
   ylab = "Cumulative relative frequency")
 
 \dontrun{
-p <- ggplot(data.frame(Count.sort, Count.relfreq), 
-  aes(Count.sort, Count.relfreq))
+p <- ggplot(data.frame(count.sort, count.relfreq), 
+  aes(count.sort, count.relfreq))
 p + geom_step(direction = "vh") +
   scale_x_continuous("Species abundance") +
   scale_y_continuous("Cumulative relative frequency")}

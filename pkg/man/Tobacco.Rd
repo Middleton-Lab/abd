@@ -14,9 +14,9 @@ Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 \format{
   A data frame with 13 observations on the following 3 variables.
   \describe{
-    \item{\code{Flower.Length}}{a numeric vector of flower length in mm}
-    \item{\code{f1}}{a numeric vector of the number of F1 plants with flower lengths in this size range}
-    \item{\code{f2}}{a numeric vector of the number of F2 plants with flower lengths in this size range}
+    \item{\code{flower.length}}{a numeric vector of flower length in mm}
+    \item{\code{f1.count}}{a numeric vector of the number of F1 plants with flower lengths in this size range}
+    \item{\code{f2.count}}{a numeric vector of the number of F2 plants with flower lengths in this size range}
   }
 }
 
@@ -34,6 +34,7 @@ East, E.M. 1916. Studies On Size Inheritance in \emph{Nicotiana}. \emph{Genetics
 \url{http://en.wikipedia.org/wiki/Nicotiana}
 }
 
+\seealso{\code{\link{Tobacco2}}}
 \examples{
 data(Tobacco)
 Tobacco

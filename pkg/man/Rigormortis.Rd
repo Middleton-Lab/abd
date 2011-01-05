@@ -15,7 +15,7 @@ Number of bodies reaching rigormortis in each hour after death.
   A data frame with 12 observations on the following 2 variables.
   \describe{
     \item{\code{hours}}{a numeric vector}
-    \item{\code{frequency}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,8 @@ Pounder, D.J. 1995. Postmortem changes and time of death. University of Dundee. 
 
 \examples{
 data(Rigormortis)
-Rigormortis
+xyplot(count~hours, Rigormortis, type='h', lwd=3)
+barchart(count ~ hours, Rigormortis, horizontal=FALSE)
 }
 
 \keyword{datasets}

@@ -7,15 +7,16 @@ Sagebrush Cricket Mating Times
 }
 
 \description{
-Time to mating (\code{Time.to.mating}) in fed and unfed (\code{Feeding}) sagebrush crickets (\emph{Cyphoderris strepitans}).
+Time to mating (\code{time.to.mating}) in fed and unfed (\code{treatment}) 
+sagebrush crickets (\emph{Cyphoderris strepitans}).
 }
 
 \usage{data(SagebrushCrickets)}
 \format{
   A data frame with 24 observations on the following 2 variables.
   \describe{
-    \item{\code{Feeding}}{a factor with levels: \code{fed} and \code{starved}}
-    \item{\code{Time.to.mating}}{a numeric vector}
+    \item{\code{treatment}}{a factor with levels: \code{fed} and \code{starved}}
+    \item{\code{time.to.mating}}{a numeric vector}
   }
 }
 
@@ -36,10 +37,10 @@ data(SagebrushCrickets)
 SagebrushCrickets
 str(SagebrushCrickets)
 
-# Subset and extract the Time.to.mating data
+# Subset and extract the time.to.mating data
 starved <- subset(SagebrushCrickets,
-  Feeding == "starved")$Time.to.mating
-fed <- subset(SagebrushCrickets, Feeding == "fed")$Time.to.mating
+  treatment == "starved")$time.to.mating
+fed <- subset(SagebrushCrickets, treatment == "fed")$time.to.mating
 
 dev.new()
 par(mfrow = c(2, 1))
@@ -47,7 +48,7 @@ hist(starved, xlim = c(0, 100))
 hist(fed, xlim = c(0, 100))
 
 # Sort the SagebrushCrickets data.frame
-sorted <- SagebrushCrickets[order(SagebrushCrickets$Time.to.mating), ]
+sorted <- SagebrushCrickets[order(SagebrushCrickets$time.to.mating), ]
 
 # Add a rank column
 sorted$rank <- 1:24
@@ -58,8 +59,8 @@ sorted
 (n.starved <- length(starved))
 
 # Calculate rank sum
-(sum.fed <- sum(sorted$rank[sorted$Feeding == "fed"]))
-(sum.starved <- sum(sorted$rank[sorted$Feeding == "starved"]))
+(sum.fed <- sum(sorted$rank[sorted$treatment == "fed"]))
+(sum.starved <- sum(sorted$rank[sorted$treatment == "starved"]))
 
 # Calculate U for each group
 (u.starved <- n.starved * n.fed + 
@@ -73,7 +74,7 @@ sorted
 qwilcox(1-(0.05/2), 11, 13)
 
 # Alternately with wilcox.test()
-wilcox.test(Time.to.mating ~ Feeding, data = SagebrushCrickets)
+wilcox.test(time.to.mating ~ treatment, data = SagebrushCrickets)
 }
 
 \keyword{datasets}

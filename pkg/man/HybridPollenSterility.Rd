@@ -34,7 +34,7 @@ Moyle, L.C., M.S. Olson, and P. Tiffin. 2004. Patterns of reproductive isolation
 \examples{
 data(HybridPollenSterility)
 str(HybridPollenSterility)
-HybridPollenSterility
+xyplot(proportion.sterile ~ genetic.distance, HybridPollenSterility)
 }
 
 \keyword{datasets}

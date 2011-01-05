@@ -14,8 +14,8 @@ Counts of number of wins for sumo wrestlers.
 \format{
   A data frame with 16 observations on the following 2 variables.
   \describe{
-    \item{\code{Total.wins}}{a numeric vector}
-    \item{\code{Count}}{a numeric vector}
+    \item{\code{wins}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,7 @@ Duggan, M. and S.D. Leavitt. 2002. Winning isn't everything: Corruption in sumo 
 
 \examples{
 data(Sumo)
-Sumo
+xyplot(count ~ wins, Sumo, type='h', lwd=4)
 }
 
 \keyword{datasets}

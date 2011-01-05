@@ -3,20 +3,20 @@
 \docType{data}
 
 \title{
-Malaria Frequencies in Populations of Great Tit
+Malaria in Populations of Great Tit
 }
 
-\description{
-Two-by-two contingency table of malaria (\emph{Plasmodium}) infection frequencies in control and egg-removal populations of Great Tit (\emph{Parus major}).
-}
+\description{ Two-by-two contingency table of malaria (\emph{Plasmodium})
+infection status in control and egg-removal populations of Great Tit
+(\emph{Parus major}).  }
 
 \usage{data(GreatTitMalaria)}
 \format{
   A data frame with 4 observations on the following 3 variables.
   \describe{
-    \item{\code{Treatment}}{a factor with levels \code{Control} and \code{Egg.removal}}
-    \item{\code{Response}}{a factor with levels \code{Malaria} and \code{No.Malaria}}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{treatment}}{a factor with levels \code{Control} and \code{Egg removal}}
+    \item{\code{response}}{a factor with levels \code{Malaria} and \code{No Malaria}}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -39,15 +39,18 @@ str(GreatTitMalaria)
 GreatTitMalaria
 
 # Table 2.3-1
-GTM.raw <- expand.dft(GreatTitMalaria, "Frequency")
+GTM.raw <- expand.dft(GreatTitMalaria, "count")
 
 table(GTM.raw)
 
+if(require(vcd)) {
+	mosaic(~treatment + response, GTM.raw)
+}
 \dontrun{
 # Fig. 2.3-1
 require(ggplot2)
 bar <- ggplot(GreatTitMalaria, 
-  aes(x = Treatment, y = Frequency, fill = Response))
+  aes(x = Treatment, y = count, fill = Response))
 bar + geom_bar(stat = "identity", position = "dodge")
 
 # Fig. 2.3-2

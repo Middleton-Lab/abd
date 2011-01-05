@@ -16,7 +16,7 @@ Area coverage of red algae (\emph{Mazzaella parksii}) in two herbivore treatment
   \describe{
     \item{\code{height}}{a factor with levels \code{low} and \code{mid}}
     \item{\code{herbivores}}{a factor with levels \code{minus} and \code{plus}}
-    \item{\code{sqrtarea}}{a numeric vector}
+    \item{\code{sqrt.area}}{a numeric vector}
   }
 }
 
@@ -37,8 +37,10 @@ data(IntertidalAlgae)
 str(IntertidalAlgae)
 
 # Using * includes the main effects and the interaction
-aov.fit <- aov(sqrtarea ~ herbivores * height, data = IntertidalAlgae)
+aov.fit <- aov(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
 summary(aov.fit)
+lm.fit <- lm(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
+anova(lm.fit)
 }
 
 \keyword{datasets}

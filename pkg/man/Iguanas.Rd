@@ -6,14 +6,17 @@
 Iguana Body Length Changes
 }
 
-\description{
-Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus cristatus}) that survived the 1992-1993 El Niño event.
-}
+\description{ Body size change in 64 Galápagos marine iguanas
+(\emph{Amblyrhynchus cristatus}) that survived the 1992-1993 El Niño event.  }
 
 \usage{data(Iguanas)}
 
 \format{
-A numeric vector with 64 observations.
+A data frame with
+64 observations of one variable.
+\describe{
+\item{\code{change.in.length}}{}
+}
 }
 
 %\details{
@@ -31,7 +34,7 @@ Wikelski, M. and C. Thom. 2000. Marine iguanas shrink to survive El Niño. \emph
 \examples{
 data(Iguanas)
 str(Iguanas)
-hist(Iguanas, breaks = 10)
+histogram(~change.in.length, Iguanas, n = 10)
 }
 
 \keyword{datasets}

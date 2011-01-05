@@ -14,8 +14,8 @@ Data on frequency of seeding per quadrat for 80 hypothetical quadrats.
 \format{
   A data frame with 8 observations on the following 2 variables.
   \describe{
-    \item{\code{Number.of.seedlings}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{seedlings}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 

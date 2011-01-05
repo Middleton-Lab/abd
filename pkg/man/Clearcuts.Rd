@@ -12,7 +12,10 @@ Biomass change in 36 Amazonian rainforests following clearcuts ranging from 50 m
 
 \usage{data(Clearcuts)}
 \format{
-A numeric vector with 36 observations.
+A data frame with 36 observations of one variable.
+\describe{
+\item{\code{biomass.change}}{}
+}
 }
 
 %\details{
@@ -30,7 +33,7 @@ Laurance, W.F., S.G. Laurance, L.V. Ferreira, J.M. Rankin-de Merona,   C. Gascon
 \examples{
 data(Clearcuts)
 str(Clearcuts)
-hist(Clearcuts)
+histogram(~biomass.change, Clearcuts)
 }
 
 \keyword{datasets}

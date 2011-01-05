@@ -33,7 +33,8 @@ Time spent with a female (\code{percent}) in control and vasopressin-enhanced gr
 
 \examples{
 data(VasopressinVoles)
-VasopressinVoles
+xyplot(percent ~ treatment, VasopressinVoles, type=c('p','a'))
+bwplot(percent ~ treatment, VasopressinVoles)
 }
 
 \keyword{datasets}

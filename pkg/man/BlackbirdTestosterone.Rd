@@ -15,12 +15,12 @@ Experimental manipulation of testosterone levels in male Red-winged Blackbirds a
 \format{
   A data frame with 13 observations on the following 6 variables.
   \describe{
-    \item{\code{Before}}{a numeric vector}
-    \item{\code{After}}{a numeric vector}
+    \item{\code{before}}{a numeric vector}
+    \item{\code{after}}{a numeric vector}
     \item{\code{log.before}}{a numeric vector}
     \item{\code{log.after}}{a numeric vector}
-    \item{\code{dif.in.logs}}{a numeric vector}
-    \item{\code{dif}}{a numeric vector}
+    \item{\code{diff.in.logs}}{a numeric vector}
+    \item{\code{diff}}{a numeric vector}
   }
 }
 
@@ -47,16 +47,16 @@ plot(log.after ~ log.before, data = BlackbirdTestosterone,
   xlab = "log Antibody production before implant")
 abline(b = 1, a = 0)
 
-hist(BlackbirdTestosterone$dif.in.logs,
+hist(BlackbirdTestosterone$diff.in.logs,
   xlab = "Difference (before - after)", main = "",
   col = "red")
 
-(d.bar <- mean(BlackbirdTestosterone$dif.in.logs))
-(s.d <- sd(BlackbirdTestosterone$dif.in.logs))
-(n <- length(BlackbirdTestosterone$dif.in.logs))
-(se.d <- se(BlackbirdTestosterone$dif.in.logs))
+(d.bar <- mean(BlackbirdTestosterone$diff.in.logs))
+(s.d <- sd(BlackbirdTestosterone$diff.in.logs))
+(n <- length(BlackbirdTestosterone$diff.in.logs))
+(se.d <- se(BlackbirdTestosterone$diff.in.logs))
 
-ci(BlackbirdTestosterone$dif.in.logs)
+meanCI(BlackbirdTestosterone$diff.in.logs)
 
 (t.stat <- (d.bar - 0)/se.d)
 2 * pt(t.stat, df = 12, lower.tail = TRUE)
@@ -66,7 +66,10 @@ qt(0.05/2, df = 12, lower.tail = FALSE)
 t.test(BlackbirdTestosterone$log.before,
   BlackbirdTestosterone$log.after,
   paired = TRUE, var.equal = TRUE)
-}
 
+meanCI(BlackbirdTestosterone$log.before,
+  BlackbirdTestosterone$log.after,
+  paired = TRUE, var.equal = TRUE)
+}
 
 \keyword{datasets}

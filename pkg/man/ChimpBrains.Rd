@@ -14,9 +14,9 @@ Asymmetry of Brodmann's area 44 in 20 chimpanzees.
 \format{
   A data frame with 20 observations on the following 3 variables.
   \describe{
-    \item{\code{Chimp.Name}}{a character vector}
-    \item{\code{Sex}}{a factor with levels \code{F} and \code{M}}
-    \item{\code{Rounded.AQ}}{a numeric vector}
+    \item{\code{name}}{name of chimp}
+    \item{\code{sex}}{a factor with levels \code{F} and \code{M}}
+    \item{\code{asymmetry}}{asymmetry score}
   }
 }
 
@@ -41,7 +41,7 @@ set.seed(5)
 n <- 10000
 boot.median <- numeric(n)
 for (i in 1:n){
-  samp <- sample(ChimpBrains$Rounded.AQ, 20, replace = TRUE)
+  samp <- sample(ChimpBrains$asymmetry, 20, replace = TRUE)
   boot.median[i] <- median(samp)
 }
 hist(boot.median, breaks = 50, col = "red")
@@ -59,7 +59,7 @@ sorted.boot[9751]
 # Using boot()
 require(boot)
 boot.median <- function(x, i) median(x[i])
-boot(ChimpBrains$Rounded.AQ, boot.median, 10000)
+boot(ChimpBrains$asymmetry, boot.median, 10000)
 }
 
 \keyword{datasets}

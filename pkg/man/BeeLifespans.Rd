@@ -32,7 +32,8 @@ Lifespan of 33 foraging honey bees.
 
 \examples{
 data(BeeLifespans)
-BeeLifespans
+histogram(~hours, BeeLifespans, n=10)
+densityplot(~hours, BeeLifespans)
 }
 
 \keyword{datasets}

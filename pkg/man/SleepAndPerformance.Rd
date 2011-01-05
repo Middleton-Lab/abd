@@ -36,7 +36,7 @@ Huber, R., M.F. Ghilardi, M. Massimini, and G. Tononi. 2004. Local sleep and lea
 \examples{
 data(SleepAndPerformance)
 str(SleepAndPerformance)
-SleepAndPerformance
+xyplot(improvement ~ sleep, SleepAndPerformance)
 }
 
 \keyword{datasets}

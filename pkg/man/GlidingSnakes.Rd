@@ -6,13 +6,15 @@
 GlidingSnakes
 }
 
-\description{
-Undulation rate (\emph{Hz}) of 8 paradise tree snakes (\emph{Chrysopelea paradisi}).
-}
+\description{ Undulation rate (\emph{Hz}) of 8 paradise tree snakes
+(\emph{Chrysopelea paradisi}).  }
 
 \usage{data(GlidingSnakes)}
 \format{
-A data frame with eight observations of one variable (undulation rate).
+A data frame with eight observations of one variable.
+\describe{
+\item{\code{undulation.rate}}{undulation rate}
+}
 }
 
 \source{

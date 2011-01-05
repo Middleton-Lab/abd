@@ -14,8 +14,8 @@ Successful numbers of broods (\code{Number.of.successful.broods}) in two groups 
 \format{
   A data frame with 36 observations on the following 2 variables.
   \describe{
-    \item{\code{Mating.treatment}}{a factor with levels \code{DM} \code{SM}}
-    \item{\code{Number.of.successful.broods}}{a numeric vector}
+    \item{\code{treatment}}{a factor with levels \code{DM} \code{SM}}
+    \item{\code{successful.broods}}{a numeric vector}
   }
 }
 
@@ -34,6 +34,9 @@ Newcomer, S.D., J.A. Zeh, and D.W. Zeh. 1999. Genetic benefits enhance the repro
 \examples{
 data(Pseudoscorpions)
 str(Pseudoscorpions)
+bwplot(successful.broods ~ treatment, Pseudoscorpions)
+aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
+
 
 # Shorten names
 PS <- Pseudoscorpions

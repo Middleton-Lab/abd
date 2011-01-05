@@ -9,13 +9,16 @@ Mating Preferences in Sticklebacks
 }
 
 \description{
-Mating preference in 9 populations of three-spined sticklebacks
+Mating preference in 9 populations of three-spined sticklebacks.
 }
 
 \usage{data(SticklebackPreference)}
 
 \format{
-A numeric vector with 9 observations.
+A data frame with 9 observations of one variable.
+\describe{
+\item{\code{preference.index}}{a numeric vector}
+}
 }
 
 %\details{
@@ -33,7 +36,8 @@ McKinnon, J. S., S. Mori, B.K. Blackman, L. David, D.M. Kingsley, L. Jamieson, J
 \examples{
 data(SticklebackPreference)
 SticklebackPreference
-hist(SticklebackPreference)
+histogram(~preference.index, SticklebackPreference)
+dotplot(~preference.index, SticklebackPreference)
 }
 
 \keyword{datasets}

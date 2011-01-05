@@ -15,8 +15,8 @@ Number of workplace injuries on No Smoking Day (\code{Injuries.on.NSD}) compared
   A data frame with 10 observations on the following 3 variables.
   \describe{
     \item{\code{year}}{a numeric vector}
-    \item{\code{Injuries.before.NSD}}{a numeric vector}
-    \item{\code{Injuries.on.NSD}}{a numeric vector}
+    \item{\code{injuries.before.NSD}}{a numeric vector}
+    \item{\code{injuries.on.NSD}}{a numeric vector}
   }
 }
 

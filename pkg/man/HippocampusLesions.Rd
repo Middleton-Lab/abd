@@ -35,6 +35,9 @@ Broadbent, N.J., L.R. Squire, and R.E. Clark. 2004. Spatial memory, recognition 
 data(HippocampusLesions)
 HippocampusLesions
 
+xyplot(memory ~ lesion, data = HippocampusLesions,
+  pch = 16, col = "red")
+
 plot(memory ~ lesion, data = HippocampusLesions,
   pch = 16, col = "red")
 }

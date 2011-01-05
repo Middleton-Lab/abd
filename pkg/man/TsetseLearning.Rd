@@ -33,8 +33,7 @@ Dietary conditioning \code{treatment} and subsequent proportion of tsetse flies 
 
 \examples{
 data(TsetseLearning)
-TsetseLearning
-str(TsetseLearning)
+xyplot(proportion.cow ~ treatment, TsetseLearning)
 }
 
 \keyword{datasets}

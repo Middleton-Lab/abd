@@ -3,19 +3,20 @@
 \docType{data}
 
 \title{
-Hurricane Intensities
+Intense Hurricanes
 }
 
 \description{
-Number of hurricanes greater than or equal to category 3 on the Safir-Simpson scale during the 20th century.
+Number of hurricanes greater than or equal to category 3 on the Safir-Simpson
+scale during the 20th century.
 }
 
 \usage{data(Hurricanes)}
 \format{
   A data frame with 4 observations on the following 2 variables.
   \describe{
-    \item{\code{Number.of.hurricanes}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{hurricanes}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 

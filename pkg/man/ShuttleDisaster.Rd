@@ -36,7 +36,9 @@ Tufte, E.R. 1997. \emph{Visual Explanations: Images and Quantities, Evidence and
 \examples{
 data(ShuttleDisaster)
 str(ShuttleDisaster)
-ShuttleDisaster
+xyplot( jitter(failures,amount=.1) ~ temperature, ShuttleDisaster,
+	ylab='number of failures'
+	)
 }
 
 \keyword{datasets}

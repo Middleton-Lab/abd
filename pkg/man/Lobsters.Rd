@@ -12,7 +12,10 @@ Orientation of 15 lobsters relative to initial position.
 
 \usage{data(Lobsters)}
 \format{
-A numeric vector with 15 observations.
+A data frame with 15 observations of one variable.
+\describe{
+\item{\code{orientation}}{}
+}
 }
 
 %\details{
@@ -29,7 +32,8 @@ Boles, L.C. and K.J. Lohmann. 2003. True navigation and magnetic maps in spiny l
 
 \examples{
 data(Lobsters)
-Lobsters
+histogram(~orientation, Lobsters)
+dotplot(~orientation, Lobsters)
 }
 
 \keyword{datasets}

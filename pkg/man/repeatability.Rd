@@ -46,7 +46,7 @@ Kevin M. Middleton (\email{kmm@csusb.edu})
 
 \examples{
 data(WalkingStickFemurs)
-aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
+aovfit <- aov(femur.length ~ 1 + Error(specimen), data = WalkingStickFemurs)
 vc <- varcomps(aovfit, n = 2)
 vc
 R.varcomps <- repeatability(vc)

@@ -43,6 +43,8 @@ hist(subset(SalmonColor, species == "kokanee")$skin.color,
 hist(subset(SalmonColor, species == "sockeye")$skin.color,
   xlab = "Skin Color Measure", main = "Sockeye",
   xlim = c(0.5, 2.5), breaks = 3)
+histogram(~skin.color | species, SalmonColor)
+bwplot(skin.color ~ species, SalmonColor)
 }
 
 \keyword{datasets}

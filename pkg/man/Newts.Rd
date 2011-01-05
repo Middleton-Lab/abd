@@ -7,7 +7,7 @@ Tetrodotoxin Resistance in Garter Snakes
 }
 
 \description{
-Percent reduction in crawl speed (\code{whole.animal.resistance}) in the garter snake after injection of the neurotoxin tetrodotoxin from the rough-skinned newt (\emph{Taricha granulosa}).
+Percent reduction in crawl speed (\code{resistance}) in the garter snake after injection of the neurotoxin tetrodotoxin from the rough-skinned newt (\emph{Taricha granulosa}).
 }
 
 \usage{data(Newts)}
@@ -15,7 +15,7 @@ Percent reduction in crawl speed (\code{whole.animal.resistance}) in the garter 
   A data frame with 12 observations on the following 2 variables.
   \describe{
     \item{\code{locality}}{a factor with levels: \code{Benton} and \code{Warrenton}}
-    \item{\code{whole.animal.resistance}}{a numeric vector}
+    \item{\code{resistance}}{a numeric vector}
   }
 }
 

@@ -14,9 +14,9 @@ Levels of expression of the foraging gene (\emph{for}; \code{Expression}) in two
 \format{
   A data frame with 6 observations on the following 3 variables.
   \describe{
-    \item{\code{type}}{a factor with levels \code{for} \code{nurse}}
-    \item{\code{colony}}{a numeric vector}
-    \item{\code{Expression}}{a numeric vector}
+    \item{\code{type}}{a factor with levels \code{forager} \code{nurse}}
+    \item{\code{colony}}{a numeric identifier}
+    \item{\code{expression}}{expression level of the \emph{for} gene}
   }
 }
 

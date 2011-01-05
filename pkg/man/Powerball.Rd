@@ -14,8 +14,8 @@ The number of Powerball tickets sold per day of the week for three years.
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{Day}}{a character vector}
-    \item{\code{Millions.of.tickets.sold}}{a numeric vector}
+    \item{\code{day}}{a character vector}
+    \item{\code{millions.of.tickets.sold}}{a numeric vector}
   }
 }
 
@@ -34,6 +34,7 @@ Oster, E. 2004. Dreaming big: Why do people play Powerball? \emph{Chance News} 1
 \examples{
 data(Powerball)
 Powerball
+xyplot(millions.of.tickets.sold ~ day, Powerball)
 }
 
 \keyword{datasets}

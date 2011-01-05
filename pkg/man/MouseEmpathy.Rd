@@ -14,9 +14,9 @@ Percentage of time spent stretching in three treatments of mice. Both \code{cond
 \format{
   A data frame with 42 observations on the following 3 variables.
   \describe{
-    \item{\code{condition}}{a factor with levels \code{BothWrithing}, \code{Isolated}, and \code{OneWrithing}}
+    \item{\code{treatment}}{a factor with levels \code{Both Writhing}, \code{Isolated}, and \code{One Writhing}}
     \item{\code{percent.stretching}}{a numeric vector}
-    \item{\code{treatment}}{a factor with levels \code{bw}, \code{isolated}, and \code{ow}}
+    \item{\code{trt}}{a factor with levels \code{bw}, \code{isolated}, and \code{ow}}
   }
 }
 
@@ -38,6 +38,8 @@ str(MouseEmpathy)
 
 aov.fit <- aov(percent.stretching ~ treatment, data = MouseEmpathy)
 summary(aov.fit)
+lm.fit <- lm(percent.stretching ~ treatment, data = MouseEmpathy)
+anova(lm.fit)
 }
 
 \keyword{datasets}

@@ -14,9 +14,9 @@ Number and sex of adult wrasses in a section of the Great Barrier Reef.
 \format{
   A data frame with 3 observations on the following 3 variables.
   \describe{
-    \item{\code{Number.of.males}}{a numeric vector}
-    \item{\code{Number.of.females}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{males}}{a numeric vector}
+    \item{\code{females}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -34,7 +34,7 @@ Number and sex of adult wrasses in a section of the Great Barrier Reef.
 
 \examples{
 data(WrasseSexes)
-WrasseSexes
+xtabs(count ~ males + females, WrasseSexes)
 }
 
 \keyword{datasets}

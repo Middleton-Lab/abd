@@ -33,7 +33,7 @@ Lounibos, L.P., N. Nishimura, J. Conn, and R. Lourenco-de-Oliveira. 1995. Life h
 
 \examples{
 data(Mosquitoes)
-Mosquitoes
+xyplot(weight ~ sex, Mosquitoes)
 }
 
 \keyword{datasets}

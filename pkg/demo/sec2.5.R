@@ -4,7 +4,7 @@ xyplot(son.attract ~ father.ornament, data=GuppyAttractiveness,
 	ylab="Son's attractiveness")
 
 # Figure 2.5-2
-xyplot(no.pelts ~ date, LynxPopulationCycles, 
+xyplot(pelts ~ year, LynxPopulationCycles, 
 	type='b',
 	ylab="Lynx fur returns",
 	xlab="Year")

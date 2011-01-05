@@ -14,9 +14,9 @@ Frequency of cancer in 39,876 women taking and not taking aspirin.
 \format{
   A data frame with 4 observations on the following 3 variables.
   \describe{
-    \item{\code{Aspirin.treatment}}{a factor with levels \code{Aspirin} and \code{Placebo}}
-    \item{\code{Cancer}}{a factor with levels \code{no} and \code{yes}}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{treatment}}{a factor with levels \code{Aspirin} and \code{Placebo}}
+    \item{\code{cancer}}{a factor with levels \code{no} and \code{yes}}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -36,11 +36,11 @@ Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Henn
 data(AspirinCancer)
 AspirinCancer
 
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
 str(AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ Aspirin.treatment + Cancer, data = AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = AspirinCancer.expanded)
 plot(table(AspirinCancer.expanded), main = "")
 
 # Calculate odds
@@ -51,7 +51,7 @@ plot(table(AspirinCancer.expanded), main = "")
 (Odds <- Odds.asp / Odds.no.asp)
 ln.Odds <- log(Odds)
 
-(SE.Odds <- sqrt(sum(1/AspirinCancer$Frequency)))
+(SE.Odds <- sqrt(sum(1/AspirinCancer$count)))
 Z <- 1.96
 (CI.low <- ln.Odds - Z * SE.Odds)
 (CI.high <- ln.Odds + Z * SE.Odds)

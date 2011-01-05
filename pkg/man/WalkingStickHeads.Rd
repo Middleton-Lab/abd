@@ -7,7 +7,7 @@ Walking Stick Head Width
 }
 
 \description{
-Two measures of head width (\code{headwidth}) for each of 25 walking sticks (\emph{Timema cristinae}).
+Two measures of head width (\code{head.width}) for each of 25 walking sticks (\emph{Timema cristinae}).
 }
 
 \usage{data(WalkingStickHeads)}
@@ -15,7 +15,7 @@ Two measures of head width (\code{headwidth}) for each of 25 walking sticks (\em
   A data frame with 50 observations on the following 2 variables.
   \describe{
     \item{\code{specimen}}{a factor with levels \code{1-25}}
-    \item{\code{headwidth}}{a numeric vector}
+    \item{\code{head.width}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,8 @@ Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes d
 
 \examples{
 data(WalkingStickHeads)
-WalkingStickHeads
+aggregate(head.width~specimen, data=WalkingStickHeads, mean) -> WS
+histogram(~head.width, WS)
 }
 
 \keyword{datasets}

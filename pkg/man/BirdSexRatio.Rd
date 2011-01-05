@@ -11,8 +11,10 @@ Correlation coefficient of sex ratio in bird offspring.
 
 \usage{data(BirdSexRatio)}
 \format{
-  The format is:
- num [1:15] -0.16 -0.037 0.034 0.144 0.137 0.118 0.395 0.363 0.35 0.376 ...
+A data frame with 15 observations of one variable
+\describe{
+\item{\code{corr.coeff}}{correlation coefficient of sex ratio in bird offspring}
+}
 }
 
 %\details{
@@ -29,8 +31,7 @@ West, S.A. and B.C. Sheldon. 2002. Constraints in the evolution of sex ratio adj
 
 \examples{
 data(BirdSexRatio)
-BirdSexRatio
-hist(BirdSexRatio, breaks = 10,
+histogram(~corr.coeff, BirdSexRatio, n = 10,
   xlab = "Correlation Coefficient")
 }
 

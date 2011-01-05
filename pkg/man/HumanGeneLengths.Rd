@@ -35,14 +35,15 @@ Hubbard, T., D. Andrews, M. Caccamo, G. Cameron, Y. Chen, M. Clamp, L. Clarke, G
 \examples{
 data(HumanGeneLengths)
 str(HumanGeneLengths)
+histogram(~gene.length, HumanGeneLengths, subset=gene.length<15000)
 
 # Subset to only include genes with less than 15000 nucleotides
-genes.under.15k <- subset(HumanGeneLengths, gene.length < 15000)
+GenesUnder15k <- subset(HumanGeneLengths, gene.length < 15000)
 
 # Remove default space between the origin and the axes
 par(xaxs = "i", yaxs = "i")
 
-hist(genes.under.15k$gene.length,
+hist(GenesUnder15k$gene.length,
   breaks = 30,
   ylim = c(0, 3000),
   xlab = "Gene length (number of nucleotides)",
@@ -50,7 +51,7 @@ hist(genes.under.15k$gene.length,
 
 \dontrun{
 require(ggplot2)
-p <- ggplot(genes.under.15k, aes(gene.length))
+p <- ggplot(GenesUnder15k, aes(gene.length))
 p + geom_histogram(fill = "red") +
   scale_x_continuous("Gene length (number of nucleotides)") +
   scale_y_continuous("Frequency")}

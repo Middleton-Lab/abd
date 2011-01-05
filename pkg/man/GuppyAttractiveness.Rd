@@ -35,6 +35,12 @@ The father's ornamentation (composite score of color and brightness) and son's a
 data(GuppyAttractiveness)
 
 str(GuppyAttractiveness)
+xyplot(son.attract ~ father.ornament,
+  GuppyAttractiveness,
+  xlab = "Father's ornamentation",
+  ylab = "Son's attractiveness"
+  )
+
 plot(GuppyAttractiveness$father.ornament,
   GuppyAttractiveness$son.attract,
   xlab = "Father's ornamentation",

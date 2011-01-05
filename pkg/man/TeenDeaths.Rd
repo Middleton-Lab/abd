@@ -14,8 +14,8 @@ Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages 15-
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{Cause}}{a character vector}
-    \item{\code{No.deaths}}{a numeric vector}
+    \item{\code{cause}}{a character vector}
+    \item{\code{deaths}}{a numeric vector}
   }
 }
 
@@ -27,14 +27,25 @@ data(TeenDeaths)
 
 str(TeenDeaths)
 TeenDeaths
+barchart(deaths~cause, TeenDeaths, 
+	horizontal=FALSE,
+	ylab="Number of Deaths",
+	xlab="Cause of Death",
+	scales=list(x=list(rot=45)))
+barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+	horizontal=FALSE,
+	ylab="Number of Deaths",
+	xlab="Cause of Death",
+	scales=list(x=list(rot=45))
+	)
 
 op <- par(no.readonly = TRUE)
 par(mai = c(2, 0.82, 0.25, 0.42),
   xaxs = "i",
   yaxs = "i")
 
-barplot(TeenDeaths$No.deaths,
-  names.arg = TeenDeaths$Cause,
+barplot(TeenDeaths$deaths,
+  names.arg = TeenDeaths$cause,
   las = 3,
   cex.axis = 0.75,
   cex.names = 0.75,

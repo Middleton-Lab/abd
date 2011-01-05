@@ -36,6 +36,9 @@ data(HemoglobinHighAltitude)
 
 str(HemoglobinHighAltitude)
 
+xyplot(relative.frequency ~ hemoglobin | group, HemoglobinHighAltitude,
+	type ='h', lwd=4, layout=c(1,4))
+
 \dontrun{
 # Fig. 2.4-1
 require(ggplot2)

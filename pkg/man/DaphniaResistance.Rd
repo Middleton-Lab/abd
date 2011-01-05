@@ -14,7 +14,7 @@ Resistance of \emph{Daphnia} eggs to different levels of cyanobacteria (\code{cy
 \format{
   A data frame with 32 observations on the following 2 variables.
   \describe{
-    \item{\code{cyandensity}}{a factor with levels: \code{high}, \code{low}, and \code{med}}
+    \item{\code{density}}{a factor with levels: \code{high}, \code{low}, and \code{med}}
     \item{\code{resistance}}{a numeric vector}
   }
 }
@@ -36,8 +36,12 @@ data(DaphniaResistance)
 str(DaphniaResistance)
 
 DaphniaResistance$cyandensity <-
-  factor(as.character(DaphniaResistance$cyandensity), 
+  factor(as.character(DaphniaResistance$density), 
   levels = c("low", "med", "high"))
+
+bwplot(resistance ~ density, DaphniaResistance)
+# with such a small data set, we can display all the data rather than a summary
+xyplot(resistance ~ density, DaphniaResistance)
 
 \dontrun{
 require(ggplot2)

@@ -1,12 +1,5 @@
 
-if(require(Hmisc)) {
-	summary(speed ~ amputation.status, SpiderRunningAmputation, fun=median)
-}
-if(require(Hmisc)) {
-	summary(speed ~ amputation.status, SpiderRunningAmputation, fun=IQR)
-}
-if(require(Hmisc)) {
-	summary(speed ~ amputation.status, SpiderRunningAmputation, fun=quantile)
-}
+xyplot(speed.after ~ speed.before, SpiderSpeed)
 # Figure 3.2-2
-bwplot(speed ~ amputation.status, SpiderRunningAmputation)
+bwplot(~speed.before, SpiderSpeed)
+bwplot(~speed.after, SpiderSpeed)

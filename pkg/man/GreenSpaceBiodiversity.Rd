@@ -16,7 +16,7 @@ Measures of biodiversity in 15 urban green spaces in Sheffield, England.
   \describe{
     \item{\code{site}}{a factor with levels \code{A} - \code{O}}
     \item{\code{attachment}}{a numeric vector}
-    \item{\code{area.ha}}{a numeric vector}
+    \item{\code{area}}{a numeric vector}
     \item{\code{butterfly}}{a numeric vector}
     \item{\code{bird}}{a numeric vector}
     \item{\code{ln.plant}}{a numeric vector}
@@ -38,7 +38,7 @@ Fuller, R.A., K.N. Irvine, P. Devine-Wright, P.H. Warren, and K.J. Gaston. 2007.
 \examples{
 data(GreenSpaceBiodiversity)
 str(GreenSpaceBiodiversity)
-GreenSpaceBiodiversity
+splom(GreenSpaceBiodiversity[,2:6])
 }
 
 \keyword{datasets}

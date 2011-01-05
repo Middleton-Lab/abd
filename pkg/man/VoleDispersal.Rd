@@ -15,7 +15,7 @@ Home range size size in field voles (\emph{Microtus agrestis}).
   A data frame with 5 observations on the following 3 variables.
   \describe{
     \item{\code{homeranges}}{a numeric vector}
-    \item{\code{frequency}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
     \item{\code{sex}}{a factor with levels \code{female} and \code{male}}
   }
 }
@@ -34,8 +34,13 @@ Sandell, M., J. Agrell, S. Erlinge, and J. Nelson. 1991. Adult philopatry and di
 
 \examples{
 data(VoleDispersal)
-str(VoleDispersal)
-VoleDispersal
+xtabs(count~sex+homeranges,VoleDispersal)
+barchart( xtabs(count~sex+homeranges,VoleDispersal), auto.key=TRUE)
+barchart(count~sex+homeranges,VoleDispersal)
+barchart(count~sex,groups=homeranges,VoleDispersal)
+barchart(count~sex,groups=homeranges,VoleDispersal,stack=TRUE)
+
+
 }
 
 \keyword{datasets}

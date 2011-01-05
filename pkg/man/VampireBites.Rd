@@ -16,7 +16,7 @@ Numbers of cattle bitten by the cow's estrous cycle.
   \describe{
     \item{\code{estrous}}{a factor with levels: \code{no} and \code{yes}}
     \item{\code{bitten}}{a factor with levels: \code{no} and \code{yes}}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -36,15 +36,15 @@ Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior and Ecology}
 data(VampireBites)
 VampireBites
 
-xtabs(Frequency ~ estrous + bitten, data = VampireBites)
+xtabs(count ~ estrous + bitten, data = VampireBites)
+fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 
-fisher.test(matrix(VampireBites$Frequency, ncol = 2))
 
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
 source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
-g.test(matrix(VampireBites$Frequency, ncol = 2))
-g.test(matrix(VampireBites$Frequency, ncol = 2))$expected
+g.test(xtabs(count ~ estrous + bitten, data = VampireBites))
+g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
 }
 
 \keyword{datasets}

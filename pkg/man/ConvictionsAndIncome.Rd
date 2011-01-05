@@ -14,9 +14,9 @@ Data reporting the number of individual with and without convictions per income 
 \format{
   A data frame with 6 observations on the following 3 variables.
   \describe{
-    \item{\code{has.convictions}}{a factor with levels \code{no} and \code{yes}}
-    \item{\code{income.level}}{a factor with levels \code{adequate}, \code{comfortable}, and \code{inadequate}}
-    \item{\code{n}}{a numeric vector}
+    \item{\code{convicted}}{a factor with levels \code{no} and \code{yes}}
+    \item{\code{income}}{a factor with levels \code{adequate}, \code{comfortable}, and \code{inadequate}}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -37,9 +37,9 @@ data(ConvictionsAndIncome)
 str(ConvictionsAndIncome)
 ConvictionsAndIncome
 
-Conv.raw <- expand.dft(ConvictionsAndIncome, "n")
+Conv.raw <- expand.dft(ConvictionsAndIncome, "count")
 
-xtabs(data = Conv.raw)
+xtabs(~convicted + income, data = Conv.raw)
 }
 
 \keyword{datasets}

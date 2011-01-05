@@ -7,16 +7,17 @@ Lifetime Reproductive Success in House Sparrows
 }
 
 \description{
-Lifetime reproductive success (\code{LifetimeRS}) in female and male house sparrows \emph{Passer domesticus} in Norway.
+A cross table of lifetime reproductive success (\code{LifetimeRS}) 
+in female and male house sparrows \emph{Passer domesticus} in Norway.
 }
 
 \usage{data(SparrowReproductiveSuccess)}
 \format{
   A data frame with 9 observations on the following 3 variables.
   \describe{
-    \item{\code{LifetimeRS}}{a numeric vector}
-    \item{\code{no.females}}{a numeric vector}
-    \item{\code{no.males}}{a numeric vector}
+    \item{\code{lifetimeRS}}{a numeric vector}
+    \item{\code{females}}{a numeric vector}
+    \item{\code{males}}{a numeric vector}
   }
 }
 

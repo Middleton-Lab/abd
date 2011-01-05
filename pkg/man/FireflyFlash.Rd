@@ -13,7 +13,10 @@ Flash duration (measured in milliseconds) of a sample of male fireflies (\emph{P
 
 \usage{data(FireflyFlash)}
 \format{
-A numeric vector with 35 observations.
+A data frame with 35 observations of one variable.
+\describe{
+\item{\code{flash}}{duration of flash (milliseconds)}
+}
 }
 
 %\details{
@@ -33,7 +36,7 @@ A numeric vector with 35 observations.
 \examples{
 data(FireflyFlash)
 str(FireflyFlash)
-FireflyFlash
+histogram(~flash, FireflyFlash)
 }
 
 \keyword{datasets}

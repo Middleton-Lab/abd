@@ -33,8 +33,7 @@ Sloan, R.E.G. and W.R. Keatinge. 1973. Cooling rates of young people swimming in
 
 \examples{
 data(BodyFatHeatLoss)
-str(BodyFatHeatLoss)
-BodyFatHeatLoss
+xyplot(lossrate ~ leanness, BodyFatHeatLoss)
 }
 
 \keyword{datasets}

@@ -15,7 +15,7 @@ Two measures of femur length for each of 25 walking sticks (\emph{Timema cristin
   A data frame with 50 observations on the following 2 variables.
   \describe{
     \item{\code{specimen}}{a factor with levels \code{1-25}}
-    \item{\code{femurlength}}{a numeric vector of femur length}
+    \item{\code{femur.length}}{a numeric vector of femur length}
   }
 }
 
@@ -35,7 +35,7 @@ Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes d
 data(WalkingStickFemurs)
 str(WalkingStickFemurs)
 
-aovfit <- aov(femurlength ~ specimen, data = WalkingStickFemurs)
+aovfit <- aov(femur.length ~ specimen, data = WalkingStickFemurs)
 aovfit
 (aov.summary <- summary(aovfit))
 MS.groups <- aov.summary[[1]]$"Mean Sq"[1]
@@ -48,7 +48,7 @@ MS.error <- aov.summary[[1]]$"Mean Sq"[2]
 var.among / (var.among + MS.error)
 
 # Can use Error() with varcomps() and repeatability()
-aovfit2 <- aov(femurlength ~ 1 + Error(specimen),
+aovfit2 <- aov(femur.length ~ 1 + Error(specimen),
   data = WalkingStickFemurs)
 vc <- varcomps(aovfit2, n = 2)
 vc
@@ -57,7 +57,7 @@ R.varcomps
 
 # The same model can be fit with lme()
 require(nlme)
-lme.fit <- lme(femurlength ~ 1, random = ~ 1 | specimen,
+lme.fit <- lme(femur.length ~ 1, random = ~ 1 | specimen,
   data = WalkingStickFemurs)
 summary(lme.fit)
 VarCorr(lme.fit)

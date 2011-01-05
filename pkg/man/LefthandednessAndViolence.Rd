@@ -15,7 +15,7 @@ Prevalence of left-handedness (\code{percent.left}) and homicide rates (\code{mu
   A data frame with 8 observations on the following 2 variables.
   \describe{
     \item{\code{percent.left}}{a numeric vector}
-    \item{\code{murder}}{a numeric vector}
+    \item{\code{murder.rate}}{a numeric vector}
   }
 }
 
@@ -34,7 +34,8 @@ Faurie, C. and M. Raymond. 2005. Handedness, homicide and negative frequency-dep
 \examples{
 data(LefthandednessAndViolence)
 str(LefthandednessAndViolence)
-LefthandednessAndViolence
+xyplot(murder.rate ~ percent.left, LefthandednessAndViolence)
+
 }
 
 \keyword{datasets}

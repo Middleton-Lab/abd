@@ -36,7 +36,7 @@ Fuller, A., P.R. Kamerman, S.K. Maloney, G. Mitchell, and D. Mitchell. 2003. Var
 
 \examples{
 data(OstrichTemp)
-OstrichTemp
+xyplot(brain.temp ~ body.temp, OstrichTemp)
 }
 
 \keyword{datasets}

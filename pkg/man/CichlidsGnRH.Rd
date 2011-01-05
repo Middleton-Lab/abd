@@ -6,16 +6,16 @@
 GnRH Levels in Cichlids
 }
 
-\description{
-Levels of mRNA for gonadotropin-releasing hormone in cichlids (\emph{Haplochromis burtoni}) that are (\code{T}; \emph{n} = 5) and are not (\code{NT}; \emph{n} = 6) territorial.
-}
+\description{ Levels of mRNA for gonadotropin-releasing hormone in cichlids
+(\emph{Haplochromis burtoni}) that are (\emph{n} = 5) and are not
+(\emph{n} = 6) territorial.  }
 
 \usage{data(CichlidsGnRH)}
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{Territorial.status}}{a factor with levels \code{NT} and \code{T}, indicating whether a fish is not territorial (\code{NT}) or territorial (\code{T}).}
-    \item{\code{GnRH.mRNA.level}}{a numeric vector}
+    \item{\code{territorial}}{a factor with levels \code{No} and \code{Yes}}
+    \item{\code{GnRH.mRNA}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,7 @@ White, S.A., T. Nguyen, and R.D. Fernald. 2002. Social regulation of gonadotropi
 
 \examples{
 data(CichlidsGnRH)
-CichlidsGnRH
+xyplot(GnRH.mRNA ~ territorial, CichlidsGnRH, type=c('p','a'))
 }
 
 \keyword{datasets}

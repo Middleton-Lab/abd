@@ -34,7 +34,7 @@ flowering plants. \emph{Proceedings of the Royal Society of London, Series B, Bi
 
 \examples{
 data(Vines)
-Vines
+xyplot(nonclimbing ~ climbing, Vines, scales=list(log=TRUE))
 }
 
 \keyword{datasets}

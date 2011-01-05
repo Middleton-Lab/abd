@@ -37,7 +37,8 @@ Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the local evoluti
 
 \examples{
 data(EarwigForceps)
-EarwigForceps
+xyplot(proportion.forceps ~ density, data=EarwigForceps, type='h', lwd=6)
+
 }
 
 \keyword{datasets}

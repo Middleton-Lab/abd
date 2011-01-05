@@ -1,36 +1,39 @@
 \name{cumfreq}
 \alias{cumfreq}
-\alias{cumfreq.formula}
 \alias{cumfreq.default}
 \alias{panel.cumfreq}
 \alias{prepanel.cumfreq}
+\alias{cumfreq.formula}
 \title{
-Cumulative Frequency Plots
+Cumulative frequency plots
 }
 \description{
-High-level graphics functions for creating cumulative frequency plots
-using \code{lattice} graphics.
+A high-level function for producing a cumulative frequency plot using 
+\code{lattice} graphics.
 }
 \usage{
 cumfreq(x, data, ...)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ a numeric vector or a formula }
-  \item{data}{ if \code{x} is a formula, then \code{data} is a 
-  data frame in which the formula is interpreted.
+  \item{x}{ a formula or numeric vector }
+  \item{data}{ a data frame in which \code{x} is evaluated if \code{x} is a formula.
 }
   \item{\dots}{
-  other arguments passed to \code{panel.cumfreq}.
+  other lattice arguments
 }
 }
-\value{
-A trellis object representing the cumulative frequency plot.
+%\details{
+%%%  ~~ If necessary, more details than the description above ~~
+%}
+\author{
+Randall Pruim
 }
-\author{ Randall Pruim }
 
+
+\seealso{
+\code{\link{histogram}}, \code{\link{densityplot}}
+}
 \examples{
-cumfreq(~Sepal.Length, groups=Species, data=iris)
-cumfreq(~Sepal.Length, groups=Species, data=iris, type='step')
+cumfreq(~count,DesertBirds, xlab='Species Abundance')
 }
 \keyword{ graphics }

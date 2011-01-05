@@ -14,8 +14,8 @@ Bite force (N) and territory area in 11 male collared lizards (\emph{Crotaphytus
 \format{
   A data frame with 11 observations on the following 2 variables.
   \describe{
-    \item{\code{bite}}{a numeric vector}
-    \item{\code{territory.area}}{a numeric vector}
+    \item{\code{bite}}{force of bite (N)}
+    \item{\code{territory}}{area of territory}
   }
 }
 
@@ -34,7 +34,7 @@ Lappin, A. K., and J. F. Husak. 2005. Weapon performance, not size, determines m
 \examples{
 data(LizardBite)
 str(LizardBite)
-LizardBite
+xyplot(territory ~ bite, LizardBite)
 }
 
 \keyword{datasets}

@@ -14,8 +14,8 @@ The frequency of mass extinctions in the fossil record.
 \format{
   A data frame with 21 observations on the following 2 variables.
   \describe{
-    \item{\code{Number.of.extinctions}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{num.extinctions}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -35,10 +35,11 @@ Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the marine fossil re
 data(MassExtinctions)
 MassExtinctions
 
+if(0){
 # Calculate weighted mean
 # with expand.dft()
 n.extinctions <- expand.dft(MassExtinctions,
-  "Frequency")$Number.of.extinctions
+  "count")$Number.of.extinctions
 wt.mean <- mean(n.extinctions)
 
 # With weighted.mean()
@@ -91,6 +92,7 @@ summary(extinctions.fit)}
 
 # Variance
 var(n.extinctions)
+}
 }
 
 \keyword{datasets}

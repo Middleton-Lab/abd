@@ -48,16 +48,24 @@ data(AspirinCancer)
 AspirinCancer
 
 # Specifying col.exp as character
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
 str(AspirinCancer.expanded)
+xtabs(~treatment + cancer, AspirinCancer.expanded)
 
 # Specifying col.exp as numeric
 AspirinCancer.expanded <- expand.dft(AspirinCancer, 3)
 str(AspirinCancer.expanded)
+xtabs(~treatment + cancer, AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ Aspirin.treatment + Cancer, data = AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = AspirinCancer.expanded)
 plot(table(AspirinCancer.expanded), main = "")
+mosaicplot(~treatment + cancer, AspirinCancer.expanded)
+
+# much nicer looking plots using vcd
+if(require(vcd)) {
+	mosaic(~treatment + cancer, AspirinCancer.expanded)
+}
 }
 
 \keyword{ manip }

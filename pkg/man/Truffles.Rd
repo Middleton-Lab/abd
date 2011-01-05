@@ -14,8 +14,8 @@ Number of truffles per plot for 288 plots in an old growth forest in northeaster
 \format{
   A data frame with 5 observations on the following 2 variables.
   \describe{
-    \item{\code{Number.of.truffles.per.plot}}{a numeric vector}
-    \item{\code{Frequency}}{a numeric vector}
+    \item{\code{truffles}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -34,6 +34,8 @@ Waters, J.R., K.S. McKelvey, D.L. Luoam, and C.J. Zabel. 1997. Truffle productio
 \examples{
 data(Truffles)
 Truffles
+xyplot(count~truffles, Truffles, type='h', lwd=4)
+barchart(count~truffles, Truffles, horizontal=FALSE)
 }
 
 \keyword{datasets}

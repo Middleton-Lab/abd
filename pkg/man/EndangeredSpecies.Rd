@@ -15,7 +15,7 @@ Frequency of taxon groups on the U.S. Fish and Wildlife Service list of endanger
   A data frame with 11 observations on the following 2 variables.
   \describe{
     \item{\code{taxon}}{a character vector}
-    \item{\code{no.species}}{a numeric vector}
+    \item{\code{num.species}}{a numeric vector}
   }
 }
 

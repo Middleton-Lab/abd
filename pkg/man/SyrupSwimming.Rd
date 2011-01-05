@@ -15,7 +15,10 @@ Relative swimming speed (speed in syrup / speed in water) for 18 swimmers.
 \usage{data(SyrupSwimming)}
 
 \format{
-A numeric vector with 18 observations.
+A data frame with 18 observations of one variable.
+\describe{
+\item{\code{relative.speed}}{ratio of speed in syrup to speed in water}
+}
 }
 
 %\details{
@@ -33,7 +36,8 @@ Gettelfinger, B. and E. L. Cussler. 2004. Will Humans Swim Faster or Slower in S
 \examples{
 data(SyrupSwimming)
 SyrupSwimming
-hist(SyrupSwimming)
+histogram(~relative.speed, SyrupSwimming)
+dotplot(~relative.speed, SyrupSwimming)
 }
 
 \keyword{datasets}

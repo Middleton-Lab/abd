@@ -14,8 +14,8 @@ Relative size of the horns and wings in 19 female \emph{Onthophagus sagittarius}
 \format{
   A data frame with 19 observations on the following 2 variables.
   \describe{
-    \item{\code{hornsize}}{a numeric vector}
-    \item{\code{wingmass}}{a numeric vector}
+    \item{\code{horn.size}}{a numeric vector}
+    \item{\code{wing.mass}}{a numeric vector}
   }
 }
 
@@ -34,7 +34,7 @@ Emlen, D.J. 2001. Costs and the diversification of exaggerated animal structures
 \examples{
 data(BeetleWingsAndHorns)
 str(BeetleWingsAndHorns)
-BeetleWingsAndHorns
+xyplot(wing.mass ~ horn.size, BeetleWingsAndHorns)
 }
 
 \keyword{datasets}

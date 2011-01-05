@@ -7,7 +7,8 @@ Temperature Change and Meal Size in Rattlesnakes
 }
 
 \description{
-Temperature change after a meal (\% of body mass) in 17 South American rattlesnakes (\emph{Crotalus durissus}).
+Temperature change after a meal (\% of body mass) in 17 South American
+rattlesnakes (\emph{Crotalus durissus}).
 }
 
 \usage{data(RattlesnakeDigestion)}
@@ -15,7 +16,7 @@ Temperature change after a meal (\% of body mass) in 17 South American rattlesna
   A data frame with 17 observations on the following 2 variables.
   \describe{
     \item{\code{meal.size}}{a numeric vector}
-    \item{\code{tempchange}}{a numeric vector}
+    \item{\code{temp.change}}{a numeric vector}
   }
 }
 
@@ -34,7 +35,7 @@ Tattersall, G.J., W.K. Milsom, A.S. Abe, S.P. Brito, and D.V. Andrade. 2004. The
 \examples{
 data(RattlesnakeDigestion)
 str(RattlesnakeDigestion)
-RattlesnakeDigestion
+xyplot(meal.size ~ temp.change, RattlesnakeDigestion)
 }
 
 \keyword{datasets}

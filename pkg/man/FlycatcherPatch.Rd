@@ -34,7 +34,7 @@ Griffith, S.C. and B.C. Sheldon. 2001. Phenotypic plasticity in the expression o
 \examples{
 data(FlycatcherPatch)
 str(FlycatcherPatch)
-FlycatcherPatch
+xyplot(patch99 ~ patch98, FlycatcherPatch)
 }
 
 \keyword{datasets}

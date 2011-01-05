@@ -23,9 +23,10 @@ The unbound fraction of taurocholate for each of five concentrations of administ
 %%  ~~ If necessary, more details than the __description__ above ~~
 %}
 
-\source{
-Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998. Effect of a protein binding change on unbound and total plasma concentrations for drugs of intermediate hepatic extraction. \emph{Journal of Pharmacokinetics and Pharmacodynamics} 16:397-411.
-}
+\source{ Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998.
+Effect of a protein binding change on unbound and total plasma concentrations
+for drugs of intermediate hepatic extraction. \emph{Journal of Pharmacokinetics
+and Pharmacodynamics} 16:397-411.  }
 
 \references{
 \url{http://www.springerlink.com/content/p134310534nw8j72}
@@ -34,7 +35,8 @@ Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998. Effect of a
 \examples{
 data(LiverPreparation)
 str(LiverPreparation)
-LiverPreparation
+xyplot(unbound.fraction ~ concentration, LiverPreparation)
+
 }
 
 \keyword{datasets}

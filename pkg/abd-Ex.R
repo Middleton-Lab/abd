@@ -5,20 +5,21 @@ library('abd')
 
 assign(".oldSearch", search(), pos = 'CheckExEnv')
 cleanEx()
-nameEx("AntillesImmigrationDates")
-### * AntillesImmigrationDates
+nameEx("Antilles")
+### * Antilles
 
 flush(stderr()); flush(stdout())
 
-### Name: AntillesImmigrationDates
+### Name: Antilles
 ### Title: Antilles Bird Immigration Dates
-### Aliases: AntillesImmigrationDates
+### Aliases: Antilles
 ### Keywords: datasets
 
 ### ** Examples
 
-data(AntillesImmigrationDates)
-AntillesImmigrationDates
+data(Antilles)
+histogram(~immigration.date, Antilles,n=15)
+densityplot(~immigration.date, Antilles)
 
 
 
@@ -38,11 +39,11 @@ flush(stderr()); flush(stdout())
 data(AspirinCancer)
 AspirinCancer
 
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
 str(AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ Aspirin.treatment + Cancer, data = AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = AspirinCancer.expanded)
 plot(table(AspirinCancer.expanded), main = "")
 
 # Calculate odds
@@ -53,7 +54,7 @@ plot(table(AspirinCancer.expanded), main = "")
 (Odds <- Odds.asp / Odds.no.asp)
 ln.Odds <- log(Odds)
 
-(SE.Odds <- sqrt(sum(1/AspirinCancer$Frequency)))
+(SE.Odds <- sqrt(sum(1/AspirinCancer$count)))
 Z <- 1.96
 (CI.low <- ln.Odds - Z * SE.Odds)
 (CI.high <- ln.Odds + Z * SE.Odds)
@@ -103,7 +104,8 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(BeeLifespans)
-BeeLifespans
+histogram(~hours, BeeLifespans, n=10)
+densityplot(~hours, BeeLifespans)
 
 
 
@@ -122,7 +124,7 @@ flush(stderr()); flush(stdout())
 
 data(BeetleWingsAndHorns)
 str(BeetleWingsAndHorns)
-BeetleWingsAndHorns
+xyplot(wing.mass ~ horn.size, BeetleWingsAndHorns)
 
 
 
@@ -140,8 +142,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(BirdSexRatio)
-BirdSexRatio
-hist(BirdSexRatio, breaks = 10,
+histogram(~corr.coeff, BirdSexRatio, n = 10,
   xlab = "Correlation Coefficient")
 
 
@@ -169,16 +170,16 @@ plot(log.after ~ log.before, data = BlackbirdTestosterone,
   xlab = "log Antibody production before implant")
 abline(b = 1, a = 0)
 
-hist(BlackbirdTestosterone$dif.in.logs,
+hist(BlackbirdTestosterone$diff.in.logs,
   xlab = "Difference (before - after)", main = "",
   col = "red")
 
-(d.bar <- mean(BlackbirdTestosterone$dif.in.logs))
-(s.d <- sd(BlackbirdTestosterone$dif.in.logs))
-(n <- length(BlackbirdTestosterone$dif.in.logs))
-(se.d <- se(BlackbirdTestosterone$dif.in.logs))
+(d.bar <- mean(BlackbirdTestosterone$diff.in.logs))
+(s.d <- sd(BlackbirdTestosterone$diff.in.logs))
+(n <- length(BlackbirdTestosterone$diff.in.logs))
+(se.d <- se(BlackbirdTestosterone$diff.in.logs))
 
-ci(BlackbirdTestosterone$dif.in.logs)
+meanCI(BlackbirdTestosterone$diff.in.logs)
 
 (t.stat <- (d.bar - 0)/se.d)
 2 * pt(t.stat, df = 12, lower.tail = TRUE)
@@ -186,6 +187,10 @@ ci(BlackbirdTestosterone$dif.in.logs)
 qt(0.05/2, df = 12, lower.tail = FALSE)
 
 t.test(BlackbirdTestosterone$log.before,
+  BlackbirdTestosterone$log.after,
+  paired = TRUE, var.equal = TRUE)
+
+meanCI(BlackbirdTestosterone$log.before,
   BlackbirdTestosterone$log.after,
   paired = TRUE, var.equal = TRUE)
 
@@ -205,8 +210,25 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(BodyFatHeatLoss)
-str(BodyFatHeatLoss)
-BodyFatHeatLoss
+xyplot(lossrate ~ leanness, BodyFatHeatLoss)
+
+
+
+cleanEx()
+nameEx("BrainExpression")
+### * BrainExpression
+
+flush(stderr()); flush(stdout())
+
+### Name: BrainExpression
+### Title: Proteolipid Protein 1 Gene Expression
+### Aliases: BrainExpression
+### Keywords: datasets
+
+### ** Examples
+
+data(BrainExpression)
+bwplot(PLP1.expression ~ group, BrainExpression)
 
 
 
@@ -218,35 +240,34 @@ flush(stderr()); flush(stdout())
 
 ### Name: BrookTrout
 ### Title: Salmon Survival in the Presence of Brook Trout
-### Aliases: BrookTrout
+### Aliases: BrookTrout BrookTrout2
 ### Keywords: datasets
 
 ### ** Examples
 
 data(BrookTrout)
 str(BrookTrout)
-BrookTrout
 
 # Aggregate the data using ddply()
 require(plyr)
-salmon.aggregate <- ddply(BrookTrout, .(brook.trout),
+salmon.aggregate <- ddply(BrookTrout, .(trout),
   function(x)c(sum(x$salmon.released - x$salmon.surviving),
     sum(x$salmon.surviving)))
 names(salmon.aggregate)[c(2,3)] <- c("Survived", "Died")
 salmon.aggregate
 
 # Boxplot
-boxplot(proportion.surviving ~ brook.trout, data = BrookTrout,
+boxplot(proportion.surviving ~ trout, data = BrookTrout,
   ylab = "Proportion Surviving",
   names = c("Trout Absent", "Trout Present"))
 
 # Dotplot
 require(lattice)
-dotplot(proportion.surviving ~ brook.trout, data = BrookTrout)
+dotplot(proportion.surviving ~ trout, data = BrookTrout)
 
 # Aggregate again, calculating mean, standard deviation, and n
 require(plyr)
-salmon.aggregate2 <- ddply(BrookTrout, .(brook.trout),
+salmon.aggregate2 <- ddply(BrookTrout, .(trout),
   function(x)c(mean(x$proportion.surviving),
                sd(x$proportion.surviving),
                length(x$proportion.surviving)))
@@ -255,12 +276,12 @@ names(salmon.aggregate2) <- c("Group", "Sample Mean",
 salmon.aggregate2
 
 # Use Welch's t-test, because the variances are not equal
-t.test(proportion.surviving ~ brook.trout, data = BrookTrout,
+t.test(proportion.surviving ~ trout, data = BrookTrout,
   var.equal = FALSE)
 
 # Comparing variances
 # Bartlett Test
-bartlett.test(proportion.surviving ~ brook.trout, data = BrookTrout)
+bartlett.test(proportion.surviving ~ trout, data = BrookTrout)
 
 # Exploring differences in variance
 set.seed(2)
@@ -288,24 +309,6 @@ bartlett.test(x12 ~ A)
 
 
 cleanEx()
-nameEx("CO2GrowthRate")
-### * CO2GrowthRate
-
-flush(stderr()); flush(stdout())
-
-### Name: CO2GrowthRate
-### Title: Carbon Dioxide and Growth Rate
-### Aliases: CO2GrowthRate
-### Keywords: datasets
-
-### ** Examples
-
-data(CO2GrowthRate)
-CO2GrowthRate
-
-
-
-cleanEx()
 nameEx("Cavalry")
 ### * Cavalry
 
@@ -324,29 +327,35 @@ Cavalry
 
 
 cleanEx()
-nameEx("ChickadeeAlarmsCalls")
-### * ChickadeeAlarmsCalls
+nameEx("ChickadeeAlarms")
+### * ChickadeeAlarms
 
 flush(stderr()); flush(stdout())
 
-### Name: ChickadeeAlarmsCalls
+### Name: ChickadeeAlarms
 ### Title: Alarm Calls in Chickadees
-### Aliases: ChickadeeAlarmsCalls
+### Aliases: ChickadeeAlarms
 ### Keywords: datasets
 
 ### ** Examples
 
-data(ChickadeeAlarmsCalls)
-str(ChickadeeAlarmsCalls)
-ChickadeeAlarmsCalls
+data(ChickadeeAlarms)
+str(ChickadeeAlarms)
+ChickadeeAlarms
 
-lm.fit <- lm(dees ~ mass, data = ChickadeeAlarmsCalls)
+lm.fit <- lm(dees ~ mass, data = ChickadeeAlarms)
 
-plot(dees ~ mass, data = ChickadeeAlarmsCalls,
+plot(dees ~ mass, data = ChickadeeAlarms,
   col = "red", pch = 16,
   xlab = "Predator body mass (kg)",
   ylab = "'Dees' per call")
 abline(lm.fit)
+
+xyplot(dees ~ mass, data = ChickadeeAlarms,
+   pch = 16, col='red', col.line='black',
+   xlab = "Predator body mass (kg)",
+   ylab = "'Dees' per call", type=c('p','r')
+)
 
 summary(lm.fit)
 
@@ -373,7 +382,7 @@ set.seed(5)
 n <- 10000
 boot.median <- numeric(n)
 for (i in 1:n){
-  samp <- sample(ChimpBrains$Rounded.AQ, 20, replace = TRUE)
+  samp <- sample(ChimpBrains$asymmetry, 20, replace = TRUE)
   boot.median[i] <- median(samp)
 }
 hist(boot.median, breaks = 50, col = "red")
@@ -391,7 +400,7 @@ sorted.boot[9751]
 # Using boot()
 require(boot)
 boot.median <- function(x, i) median(x[i])
-boot(ChimpBrains$Rounded.AQ, boot.median, 10000)
+boot(ChimpBrains$asymmetry, boot.median, 10000)
 
 
 
@@ -412,7 +421,7 @@ data(Cichlids)
 str(Cichlids)
 
 require(plyr)
-ddply(Cichlids, .(Genotype),
+ddply(Cichlids, .(genotype),
   function(df)c(mean = mean(df$preference),
                 standard.deviation = sd(df$preference),
                 n = length(df$preference)))
@@ -433,7 +442,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(CichlidsGnRH)
-CichlidsGnRH
+xyplot(GnRH.mRNA ~ territorial, CichlidsGnRH, type=c('p','a'))
 
 
 
@@ -452,26 +461,64 @@ flush(stderr()); flush(stdout())
 
 data(Clearcuts)
 str(Clearcuts)
-hist(Clearcuts)
+histogram(~biomass.change, Clearcuts)
 
 
 
 cleanEx()
-nameEx("CocaineHigh")
-### * CocaineHigh
+nameEx("CocaineCO2")
+### * CocaineCO2
 
 flush(stderr()); flush(stdout())
 
-### Name: CocaineHigh
-### Title: Effects of Cocaine on Dopamine Receptors
-### Aliases: CocaineHigh
+### Name: CocaineCO2
+### Title: Carbon Dioxide and Growth Rate
+### Aliases: CocaineCO2
 ### Keywords: datasets
 
 ### ** Examples
 
-data(CocaineHigh)
-str(CocaineHigh)
-CocaineHigh
+data(CocaineCO2)
+CocaineCO2
+xyplot(growthrate ~ treatment, CocaineCO2, type=c('p','a'))
+
+
+
+cleanEx()
+nameEx("CocaineDopamine")
+### * CocaineDopamine
+
+flush(stderr()); flush(stdout())
+
+### Name: CocaineDopamine
+### Title: Effects of Cocaine on Dopamine Receptors
+### Aliases: CocaineDopamine
+### Keywords: datasets
+
+### ** Examples
+
+data(CocaineDopamine)
+str(CocaineDopamine)
+xyplot(high ~ percent.blocked, CocaineDopamine)
+
+
+
+cleanEx()
+nameEx("Convictions")
+### * Convictions
+
+flush(stderr()); flush(stdout())
+
+### Name: Convictions
+### Title: Frequency of Convictions for a Cohort of English Boys
+### Aliases: Convictions
+### Keywords: datasets
+
+### ** Examples
+
+data(Convictions)
+str(Convictions)
+barchart(boys ~ convictions, Convictions, horizontal=FALSE)
 
 
 
@@ -492,84 +539,66 @@ data(ConvictionsAndIncome)
 str(ConvictionsAndIncome)
 ConvictionsAndIncome
 
-Conv.raw <- expand.dft(ConvictionsAndIncome, "n")
+Conv.raw <- expand.dft(ConvictionsAndIncome, "count")
 
-xtabs(data = Conv.raw)
+xtabs(~convicted + income, data = Conv.raw)
 
 
 
 cleanEx()
-nameEx("CricketImmunity")
-### * CricketImmunity
+nameEx("Crickets")
+### * Crickets
 
 flush(stderr()); flush(stdout())
 
-### Name: CricketImmunity
+### Name: Crickets
 ### Title: Immunity and Sperm Viability in Crickets
-### Aliases: CricketImmunity
+### Aliases: Crickets
 ### Keywords: datasets
 
 ### ** Examples
 
-data(CricketImmunity)
-CricketImmunity
+data(Crickets)
+Crickets
+xyplot(lysozyme ~ sperm.viability, Crickets)
 
 
 
 cleanEx()
-nameEx("CriminalConvictions")
-### * CriminalConvictions
+nameEx("DEET")
+### * DEET
 
 flush(stderr()); flush(stdout())
 
-### Name: CriminalConvictions
-### Title: Frequency of Convictions for a Cohort of English Boys
-### Aliases: CriminalConvictions
-### Keywords: datasets
-
-### ** Examples
-
-data(CriminalConvictions)
-str(CriminalConvictions)
-CriminalConvictions
-
-
-
-cleanEx()
-nameEx("DEETMosquiteBites")
-### * DEETMosquiteBites
-
-flush(stderr()); flush(stdout())
-
-### Name: DEETMosquiteBites
+### Name: DEET
 ### Title: DEET and Mosquito Bites
-### Aliases: DEETMosquiteBites
+### Aliases: DEET
 ### Keywords: datasets
 
 ### ** Examples
 
-data(DEETMosquiteBites)
-str(DEETMosquiteBites)
-DEETMosquiteBites
+data(DEET)
+str(DEET)
+xyplot(bites ~ dose, DEET)
 
 
 
 cleanEx()
-nameEx("DaphniaParasiteLongevity")
-### * DaphniaParasiteLongevity
+nameEx("DaphniaLongevity")
+### * DaphniaLongevity
 
 flush(stderr()); flush(stdout())
 
-### Name: DaphniaParasiteLongevity
-### Title: Daphnia Parasite Longevity
-### Aliases: DaphniaParasiteLongevity
+### Name: DaphniaLongevity
+### Title: Daphnia Longevity
+### Aliases: DaphniaLongevity
 ### Keywords: datasets
 
 ### ** Examples
 
-data(DaphniaParasiteLongevity)
-str(DaphniaParasiteLongevity)
-DaphniaParasiteLongevity
+data(DaphniaLongevity)
+str(DaphniaLongevity)
+xyplot(sqrt.spores ~ longevity, DaphniaLongevity)
 
 
 
@@ -590,8 +619,12 @@ data(DaphniaResistance)
 str(DaphniaResistance)
 
 DaphniaResistance$cyandensity <-
-  factor(as.character(DaphniaResistance$cyandensity), 
+  factor(as.character(DaphniaResistance$density), 
   levels = c("low", "med", "high"))
+
+bwplot(resistance ~ density, DaphniaResistance)
+# with such a small data set, we can display all the data rather than a summary
+xyplot(resistance ~ density, DaphniaResistance)
 
 ## Not run: 
 ##D require(ggplot2)
@@ -619,15 +652,23 @@ flush(stderr()); flush(stdout())
 
 data(DayOfBirth)
 DayOfBirth
+barchart( day ~ births, DayOfBirth)
 
-barplot(DayOfBirth$Number.of.births,
+# fix bad ordering of days
+DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels=day))
+barchart( oday ~ births, DayOfBirth)
+barchart( births ~ oday, DayOfBirth, horizontal=FALSE)
+barchart( births ~ oday, DayOfBirth, horizontal=FALSE, 
+	scales=list(x=list(rot=45)))
+
+barplot(DayOfBirth$births,
   ylim = c(0, 70),
-  names.arg = DayOfBirth$Day,
+  names.arg = DayOfBirth$day,
   las = 2,
   mgp = c(3, 0.75, 0))
 
 # Calculating Chi-squared goodness-of-fit test manually
-observed <- DayOfBirth$Number.of.births
+observed <- DayOfBirth$births
 sum(observed)
 
 n.days.1999 <- c(52, 52, 52, 52, 52, 53, 52)
@@ -663,9 +704,8 @@ flush(stderr()); flush(stdout())
 data(DesertBirds)
 
 str(DesertBirds)
-DesertBirds
 
-hist(DesertBirds$Count,
+hist(DesertBirds$count,
   breaks = 12,
   ylab = "Frequency (Number of Species)",
   xlab = "Abundance",
@@ -675,7 +715,7 @@ hist(DesertBirds$Count,
 ## Not run: 
 ##D # With ggplot2
 ##D require(ggplot2)
-##D p <- ggplot(DesertBirds, aes(Count))
+##D p <- ggplot(DesertBirds, aes(count))
 ##D p + geom_histogram(binwidth = 40, fill = "red") +
 ##D   scale_x_continuous("Abundance") +
 ##D   scale_y_continuous("Frequency (Number of Species)")
@@ -683,9 +723,9 @@ hist(DesertBirds$Count,
 
 
 # Similar to Fig. 2.1-1
-Count.sort <- sort(DesertBirds$Count)
-Count.relfreq <- cumsum(Count.sort)/max(cumsum(Count.sort))
-plot(Count.sort, Count.relfreq,
+count.sort <- sort(DesertBirds$count)
+count.relfreq <- cumsum(count.sort)/max(cumsum(count.sort))
+plot(count.sort, count.relfreq,
   type = "l",
   col = "red",
   xlim = c(0, 700),
@@ -693,31 +733,12 @@ plot(Count.sort, Count.relfreq,
   ylab = "Cumulative relative frequency")
 
 ## Not run: 
-##D p <- ggplot(data.frame(Count.sort, Count.relfreq), 
-##D   aes(Count.sort, Count.relfreq))
+##D p <- ggplot(data.frame(count.sort, count.relfreq), 
+##D   aes(count.sort, count.relfreq))
 ##D p + geom_step(direction = "vh") +
 ##D   scale_x_continuous("Species abundance") +
 ##D   scale_y_continuous("Cumulative relative frequency")
 ## End(Not run)
-
-
-
-cleanEx()
-nameEx("DietBreadthElVerde")
-### * DietBreadthElVerde
-
-flush(stderr()); flush(stdout())
-
-### Name: DietBreadthElVerde
-### Title: Diet Breadth in a Rainforest Community
-### Aliases: DietBreadthElVerde
-### Keywords: datasets
-
-### ** Examples
-
-data(DietBreadthElVerde)
-DietBreadthElVerde
-sum(DietBreadthElVerde$no.species)
 
 
 
@@ -735,84 +756,68 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Dioecy)
-Dioecy
+xyplot(dioecious ~ monomorphic, Dioecy, alpha=.65, pch=16)
 
 
 
 cleanEx()
-nameEx("DisordersAndGeneExpression")
-### * DisordersAndGeneExpression
+nameEx("Dolphins")
+### * Dolphins
 
 flush(stderr()); flush(stdout())
 
-### Name: DisordersAndGeneExpression
-### Title: Proteolipid Protein 1 Gene Expression
-### Aliases: DisordersAndGeneExpression
-### Keywords: datasets
-
-### ** Examples
-
-data(DisordersAndGeneExpression)
-str(DisordersAndGeneExpression)
-
-
-
-cleanEx()
-nameEx("DolphinsClockwise")
-### * DolphinsClockwise
-
-flush(stderr()); flush(stdout())
-
-### Name: DolphinsClockwise
+### Name: Dolphins
 ### Title: Dolphin Swimming Behavior
-### Aliases: DolphinsClockwise
+### Aliases: Dolphins
 ### Keywords: datasets
 
 ### ** Examples
 
-data(DolphinsClockwise)
-DolphinsClockwise
-hist(DolphinsClockwise)
+data(Dolphins)
+Dolphins
+hist(Dolphins$percent.clockwise)
+histogram(~percent.clockwise, Dolphins)
 
 
 
 cleanEx()
-nameEx("DungBeetleCondition")
-### * DungBeetleCondition
+nameEx("DungBeetles")
+### * DungBeetles
 
 flush(stderr()); flush(stdout())
 
-### Name: DungBeetleCondition
+### Name: DungBeetles
 ### Title: Heritability of Body Condition in Dung Beetles
-### Aliases: DungBeetleCondition
+### Aliases: DungBeetles
 ### Keywords: datasets
 
 ### ** Examples
 
-data(DungBeetleCondition)
-str(DungBeetleCondition)
-
-DungBeetleCondition$male <- factor(DungBeetleCondition$male)
-str(DungBeetleCondition)
+data(DungBeetles)
+str(DungBeetles)
+xyplot(offspring.condition ~ factor(id), DungBeetles, 
+	xlab='Dung Beetle', 
+	ylab='offspring condition')
 
 
 
 cleanEx()
-nameEx("EarthwormsAndNitrogen")
-### * EarthwormsAndNitrogen
+nameEx("Earthworms")
+### * Earthworms
 
 flush(stderr()); flush(stdout())
 
-### Name: EarthwormsAndNitrogen
+### Name: Earthworms
 ### Title: Earthworm Diversity and Soil Nitrogen Levels
-### Aliases: EarthwormsAndNitrogen
+### Aliases: Earthworms
 ### Keywords: datasets
 
 ### ** Examples
 
-data(EarthwormsAndNitrogen)
-str(EarthwormsAndNitrogen)
-EarthwormsAndNitrogen
+data(Earthworms)
+str(Earthworms)
+xyplot(nitrogen ~ worm.species, Earthworms)
+
 
 
 
@@ -830,30 +835,52 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(EarwigForceps)
-EarwigForceps
+xyplot(proportion.forceps ~ density, data=EarwigForceps, type='h', lwd=6)
+
 
 
 
 cleanEx()
-nameEx("EelgrassGenotypes")
-### * EelgrassGenotypes
+nameEx("Eelgrass")
+### * Eelgrass
 
 flush(stderr()); flush(stdout())
 
-### Name: EelgrassGenotypes
+### Name: Eelgrass
 ### Title: Eelgrass Genotypes
-### Aliases: EelgrassGenotypes
+### Aliases: Eelgrass
 ### Keywords: datasets
 
 ### ** Examples
 
-data(EelgrassGenotypes)
-EelgrassGenotypes
+data(Eelgrass)
+Eelgrass
 
 # Convert treatment.genotypes to a factor
-EelgrassGenotypes$treatment.genotypes <-
-  factor(EelgrassGenotypes$treatment.genotypes)
-str(EelgrassGenotypes)
+Eelgrass$genotypesF <-
+  factor(Eelgrass$genotypes)
+str(Eelgrass)
+xyplot(shoots ~ genotypes, Eelgrass)
+xyplot(shoots ~ genotypesF, Eelgrass)
+
+
+
+cleanEx()
+nameEx("ElVerde")
+### * ElVerde
+
+flush(stderr()); flush(stdout())
+
+### Name: ElVerde
+### Title: Diet Breadth in a Rainforest Community
+### Aliases: ElVerde
+### Keywords: datasets
+
+### ** Examples
+
+data(ElVerde)
+ElVerde
+xyplot(num.species ~ breadth, ElVerde, type='h',lwd=3)
 
 
 
@@ -872,6 +899,14 @@ flush(stderr()); flush(stdout())
 
 data(ElectricFish)
 ElectricFish
+xyplot(species.upstream ~ species.downstream, data=ElectricFish,
+	panel=function(x,y,...){
+		grid.text(ElectricFish$tributary, x=x, y=y, 
+			rot=45,
+			gp=gpar(cex=.6),
+			default.units='native')
+		}
+	)
 
 
 
@@ -895,49 +930,30 @@ EndangeredSpecies
 
 
 cleanEx()
-nameEx("ExploitedLarvalFish")
-### * ExploitedLarvalFish
+nameEx("FingerRatio")
+### * FingerRatio
 
 flush(stderr()); flush(stdout())
 
-### Name: ExploitedLarvalFish
-### Title: Exploited Larval Fish
-### Aliases: ExploitedLarvalFish
-### Keywords: datasets
-
-### ** Examples
-
-data(ExploitedLarvalFish)
-str(ExploitedLarvalFish)
-ExploitedLarvalFish
-
-
-
-cleanEx()
-nameEx("FingerRatioCAGRepeats")
-### * FingerRatioCAGRepeats
-
-flush(stderr()); flush(stdout())
-
-### Name: FingerRatioCAGRepeats
+### Name: FingerRatio
 ### Title: 2D:4D Finger Ratio
-### Aliases: FingerRatioCAGRepeats
+### Aliases: FingerRatio
 ### Keywords: datasets
 
 ### ** Examples
 
-data(FingerRatioCAGRepeats)
-str(FingerRatioCAGRepeats)
+data(FingerRatio)
+str(FingerRatio)
 
-plot(FingerRatioCAGRepeats$CAGrepeats,
-  FingerRatioCAGRepeats$finger.ratio,
+plot(FingerRatio$CAGrepeats,
+  FingerRatio$finger.ratio,
   xlab = "Number of CAG Repeats",
   ylab = "2D:4D Ratio",
   pch = 16, col = "red")
 
 # Shorten the names a bit
-repeats <- FingerRatioCAGRepeats$CAGrepeats
-ratio <- FingerRatioCAGRepeats$finger.ratio
+repeats <- FingerRatio$CAGrepeats
+ratio <- FingerRatio$finger.ratio
 
 (sum.products <- sum((repeats - mean(repeats)) *
   (ratio - mean(ratio))))
@@ -954,12 +970,12 @@ sum.products / (sqrt(SS.repeats) * sqrt(SS.ratio))
 
 # cor() does the calculation in one step.
 # Default is Pearson's correlation.
-cor(FingerRatioCAGRepeats$CAGrepeats,
-  FingerRatioCAGRepeats$finger.ratio)
+cor(FingerRatio$CAGrepeats,
+  FingerRatio$finger.ratio)
 
 # Standard error of r.
 # Use nrow() to get the number of observations.
-n <- nrow(FingerRatioCAGRepeats)
+n <- nrow(FingerRatio)
 (SE.r <- sqrt((1 - r^2) / (n - 2)))
 
 # Approximate confidence interval
@@ -992,26 +1008,45 @@ flush(stderr()); flush(stdout())
 
 data(FireflyFlash)
 str(FireflyFlash)
-FireflyFlash
+histogram(~flash, FireflyFlash)
 
 
 
 cleanEx()
-nameEx("FireflySpermatophoreMass")
-### * FireflySpermatophoreMass
+nameEx("FireflySpermatophore")
+### * FireflySpermatophore
 
 flush(stderr()); flush(stdout())
 
-### Name: FireflySpermatophoreMass
+### Name: FireflySpermatophore
 ### Title: Spermatophore Mass in Fireflies
-### Aliases: FireflySpermatophoreMass
+### Aliases: FireflySpermatophore
 ### Keywords: datasets
 
 ### ** Examples
 
-data(FireflySpermatophoreMass)
-str(FireflySpermatophoreMass)
-FireflySpermatophoreMass
+data(FireflySpermatophore)
+str(FireflySpermatophore)
+histogram(~sp.mass, FireflySpermatophore, n=12)
+
+
+
+cleanEx()
+nameEx("FlyTestes")
+### * FlyTestes
+
+flush(stderr()); flush(stdout())
+
+### Name: FlyTestes
+### Title: Testes Size in Flies
+### Aliases: FlyTestes
+### Keywords: datasets
+
+### ** Examples
+
+data(FlyTestes)
+str(FlyTestes)
+FlyTestes
 
 
 
@@ -1030,59 +1065,26 @@ flush(stderr()); flush(stdout())
 
 data(FlycatcherPatch)
 str(FlycatcherPatch)
-FlycatcherPatch
+xyplot(patch99 ~ patch98, FlycatcherPatch)
 
 
 
 cleanEx()
-nameEx("GlidingSnakeUndulations")
-### * GlidingSnakeUndulations
+nameEx("GeneRegulation")
+### * GeneRegulation
 
 flush(stderr()); flush(stdout())
 
-### Name: GlidingSnakeUndulations
-### Title: GlidingSnakeUndulations
-### Aliases: GlidingSnakeUndulations
+### Name: GeneRegulation
+### Title: Gene Regulation in Saccharomyces
+### Aliases: GeneRegulation
 ### Keywords: datasets
 
 ### ** Examples
 
-data(GlidingSnakeUndulations)
-
-hist(GlidingSnakeUndulations,
-  col = "red",
-  breaks = 7,
-  main = "",
-  xlab = "Undulation rate (Hz)",
-  ylab = "Frequency")
-
-## Not run: 
-##D # Using ggplot()
-##D require(ggplot2)
-##D GlidingSnakeUndulations.df <- 
-##D   data.frame(undulation.rate = GlidingSnakeUndulations)
-##D p <- ggplot(GlidingSnakeUndulations.df, aes(undulation.rate))
-##D p + geom_histogram(fill = "red", binwidth = 0.2) +
-##D   scale_x_continuous("Undulation rate (Hz)") +
-##D   scale_y_continuous("Frequency")
-## End(Not run)
-
-# Mean, variance, standard deviation
-(Ybar <- mean(GlidingSnakeUndulations))
-
-# Calculate variance via sum_of_squares()
-sum_of_squares(GlidingSnakeUndulations) /
-  (length(GlidingSnakeUndulations) - 1)
-
-(s2 <- var(GlidingSnakeUndulations))
-(s <- sd(GlidingSnakeUndulations))
-
-# Standard deviation equals the square root of the variance
-sqrt(s2)
-
-# Coefficient of variation
-(CV <- s / Ybar * 100)
-round(CV)
+data(GeneRegulation)
+str(GeneRegulation)
+xyplot(count ~ genes.regulated, GeneRegulation, type='h', lwd=3)
 
 
 
@@ -1127,38 +1129,38 @@ cv(GlidingSnakes$undulation.rate)
 
 
 cleanEx()
-nameEx("GodwitArrivalDates")
-### * GodwitArrivalDates
+nameEx("GodwitArrival")
+### * GodwitArrival
 
 flush(stderr()); flush(stdout())
 
-### Name: GodwitArrivalDates
+### Name: GodwitArrival
 ### Title: Godwit Arrival Dates
-### Aliases: GodwitArrivalDates
+### Aliases: GodwitArrival
 ### Keywords: datasets
 
 ### ** Examples
 
-data(GodwitArrivalDates)
-GodwitArrivalDates
+data(GodwitArrival)
+xyplot(male~female, GodwitArrival, main='Arrival of Godwit pairs')
 
 
 
 cleanEx()
-nameEx("GrasslandNutrientsPlantSpecies")
-### * GrasslandNutrientsPlantSpecies
+nameEx("Grassland")
+### * Grassland
 
 flush(stderr()); flush(stdout())
 
-### Name: GrasslandNutrientsPlantSpecies
+### Name: Grassland
 ### Title: Grassland Diversity
-### Aliases: GrasslandNutrientsPlantSpecies
+### Aliases: Grassland
 ### Keywords: datasets
 
 ### ** Examples
 
-data(GrasslandNutrientsPlantSpecies)
-GrasslandNutrientsPlantSpecies
+data(Grassland)
+xyplot(num.species ~ jitter(nutrients, amount=0.1), Grassland, pch=16)
 
 
 
@@ -1169,7 +1171,7 @@ nameEx("GreatTitMalaria")
 flush(stderr()); flush(stdout())
 
 ### Name: GreatTitMalaria
-### Title: Malaria Frequencies in Populations of Great Tit
+### Title: Malaria in Populations of Great Tit
 ### Aliases: GreatTitMalaria
 ### Keywords: datasets
 
@@ -1181,15 +1183,18 @@ str(GreatTitMalaria)
 GreatTitMalaria
 
 # Table 2.3-1
-GTM.raw <- expand.dft(GreatTitMalaria, "Frequency")
+GTM.raw <- expand.dft(GreatTitMalaria, "count")
 
 table(GTM.raw)
 
+if(require(vcd)) {
+	mosaic(~treatment + response, GTM.raw)
+}
 ## Not run: 
 ##D # Fig. 2.3-1
 ##D require(ggplot2)
 ##D bar <- ggplot(GreatTitMalaria, 
-##D   aes(x = Treatment, y = Frequency, fill = Response))
+##D   aes(x = Treatment, y = count, fill = Response))
 ##D bar + geom_bar(stat = "identity", position = "dodge")
 ##D 
 ##D # Fig. 2.3-2
@@ -1214,7 +1219,7 @@ flush(stderr()); flush(stdout())
 
 data(GreenSpaceBiodiversity)
 str(GreenSpaceBiodiversity)
-GreenSpaceBiodiversity
+splom(GreenSpaceBiodiversity[,2:6])
 
 
 
@@ -1234,6 +1239,12 @@ flush(stderr()); flush(stdout())
 data(GuppyAttractiveness)
 
 str(GuppyAttractiveness)
+xyplot(son.attract ~ father.ornament,
+  GuppyAttractiveness,
+  xlab = "Father's ornamentation",
+  ylab = "Son's attractiveness"
+  )
+
 plot(GuppyAttractiveness$father.ornament,
   GuppyAttractiveness$son.attract,
   xlab = "Father's ornamentation",
@@ -1270,6 +1281,9 @@ flush(stderr()); flush(stdout())
 data(HemoglobinHighAltitude)
 
 str(HemoglobinHighAltitude)
+
+xyplot(relative.frequency ~ hemoglobin | group, HemoglobinHighAltitude,
+	type ='h', lwd=4, layout=c(1,4))
 
 ## Not run: 
 ##D # Fig. 2.4-1
@@ -1308,6 +1322,9 @@ flush(stderr()); flush(stdout())
 data(HippocampusLesions)
 HippocampusLesions
 
+xyplot(memory ~ lesion, data = HippocampusLesions,
+  pch = 16, col = "red")
+
 plot(memory ~ lesion, data = HippocampusLesions,
   pch = 16, col = "red")
 
@@ -1329,17 +1346,13 @@ flush(stderr()); flush(stdout())
 data(HornedLizards)
 str(HornedLizards)
 
-# Subset living and killed. Drop the Survive column as well.
-living <- subset(HornedLizards, Survive == 1)$Squamosal.horn.length
-killed <- subset(HornedLizards, Survive == 0)$Squamosal.horn.length
-
-# Plot histograms of living and killed
-dev.new()
-par(mfrow = c(2, 1))
-hist(living, main = "Living", xlab = "Horn Length (mm)")
-hist(killed, main = "Killed", xlab = "Horn Length (mm)")
+histogram(~horn.length | group, HornedLizards, 
+	layout=c(1,2),
+	xlab="Horn Length (mm)")
 
 # Confidence interval for the difference of two means
+living <- with(HornedLizards, horn.length[group=='living'])
+killed <- with(HornedLizards, horn.length[group=='killed'])
 df.l <- 153
 df.k <- 29
 df.tot <- df.l + df.k
@@ -1368,20 +1381,51 @@ pt(t.stat, df = df.tot, lower.tail = FALSE)
 # 1. t-test assuming equal variances with t.test()
 t.test(living, killed, var.equal = TRUE)
 
-# 2. Convert Survive to a factor and use t.test() with a formula
-#    Not necessary to convert to factor, but useful for pretty output
-HornedLizards$Survive <- factor(HornedLizards$Survive,
-  levels = c(1, 0), labels = c("Living", "Killed"))
-str(HornedLizards)
-t.test(Squamosal.horn.length ~ Survive, data = HornedLizards,
-  var.equal = TRUE)
+# 2. Use t.test() with a formula
+t.test(horn.length ~ group, data = HornedLizards, var.equal = TRUE)
 
 # 3. Welch's t-test not assuming equal variances, the t.test() default
-t.test(living, killed, var.equal = FALSE)
+t.test(horn.length ~ group, data = HornedLizards, var.equal = FALSE)
 
 
 
-graphics::par(get("par.postscript", pos = 'CheckExEnv'))
+cleanEx()
+nameEx("HumanBodyTemp")
+### * HumanBodyTemp
+
+flush(stderr()); flush(stdout())
+
+### Name: HumanBodyTemp
+### Title: Human Body Temperature
+### Aliases: HumanBodyTemp
+### Keywords: datasets
+
+### ** Examples
+
+data(HumanBodyTemp)
+histogram(~temp, HumanBodyTemp)
+stem(HumanBodyTemp$temp,scale=2)
+favstats(HumanBodyTemp$temp)
+
+(y.bar <- mean(HumanBodyTemp$temp))
+(y.s <- sd(HumanBodyTemp$temp))
+(y.se <- se(HumanBodyTemp$temp))
+(t.stat <- (y.bar - 98.6) / y.se)
+df <- 25 - 1
+2 * pt(t.stat, df = df)
+
+# With t.test()
+t.test(HumanBodyTemp$temp, mu = 98.6, alternative = "two.sided")
+
+# Critical t-statistic (df = 24) for p = 0.05
+# Need to divide 0.05 by 2 to account for both tails
+qt(0.05/2, 24, lower.tail = FALSE)
+
+# 95% Confidence interval
+interval(t.test(HumanBodyTemp$temp, mu = 98.6, alternative = "two.sided"))
+
+
+
 cleanEx()
 nameEx("HumanGeneLengths")
 ### * HumanGeneLengths
@@ -1397,14 +1441,15 @@ flush(stderr()); flush(stdout())
 
 data(HumanGeneLengths)
 str(HumanGeneLengths)
+histogram(~gene.length, HumanGeneLengths, subset=gene.length<15000)
 
 # Subset to only include genes with less than 15000 nucleotides
-genes.under.15k <- subset(HumanGeneLengths, gene.length < 15000)
+GenesUnder15k <- subset(HumanGeneLengths, gene.length < 15000)
 
 # Remove default space between the origin and the axes
 par(xaxs = "i", yaxs = "i")
 
-hist(genes.under.15k$gene.length,
+hist(GenesUnder15k$gene.length,
   breaks = 30,
   ylim = c(0, 3000),
   xlab = "Gene length (number of nucleotides)",
@@ -1412,7 +1457,7 @@ hist(genes.under.15k$gene.length,
 
 ## Not run: 
 ##D require(ggplot2)
-##D p <- ggplot(genes.under.15k, aes(gene.length))
+##D p <- ggplot(GenesUnder15k, aes(gene.length))
 ##D p + geom_histogram(fill = "red") +
 ##D   scale_x_continuous("Gene length (number of nucleotides)") +
 ##D   scale_y_continuous("Frequency")
@@ -1504,7 +1549,7 @@ nameEx("Hurricanes")
 flush(stderr()); flush(stdout())
 
 ### Name: Hurricanes
-### Title: Hurricane Intensities
+### Title: Intense Hurricanes
 ### Aliases: Hurricanes
 ### Keywords: datasets
 
@@ -1530,25 +1575,7 @@ flush(stderr()); flush(stdout())
 
 data(HybridPollenSterility)
 str(HybridPollenSterility)
-HybridPollenSterility
-
-
-
-cleanEx()
-nameEx("HypoxanthineTimeOfDeath")
-### * HypoxanthineTimeOfDeath
-
-flush(stderr()); flush(stdout())
-
-### Name: HypoxanthineTimeOfDeath
-### Title: Hypoxanthine and Time Since Death
-### Aliases: HypoxanthineTimeOfDeath
-### Keywords: datasets
-
-### ** Examples
-
-data(HypoxanthineTimeOfDeath)
-HypoxanthineTimeOfDeath
+xyplot(proportion.sterile ~ genetic.distance, HybridPollenSterility)
 
 
 
@@ -1567,86 +1594,7 @@ flush(stderr()); flush(stdout())
 
 data(Iguanas)
 str(Iguanas)
-hist(Iguanas, breaks = 10)
-
-
-
-cleanEx()
-nameEx("InbreedingWolves")
-### * InbreedingWolves
-
-flush(stderr()); flush(stdout())
-
-### Name: InbreedingWolves
-### Title: Inbreeding in Wolves
-### Aliases: InbreedingWolves
-### Keywords: datasets
-
-### ** Examples
-
-data(InbreedingWolves)
-InbreedingWolves
-
-# Plot with jitter() to separate integer numbers of pups on y axis
-plot(jitter(pups) ~ inbreeding.coefficient, data = InbreedingWolves,
-  xlab = "Inbreeding Coefficient",
-  ylab = "Number of Pups",
-  pch = 16, col = "red")
-
-(sum.products <- sum_of_products(
-  InbreedingWolves$inbreeding.coefficient,
-  InbreedingWolves$pups))
-
-SS.inbreeding <- sum_of_squares(
-  InbreedingWolves$inbreeding.coefficient)
-SS.pups <- sum_of_squares(InbreedingWolves$pups)
-(r <- sum.products / (sqrt(SS.inbreeding) * sqrt(SS.pups)))
-
-# Testing the null hypothesis of zero correlation
-n <- nrow(InbreedingWolves)
-(SE.r <- sqrt((1 - r^2) / (n - 2)))
-(t.stat <- r / SE.r)
-2 * pt(t.stat, df = (n - 2))
-
-# Or using rounded values from p. 440
-2 * pt(-3.60, 22)
-
-# With cor.test()
-cor.test(InbreedingWolves$inbreeding.coefficient,
-  InbreedingWolves$pups)
-
-
-
-cleanEx()
-nameEx("IndianRopeTrick")
-### * IndianRopeTrick
-
-flush(stderr()); flush(stdout())
-
-### Name: IndianRopeTrick
-### Title: Indian Rope Trick
-### Aliases: IndianRopeTrick
-### Keywords: datasets
-
-### ** Examples
-
-data(IndianRopeTrick)
-IndianRopeTrick
-
-rank.years <- c(1, 3.5, 3.5, 2, 5.5, 5.5, 13, 7, 8, 9, 10.5, 12, 14.5,
-  17, 18, 19, 14.5, 10.5, 16, 20.5, 20.5)
-rank.imp <- c(2, 2, 2, 5, 5, 5, 7, rep(12.5, times = 10),
-  rep(19.5, times = 4))
-
-sum.prods <- sum_of_products(rank.years, rank.imp)
-SS.years <- sum_of_squares(rank.years)
-SS.imp <- sum_of_squares(rank.imp)
-sum.prods / (sqrt(SS.years) * sqrt(SS.imp))
-
-# With cor.test(); Note warning about ties. See discussion on
-# p. 446.
-cor.test(IndianRopeTrick$years,
-  IndianRopeTrick$impressiveness.score, method = "spearman")
+histogram(~change.in.length, Iguanas, n = 10)
 
 
 
@@ -1667,60 +1615,46 @@ data(IntertidalAlgae)
 str(IntertidalAlgae)
 
 # Using * includes the main effects and the interaction
-aov.fit <- aov(sqrtarea ~ herbivores * height, data = IntertidalAlgae)
+aov.fit <- aov(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
 summary(aov.fit)
+lm.fit <- lm(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
+anova(lm.fit)
 
 
 
 cleanEx()
-nameEx("KenyaFinches")
-### * KenyaFinches
+nameEx("JetLagKnees")
+### * JetLagKnees
 
 flush(stderr()); flush(stdout())
 
-### Name: KenyaFinches
-### Title: Body Mass and Beak Length in Three Species of Finches in Kenya
-### Aliases: KenyaFinches
-### Keywords: datasets
-
-### ** Examples
-
-data(KenyaFinches)
-levels(KenyaFinches$species)
-
-KenyaFinches
-
-
-
-cleanEx()
-nameEx("KneesWhoSayNight")
-### * KneesWhoSayNight
-
-flush(stderr()); flush(stdout())
-
-### Name: KneesWhoSayNight
+### Name: JetLagKnees
 ### Title: Circadian Rhythm Phase Shift
-### Aliases: KneesWhoSayNight
+### Aliases: JetLagKnees
 ### Keywords: datasets
 
 ### ** Examples
 
-data(KneesWhoSayNight)
-KneesWhoSayNight
-str(KneesWhoSayNight)
+data(JetLagKnees)
+JetLagKnees
+str(JetLagKnees)
 
-boxplot(shift ~ treatment, data = KneesWhoSayNight)
+bwplot(shift~treatment, JetLagKnees)
+# since data set is small, no need to summarize
+xyplot(shift~treatment, JetLagKnees)
+
+boxplot(shift ~ treatment, data = JetLagKnees)
 
 # Subset the three treatment groups
-control <- subset(KneesWhoSayNight, treatment == "control")$shift
-knee <- subset(KneesWhoSayNight, treatment == "knee")$shift
-eyes <- subset(KneesWhoSayNight, treatment == "eyes")$shift
+control <- subset(JetLagKnees, treatment == "control")$shift
+knee <- subset(JetLagKnees, treatment == "knee")$shift
+eyes <- subset(JetLagKnees, treatment == "eyes")$shift
 
 # k is the number of groups
-k <- length(unique(KneesWhoSayNight$treatment))
+k <- length(unique(JetLagKnees$treatment))
 
 # Calculate n
-n <- length(KneesWhoSayNight$shift)
+n <- length(JetLagKnees$shift)
 control.n <- length(control)
 knee.n <- length(knee)
 eyes.n <- length(eyes)
@@ -1764,7 +1698,7 @@ polygon(c(x[1], x, x[100]), c(0, y, df(10, 2, 19)),
 SS.groups/SS.total
 
 # With aov()
-aov.obj <- aov(shift ~ treatment, data = KneesWhoSayNight)
+aov.obj <- aov(shift ~ treatment, data = JetLagKnees)
 
 # Compare the output of print() and summary()
 aov.obj
@@ -1774,21 +1708,61 @@ summary(aov.obj)
 
 graphics::par(get("par.postscript", pos = 'CheckExEnv'))
 cleanEx()
-nameEx("LanguageGreyMatter")
-### * LanguageGreyMatter
+nameEx("KenyaFinches")
+### * KenyaFinches
 
 flush(stderr()); flush(stdout())
 
-### Name: LanguageGreyMatter
-### Title: Brain Structure in Bilingual Humans
-### Aliases: LanguageGreyMatter
+### Name: KenyaFinches
+### Title: Body Mass and Beak Length in Three Species of Finches in Kenya
+### Aliases: KenyaFinches
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LanguageGreyMatter)
-str(LanguageGreyMatter)
-LanguageGreyMatter
+data(KenyaFinches)
+table(KenyaFinches$species)
+xyplot(beak.length ~ species, KenyaFinches)
+bwplot(beak.length ~ species, KenyaFinches)
+
+
+
+cleanEx()
+nameEx("LanguageBrains")
+### * LanguageBrains
+
+flush(stderr()); flush(stdout())
+
+### Name: LanguageBrains
+### Title: Brain Structure in Bilingual Humans
+### Aliases: LanguageBrains
+### Keywords: datasets
+
+### ** Examples
+
+data(LanguageBrains)
+str(LanguageBrains)
+xyplot(proficiency ~ greymatter, LanguageBrains)
+
+
+
+cleanEx()
+nameEx("LarvalFish")
+### * LarvalFish
+
+flush(stderr()); flush(stdout())
+
+### Name: LarvalFish
+### Title: Exploited Larval Fish
+### Aliases: LarvalFish
+### Keywords: datasets
+
+### ** Examples
+
+data(LarvalFish)
+str(LarvalFish)
+xyplot(cv ~ age | exploited, LarvalFish)
+xyplot(cv ~ age, groups=exploited, LarvalFish)
 
 
 
@@ -1807,32 +1781,53 @@ flush(stderr()); flush(stdout())
 
 data(LefthandednessAndViolence)
 str(LefthandednessAndViolence)
-LefthandednessAndViolence
+xyplot(murder.rate ~ percent.left, LefthandednessAndViolence)
+
 
 
 
 cleanEx()
-nameEx("LionAges")
-### * LionAges
+nameEx("LionCubs")
+### * LionCubs
 
 flush(stderr()); flush(stdout())
 
-### Name: LionAges
-### Title: Lion Age and Nose Coloration
-### Aliases: LionAges
+### Name: LionCubs
+### Title: Time to Reproduction in Female Lions
+### Aliases: LionCubs
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LionAges)
-plot(LionAges$proportion.black, LionAges$age,
+data(LionCubs)
+xyplot(days.to.next.cub ~ cause.of.death, LionCubs)
+
+
+
+cleanEx()
+nameEx("LionNoses")
+### * LionNoses
+
+flush(stderr()); flush(stdout())
+
+### Name: LionNoses
+### Title: Lion Age and Nose Coloration
+### Aliases: LionNoses
+### Keywords: datasets
+
+### ** Examples
+
+data(LionNoses)
+xyplot(age ~ proportion.black, LionNoses)
+
+plot(LionNoses$proportion.black, LionNoses$age,
   xlab = "Proportion black",
   ylab = "Age (years)",
   pch = 16,
   col = "red")
 
-X <- LionAges$proportion.black
-Y <- LionAges$age
+X <- LionNoses$proportion.black
+Y <- LionNoses$age
 
 b <- sum_of_products(X, Y) / sum_of_squares(X)
 a <- mean(Y) - b * mean(X)
@@ -1840,18 +1835,18 @@ b
 a
 
 MSresid <- (sum_of_squares(Y) - b * sum_of_products(X, Y)) / 
-  (nrow(LionAges) - 2)
+  (nrow(LionNoses) - 2)
 MSresid
 
 # Standard error of the slope
 sqrt(MSresid / sum_of_squares(X))
 
 # With lm()
-lm.fit <- lm(age ~ proportion.black, data = LionAges)
+lm.fit <- lm(age ~ proportion.black, data = LionNoses)
 lm.fit
 summary(lm.fit)
 residuals(lm.fit)
-plot(LionAges$proportion.black, LionAges$age,
+plot(LionNoses$proportion.black, LionNoses$age,
   xlab = "Proportion black",
   ylab = "Age (years)",
   pch = 16,
@@ -1860,14 +1855,14 @@ abline(lm.fit, col = "blue")
 
 # Confidence band vs. Prediction Interval
 new <- data.frame(proportion.black = 
-  seq(min(LionAges$proportion.black),
-  max(LionAges$proportion.black), 
-  length.out = length(LionAges$proportion.black)))
+  seq(min(LionNoses$proportion.black),
+  max(LionNoses$proportion.black), 
+  length.out = length(LionNoses$proportion.black)))
 pred.w.plim <- predict(lm.fit, new, 	
 	interval="prediction")
 pred.w.clim <- predict(lm.fit, new, 
 	interval="confidence")
-plot(LionAges$proportion.black, LionAges$age,
+plot(LionNoses$proportion.black, LionNoses$age,
   xlab = "Proportion black",
   ylab = "Age (years)",
   pch = 16,
@@ -1878,24 +1873,6 @@ matlines(new$proportion.black,
   col = c("black", "red", "red", "blue", "blue"))
 legend("bottomright", c("Confidence Bands", "Prediction Interval"),
   lty = c(2, 3), col = c("red", "blue"), lwd = 2)
-
-
-
-cleanEx()
-nameEx("Lions")
-### * Lions
-
-flush(stderr()); flush(stdout())
-
-### Name: Lions
-### Title: Time to Reproduction in Female Lions
-### Aliases: Lions
-### Keywords: datasets
-
-### ** Examples
-
-data(Lions)
-Lions
 
 
 
@@ -1914,7 +1891,8 @@ flush(stderr()); flush(stdout())
 
 data(LiverPreparation)
 str(LiverPreparation)
-LiverPreparation
+xyplot(unbound.fraction ~ concentration, LiverPreparation)
+
 
 
 
@@ -1933,25 +1911,27 @@ flush(stderr()); flush(stdout())
 
 data(LizardBite)
 str(LizardBite)
-LizardBite
+xyplot(territory ~ bite, LizardBite)
 
 
 
 cleanEx()
-nameEx("LizardSprintSpeed")
-### * LizardSprintSpeed
+nameEx("LizardSprint")
+### * LizardSprint
 
 flush(stderr()); flush(stdout())
 
-### Name: LizardSprintSpeed
+### Name: LizardSprint
 ### Title: Sprint Speeds in Canyon Lizards
-### Aliases: LizardSprintSpeed
+### Aliases: LizardSprint
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LizardSprintSpeed)
-LizardSprintSpeed
+data(LizardSprint)
+histogram(~speed, LizardSprint)
+Lizard2 <- aggregate(speed ~ lizard, LizardSprint, mean)
+histogram(~speed, Lizard2)
 
 
 
@@ -1969,45 +1949,46 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Lobsters)
-Lobsters
+histogram(~orientation, Lobsters)
+dotplot(~orientation, Lobsters)
 
 
 
 cleanEx()
-nameEx("LodgepolePineCones")
-### * LodgepolePineCones
+nameEx("LodgepolePines")
+### * LodgepolePines
 
 flush(stderr()); flush(stdout())
 
-### Name: LodgepolePineCones
+### Name: LodgepolePines
 ### Title: Lodgepole Pine Cone Masses
-### Aliases: LodgepolePineCones
+### Aliases: LodgepolePines
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LodgepolePineCones)
-LodgepolePineCones
-str(LodgepolePineCones)
+data(LodgepolePines)
+LodgepolePines
+str(LodgepolePines)
+xyplot(conemass ~ habitat, LodgepolePines)
 
 
 
 cleanEx()
-nameEx("LupusProneMice")
-### * LupusProneMice
+nameEx("LupusMice")
+### * LupusMice
 
 flush(stderr()); flush(stdout())
 
-### Name: LupusProneMice
+### Name: LupusMice
 ### Title: Autoimmune Reactivity in Lupus-prone Mice
-### Aliases: LupusProneMice
+### Aliases: LupusMice
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LupusProneMice)
-LupusProneMice
-str(LupusProneMice)
+data(LupusMice)
+str(LupusMice)
 
 
 
@@ -2026,13 +2007,7 @@ flush(stderr()); flush(stdout())
 
 data(LynxPopulationCycles)
 
-plot(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  type = "l",
-  xlab = "Year",
-  ylab = "Lynx fur returns")
-points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  col = "red",
-  pch = 16)
+xyplot(pelts ~ year, LynxPopulationCycles, type=c('p','l'))
 
 ## Not run: 
 ##D # Alternate form converting to Date class.
@@ -2068,14 +2043,17 @@ flush(stderr()); flush(stdout())
 data(MarineReserve)
 str(MarineReserve)
 
-hist(MarineReserve)
+histogram(~biomass.ratio, MarineReserve)
+
+hist(MarineReserve$biomass.ratio)
 
 # Normal quantile plot; Note that the default is datax = FALSE
-qqnorm(MarineReserve, datax = TRUE)
-qqline(MarineReserve, datax = TRUE)
+qqmath(~biomass.ratio, MarineReserve)
+qqnorm(MarineReserve$biomass.ratio, datax = TRUE)
+qqline(MarineReserve$biomass.ratio, datax = TRUE)
 
 # Natural log transformation
-log.biomass <- log(MarineReserve)
+log.biomass <- log(MarineReserve$biomass)
 hist(log.biomass)
 (mean(log.biomass))
 (sd(log.biomass))
@@ -2083,11 +2061,10 @@ hist(log.biomass)
 t.test(log.biomass, mu = 0, var.equal = TRUE)
 
 # Confidence intervals
-(cis <- ci(log.biomass))
+cis <- interval( t.test(log.biomass, mu = 0, var.equal = TRUE) )
 
 # Back transform
-exp(cis$lower)
-exp(cis$upper)
+exp(cis)
 
 
 
@@ -2107,10 +2084,11 @@ flush(stderr()); flush(stdout())
 data(MassExtinctions)
 MassExtinctions
 
+if(0){
 # Calculate weighted mean
 # with expand.dft()
 n.extinctions <- expand.dft(MassExtinctions,
-  "Frequency")$Number.of.extinctions
+  "count")$Number.of.extinctions
 wt.mean <- mean(n.extinctions)
 
 # With weighted.mean()
@@ -2164,74 +2142,58 @@ chisq.test(MassExtinctions2$Frequency, p = expected2,
 
 # Variance
 var(n.extinctions)
+}
 
 
 
 cleanEx()
-nameEx("MoleRatLayabouts")
-### * MoleRatLayabouts
+nameEx("MoleRates")
+### * MoleRates
 
 flush(stderr()); flush(stdout())
 
-### Name: MoleRatLayabouts
+### Name: MoleRats
 ### Title: Energy Expenditure in Mole Rats
-### Aliases: MoleRatLayabouts
+### Aliases: MoleRats
 ### Keywords: datasets
 
 ### ** Examples
 
-data(MoleRatLayabouts)
-MoleRatLayabouts
+data(MoleRats)
+MoleRats
 
-plot(lnenergy ~ lnmass, data = MoleRatLayabouts,
-  pch = ifelse(MoleRatLayabouts$caste == "worker", 1, 16),
+plot(ln.energy ~ ln.mass, data = MoleRats,
+  pch = ifelse(MoleRats$caste == "worker", 1, 16),
   col = "red",
   xlab = "Ln Body Mass",
   ylab = "Ln Daily Energy Expenditure")
 
 # Full model with interaction
-fit1 <- lm(lnenergy ~ caste * lnmass,
-  data = MoleRatLayabouts)
+fit1 <- lm(ln.energy ~ caste * ln.mass,
+  data = MoleRats)
 anova(fit1)
 
 # Drop interaction
-fit2 <- lm(lnenergy ~ lnmass + caste,
-  data = MoleRatLayabouts)
+fit2 <- lm(ln.energy ~ ln.mass + caste,
+  data = MoleRats)
 anova(fit2)
 
 # The data aren't balanced, so we need to do a "Type III"
 # sums of squares ANOVA using Anova() from the car package.
-require(car)
-Anova(fit2, type = "III")
+if (require(car)) {
+	Anova(fit2, type = "III")
+}
 
 # Also using ancova() from the HH package
-require(HH)
-fit3 <- ancova(lnenergy ~ lnmass * caste,
-  data = MoleRatLayabouts)
-print.ancova(fit3)
+if (require(HH)) {
+	fit3 <- ancova(ln.energy ~ ln.mass * caste,
+	  data = MoleRats)
+	print.ancova(fit3)
 
-fit4 <- ancova(lnenergy ~ lnmass + caste,
-  data = MoleRatLayabouts)
-print.ancova(fit4)
-
-
-
-cleanEx()
-nameEx("MonogamousTestes")
-### * MonogamousTestes
-
-flush(stderr()); flush(stdout())
-
-### Name: MonogamousTestes
-### Title: Testes Size in Flies
-### Aliases: MonogamousTestes
-### Keywords: datasets
-
-### ** Examples
-
-data(MonogamousTestes)
-str(MonogamousTestes)
-MonogamousTestes
+	fit4 <- ancova(ln.energy ~ ln.mass + caste,
+	  data = MoleRats)
+	print.ancova(fit4)
+}
 
 
 
@@ -2249,7 +2211,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Mosquitoes)
-Mosquitoes
+xyplot(weight ~ sex, Mosquitoes)
 
 
 
@@ -2271,24 +2233,26 @@ str(MouseEmpathy)
 
 aov.fit <- aov(percent.stretching ~ treatment, data = MouseEmpathy)
 summary(aov.fit)
+lm.fit <- lm(percent.stretching ~ treatment, data = MouseEmpathy)
+anova(lm.fit)
 
 
 
 cleanEx()
-nameEx("NeanderthalBrainSize")
-### * NeanderthalBrainSize
+nameEx("NeanderthalBrains")
+### * NeanderthalBrains
 
 flush(stderr()); flush(stdout())
 
-### Name: NeanderthalBrainSize
+### Name: NeanderthalBrains
 ### Title: Cranial Capacity in Neanderthals and Modern Humans
-### Aliases: NeanderthalBrainSize
+### Aliases: NeanderthalBrains
 ### Keywords: datasets
 
 ### ** Examples
 
-data(NeanderthalBrainSize)
-NeanderthalBrainSize
+data(NeanderthalBrains)
+xyplot(ln.brain ~ ln.mass, data=NeanderthalBrains, groups=species)
 
 
 
@@ -2311,21 +2275,21 @@ str(NematodeLifespan)
 
 
 cleanEx()
-nameEx("NeotropicalTreePhotosynthesis")
-### * NeotropicalTreePhotosynthesis
+nameEx("NeotropicalTrees")
+### * NeotropicalTrees
 
 flush(stderr()); flush(stdout())
 
-### Name: NeotropicalTreePhotosynthesis
+### Name: NeotropicalTrees
 ### Title: Photosynthesis in Neotropical Trees
-### Aliases: NeotropicalTreePhotosynthesis
+### Aliases: NeotropicalTrees
 ### Keywords: datasets
 
 ### ** Examples
 
-data(NeotropicalTreePhotosynthesis)
-str(NeotropicalTreePhotosynthesis)
-NeotropicalTreePhotosynthesis
+data(NeotropicalTrees)
+str(NeotropicalTrees)
+NeotropicalTrees
 
 
 
@@ -2366,96 +2330,20 @@ NoSmokingDay
 
 
 cleanEx()
-nameEx("NorthSeaCodRecruits")
-### * NorthSeaCodRecruits
+nameEx("NorthSeaCod")
+### * NorthSeaCod
 
 flush(stderr()); flush(stdout())
 
-### Name: NorthSeaCodRecruits
+### Name: NorthSeaCod
 ### Title: Atlantic Cod Recruits
-### Aliases: NorthSeaCodRecruits
+### Aliases: NorthSeaCod
 ### Keywords: datasets
 
 ### ** Examples
 
-data(NorthSeaCodRecruits)
-NorthSeaCodRecruits
-
-
-
-cleanEx()
-nameEx("NuclearTeeth")
-### * NuclearTeeth
-
-flush(stderr()); flush(stdout())
-
-### Name: NuclearTeeth
-### Title: Radioactive Teeth
-### Aliases: NuclearTeeth
-### Keywords: datasets
-
-### ** Examples
-
-data(NuclearTeeth)
-str(NuclearTeeth)
-NuclearTeeth
-
-
-
-cleanEx()
-nameEx("NumberGenesRegulated")
-### * NumberGenesRegulated
-
-flush(stderr()); flush(stdout())
-
-### Name: NumberGenesRegulated
-### Title: Gene Regulation in Saccharomyces
-### Aliases: NumberGenesRegulated
-### Keywords: datasets
-
-### ** Examples
-
-data(NumberGenesRegulated)
-str(NumberGenesRegulated)
-NumberGenesRegulated
-
-
-
-cleanEx()
-nameEx("NumberOfBoys")
-### * NumberOfBoys
-
-flush(stderr()); flush(stdout())
-
-### Name: NumberOfBoys
-### Title: Number of Boys in Two-Child Families
-### Aliases: NumberOfBoys
-### Keywords: datasets
-
-### ** Examples
-
-data(NumberOfBoys)
-NumberOfBoys
-observed <- NumberOfBoys$Frequency
-expected <- c(585.3, 1221.4, 637.3)
-chisq.test(observed, p = expected, rescale.p = TRUE)
-
-# Alternate calculation, using Pr[male] = 0.512
-# and rbinom. See Figure 5.7-1
-n <- sum(observed)
-pr.m <- 0.512
-pr.f <- 0.488
-
-# Calculate the probabilities of 0, 1, and 2 males
-(pr.0 <- pr.f^2)
-(pr.1 <- pr.m * pr.f + pr.f * pr.m)
-(pr.2 <- pr.m^2)
-
-set.seed(1)
-(expected2 <- c(rbinom(1, n, pr.0),
-                rbinom(1, n, pr.1),
-                rbinom(1, n, pr.2)))
-chisq.test(observed, p = expected2, rescale.p = TRUE)
+data(NorthSeaCod)
+favstats(NorthSeaCod$log10.recruits)
 
 
 
@@ -2473,34 +2361,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(OstrichTemp)
-OstrichTemp
-
-
-
-cleanEx()
-nameEx("ParasiteBrainWarp")
-### * ParasiteBrainWarp
-
-flush(stderr()); flush(stdout())
-
-### Name: ParasiteBrainWarp
-### Title: Frequencies of Fish Eaten by Trematode Infection Level
-### Aliases: ParasiteBrainWarp
-### Keywords: datasets
-
-### ** Examples
-
-data(ParasiteBrainWarp)
-ParasiteBrainWarp
-
-# Convert Frequency into a 2 X 3 contingency table
-Freq <- matrix(ParasiteBrainWarp$Frequency, nrow = 2)
-chisq.test(Freq)
-
-# xtabs() can accomplish the same result, including the
-# chi-squared test.
-xtabs(Frequency ~ eaten + infection.status, data = ParasiteBrainWarp)
-summary(xtabs(Frequency ~ eaten + infection.status, data = ParasiteBrainWarp))
+xyplot(brain.temp ~ body.temp, OstrichTemp)
 
 
 
@@ -2519,26 +2380,25 @@ flush(stderr()); flush(stdout())
 
 data(PenguinTreadmill)
 str(PenguinTreadmill)
-PenguinTreadmill
+dotplot(slope~group, PenguinTreadmill)
 
 
 
 cleanEx()
-nameEx("PlantPopulationPersistence")
-### * PlantPopulationPersistence
+nameEx("PlantPersistence")
+### * PlantPersistence
 
 flush(stderr()); flush(stdout())
 
-### Name: PlantPopulationPersistence
+### Name: PlantPersistence
 ### Title: Population Persistence Times
-### Aliases: PlantPopulationPersistence
+### Aliases: PlantPersistence
 ### Keywords: datasets
 
 ### ** Examples
 
-data(PlantPopulationPersistence)
-PlantPopulationPersistence
-str(PlantPopulationPersistence)
+data(PlantPersistence)
+xyplot(generations~treatment, PlantPersistence)
 
 
 
@@ -2557,43 +2417,45 @@ flush(stderr()); flush(stdout())
 
 data(Powerball)
 Powerball
+xyplot(millions.of.tickets.sold ~ day, Powerball)
 
 
 
 cleanEx()
-nameEx("PrimateMassMetabolicRate")
-### * PrimateMassMetabolicRate
+nameEx("PrimateMetabolism")
+### * PrimateMetabolism
 
 flush(stderr()); flush(stdout())
 
-### Name: PrimateMassMetabolicRate
+### Name: PrimateMetabolism
 ### Title: Primate Metabolic Rates
-### Aliases: PrimateMassMetabolicRate
+### Aliases: PrimateMetabolism
 ### Keywords: datasets
 
 ### ** Examples
 
-data(PrimateMassMetabolicRate)
-str(PrimateMassMetabolicRate)
-PrimateMassMetabolicRate
+data(PrimateMetabolism)
+str(PrimateMetabolism)
+xyplot(bmr ~ mass, PrimateMetabolism)
+xyplot(bmr ~ mass, PrimateMetabolism, scales=list(log=TRUE))
 
 
 
 cleanEx()
-nameEx("PrimateWPC")
-### * PrimateWPC
+nameEx("PrimateWBC")
+### * PrimateWBC
 
 flush(stderr()); flush(stdout())
 
-### Name: PrimateWPC
+### Name: PrimateWBC
 ### Title: Primate White Blood Cell Counts and Promiscuity
-### Aliases: PrimateWPC
+### Aliases: PrimateWBC
 ### Keywords: datasets
 
 ### ** Examples
 
-data(PrimateWPC)
-PrimateWPC
+data(PrimateWBC)
+xyplot(WBC.more ~ WBC.less, PrimateWBC)
 
 
 
@@ -2612,7 +2474,7 @@ flush(stderr()); flush(stdout())
 
 data(ProgesteroneExercise)
 str(ProgesteroneExercise)
-ProgesteroneExercise
+xyplot(ventilation ~ progesterone, ProgesteroneExercise)
 
 
 
@@ -2631,6 +2493,9 @@ flush(stderr()); flush(stdout())
 
 data(Pseudoscorpions)
 str(Pseudoscorpions)
+bwplot(successful.broods ~ treatment, Pseudoscorpions)
+aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
+
 
 # Shorten names
 PS <- Pseudoscorpions
@@ -2673,21 +2538,22 @@ abline(v = obs.t, col = "red")
 
 
 cleanEx()
-nameEx("PufferfishMimicry")
-### * PufferfishMimicry
+nameEx("Pufferfish")
+### * Pufferfish
 
 flush(stderr()); flush(stdout())
 
-### Name: PufferfishMimicry
+### Name: Pufferfish
 ### Title: Pufferfish Mimicry
-### Aliases: PufferfishMimicry
+### Aliases: Pufferfish
 ### Keywords: datasets
 
 ### ** Examples
 
-data(PufferfishMimicry)
-str(PufferfishMimicry)
-PufferfishMimicry
+data(Pufferfish)
+str(Pufferfish)
+xyplot(predators ~ jitter(resemblance,amount=.1), Pufferfish)
+Pufferfish
 
 
 
@@ -2706,7 +2572,7 @@ flush(stderr()); flush(stdout())
 
 data(RattlesnakeDigestion)
 str(RattlesnakeDigestion)
-RattlesnakeDigestion
+xyplot(meal.size ~ temp.change, RattlesnakeDigestion)
 
 
 
@@ -2724,7 +2590,39 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Rigormortis)
-Rigormortis
+xyplot(count~hours, Rigormortis, type='h', lwd=3)
+barchart(count ~ hours, Rigormortis, horizontal=FALSE)
+
+
+
+cleanEx()
+nameEx("RopeTrick")
+### * RopeTrick
+
+flush(stderr()); flush(stdout())
+
+### Name: RopeTrick
+### Title: Indian Rope Trick
+### Aliases: RopeTrick
+### Keywords: datasets
+
+### ** Examples
+
+data(RopeTrick)
+xyplot(impressiveness ~ years, RopeTrick)
+
+rank.years <- rank(RopeTrick$years)
+rank.imp <- rank(RopeTrick$impressiveness)
+
+sum.prods <- sum_of_products(rank.years, rank.imp)
+SS.years <- sum_of_squares(rank.years)
+SS.imp <- sum_of_squares(rank.imp)
+sum.prods / (sqrt(SS.years) * sqrt(SS.imp))
+
+# With cor.test(); Note warning about ties. See discussion on
+# p. 446.
+cor.test(RopeTrick$years,
+  RopeTrick$impressiveness, method = "spearman")
 
 
 
@@ -2745,10 +2643,10 @@ data(SagebrushCrickets)
 SagebrushCrickets
 str(SagebrushCrickets)
 
-# Subset and extract the Time.to.mating data
+# Subset and extract the time.to.mating data
 starved <- subset(SagebrushCrickets,
-  Feeding == "starved")$Time.to.mating
-fed <- subset(SagebrushCrickets, Feeding == "fed")$Time.to.mating
+  treatment == "starved")$time.to.mating
+fed <- subset(SagebrushCrickets, treatment == "fed")$time.to.mating
 
 dev.new()
 par(mfrow = c(2, 1))
@@ -2756,7 +2654,7 @@ hist(starved, xlim = c(0, 100))
 hist(fed, xlim = c(0, 100))
 
 # Sort the SagebrushCrickets data.frame
-sorted <- SagebrushCrickets[order(SagebrushCrickets$Time.to.mating), ]
+sorted <- SagebrushCrickets[order(SagebrushCrickets$time.to.mating), ]
 
 # Add a rank column
 sorted$rank <- 1:24
@@ -2767,8 +2665,8 @@ sorted
 (n.starved <- length(starved))
 
 # Calculate rank sum
-(sum.fed <- sum(sorted$rank[sorted$Feeding == "fed"]))
-(sum.starved <- sum(sorted$rank[sorted$Feeding == "starved"]))
+(sum.fed <- sum(sorted$rank[sorted$treatment == "fed"]))
+(sum.starved <- sum(sorted$rank[sorted$treatment == "starved"]))
 
 # Calculate U for each group
 (u.starved <- n.starved * n.fed + 
@@ -2782,7 +2680,7 @@ sorted
 qwilcox(1-(0.05/2), 11, 13)
 
 # Alternately with wilcox.test()
-wilcox.test(Time.to.mating ~ Feeding, data = SagebrushCrickets)
+wilcox.test(time.to.mating ~ treatment, data = SagebrushCrickets)
 
 
 
@@ -2811,6 +2709,8 @@ hist(subset(SalmonColor, species == "kokanee")$skin.color,
 hist(subset(SalmonColor, species == "sockeye")$skin.color,
   xlab = "Skin Color Measure", main = "Sockeye",
   xlim = c(0.5, 2.5), breaks = 3)
+histogram(~skin.color | species, SalmonColor)
+bwplot(skin.color ~ species, SalmonColor)
 
 
 
@@ -2821,15 +2721,15 @@ nameEx("Sample")
 
 flush(stderr()); flush(stdout())
 
-### Name: Sample
+### Name: sample
 ### Title: Random Samples and Permutations
-### Aliases: Sample Sample.data.frame Sample.default
+### Aliases: sample sample.data.frame sample.default
 ### Keywords: manip
 
 ### ** Examples
 
 x <- data.frame(letter=letters[1:10], number=1:10)
-Sample(x,3)
+sample(x,3)
 
 
 
@@ -2867,11 +2767,13 @@ flush(stderr()); flush(stdout())
 data(SexualSelection)
 SexualSelection
 
-hist(SexualSelection$Difference, breaks = 20)
+histogram(~ difference, SexualSelection, n = 20)
+
+hist(SexualSelection$difference, breaks = 20)
 
 # Calculate the number of tests and the number of negative tests
-(n <- length(SexualSelection$Difference))
-(n.neg <- sum(SexualSelection$Difference < 0))
+(n <- length(SexualSelection$difference))
+(n.neg <- sum(SexualSelection$difference < 0))
 
 2 * pbinom(q = n.neg, size = n, prob = 0.5)
 
@@ -2894,7 +2796,6 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(ShadParasites)
-str(ShadParasites)
 ShadParasites
 
 
@@ -2914,7 +2815,9 @@ flush(stderr()); flush(stdout())
 
 data(ShrinkingSeals)
 str(ShrinkingSeals)
+
 plot(ShrinkingSeals, pch = 16, cex = 0.5)
+xyplot(length ~ age, ShrinkingSeals, pch=16, alpha=.65, cex=.6)
 
 
 
@@ -2933,25 +2836,27 @@ flush(stderr()); flush(stdout())
 
 data(ShuttleDisaster)
 str(ShuttleDisaster)
-ShuttleDisaster
+xyplot( jitter(failures,amount=.1) ~ temperature, ShuttleDisaster,
+	ylab='number of failures'
+	)
 
 
 
 cleanEx()
-nameEx("SilverswordWaitingTimes")
-### * SilverswordWaitingTimes
+nameEx("Silversword")
+### * Silversword
 
 flush(stderr()); flush(stdout())
 
-### Name: SilverswordWaitingTimes
+### Name: Silversword
 ### Title: Rate of Speciation in Silverswords
-### Aliases: SilverswordWaitingTimes
+### Aliases: Silversword
 ### Keywords: datasets
 
 ### ** Examples
 
-data(SilverswordWaitingTimes)
-SilverswordWaitingTimes
+data(Silversword)
+Silversword
 
 
 
@@ -2970,49 +2875,30 @@ flush(stderr()); flush(stdout())
 
 data(SleepAndPerformance)
 str(SleepAndPerformance)
-SleepAndPerformance
+xyplot(improvement ~ sleep, SleepAndPerformance)
 
 
 
 cleanEx()
-nameEx("SocialSpiderColonies")
-### * SocialSpiderColonies
+nameEx("SockeyeFemales")
+### * SockeyeFemales
 
 flush(stderr()); flush(stdout())
 
-### Name: SocialSpiderColonies
-### Title: Social Spiders
-### Aliases: SocialSpiderColonies
-### Keywords: datasets
-
-### ** Examples
-
-data(SocialSpiderColonies)
-str(SocialSpiderColonies)
-SocialSpiderColonies
-
-
-
-cleanEx()
-nameEx("SockeyeFemale")
-### * SockeyeFemale
-
-flush(stderr()); flush(stdout())
-
-### Name: SockeyeFemale
+### Name: SockeyeFemales
 ### Title: Body Masses of Female Sockeye Salmon
-### Aliases: SockeyeFemale
+### Aliases: SockeyeFemales
 ### Keywords: datasets
 
 ### ** Examples
 
-data(SockeyeFemale)
-str(SockeyeFemale)
-summary(SockeyeFemale)
+data(SockeyeFemales)
+str(SockeyeFemales)
+summary(SockeyeFemales)
 # Figure 2.1-4 from Analysis of Biological Data
 plots <- list()
 for (b in c(0.1, 0.3, 0.5)) {
-  p <- histogram(~BodyMass, data=SockeyeFemale, 
+  p <- histogram(~mass, data=SockeyeFemales, 
   		breaks = seq(1,4,by=b),
    	 	col = "red",
 		type='count',
@@ -3026,43 +2912,6 @@ for (i in 1:3)  {
 
 
 
-cleanEx()
-nameEx("SockeyeFemaleBodyMass")
-### * SockeyeFemaleBodyMass
-
-flush(stderr()); flush(stdout())
-
-### Name: SockeyeFemaleBodyMass
-### Title: Body Masses of Female Sockeye Salmon
-### Aliases: SockeyeFemaleBodyMass
-### Keywords: datasets
-
-### ** Examples
-
-data(SockeyeFemaleBodyMass)
-
-str(SockeyeFemaleBodyMass)
-summary(SockeyeFemaleBodyMass)
-
-dev.new(width = 9, height = 3)
-op <- par(no.readonly = TRUE)
-par(mfrow = c(1, 3),
-  xaxs = "i",
-  yaxs = "i")
-for (breaks in c(30, 10, 5)){
-  hist(SockeyeFemaleBodyMass, breaks = breaks,
-    xlim = c(1, 4),
-    col = "red",
-    ylab = "Frequency",
-    xlab = "Body mass (kg)",
-    main = "")
-}
-
-par(op)
-
-
-
-graphics::par(get("par.postscript", pos = 'CheckExEnv'))
 cleanEx()
 nameEx("SparrowReproductiveSuccess")
 ### * SparrowReproductiveSuccess
@@ -3082,92 +2931,65 @@ SparrowReproductiveSuccess
 
 
 cleanEx()
-nameEx("SpiderRunningAmputation")
-### * SpiderRunningAmputation
+nameEx("SpiderColonies")
+### * SpiderColonies
 
 flush(stderr()); flush(stdout())
 
-### Name: SpiderRunningAmputation
+### Name: SpiderColonies
+### Title: Social Spiders
+### Aliases: SpiderColonies
+### Keywords: datasets
+
+### ** Examples
+
+data(SpiderColonies)
+str(SpiderColonies)
+SpiderColonies
+
+
+
+cleanEx()
+nameEx("SpiderSpeed")
+### * SpiderSpeed
+
+flush(stderr()); flush(stdout())
+
+### Name: SpiderSpeed
 ### Title: Spider Running Speeds after Amputation
-### Aliases: SpiderRunningAmputation
+### Aliases: SpiderSpeed
 ### Keywords: datasets
 
 ### ** Examples
 
-data(SpiderRunningAmputation)
+data(SpiderSpeed)
+xyplot(speed.after ~ speed.before, SpiderSpeed)
+favstats(SpiderSpeed$speed.before)
+favstats(SpiderSpeed$speed.after)
+favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
 
-SpiderRunningAmputation
-before <- subset(SpiderRunningAmputation, amputation.status == "before")
-median(before$speed)
-
-after <- subset(SpiderRunningAmputation, amputation.status == "after")
-median(after$speed)
-
-# Note that summary() returns quantiles.
-(SRA.summary <- summary(before$speed))
-
-# Interquantile range
-SRA.summary[[5]] - SRA.summary[[2]]
-
-# fivenum() produces quartiles, which matches the calculation on p. 69
-SRA.5num <- fivenum(before$speed)
-SRA.5num[[4]] - SRA.5num[[2]]
-
-boxplot(speed ~ amputation.status, data = SpiderRunningAmputation,
-  names = c("After amputation", "Before amputation"),
-  ylab = "Running speed (cm/s)")
-
-## Not run: 
-##D # Using ggplot()
-##D require(ggplot2)
-##D p <- ggplot(SpiderRunningAmputation, aes(amputation.status, speed))
-##D p + geom_boxplot() +
-##D   scale_x_discrete("Amputation Status", 
-##D     breaks = levels(SpiderRunningAmputation$amputation.status),
-##D     labels = c("After amputation", "Before amputation")) +
-##D   scale_y_continuous("Running speed (cm/s)")
-## End(Not run)
 
 
 
 cleanEx()
-nameEx("StalkieEyespan")
-### * StalkieEyespan
+nameEx("Stalkies1")
+### * Stalkies1
 
 flush(stderr()); flush(stdout())
 
-### Name: StalkieEyespan
-### Title: Stalk-eyed Fly Eyespan
-### Aliases: StalkieEyespan
-### Keywords: datasets
-
-### ** Examples
-
-data(StalkieEyespan)
-StalkieEyespan
-str(StalkieEyespan)
-
-
-
-cleanEx()
-nameEx("Stalkies")
-### * Stalkies
-
-flush(stderr()); flush(stdout())
-
-### Name: Stalkies
+### Name: Stalkies1
 ### Title: Eye Widths in Stalk-Eyed Flies
-### Aliases: Stalkies
+### Aliases: Stalkies1
 ### Keywords: datasets
 
 ### ** Examples
 
-data(Stalkies)
-Stalkies
+data(Stalkies1)
+Stalkies1
 
-n <- length(Stalkies)
-(y.bar <- mean(Stalkies))
-(y.s <- sd(Stalkies))
+n <- nrow(Stalkies1)
+(y.bar <- mean(Stalkies1$eye.span))
+(y.s <- sd(Stalkies1$eye.span))
 (SE.y.bar <- y.s / sqrt(n))
 df <- n - 1
 (t.crit <- qt(0.05/2, df = df, lower.tail = FALSE))
@@ -3177,9 +2999,33 @@ y.bar - (t.crit * SE.y.bar)
 # Upper 95%
 y.bar + (t.crit * SE.y.bar)
 
-# Or use ci() from abd package
-ci(Stalkies)
-ci(Stalkies, conf.level = 0.99)
+# Or use meanCI
+meanCI(Stalkies1$eye.span)
+meanCI(Stalkies1$eye.span, conf.level=0.99)
+
+# Or use t.test
+t.test(Stalkies1$eye.span)
+t.test(Stalkies1$eye.span, conf.level=0.99)
+
+
+
+cleanEx()
+nameEx("Stalkies2")
+### * Stalkies2
+
+flush(stderr()); flush(stdout())
+
+### Name: Stalkies2
+### Title: Stalk-eyed Fly Eyespan
+### Aliases: Stalkies2
+### Keywords: datasets
+
+### ** Examples
+
+data(Stalkies2)
+str(Stalkies2)
+xyplot(eye.span ~ food, Stalkies2)
+aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
 
 
 
@@ -3198,45 +3044,29 @@ flush(stderr()); flush(stdout())
 
 data(SticklebackPlates)
 
-mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "MM"])
-median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "MM"])
+aggregate(plates ~ genotype, SticklebackPlates, favstats)
 
-mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "Mm"])
-median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "Mm"])
+histogram(~plates|genotype, SticklebackPlates, 
+	layout=c(1,3),
+	n=15,
+    xlab = "Number of Lateral Body Plates"
+	)
+densityplot(~plates|genotype, SticklebackPlates, 
+    xlab = "Number of Lateral Body Plates",
+	layout=c(1,3))
 
-mean(SticklebackPlates$no.plates[SticklebackPlates$genotype == "mm"])
-median(SticklebackPlates$no.plates[SticklebackPlates$genotype == "mm"])
-
-## Not run: 
-##D op <- par(no.readonly = TRUE)
-##D par(mfrow = c(3, 1),
-##D   xaxs = "i",
-##D   yaxs = "i")
-##D for (i in c("mm", "Mm", "MM")){
-##D   subset.by.genotype <- subset(SticklebackPlates, genotype == i)
-##D   hist(subset.by.genotype$no.plates,
-##D     breaks = 30,
-##D     xlim = c(0, 70),
-##D     ylim = c(0, 50),
-##D     col = "red",
-##D     ylab = "Frequency",
-##D     xlab = "Number of Lateral Body Plates",
-##D     main = paste(i))
-##D }
-##D par(op)
-##D 
-##D require(ggplot2)
-##D p1 <- ggplot(SticklebackPlates, aes(no.plates))
-##D p1 + geom_histogram(fill = "red", binwidth = 2) +
-##D   facet_grid(genotype ~ .) +
-##D   scale_x_continuous("Number of Lateral Body Plates") +
-##D   scale_y_continuous("Frequency")
-##D   
-##D p2 <- ggplot(SticklebackPlates, aes(genotype, no.plates))
-##D   p2 + geom_boxplot() +
-##D   scale_x_discrete("Genotype") +
-##D   scale_y_continuous("Number of Lateral Body Plates")
-## End(Not run)
+if (require(ggplot2)) {
+p1 <- ggplot(SticklebackPlates, aes(plates))
+p1 + geom_histogram(fill = "red", binwidth = 2) +
+  facet_grid(genotype ~ .) +
+  scale_x_continuous("Number of Lateral Body Plates") +
+  scale_y_continuous("Frequency")
+  
+p2 <- ggplot(SticklebackPlates, aes(genotype, plates))
+  p2 + geom_boxplot() +
+  scale_x_discrete("Genotype") +
+  scale_y_continuous("Number of Lateral Body Plates")
+}
 
 
 
@@ -3256,7 +3086,8 @@ flush(stderr()); flush(stdout())
 
 data(SticklebackPreference)
 SticklebackPreference
-hist(SticklebackPreference)
+histogram(~preference.index, SticklebackPreference)
+dotplot(~preference.index, SticklebackPreference)
 
 
 
@@ -3274,7 +3105,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Sumo)
-Sumo
+xyplot(count ~ wins, Sumo, type='h', lwd=4)
 
 
 
@@ -3293,7 +3124,8 @@ flush(stderr()); flush(stdout())
 
 data(SyrupSwimming)
 SyrupSwimming
-hist(SyrupSwimming)
+histogram(~relative.speed, SyrupSwimming)
+dotplot(~relative.speed, SyrupSwimming)
 
 
 
@@ -3314,14 +3146,25 @@ data(TeenDeaths)
 
 str(TeenDeaths)
 TeenDeaths
+barchart(deaths~cause, TeenDeaths, 
+	horizontal=FALSE,
+	ylab="Number of Deaths",
+	xlab="Cause of Death",
+	scales=list(x=list(rot=45)))
+barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+	horizontal=FALSE,
+	ylab="Number of Deaths",
+	xlab="Cause of Death",
+	scales=list(x=list(rot=45))
+	)
 
 op <- par(no.readonly = TRUE)
 par(mai = c(2, 0.82, 0.25, 0.42),
   xaxs = "i",
   yaxs = "i")
 
-barplot(TeenDeaths$No.deaths,
-  names.arg = TeenDeaths$Cause,
+barplot(TeenDeaths$deaths,
+  names.arg = TeenDeaths$cause,
   las = 3,
   cex.axis = 0.75,
   cex.names = 0.75,
@@ -3335,58 +3178,48 @@ par(op)
 
 graphics::par(get("par.postscript", pos = 'CheckExEnv'))
 cleanEx()
-nameEx("TelomeresAndStress")
-### * TelomeresAndStress
+nameEx("Telomeres")
+### * Telomeres
 
 flush(stderr()); flush(stdout())
 
-### Name: TelomeresAndStress
+### Name: Telomeres
 ### Title: Telomere Shortening
-### Aliases: TelomeresAndStress
+### Aliases: Telomeres
 ### Keywords: datasets
 
 ### ** Examples
 
-data(TelomeresAndStress)
+data(Telomeres)
+xyplot(years ~ telomere.length, Telomeres,
+  xlab = "Time since diagnosis (years)",
+  ylab = "Telomere length (ratio)"
+)
 
-plot(telomere.length ~ years, data = TelomeresAndStress,
+plot(telomere.length ~ years, data = Telomeres,
   col = "red",
   pch = 16,
   xlab = "Chronicity (years)",
-  ylab = "Telomere length (ratio)")
+  ylab = "Telomere length (ratio)"
+)
 
 
 
 cleanEx()
-nameEx("Temperature")
-### * Temperature
+nameEx("TimeOfDeath")
+### * TimeOfDeath
 
 flush(stderr()); flush(stdout())
 
-### Name: Temperature
-### Title: Human Body Temperature
-### Aliases: Temperature
+### Name: TimeOfDeath
+### Title: Hypoxanthine and Time Since Death
+### Aliases: TimeOfDeath
 ### Keywords: datasets
 
 ### ** Examples
 
-data(Temperature)
-(y.bar <- mean(Temperature))
-(y.s <- sd(Temperature))
-(y.se <- se(Temperature))
-(t.stat <- (y.bar - 98.6) / y.se)
-df <- 25 - 1
-2 * pt(t.stat, df = df)
-
-# With t.test()
-t.test(Temperature, mu = 98.6, alternative = "two.sided")
-
-# Critical t-statistic (df = 24) for p = 0.05
-# Need to divide 0.05 by 2 to account for both tails
-qt(0.05/2, 24, lower.tail = FALSE)
-
-# 95% Confidence interval
-ci(Temperature)
+data(TimeOfDeath)
+xyplot(hypoxanthine ~ hours, TimeOfDeath, type=c('p','r'))
 
 
 
@@ -3405,6 +3238,9 @@ flush(stderr()); flush(stdout())
 
 data(Toads)
 Toads
+xyplot(prob~n.toads, Toads, type='h', lwd=4)
+barchart(prob~n.toads, Toads, horizontal=FALSE)
+
 barplot(Toads$prob,
   ylim = c(0, 0.20),
   names.arg = Toads$n.toads,
@@ -3440,40 +3276,98 @@ Tobacco
 
 
 cleanEx()
-nameEx("TreeSeedlingsAndSunflecks")
-### * TreeSeedlingsAndSunflecks
+nameEx("Tobacco2")
+### * Tobacco2
 
 flush(stderr()); flush(stdout())
 
-### Name: TreeSeedlingsAndSunflecks
-### Title: Tree Seedlings and Sunflecks
-### Aliases: TreeSeedlingsAndSunflecks
+### Name: Tobacco2
+### Title: Flower Length in Tobacco Plants
+### Aliases: Tobacco2
 ### Keywords: datasets
 
 ### ** Examples
 
-data(TreeSeedlingsAndSunflecks)
-str(TreeSeedlingsAndSunflecks)
-TreeSeedlingsAndSunflecks
+data(Tobacco2)
+xtabs(~flower.length + generation, Tobacco2)
+bwplot(flower.length ~ generation, Tobacco2)
 
 
 
 cleanEx()
-nameEx("TrilliumRecruitment")
-### * TrilliumRecruitment
+nameEx("ToothAge")
+### * ToothAge
 
 flush(stderr()); flush(stdout())
 
-### Name: TrilliumRecruitment
-### Title: Trillium Recruitment near Clearcuts
-### Aliases: TrilliumRecruitment
+### Name: ToothAge
+### Title: Radioactive Teeth
+### Aliases: ToothAge
 ### Keywords: datasets
 
 ### ** Examples
 
-data(TrilliumRecruitment)
-str(TrilliumRecruitment)
-TrilliumRecruitment
+data(ToothAge)
+str(ToothAge)
+xyplot(actual ~ estimated, ToothAge)
+
+
+
+cleanEx()
+nameEx("TreeSeedlings")
+### * TreeSeedlings
+
+flush(stderr()); flush(stdout())
+
+### Name: TreeSeedlings
+### Title: Tree Seedlings and Sunflecks
+### Aliases: TreeSeedlings
+### Keywords: datasets
+
+### ** Examples
+
+data(TreeSeedlings)
+str(TreeSeedlings)
+splom(TreeSeedlings)
+
+
+
+cleanEx()
+nameEx("Trematodes")
+### * Trematodes
+
+flush(stderr()); flush(stdout())
+
+### Name: Trematodes
+### Title: Frequencies of Fish Eaten by Trematode Infection Level
+### Aliases: Trematodes
+### Keywords: datasets
+
+### ** Examples
+
+data(Trematodes)
+xtabs(~ infection.status + eaten, Trematodes)
+chisq.test( xtabs(~ infection.status + eaten, Trematodes) )
+summary(chisq.test( xtabs(~ infection.status + eaten, Trematodes) ) )
+
+
+
+cleanEx()
+nameEx("Trillium")
+### * Trillium
+
+flush(stderr()); flush(stdout())
+
+### Name: Trillium
+### Title: Trillium Recruitment near Clearcuts
+### Aliases: Trillium
+### Keywords: datasets
+
+### ** Examples
+
+data(Trillium)
+str(Trillium)
+splom(Trillium)
 
 
 
@@ -3492,6 +3386,8 @@ flush(stderr()); flush(stdout())
 
 data(Truffles)
 Truffles
+xyplot(count~truffles, Truffles, type='h', lwd=4)
+barchart(count~truffles, Truffles, horizontal=FALSE)
 
 
 
@@ -3509,8 +3405,45 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(TsetseLearning)
-TsetseLearning
-str(TsetseLearning)
+xyplot(proportion.cow ~ treatment, TsetseLearning)
+
+
+
+cleanEx()
+nameEx("TwoKids")
+### * TwoKids
+
+flush(stderr()); flush(stdout())
+
+### Name: TwoKids
+### Title: Number of Boys in Two-Child Families
+### Aliases: TwoKids
+### Keywords: datasets
+
+### ** Examples
+
+data(TwoKids)
+TwoKids
+observed <- TwoKids$count
+expected <- c(585.3, 1221.4, 637.3)
+chisq.test(observed, p = expected, rescale.p = TRUE)
+
+# Alternate calculation, using Pr[male] = 0.512
+# and rbinom. See Figure 5.7-1
+n <- sum(observed)
+pr.m <- 0.512
+pr.f <- 0.488
+
+# Calculate the probabilities of 0, 1, and 2 males
+(pr.0 <- pr.f^2)
+(pr.1 <- pr.m * pr.f + pr.f * pr.m)
+(pr.2 <- pr.m^2)
+
+set.seed(1)
+(expected2 <- c(rbinom(1, n, pr.0),
+                rbinom(1, n, pr.1),
+                rbinom(1, n, pr.2)))
+chisq.test(observed, p = expected2, rescale.p = TRUE)
 
 
 
@@ -3530,15 +3463,15 @@ flush(stderr()); flush(stdout())
 data(VampireBites)
 VampireBites
 
-xtabs(Frequency ~ estrous + bitten, data = VampireBites)
+xtabs(count ~ estrous + bitten, data = VampireBites)
+fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 
-fisher.test(matrix(VampireBites$Frequency, ncol = 2))
 
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
 source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
-g.test(matrix(VampireBites$Frequency, ncol = 2))
-g.test(matrix(VampireBites$Frequency, ncol = 2))$expected
+g.test(xtabs(count ~ estrous + bitten, data = VampireBites))
+g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
 
 
 
@@ -3556,7 +3489,8 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(VasopressinVoles)
-VasopressinVoles
+xyplot(percent ~ treatment, VasopressinVoles, type=c('p','a'))
+bwplot(percent ~ treatment, VasopressinVoles)
 
 
 
@@ -3574,7 +3508,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Vines)
-Vines
+xyplot(nonclimbing ~ climbing, Vines, scales=list(log=TRUE))
 
 
 
@@ -3592,8 +3526,13 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(VoleDispersal)
-str(VoleDispersal)
-VoleDispersal
+xtabs(count~sex+homeranges,VoleDispersal)
+barchart( xtabs(count~sex+homeranges,VoleDispersal), auto.key=TRUE)
+barchart(count~sex+homeranges,VoleDispersal)
+barchart(count~sex,groups=homeranges,VoleDispersal)
+barchart(count~sex,groups=homeranges,VoleDispersal,stack=TRUE)
+
+
 
 
 
@@ -3613,7 +3552,7 @@ flush(stderr()); flush(stdout())
 data(WalkingStickFemurs)
 str(WalkingStickFemurs)
 
-aovfit <- aov(femurlength ~ specimen, data = WalkingStickFemurs)
+aovfit <- aov(femur.length ~ specimen, data = WalkingStickFemurs)
 aovfit
 (aov.summary <- summary(aovfit))
 MS.groups <- aov.summary[[1]]$"Mean Sq"[1]
@@ -3626,7 +3565,7 @@ MS.error <- aov.summary[[1]]$"Mean Sq"[2]
 var.among / (var.among + MS.error)
 
 # Can use Error() with varcomps() and repeatability()
-aovfit2 <- aov(femurlength ~ 1 + Error(specimen),
+aovfit2 <- aov(femur.length ~ 1 + Error(specimen),
   data = WalkingStickFemurs)
 vc <- varcomps(aovfit2, n = 2)
 vc
@@ -3635,7 +3574,7 @@ R.varcomps
 
 # The same model can be fit with lme()
 require(nlme)
-lme.fit <- lme(femurlength ~ 1, random = ~ 1 | specimen,
+lme.fit <- lme(femur.length ~ 1, random = ~ 1 | specimen,
   data = WalkingStickFemurs)
 summary(lme.fit)
 VarCorr(lme.fit)
@@ -3658,7 +3597,8 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WalkingStickHeads)
-WalkingStickHeads
+aggregate(head.width~specimen, data=WalkingStickHeads, mean) -> WS
+histogram(~head.width, WS)
 
 
 
@@ -3676,7 +3616,24 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WeddellSeals)
-WeddellSeals
+xyplot(oxygen.use.nonfeeding ~ oxygen.use.feeding, WeddellSeals)
+
+
+
+cleanEx()
+nameEx("WillsDebates")
+### * WillsDebates
+
+flush(stderr()); flush(stdout())
+
+### Name: WillsDebates
+### Title: Presidential "Wills"
+### Aliases: WillsDebates
+### Keywords: datasets
+
+### ** Examples
+
+data(WillsDebates)
 
 
 
@@ -3694,7 +3651,6 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WillsPresidents)
-WillsPresidents
 
 
 
@@ -3712,8 +3668,53 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WolfTeeth)
-WolfTeeth
-hist(WolfTeeth)
+histogram(~length, WolfTeeth)
+
+
+
+cleanEx()
+nameEx("Wolves")
+### * Wolves
+
+flush(stderr()); flush(stdout())
+
+### Name: Wolves
+### Title: Inbreeding in Wolves
+### Aliases: Wolves
+### Keywords: datasets
+
+### ** Examples
+
+data(Wolves)
+Wolves
+
+# Plot with jitter() to separate integer numbers of pups on y axis
+plot(jitter(pups) ~ inbreeding.coefficient, data = Wolves,
+  xlab = "Inbreeding Coefficient",
+  ylab = "Number of Pups",
+  pch = 16, col = "red")
+
+(sum.products <- sum_of_products(
+  Wolves$inbreeding.coefficient,
+  Wolves$pups))
+
+SS.inbreeding <- sum_of_squares(
+  Wolves$inbreeding.coefficient)
+SS.pups <- sum_of_squares(Wolves$pups)
+(r <- sum.products / (sqrt(SS.inbreeding) * sqrt(SS.pups)))
+
+# Testing the null hypothesis of zero correlation
+n <- nrow(Wolves)
+(SE.r <- sqrt((1 - r^2) / (n - 2)))
+(t.stat <- r / SE.r)
+2 * pt(t.stat, df = (n - 2))
+
+# Or using rounded values from p. 440
+2 * pt(-3.60, 22)
+
+# With cor.test()
+cor.test(Wolves$inbreeding.coefficient,
+  Wolves$pups)
 
 
 
@@ -3731,7 +3732,8 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WorldCup)
-WorldCup
+xyplot(count ~ score, WorldCup, type='h', lwd=4)
+barchart(count ~ score, WorldCup, horizontal=FALSE)
 
 
 
@@ -3749,7 +3751,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WrasseSexes)
-WrasseSexes
+xtabs(count ~ males + females, WrasseSexes)
 
 
 
@@ -3768,7 +3770,7 @@ flush(stderr()); flush(stdout())
 
 data(YeastRegulatoryGenes)
 str(YeastRegulatoryGenes)
-YeastRegulatoryGenes
+barchart(count ~ genes.controlled , YeastRegulatoryGenes, horizontal=FALSE)
 
 
 
@@ -3852,39 +3854,20 @@ summary(aov.fit)
 
 
 cleanEx()
-nameEx("ci")
-### * ci
-
-flush(stderr()); flush(stdout())
-
-### Name: ci
-### Title: Confidence Interval for the Mean of a Normal Distribution
-### Aliases: ci print.ci
-### Keywords: univar
-
-### ** Examples
-
-data(Stalkies)
-ci(Stalkies)
-
-
-
-cleanEx()
 nameEx("cumfreq")
 ### * cumfreq
 
 flush(stderr()); flush(stdout())
 
 ### Name: cumfreq
-### Title: Cumulative Frequency Plots
-### Aliases: cumfreq cumfreq.formula cumfreq.default panel.cumfreq
-###   prepanel.cumfreq
+### Title: Cumulative frequency plots
+### Aliases: cumfreq cumfreq.default panel.cumfreq prepanel.cumfreq
+###   cumfreq.formula
 ### Keywords: graphics
 
 ### ** Examples
 
-cumfreq(~Sepal.Length, groups=Species, data=iris)
-cumfreq(~Sepal.Length, groups=Species, data=iris, type='step')
+cumfreq(~count,DesertBirds, xlab='Species Abundance')
 
 
 
@@ -3922,16 +3905,24 @@ data(AspirinCancer)
 AspirinCancer
 
 # Specifying col.exp as character
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "Frequency")
+AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
 str(AspirinCancer.expanded)
+xtabs(~treatment + cancer, AspirinCancer.expanded)
 
 # Specifying col.exp as numeric
 AspirinCancer.expanded <- expand.dft(AspirinCancer, 3)
 str(AspirinCancer.expanded)
+xtabs(~treatment + cancer, AspirinCancer.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ Aspirin.treatment + Cancer, data = AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = AspirinCancer.expanded)
 plot(table(AspirinCancer.expanded), main = "")
+mosaicplot(~treatment + cancer, AspirinCancer.expanded)
+
+# much nicer looking plots using vcd
+if(require(vcd)) {
+	mosaic(~treatment + cancer, AspirinCancer.expanded)
+}
 
 
 
@@ -3974,6 +3965,27 @@ pval(var.test(rnorm(10,sd=1), rnorm(20, sd=2)))
 
 
 cleanEx()
+nameEx("meanCI")
+### * meanCI
+
+flush(stderr()); flush(stdout())
+
+### Name: meanCI
+### Title: Confidence Intervals and P-values for a Mean
+### Aliases: meanCI meanPval propCI propPval
+### Keywords: univar
+
+### ** Examples
+
+bwplot(extra ~ group, data = sleep)
+meanCI(extra ~ group, data = sleep)
+meanPval(extra ~ group, data = sleep)
+propCI(60,100)
+propPval(60,100)
+
+
+
+cleanEx()
 nameEx("odds.ratio")
 ### * odds.ratio
 
@@ -3999,24 +4011,6 @@ odds.ratio(M2)
 
 
 cleanEx()
-nameEx("prop.ci")
-### * prop.ci
-
-flush(stderr()); flush(stdout())
-
-### Name: prop.ci
-### Title: Agresti-Coull CI for a Binomial Proportion
-### Aliases: prop.ci print.prop.ci
-### Keywords: univar
-
-### ** Examples
-
-prop.ci(7, 50)
-prop.ci(7, 50, conf.level = 0.99)
-
-
-
-cleanEx()
 nameEx("repeatability")
 ### * repeatability
 
@@ -4030,7 +4024,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WalkingStickFemurs)
-aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
+aovfit <- aov(femur.length ~ 1 + Error(specimen), data = WalkingStickFemurs)
 vc <- varcomps(aovfit, n = 2)
 vc
 R.varcomps <- repeatability(vc)
@@ -4068,14 +4062,21 @@ nameEx("selection")
 
 flush(stderr()); flush(stdout())
 
-### Name: selection
+### Name: Selection
 ### Title: Data for Meta-analysis
-### Aliases: selection
+### Aliases: Selection
 ### Keywords: datasets
 
 ### ** Examples
 
-data(selection)
+data(Selection)
+histogram(~strength.of.selection, Selection,n=40)
+table(Selection$species) -> s
+table(s)
+s[s>10] # most common species
+table(Selection$traitname) -> t
+table(t)
+t[t>10] # most common traits
 
 
 
@@ -4115,11 +4116,31 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WalkingStickFemurs)
-aovfit <- aov(femurlength ~ 1 + Error(specimen), data = WalkingStickFemurs)
+aovfit <- aov(femur.length ~ 1 + Error(specimen), data = WalkingStickFemurs)
 vc <- varcomps(aovfit, n = 2)
 vc
 R.varcomps <- repeatability(vc)
 R.varcomps
+
+
+
+cleanEx()
+nameEx("wilsonCI")
+### * wilsonCI
+
+flush(stderr()); flush(stdout())
+
+### Name: wilsonCI
+### Title: Wilson (Agresti-Coull) CI for a Binomial Proportion
+### Aliases: wilsonCI print.wilsonCI as.numeric.wilsonCI
+### Keywords: univar
+
+### ** Examples
+
+propCI(7, 50)
+propCI(7, 50, conf.level = 0.99)
+# should be very close to the score interval of prop.test
+prop.test(7,50)
 
 
 

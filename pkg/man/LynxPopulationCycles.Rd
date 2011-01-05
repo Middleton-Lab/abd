@@ -7,15 +7,16 @@ Population Cycles of Lynx in Canada 1752-1819
 }
 
 \description{
-Number of lynx pelts (\code{no.pelts}) reported in Canada per year from 1752 to 1819.
+Number of lynx pelts (\code{pelts}) reported in Canada per year from 
+1752 to 1819.
 }
 
 \usage{data(LynxPopulationCycles)}
 \format{
   A data frame with 68 observations on the following 2 variables.
   \describe{
-    \item{\code{date}}{a numeric vector}
-    \item{\code{no.pelts}}{a numeric vector}
+    \item{\code{year}}{a numeric vector}
+    \item{\code{pelts}}{a numeric vector}
   }
 }
 
@@ -34,13 +35,7 @@ Elton, C. and M. Nicholson. 1942. The ten-year cycle in numbers of the lynx in C
 \examples{
 data(LynxPopulationCycles)
 
-plot(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  type = "l",
-  xlab = "Year",
-  ylab = "Lynx fur returns")
-points(LynxPopulationCycles$date, LynxPopulationCycles$no.pelts,
-  col = "red",
-  pch = 16)
+xyplot(pelts ~ year, LynxPopulationCycles, type=c('p','l'))
 
 \dontrun{
 # Alternate form converting to Date class.

@@ -1,17 +1,17 @@
-\name{Sample}
-\alias{Sample}
-\alias{Sample.data.frame}
-\alias{Sample.default}
+\name{sample}
+\alias{sample}
+\alias{sample.data.frame}
+\alias{sample.default}
 \docType{package}
 \title{Random Samples and Permutations}
 \description{
-\code{Sample} takes a sample of the specified size from the elements of 
-\code{x} either with or without replacement.  Unlike \code{sample},
-\code{Sample} handles data frames in a reasonable manner.
+\code{sample} takes a sample of the specified size from the elements of 
+\code{x} either with or without replacement.  Unlike \code{base::sample},
+\code{sample} handles data frames in a reasonable manner.
 }
 
 \usage{
-Sample(x, size, replace = FALSE, prob = NULL)
+sample(x, size, replace = FALSE, prob = NULL)
 }
 \arguments{
   \item{x}{
@@ -51,6 +51,6 @@ Randall Pruim
 }
 \examples{
 x <- data.frame(letter=letters[1:10], number=1:10)
-Sample(x,3)
+sample(x,3)
 }
 \keyword{manip}

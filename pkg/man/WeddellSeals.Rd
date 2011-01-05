@@ -14,9 +14,9 @@ Comparison of oxygen consumption in feeding vs. non-feeding dives of the same le
 \format{
   A data frame with 10 observations on the following 3 variables.
   \describe{
-    \item{\code{Individual}}{a numeric vector}
-    \item{\code{Oxygen.use.nonfeeding}}{a numeric vector}
-    \item{\code{Oxygen.use.feeding}}{a numeric vector}
+    \item{\code{individual}}{a numeric vector}
+    \item{\code{oxygen.use.nonfeeding}}{a numeric vector}
+    \item{\code{oxygen.use.feeding}}{a numeric vector}
   }
 }
 
@@ -34,7 +34,7 @@ Williams, T.M., L.A. Fuiman, M. Horning, and R.W. Davis. 2004. The cost of forag
 
 \examples{
 data(WeddellSeals)
-WeddellSeals
+xyplot(oxygen.use.nonfeeding ~ oxygen.use.feeding, WeddellSeals)
 }
 
 \keyword{datasets}

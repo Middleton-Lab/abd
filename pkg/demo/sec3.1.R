@@ -34,13 +34,13 @@ sd(gs$undulation.rate) / mean(gs$undulation.rate)
 # using built-in cv() function from abd
 cv(gs$undulation.rate)
 
-n <- sum(CriminalConvictions$no.boys)
+n <- sum(Convictions$boys)
 # mean number of convictions
-Ybar <- with(CriminalConvictions, 
-	sum(no.convictions * no.boys / n)); Ybar
+Ybar <- with(Convictions, 
+	sum(convictions * boys / n)); Ybar
 # sum of squares
-SS <- with( CriminalConvictions, 
-	sum( (no.convictions-Ybar)^2 * no.boys) ); SS
+SS <- with( Convictions, 
+	sum( (convictions-Ybar)^2 * boys) ); SS
 # variance
 SS / (n-1)
 # standard deviation

@@ -12,7 +12,10 @@ Measurement (cm) of the distance between the canine and last molar teeth in 35 w
 \usage{data(WolfTeeth)}
 
 \format{
-A numeric vector with 35 observations.
+A data frame with 35 observations of one variable.  
+\describe{
+\item{\code{length}}{distance from canine to last molar teach (cm)}
+}
 }
 
 %\details{
@@ -29,8 +32,7 @@ Whitlock, M. 1996. The heritability of fluctuating asymmetry and the genetic con
 
 \examples{
 data(WolfTeeth)
-WolfTeeth
-hist(WolfTeeth)
+histogram(~length, WolfTeeth)
 }
 
 \keyword{datasets}

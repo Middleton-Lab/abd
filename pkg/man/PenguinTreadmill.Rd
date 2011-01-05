@@ -34,7 +34,7 @@ Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and R. L. Holder. 2001. Hea
 \examples{
 data(PenguinTreadmill)
 str(PenguinTreadmill)
-PenguinTreadmill
+dotplot(slope~group, PenguinTreadmill)
 }
 
 \keyword{datasets}

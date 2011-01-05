@@ -14,8 +14,8 @@ Number of goals per team during the 2002 World Cup.
 \format{
   A data frame with 7 observations on the following 2 variables.
   \describe{
-    \item{\code{Score}}{a numeric vector}
-    \item{\code{Count}}{a numeric vector}
+    \item{\code{score}}{a numeric vector}
+    \item{\code{count}}{a numeric vector}
   }
 }
 
@@ -33,7 +33,8 @@ Number of goals per team during the 2002 World Cup.
 
 \examples{
 data(WorldCup)
-WorldCup
+xyplot(count ~ score, WorldCup, type='h', lwd=4)
+barchart(count ~ score, WorldCup, horizontal=FALSE)
 }
 
 \keyword{datasets}

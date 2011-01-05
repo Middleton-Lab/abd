@@ -34,6 +34,9 @@ Hypothetical probability of a toad being right-handed
 \examples{
 data(Toads)
 Toads
+xyplot(prob~n.toads, Toads, type='h', lwd=4)
+barchart(prob~n.toads, Toads, horizontal=FALSE)
+
 barplot(Toads$prob,
   ylim = c(0, 0.20),
   names.arg = Toads$n.toads,
