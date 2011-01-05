@@ -1,0 +1,9 @@
+candidate,winner,rounded.wills,loser,difference,year,candidate,winner,rounded.wills,loser,difference,year
+Kennedy,y,163,122,41,1960,Nixon,n,122,,,1960
+Carter,y,68,32,36,1976,Ford,n,32,,,1976
+Reagan,y,19,18,1,1980,Carter,n,18,,,1980
+Bush,y,111,85,26,1988,Dukakis,n,85,,,1988
+Clinton,y,79,75,4,1992,Bush,n,75,,,1992
+Clinton,y,56,33,23,1996,Dole,n,33,,,1996
+Gore,y,68,48,20,2000,Bush,n,48,,,2000
+Bush,y,176,149,27,2004,Kerry,n,149,,,2004

@@ -1,4 +1,4 @@
-candidate,winner,wills,loser,difference,year
+candidate,winner,wills,loser.wills,difference,year
 Kennedy,y,163,122,41,1960
 Nixon,n,122,,,1960
 Carter,y,68,32,36,1976

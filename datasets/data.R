@@ -42,6 +42,12 @@ SexualSelection$taxon.pair = toupper(letters[1:25])
 Dioecy$taxon.pair <- 1:nrow(Dioecy)
 BrookTrout$proportion.surviving <- with(BrookTrout, salmon.survived/salmon.released)
 
+# some little tweaks
+
+DayOfBirth$day <- with(DayOfBirth, ordered(day, levels=day))
+Powerball$day <- with(Powerball, ordered(day, levels=day))
+
+
 
 # save the data to .rda files
 data_dir <- "data"

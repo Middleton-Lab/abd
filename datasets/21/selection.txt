@@ -1,4 +1,4 @@
-species	traitname	Strength of selection	Sample size	authors	year	journal	vol:p-p
+species	traitname	Strength of selection	Sample size	authors	year 	journal	volume.pages
 Gryllus pennsylvanicus	Pronotum Length	0.175	47	Zuk	1988	Evolution	42:969-976
 Gryllus pennsylvanicus	Body Length	0.08	47	Zuk	1988	Evolution	42:969-977
 Gryllus pennsylvanicus	Age	0.38	47	Zuk	1988	Evolution	42:969-978
@@ -9,17 +9,17 @@ Geospiza conirostris	Bill Depth	0.59	14	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Length	0.5	14	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Width	-0.37	14	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Plumage color	0.32	23	Grant	1985	Evolution	39:523-532
-Geospiza conirostris	Neighbor's song type	0.26	23	Grant	1985	Evolution	39:523-532
+Geospiza conirostris	"Neighbor's song type"	0.26	23	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Depth	-0.19	23	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Length	0.12	23	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Width	-0.21	23	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Plumage color	0.27	34	Grant	1985	Evolution	39:523-532
-Geospiza conirostris	Neighbor's song type	0.19	34	Grant	1985	Evolution	39:523-532
+Geospiza conirostris	"Neighbor's song type"	0.19	34	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Depth	0.02	34	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Length	-0.17	34	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Width	0.08	34	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Plumage color	0.2	26	Grant	1985	Evolution	39:523-532
-Geospiza conirostris	Neighbor's song type	0.29	26	Grant	1985	Evolution	39:523-532
+Geospiza conirostris	"Neighbor's song type"	0.29	26	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Depth	0.05	26	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Length	0.16	26	Grant	1985	Evolution	39:523-532
 Geospiza conirostris	Bill Width	0.23	26	Grant	1985	Evolution	39:523-532
