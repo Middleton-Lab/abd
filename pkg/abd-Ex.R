@@ -2752,6 +2752,30 @@ Seedlings
 
 
 cleanEx()
+nameEx("Selection")
+### * Selection
+
+flush(stderr()); flush(stdout())
+
+### Name: Selection
+### Title: Data for Meta-analysis
+### Aliases: Selection
+### Keywords: datasets
+
+### ** Examples
+
+data(Selection)
+histogram(~strength.of.selection, Selection,n=40)
+table(Selection$species) -> s
+table(s)
+s[s>10] # most common species
+table(Selection$traitname) -> t
+table(t)
+t[t>10] # most common traits
+
+
+
+cleanEx()
 nameEx("SexualSelection")
 ### * SexualSelection
 
@@ -3854,6 +3878,26 @@ summary(aov.fit)
 
 
 cleanEx()
+nameEx("col.abd")
+### * col.abd
+
+flush(stderr()); flush(stdout())
+
+### Name: col.abd
+### Title: Lattice theme for Analysis of Biological Data
+### Aliases: col.abd
+### Keywords: graphics
+
+### ** Examples
+
+trellis.par.set(theme=col.abd(bw=TRUE))
+show.settings()
+trellis.par.set(theme=col.abd(lty=1))
+show.settings()
+
+
+
+cleanEx()
 nameEx("cumfreq")
 ### * cumfreq
 
@@ -4053,30 +4097,6 @@ sd(y)
 sd(y)/sqrt(n)
 
 se(y)
-
-
-
-cleanEx()
-nameEx("selection")
-### * selection
-
-flush(stderr()); flush(stdout())
-
-### Name: Selection
-### Title: Data for Meta-analysis
-### Aliases: Selection
-### Keywords: datasets
-
-### ** Examples
-
-data(Selection)
-histogram(~strength.of.selection, Selection,n=40)
-table(Selection$species) -> s
-table(s)
-s[s>10] # most common species
-table(Selection$traitname) -> t
-table(t)
-t[t>10] # most common traits
 
 
 
