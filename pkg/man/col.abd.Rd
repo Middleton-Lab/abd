@@ -18,7 +18,7 @@ col.abd(bw = FALSE, lty = 1:7)
 a list that can be used as a \code{lattice} theme.
 }
 \author{
-Randall Pruim
+Randall Pruim (\email{rpruim@calvin.edu})
 }
 
 \seealso{

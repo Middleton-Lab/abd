@@ -26,7 +26,7 @@ cumfreq(x, data, ...)
 %%%  ~~ If necessary, more details than the description above ~~
 %}
 \author{
-Randall Pruim
+Randall Pruim (\email{rpruim@calvin.edu})
 }
 
 

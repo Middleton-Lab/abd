@@ -24,7 +24,7 @@ A \code{numeric}.  As a side-effect, additional information about the interval o
 is printed to the screen.
 }
 \author{
-Randall Pruim
+Randall Pruim (\email{rpruim@calvin.edu})
 }
 
 

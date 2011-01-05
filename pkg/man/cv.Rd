@@ -16,7 +16,7 @@ cv(x)
 
 
 \author{
-Randall Pruim (rpruim@calvin.edu)
+Randall Pruim (\email{rpruim@calvin.edu})
 }
 
 \examples{

@@ -43,7 +43,7 @@ rows in \code{x}.
 }
 
 \author{
-Randall Pruim
+Randall Pruim (\email{rpruim@calvin.edu})
 }
 
 \seealso{
