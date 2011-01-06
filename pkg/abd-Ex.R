@@ -24,27 +24,27 @@ densityplot(~immigration.date, Antilles)
 
 
 cleanEx()
-nameEx("AspirinCancer")
-### * AspirinCancer
+nameEx("Aspirin")
+### * Aspirin
 
 flush(stderr()); flush(stdout())
 
-### Name: AspirinCancer
+### Name: Aspirin
 ### Title: Effects of Aspirin on Cancer Rates
-### Aliases: AspirinCancer
+### Aliases: Aspirin
 ### Keywords: datasets
 
 ### ** Examples
 
-data(AspirinCancer)
-AspirinCancer
+data(Aspirin)
+Aspirin
 
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
-str(AspirinCancer.expanded)
+Aspirin.expanded <- expand.dft(Aspirin, "count")
+str(Aspirin.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ treatment + cancer, data = AspirinCancer.expanded)
-plot(table(AspirinCancer.expanded), main = "")
+plot( ~ treatment + cancer, data = Aspirin.expanded)
+plot(table(Aspirin.expanded), main = "")
 
 # Calculate odds
 (Pr.asp <- 18496 / (18496 + 1438))
@@ -54,7 +54,7 @@ plot(table(AspirinCancer.expanded), main = "")
 (Odds <- Odds.asp / Odds.no.asp)
 ln.Odds <- log(Odds)
 
-(SE.Odds <- sqrt(sum(1/AspirinCancer$count)))
+(SE.Odds <- sqrt(sum(1/Aspirin$count)))
 Z <- 1.96
 (CI.low <- ln.Odds - Z * SE.Odds)
 (CI.high <- ln.Odds + Z * SE.Odds)
@@ -72,21 +72,21 @@ odds.ratio(x)
 
 
 cleanEx()
-nameEx("BeeGeneExpression")
-### * BeeGeneExpression
+nameEx("BeeGenes")
+### * BeeGenes
 
 flush(stderr()); flush(stdout())
 
-### Name: BeeGeneExpression
+### Name: BeeGenes
 ### Title: Foraging Gene Expression
-### Aliases: BeeGeneExpression
+### Aliases: BeeGenes
 ### Keywords: datasets
 
 ### ** Examples
 
-data(BeeGeneExpression)
-str(BeeGeneExpression)
-BeeGeneExpression
+data(BeeGenes)
+str(BeeGenes)
+BeeGenes
 
 
 
@@ -110,21 +110,21 @@ densityplot(~hours, BeeLifespans)
 
 
 cleanEx()
-nameEx("BeetleWingsAndHorns")
-### * BeetleWingsAndHorns
+nameEx("Beetles")
+### * Beetles
 
 flush(stderr()); flush(stdout())
 
-### Name: BeetleWingsAndHorns
+### Name: Beetles
 ### Title: Beetle Wings and Horns
-### Aliases: BeetleWingsAndHorns
+### Aliases: Beetles
 ### Keywords: datasets
 
 ### ** Examples
 
-data(BeetleWingsAndHorns)
-str(BeetleWingsAndHorns)
-xyplot(wing.mass ~ horn.size, BeetleWingsAndHorns)
+data(Beetles)
+str(Beetles)
+xyplot(wing.mass ~ horn.size, Beetles)
 
 
 
@@ -148,50 +148,50 @@ histogram(~corr.coeff, BirdSexRatio, n = 10,
 
 
 cleanEx()
-nameEx("BlackbirdTestosterone")
-### * BlackbirdTestosterone
+nameEx("Blackbirds")
+### * Blackbirds
 
 flush(stderr()); flush(stdout())
 
-### Name: BlackbirdTestosterone
+### Name: Blackbirds
 ### Title: Testosterone Levels in Blackbirds
-### Aliases: BlackbirdTestosterone
+### Aliases: Blackbirds
 ### Keywords: datasets
 
 ### ** Examples
 
-data(BlackbirdTestosterone)
-BlackbirdTestosterone
+data(Blackbirds)
+Blackbirds
 
-plot(log.after ~ log.before, data = BlackbirdTestosterone,
+plot(log.after ~ log.before, data = Blackbirds,
   xlim = c(3.9, 5.1), ylim = c(3.9, 5.1),
   pch = 16, col = "red",
   ylab = "log Antibody production after implant",
   xlab = "log Antibody production before implant")
 abline(b = 1, a = 0)
 
-hist(BlackbirdTestosterone$diff.in.logs,
+hist(Blackbirds$diff.in.logs,
   xlab = "Difference (before - after)", main = "",
   col = "red")
 
-(d.bar <- mean(BlackbirdTestosterone$diff.in.logs))
-(s.d <- sd(BlackbirdTestosterone$diff.in.logs))
-(n <- length(BlackbirdTestosterone$diff.in.logs))
-(se.d <- se(BlackbirdTestosterone$diff.in.logs))
+(d.bar <- mean(Blackbirds$diff.in.logs))
+(s.d <- sd(Blackbirds$diff.in.logs))
+(n <- length(Blackbirds$diff.in.logs))
+(se.d <- se(Blackbirds$diff.in.logs))
 
-meanCI(BlackbirdTestosterone$diff.in.logs)
+meanCI(Blackbirds$diff.in.logs)
 
 (t.stat <- (d.bar - 0)/se.d)
 2 * pt(t.stat, df = 12, lower.tail = TRUE)
 
 qt(0.05/2, df = 12, lower.tail = FALSE)
 
-t.test(BlackbirdTestosterone$log.before,
-  BlackbirdTestosterone$log.after,
+t.test(Blackbirds$log.before,
+  Blackbirds$log.after,
   paired = TRUE, var.equal = TRUE)
 
-meanCI(BlackbirdTestosterone$log.before,
-  BlackbirdTestosterone$log.after,
+meanCI(Blackbirds$log.before,
+  Blackbirds$log.after,
   paired = TRUE, var.equal = TRUE)
 
 
@@ -327,31 +327,31 @@ Cavalry
 
 
 cleanEx()
-nameEx("ChickadeeAlarms")
-### * ChickadeeAlarms
+nameEx("Chickadees")
+### * Chickadees
 
 flush(stderr()); flush(stdout())
 
-### Name: ChickadeeAlarms
+### Name: Chickadees
 ### Title: Alarm Calls in Chickadees
-### Aliases: ChickadeeAlarms
+### Aliases: Chickadees
 ### Keywords: datasets
 
 ### ** Examples
 
-data(ChickadeeAlarms)
-str(ChickadeeAlarms)
-ChickadeeAlarms
+data(Chickadees)
+str(Chickadees)
+Chickadees
 
-lm.fit <- lm(dees ~ mass, data = ChickadeeAlarms)
+lm.fit <- lm(dees ~ mass, data = Chickadees)
 
-plot(dees ~ mass, data = ChickadeeAlarms,
+plot(dees ~ mass, data = Chickadees,
   col = "red", pch = 16,
   xlab = "Predator body mass (kg)",
   ylab = "'Dees' per call")
 abline(lm.fit)
 
-xyplot(dees ~ mass, data = ChickadeeAlarms,
+xyplot(dees ~ mass, data = Chickadees,
    pch = 16, col='red', col.line='black',
    xlab = "Predator body mass (kg)",
    ylab = "'Dees' per call", type=c('p','r')
@@ -822,20 +822,20 @@ xyplot(nitrogen ~ worm.species, Earthworms)
 
 
 cleanEx()
-nameEx("EarwigForceps")
-### * EarwigForceps
+nameEx("Earwigs")
+### * Earwigs
 
 flush(stderr()); flush(stdout())
 
-### Name: EarwigForceps
+### Name: Earwigs
 ### Title: Earwig Density and Forceps
-### Aliases: EarwigForceps
+### Aliases: Earwigs
 ### Keywords: datasets
 
 ### ** Examples
 
-data(EarwigForceps)
-xyplot(proportion.forceps ~ density, data=EarwigForceps, type='h', lwd=6)
+data(Earwigs)
+xyplot(proportion.forceps ~ density, data=Earwigs, type='h', lwd=6)
 
 
 
@@ -994,6 +994,25 @@ z.crit <- qnorm((1 - 0.05/2))
 
 
 cleanEx()
+nameEx("Fireflies")
+### * Fireflies
+
+flush(stderr()); flush(stdout())
+
+### Name: Fireflies
+### Title: Spermatophore Mass in Fireflies
+### Aliases: Fireflies
+### Keywords: datasets
+
+### ** Examples
+
+data(Fireflies)
+str(Fireflies)
+histogram(~sp.mass, Fireflies, n=12)
+
+
+
+cleanEx()
 nameEx("FireflyFlash")
 ### * FireflyFlash
 
@@ -1009,25 +1028,6 @@ flush(stderr()); flush(stdout())
 data(FireflyFlash)
 str(FireflyFlash)
 histogram(~flash, FireflyFlash)
-
-
-
-cleanEx()
-nameEx("FireflySpermatophore")
-### * FireflySpermatophore
-
-flush(stderr()); flush(stdout())
-
-### Name: FireflySpermatophore
-### Title: Spermatophore Mass in Fireflies
-### Aliases: FireflySpermatophore
-### Keywords: datasets
-
-### ** Examples
-
-data(FireflySpermatophore)
-str(FireflySpermatophore)
-histogram(~sp.mass, FireflySpermatophore, n=12)
 
 
 
@@ -1205,48 +1205,48 @@ if(require(vcd)) {
 
 
 cleanEx()
-nameEx("GreenSpaceBiodiversity")
-### * GreenSpaceBiodiversity
+nameEx("Greenspace")
+### * Greenspace
 
 flush(stderr()); flush(stdout())
 
-### Name: GreenSpaceBiodiversity
+### Name: Greenspace
 ### Title: Diversity in Urban Green Space
-### Aliases: GreenSpaceBiodiversity
+### Aliases: Greenspace
 ### Keywords: datasets
 
 ### ** Examples
 
-data(GreenSpaceBiodiversity)
-str(GreenSpaceBiodiversity)
-splom(GreenSpaceBiodiversity[,2:6])
+data(Greenspace)
+str(Greenspace)
+splom(Greenspace[,2:6])
 
 
 
 cleanEx()
-nameEx("GuppyAttractiveness")
-### * GuppyAttractiveness
+nameEx("Guppies")
+### * Guppies
 
 flush(stderr()); flush(stdout())
 
-### Name: GuppyAttractiveness
+### Name: Guppies
 ### Title: Ornamentation and Attractiveness in Guppies
-### Aliases: GuppyAttractiveness
+### Aliases: Guppies
 ### Keywords: datasets
 
 ### ** Examples
 
-data(GuppyAttractiveness)
+data(Guppies)
 
-str(GuppyAttractiveness)
+str(Guppies)
 xyplot(son.attract ~ father.ornament,
-  GuppyAttractiveness,
+  Guppies,
   xlab = "Father's ornamentation",
   ylab = "Son's attractiveness"
   )
 
-plot(GuppyAttractiveness$father.ornament,
-  GuppyAttractiveness$son.attract,
+plot(Guppies$father.ornament,
+  Guppies$son.attract,
   xlab = "Father's ornamentation",
   ylab = "Son's attractiveness",
   pch = 16,
@@ -1256,7 +1256,7 @@ plot(GuppyAttractiveness$father.ornament,
 # with ggplot2
 ## Not run: 
 ##D require(ggplot2)
-##D p <- ggplot(GuppyAttractiveness,
+##D p <- ggplot(Guppies,
 ##D   aes(x = father.ornament, y = son.attract))
 ##D p + geom_point(color = "red", size = 3) +
 ##D   scale_x_continuous("Father's ornamentation") +
@@ -1266,23 +1266,23 @@ plot(GuppyAttractiveness$father.ornament,
 
 
 cleanEx()
-nameEx("HemoglobinHighAltitude")
-### * HemoglobinHighAltitude
+nameEx("Hemoglobin")
+### * Hemoglobin
 
 flush(stderr()); flush(stdout())
 
-### Name: HemoglobinHighAltitude
+### Name: Hemoglobin
 ### Title: Hemoglobin Levels in High Altitude Populations
-### Aliases: HemoglobinHighAltitude
+### Aliases: Hemoglobin
 ### Keywords: datasets
 
 ### ** Examples
 
-data(HemoglobinHighAltitude)
+data(Hemoglobin)
 
-str(HemoglobinHighAltitude)
+str(Hemoglobin)
 
-xyplot(relative.frequency ~ hemoglobin | group, HemoglobinHighAltitude,
+xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,
 	type ='h', lwd=4, layout=c(1,4))
 
 ## Not run: 
@@ -1295,7 +1295,7 @@ xyplot(relative.frequency ~ hemoglobin | group, HemoglobinHighAltitude,
 ##D   x = rep(24, times = 4),
 ##D   y = rep(0.4, times = 4))
 ##D 
-##D p <- ggplot(HemoglobinHighAltitude,
+##D p <- ggplot(Hemoglobin,
 ##D   aes(hemoglobin, relative.frequency))
 ##D p + geom_bar(stat="identity", fill = "red")  +
 ##D   facet_grid(group ~ .) +
@@ -1561,25 +1561,6 @@ Hurricanes
 
 
 cleanEx()
-nameEx("HybridPollenSterility")
-### * HybridPollenSterility
-
-flush(stderr()); flush(stdout())
-
-### Name: HybridPollenSterility
-### Title: Sterility in Hybrid Pollens
-### Aliases: HybridPollenSterility
-### Keywords: datasets
-
-### ** Examples
-
-data(HybridPollenSterility)
-str(HybridPollenSterility)
-xyplot(proportion.sterile ~ genetic.distance, HybridPollenSterility)
-
-
-
-cleanEx()
 nameEx("Iguanas")
 ### * Iguanas
 
@@ -1767,21 +1748,21 @@ xyplot(cv ~ age, groups=exploited, LarvalFish)
 
 
 cleanEx()
-nameEx("LefthandednessAndViolence")
-### * LefthandednessAndViolence
+nameEx("Lefthanded")
+### * Lefthanded
 
 flush(stderr()); flush(stdout())
 
-### Name: LefthandednessAndViolence
+### Name: Lefthanded
 ### Title: Left-handedness and Rates of Violence
-### Aliases: LefthandednessAndViolence
+### Aliases: Lefthanded
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LefthandednessAndViolence)
-str(LefthandednessAndViolence)
-xyplot(murder.rate ~ percent.left, LefthandednessAndViolence)
+data(Lefthanded)
+str(Lefthanded)
+xyplot(murder.rate ~ percent.left, Lefthanded)
 
 
 
@@ -1993,30 +1974,30 @@ str(LupusMice)
 
 
 cleanEx()
-nameEx("LynxPopulationCycles")
-### * LynxPopulationCycles
+nameEx("Lynx")
+### * Lynx
 
 flush(stderr()); flush(stdout())
 
-### Name: LynxPopulationCycles
+### Name: Lynx
 ### Title: Population Cycles of Lynx in Canada 1752-1819
-### Aliases: LynxPopulationCycles
+### Aliases: Lynx
 ### Keywords: datasets
 
 ### ** Examples
 
-data(LynxPopulationCycles)
+data(Lynx)
 
-xyplot(pelts ~ year, LynxPopulationCycles, type=c('p','l'))
+xyplot(pelts ~ year, Lynx, type=c('p','l'))
 
 ## Not run: 
 ##D # Alternate form converting to Date class.
-##D Year <- as.Date(paste("01jan", LynxPopulationCycles$date, sep = ""),
+##D Year <- as.Date(paste("01jan", Lynx$date, sep = ""),
 ##D   "%d%b%Y")
-##D LynxPopulationCycles <- cbind(LynxPopulationCycles, Year)
+##D Lynx <- cbind(Lynx, Year)
 ##D 
 ##D require(ggplot2)
-##D p <- ggplot(LynxPopulationCycles, aes(Year, no.pelts))
+##D p <- ggplot(Lynx, aes(Year, no.pelts))
 ##D p + geom_line() + 
 ##D   geom_point(color = "red") +
 ##D   scale_y_continuous("Lynx fur returns") +
@@ -2366,21 +2347,21 @@ xyplot(brain.temp ~ body.temp, OstrichTemp)
 
 
 cleanEx()
-nameEx("PenguinTreadmill")
-### * PenguinTreadmill
+nameEx("Penguins")
+### * Penguins
 
 flush(stderr()); flush(stdout())
 
-### Name: PenguinTreadmill
+### Name: Penguins
 ### Title: Penguin Heart Rate
-### Aliases: PenguinTreadmill
+### Aliases: Penguins
 ### Keywords: datasets
 
 ### ** Examples
 
-data(PenguinTreadmill)
-str(PenguinTreadmill)
-dotplot(slope~group, PenguinTreadmill)
+data(Penguins)
+str(Penguins)
+dotplot(slope~group, Penguins)
 
 
 
@@ -2399,6 +2380,25 @@ flush(stderr()); flush(stdout())
 
 data(PlantPersistence)
 xyplot(generations~treatment, PlantPersistence)
+
+
+
+cleanEx()
+nameEx("Pollen")
+### * Pollen
+
+flush(stderr()); flush(stdout())
+
+### Name: Pollen
+### Title: Sterility in Hybrid Pollens
+### Aliases: Pollen
+### Keywords: datasets
+
+### ** Examples
+
+data(Pollen)
+str(Pollen)
+xyplot(proportion.sterile ~ genetic.distance, Pollen)
 
 
 
@@ -2558,21 +2558,21 @@ Pufferfish
 
 
 cleanEx()
-nameEx("RattlesnakeDigestion")
-### * RattlesnakeDigestion
+nameEx("Rattlesnakes")
+### * Rattlesnakes
 
 flush(stderr()); flush(stdout())
 
-### Name: RattlesnakeDigestion
+### Name: Rattlesnakes
 ### Title: Temperature Change and Meal Size in Rattlesnakes
-### Aliases: RattlesnakeDigestion
+### Aliases: Rattlesnakes
 ### Keywords: datasets
 
 ### ** Examples
 
-data(RattlesnakeDigestion)
-str(RattlesnakeDigestion)
-xyplot(meal.size ~ temp.change, RattlesnakeDigestion)
+data(Rattlesnakes)
+str(Rattlesnakes)
+xyplot(meal.size ~ temp.change, Rattlesnakes)
 
 
 
@@ -2937,20 +2937,20 @@ for (i in 1:3)  {
 
 
 cleanEx()
-nameEx("SparrowReproductiveSuccess")
-### * SparrowReproductiveSuccess
+nameEx("Sparrows")
+### * Sparrows
 
 flush(stderr()); flush(stdout())
 
-### Name: SparrowReproductiveSuccess
+### Name: Sparrows
 ### Title: Lifetime Reproductive Success in House Sparrows
-### Aliases: SparrowReproductiveSuccess
+### Aliases: Sparrows
 ### Keywords: datasets
 
 ### ** Examples
 
-data(SparrowReproductiveSuccess)
-SparrowReproductiveSuccess
+data(Sparrows)
+Sparrows
 
 
 
@@ -3493,9 +3493,12 @@ fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
-source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
-g.test(xtabs(count ~ estrous + bitten, data = VampireBites))
-g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
+try({
+	source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
+	g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
+	g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
+	}
+)
 
 
 
@@ -3780,21 +3783,21 @@ xtabs(count ~ males + females, WrasseSexes)
 
 
 cleanEx()
-nameEx("YeastRegulatoryGenes")
-### * YeastRegulatoryGenes
+nameEx("YeastGenes")
+### * YeastGenes
 
 flush(stderr()); flush(stdout())
 
-### Name: YeastRegulatoryGenes
+### Name: YeastGenes
 ### Title: Yeast Regulatory Genes
-### Aliases: YeastRegulatoryGenes
+### Aliases: YeastGenes
 ### Keywords: datasets
 
 ### ** Examples
 
-data(YeastRegulatoryGenes)
-str(YeastRegulatoryGenes)
-barchart(count ~ genes.controlled , YeastRegulatoryGenes, horizontal=FALSE)
+data(YeastGenes)
+str(YeastGenes)
+barchart(count ~ genes.controlled , YeastGenes, horizontal=FALSE)
 
 
 
@@ -3853,26 +3856,26 @@ str(ZooMortality)
 
 
 cleanEx()
-nameEx("ZooplanktonDepredation")
-### * ZooplanktonDepredation
+nameEx("Zooplankton")
+### * Zooplankton
 
 flush(stderr()); flush(stdout())
 
-### Name: ZooplanktonDepredation
+### Name: Zooplankton
 ### Title: Zooplankton Depredation
-### Aliases: ZooplanktonDepredation
+### Aliases: Zooplankton
 ### Keywords: datasets
 
 ### ** Examples
 
-data(ZooplanktonDepredation)
-ZooplanktonDepredation
+data(Zooplankton)
+Zooplankton
 
-ZooplanktonDepredation$block <- factor(ZooplanktonDepredation$block)
-str(ZooplanktonDepredation)
+Zooplankton$block <- factor(Zooplankton$block)
+str(Zooplankton)
 
 aov.fit <- aov(zooplankton ~ block + treatment,
-  data = ZooplanktonDepredation)
+  data = Zooplankton)
 summary(aov.fit)
 
 
@@ -3933,6 +3936,24 @@ cv(GlidingSnakes$undulation.rate)
 
 
 cleanEx()
+nameEx("dataInfo")
+### * dataInfo
+
+flush(stderr()); flush(stdout())
+
+### Name: dataInfo
+### Title: 'abd' Data Sets
+### Aliases: dataInfo
+### Keywords: datasets
+
+### ** Examples
+
+data(dataInfo)
+str(dataInfo)
+
+
+
+cleanEx()
 nameEx("expand.dft")
 ### * expand.dft
 
@@ -3945,27 +3966,27 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-data(AspirinCancer)
-AspirinCancer
+data(Aspirin)
+Aspirin
 
 # Specifying col.exp as character
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
-str(AspirinCancer.expanded)
-xtabs(~treatment + cancer, AspirinCancer.expanded)
+Aspirin.expanded <- expand.dft(Aspirin, "count")
+str(Aspirin.expanded)
+xtabs(~treatment + cancer, Aspirin.expanded)
 
 # Specifying col.exp as numeric
-AspirinCancer.expanded <- expand.dft(AspirinCancer, 3)
-str(AspirinCancer.expanded)
-xtabs(~treatment + cancer, AspirinCancer.expanded)
+Aspirin.expanded <- expand.dft(Aspirin, 3)
+str(Aspirin.expanded)
+xtabs(~treatment + cancer, Aspirin.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ treatment + cancer, data = AspirinCancer.expanded)
-plot(table(AspirinCancer.expanded), main = "")
-mosaicplot(~treatment + cancer, AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = Aspirin.expanded)
+plot(table(Aspirin.expanded), main = "")
+mosaicplot(~treatment + cancer, Aspirin.expanded)
 
 # much nicer looking plots using vcd
 if(require(vcd)) {
-	mosaic(~treatment + cancer, AspirinCancer.expanded)
+	mosaic(~treatment + cancer, Aspirin.expanded)
 }
 
 
@@ -3985,6 +4006,30 @@ flush(stderr()); flush(stdout())
 
 favstats(1:10)
 favstats(faithful$eruptions)
+
+
+
+cleanEx()
+nameEx("findData")
+### * findData
+
+flush(stderr()); flush(stdout())
+
+### Name: findData
+### Title: Find data in _Analysis of Biological Data_
+### Aliases: findData
+### Keywords: datasets
+
+### ** Examples
+
+# find all data from examples in chapters 3 and 4
+findData(3:4, 'Example')
+# order doesn't matter
+findData('Example', 3:4)
+# look for data sets with Example in their name.
+findData(pattern='Example')
+# look for data sets with Exercise in their name.
+findData('Exercise')
 
 
 

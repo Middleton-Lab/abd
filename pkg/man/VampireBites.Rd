@@ -42,9 +42,12 @@ fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
-source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r")
-g.test(xtabs(count ~ estrous + bitten, data = VampireBites))
-g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
+try({
+	source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
+	g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
+	g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
+	}
+)
 }
 
 \keyword{datasets}

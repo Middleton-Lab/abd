@@ -44,27 +44,27 @@ Modified for the \code{abd} package by Kevin Middleton from a function posted by
 }
 
 \examples{
-data(AspirinCancer)
-AspirinCancer
+data(Aspirin)
+Aspirin
 
 # Specifying col.exp as character
-AspirinCancer.expanded <- expand.dft(AspirinCancer, "count")
-str(AspirinCancer.expanded)
-xtabs(~treatment + cancer, AspirinCancer.expanded)
+Aspirin.expanded <- expand.dft(Aspirin, "count")
+str(Aspirin.expanded)
+xtabs(~treatment + cancer, Aspirin.expanded)
 
 # Specifying col.exp as numeric
-AspirinCancer.expanded <- expand.dft(AspirinCancer, 3)
-str(AspirinCancer.expanded)
-xtabs(~treatment + cancer, AspirinCancer.expanded)
+Aspirin.expanded <- expand.dft(Aspirin, 3)
+str(Aspirin.expanded)
+xtabs(~treatment + cancer, Aspirin.expanded)
 
 # Plot 2X2 Contingency tables
-plot( ~ treatment + cancer, data = AspirinCancer.expanded)
-plot(table(AspirinCancer.expanded), main = "")
-mosaicplot(~treatment + cancer, AspirinCancer.expanded)
+plot( ~ treatment + cancer, data = Aspirin.expanded)
+plot(table(Aspirin.expanded), main = "")
+mosaicplot(~treatment + cancer, Aspirin.expanded)
 
 # much nicer looking plots using vcd
 if(require(vcd)) {
-	mosaic(~treatment + cancer, AspirinCancer.expanded)
+	mosaic(~treatment + cancer, Aspirin.expanded)
 }
 }
 
