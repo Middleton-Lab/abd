@@ -5,8 +5,17 @@ dataNames <- read.csv('dataNames.csv')
 dataFiles <- read.csv('dataFiles.csv')
 levels(dataIDs$type) <- c('Example','Problem')
 dataInfo <- cbind(dataNames,dataIDs)
+save(dataInfo, file='dataInfo.rda')
 
-findData <- function(chapters=1:18, types=c('Example','Problem'), pattern='*',ignore.case=TRUE) {
+
+findData <- function(x, chapters=1:21, types=c('Example','Problem'), pattern='*',ignore.case=TRUE) {
+	if (! missing(x) ) {
+		if ( all( x %in% c('Example','Problem') ) ) { 
+			types <- x 
+		}
+		if (is.character(x)) { pattern <- x }
+		if (is.numeric(x)) { chapters <- x }
+	}
 	return(subset(dataInfo,
 				chapter %in% chapters & 
 				type %in% types &
@@ -46,7 +55,6 @@ BrookTrout$proportion.surviving <- with(BrookTrout, salmon.survived/salmon.relea
 
 DayOfBirth$day <- with(DayOfBirth, ordered(day, levels=day))
 Powerball$day <- with(Powerball, ordered(day, levels=day))
-
 
 
 # save the data to .rda files
