@@ -35,7 +35,7 @@ Liberg, O.H., H. Andr√©n, H.-C. Pedersen, H. Sand, D. Sejberg, P. Wabakken, M. √
 \examples{
 data(Wolves)
 Wolves
-xyplot(inbreeding.coefficient ~ jutter(pups, amount=0.15, Wolves)
+xyplot( inbreeding.coefficient ~ jutter(pups, amount=0.15, Wolves) )
 }
 
 \keyword{datasets}

@@ -760,7 +760,7 @@ flush(stderr()); flush(stdout())
 
 data(FingerRatio)
 str(FingerRatio)
-xyplot(finger.ratio ~ CAGrepeats, FingerRatio
+xyplot(finger.ratio ~ CAGrepeats, FingerRatio,
   xlab = "Number of CAG Repeats",
   ylab = "2D:4D Ratio"
 )
