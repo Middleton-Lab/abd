@@ -5,6 +5,25 @@ library('abd')
 
 assign(".oldSearch", search(), pos = 'CheckExEnv')
 cleanEx()
+nameEx("AlgaeCO2")
+### * AlgaeCO2
+
+flush(stderr()); flush(stdout())
+
+### Name: AlgaeCO2
+### Title: Carbon Dioxide and Growth Rate in Algae
+### Aliases: AlgaeCO2
+### Keywords: datasets
+
+### ** Examples
+
+data(AlgaeCO2)
+AlgaeCO2
+xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p','a'))
+
+
+
+cleanEx()
 nameEx("Antilles")
 ### * Antilles
 
@@ -462,25 +481,6 @@ flush(stderr()); flush(stdout())
 data(Clearcuts)
 str(Clearcuts)
 histogram(~biomass.change, Clearcuts)
-
-
-
-cleanEx()
-nameEx("CocaineCO2")
-### * CocaineCO2
-
-flush(stderr()); flush(stdout())
-
-### Name: CocaineCO2
-### Title: Carbon Dioxide and Growth Rate
-### Aliases: CocaineCO2
-### Keywords: datasets
-
-### ** Examples
-
-data(CocaineCO2)
-CocaineCO2
-xyplot(growthrate ~ treatment, CocaineCO2, type=c('p','a'))
 
 
 

@@ -1,17 +1,17 @@
-\name{CocaineCO2}
-\alias{CocaineCO2}
+\name{AlgaeCO2}
+\alias{AlgaeCO2}
 
 \docType{data}
 
 \title{
-Carbon Dioxide and Growth Rate
+Carbon Dioxide and Growth Rate in Algae
 }
 
 \description{
 Growth rates of the unicellular alga \emph{Chlamydomonas} after 1,000 generations of selection under \code{High} and \code{Normal} levels of carbon dioxide.
 }
 
-\usage{data(CocaineCO2)}
+\usage{data(AlgaeCO2)}
 \format{
   A data frame with 14 observations on the following 2 variables.
   \describe{
@@ -33,9 +33,9 @@ Collins, S. and G. Bell. 2004. Phenotypic consequences of 1,000 generations of s
 }
 
 \examples{
-data(CocaineCO2)
-CocaineCO2
-xyplot(growthrate ~ treatment, CocaineCO2, type=c('p','a'))
+data(AlgaeCO2)
+AlgaeCO2
+xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p','a'))
 }
 
 \keyword{datasets}

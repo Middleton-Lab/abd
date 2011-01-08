@@ -12,8 +12,8 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
   \tabular{ll}{
 	Package: \tab abd\cr
 	Type: \tab Package\cr
-	Version: \tab 0.1-8\cr
-	Date: \tab 2011-1-5\cr
+	Version: \tab 0.1-9\cr
+	Date: \tab 2011-1-8\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
 }
@@ -28,7 +28,7 @@ This File\tab \code{?abd}\cr
 }
 
 \author{
-Kevin M. Middleton \url{kmm@csusb.edu}
+Kevin M. Middleton (\url{kmm@csusb.edu}); Randall Pruim (\url{rpruim@calvin.edu})
 }
 
 \references{Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of Biological Data}. Roberts and Company Publishers. ISBN: 0981519407. \url{http://www.roberts-publishers.com/whitlock/}}
