@@ -37,8 +37,8 @@ Body condition (\code{offspring.condition}) in 36 dung beetles (\emph{Onthophagu
 data(DungBeetles)
 str(DungBeetles)
 xyplot(offspring.condition ~ factor(id), DungBeetles, 
-	xlab='Dung Beetle', 
-	ylab='offspring condition')
+  xlab='Dung Beetle', 
+  ylab='offspring condition')
 }
 
 \keyword{datasets}

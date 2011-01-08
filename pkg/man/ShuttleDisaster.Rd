@@ -24,7 +24,7 @@ Data on \code{temperature} and number of O-ring \code{failures} for 23 space shu
 %}
 
 \source{
-Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk Analysis of the Space Shuttle: Pre-Challenger Prediction of Failure. \emph{Journal of the American Statistical Association} 408: 945-957. 
+Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk analysis of the Space Shuttle: Pre-Challenger prediction of failure. \emph{Journal of the American Statistical Association} 408: 945-957. 
 }
 
 \references{
@@ -37,8 +37,8 @@ Tufte, E.R. 1997. \emph{Visual Explanations: Images and Quantities, Evidence and
 data(ShuttleDisaster)
 str(ShuttleDisaster)
 xyplot( jitter(failures,amount=.1) ~ temperature, ShuttleDisaster,
-	ylab='number of failures'
-	)
+  ylab='number of failures'
+  )
 }
 
 \keyword{datasets}

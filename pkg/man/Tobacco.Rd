@@ -25,7 +25,7 @@ Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 %}
 
 \source{
-East, E.M. 1916. Studies On Size Inheritance in \emph{Nicotiana}. \emph{Genetics} 1: 164-176.
+East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}. \emph{Genetics} 1: 164-176.
 }
 
 \references{

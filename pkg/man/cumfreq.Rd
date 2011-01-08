@@ -33,7 +33,9 @@ Randall Pruim (\email{rpruim@calvin.edu})
 \seealso{
 \code{\link{histogram}}, \code{\link{densityplot}}
 }
+
 \examples{
-cumfreq(~count,DesertBirds, xlab='Species Abundance')
+cumfreq(~count, DesertBirds, xlab = 'Species Abundance')
 }
+
 \keyword{ graphics }

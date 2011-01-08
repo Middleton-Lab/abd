@@ -16,6 +16,7 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
 	Date: \tab 2011-1-8\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
+	LazyData: \tab yes\cr
 }
 
 \tabular{ll}{

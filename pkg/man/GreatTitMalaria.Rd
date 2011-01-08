@@ -44,7 +44,7 @@ GTM.raw <- expand.dft(GreatTitMalaria, "count")
 table(GTM.raw)
 
 if(require(vcd)) {
-	mosaic(~treatment + response, GTM.raw)
+  mosaic(~treatment + response, GTM.raw)
 }
 
 }

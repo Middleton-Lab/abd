@@ -36,7 +36,7 @@ data(Hemoglobin)
 str(Hemoglobin)
 
 xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,
-	type ='h', lwd=4, layout=c(1,4))
+  type ='h', lwd=4, layout=c(1,4))
 }
 
 \keyword{datasets}

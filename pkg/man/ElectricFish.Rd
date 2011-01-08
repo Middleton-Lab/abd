@@ -35,14 +35,14 @@ Fernandes, C.C., J. Podos, and J.G. Lundberg. 2004. Amazonian ecology: tributari
 \examples{
 data(ElectricFish)
 ElectricFish
-xyplot(species.upstream ~ species.downstream, data=ElectricFish,
-	panel=function(x,y,...){
-		grid.text(ElectricFish$tributary, x=x, y=y, 
-			rot=45,
-			gp=gpar(cex=.6),
-			default.units='native')
-		}
-	)
+xyplot(species.upstream ~ species.downstream, data = ElectricFish,
+  panel=function(x, y, ...){
+    grid.text(ElectricFish$tributary, x=x, y=y, 
+      rot = 45,
+      gp = gpar(cex=.6),
+      default.units = 'native')
+    }
+  )
 }
 
 \keyword{datasets}

@@ -7,7 +7,7 @@ Testosterone Levels in Blackbirds
 }
 
 \description{
-Experimental manipulation of testosterone levels in male Red-winged Blackbirds and resulting changes in antibody levels
+Experimental manipulation of testosterone levels in male Red-winged Blackbirds (\emph{Agelaius phoeniceus}) and resulting changes in antibody levels
 }
 
 \usage{data(Blackbirds)}

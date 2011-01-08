@@ -64,7 +64,7 @@ mosaicplot(~treatment + cancer, Aspirin.expanded)
 
 # much nicer looking plots using vcd
 if(require(vcd)) {
-	mosaic(~treatment + cancer, Aspirin.expanded)
+  mosaic(~treatment + cancer, Aspirin.expanded)
 }
 }
 

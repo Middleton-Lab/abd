@@ -9,11 +9,11 @@ A utility function to assist users to locate data sets in
 }
 \usage{
 findData(..., 
-	chapters = 1:21, 
-	types = c("Example", "Problem"), 
-	numbers = 1:100, 
-	pattern = "*", 
-	ignore.case = TRUE)
+  chapters = 1:21, 
+  types = c("Example", "Problem"), 
+  numbers = 1:100, 
+  pattern = "*", 
+  ignore.case = TRUE)
 }
 \arguments{
   \item{\dots}{

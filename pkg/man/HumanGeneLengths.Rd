@@ -12,7 +12,7 @@ Lengths in number of nucleotides (\code{gene.length}) for 20,290 human genes
 
 \usage{data(HumanGeneLengths)}
 \format{
-  A data frame with 20290 observations on the following variable.
+  A data frame with 20,290 observations on the following variable.
   \describe{
     \item{\code{gene.length}}{a numeric vector}
   }

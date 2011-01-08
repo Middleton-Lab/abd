@@ -26,7 +26,7 @@ in female and male house sparrows \emph{Passer domesticus} in Norway.
 %}
 
 \source{
-Jensen, H., B.-E. \enc{Sæther}{Saether}, T.H. Ringsby, J. Tufto, S.C. Griffith, and H. Ellegren. 2004. Lifetime reproductive success in relation to morphology in the house sparrow \emph{Passer domesticus}. \emph{Journal of Animal Ecology} 73: 599-611.
+Jensen, H., B.-E. \enc{Sæther}{Saether}, T.H. Ringsby, J. Tufto, S.C. Griffith, and H. Ellegren. 2004. Lifetime reproductive success in relation to morphology in the House Sparrow \emph{Passer domesticus}. \emph{Journal of Animal Ecology} 73: 599-611.
 }
 
 %\references{
