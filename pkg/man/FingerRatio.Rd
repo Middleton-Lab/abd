@@ -34,7 +34,7 @@ The ratio of the lengths of the index finger to the ring finger in 46 males and 
 \examples{
 data(FingerRatio)
 str(FingerRatio)
-xyplot(finger.ratio ~ CAGrepeats, FingerRatio
+xyplot(finger.ratio ~ CAGrepeats, FingerRatio,
   xlab = "Number of CAG Repeats",
   ylab = "2D:4D Ratio"
 )
