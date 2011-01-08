@@ -34,23 +34,5 @@ histogram(~undulation.rate , data=GlidingSnakes, n=7,
   xlab = "Undulation rate (Hz)",
   type='count')
 
-
-# Mean, variance, standard deviation
-n <- length(GlidingSnakes$undulation.rate)
-sum(GlidingSnakes$undulation.rate)/n
-mean(GlidingSnakes$undulation.rate)
-
-# Calculate variance by hand
-with(GlidingSnakes, sum( (undulation.rate - mean(undulation.rate))^2 ) / (n-1))
-# Calculate variance using built-in function
-var(GlidingSnakes$undulation.rate)
-# Standard deviation equals the square root of the variance
-sd(GlidingSnakes$undulation.rate)
-sd(GlidingSnakes$undulation.rate)^2 - var(GlidingSnakes$undulation.rate)
-
-# Coefficient of variation
-CV <- sd(GlidingSnakes$undulation.rate) / mean(GlidingSnakes$undulation.rate) 
-signif(CV,3)
-cv(GlidingSnakes$undulation.rate)
 }
 \keyword{datasets}

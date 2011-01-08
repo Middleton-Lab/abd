@@ -33,33 +33,12 @@ Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in great apes. Nat
 %}
 
 \examples{
-data(ChimpBrains)
-str(ChimpBrains)
-
-# Bootstrap SE
-set.seed(5)
-n <- 10000
-boot.median <- numeric(n)
-for (i in 1:n){
-  samp <- sample(ChimpBrains$asymmetry, 20, replace = TRUE)
-  boot.median[i] <- median(samp)
+data(ChimpBrain)
+xyplot(asymmetry ~ sex, ChimpBrains)
+aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
+if (require( Hmisc ) ) {
+	summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
 }
-hist(boot.median, breaks = 50, col = "red")
-mean(boot.median)
-sd(boot.median) # Bootstrap standard error
-
-sorted.boot <- sort(boot.median)
-
-# Lower
-sorted.boot[250]
-
-# Upper
-sorted.boot[9751]
-
-# Using boot()
-require(boot)
-boot.median <- function(x, i) median(x[i])
-boot(ChimpBrains$asymmetry, boot.median, 10000)
 }
 
 \keyword{datasets}

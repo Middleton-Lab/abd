@@ -31,20 +31,6 @@ Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition dependence and adaptati
 data(SockeyeFemales)
 str(SockeyeFemales)
 summary(SockeyeFemales)
-# Figure 2.1-4 from Analysis of Biological Data
-plots <- list()
-for (b in c(0.1, 0.3, 0.5)) {
-  p <- histogram(~mass, data=SockeyeFemales, 
-  		breaks = seq(1,4,by=b),
-   	 	col = "red",
-		type='count',
-   	 	xlab = "Body mass (kg)"
-	)
-	plots <- c(plots,list(p))
-}
-for (i in 1:3)  {
-	print(plots[[i]], split=c(i,1,3,1), more=(i<3))
-}
 }
 
 \keyword{datasets}

@@ -33,41 +33,10 @@ Sauer, J.R., J.E. Hines, and J. Fallon. 2003. The North American breeding bird s
 
 \examples{
 data(DesertBirds)
-
 str(DesertBirds)
-
-hist(DesertBirds$count,
-  breaks = 12,
-  ylab = "Frequency (Number of Species)",
-  xlab = "Abundance",
-  main = "",
-  col = "red")
-
-\dontrun{
-# With ggplot2
-require(ggplot2)
-p <- ggplot(DesertBirds, aes(count))
-p + geom_histogram(binwidth = 40, fill = "red") +
-  scale_x_continuous("Abundance") +
-  scale_y_continuous("Frequency (Number of Species)")}
-
-
-# Similar to Fig. 2.1-1
-count.sort <- sort(DesertBirds$count)
-count.relfreq <- cumsum(count.sort)/max(cumsum(count.sort))
-plot(count.sort, count.relfreq,
-  type = "l",
-  col = "red",
-  xlim = c(0, 700),
-  xlab = "Species abundance",
-  ylab = "Cumulative relative frequency")
-
-\dontrun{
-p <- ggplot(data.frame(count.sort, count.relfreq), 
-  aes(count.sort, count.relfreq))
-p + geom_step(direction = "vh") +
-  scale_x_continuous("Species abundance") +
-  scale_y_continuous("Cumulative relative frequency")}
+histogram( ~count, DesertBirds,
+  xlab = "Abundance"
+  )
 }
 
 \keyword{datasets}

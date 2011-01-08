@@ -36,6 +36,7 @@ Ben-Shahar, Y., A. Robichon, M.B. Sokolowski, and G.E. Robinson. 2002. Influence
 data(BeeGenes)
 str(BeeGenes)
 BeeGenes
+xtabs( expression ~ type + colony, BeeGenes )
 }
 
 \keyword{datasets}

@@ -39,7 +39,6 @@ VampireBites
 xtabs(count ~ estrous + bitten, data = VampireBites)
 fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 
-
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
 try({

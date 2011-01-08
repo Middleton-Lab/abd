@@ -40,12 +40,6 @@ xyplot(years ~ telomere.length, Telomeres,
   ylab = "Telomere length (ratio)"
 )
 
-plot(telomere.length ~ years, data = Telomeres,
-  col = "red",
-  pch = 16,
-  xlab = "Chronicity (years)",
-  ylab = "Telomere length (ratio)"
-)
 }
 
 \keyword{datasets}

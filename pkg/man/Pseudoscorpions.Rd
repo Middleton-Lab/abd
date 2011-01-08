@@ -36,45 +36,6 @@ data(Pseudoscorpions)
 str(Pseudoscorpions)
 bwplot(successful.broods ~ treatment, Pseudoscorpions)
 aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
-
-
-# Shorten names
-PS <- Pseudoscorpions
-names(PS) <- c("tx", "broods")
-
-obs.diff <- mean(PS$broods[PS$tx == "SM"]) - 
-  mean(PS$broods[PS$tx == "DM"])
-obs.diff
-
-set.seed(6)
-n <- 10000
-diffs <- numeric(n)
-for (i in 1:n){
-  rand.broods <- sample(PS$broods)
-  diffs[i] <- mean(rand.broods[PS$tx == "SM"]) - 
-    mean(rand.broods[PS$tx == "DM"])
-}
-
-2 * sum(diffs < obs.diff)/n
-
-hist(diffs, breaks = 50)
-abline(v = obs.diff, col = "red")
-
-# As a two-sample t-test
-# (much slower)
-obs.t <- t.test(broods ~ tx, data = PS)$statistic
-set.seed(6)
-n <- 10000
-ts <- numeric(n)
-for (i in 1:n){
-  rand.broods <- sample(PS$broods)
-  ts[i] <- t.test(rand.broods ~ tx, data = PS)$statistic
-}
-
-2 * sum(ts > obs.t)/n
-
-hist(ts, breaks = 50)
-abline(v = obs.t, col = "red")
 }
 
 \keyword{datasets}

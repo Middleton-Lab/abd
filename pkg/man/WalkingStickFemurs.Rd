@@ -35,34 +35,7 @@ Nosil, P. and B.J. Crespi. 2006. Experimental evidence that predation promotes d
 data(WalkingStickFemurs)
 str(WalkingStickFemurs)
 
-aovfit <- aov(femur.length ~ specimen, data = WalkingStickFemurs)
-aovfit
-(aov.summary <- summary(aovfit))
-MS.groups <- aov.summary[[1]]$"Mean Sq"[1]
-MS.error <- aov.summary[[1]]$"Mean Sq"[2]
-
-# Among-group variance
-(var.among <- (MS.groups - MS.error) / 2)
-
-# Repeatability or Intraclass Correlation
-var.among / (var.among + MS.error)
-
-# Can use Error() with varcomps() and repeatability()
-aovfit2 <- aov(femur.length ~ 1 + Error(specimen),
-  data = WalkingStickFemurs)
-vc <- varcomps(aovfit2, n = 2)
-vc
-R.varcomps <- repeatability(vc)
-R.varcomps
-
-# The same model can be fit with lme()
-require(nlme)
-lme.fit <- lme(femur.length ~ 1, random = ~ 1 | specimen,
-  data = WalkingStickFemurs)
-summary(lme.fit)
-VarCorr(lme.fit)
-R.lme <- repeatability(lme.fit)
-R.lme
+aov(femur.length ~ specimen, data = WalkingStickFemurs)
 }
 
 \keyword{datasets}

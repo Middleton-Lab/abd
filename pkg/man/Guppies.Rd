@@ -40,23 +40,6 @@ xyplot(son.attract ~ father.ornament,
   xlab = "Father's ornamentation",
   ylab = "Son's attractiveness"
   )
-
-plot(Guppies$father.ornament,
-  Guppies$son.attract,
-  xlab = "Father's ornamentation",
-  ylab = "Son's attractiveness",
-  pch = 16,
-  col = "red",
-  ylim = c(-0.5, 1.5))
-
-# with ggplot2
-\dontrun{
-require(ggplot2)
-p <- ggplot(Guppies,
-  aes(x = father.ornament, y = son.attract))
-p + geom_point(color = "red", size = 3) +
-  scale_x_continuous("Father's ornamentation") +
-  scale_y_continuous("Son's attractiveness")}
 }
 
 \keyword{datasets}

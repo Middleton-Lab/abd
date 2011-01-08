@@ -37,18 +37,6 @@ Wiseman, R. and P. Lamont. 1996. Unravelling the Indian rope-trick. \emph{Nature
 data(RopeTrick)
 xyplot(impressiveness ~ years, RopeTrick)
 
-rank.years <- rank(RopeTrick$years)
-rank.imp <- rank(RopeTrick$impressiveness)
-
-sum.prods <- sum_of_products(rank.years, rank.imp)
-SS.years <- sum_of_squares(rank.years)
-SS.imp <- sum_of_squares(rank.imp)
-sum.prods / (sqrt(SS.years) * sqrt(SS.imp))
-
-# With cor.test(); Note warning about ties. See discussion on
-# p. 446.
-cor.test(RopeTrick$years,
-  RopeTrick$impressiveness, method = "spearman")
 }
 
 \keyword{datasets}

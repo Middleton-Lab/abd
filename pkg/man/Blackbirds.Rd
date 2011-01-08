@@ -39,37 +39,10 @@ Hasselquist, D., J.A. Marsh, P.W. Sherman, and J.C. Wingfield. 1999. Is avian im
 \examples{
 data(Blackbirds)
 Blackbirds
-
-plot(log.after ~ log.before, data = Blackbirds,
-  xlim = c(3.9, 5.1), ylim = c(3.9, 5.1),
-  pch = 16, col = "red",
+xyplot( log.after ~ log.before, data = Blackbirds,
   ylab = "log Antibody production after implant",
-  xlab = "log Antibody production before implant")
-abline(b = 1, a = 0)
-
-hist(Blackbirds$diff.in.logs,
-  xlab = "Difference (before - after)", main = "",
-  col = "red")
-
-(d.bar <- mean(Blackbirds$diff.in.logs))
-(s.d <- sd(Blackbirds$diff.in.logs))
-(n <- length(Blackbirds$diff.in.logs))
-(se.d <- se(Blackbirds$diff.in.logs))
-
-meanCI(Blackbirds$diff.in.logs)
-
-(t.stat <- (d.bar - 0)/se.d)
-2 * pt(t.stat, df = 12, lower.tail = TRUE)
-
-qt(0.05/2, df = 12, lower.tail = FALSE)
-
-t.test(Blackbirds$log.before,
-  Blackbirds$log.after,
-  paired = TRUE, var.equal = TRUE)
-
-meanCI(Blackbirds$log.before,
-  Blackbirds$log.after,
-  paired = TRUE, var.equal = TRUE)
+  xlab = "log Antibody production before implant"
+)
 }
 
 \keyword{datasets}

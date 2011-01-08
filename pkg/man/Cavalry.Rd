@@ -37,6 +37,8 @@ NJ.
 \examples{
 data(Cavalry)
 Cavalry
+xyplot(count ~ deaths, Cavalry, type='h', lwd=4)
+barchart(count ~ deaths, Cavalry, horizontal=FALSE,box.ratio=1000)
 }
 
 \keyword{datasets}

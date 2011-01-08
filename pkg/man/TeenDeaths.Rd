@@ -39,21 +39,5 @@ barchart(deaths~ordered(cause, levels=cause), TeenDeaths,
 	scales=list(x=list(rot=45))
 	)
 
-op <- par(no.readonly = TRUE)
-par(mai = c(2, 0.82, 0.25, 0.42),
-  xaxs = "i",
-  yaxs = "i")
-
-barplot(TeenDeaths$deaths,
-  names.arg = TeenDeaths$cause,
-  las = 3,
-  cex.axis = 0.75,
-  cex.names = 0.75,
-  ylim = c(0, 7000),
-  ylab = "Number of Cases (frequency)",
-	col = "red")
-
-par(op)
 }
-
 \keyword{datasets}

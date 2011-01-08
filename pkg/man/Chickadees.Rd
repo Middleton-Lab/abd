@@ -37,21 +37,10 @@ data(Chickadees)
 str(Chickadees)
 Chickadees
 
-lm.fit <- lm(dees ~ mass, data = Chickadees)
-
-plot(dees ~ mass, data = Chickadees,
-  col = "red", pch = 16,
-  xlab = "Predator body mass (kg)",
-  ylab = "'Dees' per call")
-abline(lm.fit)
-
 xyplot(dees ~ mass, data = Chickadees,
-   pch = 16, col='red', col.line='black',
    xlab = "Predator body mass (kg)",
    ylab = "'Dees' per call", type=c('p','r')
 )
-
-summary(lm.fit)
 }
 
 \keyword{datasets}

@@ -32,26 +32,6 @@ Data provided by Kevin Fowler, University College, London.
 \examples{
 data(Stalkies1)
 Stalkies1
-
-n <- nrow(Stalkies1)
-(y.bar <- mean(Stalkies1$eye.span))
-(y.s <- sd(Stalkies1$eye.span))
-(SE.y.bar <- y.s / sqrt(n))
-df <- n - 1
-(t.crit <- qt(0.05/2, df = df, lower.tail = FALSE))
-
-# Lower 95%
-y.bar - (t.crit * SE.y.bar)
-# Upper 95%
-y.bar + (t.crit * SE.y.bar)
-
-# Or use meanCI
-meanCI(Stalkies1$eye.span)
-meanCI(Stalkies1$eye.span, conf.level=0.99)
-
-# Or use t.test
-t.test(Stalkies1$eye.span)
-t.test(Stalkies1$eye.span, conf.level=0.99)
 }
 
 \keyword{datasets}

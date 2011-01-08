@@ -46,15 +46,6 @@ table(GTM.raw)
 if(require(vcd)) {
 	mosaic(~treatment + response, GTM.raw)
 }
-\dontrun{
-# Fig. 2.3-1
-require(ggplot2)
-bar <- ggplot(GreatTitMalaria, 
-  aes(x = Treatment, y = count, fill = Response))
-bar + geom_bar(stat = "identity", position = "dodge")
-
-# Fig. 2.3-2
-bar + geom_bar(stat = "identity", position = "fill")}
 
 }
 

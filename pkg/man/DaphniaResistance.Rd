@@ -35,21 +35,14 @@ Resistance of \emph{Daphnia} eggs to different levels of cyanobacteria (\code{cy
 data(DaphniaResistance)
 str(DaphniaResistance)
 
-DaphniaResistance$cyandensity <-
-  factor(as.character(DaphniaResistance$density), 
-  levels = c("low", "med", "high"))
 
 bwplot(resistance ~ density, DaphniaResistance)
 # with such a small data set, we can display all the data rather than a summary
 xyplot(resistance ~ density, DaphniaResistance)
-
-\dontrun{
-require(ggplot2)
-p <- ggplot(DaphniaResistance, aes(resistance))
-p + geom_histogram(binwidth = 0.05, fill = "red") +
-  scale_x_continuous("Resistance") +
-  scale_y_continuous("Frequency") +
-  facet_grid(cyandensity ~ .)}
+histogram( ~ resistance| density, DaphniaResistance, 
+	strip=FALSE, strip.left = TRUE,
+	layout=c(1,3)
+	)
 }
 
 \keyword{datasets}

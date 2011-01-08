@@ -35,34 +35,7 @@ Liberg, O.H., H. Andr√©n, H.-C. Pedersen, H. Sand, D. Sejberg, P. Wabakken, M. √
 \examples{
 data(Wolves)
 Wolves
-
-# Plot with jitter() to separate integer numbers of pups on y axis
-plot(jitter(pups) ~ inbreeding.coefficient, data = Wolves,
-  xlab = "Inbreeding Coefficient",
-  ylab = "Number of Pups",
-  pch = 16, col = "red")
-
-(sum.products <- sum_of_products(
-  Wolves$inbreeding.coefficient,
-  Wolves$pups))
-
-SS.inbreeding <- sum_of_squares(
-  Wolves$inbreeding.coefficient)
-SS.pups <- sum_of_squares(Wolves$pups)
-(r <- sum.products / (sqrt(SS.inbreeding) * sqrt(SS.pups)))
-
-# Testing the null hypothesis of zero correlation
-n <- nrow(Wolves)
-(SE.r <- sqrt((1 - r^2) / (n - 2)))
-(t.stat <- r / SE.r)
-2 * pt(t.stat, df = (n - 2))
-
-# Or using rounded values from p. 440
-2 * pt(-3.60, 22)
-
-# With cor.test()
-cor.test(Wolves$inbreeding.coefficient,
-  Wolves$pups)
+xyplot(inbreeding.coefficient ~ jutter(pups, amount=0.15, Wolves)
 }
 
 \keyword{datasets}

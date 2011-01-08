@@ -35,39 +35,6 @@ Energy expenditure (\code{ln.energy}) in two castes (\code{caste}) of Damaraland
 \examples{
 data(MoleRats)
 MoleRats
-
-plot(ln.energy ~ ln.mass, data = MoleRats,
-  pch = ifelse(MoleRats$caste == "worker", 1, 16),
-  col = "red",
-  xlab = "Ln Body Mass",
-  ylab = "Ln Daily Energy Expenditure")
-
-# Full model with interaction
-fit1 <- lm(ln.energy ~ caste * ln.mass,
-  data = MoleRats)
-anova(fit1)
-
-# Drop interaction
-fit2 <- lm(ln.energy ~ ln.mass + caste,
-  data = MoleRats)
-anova(fit2)
-
-# The data aren't balanced, so we need to do a "Type III"
-# sums of squares ANOVA using Anova() from the car package.
-if (require(car)) {
-	Anova(fit2, type = "III")
-}
-
-# Also using ancova() from the HH package
-if (require(HH)) {
-	fit3 <- ancova(ln.energy ~ ln.mass * caste,
-	  data = MoleRats)
-	print.ancova(fit3)
-
-	fit4 <- ancova(ln.energy ~ ln.mass + caste,
-	  data = MoleRats)
-	print.ancova(fit4)
-}
 }
 
 \keyword{datasets}

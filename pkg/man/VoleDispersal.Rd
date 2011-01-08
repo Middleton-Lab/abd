@@ -39,8 +39,6 @@ barchart( xtabs(count~sex+homeranges,VoleDispersal), auto.key=TRUE)
 barchart(count~sex+homeranges,VoleDispersal)
 barchart(count~sex,groups=homeranges,VoleDispersal)
 barchart(count~sex,groups=homeranges,VoleDispersal,stack=TRUE)
-
-
 }
 
 \keyword{datasets}

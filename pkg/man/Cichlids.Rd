@@ -38,11 +38,18 @@ Biological Sciences} 272: 237-245.
 data(Cichlids)
 str(Cichlids)
 
-require(plyr)
+if (require(Hmisc)) {
+	summary(preference ~ genotype, Cichlids, fun=favstats)
+} else {
+	aggregate(preference ~ genotype, Cichlids, FUN=favstats)
+}
+
+if (require(plyr)) {
 ddply(Cichlids, .(genotype),
   function(df)c(mean = mean(df$preference),
                 standard.deviation = sd(df$preference),
                 n = length(df$preference)))
+}
 }
 
 \keyword{datasets}

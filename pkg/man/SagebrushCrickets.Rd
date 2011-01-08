@@ -36,45 +36,6 @@ Chadwick Johnson, J., T.M. Ivy, and S.K. Sakaluk. 1999. Female remating propensi
 data(SagebrushCrickets)
 SagebrushCrickets
 str(SagebrushCrickets)
-
-# Subset and extract the time.to.mating data
-starved <- subset(SagebrushCrickets,
-  treatment == "starved")$time.to.mating
-fed <- subset(SagebrushCrickets, treatment == "fed")$time.to.mating
-
-dev.new()
-par(mfrow = c(2, 1))
-hist(starved, xlim = c(0, 100))
-hist(fed, xlim = c(0, 100))
-
-# Sort the SagebrushCrickets data.frame
-sorted <- SagebrushCrickets[order(SagebrushCrickets$time.to.mating), ]
-
-# Add a rank column
-sorted$rank <- 1:24
-sorted
-
-# Extract n
-(n.fed <- length(fed))
-(n.starved <- length(starved))
-
-# Calculate rank sum
-(sum.fed <- sum(sorted$rank[sorted$treatment == "fed"]))
-(sum.starved <- sum(sorted$rank[sorted$treatment == "starved"]))
-
-# Calculate U for each group
-(u.starved <- n.starved * n.fed + 
-  (n.starved * (n.starved + 1) / 2) - sum.starved)
-(u.fed <- n.fed * n.starved - u.starved)
-
-# Choose the larger U
-(u <- max(c(u.starved, u.fed)))
-
-# Critical value for p = 0.05, with n1 = 11 and n2 = 13
-qwilcox(1-(0.05/2), 11, 13)
-
-# Alternately with wilcox.test()
-wilcox.test(time.to.mating ~ treatment, data = SagebrushCrickets)
 }
 
 \keyword{datasets}

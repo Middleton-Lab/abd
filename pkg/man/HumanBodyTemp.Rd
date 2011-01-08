@@ -41,23 +41,6 @@ data(HumanBodyTemp)
 histogram(~temp, HumanBodyTemp)
 stem(HumanBodyTemp$temp,scale=2)
 favstats(HumanBodyTemp$temp)
-
-(y.bar <- mean(HumanBodyTemp$temp))
-(y.s <- sd(HumanBodyTemp$temp))
-(y.se <- se(HumanBodyTemp$temp))
-(t.stat <- (y.bar - 98.6) / y.se)
-df <- 25 - 1
-2 * pt(t.stat, df = df)
-
-# With t.test()
-t.test(HumanBodyTemp$temp, mu = 98.6, alternative = "two.sided")
-
-# Critical t-statistic (df = 24) for p = 0.05
-# Need to divide 0.05 by 2 to account for both tails
-qt(0.05/2, 24, lower.tail = FALSE)
-
-# 95% Confidence interval
-interval(t.test(HumanBodyTemp$temp, mu = 98.6, alternative = "two.sided"))
 }
 
 \keyword{datasets}

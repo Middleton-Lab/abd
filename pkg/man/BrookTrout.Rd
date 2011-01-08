@@ -45,65 +45,14 @@ Levin, P.S., S. Achord, B.E. Fiest, and R.W. Zabel. 2002. Non-indigenous brook t
 
 \examples{
 data(BrookTrout)
+data(BrookTrout2)
 str(BrookTrout)
-
-# Aggregate the data using ddply()
-require(plyr)
-salmon.aggregate <- ddply(BrookTrout, .(trout),
-  function(x)c(sum(x$salmon.released - x$salmon.surviving),
-    sum(x$salmon.surviving)))
-names(salmon.aggregate)[c(2,3)] <- c("Survived", "Died")
-salmon.aggregate
-
-# Boxplot
-boxplot(proportion.surviving ~ trout, data = BrookTrout,
-  ylab = "Proportion Surviving",
-  names = c("Trout Absent", "Trout Present"))
-
-# Dotplot
-require(lattice)
-dotplot(proportion.surviving ~ trout, data = BrookTrout)
-
-# Aggregate again, calculating mean, standard deviation, and n
-require(plyr)
-salmon.aggregate2 <- ddply(BrookTrout, .(trout),
-  function(x)c(mean(x$proportion.surviving),
-               sd(x$proportion.surviving),
-               length(x$proportion.surviving)))
-names(salmon.aggregate2) <- c("Group", "Sample Mean",
-  "Sample Standard Deviation", "Sample Size")
-salmon.aggregate2
-
-# Use Welch's t-test, because the variances are not equal
-t.test(proportion.surviving ~ trout, data = BrookTrout,
-  var.equal = FALSE)
-
-# Comparing variances
-# Bartlett Test
-bartlett.test(proportion.surviving ~ trout, data = BrookTrout)
-
-# Exploring differences in variance
-set.seed(2)
-x1 <- rnorm(40, sd = 1)
-x2 <- rnorm(40, sd = 1)
-
-x12 <- c(x1, x2)
-A <- factor(rep(1:2, each = 40))
-
-plot(density(x12), type = "n", ylim = c(0, 0.5))
-lines(density(x1), col = "blue")
-lines(density(x2), col = "red")
-
-bartlett.test(x12 ~ A)
-
-# Same Mean; Different sd
-x2 <- rnorm(40, sd = 2)
-x12 <- c(x1, x2)
-dev.new()
-plot(density(x12), type = "n", ylim = c(0, 0.5))
-lines(density(x1), col = "blue")
-lines(density(x2), col = "red")
-bartlett.test(x12 ~ A)
+str(BrookTrout2)
+bwplot(proportion.surviving ~ trout, BrookTrout)
+aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+if (require(Hmisc)) {
+	summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+}
 }
 
 \keyword{datasets}

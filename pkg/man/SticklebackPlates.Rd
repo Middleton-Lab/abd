@@ -56,19 +56,6 @@ densityplot(~plates|genotype, SticklebackPlates,
     xlab = "Number of Lateral Body Plates",
 	layout=c(1,3))
 
-if (require(ggplot2)) {
-p1 <- ggplot(SticklebackPlates, aes(plates))
-p1 + geom_histogram(fill = "red", binwidth = 2) +
-  facet_grid(genotype ~ .) +
-  scale_x_continuous("Number of Lateral Body Plates") +
-  scale_y_continuous("Frequency")
-  
-p2 <- ggplot(SticklebackPlates, aes(genotype, plates))
-  p2 + geom_boxplot() +
-  scale_x_discrete("Genotype") +
-  scale_y_continuous("Number of Lateral Body Plates")
-}
-
 }
 
 \keyword{datasets}

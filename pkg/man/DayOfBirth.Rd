@@ -49,24 +49,6 @@ barplot(DayOfBirth$births,
   las = 2,
   mgp = c(3, 0.75, 0))
 
-# Calculating Chi-squared goodness-of-fit test manually
-observed <- DayOfBirth$births
-sum(observed)
-
-n.days.1999 <- c(52, 52, 52, 52, 52, 53, 52)
-(expected <- n.days.1999 / 365 * 350)
-
-(chisq <- sum((observed - expected)^2 / expected))
-
-# Two methods for calculating a p value
-1 - pchisq(chisq, df = 6)
-pchisq(chisq, df = 6, lower.tail = FALSE)
-
-# Using chisq.test()
-# Because the expected frequencies do not sum to 1,
-# we need to use rescale.p = TRUE
-chisq.test(observed, p = expected, rescale.p = TRUE)
-
 }
 
 \keyword{datasets}
