@@ -2,7 +2,7 @@
 \alias{favstats}
 \title{Some favorite statistical summaries }
 \description{
-Computes mean, standard deviation, and quartiles of a data vector.
+Computes median, IQR, mean, standard deviation, and variance of a data vector.
 }
 \usage{
 favstats(x, na.rm = TRUE)
