@@ -2793,7 +2793,7 @@ flush(stderr()); flush(stdout())
 
 data(Wolves)
 Wolves
-xyplot(inbreeding.coefficient ~ jutter(pups, amount=0.15, Wolves)
+xyplot( inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves) 
 
 
 
