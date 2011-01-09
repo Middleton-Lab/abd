@@ -25,7 +25,7 @@ Asymmetry of Brodmann's area 44 in 20 chimpanzees.
 %}
 
 \source{
-Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in great apes. Nature 414: 505.
+Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in great apes. \emph{Nature} 414: 505.
 }
 
 %\references{
@@ -36,8 +36,8 @@ Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in great apes. Nat
 data(ChimpBrain)
 xyplot(asymmetry ~ sex, ChimpBrains)
 aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
-if (require( Hmisc ) ) {
-	summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+if (require(Hmisc)) {
+  summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
 }
 }
 

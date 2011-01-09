@@ -48,10 +48,13 @@ data(BrookTrout)
 data(BrookTrout2)
 str(BrookTrout)
 str(BrookTrout2)
+
 bwplot(proportion.surviving ~ trout, BrookTrout)
+
 aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+
 if (require(Hmisc)) {
-	summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+  summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
 }
 }
 

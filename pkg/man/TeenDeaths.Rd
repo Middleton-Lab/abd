@@ -27,17 +27,18 @@ data(TeenDeaths)
 
 str(TeenDeaths)
 TeenDeaths
-barchart(deaths~cause, TeenDeaths, 
-	horizontal=FALSE,
-	ylab="Number of Deaths",
-	xlab="Cause of Death",
-	scales=list(x=list(rot=45)))
-barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
-	horizontal=FALSE,
-	ylab="Number of Deaths",
-	xlab="Cause of Death",
-	scales=list(x=list(rot=45))
-	)
 
+barchart(deaths ~ cause, TeenDeaths, 
+  horizontal = FALSE,
+  ylab = "Number of Deaths",
+  xlab = "Cause of Death",
+  scales = list(x = list(rot=45)))
+
+barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+  horizontal = FALSE,
+  ylab = "Number of Deaths",
+  xlab = "Cause of Death",
+  scales=list(x=list(rot=45))
+  )
 }
 \keyword{datasets}

@@ -35,7 +35,7 @@ Heilbuth, J.C. 2000. Lower species richness in dioecious clades. \emph{The Ameri
 
 \examples{
 data(Dioecy)
-xyplot(dioecious ~ monomorphic, Dioecy, alpha=.65, pch=16)
+xyplot(dioecious ~ monomorphic, Dioecy, alpha = 0.65, pch = 16)
 }
 
 \keyword{datasets}

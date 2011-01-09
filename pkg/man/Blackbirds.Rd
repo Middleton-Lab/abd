@@ -39,7 +39,7 @@ Hasselquist, D., J.A. Marsh, P.W. Sherman, and J.C. Wingfield. 1999. Is avian im
 \examples{
 data(Blackbirds)
 Blackbirds
-xyplot( log.after ~ log.before, data = Blackbirds,
+xyplot(log.after ~ log.before, data = Blackbirds,
   ylab = "log Antibody production after implant",
   xlab = "log Antibody production before implant"
 )

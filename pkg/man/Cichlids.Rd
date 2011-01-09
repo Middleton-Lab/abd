@@ -39,9 +39,9 @@ data(Cichlids)
 str(Cichlids)
 
 if (require(Hmisc)) {
-	summary(preference ~ genotype, Cichlids, fun=favstats)
+  summary(preference ~ genotype, Cichlids, fun = favstats)
 } else {
-	aggregate(preference ~ genotype, Cichlids, FUN=favstats)
+  aggregate(preference ~ genotype, Cichlids, FUN = favstats)
 }
 
 if (require(plyr)) {

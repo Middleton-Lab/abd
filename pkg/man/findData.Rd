@@ -56,10 +56,13 @@ Randall Pruim (\email{rpruim@calvin.edu})
 \examples{
 # find all data from examples in chapters 3 and 4
 findData(3:4, 'Example')
+
 # order doesn't matter
 findData('Example', 3:4)
+
 # look for data sets with Example in their name.
 findData(pattern='Example')
+
 # look for data sets with Exercise in their name.
 findData('Exercise')
 }

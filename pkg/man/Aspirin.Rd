@@ -38,7 +38,7 @@ Aspirin
 Aspirin.expanded <- expand.dft(Aspirin, "count")
 xtabs(~ cancer + treatment, Aspirin.expanded)
 if (require(vcd)) {
-	mosaic(~cancer + treatment, Aspirin.expanded)
+  mosaic(~cancer + treatment, Aspirin.expanded)
 }
 }
 

@@ -19,7 +19,7 @@ flush(stderr()); flush(stdout())
 
 data(AlgaeCO2)
 AlgaeCO2
-xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p','a'))
+xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p', 'a'))
 
 
 
@@ -60,7 +60,7 @@ Aspirin
 Aspirin.expanded <- expand.dft(Aspirin, "count")
 xtabs(~ cancer + treatment, Aspirin.expanded)
 if (require(vcd)) {
-	mosaic(~cancer + treatment, Aspirin.expanded)
+  mosaic(~cancer + treatment, Aspirin.expanded)
 }
 
 
@@ -157,7 +157,7 @@ flush(stderr()); flush(stdout())
 
 data(Blackbirds)
 Blackbirds
-xyplot( log.after ~ log.before, data = Blackbirds,
+xyplot(log.after ~ log.before, data = Blackbirds,
   ylab = "log Antibody production after implant",
   xlab = "log Antibody production before implant"
 )
@@ -217,10 +217,13 @@ data(BrookTrout)
 data(BrookTrout2)
 str(BrookTrout)
 str(BrookTrout2)
+
 bwplot(proportion.surviving ~ trout, BrookTrout)
+
 aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+
 if (require(Hmisc)) {
-	summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+  summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
 }
 
 
@@ -241,7 +244,7 @@ flush(stderr()); flush(stdout())
 data(Cavalry)
 Cavalry
 xyplot(count ~ deaths, Cavalry, type='h', lwd=4)
-barchart(count ~ deaths, Cavalry, horizontal=FALSE,box.ratio=1000)
+barchart(count ~ deaths, Cavalry, horizontal = FALSE, box.ratio = 1000)
 
 
 
@@ -285,8 +288,8 @@ flush(stderr()); flush(stdout())
 data(ChimpBrain)
 xyplot(asymmetry ~ sex, ChimpBrains)
 aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
-if (require( Hmisc ) ) {
-	summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+if (require(Hmisc)) {
+  summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
 }
 
 
@@ -308,9 +311,9 @@ data(Cichlids)
 str(Cichlids)
 
 if (require(Hmisc)) {
-	summary(preference ~ genotype, Cichlids, fun=favstats)
+  summary(preference ~ genotype, Cichlids, fun = favstats)
 } else {
-	aggregate(preference ~ genotype, Cichlids, FUN=favstats)
+  aggregate(preference ~ genotype, Cichlids, FUN = favstats)
 }
 
 if (require(plyr)) {
@@ -522,11 +525,11 @@ DayOfBirth
 barchart( day ~ births, DayOfBirth)
 
 # fix bad ordering of days
-DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels=day))
+DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
 barchart( oday ~ births, DayOfBirth)
-barchart( births ~ oday, DayOfBirth, horizontal=FALSE)
-barchart( births ~ oday, DayOfBirth, horizontal=FALSE, 
-	scales=list(x=list(rot=45)))
+barchart( births ~ oday, DayOfBirth, horizontal = FALSE)
+barchart( births ~ oday, DayOfBirth, horizontal = FALSE, 
+ scales = list(x=list(rot=45)))
 
 barplot(DayOfBirth$births,
   ylim = c(0, 70),
@@ -572,7 +575,7 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(Dioecy)
-xyplot(dioecious ~ monomorphic, Dioecy, alpha=.65, pch=16)
+xyplot(dioecious ~ monomorphic, Dioecy, alpha = 0.65, pch = 16)
 
 
 
@@ -612,8 +615,8 @@ flush(stderr()); flush(stdout())
 data(DungBeetles)
 str(DungBeetles)
 xyplot(offspring.condition ~ factor(id), DungBeetles, 
-	xlab='Dung Beetle', 
-	ylab='offspring condition')
+  xlab='Dung Beetle', 
+  ylab='offspring condition')
 
 
 
@@ -715,14 +718,15 @@ flush(stderr()); flush(stdout())
 
 data(ElectricFish)
 ElectricFish
-xyplot(species.upstream ~ species.downstream, data=ElectricFish,
-	panel=function(x,y,...){
-		grid.text(ElectricFish$tributary, x=x, y=y, 
-			rot=45,
-			gp=gpar(cex=.6),
-			default.units='native')
-		}
-	)
+require(grid)
+xyplot(species.upstream ~ species.downstream, data = ElectricFish,
+  panel=function(x, y, ...){
+    grid.text(ElectricFish$tributary, x=x, y=y, 
+      rot = 45,
+      gp = gpar(cex=.6),
+      default.units = 'native')
+    }
+  )
 
 
 
@@ -944,7 +948,7 @@ GTM.raw <- expand.dft(GreatTitMalaria, "count")
 table(GTM.raw)
 
 if(require(vcd)) {
-	mosaic(~treatment + response, GTM.raw)
+  mosaic(~treatment + response, GTM.raw)
 }
 
 
@@ -1010,7 +1014,7 @@ data(Hemoglobin)
 str(Hemoglobin)
 
 xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,
-	type ='h', lwd=4, layout=c(1,4))
+  type ='h', lwd=4, layout=c(1,4))
 
 
 
@@ -1055,8 +1059,8 @@ data(HornedLizards)
 str(HornedLizards)
 
 histogram(~horn.length | group, HornedLizards, 
-	layout=c(1,2),
-	xlab="Horn Length (mm)")
+  layout=c(1,2),
+  xlab="Horn Length (mm)")
 
 
 
@@ -1824,7 +1828,7 @@ flush(stderr()); flush(stdout())
 
 data(Pufferfish)
 str(Pufferfish)
-xyplot(predators ~ jitter(resemblance,amount=.1), Pufferfish)
+xyplot(predators ~ jitter(resemblance, amount = 0.1), Pufferfish)
 Pufferfish
 
 
@@ -2053,8 +2057,8 @@ flush(stderr()); flush(stdout())
 data(ShuttleDisaster)
 str(ShuttleDisaster)
 xyplot( jitter(failures,amount=.1) ~ temperature, ShuttleDisaster,
-	ylab='number of failures'
-	)
+  ylab='number of failures'
+  )
 
 
 
@@ -2227,14 +2231,16 @@ data(SticklebackPlates)
 
 aggregate(plates ~ genotype, SticklebackPlates, favstats)
 
-histogram(~plates|genotype, SticklebackPlates, 
-	layout=c(1,3),
-	n=15,
-    xlab = "Number of Lateral Body Plates"
-	)
-densityplot(~plates|genotype, SticklebackPlates, 
-    xlab = "Number of Lateral Body Plates",
-	layout=c(1,3))
+histogram(~plates | genotype, SticklebackPlates, 
+  layout=c(1,3),
+  n=15,
+  xlab = "Number of Lateral Body Plates"
+  )
+
+densityplot(~plates | genotype, SticklebackPlates, 
+  xlab = "Number of Lateral Body Plates",
+  layout=c(1,3)
+  )
 
 
 
@@ -2314,18 +2320,19 @@ data(TeenDeaths)
 
 str(TeenDeaths)
 TeenDeaths
-barchart(deaths~cause, TeenDeaths, 
-	horizontal=FALSE,
-	ylab="Number of Deaths",
-	xlab="Cause of Death",
-	scales=list(x=list(rot=45)))
-barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
-	horizontal=FALSE,
-	ylab="Number of Deaths",
-	xlab="Cause of Death",
-	scales=list(x=list(rot=45))
-	)
 
+barchart(deaths ~ cause, TeenDeaths, 
+  horizontal = FALSE,
+  ylab = "Number of Deaths",
+  xlab = "Cause of Death",
+  scales = list(x = list(rot=45)))
+
+barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+  horizontal = FALSE,
+  ylab = "Number of Deaths",
+  xlab = "Cause of Death",
+  scales=list(x=list(rot=45))
+  )
 
 
 
@@ -2602,10 +2609,10 @@ fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
 # With G-test
 # Source from http://www.psych.ualberta.ca/~phurd/cruft/
 try({
-	source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
-	g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
-	g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
-	}
+  source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
+  g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
+  g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
+  }
 )
 
 
@@ -2966,7 +2973,7 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-cumfreq(~count,DesertBirds, xlab='Species Abundance')
+cumfreq(~count, DesertBirds, xlab = 'Species Abundance')
 
 
 
@@ -3038,7 +3045,7 @@ mosaicplot(~treatment + cancer, Aspirin.expanded)
 
 # much nicer looking plots using vcd
 if(require(vcd)) {
-	mosaic(~treatment + cancer, Aspirin.expanded)
+  mosaic(~treatment + cancer, Aspirin.expanded)
 }
 
 
@@ -3076,10 +3083,13 @@ flush(stderr()); flush(stdout())
 
 # find all data from examples in chapters 3 and 4
 findData(3:4, 'Example')
+
 # order doesn't matter
 findData('Example', 3:4)
+
 # look for data sets with Example in their name.
 findData(pattern='Example')
+
 # look for data sets with Exercise in their name.
 findData('Exercise')
 

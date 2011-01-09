@@ -38,7 +38,7 @@ Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a tropical reef f
 \examples{
 data(Pufferfish)
 str(Pufferfish)
-xyplot(predators ~ jitter(resemblance,amount=.1), Pufferfish)
+xyplot(predators ~ jitter(resemblance, amount = 0.1), Pufferfish)
 Pufferfish
 }
 
