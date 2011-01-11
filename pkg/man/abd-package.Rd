@@ -13,7 +13,7 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
 	Package: \tab abd\cr
 	Type: \tab Package\cr
 	Version: \tab 0.1-11\cr
-	Date: \tab 2011-1-9\cr
+	Date: \tab 2011-1-11\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
 	LazyData: \tab yes\cr
@@ -41,5 +41,7 @@ Kevin M. Middleton (\url{kmm@csusb.edu}); Randall Pruim (\url{rpruim@calvin.edu}
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %}
 
-%\examples{
-%}
+\examples{
+findData(3)
+findDAta('Finch')
+}

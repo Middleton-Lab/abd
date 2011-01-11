@@ -5,7 +5,7 @@ dataNames <- read.csv('dataNames.csv')
 dataFiles <- read.csv('dataFiles.csv')
 levels(dataIDs$type) <- c('Example','Problem')
 dataInfo <- cbind(dataNames,dataIDs)
-save(dataInfo, file='dataInfo.rda')
+save(dataInfo, file='../pkg/data/dataInfo.rda')
 
 
 findData <- function(x, chapters=1:21, types=c('Example','Problem'), pattern='*',ignore.case=TRUE) {
