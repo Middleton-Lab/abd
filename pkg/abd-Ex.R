@@ -2940,6 +2940,24 @@ summary(aov.fit)
 
 
 cleanEx()
+nameEx("abd-package")
+### * abd-package
+
+flush(stderr()); flush(stdout())
+
+### Name: abd-package
+### Title: Data sets from The Analysis of Biological Data
+### Aliases: abd-package abd
+### Keywords: package
+
+### ** Examples
+
+findData(3)
+findData('Finch')
+
+
+
+cleanEx()
 nameEx("col.abd")
 ### * col.abd
 

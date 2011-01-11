@@ -43,5 +43,5 @@ Kevin M. Middleton (\url{kmm@csusb.edu}); Randall Pruim (\url{rpruim@calvin.edu}
 
 \examples{
 findData(3)
-findDAta('Finch')
+findData('Finch')
 }

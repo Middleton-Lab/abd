@@ -1,14 +1,14 @@
 # Figure 2.4-1
-barchart( relative.frequency ~ hemoglobin | group, data=HemoglobinHighAltitude,
+barchart( relative.frequency ~ hemoglobin | group, data=Hemoglobin,
 	horizontal=F,         # vertical bars
 	layout=c(1,4),        # four panels in one column
 	box.ratio=100         # make it look "histogram-y"
 	)
 
 # Calculate cumulative frequencies within groups 
-hemo <- HemoglobinHighAltitude[order(HemoglobinHighAltitude$group),]
-hemo$cumulative.frequency <- unlist(aggregate(HemoglobinHighAltitude$relative.frequency, 
-				by=list(HemoglobinHighAltitude$group), FUN=cumsum)$x)
+hemo <- Hemoglobin[order(Hemoglobin$group),]
+hemo$cumulative.frequency <- unlist(aggregate(Hemoglobin$relative.frequency, 
+				by=list(Hemoglobin$group), FUN=cumsum)$x)
 
 # Figure 2.4-2  (could use cumfreq() if we had the raw data)
 xyplot(cumulative.frequency ~ hemoglobin, data=hemo,
