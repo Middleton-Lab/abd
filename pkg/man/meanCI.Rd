@@ -12,16 +12,16 @@ Convenience functions that extract a confidence interval or p-value.
 \usage{
 meanCI(...)
 meanPval(...)
-propCI(...)
-propPval(...)
+propCI(..., method=c('binom.test','prop.test', 'wilson', 'agresti-coull'))
+propPval(..., method=c('binom.test','prop.test'))
 }
 \arguments{
-  \item{\dots}{ arguments to \code{\link{t.test}} or \code{\link{prop.test}}
-}
+  \item{\dots}{ arguments to \code{\link{t.test}} or \code{\link{prop.test}}}
+  \item{method}{ an \code{integer} or \code{character} naming which method to use }
 }
 \value{
-A \code{numeric}.  As a side-effect, additional information about the interval or hypothesis test
-is printed to the screen.
+A \code{numeric}.  As a side-effect, additional information about the interval
+or hypothesis test is printed to the screen.
 }
 \author{
 Randall Pruim (\email{rpruim@calvin.edu})

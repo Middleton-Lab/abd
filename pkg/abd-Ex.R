@@ -2952,8 +2952,10 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-findData(3)
-findData('Finch')
+trellis.par.set(theme=col.abd())  # set color theme
+show.settings()
+findData(3)                       # look for data sets in chapter 3
+findData('Finch')                 # look for data sets with 'finch' in name
 
 
 
@@ -3110,6 +3112,23 @@ findData(pattern='Example')
 
 # look for data sets with Exercise in their name.
 findData('Exercise')
+
+
+
+cleanEx()
+nameEx("histochart")
+### * histochart
+
+flush(stderr()); flush(stdout())
+
+### Name: histochart
+### Title: Histogram from tabulated data
+### Aliases: histochart
+### Keywords: graphics
+
+### ** Examples
+
+histochart( dbinom(0:30, 30, 0.35) ~ 0:30 )
 
 
 
