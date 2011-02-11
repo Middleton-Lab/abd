@@ -3243,7 +3243,8 @@ aov.fit <- aov(femur.length ~ specimen, data = WalkingStickFemurs)
 repeatability(aov.fit)
 
 # With lme()
-lme.fit <- lme(femur.length ~ 1, random = ~ 1 | as.factor(specimen), data = WalkingStickFemurs)
+lme.fit <- lme(femur.length ~ 1, random = ~ 1 | specimen, 
+               data = WalkingStickFemurs)
 repeatability(lme.fit)
 
 
