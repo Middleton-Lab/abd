@@ -19,16 +19,16 @@ varcomps <- function(fm, n){
                       "var.within" = var.within,
                       "var.among" = var.among)
   class(varcomp.obj) <- "varcomps"
-  varcomp.obj
+  return(varcomp.obj)
 }
 
-print.varcomps <- function(x, ...){
+print.varcomps <- function(x, digits = 3, ...){
   cat("Mean Squares\n")
   cat("\tGroups\t", x$MS.groups, "\n")
   cat("\tError\t", x$MS.error, "\n")
   cat("Variance Components\n")
   cat("\tWithin\t", x$var.within, "\n")
   cat("\tAmong\t", x$var.among, "\n")
-  cat("F = ", x$Fstat, "\n")
-  cat("p = ", x$p, "on", x$df1, "and", x$df2, "degrees of freedom.\n")
+  cat("F = ", signif(x$Fstat, digits = digits), "\n")
+  cat("p = ", signif(x$p, digits = digits), "on", x$df1, "and", x$df2, "degrees of freedom.\n")
 }

@@ -3232,11 +3232,19 @@ flush(stderr()); flush(stdout())
 ### ** Examples
 
 data(WalkingStickFemurs)
-aovfit <- aov(femur.length ~ 1 + Error(specimen), data = WalkingStickFemurs)
-vc <- varcomps(aovfit, n = 2)
+# With aov() and Error()
+Error.fit <- aov(femur.length ~ 1 + Error(specimen), data = WalkingStickFemurs)
+vc <- varcomps(Error.fit, n = 2)
 vc
-R.varcomps <- repeatability(vc)
-R.varcomps
+repeatability(vc)
+
+# With aov()
+aov.fit <- aov(femur.length ~ specimen, data = WalkingStickFemurs)
+repeatability(aov.fit)
+
+# With lme()
+lme.fit <- lme(femur.length ~ 1, random = ~ 1 | as.factor(specimen), data = WalkingStickFemurs)
+repeatability(lme.fit)
 
 
 
