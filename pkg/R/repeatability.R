@@ -5,6 +5,10 @@ repeatability <- function(x){
     R <- var.among / (var.among + var.within)
     class(R) <- c("repeatability", "rep.varcomps")
   }
+
+  ## Note: could use ICC1 from multilevel package, but need to code
+  ## dv as factor. This value matches ICC from repeatability.lme
+  ## and from ICC1.lme, but not repeatability.varcomps above.
   if(inherits(x, "aov")){
     smry <- summary(x)
     n <- smry[[1]]$Df[1] + 1
@@ -14,6 +18,9 @@ repeatability <- function(x){
     R <- s2a/(MSw + s2a)
     class(R) <- c("repeatability", "rep.aov")
   }
+  
+  ## Note: could use ICC1.lme from psychometric package. The
+  ## results here is numerically equal.
   if(inherits(x, "lme")){
     varcomps <- VarCorr(x)
     var.among <- as.numeric(varcomps[1, 1])

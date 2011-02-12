@@ -7,11 +7,8 @@
 Repeatability
 }
 
-\description{
-Calculate the repeatability of observations in a random effects ANOVA fit by 
-\code{\link{aov}} with \code{Error()} via the \code{\link{varcomps}} functon, 
-a one-way ANOVA fit with \code{aov()}, or a or a linear mixed effects model fit 
-by \code{\link{lme}}. The first two methods follow Lessels and Boag (1987).
+\description{ 
+Calculate the repeatability (intraclass correlation coefficient) of observations in a random effects ANOVA fit by \code{\link{aov}} with \code{Error()} via the \code{\link{varcomps}} functon, a one-way ANOVA fit with \code{aov()}, or a or a linear mixed effects model fit by \code{\link{lme}}. The first two methods follow Lessels and Boag (1987).
 }
 
 \usage{
@@ -28,9 +25,7 @@ repeatability(x)
 %}
 
 \value{
-	\code{repeatability} returns a numeric value of the repeatability with a \link{class} 
-	\code{repeatability} and \code{rep.aov} \emph{or} \code{rep.lme}, depending on the 
-	class of \code{x}.
+	\code{repeatability} returns a numeric value of the repeatability (intraclass correlations coefficient) with a \link{class} \code{repeatability} and \code{rep.aov} \emph{or} \code{rep.lme}, depending on the 	class of \code{x}.
 }
 
 \references{
