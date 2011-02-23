@@ -33,13 +33,7 @@ Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E. Manson, C.H. Henn
 }
 
 \examples{
-data(Aspirin)
-Aspirin
-Aspirin.expanded <- expand.dft(Aspirin, "count")
-xtabs(~ cancer + treatment, Aspirin.expanded)
-if (require(vcd)) {
-  mosaic(~cancer + treatment, Aspirin.expanded)
-}
+demo(sec9.2)
 }
 
 \keyword{datasets}

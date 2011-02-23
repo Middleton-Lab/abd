@@ -55,13 +55,7 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-data(Aspirin)
-Aspirin
-Aspirin.expanded <- expand.dft(Aspirin, "count")
-xtabs(~ cancer + treatment, Aspirin.expanded)
-if (require(vcd)) {
-  mosaic(~cancer + treatment, Aspirin.expanded)
-}
+demo(sec9.2)
 
 
 
