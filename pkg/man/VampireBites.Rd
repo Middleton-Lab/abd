@@ -33,20 +33,7 @@ Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior and Ecology}
 %}
 
 \examples{
-data(VampireBites)
-VampireBites
-
-xtabs(count ~ estrous + bitten, data = VampireBites)
-fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
-
-# With G-test
-# Source from http://www.psych.ualberta.ca/~phurd/cruft/
-try({
-  source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
-  g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
-  g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
-  }
-)
+demo(sec9.4)
 }
 
 \keyword{datasets}

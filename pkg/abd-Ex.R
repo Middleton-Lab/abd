@@ -2479,10 +2479,7 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-data(Trematodes)
-xtabs(~ infection.status + eaten, Trematodes)
-chisq.test( xtabs(~ infection.status + eaten, Trematodes) )
-summary(chisq.test( xtabs(~ infection.status + eaten, Trematodes) ) )
+demo(sec9.3)
 
 
 
@@ -2594,20 +2591,7 @@ flush(stderr()); flush(stdout())
 
 ### ** Examples
 
-data(VampireBites)
-VampireBites
-
-xtabs(count ~ estrous + bitten, data = VampireBites)
-fisher.test(xtabs(count ~ estrous + bitten, data = VampireBites))
-
-# With G-test
-# Source from http://www.psych.ualberta.ca/~phurd/cruft/
-try({
-  source("http://www.psych.ualberta.ca/~phurd/cruft/g.test.r");
-  g.test(xtabs(count ~ estrous + bitten, data = VampireBites));
-  g.test(xtabs(count ~ estrous + bitten, data = VampireBites))$expected
-  }
-)
+demo(sec9.4)
 
 
 

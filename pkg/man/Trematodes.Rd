@@ -25,7 +25,9 @@ on level of infection by the trematode \emph{Euhaplorchis californiensis}.
 %}
 
 \source{
-Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized killifish increases susceptibility to predation by bird final hosts. \emph{Ecology} 77: 1390-1397.
+Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized
+killifish increases susceptibility to predation by bird final hosts.
+\emph{Ecology} 77: 1390-1397.
 }
 
 %\references{
@@ -33,10 +35,7 @@ Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of parasitized killifish 
 %}
 
 \examples{
-data(Trematodes)
-xtabs(~ infection.status + eaten, Trematodes)
-chisq.test( xtabs(~ infection.status + eaten, Trematodes) )
-summary(chisq.test( xtabs(~ infection.status + eaten, Trematodes) ) )
+demo(sec9.3)
 }
 
 

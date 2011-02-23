@@ -1,9 +1,9 @@
 ### Blackbirds
 plot(log.after ~ log.before, data = Blackbirds,
-  xlim = c(3.9, 5.1), ylim = c(3.9, 5.1),
-  pch = 16, col = "red",
-  ylab = "log Antibody production after implant",
-  xlab = "log Antibody production before implant")
+     xlim = c(3.9, 5.1), ylim = c(3.9, 5.1),
+     pch = 16, col = "red",
+     ylab = "log Antibody production after implant",
+     xlab = "log Antibody production before implant")
 abline(b = 1, a = 0)
 
 hist(Blackbirds$diff.in.logs,
@@ -189,11 +189,12 @@ plot(count.sort, count.relfreq,
   ylab = "Cumulative relative frequency")
 
 \dontrun{
-p <- ggplot(data.frame(count.sort, count.relfreq), 
-  aes(count.sort, count.relfreq))
-p + geom_step(direction = "vh") +
-  scale_x_continuous("Species abundance") +
-  scale_y_continuous("Cumulative relative frequency")}
+  p <- ggplot(data.frame(count.sort, count.relfreq), 
+              aes(count.sort, count.relfreq))
+  p + geom_step(direction = "vh") +
+    scale_x_continuous("Species abundance") +
+    scale_y_continuous("Cumulative relative frequency")
+}
 
 ### FingerRatio
 plot(FingerRatio$CAGrepeats,
@@ -265,14 +266,14 @@ cv(GlidingSnakes$undulation.rate)
 
 ### GreatTitMalaria
 \dontrun{
-# Fig. 2.3-1
-require(ggplot2)
-bar <- ggplot(GreatTitMalaria, 
-  aes(x = Treatment, y = count, fill = Response))
-bar + geom_bar(stat = "identity", position = "dodge")
+  ## Fig. 2.3-1
+  require(ggplot2)
+  bar <- ggplot(GreatTitMalaria, 
+                aes(x = Treatment, y = count, fill = Response))
+  bar + geom_bar(stat = "identity", position = "dodge")
 
-# Fig. 2.3-2
-bar + geom_bar(stat = "identity", position = "fill")
+  ## Fig. 2.3-2
+  bar + geom_bar(stat = "identity", position = "fill")
 }
 
 ### Guppies
@@ -584,18 +585,19 @@ legend("bottomright", c("Confidence Bands", "Prediction Interval"),
 
 ### Lynx
 \dontrun{
-# Alternate form converting to Date class.
-Year <- as.Date(paste("01jan", Lynx$date, sep = ""),
-  "\%d\%b\%Y")
-Lynx <- cbind(Lynx, Year)
+  ## Alternate form converting to Date class.
+  Year <- as.Date(paste("01jan", Lynx$date, sep = ""),
+                  "\%d\%b\%Y")
+  Lynx <- cbind(Lynx, Year)
 
-require(ggplot2)
-p <- ggplot(Lynx, aes(Year, no.pelts))
-p + geom_line() + 
-  geom_point(color = "red") +
-  scale_y_continuous("Lynx fur returns") +
-  opts(panel.grid.minor = theme_blank()) +
-  opts(panel.grid.major = theme_line(size = 0.25, colour = "white"))}
+  require(ggplot2)
+  p <- ggplot(Lynx, aes(Year, no.pelts))
+  p + geom_line() + 
+    geom_point(color = "red") +
+    scale_y_continuous("Lynx fur returns") +
+    opts(panel.grid.minor = theme_blank()) +
+    opts(panel.grid.major = theme_line(size = 0.25, colour = "white"))
+}
 
 ### MarineReserve
 hist(MarineReserve$biomass.ratio)
