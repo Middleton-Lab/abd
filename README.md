@@ -1,4 +1,4 @@
-# Data sets from The Analysis of Biological Data #
+# Data sets from *The Analysis of Biological Data* #
 
 ## Description ##
 
