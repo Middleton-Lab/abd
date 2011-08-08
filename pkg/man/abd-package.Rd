@@ -12,8 +12,8 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
   \tabular{ll}{
 	Package: \tab abd\cr
 	Type: \tab Package\cr
-	Version: \tab 0.1-18\cr
-	Date: \tab 2011-02-22\cr
+	Version: \tab 0.1-21\cr
+	Date: \tab 2011-08-01\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
 	LazyData: \tab yes\cr
@@ -44,6 +44,6 @@ Kevin M. Middleton (\url{kmm@csusb.edu}); Randall Pruim (\url{rpruim@calvin.edu}
 \examples{
 trellis.par.set(theme=col.abd())  # set color theme
 show.settings()
-findData(3)                       # look for data sets in chapter 3
-findData('Finch')                 # look for data sets with 'finch' in name
+abdData(3)                        # look for data sets in chapter 3
+abdData('Finch')                  # look for data sets with 'finch' in name
 }

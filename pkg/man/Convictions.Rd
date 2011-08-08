@@ -34,7 +34,8 @@ Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent Development} [Great B
 \examples{
 data(Convictions)
 str(Convictions)
-barchart(boys ~ convictions, Convictions, horizontal=FALSE)
+barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE)
+xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
 }
 
 \keyword{datasets}

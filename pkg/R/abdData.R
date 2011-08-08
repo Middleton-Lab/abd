@@ -1,5 +1,5 @@
 
-findData <- function(..., 
+abdData <- function(..., 
 	chapters=1:21, 
 	types= c('Example','Problem'),
 	numbers=1:100, 

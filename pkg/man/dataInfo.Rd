@@ -19,7 +19,7 @@ Information about the location of data sets in
     \item{\code{sub}}{sub-problem:  \code{} \code{a} \code{b} \code{c}}
   }
 }
-\seealso{\code{\link{findData}}}
+\seealso{\code{\link{abdData}}}
 
 \examples{
 data(dataInfo)

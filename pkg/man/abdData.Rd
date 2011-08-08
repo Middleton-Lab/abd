@@ -1,5 +1,5 @@
-\name{findData}
-\alias{findData}
+\name{abdData}
+\alias{abdData}
 \title{
 Find data in \emph{Analysis of Biological Data}
 }
@@ -8,7 +8,7 @@ A utility function to assist users to locate data sets in
 \emph{Analysis of Biological Data} within the \code{abd} package.
 }
 \usage{
-findData(..., 
+abdData(..., 
   chapters = 1:21, 
   types = c("Example", "Problem"), 
   numbers = 1:100, 
@@ -55,15 +55,15 @@ Randall Pruim (\email{rpruim@calvin.edu})
 }
 \examples{
 # find all data from examples in chapters 3 and 4
-findData(3:4, 'Example')
+abdData(3:4, 'Example')
 
 # order doesn't matter
-findData('Example', 3:4)
+abdData('Example', 3:4)
 
 # look for data sets with Example in their name.
-findData(pattern='Example')
+abdData(pattern='Example')
 
 # look for data sets with Exercise in their name.
-findData('Exercise')
+abdData('Exercise')
 }
 \keyword{ datasets }

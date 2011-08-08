@@ -38,9 +38,8 @@ data(JetLagKnees)
 JetLagKnees
 str(JetLagKnees)
 
-bwplot(shift~treatment, JetLagKnees)
 # since data set is small, no need to summarize
-xyplot(shift~treatment, JetLagKnees)
+xyplot(shift ~ treatment, data = JetLagKnees)
 bwplot(shift ~ treatment, data = JetLagKnees)
 
 }
