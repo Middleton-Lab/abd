@@ -1,3 +1,19 @@
+* data cleaning (if you have a list of data sets that could/should be
+  tweaked, that would be great, but we should maybe go through them
+  all systematically anyway)
+
+* moving some code to the mosaic package and making mosaic a
+  requirement for abd (simplifies code maintenance -- I've already
+  begun this with my fastR package)
+
+* adding more demos/examples
+
+rda to fix
+    Eelgrass (?)
+    LizardSprint (?)
+
+Use rptR or ICC for repeatability.
+
 Implement a manual viewer:
 abd.manual <- function(){
   viewer <- getOption("pdfviewer")
@@ -19,162 +35,4 @@ Error Checking
   sum.of.products()
   sum.of.squares()
   se() to sem()
-  Fix varcomps to take either Error() or one-way aov
 
--------------------------------
-
-X 02.1a	TeenDeaths
-X 02.1b	DesertBirds
-X 02.1c	SockeyeFemaleBodyMass
-X 02.3	GreatTitMalaria
-X 02.4	HemoglobinHighAltitude
-X 02.5a	GuppyAttractiveness
-X 02.5b	LynxPopulationCycles
-X 02q6	EndangeredSpecies
-X 02q10	ShuttleDisaster
-X 02q16	CriminalConvictions
-X 02q17	ConvictionsAndIncome
-X 02q18	FireflySpermatophoreMass
-X 02q23	NeotropicalTreePhotosynthesis
-
-X 03e1	GlidingSnakeUndulations
-X 03e2	SpiderRunningAmputation
-X 03e3	SticklebackPlates
-X 03q04	KenyaFinches
-X 03q09	Rigormortis
-X 03q10	NorthSeaCodRecruits
-X 03q11	VasopressinVoles
-X 03q12	AntillesImmigrationDates
-X 03q13	DietBreadthElVerde
-X 03q18	SparrowReproductiveSuccess
-
-X 04e1	HumanGeneLengths
-X 04q06	FireflyFlash
-X 04q11	NumberGenesRegulated
-
-X 08e1	DayOfBirth
-X 08e5	NumberOfBoys
-X 08e6	MassExtinctions
-X 08q02	Powerball
-X 08q03	ShadParasites
-X 08q04	Seedlings
-X 08q05	WorldCup
-X 08q06	Sumo
-X 08q14	Cavalry
-X 08q16	Truffles
-X 08q17	WrasseSexes
-X 08q18	Hurricanes
-
-X 09e2	AspirinCancer
-X 09e3	ParasiteBrainWarp
-X 09e4	VampireBites
-
-X 11e2	Stalkies
-X 11e3	Temperature
-X 11q02	WolfTeeth
-X 11q10	SyrupSwimming
-X 11q13	DolphinsClockwise
-X 11q14	SticklebackPreference
-
-X 12e2	BlackbirdTestosterone
-X 12e3	HornedLizards
-X 12e4	BrookTrout
-X 12q02	NoSmokingDay
-X 12q03	Iguanas
-X 12q05	MonogamousTestes
-X 12q09	Cichlids
-X 12q10	Tobacco
-X 12q11	WillsPresidents
-X 12q13	OstrichTemp
-X 12q15	PrimateWPC
-X 12q16	StalkieEyespan
-X 12q19	ElectricFish
-X 12q23	WeddellSeals
-
-X 13e1	MarineReserve
-X 13e4	SexualSelection
-X 13e5	SagebrushCrickets
-X 13q05	Lobsters
-X 13q06	Lions
-X 13q08	Newts
-X 13q13	Dioecy
-X 13q14	Mosquitoes
-X 13q16	ZebraFinches
-X 13q18	CichlidsGnRH
-X 13q19	Vines
-X 13q20	SalmonColor
-X 13q22	BirdSexRatio
-X 13q23	Clearcuts
-X 13q24	ZebraFinchBeaks
-
-X 15e1	KneesWhoSayNight
-X 15e6	WalkingStickFemurs
-X 15q01	PlantPopulationPersistence
-X 15q05	EelgrassGenotypes
-X 15q06	DisordersAndGeneExpression
-X 15q11	DungBeetleCondition
-X 15q13	DaphniaResistance
-X 15q14	TsetseLearning
-X 15q19	NematodeLifespan
-X 15q21	WalkingStickHeads
-X 15q22	LodgepolePineCones
-X 15q23	LupusProneMice
-X 15q24	LizardSprintSpeed
-
-X 16e1	FingerRatioCAGRepeats
-X 16e2	InbreedingWolves
-X 16e5	IndianRopeTrick
-X 16q03	GodwitArrivalDates
-X 16q08	EarwigForceps
-X 16q10	CricketImmunity
-X 16q11	PufferfishMimicry
-X 16q12	TelomeresAndStress
-X 16q13	LanguageGreyMatter
-X 16q14	GreenSpaceBiodiversity
-X 16q16	LiverPreparation
-X 16q17	SleepAndPerformance
-X 16q19	LefthandednessAndViolence
-X 16q20	TrilliumRecruitment
-X 16q21	CocaineHighVolkowEtal
-X 16q22	CocaineHighCollinsBell [CO2GrowthRate]
-
-X 17e1	LionAges
-X 17e3	ChickadeeAlarmsCalls
-X 17e8	ShrinkingSeals
-X 17q02	ZooMortality
-X 17q03	ProgesteroneExercise
-X 17q04	BodyFatHeatLoss
-X 17q07	HybridPollenSterility
-X 17q08	RattlesnakeDigestion
-X 17q09	LizardBite
-X 17q11	HypoxanthineTimeOfDeath
-X 17q12	SocialSpiderColonies
-X 17q14	GrasslandNutrientsPlantSpecies
-X 17q15	EarthwormsAndNitrogen
-X 17q16	PrimateMassMetabolicRate
-X 17q18	FlycatcherPatch
-X 17q19	TreeSeedlingsAndSunflecks
-X 17q20	PenguinTreadmill
-X 17q21	BeetleWingsAndHorns
-X 17q22	DaphniaParasiteLongevity
-X 17q24	DEETMosquiteBites
-X 17q25	NuclearTeeth
-
-X 18e1	MouseEmpathy
-X 18e2	ZooplanktonDepredation
-X 18e3	IntertidalAlgae
-X 18e4	MoleRatLayabouts
-X 18q06	HippocampusLesions
-X 18q07	BeeGeneExpression
-X 18q09	NeanderthalBrainSize
-X 18q11	ExploitedLarvalFish
-
-X 19e2	Pseudoscorpions
-X 19e3	ChimpBrains
-
-X 20q07	YeastRegulatoryGenes
-X 20q08	SilverswordWaitingTimes
-X 20q15	VoleDispersal
-X 20q18	BeeLifespans
-
-X selection.txt

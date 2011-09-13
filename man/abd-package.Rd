@@ -1,4 +1,4 @@
-\name{abd-package}
+\name{abd-package}    
 \alias{abd-package}
 \alias{abd}
 \docType{package}
@@ -12,8 +12,8 @@ The \code{abd} package contains data sets and sample code for the book, \emph{Th
   \tabular{ll}{
 	Package: \tab abd\cr
 	Type: \tab Package\cr
-	Version: \tab 0.1-21\cr
-	Date: \tab 2011-08-01\cr
+	Version: \tab 0.1-22\cr
+	Date: \tab 2011-09-12\cr
 	License: \tab GPL\cr
 	LazyLoad: \tab yes\cr
 	LazyData: \tab yes\cr
