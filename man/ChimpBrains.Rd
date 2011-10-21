@@ -1,4 +1,4 @@
-\name{ChimpBrains}
+\name{ChimpBrains}    
 \alias{ChimpBrains}
 \docType{data}
 
@@ -33,7 +33,7 @@ Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in great apes. \em
 %}
 
 \examples{
-data(ChimpBrain)
+data(ChimpBrains)
 xyplot(asymmetry ~ sex, ChimpBrains)
 aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
 if (require(Hmisc)) {
