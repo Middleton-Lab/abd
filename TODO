@@ -30,9 +30,3 @@ Functions
   sign.test()
   Wald adjusted prop.ci
   Use odds.ratio() from HH; write print method
-
-Error Checking
-  sum.of.products()
-  sum.of.squares()
-  se() to sem()
-
