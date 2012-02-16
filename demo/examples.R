@@ -625,12 +625,7 @@ exp(cis)
 ### MassExtinctions
 if(0){
 # Calculate weighted mean
-# with expand.dft()
-n.extinctions <- expand.dft(MassExtinctions,
-  "count")$Number.of.extinctions
-wt.mean <- mean(n.extinctions)
-
-# With weighted.mean()
+# with weighted.mean()
 (wt.mean <- weighted.mean(MassExtinctions$Number.of.extinctions,
   MassExtinctions$Frequency))
 

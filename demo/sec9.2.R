@@ -1,9 +1,8 @@
-Aspirin.expanded <- expand.dft(Aspirin, "count")
-str(Aspirin.expanded)
+str(Aspirin)
 
 # Plot 2 X 2 Contingency tables
-plot( ~ treatment + cancer, data = Aspirin.expanded)
-plot(table(Aspirin.expanded), main = "")
+plot( ~ treatment + cancer, data = Aspirin)
+plot(table(Aspirin), main = "")
 
 # Calculate odds
 (Pr.asp <- 18496 / (18496 + 1438))

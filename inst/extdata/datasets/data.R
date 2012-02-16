@@ -1,5 +1,3 @@
-
-source('../pkg/R/expand.dft.R')
 dataIDs <- read.csv('dataIDs.csv')
 dataNames <- read.csv('dataNames.csv')
 dataFiles <- read.csv('dataFiles.csv')
@@ -43,8 +41,6 @@ Tobacco2 <-
 # Note: was error in original data (had bush winning popular vote against gore)
 WillsDebates <- WillsDebates[,c(6,1,7,3,4,5)]
 names(WillsDebates) <- c('year','winner','loser','winner.wills','loser.wills','diff.wills')
-
-Trematodes <- expand.dft(Trematodes,col='count')
 
 # add an extra column
 SexualSelection$taxon.pair = toupper(letters[1:25])
