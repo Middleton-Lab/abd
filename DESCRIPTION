@@ -34,6 +34,4 @@ Collate:
     'cv.R'
     'histochart.R'
     'odds.ratio.R'
-    'se.R'
-    'sum_of_products.R'
     'datasets.R'
