@@ -36,3 +36,4 @@ Collate:
     'odds.ratio.R'
     'se.R'
     'sum_of_products.R'
+    'datasets.R'

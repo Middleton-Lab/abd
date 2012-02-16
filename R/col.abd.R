@@ -1,3 +1,24 @@
+#' Lattice theme for Analysis of Biological Data
+#' 
+#' This theme will help produce plots with color scheme similar to the one used
+#' in \emph{Analysis of Biological Data}
+#' 
+#' 
+#' @param bw a logical. Use a grayscale theme instead of color?
+#' @param lty line types used for \code{panel.superpose}
+#' @return a list that can be used as a \code{lattice} theme.
+#' @author Randall Pruim (\email{rpruim@@calvin.edu})
+#' @seealso \code{\link{trellis.par.set}} \code{\link{show.settings}}
+#' \code{\link{col.whitebg}}
+#' @keywords graphics
+#' @export
+#' @examples
+#' 
+#' trellis.par.set(theme=col.abd(bw=TRUE))
+#' show.settings()
+#' trellis.par.set(theme=col.abd(lty=1))
+#' show.settings()
+#' 
 col.abd <- function (bw = FALSE, lty = 1:7) 
 {
     aRed <- colorRampPalette(c("white", "darkred"))(10)[10]
