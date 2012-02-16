@@ -1,7 +1,4 @@
 export(abdData)
 export(col.abd)
 export(histochart)
-export(se)
-export(sum_of_products)
-export(sum_of_squares)
 export(theme.abd)

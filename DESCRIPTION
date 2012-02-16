@@ -30,7 +30,5 @@ Encoding: UTF-8
 Collate:
     'abdData.R'
     'histochart.R'
-    'se.R'
-    'sum_of_products.R'
     'datasets.R'
     'themes.R'
