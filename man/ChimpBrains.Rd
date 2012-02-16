@@ -16,9 +16,11 @@ with levels \code{F} and \code{M}} \item{asymmetry}{asymmetry score}
 \examples{
 data(ChimpBrains)
 xyplot(asymmetry ~ sex, ChimpBrains)
-aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
-if (require(Hmisc)) {
-  summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+if (require(mosaic)) {
+  aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
+  if (require(Hmisc)) {
+    summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+  }
 }
 }
 \keyword{datasets}

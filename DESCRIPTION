@@ -9,8 +9,7 @@ Depends:
     R (>= 2.10),
     nlme,
     lattice,
-    grid,
-    mosaic
+    grid
 Suggests:
     boot,
     car,
@@ -18,7 +17,9 @@ Suggests:
     plyr,
     HH,
     vcd,
-    Hmisc
+    Hmisc,
+    mosaic,
+    manipulate
 Description: The abd package contains data sets and sample code for The
     Analysis of Biological Data by Michael Whitlock and Dolph Schluter (2009;
     Roberts & Company Publishers).
@@ -28,12 +29,8 @@ LazyData: yes
 Encoding: UTF-8
 Collate:
     'abdData.R'
-    'as.xtabs.R'
-    'col.abd.R'
-    'cumfreq.R'
-    'cv.R'
     'histochart.R'
-    'odds.ratio.R'
     'se.R'
     'sum_of_products.R'
     'datasets.R'
+    'themes.R'

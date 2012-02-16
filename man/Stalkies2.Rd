@@ -19,7 +19,7 @@
 data(Stalkies2)
 str(Stalkies2)
 xyplot(eye.span ~ food, Stalkies2)
-aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
+if (require(mosaic)) aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
 }
 \references{
   \url{http://www.nature.com/nature/journal/v406/n6792/full/406186a0.html}

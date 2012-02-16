@@ -17,7 +17,7 @@
 }
 \examples{
 data(NorthSeaCod)
-favstats(NorthSeaCod$log10.recruits)
+if (require(mosaic)) favstats(NorthSeaCod$log10.recruits)
 }
 \references{
   \url{http://www.nature.com/nature/journal/v426/n6967/abs/nature02164.html}

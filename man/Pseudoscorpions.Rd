@@ -22,7 +22,8 @@
 data(Pseudoscorpions)
 str(Pseudoscorpions)
 bwplot(successful.broods ~ treatment, Pseudoscorpions)
-aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
+if (require(mosaic))
+  aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
 }
 \references{
   \url{http://www.pnas.org/content/96/18/10236.long}

@@ -16,7 +16,7 @@
 data(HumanBodyTemp)
 histogram(~temp, HumanBodyTemp)
 stem(HumanBodyTemp$temp,scale=2)
-favstats(HumanBodyTemp$temp)
+if (require(mosaic)) favstats(HumanBodyTemp$temp)
 }
 \references{
   \url{http://www.amstat.org/publications/jse/v4n2/datasets.shoemaker.html}

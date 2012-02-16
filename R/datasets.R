@@ -312,10 +312,11 @@ NULL
 #' 
 #' bwplot(proportion.surviving ~ trout, BrookTrout)
 #' 
-#' aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
-#' 
-#' if (require(Hmisc)) {
-#'   summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+#' if (require(mosaic)) {
+#'   aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+#'   if (require(Hmisc)) {
+#'     summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+#'   }
 #' }
 #' 
 NULL
@@ -404,9 +405,11 @@ NULL
 #' 
 #' data(ChimpBrains)
 #' xyplot(asymmetry ~ sex, ChimpBrains)
-#' aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
-#' if (require(Hmisc)) {
-#'   summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+#' if (require(mosaic)) {
+#'   aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
+#'   if (require(Hmisc)) {
+#'     summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
+#'   }
 #' }
 #' 
 NULL
@@ -437,11 +440,13 @@ NULL
 #' 
 #' data(Cichlids)
 #' str(Cichlids)
-#' 
-#' if (require(Hmisc)) {
-#'   summary(preference ~ genotype, Cichlids, fun = favstats)
-#' } else {
-#'   aggregate(preference ~ genotype, Cichlids, FUN = favstats)
+#'
+#' if (require(mosaic)) {
+#'   if (require(Hmisc)) {
+#'     summary(preference ~ genotype, Cichlids, fun = favstats)
+#'   } else {
+#'     aggregate(preference ~ genotype, Cichlids, FUN = favstats)
+#'   }
 #' }
 #' 
 #' if (require(plyr)) {
@@ -1540,7 +1545,7 @@ NULL
 #' data(HumanBodyTemp)
 #' histogram(~temp, HumanBodyTemp)
 #' stem(HumanBodyTemp$temp,scale=2)
-#' favstats(HumanBodyTemp$temp)
+#' if (require(mosaic)) favstats(HumanBodyTemp$temp)
 #' 
 NULL
 
@@ -2408,7 +2413,7 @@ NULL
 #' @examples
 #' 
 #' data(NorthSeaCod)
-#' favstats(NorthSeaCod$log10.recruits)
+#' if (require(mosaic)) favstats(NorthSeaCod$log10.recruits)
 #' 
 NULL
 
@@ -2659,7 +2664,8 @@ NULL
 #' data(Pseudoscorpions)
 #' str(Pseudoscorpions)
 #' bwplot(successful.broods ~ treatment, Pseudoscorpions)
-#' aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
+#' if (require(mosaic)) 
+#'   aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
 #' 
 NULL
 
@@ -3179,23 +3185,21 @@ NULL
 #' @format A data frame with 32 observations on the following 2 variables.
 #' \describe{ \item{speed.before}{speed (cm/s) before amputation }
 #' \item{speed.after}{speed (cm/s) after amputation } }
-#' @references \url{http://www.pnas.org/content/101/14/4883}
-#' 
-#' \url{http://en.wikipedia.org/wiki/Pedipalp}
-#' 
-#' \url{http://en.wikipedia.org/wiki/Tidarren}
+#' @references \url{http://en.wikipedia.org/wiki/Pedipalp}, \url{http://en.wikipedia.org/wiki/Tidarren}, \url{http://www.pnas.org/content/101/14/4883}
+#'
 #' @source Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an
 #' evolutionary conflict: Removal of a reproductive organ greatly increases
 #' locomotor performance. \emph{Proceedings of the National Academy of Sciences
 #' (USA)} 101: 4883-4887.
 #' @keywords datasets
 #' @examples
-#' 
 #' data(SpiderSpeed)
 #' xyplot(speed.after ~ speed.before, SpiderSpeed)
-#' favstats(SpiderSpeed$speed.before)
-#' favstats(SpiderSpeed$speed.after)
-#' favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
+#' if (require(mosaic)) {
+#'   favstats(SpiderSpeed$speed.before)
+#'   favstats(SpiderSpeed$speed.after)
+#'   favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
+#' }
 #' 
 NULL
 
@@ -3247,7 +3251,7 @@ NULL
 #' data(Stalkies2)
 #' str(Stalkies2)
 #' xyplot(eye.span ~ food, Stalkies2)
-#' aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
+#' if (require(mosaic)) aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
 #' 
 NULL
 
@@ -3282,7 +3286,8 @@ NULL
 #' 
 #' data(SticklebackPlates)
 #' 
-#' aggregate(plates ~ genotype, SticklebackPlates, favstats)
+#' if (require(mosaic)) 
+#'   aggregate(plates ~ genotype, SticklebackPlates, favstats)
 #' 
 #' histogram(~plates | genotype, SticklebackPlates, 
 #'   layout=c(1,3),

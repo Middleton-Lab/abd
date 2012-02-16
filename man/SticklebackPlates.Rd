@@ -21,7 +21,8 @@
 \examples{
 data(SticklebackPlates)
 
-aggregate(plates ~ genotype, SticklebackPlates, favstats)
+if (require(mosaic))
+  aggregate(plates ~ genotype, SticklebackPlates, favstats)
 
 histogram(~plates | genotype, SticklebackPlates,
   layout=c(1,3),
