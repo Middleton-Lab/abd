@@ -5,3 +5,5 @@ abd.Rproj
 *.Rcheck
 *.tar.gz
 *~
+*.swp
+*.swo
