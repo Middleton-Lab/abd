@@ -1,8 +1,8 @@
 Package: abd
 Type: Package
 Title: The Analysis of Biological Data
-Version: 0.1-23
-Date: 2011-10-21    
+Version: 0.1-24
+Date: 2012-02-15    
 Author: Kevin M. Middleton <kmm@csusb.edu>, Randall Pruim <rpruim@calvin.edu>
 Maintainer: Kevin M. Middleton <kmm@csusb.edu>
 Depends: R (>= 2.10), nlme, lattice, grid
