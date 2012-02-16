@@ -4,19 +4,24 @@
 #' in \emph{Analysis of Biological Data}
 #' 
 #' 
+#' @rdname themes
 #' @param bw a logical. Use a grayscale theme instead of color?
 #' @param lty line types used for \code{panel.superpose}
 #' @return a list that can be used as a \code{lattice} theme.
+#' @details
+#' \code{theme.abd} and \code{col.abd} are the same function with
+#' two names.
 #' @author Randall Pruim (\email{rpruim@@calvin.edu})
 #' @seealso \code{\link{trellis.par.set}} \code{\link{show.settings}}
 #' \code{\link{col.whitebg}}
 #' @keywords graphics
+#' @aliases col.abd,theme.abd
 #' @export
 #' @examples
 #' 
 #' trellis.par.set(theme=col.abd(bw=TRUE))
 #' show.settings()
-#' trellis.par.set(theme=col.abd(lty=1))
+#' trellis.par.set(theme=theme.abd(lty=1))
 #' show.settings()
 #' 
 col.abd <- function (bw = FALSE, lty = 1:7) 
@@ -90,3 +95,7 @@ col.abd <- function (bw = FALSE, lty = 1:7)
 			))
     }
 }
+
+#' @rdname themes
+#' @export
+theme.abd <- col.abd

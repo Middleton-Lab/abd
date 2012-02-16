@@ -10,7 +10,7 @@ hemo <- Hemoglobin[order(Hemoglobin$group),]
 hemo$cumulative.frequency <- unlist(aggregate(Hemoglobin$relative.frequency, 
 				by=list(Hemoglobin$group), FUN=cumsum)$x)
 
-# Figure 2.4-2  (could use cumfreq() if we had the raw data)
+# Figure 2.4-2  (could use plotCumfreq() if we had the raw data)
 xyplot(cumulative.frequency ~ hemoglobin, data=hemo,
 	groups=group,
 	type='l',
