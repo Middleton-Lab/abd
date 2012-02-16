@@ -1,40 +1,24 @@
+\docType{data}
 \name{Penguins}
 \alias{Penguins}
-\docType{data}
-
-\title{
-Penguin Heart Rate
-}
-
-\description{
-Slope of regressions of mass-specific metabolic rate on heart rate for three groups of Macaroni Penguins.
-}
-
-\usage{data(Penguins)}
-\format{
-  A data frame with 24 observations on the following 2 variables.
-  \describe{
-    \item{\code{group}}{a factor with levels \code{BF}, \code{BM}, and \code{MF}}
-    \item{\code{slope}}{a numeric vector}
-  }
-}
-
-%\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-%}
-
+\title{Penguin Heart Rate}
+\format{A data frame with 24 observations on the following 2 variables.
+\describe{ \item{group}{a factor with levels \code{BF}, \code{BM},
+and \code{MF}} \item{slope}{a numeric vector} }}
 \source{
-Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and R. L. Holder. 2001. Heart rate and rate of oxygen consumption of exercising macaroni penguins. \emph{Journal of Experimental Biology} 204: 673–684.
+  Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and
+  R. L. Holder. 2001. Heart rate and rate of oxygen
+  consumption of exercising macaroni penguins.
+  \emph{Journal of Experimental Biology} 204: 673–684.
 }
-
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
-
+\description{
+  Slope of regressions of mass-specific metabolic rate on
+  heart rate for three groups of Macaroni Penguins.
+}
 \examples{
 data(Penguins)
 str(Penguins)
 dotplot(slope~group, Penguins)
 }
-
 \keyword{datasets}
+

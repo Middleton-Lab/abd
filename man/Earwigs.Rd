@@ -1,44 +1,30 @@
+\docType{data}
 \name{Earwigs}
 \alias{Earwigs}
-\docType{data}
-
-\title{
-Earwig Density and Forceps
-}
-
-\description{
-Earwig (\emph{Forficula auricularia}) density and the proportion of trapped earwigs with abdominal forceps (used for fighting and courtship).
-}
-
-\usage{data(Earwigs)}
-\format{
-  A data frame with 7 observations on the following 2 variables.
-  \describe{
-    \item{\code{density}}{a numeric vector}
-    \item{\code{proportion.forceps}}{a numeric vector}
-  }
-}
-
-%\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-%}
-
+\title{Earwig Density and Forceps}
+\format{A data frame with 7 observations on the following 2 variables.
+\describe{ \item{density}{a numeric vector}
+\item{proportion.forceps}{a numeric vector} }}
 \source{
-Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the local evolution of a threshold dimorphism. \emph{Nature} 431: 1099-1103.
+  Tomkins, J.L.  and G.S. Brown. 2004. Population density
+  drives the local evolution of a threshold dimorphism.
+  \emph{Nature} 431: 1099-1103.
 }
-
-\references{
-\url{http://en.wikipedia.org/wiki/Forficula_auricularia}
-
-\url{http://www.arkive.org/common-european-earwig/forficula-auricularia/}
-
-\url{http://eol.org/pages/473785}
+\description{
+  Earwig (\emph{Forficula auricularia}) density and the
+  proportion of trapped earwigs with abdominal forceps
+  (used for fighting and courtship).
 }
-
 \examples{
 data(Earwigs)
 xyplot(proportion.forceps ~ density, data=Earwigs, type='h', lwd=6)
-
 }
+\references{
+  \url{http://en.wikipedia.org/wiki/Forficula_auricularia}
 
+  \url{http://www.arkive.org/common-european-earwig/forficula-auricularia/}
+
+  \url{http://eol.org/pages/473785}
+}
 \keyword{datasets}
+

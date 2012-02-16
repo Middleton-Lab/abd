@@ -1,39 +1,22 @@
+\docType{data}
 \name{Cichlids}
 \alias{Cichlids}
-\docType{data}
-
-\title{
-Cichlid Mating Preference
-}
-
-\description{
-Preference index in F1 and F2 crosses of two species of cichlids from Lake Victoria, \emph{Pundamilia pundamilia} and \emph{P. nyererei}.
-}
-
-\usage{data(Cichlids)}
-\format{
-  A data frame with 53 observations on the following 2 variables.
-  \describe{
-    \item{\code{genotype}}{a factor with levels \code{F1} and \code{F2}}
-    \item{\code{preference}}{a numeric vector}
-  }
-}
-
-%\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-%}
-
+\title{Cichlid Mating Preference}
+\format{A data frame with 53 observations on the following 2 variables.
+\describe{ \item{genotype}{a factor with levels \code{F1} and
+\code{F2}} \item{preference}{a numeric vector} }}
 \source{
-Haeslery, M.P. and O. Seehausen. 2005. Inheritance of female mating preference
-in a sympatric sibling species pair of Lake Victoria cichlids: implications for
-speciation. \emph{Proceedings of the Royal Society of London, Series B,
-Biological Sciences} 272: 237-245.
+  Haeslery, M.P. and O. Seehausen. 2005. Inheritance of
+  female mating preference in a sympatric sibling species
+  pair of Lake Victoria cichlids: implications for
+  speciation. \emph{Proceedings of the Royal Society of
+  London, Series B, Biological Sciences} 272: 237-245.
 }
-
-\references{
-\url{http://rspb.royalsocietypublishing.org/content/272/1560/237.full.pdf}
+\description{
+  Preference index in F1 and F2 crosses of two species of
+  cichlids from Lake Victoria, \emph{Pundamilia pundamilia}
+  and \emph{P. nyererei}.
 }
-
 \examples{
 data(Cichlids)
 str(Cichlids)
@@ -51,5 +34,8 @@ ddply(Cichlids, .(genotype),
                 n = length(df$preference)))
 }
 }
-
+\references{
+  \url{http://rspb.royalsocietypublishing.org/content/272/1560/237.full.pdf}
+}
 \keyword{datasets}
+

@@ -1,46 +1,19 @@
 \name{se}
 \alias{se}
-\title{
-Standard Error of the Mean
-}
-
-\description{
-\code{se} calculates the standard error of the mean of a vector.
-}
-
+\title{Standard Error of the Mean}
 \usage{
-se(x)
+  se(x)
 }
-
 \arguments{
   \item{x}{a vector of numeric values}
 }
-
-%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%}
-
 \value{
-A single numeric value of the standard error of the mean
+  A single numeric value of the standard error of the mean
 }
-
-%\references{
-%% ~put references to the literature/web site here ~
-%}
-
-\author{
-Kevin M. Middleton (\email{kmm@csusb.edu})
+\description{
+  \code{se} calculates the standard error of the mean of a
+  vector.
 }
-
-%\note{
-%%  ~~further notes~~
-%}
-
-\seealso{
-\code{\link{mean}} for the mean of a vector
-\code{\link{sd}} for the standard deviation of a vector
-}
-
 \examples{
 set.seed(2)
 n <- 10
@@ -51,5 +24,12 @@ sd(y)/sqrt(n)
 
 se(y)
 }
+\author{
+  Kevin M. Middleton (\email{kmm@csusb.edu})
+}
+\seealso{
+  \code{\link{mean}} for the mean of a vector
+  \code{\link{sd}} for the standard deviation of a vector
+}
+\keyword{univar}
 
-\keyword{ univar }

@@ -1,44 +1,26 @@
+\docType{data}
 \name{Cavalry}
 \alias{Cavalry}
-\docType{data}
-
-\title{
-Deaths from Horse Kicks
-}
-
-\description{
-Numbers of deaths resulting from horse kicks per regiment-years for the Prussian army.
-}
-
-\usage{data(Cavalry)}
-\format{
-  A data frame with 5 observations on the following 2 variables.
-  \describe{
-    \item{\code{deaths}}{a numeric vector}
-    \item{\code{count}}{a numeric vector}
-  }
-}
-
-%\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-%}
-
+\title{Deaths from Horse Kicks}
+\format{A data frame with 5 observations on the following 2 variables.
+\describe{ \item{deaths}{a numeric vector} \item{count}{a
+numeric vector} }}
 \source{
-Bortkiewicz, L. 1898. Das Gesetz der Kleinen Zahlen (Teubner, Leipzig),
-\emph{as cited in} Larson, R.J. and M.L. Marx. 1981. \emph{An Introduction to
-Mathematical Statistics and its Applications}. Prentice-Hall: Englewood Cliffs,
-NJ.
+  Bortkiewicz, L. 1898. Das Gesetz der Kleinen Zahlen
+  (Teubner, Leipzig), \emph{as cited in} Larson, R.J. and
+  M.L. Marx. 1981. \emph{An Introduction to Mathematical
+  Statistics and its Applications}. Prentice-Hall:
+  Englewood Cliffs, NJ.
 }
-
-%\references{
-%%  ~~ possibly secondary sources and usages ~~
-%}
-
+\description{
+  Numbers of deaths resulting from horse kicks per
+  regiment-years for the Prussian army.
+}
 \examples{
 data(Cavalry)
 Cavalry
 xyplot(count ~ deaths, Cavalry, type='h', lwd=4)
 barchart(count ~ deaths, Cavalry, horizontal = FALSE, box.ratio = 1000)
 }
-
 \keyword{datasets}
+

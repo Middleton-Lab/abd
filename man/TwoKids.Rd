@@ -1,36 +1,19 @@
+\docType{data}
 \name{TwoKids}
 \alias{TwoKids}
-\docType{data}
-
-\title{
-Number of Boys in Two-Child Families
-}
-
-\description{
-The number of boys in a sample of 2,444 two-child families.
-}
-
-\usage{data(TwoKids)}
-\format{
-  A data frame with 3 observations on the following 2 variables.
-  \describe{
-    \item{\code{num.boys}}{a numeric vector}
-    \item{\code{count}}{a numeric vector}
-  }
-}
-
-%\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-%}
-
+\title{Number of Boys in Two-Child Families}
+\format{A data frame with 3 observations on the following 2 variables.
+\describe{ \item{num.boys}{a numeric vector} \item{count}{a
+numeric vector} }}
 \source{
-Rodgers, J.L. and D. Doughty. 2001. Does having boys or girls run in the family? \emph{Chance Magazine} Fall 2001: 8-13.
+  Rodgers, J.L. and D. Doughty. 2001. Does having boys or
+  girls run in the family? \emph{Chance Magazine} Fall
+  2001: 8-13.
 }
-
-\references{
-\url{http://www.dartmouth.edu/~chance/chance_news/recent_news/chance_news_10.11.html#item13}
+\description{
+  The number of boys in a sample of 2,444 two-child
+  families.
 }
-
 \examples{
 data(TwoKids)
 TwoKids
@@ -55,5 +38,8 @@ set.seed(1)
                 rbinom(1, n, pr.2)))
 chisq.test(observed, p = expected2, rescale.p = TRUE)
 }
-
+\references{
+  \url{http://www.dartmouth.edu/~chance/chance_news/recent_news/chance_news_10.11.html#item13}
+}
 \keyword{datasets}
+

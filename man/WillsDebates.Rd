@@ -1,32 +1,22 @@
+\docType{data}
 \name{WillsDebates}
 \alias{WillsDebates}
-\docType{data}
-\title{
-Presidential "Wills"
-}
-
+\title{Presidential "Wills"}
+\format{A data frame with 8 observations on the following 6 variables.
+\describe{ \item{year}{year of presidential debate(s)}
+\item{winner}{winner of the popular vote (may not be winner of
+election)} \item{loser}{loser of popular vote (may not be loser of
+election)} \item{winner.wills}{number of times will/shall used by
+winner during debates} \item{loser.wills}{number of times will/shall
+used by loser during debates} \item{diff.wills}{difference between
+number of times will/shall used by two candidates} }}
 \description{
-Number of times a presidential candidate said "will," "shall," or "going to" in
-presidential debates from 1960-2004 (years incomplete).
-}
-
-\usage{data(WillsDebates)}
-\format{
-  A data frame with 8 observations on the following 6 variables.
-  \describe{
-    \item{\code{year}}{year of presidential debate(s)}
-    \item{\code{winner}}{winner of the popular vote (may not be winner of election)}
-    \item{\code{loser}}{loser of popular vote (may not be loser of election)}
-    \item{\code{winner.wills}}{number of times will/shall used by winner
-	during debates}
-    \item{\code{loser.wills}}{number of times will/shall used by loser
-	during debates}
-    \item{\code{diff.wills}}{difference between number of times 
-	will/shall used by two candidates}
-  }
+  Number of times a presidential candidate said "will,"
+  "shall," or "going to" in presidential debates from
+  1960-2004 (years incomplete).
 }
 \examples{
 data(WillsDebates)
 }
-
 \keyword{datasets}
+
