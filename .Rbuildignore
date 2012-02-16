@@ -1,1 +1,6 @@
 ^\.Rproj\.user$
+^bin$
+^sandbox$
+^\..*\.swp$
+^\..*\.swo$
+^abd.*\.gz$
