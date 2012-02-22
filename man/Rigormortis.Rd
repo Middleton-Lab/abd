@@ -17,7 +17,7 @@ numeric vector} }}
 \examples{
 data(Rigormortis)
 xyplot(count~hours, Rigormortis, type='h', lwd=3)
-barchart(count ~ hours, Rigormortis, horizontal=FALSE)
+barchart(count ~ hours, Rigormortis, horizontal=FALSE, origin=0)
 }
 \keyword{datasets}
 

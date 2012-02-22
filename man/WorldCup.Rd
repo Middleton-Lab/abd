@@ -11,7 +11,7 @@ numeric vector} }}
 \examples{
 data(WorldCup)
 xyplot(count ~ score, WorldCup, type='h', lwd=4)
-barchart(count ~ score, WorldCup, horizontal=FALSE)
+barchart(count ~ score, WorldCup, origin=0, horizontal=FALSE)
 }
 \keyword{datasets}
 

@@ -346,7 +346,7 @@ NULL
 #' data(Cavalry)
 #' Cavalry
 #' xyplot(count ~ deaths, Cavalry, type='h', lwd=4)
-#' barchart(count ~ deaths, Cavalry, horizontal = FALSE, box.ratio = 1000)
+#' barchart(count ~ deaths, Cavalry, horizontal = FALSE, box.ratio = 1000, origin=0)
 #' 
 NULL
 
@@ -568,7 +568,7 @@ NULL
 #' 
 #' data(Convictions)
 #' str(Convictions)
-#' barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE)
+#' barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE, origin=0)
 #' xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
 #' 
 NULL
@@ -742,13 +742,13 @@ NULL
 #' 
 #' data(DayOfBirth)
 #' DayOfBirth
-#' barchart( day ~ births, DayOfBirth)
+#' barchart( day ~ births, DayOfBirth, origin=0)
 #' 
 #' # fix bad ordering of days
 #' DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
-#' barchart( oday ~ births, DayOfBirth)
-#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE)
-#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, 
+#' barchart( oday ~ births, DayOfBirth, origin=0)
+#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0)
+#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0, 
 #'  scales = list(x=list(rot=45)))
 #' 
 #' barplot(DayOfBirth$births,
@@ -2753,7 +2753,7 @@ NULL
 #' 
 #' data(Rigormortis)
 #' xyplot(count~hours, Rigormortis, type='h', lwd=3)
-#' barchart(count ~ hours, Rigormortis, horizontal=FALSE)
+#' barchart(count ~ hours, Rigormortis, horizontal=FALSE, origin=0)
 #' 
 NULL
 
@@ -3411,13 +3411,13 @@ NULL
 #' barchart(deaths ~ cause, TeenDeaths, 
 #'   horizontal = FALSE,
 #'   ylab = "Number of Deaths",
-#'   xlab = "Cause of Death",
+#'   xlab = "Cause of Death", origin=0,
 #'   scales = list(x = list(rot=45)))
 #' 
 #' barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
 #'   horizontal = FALSE,
 #'   ylab = "Number of Deaths",
-#'   xlab = "Cause of Death",
+#'   xlab = "Cause of Death", origin=0,
 #'   scales=list(x=list(rot=45))
 #'   )
 #' 
@@ -3706,7 +3706,7 @@ NULL
 #' data(Truffles)
 #' Truffles
 #' xyplot(count~truffles, Truffles, type='h', lwd=4)
-#' barchart(count~truffles, Truffles, horizontal=FALSE)
+#' barchart(count~truffles, Truffles, origin=0, horizontal=FALSE)
 #' 
 NULL
 
@@ -3888,10 +3888,10 @@ NULL
 #' 
 #' data(VoleDispersal)
 #' xtabs(count~sex+homeranges,VoleDispersal)
-#' barchart( xtabs(count~sex+homeranges,VoleDispersal), auto.key=TRUE)
-#' barchart(count~sex+homeranges,VoleDispersal)
-#' barchart(count~sex,groups=homeranges,VoleDispersal)
-#' barchart(count~sex,groups=homeranges,VoleDispersal,stack=TRUE)
+#' barchart( xtabs(count~sex+homeranges,VoleDispersal), origin=0, auto.key=TRUE)
+#' barchart(count~sex+homeranges,VoleDispersal, origin=0)
+#' barchart(count~sex,groups=homeranges,VoleDispersal, origin=0)
+#' barchart(count~sex,groups=homeranges,VoleDispersal, origin=0,stack=TRUE)
 #' 
 NULL
 
@@ -4110,7 +4110,7 @@ NULL
 #' 
 #' data(WorldCup)
 #' xyplot(count ~ score, WorldCup, type='h', lwd=4)
-#' barchart(count ~ score, WorldCup, horizontal=FALSE)
+#' barchart(count ~ score, WorldCup, origin=0, horizontal=FALSE)
 #' 
 NULL
 
@@ -4158,7 +4158,7 @@ NULL
 #' 
 #' data(YeastGenes)
 #' str(YeastGenes)
-#' barchart(count ~ genes.controlled , YeastGenes, horizontal=FALSE)
+#' barchart(count ~ genes.controlled , origin=0, YeastGenes, horizontal=FALSE)
 #' 
 NULL
 

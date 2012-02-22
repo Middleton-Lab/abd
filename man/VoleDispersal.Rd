@@ -18,10 +18,10 @@ levels \code{female} and \code{male}} }}
 \examples{
 data(VoleDispersal)
 xtabs(count~sex+homeranges,VoleDispersal)
-barchart( xtabs(count~sex+homeranges,VoleDispersal), auto.key=TRUE)
-barchart(count~sex+homeranges,VoleDispersal)
-barchart(count~sex,groups=homeranges,VoleDispersal)
-barchart(count~sex,groups=homeranges,VoleDispersal,stack=TRUE)
+barchart( xtabs(count~sex+homeranges,VoleDispersal), origin=0, auto.key=TRUE)
+barchart(count~sex+homeranges,VoleDispersal, origin=0)
+barchart(count~sex,groups=homeranges,VoleDispersal, origin=0)
+barchart(count~sex,groups=homeranges,VoleDispersal, origin=0,stack=TRUE)
 }
 \keyword{datasets}
 

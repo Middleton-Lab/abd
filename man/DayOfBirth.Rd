@@ -16,13 +16,13 @@ numeric vector} }}
 \examples{
 data(DayOfBirth)
 DayOfBirth
-barchart( day ~ births, DayOfBirth)
+barchart( day ~ births, DayOfBirth, origin=0)
 
 # fix bad ordering of days
 DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
-barchart( oday ~ births, DayOfBirth)
-barchart( births ~ oday, DayOfBirth, horizontal = FALSE)
-barchart( births ~ oday, DayOfBirth, horizontal = FALSE,
+barchart( oday ~ births, DayOfBirth, origin=0)
+barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0)
+barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0,
  scales = list(x=list(rot=45)))
 
 barplot(DayOfBirth$births,

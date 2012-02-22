@@ -17,7 +17,7 @@
 \examples{
 data(YeastGenes)
 str(YeastGenes)
-barchart(count ~ genes.controlled , YeastGenes, horizontal=FALSE)
+barchart(count ~ genes.controlled , origin=0, YeastGenes, horizontal=FALSE)
 }
 \keyword{datasets}
 

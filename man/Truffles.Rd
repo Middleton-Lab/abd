@@ -19,7 +19,7 @@ numeric vector} }}
 data(Truffles)
 Truffles
 xyplot(count~truffles, Truffles, type='h', lwd=4)
-barchart(count~truffles, Truffles, horizontal=FALSE)
+barchart(count~truffles, Truffles, origin=0, horizontal=FALSE)
 }
 \references{
   \url{http://www.fs.fed.us/psw/publications/watersj/waters2.PDF}
