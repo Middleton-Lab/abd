@@ -20,18 +20,22 @@ Data*][abdurl]. Roberts and Company Publishers. ISBN: 0981519407.
 ## Installation ##
 
 You can install the most recent version directly from github using
-`install_github()` from the
-[devtools package](https://github.com/hadley/devtools).
+`install_github()` from the [devtools
+package](https://github.com/hadley/devtools).
 
 ```R
 require(devtools)
 install_github("abd", "kmiddleton")
 ```
 
-OS-specific builds of the most-recent version are available via r-forge:
+Note that if you are using Windows, you will first need to install
+Rtools. Start at <http://www.murdoch-sutherland.com/Rtools/> and
+follow the links to CRAN.
+
+Stable release versions of `abd` are available via CRAN:
 
 ```R
-install.packages("abd", repos="http://R-Forge.R-project.org")
+install.packages("abd")
 ```
 
 ## Examples ##
@@ -39,6 +43,6 @@ install.packages("abd", repos="http://R-Forge.R-project.org")
 ```R
 trellis.par.set(theme=col.abd())  # set color theme
 show.settings()
-abdData(3)                       # look for data sets in chapter 3
-abdData('Finch')                 # look for data sets with 'finch' in name
+abdData(3)                        # look for data sets in chapter 3
+abdData('Finch')                  # look for data sets with 'finch' in name
 ```
