@@ -1952,6 +1952,12 @@ NULL
 #' determines mating success and potential reproductive output in the collared
 #' lizard (\emph{Crotaphytus collaris}). \emph{The American Naturalist} 166:
 #' 426-436.
+#' @note In the original publication (Lappin and Husak, 
+#' 2005; Figure 3A), the data are presented in log-10 units. The 
+#' data in \code{LizardBite} and in chapter 17, question 9 was
+#' back-transformed using \emph{e} (i.e., \code{exp()}). To recover the data
+#' from the original publicatio, use \code{10^(log(LizardBite$territory))}
+#' and \code{10^(log(LizardBite$bite))}.
 #' @keywords datasets
 #' @examples
 #' 
