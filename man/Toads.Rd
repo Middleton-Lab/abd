@@ -11,8 +11,11 @@ numeric vector} }}
 \examples{
 data(Toads)
 Toads
+# generate this data manually
+cbind(0:18, dbinom(0:18, 18, .5))
 xyplot(prob~n.toads, Toads, type='h', lwd=4)
-barchart(prob~n.toads, Toads, horizontal=FALSE)
+barchart(prob~n.toads, Toads, origin=0, horizontal=FALSE)
+if(require(mosaic)) plotDist('binom', params=list(18,.5), kind='hist')
 }
 \keyword{datasets}
 
