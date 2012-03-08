@@ -1973,8 +1973,10 @@ NULL
 
 #' Sprint Speeds in Canyon Lizards
 #' 
-#' Sprint speeds in 34 canyon lizards (\emph{Sceloporous merriami}) measured in
-#' successive years in Big Bend National Park.
+#' Sprint speeds (\code{speed}) in 34 canyon lizards 
+#' (\emph{Sceloporous merriami}) measured in
+#' successive years in Big Bend National Park. Note
+#' that \code{lizard} is not coded as a factor.
 #' 
 #' 
 #' @name LizardSprint

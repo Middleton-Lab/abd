@@ -12,9 +12,10 @@ numeric vector} }}
   \emph{Evolution} 42: 1116-1120.
 }
 \description{
-  Sprint speeds in 34 canyon lizards (\emph{Sceloporous
-  merriami}) measured in successive years in Big Bend
-  National Park.
+  Sprint speeds (\code{speed}) in 34 canyon lizards
+  (\emph{Sceloporous merriami}) measured in successive
+  years in Big Bend National Park. Note that \code{lizard}
+  is not coded as a factor.
 }
 \examples{
 data(LizardSprint)
