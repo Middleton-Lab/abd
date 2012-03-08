@@ -21,7 +21,7 @@
   Figure 3A), the data are presented in log-10 units. The
   data in \code{LizardBite} and in chapter 17, question 9
   was back-transformed using \emph{e} (i.e., \code{exp()}).
-  To recover the data from the original publicatio, use
+  To recover the data from the original publication, use
   \code{10^(log(LizardBite$territory))} and
   \code{10^(log(LizardBite$bite))}.
 }
