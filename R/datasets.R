@@ -1585,7 +1585,7 @@ NULL
 #' if (require(manipulate)){
 #'   ## Resampled mean, sd, SE
 #'   genes <- function(n){
-#'     nreps = 1000
+#'     nreps <- 1000
 #'     sample.mean <- numeric(nreps) # vector for sample means
 #'     sample.se <- numeric(nreps)   # vector for sample standard errors
 #'     sample.sd <- numeric(nreps)   # vector for sample standard deviations
@@ -1593,7 +1593,7 @@ NULL
 #'       random.sample <- sample(HumanGeneLengths$gene.length, size = n)
 #'       sample.mean[i] <- mean(random.sample)
 #'       sample.sd[i] <- sd(random.sample)
-#'       sample.se[i] <- se(random.sample)
+#'       sample.se[i] <- sd(random.sample)/sqrt(n)
 #'     }
 #'     hist.bins <- hist(sample.mean, breaks = 30, plot = FALSE)
 #'     hist(sample.mean,
@@ -1607,8 +1607,8 @@ NULL
 #'         "\nmean = ", round(mean(sample.mean), digits = 1), 
 #'         "\nsd = ", round(mean(sample.sd), digits = 1), 
 #'         "\nse = ", round(mean(sample.se), digits = 1), sep = ""))
-#' }
-#' manipulate(genes(nreps), nreps = slider(1, 500))
+#'    }
+#' manipulate(genes(n), n = slider(1, 500))
 #' }
 #' 
 NULL
