@@ -6,4 +6,6 @@ sum( dbinom(10:25, 25, 0.061) )
 pbinom(9, 25, 0.061, lower.tail=FALSE) 
 1 - pbinom(9, 25, 0.061)
 
-propPval(10, 25, p=0.061)
+if (require(mosaic)){
+  binom.test(10, 25, p=0.061)
+}
