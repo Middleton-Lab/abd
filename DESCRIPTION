@@ -16,6 +16,7 @@ Suggests:
     ggplot2,
     plyr,
     HH,
+    ICC,
     vcd,
     Hmisc,
     mosaic,
