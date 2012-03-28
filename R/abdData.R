@@ -35,11 +35,11 @@
 #' abdData('Exercise')
 #' 
 abdData <- function(..., 
-	chapters=1:21, 
-	types= c('Example','Problem'),
-	numbers=1:100, 
+	chapters = 1:21, 
+	types = c('Example', 'Problem'),
+	numbers = 1:100, 
 	pattern = '*',
-	ignore.case=TRUE) {
+	ignore.case = TRUE) {
 
 	dots <- list(...)
 
@@ -57,13 +57,10 @@ abdData <- function(...,
 		}
 	}
 
-
-	results <- subset(dataInfo,
-				chapter %in% chapters & 
-				type %in% types &
-				number %in% numbers &
-				grepl(pattern,name,ignore.case=ignore.case) 
-	)
+	results <- dataInfo[dataInfo$chapter %in% chapters & 
+	  dataInfo$type %in% types &
+	  dataInfo$number %in% numbers &
+    grepl(pattern,dataInfo$name,ignore.case=ignore.case), ]
 
 	if (prod(dim(results)) == 0) { return (NULL) }
 	return(results)
