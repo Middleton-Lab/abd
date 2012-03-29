@@ -1,4 +1,4 @@
-VampireBites
+## VampireBites
 
 ## Table 9.4-1
 xtabs(count ~ estrous + bitten, data = VampireBites)

@@ -1,2 +1,4 @@
-# figure 2.2-1
-cumfreq(~count,DesertBirds, xlab='Species Abundance')
+# Figure 2.2-1
+if (require(mosaic)){
+  plotCumfreq(~ count, DesertBirds, xlab = "Species Abundance")
+}

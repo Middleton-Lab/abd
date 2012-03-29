@@ -9,16 +9,17 @@ Depends:
     R (>= 2.10),
     nlme,
     lattice,
-    grid
+    grid,
+    mosaic
 Suggests:
     boot,
     car,
     ggplot2,
     plyr,
     HH,
+    ICC,
     vcd,
     Hmisc,
-    mosaic,
     manipulate
 Description: The abd package contains data sets and sample code for The
     Analysis of Biological Data by Michael Whitlock and Dolph Schluter (2009;

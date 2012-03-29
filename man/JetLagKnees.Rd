@@ -15,13 +15,7 @@
   light treatments (\code{treatment}).
 }
 \examples{
-data(JetLagKnees)
-JetLagKnees
-str(JetLagKnees)
-
-# since data set is small, no need to summarize
-xyplot(shift ~ treatment, data = JetLagKnees)
-bwplot(shift ~ treatment, data = JetLagKnees)
+demo(sec15.1)
 }
 \references{
   \url{http://www.sciencemag.org/cgi/content/full/297/5581/571}

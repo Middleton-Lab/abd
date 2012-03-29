@@ -12,7 +12,7 @@ plot(table(Aspirin), main = "")
 (Odds <- Odds.asp / Odds.no.asp)
 ln.Odds <- log(Odds)
 
-(SE.Odds <- sqrt(sum(1/Aspirin$count)))
+(SE.Odds <- sqrt(sum(1/table(Aspirin))))
 Z <- 1.96
 (CI.low <- ln.Odds - Z * SE.Odds)
 (CI.high <- ln.Odds + Z * SE.Odds)

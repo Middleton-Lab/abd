@@ -1585,7 +1585,7 @@ NULL
 #' if (require(manipulate)){
 #'   ## Resampled mean, sd, SE
 #'   genes <- function(n){
-#'     nreps = 1000
+#'     nreps <- 1000
 #'     sample.mean <- numeric(nreps) # vector for sample means
 #'     sample.se <- numeric(nreps)   # vector for sample standard errors
 #'     sample.sd <- numeric(nreps)   # vector for sample standard deviations
@@ -1593,7 +1593,7 @@ NULL
 #'       random.sample <- sample(HumanGeneLengths$gene.length, size = n)
 #'       sample.mean[i] <- mean(random.sample)
 #'       sample.sd[i] <- sd(random.sample)
-#'       sample.se[i] <- se(random.sample)
+#'       sample.se[i] <- sd(random.sample)/sqrt(n)
 #'     }
 #'     hist.bins <- hist(sample.mean, breaks = 30, plot = FALSE)
 #'     hist(sample.mean,
@@ -1607,8 +1607,8 @@ NULL
 #'         "\nmean = ", round(mean(sample.mean), digits = 1), 
 #'         "\nsd = ", round(mean(sample.sd), digits = 1), 
 #'         "\nse = ", round(mean(sample.se), digits = 1), sep = ""))
-#' }
-#' manipulate(genes(nreps), nreps = slider(1, 500))
+#'    }
+#' manipulate(genes(n), n = slider(1, 500))
 #' }
 #' 
 NULL
@@ -1723,14 +1723,7 @@ NULL
 #' @keywords datasets
 #' @examples
 #' 
-#' data(JetLagKnees)
-#' JetLagKnees
-#' str(JetLagKnees)
-#' 
-#' # since data set is small, no need to summarize
-#' xyplot(shift ~ treatment, data = JetLagKnees)
-#' bwplot(shift ~ treatment, data = JetLagKnees)
-#' 
+#' demo(sec15.1)
 #' 
 NULL
 
@@ -1952,6 +1945,12 @@ NULL
 #' determines mating success and potential reproductive output in the collared
 #' lizard (\emph{Crotaphytus collaris}). \emph{The American Naturalist} 166:
 #' 426-436.
+#' @note In the original publication (Lappin and Husak, 
+#' 2005; Figure 3A), the data are presented in log-10 units. The 
+#' data in \code{LizardBite} and in chapter 17, question 9 was
+#' back-transformed using \emph{e} (i.e., \code{exp()}). To recover the data
+#' from the original publication, use \code{10^(log(LizardBite$territory))}
+#' and \code{10^(log(LizardBite$bite))}.
 #' @keywords datasets
 #' @examples
 #' 
@@ -1967,8 +1966,10 @@ NULL
 
 #' Sprint Speeds in Canyon Lizards
 #' 
-#' Sprint speeds in 34 canyon lizards (\emph{Sceloporous merriami}) measured in
-#' successive years in Big Bend National Park.
+#' Sprint speeds (\code{speed}) in 34 canyon lizards 
+#' (\emph{Sceloporous merriami}) measured in
+#' successive years in Big Bend National Park. Note
+#' that \code{lizard} is not coded as a factor.
 #' 
 #' 
 #' @name LizardSprint
@@ -3901,14 +3902,15 @@ NULL
 
 #' Walking Stick Femur Length
 #' 
-#' Two measures of femur length for each of 25 walking sticks (\emph{Timema
-#' cristinae}).
+#' Two measures of femur length \code{femur.length} for each of 25 
+#' walking sticks (\emph{Timema cristinae}). Note that \code{specimen}
+#' is not coded as a factor.
 #' 
 #' 
 #' @name WalkingStickFemurs
 #' @docType data
 #' @format A data frame with 50 observations on the following 2 variables.
-#' \describe{ \item{specimen}{a factor with levels \code{1-25}}
+#' \describe{ \item{specimen}{a integer denoting specimen number.}
 #' \item{femur.length}{a numeric vector of femur length} }
 #' @references
 #' \url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}
@@ -3918,10 +3920,7 @@ NULL
 #' @keywords datasets
 #' @examples
 #' 
-#' data(WalkingStickFemurs)
-#' str(WalkingStickFemurs)
-#' 
-#' aov(femur.length ~ specimen, data = WalkingStickFemurs)
+#' demo(sec15.6)
 #' 
 NULL
 
