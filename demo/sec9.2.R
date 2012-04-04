@@ -23,8 +23,6 @@ exp(CI.high)
 # Using oddsRatio() from the mosaic package
 # First reformat the data so that "No cancer" is in column 1
 # and "Aspirin" is in row 2.
-if (require(mosaic)) {
-	x <- matrix(c(18515, 18496, 1427, 1438), nrow = 2)
-	x
-	oddsRatio(x)
-}
+x <- matrix(c(18515, 18496, 1427, 1438), nrow = 2)
+x
+oddsRatio(x)

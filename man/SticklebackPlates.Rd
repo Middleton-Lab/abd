@@ -21,18 +21,17 @@
 \examples{
 data(SticklebackPlates)
 
-if (require(mosaic))
-  aggregate(plates ~ genotype, SticklebackPlates, favstats)
+aggregate(plates ~ genotype, SticklebackPlates, FUN = favstats)
 
-histogram(~plates | genotype, SticklebackPlates,
-  layout=c(1,3),
-  n=15,
+histogram( ~ plates | genotype, SticklebackPlates,
+  layout = c(1,3),
+  n = 15,
   xlab = "Number of Lateral Body Plates"
   )
 
-densityplot(~plates | genotype, SticklebackPlates,
+densityplot( ~ plates | genotype, SticklebackPlates,
   xlab = "Number of Lateral Body Plates",
-  layout=c(1,3)
+  layout = c(1,3)
   )
 }
 \references{

@@ -312,12 +312,8 @@ NULL
 #' 
 #' bwplot(proportion.surviving ~ trout, BrookTrout)
 #' 
-#' if (require(mosaic)) {
-#'   aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
-#'   if (require(Hmisc)) {
-#'     summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
-#'   }
-#' }
+#' aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+#' summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
 #' 
 NULL
 
@@ -405,12 +401,8 @@ NULL
 #' 
 #' data(ChimpBrains)
 #' xyplot(asymmetry ~ sex, ChimpBrains)
-#' if (require(mosaic)) {
-#'   aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
-#'   if (require(Hmisc)) {
-#'     summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
-#'   }
-#' }
+#' aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
+#' summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
 #' 
 NULL
 
@@ -441,13 +433,7 @@ NULL
 #' data(Cichlids)
 #' str(Cichlids)
 #'
-#' if (require(mosaic)) {
-#'   if (require(Hmisc)) {
-#'     summary(preference ~ genotype, Cichlids, fun = favstats)
-#'   } else {
-#'     aggregate(preference ~ genotype, Cichlids, FUN = favstats)
-#'   }
-#' }
+#' summary(preference ~ genotype, Cichlids, fun = favstats)
 #' 
 #' if (require(plyr)) {
 #' ddply(Cichlids, .(genotype),
@@ -1544,8 +1530,8 @@ NULL
 #' 
 #' data(HumanBodyTemp)
 #' histogram(~temp, HumanBodyTemp)
-#' stem(HumanBodyTemp$temp,scale=2)
-#' if (require(mosaic)) favstats(HumanBodyTemp$temp)
+#' stem(HumanBodyTemp$temp, scale = 2)
+#' favstats(HumanBodyTemp$temp)
 #' 
 NULL
 
@@ -2414,7 +2400,7 @@ NULL
 #' @examples
 #' 
 #' data(NorthSeaCod)
-#' if (require(mosaic)) favstats(NorthSeaCod$log10.recruits)
+#' favstats(NorthSeaCod$log10.recruits)
 #' 
 NULL
 
@@ -2665,8 +2651,7 @@ NULL
 #' data(Pseudoscorpions)
 #' str(Pseudoscorpions)
 #' bwplot(successful.broods ~ treatment, Pseudoscorpions)
-#' if (require(mosaic)) 
-#'   aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
+#' aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
 #' 
 NULL
 
@@ -3196,11 +3181,9 @@ NULL
 #' @examples
 #' data(SpiderSpeed)
 #' xyplot(speed.after ~ speed.before, SpiderSpeed)
-#' if (require(mosaic)) {
-#'   favstats(SpiderSpeed$speed.before)
-#'   favstats(SpiderSpeed$speed.after)
-#'   favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
-#' }
+#' favstats(SpiderSpeed$speed.before)
+#' favstats(SpiderSpeed$speed.after)
+#' favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
 #' 
 NULL
 
@@ -3252,7 +3235,7 @@ NULL
 #' data(Stalkies2)
 #' str(Stalkies2)
 #' xyplot(eye.span ~ food, Stalkies2)
-#' if (require(mosaic)) aggregate(eye.span ~ food, Stalkies2, FUN=favstats)
+#' aggregate(eye.span ~ food, Stalkies2, FUN = favstats)
 #' 
 NULL
 
@@ -3287,18 +3270,17 @@ NULL
 #' 
 #' data(SticklebackPlates)
 #' 
-#' if (require(mosaic)) 
-#'   aggregate(plates ~ genotype, SticklebackPlates, favstats)
+#' aggregate(plates ~ genotype, SticklebackPlates, FUN = favstats)
 #' 
-#' histogram(~plates | genotype, SticklebackPlates, 
-#'   layout=c(1,3),
-#'   n=15,
+#' histogram( ~ plates | genotype, SticklebackPlates, 
+#'   layout = c(1,3),
+#'   n = 15,
 #'   xlab = "Number of Lateral Body Plates"
 #'   )
 #' 
-#' densityplot(~plates | genotype, SticklebackPlates, 
+#' densityplot( ~ plates | genotype, SticklebackPlates, 
 #'   xlab = "Number of Lateral Body Plates",
-#'   layout=c(1,3)
+#'   layout = c(1,3)
 #'   )
 #' 
 #' 
@@ -3502,10 +3484,10 @@ NULL
 #' data(Toads)
 #' Toads
 #' # generate this data manually
-#' cbind(0:18, dbinom(0:18, 18, .5))
-#' xyplot(prob~n.toads, Toads, type='h', lwd=4)
+#' cbind(0:18, dbinom(0:18, 18, 0.5))
+#' xyplot(prob~n.toads, Toads, type = 'h', lwd = 4)
 #' barchart(prob~n.toads, Toads, origin=0, horizontal=FALSE)
-#' if(require(mosaic)) plotDist('binom', params=list(18,.5), kind='hist')
+#' plotDist('binom', params = list(18,0.5), kind = 'hist')
 #' 
 #' 
 NULL

@@ -21,13 +21,7 @@
 data(Cichlids)
 str(Cichlids)
 
-if (require(mosaic)) {
-  if (require(Hmisc)) {
-    summary(preference ~ genotype, Cichlids, fun = favstats)
-  } else {
-    aggregate(preference ~ genotype, Cichlids, FUN = favstats)
-  }
-}
+summary(preference ~ genotype, Cichlids, fun = favstats)
 
 if (require(plyr)) {
 ddply(Cichlids, .(genotype),

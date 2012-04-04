@@ -34,12 +34,8 @@ str(BrookTrout2)
 
 bwplot(proportion.surviving ~ trout, BrookTrout)
 
-if (require(mosaic)) {
-  aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
-  if (require(Hmisc)) {
-    summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
-  }
-}
+aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
 }
 \keyword{datasets}
 
