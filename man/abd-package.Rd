@@ -11,14 +11,8 @@
 }
 \details{
   \tabular{ll}{ Package: \tab abd\cr Type: \tab Package\cr
-  Version: \tab 0.1-24\cr Date: \tab 2012-02-15\cr License:
+  Version: \tab 0.2-2\cr Date: \tab 2012-04-03\cr License:
   \tab GPL\cr LazyLoad: \tab yes\cr LazyData: \tab yes\cr }
-
-  \tabular{ll}{ Overview\tab
-  \code{file.show(system.file("README", package =
-  "abd"))}\cr News\tab \code{RShowDoc("NEWS", package =
-  "abd")}\cr Acknowledgements\tab \code{RShowDoc("THANKS",
-  package = "abd")}\cr This File\tab \code{?abd}\cr }
 }
 \examples{
 trellis.par.set(theme=col.abd())  # set color theme
