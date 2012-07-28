@@ -4281,7 +4281,7 @@ NULL
 #' @name abd-package
 #' @aliases abd-package abd
 #' @docType package
-#' @author Kevin M. Middleton (\url{kmm@@csusb.edu}); Randall Pruim
+#' @author Kevin M. Middleton (\url{middletonk@@missouri.edu}); Randall Pruim
 #' (\url{rpruim@@calvin.edu})
 #' @references Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
 #' Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.

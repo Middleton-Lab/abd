@@ -11,7 +11,7 @@
 }
 \details{
   \tabular{ll}{ Package: \tab abd\cr Type: \tab Package\cr
-  Version: \tab 0.2-2\cr Date: \tab 2012-04-03\cr License:
+  Version: \tab 0.2-3\cr Date: \tab 2012-07-28\cr License:
   \tab GPL\cr LazyLoad: \tab yes\cr LazyData: \tab yes\cr }
 }
 \examples{
@@ -21,8 +21,8 @@ abdData(3)                        # look for data sets in chapter 3
 abdData('Finch')                  # look for data sets with 'finch' in name
 }
 \author{
-  Kevin M. Middleton (\url{kmm@csusb.edu}); Randall Pruim
-  (\url{rpruim@calvin.edu})
+  Kevin M. Middleton (\url{middletonk@missouri.edu});
+  Randall Pruim (\url{rpruim@calvin.edu})
 }
 \references{
   Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis
