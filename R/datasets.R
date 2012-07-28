@@ -4272,8 +4272,8 @@ NULL
 #' 
 #' \tabular{ll}{ Package: \tab abd\cr 
 #'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-2\cr 
-#'               Date: \tab 2012-04-03\cr 
+#'               Version: \tab 0.2-3\cr 
+#'               Date: \tab 2012-07-28\cr 
 #'               License: \tab GPL\cr 
 #'               LazyLoad: \tab yes\cr 
 #'               LazyData: \tab yes\cr }
