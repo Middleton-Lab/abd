@@ -1,3 +1,59 @@
+#' Data sets from The Analysis of Biological Data
+#' 
+#' The \code{abd} package contains data sets and sample code for the book,
+#' \emph{The Analysis of Biological Data} by Michael C. Whitlock and Dolph
+#' Schluter (2009; Roberts and Company Publishers).
+#' 
+#' \tabular{ll}{ Package: \tab abd\cr 
+#'               Type: \tab Package\cr 
+#'               Version: \tab 0.2-4\cr 
+#'               Date: \tab 2012-07-29\cr 
+#'               License: \tab GPL\cr 
+#'               LazyLoad: \tab yes\cr 
+#'               LazyData: \tab yes\cr }
+#' 
+#' @name abd-package
+#' @aliases abd-package abd
+#' @docType package
+#' @author Kevin M. Middleton (\url{middletonk@@missouri.edu}); Randall Pruim
+#' (\url{rpruim@@calvin.edu})
+#' @references Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
+#' Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
+#' \url{http://www.roberts-publishers.com/whitlock/}
+#' @keywords package
+#' @examples
+#' 
+#' trellis.par.set(theme=col.abd())  # set color theme
+#' show.settings()
+#' abdData(3)                        # look for data sets in chapter 3
+#' abdData('Finch')                  # look for data sets with 'finch' in name
+#' 
+NULL
+
+
+#' \code{abd} Data Sets
+#' 
+#' Information about the location of data sets in \emph{Analysis of Biological
+#' Data}
+#' 
+#' 
+#' @name dataInfo
+#' @docType data
+#' @format A data frame with 143 observations on the following 5 variables.
+#' \describe{ \item{name}{name of data set}
+#' \item{chapter}{chapter in which data set appears}
+#' \item{type}{used in an \code{Example} or a \code{Problem}}
+#' \item{number}{example or problem number}
+#' \item{sub}{sub-problem: \code{} \code{a} \code{b} \code{c}} }
+#' @seealso \code{\link{abdData}}
+#' @keywords datasets
+#' @examples
+#' 
+#' data(dataInfo)
+#' str(dataInfo)
+#' 
+NULL
+
 
 #' Carbon Dioxide and Growth Rate in Algae
 #' 
@@ -4259,69 +4315,4 @@ NULL
 #' summary(aov.fit)
 #' 
 NULL
-
-
-
-
-
-#' Data sets from The Analysis of Biological Data
-#' 
-#' The \code{abd} package contains data sets and sample code for the book,
-#' \emph{The Analysis of Biological Data} by Michael C. Whitlock and Dolph
-#' Schluter (2009; Roberts and Company Publishers).
-#' 
-#' \tabular{ll}{ Package: \tab abd\cr 
-#'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-3\cr 
-#'               Date: \tab 2012-07-28\cr 
-#'               License: \tab GPL\cr 
-#'               LazyLoad: \tab yes\cr 
-#'               LazyData: \tab yes\cr }
-#' 
-#' @name abd-package
-#' @aliases abd-package abd
-#' @docType package
-#' @author Kevin M. Middleton (\url{middletonk@@missouri.edu}); Randall Pruim
-#' (\url{rpruim@@calvin.edu})
-#' @references Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
-#' Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
-#' \url{http://www.roberts-publishers.com/whitlock/}
-#' @keywords package
-#' @examples
-#' 
-#' trellis.par.set(theme=col.abd())  # set color theme
-#' show.settings()
-#' abdData(3)                        # look for data sets in chapter 3
-#' abdData('Finch')                  # look for data sets with 'finch' in name
-#' 
-NULL
-
-
-
-
-
-#' \code{abd} Data Sets
-#' 
-#' Information about the location of data sets in \emph{Analysis of Biological
-#' Data}
-#' 
-#' 
-#' @name dataInfo
-#' @docType data
-#' @format A data frame with 143 observations on the following 5 variables.
-#' \describe{ \item{name}{name of data set}
-#' \item{chapter}{chapter in which data set appears}
-#' \item{type}{used in an \code{Example} or a \code{Problem}}
-#' \item{number}{example or problem number}
-#' \item{sub}{sub-problem: \code{} \code{a} \code{b} \code{c}} }
-#' @seealso \code{\link{abdData}}
-#' @keywords datasets
-#' @examples
-#' 
-#' data(dataInfo)
-#' str(dataInfo)
-#' 
-NULL
-
-
 
