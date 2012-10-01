@@ -11,7 +11,7 @@
 }
 \details{
   \tabular{ll}{ Package: \tab abd\cr Type: \tab Package\cr
-  Version: \tab 0.2-4\cr Date: \tab 2012-07-29\cr License:
+  Version: \tab 0.2-5\cr Date: \tab 2012-10-01\cr License:
   \tab GPL\cr LazyLoad: \tab yes\cr LazyData: \tab yes\cr }
 }
 \examples{

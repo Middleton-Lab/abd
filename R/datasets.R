@@ -6,8 +6,8 @@
 #' 
 #' \tabular{ll}{ Package: \tab abd\cr 
 #'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-4\cr 
-#'               Date: \tab 2012-07-29\cr 
+#'               Version: \tab 0.2-5\cr 
+#'               Date: \tab 2012-10-01\cr 
 #'               License: \tab GPL\cr 
 #'               LazyLoad: \tab yes\cr 
 #'               LazyData: \tab yes\cr }
@@ -2510,7 +2510,7 @@ NULL
 #' and \code{MF}} \item{slope}{a numeric vector} }
 #' @source Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and R. L.
 #' Holder. 2001. Heart rate and rate of oxygen consumption of exercising
-#' macaroni penguins. \emph{Journal of Experimental Biology} 204: 673–684.
+#' macaroni penguins. \emph{Journal of Experimental Biology} 204: 673-684.
 #' @keywords datasets
 #' @examples
 #' 

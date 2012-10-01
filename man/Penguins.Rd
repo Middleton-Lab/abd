@@ -9,7 +9,7 @@ and \code{MF}} \item{slope}{a numeric vector} }}
   Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and
   R. L. Holder. 2001. Heart rate and rate of oxygen
   consumption of exercising macaroni penguins.
-  \emph{Journal of Experimental Biology} 204: 673–684.
+  \emph{Journal of Experimental Biology} 204: 673-684.
 }
 \description{
   Slope of regressions of mass-specific metabolic rate on
