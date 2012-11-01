@@ -1,23 +1,23 @@
-# Data sets from *The Analysis of Biological Data* #
+# Data sets from *The Analysis of Biological Data*
 
-## Description ##
+## Description
 
 The `abd` package contains data sets and sample code for the book,
 *The Analysis of Biological Data* by Michael C. Whitlock and Dolph
 Schluter (2009; Roberts and Company Publishers).
    
-## Authors ##
+## Authors
 
-Kevin M. Middleton (CSU, San Bernardino); Randall Pruim (Calvin College)
+Kevin M. Middleton (University of Missouri); Randall Pruim (Calvin College)
 
-## Reference ##
+## Reference
 
 Whitlock, M.C. and D. Schluter. 2009. [*The Analysis of Biological 
 Data*][abdurl]. Roberts and Company Publishers. ISBN: 0981519407.
 
 [abdurl]:http://www.roberts-publishers.com/whitlock/
 
-## Installation ##
+## Installation
 
 You can install the most recent version directly from github using
 `install_github()` from the [devtools
@@ -38,7 +38,7 @@ Stable release versions of `abd` are available via CRAN:
 install.packages("abd")
 ```
 
-## Examples ##
+## Examples
 
 ```R
 trellis.par.set(theme=col.abd())  # set color theme
