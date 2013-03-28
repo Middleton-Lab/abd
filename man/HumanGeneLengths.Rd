@@ -28,7 +28,7 @@ data(HumanGeneLengths)
 str(HumanGeneLengths)
 histogram(~gene.length, HumanGeneLengths, subset=gene.length<15000)
 
-if (require(manipulate)){
+if (require(manipulate) & nzchar(Sys.getenv("RSTUDIO_USER_IDENTITY"))){
   ## Resampled mean, sd, SE
   genes <- function(n){
     nreps <- 1000
