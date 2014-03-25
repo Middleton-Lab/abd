@@ -1,13 +1,13 @@
 Package: abd
 Type: Package
 Title: The Analysis of Biological Data
-Version: 0.2-5
-Date: 2012-10-01
+Version: 0.2-6
+Date: 2014-03-25
 Author: Kevin M. Middleton <middletonk@missouri.edu>, Randall Pruim
     <rpruim@calvin.edu>
 Maintainer: Kevin M. Middleton <middletonk@missouri.edu>
 Depends:
-    R (>= 2.10),
+    R (>= 3.0),
     nlme,
     lattice,
     grid,
@@ -24,7 +24,8 @@ Suggests:
     manipulate
 Description: The abd package contains data sets and sample code for The
     Analysis of Biological Data by Michael Whitlock and Dolph Schluter (2009;
-    Roberts & Company Publishers).
+    Roberts & Company Publishers). Some examples utilize the manipulate package,
+    which is available within RStudio (http://www.rstudio.com). 
 License: GPL-2
 LazyLoad: yes
 LazyData: yes
