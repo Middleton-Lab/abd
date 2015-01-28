@@ -1,5 +1,7 @@
-#!/usr/bin/env Rscript --vanilla
+#! /usr/bin/Rscript --vanilla
 
+suppressPackageStartupMessages(library("methods"))
+suppressPackageStartupMessages(library("utils"))
 suppressPackageStartupMessages(library("roxygen2"))
 suppressPackageStartupMessages(library("optparse"))
 
@@ -30,16 +32,11 @@ opt <- parse_args(OptionParser(option_list=option_list))
 		write(paste("Processing package", opt$path, "...\n"), stderr())
 	}
 
-# manually load methods and utils
-# see http://stackoverflow.com/questions/8964515/cannot-call-roxygenize-function-from-rscript-batch-file
-library(methods)
-library(utils)
-
-if (require(devtools)) {
+if (FALSE & require(devtools)) {
 	suppressPackageStartupMessages(library("devtools"))
 	document(opt$path, clean=opt$clean)
 } else {
-	roxygenize(opt$path,clean=opt$clean)
+	roxygenize(opt$path)  # ,clean=opt$clean)
 }
 
 cat("\n")
