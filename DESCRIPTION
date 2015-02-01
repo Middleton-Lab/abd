@@ -21,7 +21,6 @@ Suggests:
     ICC,
     vcd,
     Hmisc
-Enhances: manipulate
 Description: The abd package contains data sets and sample code for The
     Analysis of Biological Data by Michael Whitlock and Dolph Schluter (2009;
     Roberts & Company Publishers).
