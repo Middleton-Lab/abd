@@ -21,6 +21,7 @@
 #' Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
 #' \url{http://www.roberts-publishers.com/whitlock/}
 #' @keywords package
+#' @import nlme lattice grid mosaic
 #' @examples
 #' 
 #' trellis.par.set(theme=col.abd())  # set color theme

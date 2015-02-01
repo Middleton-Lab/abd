@@ -7,8 +7,7 @@ Author: Kevin M. Middleton <middletonk@missouri.edu>, Randall Pruim
     <rpruim@calvin.edu>
 Maintainer: Kevin M. Middleton <middletonk@missouri.edu>
 Depends:
-    R (>= 3.0)
-Imports:
+    R (>= 3.0),
     nlme,
     lattice,
     grid,
