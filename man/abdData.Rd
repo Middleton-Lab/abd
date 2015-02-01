@@ -48,8 +48,5 @@ abdData('Exercise')
 \author{
 Randall Pruim (\email{rpruim@calvin.edu})
 }
-\seealso{
-\code{\link{dataInfo}}
-}
 \keyword{datasets}
 

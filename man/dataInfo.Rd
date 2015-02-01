@@ -15,6 +15,7 @@ Information about the location of data sets in \emph{Analysis of Biological
 Data}
 }
 \examples{
+data(dataInfo)
 str(dataInfo)
 }
 \seealso{

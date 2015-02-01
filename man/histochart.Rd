@@ -18,22 +18,19 @@ histochart(x, data = NULL, box.ratio = 100, origin = 0,
 
 \item{horizontal}{Should bars go horizontal?}
 
-\item{\dots}{other arguments passed to \code{\link{barchart}}}
+\item{\dots}{other arguments passed to lattice::barchart()}
 }
 \description{
-Uses \code{\link{barchart}} to build a histogram from tabulated data.
+Uses lattice::barchart() to build a histogram from tabulated data.
 }
 \details{
-This is just a convenience wrapper around \code{\link{barchart}}.
+This is just a convenience wrapper around lattice::barchart().
 }
 \examples{
 histochart( dbinom(0:30, 30, 0.35) ~ 0:30 )
 }
 \author{
 Randall Pruim (\email{rpruim@calvin.edu})
-}
-\seealso{
-\code{\link{barchart}}
 }
 \keyword{graphics}
 

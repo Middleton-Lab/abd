@@ -12,8 +12,6 @@
 #' \code{theme.abd} and \code{col.abd} are the same function with
 #' two names.
 #' @author Randall Pruim (\email{rpruim@@calvin.edu})
-#' @seealso \code{\link{trellis.par.set}} \code{\link{show.settings}}
-#' \code{\link{col.whitebg}}
 #' @keywords graphics
 #' @aliases col.abd,theme.abd
 #' @export

@@ -35,9 +35,5 @@ show.settings()
 \author{
 Randall Pruim (\email{rpruim@calvin.edu})
 }
-\seealso{
-\code{\link{trellis.par.set}} \code{\link{show.settings}}
-\code{\link{col.whitebg}}
-}
 \keyword{graphics}
 

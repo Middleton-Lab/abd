@@ -17,7 +17,6 @@
 #' @return A data frame describing data sets from \code{abd} that match the
 #' search criteria, or NULL if there are no matches.
 #' @author Randall Pruim (\email{rpruim@@calvin.edu})
-#' @seealso \code{\link{dataInfo}}
 #' @keywords datasets
 #' @export
 #' @examples
