@@ -8,3 +8,4 @@ abd.Rproj
 *.swp
 *.swo
 builds
+.Rhistory
