@@ -2131,7 +2131,6 @@ NULL
 #' @docType data
 #' @format A data frame with 32 observations of one variable.  \describe{
 #' \item{biomass.ratio}{} }
-#' @references \url{https://www.nceas.ucsb.edu/~halpern/pdf/Halpern_EA_2003.pdf}
 #' @source Halpern, B.S. 2003. The impact of marine reserves: do reserves work
 #' and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
 #' @keywords datasets

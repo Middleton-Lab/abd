@@ -18,8 +18,5 @@ data(MarineReserve)
 str(MarineReserve)
 histogram(~biomass.ratio, MarineReserve)
 }
-\references{
-\url{https://www.nceas.ucsb.edu/~halpern/pdf/Halpern_EA_2003.pdf}
-}
 \keyword{datasets}
 
