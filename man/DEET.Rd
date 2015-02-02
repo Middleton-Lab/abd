@@ -17,7 +17,6 @@ Tropical Medicine and Hygiene} 60: 654-657.
 Administered dose of DEET and number of mosquito bites for 52 women.
 }
 \examples{
-data(DEET)
 str(DEET)
 xyplot(bites ~ dose, DEET)
 }

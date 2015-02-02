@@ -16,7 +16,6 @@ Corruption in sumo wrestling. \emph{The American Economic Review} 92:
 Counts of number of wins for sumo wrestlers.
 }
 \examples{
-data(Sumo)
 xyplot(count ~ wins, Sumo, type='h', lwd=4)
 }
 \keyword{datasets}

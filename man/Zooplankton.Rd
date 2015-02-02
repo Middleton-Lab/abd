@@ -20,7 +20,6 @@ blocks (\code{block}) of three treatment levels (\code{treatment}). By
 default, \code{block} is not coded as a factor.
 }
 \examples{
-data(Zooplankton)
 Zooplankton
 
 Zooplankton$block <- factor(Zooplankton$block)

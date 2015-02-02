@@ -18,9 +18,8 @@ Skin color sockeye and kokanee morphs of the Pacific salmon
 (\emph{Oncorhynchus nerka}) raised in a low carotenoid environment.
 }
 \examples{
-data(SalmonColor)
 SalmonColor
-histogram(~skin.color | species, SalmonColor)
+histogram(~ skin.color | species, SalmonColor)
 bwplot(skin.color ~ species, SalmonColor)
 }
 \keyword{datasets}

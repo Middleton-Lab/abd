@@ -20,7 +20,6 @@ Percentage of time spent stretching in three treatments of mice. Both
 \code{condition} and \code{treatment} code for the same variable.
 }
 \examples{
-data(MouseEmpathy)
 str(MouseEmpathy)
 
 aov.fit <- aov(percent.stretching ~ treatment, data = MouseEmpathy)

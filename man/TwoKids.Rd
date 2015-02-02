@@ -15,7 +15,6 @@ the family? \emph{Chance Magazine} Fall 2001: 8-13.
 The number of boys in a sample of 2,444 two-child families.
 }
 \examples{
-data(TwoKids)
 TwoKids
 observed <- TwoKids$count
 expected <- c(585.3, 1221.4, 637.3)

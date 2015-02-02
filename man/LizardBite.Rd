@@ -26,7 +26,6 @@ from the original publication, use \code{10^(log(LizardBite$territory))}
 and \code{10^(log(LizardBite$bite))}.
 }
 \examples{
-data(LizardBite)
 str(LizardBite)
 xyplot(territory ~ bite, LizardBite)
 }

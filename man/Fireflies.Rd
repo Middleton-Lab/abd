@@ -16,7 +16,6 @@ Measurements of spermatophore mass (milligrams) in 35 fireflies
 (\emph{Photinus ignitus}).
 }
 \examples{
-data(Fireflies)
 str(Fireflies)
 histogram(~sp.mass, Fireflies, n=12)
 }

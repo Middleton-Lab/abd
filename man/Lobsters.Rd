@@ -14,9 +14,8 @@ maps in spiny lobsters. \emph{Nature} 421: 60-63.
 Orientation of 15 lobsters relative to initial position.
 }
 \examples{
-data(Lobsters)
-histogram(~orientation, Lobsters)
-dotplot(~orientation, Lobsters)
+histogram(~ orientation, Lobsters)
+dotplot(~ orientation, Lobsters)
 }
 \references{
 \url{http://www.unc.edu/depts/geomag/PDFGeomag/BolesandLohmann2003.pdf}

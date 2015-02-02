@@ -17,7 +17,6 @@ Number of earthworm species and total nitrogen content in the soil in 39
 hardwood forest plots.
 }
 \examples{
-data(Earthworms)
 str(Earthworms)
 xyplot(nitrogen ~ worm.species, Earthworms)
 }

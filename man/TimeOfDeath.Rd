@@ -17,7 +17,6 @@ Hypoxanthine levels in the vitreous humour of the eye and time since death
 (hours) for 48 subjects.
 }
 \examples{
-data(TimeOfDeath)
 xyplot(hypoxanthine ~ hours, TimeOfDeath, type=c('p','r'))
 }
 \keyword{datasets}

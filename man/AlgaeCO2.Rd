@@ -18,7 +18,6 @@ generations of selection under \code{High} and \code{Normal} levels of
 carbon dioxide.
 }
 \examples{
-data(AlgaeCO2)
 AlgaeCO2
 xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p', 'a'))
 }

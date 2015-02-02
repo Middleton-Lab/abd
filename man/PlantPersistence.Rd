@@ -18,7 +18,6 @@ Persistence times (\code{generations}) in the annual plant \emph{Cardamine
 pensylvanica} in four experimental populations (\code{treatment}).
 }
 \examples{
-data(PlantPersistence)
 xyplot(generations~treatment, PlantPersistence)
 }
 \keyword{datasets}

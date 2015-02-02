@@ -15,9 +15,8 @@ Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus
 cristatus}) that survived the 1992-1993 El Niño event.
 }
 \examples{
-data(Iguanas)
 str(Iguanas)
-histogram(~change.in.length, Iguanas, n = 10)
+histogram(~ change.in.length, Iguanas, n = 10)
 }
 \references{
 \url{http://en.wikipedia.org/wiki/Marine_iguana}

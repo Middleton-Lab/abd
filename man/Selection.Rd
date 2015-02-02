@@ -24,8 +24,7 @@ Data for meta-analysis on the relationship between testosterone and
 aggression.
 }
 \examples{
-data(Selection)
-histogram(~strength.of.selection, Selection,n=40)
+histogram(~ strength.of.selection, Selection,n=40)
 table(Selection$species) -> s
 table(s)
 s[s>10] # most common species

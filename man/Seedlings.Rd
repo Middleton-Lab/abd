@@ -11,7 +11,6 @@ numeric vector} }}
 Data on frequency of seeding per quadrat for 80 hypothetical quadrats.
 }
 \examples{
-data(Seedlings)
 Seedlings
 }
 \keyword{datasets}

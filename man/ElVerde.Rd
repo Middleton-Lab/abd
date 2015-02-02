@@ -16,7 +16,6 @@ Number of different species (\code{breadth}) in 127 species
 (\code{no.species}) in the rainforest community at El Verde, Puerto Rico
 }
 \examples{
-data(ElVerde)
 ElVerde
 xyplot(num.species ~ breadth, ElVerde, type='h',lwd=3)
 }

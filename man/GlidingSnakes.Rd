@@ -15,8 +15,6 @@ Undulation rate (\emph{Hz}) of 8 paradise tree snakes (\emph{Chrysopelea
 paradisi}).
 }
 \examples{
-data(GlidingSnakes)
-
 histogram(~undulation.rate , data=GlidingSnakes, n=7,
   xlab = "Undulation rate (Hz)",
   type='count')

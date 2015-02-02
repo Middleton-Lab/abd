@@ -15,7 +15,6 @@ Oster, E. 2004. Dreaming big: Why do people play Powerball?
 The number of Powerball tickets sold per day of the week for three years.
 }
 \examples{
-data(Powerball)
 Powerball
 xyplot(millions.of.tickets.sold ~ day, Powerball)
 }

@@ -16,7 +16,6 @@ Flash duration (measured in milliseconds) of a sample of male fireflies
 (\emph{Photinus ignitus}; \emph{n} = 35).
 }
 \examples{
-data(FireflyFlash)
 str(FireflyFlash)
 histogram(~flash, FireflyFlash)
 }

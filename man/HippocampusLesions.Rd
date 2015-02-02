@@ -17,7 +17,6 @@ Spatial memory score (\code{memory}) and percent lesion of the hippocampus
 (\code{lesion}).
 }
 \examples{
-data(HippocampusLesions)
 HippocampusLesions
 
 xyplot(memory ~ lesion, data = HippocampusLesions,

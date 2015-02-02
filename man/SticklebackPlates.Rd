@@ -20,8 +20,6 @@ Number of lateral plates (\code{plates}) in threespine sticklebacks
 genotypes (\code{mm}, \code{Mm}, and \code{MM}).
 }
 \examples{
-data(SticklebackPlates)
-
 aggregate(plates ~ genotype, SticklebackPlates, FUN = favstats)
 
 histogram( ~ plates | genotype, SticklebackPlates,

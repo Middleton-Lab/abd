@@ -18,7 +18,6 @@ Progesterone levels and rates of ventilation during submaximal exercise in
 30 women.
 }
 \examples{
-data(ProgesteroneExercise)
 str(ProgesteroneExercise)
 xyplot(ventilation ~ progesterone, ProgesteroneExercise)
 }

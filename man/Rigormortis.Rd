@@ -15,8 +15,7 @@ of Dundee.
 Number of bodies reaching rigormortis in each hour after death.
 }
 \examples{
-data(Rigormortis)
-xyplot(count~hours, Rigormortis, type='h', lwd=3)
+xyplot(count ~ hours, Rigormortis, type='h', lwd=3)
 barchart(count ~ hours, Rigormortis, horizontal=FALSE, origin=0)
 }
 \keyword{datasets}

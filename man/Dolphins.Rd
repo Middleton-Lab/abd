@@ -17,10 +17,9 @@ Percentage of time 8 sleeping dolphins from the Southern Hemisphere spent
 swimming clockwise.
 }
 \examples{
-data(Dolphins)
 Dolphins
 hist(Dolphins$percent.clockwise)
-histogram(~percent.clockwise, Dolphins)
+histogram(~ percent.clockwise, Dolphins)
 }
 \references{
 \url{http://faculty.washington.edu/chudler/dolp.html}

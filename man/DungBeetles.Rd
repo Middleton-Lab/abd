@@ -17,7 +17,6 @@ Body condition (\code{offspring.condition}) in 36 dung beetles
 virgin females.
 }
 \examples{
-data(DungBeetles)
 str(DungBeetles)
 xyplot(offspring.condition ~ factor(id), DungBeetles,
   xlab='Dung Beetle',

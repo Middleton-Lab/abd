@@ -17,9 +17,8 @@ Slope of regressions of mass-specific metabolic rate on heart rate for three
 groups of Macaroni Penguins.
 }
 \examples{
-data(Penguins)
 str(Penguins)
-dotplot(slope~group, Penguins)
+dotplot(slope ~ group, Penguins)
 }
 \keyword{datasets}
 

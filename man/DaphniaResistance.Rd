@@ -17,12 +17,12 @@ Resistance of \emph{Daphnia} eggs to different levels of cyanobacteria
 (\code{cyandensity}) from 1962-1997.
 }
 \examples{
-data(DaphniaResistance)
 str(DaphniaResistance)
 
 
 bwplot(resistance ~ density, DaphniaResistance)
-# with such a small data set, we can display all the data rather than a summary
+# with such a small data set, we can display all the data
+# rather than a summary
 xyplot(resistance ~ density, DaphniaResistance)
 histogram( ~ resistance| density, DaphniaResistance,
 	strip=FALSE, strip.left = TRUE,

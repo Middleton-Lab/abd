@@ -16,7 +16,6 @@ The increase in "slow-wave" sleep and improvements in spatial learning tasks
 in 10 humans.
 }
 \examples{
-data(SleepAndPerformance)
 str(SleepAndPerformance)
 xyplot(improvement ~ sleep, SleepAndPerformance)
 }

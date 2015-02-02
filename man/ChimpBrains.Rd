@@ -16,7 +16,6 @@ great apes. \emph{Nature} 414: 505.
 Asymmetry of Brodmann's area 44 in 20 chimpanzees.
 }
 \examples{
-data(ChimpBrains)
 xyplot(asymmetry ~ sex, ChimpBrains)
 aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
 summary(asymmetry ~ sex, ChimpBrains, fun = favstats)

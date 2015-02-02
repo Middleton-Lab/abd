@@ -17,7 +17,6 @@ Dietary conditioning \code{treatment} and subsequent proportion of tsetse
 flies (\emph{Glossina palpalis}) feeding on cow blood in each of 13 cohorts.
 }
 \examples{
-data(TsetseLearning)
 xyplot(proportion.cow ~ treatment, TsetseLearning)
 }
 \references{

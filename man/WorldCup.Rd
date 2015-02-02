@@ -11,7 +11,6 @@ numeric vector} }}
 Number of goals per team during the 2002 World Cup.
 }
 \examples{
-data(WorldCup)
 xyplot(count ~ score, WorldCup, type='h', lwd=4)
 barchart(count ~ score, WorldCup, origin=0, horizontal=FALSE)
 }

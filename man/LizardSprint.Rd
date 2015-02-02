@@ -19,10 +19,9 @@ successive years in Big Bend National Park. Note
 that \code{lizard} is not coded as a factor.
 }
 \examples{
-data(LizardSprint)
-histogram(~speed, LizardSprint)
+histogram(~ speed, LizardSprint)
 Lizard2 <- aggregate(speed ~ lizard, LizardSprint, mean)
-histogram(~speed, Lizard2)
+histogram(~ speed, Lizard2)
 }
 \references{
 \url{http://en.wikipedia.org/wiki/Sceloporus_merriami}

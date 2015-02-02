@@ -16,7 +16,6 @@ Frequency of taxon groups on the U.S. Fish and Wildlife Service list of
 endangered and threatened species (2002).
 }
 \examples{
-data(EndangeredSpecies)
 str(EndangeredSpecies)
 EndangeredSpecies
 }

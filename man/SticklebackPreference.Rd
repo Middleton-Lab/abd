@@ -15,10 +15,9 @@ speciation. \emph{Nature} 429: 294-298.
 Mating preference in 9 populations of three-spined sticklebacks.
 }
 \examples{
-data(SticklebackPreference)
 SticklebackPreference
-histogram(~preference.index, SticklebackPreference)
-dotplot(~preference.index, SticklebackPreference)
+histogram(~ preference.index, SticklebackPreference)
+dotplot(~ preference.index, SticklebackPreference)
 }
 \references{
 \url{http://www.nature.com/nature/journal/v429/n6989/abs/nature02556.html}

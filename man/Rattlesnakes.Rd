@@ -17,7 +17,6 @@ Temperature change after a meal (% of body mass) in 17 South American
 rattlesnakes (\emph{Crotalus durissus}).
 }
 \examples{
-data(Rattlesnakes)
 str(Rattlesnakes)
 xyplot(meal.size ~ temp.change, Rattlesnakes)
 }

@@ -17,9 +17,8 @@ Data on \code{temperature} and number of O-ring \code{failures} for 23 space
 shuttle launches.
 }
 \examples{
-data(ShuttleDisaster)
 str(ShuttleDisaster)
-xyplot( jitter(failures,amount=.1) ~ temperature, ShuttleDisaster,
+xyplot( jitter(failures, amount=0.1) ~ temperature, ShuttleDisaster,
   ylab='number of failures'
   )
 }

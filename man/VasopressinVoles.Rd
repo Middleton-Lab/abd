@@ -19,7 +19,6 @@ vasopressin-enhanced groups (\code{treatment}) of meadow voles
 (\emph{Microtus pennsylvanicus}).
 }
 \examples{
-data(VasopressinVoles)
 xyplot(percent ~ treatment, VasopressinVoles, type=c('p','a'))
 bwplot(percent ~ treatment, VasopressinVoles)
 }

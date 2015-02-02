@@ -16,7 +16,6 @@ Biomass change in 36 Amazonian rainforests following clearcuts ranging from
 50 m to several kilometers.
 }
 \examples{
-data(Clearcuts)
 str(Clearcuts)
 histogram(~biomass.change, Clearcuts)
 }

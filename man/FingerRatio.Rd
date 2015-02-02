@@ -18,7 +18,6 @@ The ratio of the lengths of the index finger to the ring finger in 46 males
 and the number of CAG repeats for each.
 }
 \examples{
-data(FingerRatio)
 str(FingerRatio)
 xyplot(finger.ratio ~ CAGrepeats, FingerRatio,
   xlab = "Number of CAG Repeats",

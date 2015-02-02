@@ -17,7 +17,6 @@ Rothamsted Experimental Station to which varying numbers of nutrients have
 been added.
 }
 \examples{
-data(Grassland)
 xyplot(num.species ~ jitter(nutrients, amount=0.1), Grassland, pch=16)
 }
 \references{

@@ -15,7 +15,6 @@ Percentage of time that a female spent next to a carotenoid-supplemented
 male Zebra Finch compared to his non-supplemented brother.
 }
 \examples{
-data(ZebraFinchBeaks)
 ZebraFinchBeaks
 }
 \references{

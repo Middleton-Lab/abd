@@ -15,7 +15,6 @@ Experimental Biology} 160: 25-54.
 Body mass (g) and metabolic rate (watts) for 17 species of primates.
 }
 \examples{
-data(PrimateMetabolism)
 str(PrimateMetabolism)
 xyplot(bmr ~ mass, PrimateMetabolism)
 xyplot(bmr ~ mass, PrimateMetabolism, scales=list(log=TRUE))

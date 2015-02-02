@@ -17,7 +17,7 @@ Number of times a presidential candidate said "will," "shall," or "going to"
 in presidential debates from 1960-2004 (years incomplete).
 }
 \examples{
-data(WillsDebates)
+WillsDebates
 }
 \keyword{datasets}
 

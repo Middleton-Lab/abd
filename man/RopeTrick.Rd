@@ -17,7 +17,6 @@ Indian Rope Trick and the corresponding number of \code{year}s since it was
 witnessed.
 }
 \examples{
-data(RopeTrick)
 xyplot(impressiveness ~ years, RopeTrick)
 }
 \references{

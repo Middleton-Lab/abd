@@ -20,7 +20,6 @@ Species abundance of electric fish upstream and downstream of the entrance
 of a tributary in the Amazon basin.
 }
 \examples{
-data(ElectricFish)
 ElectricFish
 require(grid)
 xyplot(species.upstream ~ species.downstream, data = ElectricFish,

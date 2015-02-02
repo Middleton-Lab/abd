@@ -20,7 +20,6 @@ Damaraland mole rats (\emph{Cryptomys damarensis}) with body mass
 (\code{ln.mass}) as a covariate.
 }
 \examples{
-data(MoleRats)
 MoleRats
 }
 \references{

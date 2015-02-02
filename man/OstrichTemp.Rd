@@ -21,7 +21,6 @@ ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding
 Centre, Lichtenburg, South Africa.
 }
 \examples{
-data(OstrichTemp)
 xyplot(brain.temp ~ body.temp, OstrichTemp)
 }
 \references{

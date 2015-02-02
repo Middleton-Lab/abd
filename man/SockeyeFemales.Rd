@@ -16,7 +16,6 @@ Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka};
 \url{http://www.nmfs.noaa.gov/pr/species/fish/sockeyesalmon.htm})
 }
 \examples{
-data(SockeyeFemales)
 str(SockeyeFemales)
 summary(SockeyeFemales)
 }

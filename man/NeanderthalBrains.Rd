@@ -17,7 +17,6 @@ Brain size (\code{lnbrain}) and body mass (\code{lnmass}) in Neanderthals
 and early modern humans (\code{species}).
 }
 \examples{
-data(NeanderthalBrains)
 xyplot(ln.brain ~ ln.mass, data=NeanderthalBrains, groups=species)
 }
 \keyword{datasets}

@@ -16,7 +16,6 @@ Home range size (\eqn{\log_{10}}{log10}) and captive infant mortality (%)
 for 20 species of carnivores.
 }
 \examples{
-data(ZooMortality)
 str(ZooMortality)
 }
 \references{

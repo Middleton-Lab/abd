@@ -16,7 +16,6 @@ and causal structure of the yeast transcriptional regulatory network.
 Number of genes regulated by 109 yeast regulatory genes.
 }
 \examples{
-data(YeastGenes)
 str(YeastGenes)
 barchart(count ~ genes.controlled , origin=0, YeastGenes, horizontal=FALSE)
 }

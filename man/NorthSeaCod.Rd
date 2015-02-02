@@ -17,7 +17,6 @@ morhua}) that recruited (grew to catchable size) in the North Sea over a 39
 years span.
 }
 \examples{
-data(NorthSeaCod)
 favstats(NorthSeaCod$log10.recruits)
 }
 \references{

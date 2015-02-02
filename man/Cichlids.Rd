@@ -18,7 +18,6 @@ Preference index in F1 and F2 crosses of two species of cichlids from Lake
 Victoria, \emph{Pundamilia pundamilia} and \emph{P. nyererei}.
 }
 \examples{
-data(Cichlids)
 str(Cichlids)
 
 summary(preference ~ genotype, Cichlids, fun = favstats)

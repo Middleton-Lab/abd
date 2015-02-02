@@ -20,7 +20,6 @@ planted with 1, 3, or 6 different genotypes of eelgrass
 (\code{treatment.genotypes}).
 }
 \examples{
-data(Eelgrass)
 Eelgrass
 
 # Convert treatment.genotypes to a factor

@@ -27,15 +27,13 @@ and 6 with brook trout \code{absent}. The proportion of salmon surviving
 (\code{proportion.surviving}) is given for each stream.
 }
 \examples{
-data(BrookTrout)
-data(BrookTrout2)
 str(BrookTrout)
 str(BrookTrout2)
 
 bwplot(proportion.surviving ~ trout, BrookTrout)
 
-aggregate( proportion.surviving ~ trout, BrookTrout, FUN = favstats)
-summary( proportion.surviving ~ trout, BrookTrout, fun = favstats)
+aggregate(proportion.surviving ~ trout, BrookTrout, FUN = favstats)
+summary(proportion.surviving ~ trout, BrookTrout, fun = favstats)
 }
 \keyword{datasets}
 

@@ -17,7 +17,6 @@ Number of \code{dioecious} and \code{monomorphic} taxa among pairs of
 closely related plants.
 }
 \examples{
-data(Dioecy)
 xyplot(dioecious ~ monomorphic, Dioecy, alpha = 0.65, pch = 16)
 }
 \keyword{datasets}

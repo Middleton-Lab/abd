@@ -16,11 +16,10 @@ Reports} Vol. 49, No. 1.
 Day of the week for 350 U.S. births in 1999.
 }
 \examples{
-data(DayOfBirth)
 DayOfBirth
 barchart( day ~ births, DayOfBirth, origin=0)
 
-# fix bad ordering of days
+# Fix bad ordering of days
 DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
 barchart( oday ~ births, DayOfBirth, origin=0)
 barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0)

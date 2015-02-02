@@ -16,7 +16,6 @@ and rate of diversification of the Hawaiian silversword alliance
 Speciation "waiting times" in Hawaiian silverswords (\emph{Dubautia}).
 }
 \examples{
-data(Silversword)
 Silversword
 }
 \keyword{datasets}

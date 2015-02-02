@@ -18,7 +18,6 @@ Number of hurricanes greater than or equal to category 3 on the
 Safir-Simpson scale during the 20th century.
 }
 \examples{
-data(Hurricanes)
 Hurricanes
 }
 \references{

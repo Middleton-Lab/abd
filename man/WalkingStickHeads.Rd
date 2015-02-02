@@ -17,9 +17,8 @@ Two measures of head width (\code{head.width}) for each of 25 walking sticks
 (\emph{Timema cristinae}).
 }
 \examples{
-data(WalkingStickHeads)
-aggregate(head.width~specimen, data=WalkingStickHeads, mean) -> WS
-histogram(~head.width, WS)
+aggregate(head.width ~ specimen, data=WalkingStickHeads, mean) -> WS
+histogram(~ head.width, WS)
 }
 \references{
 \url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}

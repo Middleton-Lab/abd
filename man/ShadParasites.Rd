@@ -16,7 +16,6 @@ macroparasite aggregation in wildlife host populations. \emph{Parasitology}
 Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 }
 \examples{
-data(ShadParasites)
 ShadParasites
 }
 \references{

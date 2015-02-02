@@ -14,9 +14,8 @@ and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
 Relative biomass in 32 marine reserves.
 }
 \examples{
-data(MarineReserve)
 str(MarineReserve)
-histogram(~biomass.ratio, MarineReserve)
+histogram(~ biomass.ratio, MarineReserve)
 }
 \keyword{datasets}
 

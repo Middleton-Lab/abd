@@ -16,8 +16,7 @@ Measurement (cm) of the distance between the canine and last molar teeth in
 35 wolves.
 }
 \examples{
-data(WolfTeeth)
-histogram(~length, WolfTeeth)
+histogram(~ length, WolfTeeth)
 }
 \references{
 \url{http://rspb.royalsocietypublishing.org/content/263/1372/849.abstract}

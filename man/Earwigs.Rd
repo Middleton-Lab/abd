@@ -16,7 +16,6 @@ Earwig (\emph{Forficula auricularia}) density and the proportion of trapped
 earwigs with abdominal forceps (used for fighting and courtship).
 }
 \examples{
-data(Earwigs)
 xyplot(proportion.forceps ~ density, data=Earwigs, type='h', lwd=6)
 }
 \references{

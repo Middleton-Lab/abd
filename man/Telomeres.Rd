@@ -18,7 +18,6 @@ Telomere length (ratio) and years since their child's diagnosis with chronic
 illness.
 }
 \examples{
-data(Telomeres)
 xyplot(years ~ telomere.length, Telomeres,
   xlab = "Time since diagnosis (years)",
   ylab = "Telomere length (ratio)"

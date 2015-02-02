@@ -17,7 +17,6 @@ yellow dung flies (\emph{Scathophaga stercoraria}) with different mating
 systems (\code{Mating.system}).
 }
 \examples{
-data(FlyTestes)
 str(FlyTestes)
 FlyTestes
 }

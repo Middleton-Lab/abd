@@ -17,7 +17,6 @@ Lounibos, L.P., N. Nishimura, J. Conn, and R. Lourenco-de-Oliveira.
 Weights of female and male mosquitos (\emph{Anopheles darlingi})
 }
 \examples{
-data(Mosquitoes)
 xyplot(weight ~ sex, Mosquitoes)
 }
 \references{

@@ -19,7 +19,6 @@ two worker types (\code{type}) in three bee colonies (\code{colony}). Note
 that \code{colony} is not coded as a factor.
 }
 \examples{
-data(BeeGenes)
 str(BeeGenes)
 BeeGenes
 xtabs( expression ~ type + colony, BeeGenes )

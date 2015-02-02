@@ -21,7 +21,6 @@ Masses of cones of lodgepole pines (\code{conemass}) from 16 different
 habitat types (\code{habitat}) in western North America.
 }
 \examples{
-data(LodgepolePines)
 LodgepolePines
 str(LodgepolePines)
 xyplot(conemass ~ habitat, LodgepolePines)

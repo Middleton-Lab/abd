@@ -14,7 +14,6 @@ heart rate. \emph{Journal of Statistics Education} 4(2).
 Body temperature for 25 randomly chosen health people
 }
 \examples{
-data(HumanBodyTemp)
 histogram(~temp, HumanBodyTemp)
 stem(HumanBodyTemp$temp, scale = 2)
 favstats(HumanBodyTemp$temp)

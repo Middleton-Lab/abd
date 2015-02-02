@@ -19,7 +19,6 @@ perceived level of high as determined by PET scans (\code{high}) in 34
 humans.
 }
 \examples{
-data(CocaineDopamine)
 str(CocaineDopamine)
 xyplot(high ~ percent.blocked, CocaineDopamine)
 }

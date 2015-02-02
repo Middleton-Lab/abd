@@ -16,7 +16,6 @@ Ages (in years; \code{age}) of 32 male lions and relative coloration of
 their noses (\code{proportion.black}).
 }
 \examples{
-data(LionNoses)
 xyplot(age ~ proportion.black, LionNoses)
 }
 \references{

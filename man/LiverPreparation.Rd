@@ -18,7 +18,6 @@ The unbound fraction of taurocholate for each of five concentrations of
 administered taurocholate.
 }
 \examples{
-data(LiverPreparation)
 str(LiverPreparation)
 xyplot(unbound.fraction ~ concentration, LiverPreparation)
 }

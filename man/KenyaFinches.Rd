@@ -18,7 +18,6 @@ Crimson-rumped waxbill (\code{CRU.WAXB}), Cutthroat finch (\code{CUTTHROA}),
 and White-browed sparrow weaver (\code{WB.SPARW}).
 }
 \examples{
-data(KenyaFinches)
 table(KenyaFinches$species)
 xyplot(beak.length ~ species, KenyaFinches)
 bwplot(beak.length ~ species, KenyaFinches)

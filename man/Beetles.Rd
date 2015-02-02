@@ -16,7 +16,6 @@ Relative size of the horns and wings in 19 female \emph{Onthophagus
 sagittarius} beetles.
 }
 \examples{
-data(Beetles)
 str(Beetles)
 xyplot(wing.mass ~ horn.size, Beetles)
 }

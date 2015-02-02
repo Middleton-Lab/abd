@@ -16,7 +16,6 @@ Biology} 4(7): e197
 Number of spores and host longevity in the crustacean \emph{Daphnia magna}.
 }
 \examples{
-data(DaphniaLongevity)
 str(DaphniaLongevity)
 xyplot(sqrt.spores ~ longevity, DaphniaLongevity)
 }

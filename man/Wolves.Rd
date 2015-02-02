@@ -17,9 +17,8 @@ Inbreeding coefficient and the number of pups produced in 24 mated pairs of
 wolves (\emph{Canis lupus}) from 1983-2002.
 }
 \examples{
-data(Wolves)
 Wolves
-xyplot( inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves)
+xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves)
 }
 \keyword{datasets}
 

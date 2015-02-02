@@ -17,7 +17,6 @@ Number of \code{climbing} and \code{nonclimbing} species within closely
 related general of plants.
 }
 \examples{
-data(Vines)
 xyplot(nonclimbing ~ climbing, Vines, scales=list(log=TRUE))
 }
 \references{

@@ -17,7 +17,6 @@ Actual birth year and birth year estimated from relative radioactivity of
 the enamel for 20 samples.
 }
 \examples{
-data(ToothAge)
 str(ToothAge)
 xyplot(actual ~ estimated, ToothAge)
 }

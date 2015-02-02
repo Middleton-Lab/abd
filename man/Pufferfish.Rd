@@ -18,7 +18,6 @@ Number of \code{predators} approaching models painted to resemble pufferfish
 (\code{resemblance})
 }
 \examples{
-data(Pufferfish)
 str(Pufferfish)
 xyplot(predators ~ jitter(resemblance, amount = 0.1), Pufferfish)
 Pufferfish

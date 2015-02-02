@@ -18,7 +18,6 @@ after injection of the neurotoxin tetrodotoxin from the rough-skinned newt
 (\emph{Taricha granulosa}).
 }
 \examples{
-data(Newts)
 Newts
 }
 \references{

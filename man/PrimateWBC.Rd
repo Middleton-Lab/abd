@@ -15,7 +15,6 @@ the primate immune system. \emph{Science} 290: 1168-1170.
 White blood cell (WBC) counts in pairs of closely related primate species
 }
 \examples{
-data(PrimateWBC)
 xyplot(WBC.more ~ WBC.less, PrimateWBC)
 }
 \keyword{datasets}

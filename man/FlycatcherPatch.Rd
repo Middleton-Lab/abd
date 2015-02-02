@@ -17,7 +17,6 @@ Forehead patch size in 30 male Collared Flycatachers measured in two
 consecutive years.
 }
 \examples{
-data(FlycatcherPatch)
 str(FlycatcherPatch)
 xyplot(patch99 ~ patch98, FlycatcherPatch)
 }

@@ -18,7 +18,6 @@ Levels of mRNA for gonadotropin-releasing hormone in cichlids
 = 6) territorial.
 }
 \examples{
-data(CichlidsGnRH)
 xyplot(GnRH.mRNA ~ territorial, CichlidsGnRH, type=c('p','a'))
 }
 \references{

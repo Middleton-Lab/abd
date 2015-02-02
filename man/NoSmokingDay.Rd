@@ -18,7 +18,6 @@ compared to the same Wednesday in the previous year
 (\code{Injuries.before.NSD}) for 1987-1996.
 }
 \examples{
-data(NoSmokingDay)
 NoSmokingDay
 }
 \references{

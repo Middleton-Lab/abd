@@ -14,10 +14,9 @@ Slower in Syrup? \emph{AIChE Journal} 50: 2646-2647.
 Relative swimming speed (speed in syrup / speed in water) for 18 swimmers.
 }
 \examples{
-data(SyrupSwimming)
 SyrupSwimming
-histogram(~relative.speed, SyrupSwimming)
-dotplot(~relative.speed, SyrupSwimming)
+histogram(~ relative.speed, SyrupSwimming)
+dotplot(~ relative.speed, SyrupSwimming)
 }
 \references{
 \url{http://www3.interscience.wiley.com/journal/109665380/issue}

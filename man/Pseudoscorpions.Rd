@@ -18,7 +18,6 @@ groups of female pseudoscrpions (\emph{Cordylochernes scorpioides}), one
 mated to the same male twice and one to two different males.
 }
 \examples{
-data(Pseudoscorpions)
 str(Pseudoscorpions)
 bwplot(successful.broods ~ treatment, Pseudoscorpions)
 aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)

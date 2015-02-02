@@ -16,9 +16,8 @@ Patuxent Wildlife Research Center, Laurel, MD.
 Census data for desert birds.
 }
 \examples{
-data(DesertBirds)
 str(DesertBirds)
-histogram( ~count, DesertBirds,
+histogram(~ count, DesertBirds,
   xlab = "Abundance"
   )
 }

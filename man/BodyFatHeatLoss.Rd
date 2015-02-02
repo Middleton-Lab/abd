@@ -15,7 +15,6 @@ swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
 Heat loss during exercise and relative body fat in 12 boys.
 }
 \examples{
-data(BodyFatHeatLoss)
 xyplot(lossrate ~ leanness, BodyFatHeatLoss)
 }
 \references{

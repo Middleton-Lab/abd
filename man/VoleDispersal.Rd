@@ -17,7 +17,6 @@ philopatry and dispersal in the field vole \emph{Microtus agrestis}.
 Home range size size in field voles (\emph{Microtus agrestis}).
 }
 \examples{
-data(VoleDispersal)
 xtabs(count~sex+homeranges,VoleDispersal)
 barchart( xtabs(count~sex+homeranges,VoleDispersal), origin=0, auto.key=TRUE)
 barchart(count~sex+homeranges,VoleDispersal, origin=0)

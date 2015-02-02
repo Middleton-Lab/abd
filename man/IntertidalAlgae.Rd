@@ -18,7 +18,6 @@ Area coverage of red algae (\emph{Mazzaella parksii}) in two herbivore
 treatments (\code{herbivores}) at two tide levels (\code{height}).
 }
 \examples{
-data(IntertidalAlgae)
 str(IntertidalAlgae)
 
 # Using * includes the main effects and the interaction

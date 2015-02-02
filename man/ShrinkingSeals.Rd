@@ -17,11 +17,10 @@ Body length (cm) and age (days) for 9,665 female Northern fur seals
 (\emph{Callorhinus ursinus}).
 }
 \examples{
-data(ShrinkingSeals)
 str(ShrinkingSeals)
 
 plot(ShrinkingSeals, pch = 16, cex = 0.5)
-xyplot(length ~ age, ShrinkingSeals, pch=16, alpha=.65, cex=.6)
+xyplot(length ~ age, ShrinkingSeals, pch=16, alpha=0.65, cex=0.6)
 }
 \keyword{datasets}
 

@@ -16,7 +16,6 @@ Number of lynx pelts (\code{pelts}) reported in Canada per year from 1752 to
 1819.
 }
 \examples{
-data(Lynx)
 xyplot(pelts ~ year, Lynx, type=c('p','l'))
 }
 \keyword{datasets}

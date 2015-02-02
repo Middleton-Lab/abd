@@ -15,7 +15,6 @@ sex ratio adjustment. \emph{Science} 295: 1695-1688.
 Correlation coefficient of sex ratio in bird offspring.
 }
 \examples{
-data(BirdSexRatio)
 histogram(~corr.coeff, BirdSexRatio, n = 10,
   xlab = "Correlation Coefficient")
 }

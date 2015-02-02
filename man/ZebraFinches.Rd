@@ -19,7 +19,6 @@ Data on cell-mediated immunocompetence (\code{PHA}) and humoral immunity
 (\code{CAROT}) and those that did not (\code{NO}).
 }
 \examples{
-data(ZebraFinches)
 ZebraFinches
 }
 \keyword{datasets}

@@ -17,8 +17,6 @@ son's attractiveness (relative rates of visits by females) in male guppies
 (\emph{Poecilia reticulata}).
 }
 \examples{
-data(Guppies)
-
 str(Guppies)
 xyplot(son.attract ~ father.ornament,
   Guppies,

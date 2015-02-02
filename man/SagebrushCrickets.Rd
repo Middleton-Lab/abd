@@ -18,7 +18,6 @@ Time to mating (\code{time.to.mating}) in fed and unfed (\code{treatment})
 sagebrush crickets (\emph{Cyphoderris strepitans}).
 }
 \examples{
-data(SagebrushCrickets)
 SagebrushCrickets
 str(SagebrushCrickets)
 }

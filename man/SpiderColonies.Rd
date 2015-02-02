@@ -17,7 +17,6 @@ Web height above ground (cm) and colony size for 17 colonies of the spider
 \emph{Cryptophora citricola} in Gabon.
 }
 \examples{
-data(SpiderColonies)
 str(SpiderColonies)
 SpiderColonies
 }

@@ -18,7 +18,6 @@ second language and density of gray matter in the left inferior parietal
 region.
 }
 \examples{
-data(LanguageBrains)
 str(LanguageBrains)
 xyplot(proficiency ~ greymatter, LanguageBrains)
 }

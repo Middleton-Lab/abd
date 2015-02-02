@@ -21,7 +21,6 @@ the difference between the two groups. One taxon has multiple matings
 (\code{monandrous.species}).
 }
 \examples{
-data(SexualSelection)
 SexualSelection
 
 histogram(~ difference, SexualSelection, n = 20)

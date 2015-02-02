@@ -20,7 +20,6 @@ Blackbirds (\emph{Agelaius phoeniceus}) and resulting changes in antibody
 levels
 }
 \examples{
-data(Blackbirds)
 Blackbirds
 xyplot(log.after ~ log.before, data = Blackbirds,
   ylab = "log Antibody production after implant",

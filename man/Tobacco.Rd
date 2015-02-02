@@ -17,7 +17,6 @@ East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 }
 \examples{
-data(Tobacco)
 Tobacco
 }
 \references{

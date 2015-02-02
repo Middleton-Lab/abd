@@ -18,7 +18,6 @@ Recruitment of \emph{Trillium} and distance to nearest clearcut in eight
 populations in southwestern Oregon.
 }
 \examples{
-data(Trillium)
 str(Trillium)
 splom(Trillium)
 }

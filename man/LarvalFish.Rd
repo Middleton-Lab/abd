@@ -18,7 +18,6 @@ Age (\code{age}) and coefficient of variation (\code{cv}) in larval fish
 from exploited and unexploited species (\code{exploited}).
 }
 \examples{
-data(LarvalFish)
 str(LarvalFish)
 xyplot(cv ~ age | exploited, LarvalFish)
 xyplot(cv ~ age, groups=exploited, LarvalFish)

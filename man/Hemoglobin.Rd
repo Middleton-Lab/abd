@@ -20,7 +20,6 @@ Relative rates of hemoglobin concentration in four populations of humans
 living at different altitudes.
 }
 \examples{
-data(Hemoglobin)
 str(Hemoglobin)
 
 xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,

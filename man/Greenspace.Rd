@@ -18,7 +18,6 @@ biodiversity. \emph{Biology Letters} 3: 390-394.
 Measures of biodiversity in 15 urban green spaces in Sheffield, England.
 }
 \examples{
-data(Greenspace)
 str(Greenspace)
 splom(Greenspace[,2:6])
 }

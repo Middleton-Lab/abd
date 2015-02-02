@@ -11,7 +11,6 @@ numeric vector} \item{count}{a numeric vector} }}
 Number and sex of adult wrasses in a section of the Great Barrier Reef.
 }
 \examples{
-data(WrasseSexes)
 xtabs(count ~ males + females, WrasseSexes)
 }
 \keyword{datasets}

@@ -17,7 +17,6 @@ Prevalence of left-handedness (\code{percent.left}) and homicide rates
 (\code{murder}) for 8 societies.
 }
 \examples{
-data(Lefthanded)
 str(Lefthanded)
 xyplot(murder.rate ~ percent.left, Lefthanded)
 }

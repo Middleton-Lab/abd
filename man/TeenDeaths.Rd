@@ -17,8 +17,6 @@ Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages
 15-19.
 }
 \examples{
-data(TeenDeaths)
-
 str(TeenDeaths)
 TeenDeaths
 

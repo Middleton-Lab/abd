@@ -15,7 +15,6 @@ marine fossil record. \emph{Science} 215: 1501-1503.
 The frequency of mass extinctions in the fossil record.
 }
 \examples{
-data(MassExtinctions)
 MassExtinctions
 }
 \references{

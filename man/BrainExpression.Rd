@@ -19,7 +19,6 @@ Expression levels of the proteolipid protein 1 gene (PLP1;
 \code{PLP1.expression}) in 45 individuals in one of three \code{group}s.
 }
 \examples{
-data(BrainExpression)
 bwplot(PLP1.expression ~ group, BrainExpression)
 }
 \keyword{datasets}

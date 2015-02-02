@@ -16,7 +16,6 @@ Sperm viability and immune function, measured by lysozyme activity in
 crickets. Each observation is a mean for a single family of males.
 }
 \examples{
-data(Crickets)
 Crickets
 xyplot(lysozyme ~ sperm.viability, Crickets)
 }

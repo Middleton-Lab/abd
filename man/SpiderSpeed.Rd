@@ -18,7 +18,6 @@ Data on speed before and after amputation of a pedipalp in the spider genus
 \emph{Tidarren}.
 }
 \examples{
-data(SpiderSpeed)
 xyplot(speed.after ~ speed.before, SpiderSpeed)
 favstats(SpiderSpeed$speed.before)
 favstats(SpiderSpeed$speed.after)

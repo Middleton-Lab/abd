@@ -17,7 +17,6 @@ Arrival dates for males and females in 10 pairs of Black-tailed Godwits
 (\emph{Limosa limosa})
 }
 \examples{
-data(GodwitArrival)
 xyplot(male~female, GodwitArrival, main='Arrival of Godwit pairs')
 }
 \references{

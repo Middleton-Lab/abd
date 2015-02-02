@@ -18,7 +18,6 @@ Autoimmune reactivity (\code{dilution} at which reactivity could be
 detected) in three \code{treatment}s of lupus-prone mice.
 }
 \examples{
-data(LupusMice)
 str(LupusMice)
 }
 \keyword{datasets}

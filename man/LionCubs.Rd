@@ -16,7 +16,6 @@ Time to reproduction (\code{Days}) based on whether death of previous cubs
 was due to infanticide (\code{New}) or accidental (\code{Same}).
 }
 \examples{
-data(LionCubs)
 xyplot(days.to.next.cub ~ cause.of.death, LionCubs)
 }
 \keyword{datasets}

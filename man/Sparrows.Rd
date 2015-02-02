@@ -18,7 +18,6 @@ A cross table of lifetime reproductive success (\code{LifetimeRS}) in female
 and male house sparrows \emph{Passer domesticus} in Norway.
 }
 \examples{
-data(Sparrows)
 Sparrows
 }
 \keyword{datasets}

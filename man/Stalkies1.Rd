@@ -13,7 +13,6 @@ Data provided by Kevin Fowler, University College, London.
 Eye width in 9 male stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}).
 }
 \examples{
-data(Stalkies1)
 Stalkies1
 }
 \keyword{datasets}

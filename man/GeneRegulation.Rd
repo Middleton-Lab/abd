@@ -17,7 +17,6 @@ Number of genes regulated by 109 regulatory genes of \emph{Saccharomyces
 cerevisiae}.
 }
 \examples{
-data(GeneRegulation)
 str(GeneRegulation)
 xyplot(count ~ genes.regulated, GeneRegulation, type='h', lwd=3)
 }

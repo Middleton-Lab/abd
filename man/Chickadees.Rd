@@ -17,7 +17,6 @@ Number of "dee" notes per call in Black-capped Chickadees (\emph{Poecile
 atricapilla}) for 13 predator species with differing body masses.
 }
 \examples{
-data(Chickadees)
 str(Chickadees)
 Chickadees
 

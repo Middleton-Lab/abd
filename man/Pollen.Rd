@@ -17,7 +17,6 @@ Genetic distance between pairs of species of the genus \emph{Silene} and
 proportion of their hybrid offspring that are sterile.
 }
 \examples{
-data(Pollen)
 str(Pollen)
 xyplot(proportion.sterile ~ genetic.distance, Pollen)
 }

@@ -19,7 +19,6 @@ fruits produced in the previous season (\code{previous.fruits}) of 9 females
 of \emph{Ocotea tenera}.
 }
 \examples{
-data(NeotropicalTrees)
 str(NeotropicalTrees)
 NeotropicalTrees
 }

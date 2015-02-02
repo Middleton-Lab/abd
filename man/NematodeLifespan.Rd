@@ -19,7 +19,6 @@ three experimental \code{treatment}s of the anticonvulsant drug
 trimethadione.
 }
 \examples{
-data(NematodeLifespan)
 str(NematodeLifespan)
 }
 \references{

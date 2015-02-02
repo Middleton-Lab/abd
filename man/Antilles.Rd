@@ -17,7 +17,6 @@ Approximate dates of immigration for 37 species of birds in the Lesser
 Antilles.
 }
 \examples{
-data(Antilles)
 histogram(~immigration.date, Antilles,n=15)
 densityplot(~immigration.date, Antilles)
 }

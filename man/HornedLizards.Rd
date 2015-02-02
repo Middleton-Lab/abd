@@ -17,7 +17,6 @@ Squamosal horn length (mm; \code{horn.length}) and predation status
 mcalli}).
 }
 \examples{
-data(HornedLizards)
 str(HornedLizards)
 
 histogram(~horn.length | group, HornedLizards,

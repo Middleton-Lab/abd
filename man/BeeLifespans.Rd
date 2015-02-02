@@ -14,7 +14,6 @@ of foraging honey bees. \emph{Insectes Sociaux} 44: 1-5.
 Lifespan of 33 foraging honey bees.
 }
 \examples{
-data(BeeLifespans)
 histogram(~hours, BeeLifespans, n=10)
 densityplot(~hours, BeeLifespans)
 }

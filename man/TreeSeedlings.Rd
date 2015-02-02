@@ -17,7 +17,6 @@ Fleck duration (min) and relative seedling growth rate (mm/mm/week) for 21
 seedlings of \emph{Shorea leprosula}.
 }
 \examples{
-data(TreeSeedlings)
 str(TreeSeedlings)
 splom(TreeSeedlings)
 }

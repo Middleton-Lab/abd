@@ -19,7 +19,6 @@ Comparison of oxygen consumption in feeding vs. non-feeding dives of the
 same length in the Weddell seal (\emph{Leptonychotes weddellii}).
 }
 \examples{
-data(WeddellSeals)
 xyplot(oxygen.use.nonfeeding ~ oxygen.use.feeding, WeddellSeals)
 }
 \references{
