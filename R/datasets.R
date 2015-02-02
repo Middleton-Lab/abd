@@ -123,7 +123,7 @@ NULL
 #' \item{treatment}{a factor with levels \code{Aspirin} and
 #' \code{Placebo}} \item{cancer}{a factor with levels \code{no} and
 #' \code{yes}} }
-#' @references \url{http://jama.ama-assn.org/cgi/content/abstract/294/1/47}
+#' @references \url{http://www.ncbi.nlm.nih.gov/pubmed/15998890}
 #' @source Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E.
 #' Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the
 #' primary prevention of cancer. \emph{Journal of the American Medical
@@ -1866,7 +1866,7 @@ NULL
 #' @format A data frame with 5 observations on the following 2 variables.
 #' \describe{ \item{concentration}{a numeric vector}
 #' \item{unbound.fraction}{a numeric vector} }
-#' @references \url{http://www.springerlink.com/content/p134310534nw8j72}
+#' @references \url{http://www.ncbi.nlm.nih.gov/pubmed/3199317}
 #' @source Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998.
 #' Effect of a protein binding change on unbound and total plasma
 #' concentrations for drugs of intermediate hepatic extraction. \emph{Journal
@@ -2880,7 +2880,7 @@ NULL
 #' \describe{ \item{parasites}{a numeric vector} \item{count}{a
 #' numeric vector} }
 #' @references
-#' \url{http://journals.cambridge.org/action/displayAbstract?aid=24297}
+#' \url{http://www.ncbi.nlm.nih.gov/pubmed/9881385}
 #' @source Shaw, D.J., B.T. Grenfell, and A.P. Dobson. 1998. Patterns of
 #' macroparasite aggregation in wildlife host populations. \emph{Parasitology}
 #' 117: 597-610.

@@ -22,7 +22,7 @@ str(LiverPreparation)
 xyplot(unbound.fraction ~ concentration, LiverPreparation)
 }
 \references{
-\url{http://www.springerlink.com/content/p134310534nw8j72}
+\url{http://www.ncbi.nlm.nih.gov/pubmed/3199317}
 }
 \keyword{datasets}
 

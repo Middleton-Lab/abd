@@ -21,7 +21,7 @@ Frequency of cancer in 39,876 women taking and not taking aspirin.
 demo(sec9.2)
 }
 \references{
-\url{http://jama.ama-assn.org/cgi/content/abstract/294/1/47}
+\url{http://www.ncbi.nlm.nih.gov/pubmed/15998890}
 }
 \keyword{datasets}
 

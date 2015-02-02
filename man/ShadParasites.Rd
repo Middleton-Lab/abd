@@ -19,7 +19,7 @@ Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 ShadParasites
 }
 \references{
-\url{http://journals.cambridge.org/action/displayAbstract?aid=24297}
+\url{http://www.ncbi.nlm.nih.gov/pubmed/9881385}
 }
 \keyword{datasets}
 
