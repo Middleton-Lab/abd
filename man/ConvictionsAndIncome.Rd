@@ -24,7 +24,7 @@ ConvictionsAndIncome
 xtabs(~ convicted + income, data = ConvictionsAndIncome)
 }
 \references{
-\url{http://webapp.icpsr.umich.edu/cocoon/NACJD-STUDY/08488.xml}
+\url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 }
 \keyword{datasets}
 

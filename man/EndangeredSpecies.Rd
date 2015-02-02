@@ -21,7 +21,7 @@ str(EndangeredSpecies)
 EndangeredSpecies
 }
 \references{
-\url{http://www.fws.gov/endangered/wildlife.html}
+\url{http://www.fws.gov/endangered/}
 }
 \keyword{datasets}
 

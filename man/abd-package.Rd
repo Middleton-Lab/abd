@@ -13,8 +13,8 @@ Schluter (2009; Roberts and Company Publishers).
 \details{
 \tabular{ll}{ Package: \tab abd\cr
               Type: \tab Package\cr
-              Version: \tab 0.2-6\cr
-              Date: \tab 2014-03-25\cr
+              Version: \tab 0.2-7\cr
+              Date: \tab 2015-02-01\cr
               License: \tab GPL\cr
               LazyLoad: \tab yes\cr
               LazyData: \tab yes\cr }
@@ -32,7 +32,7 @@ Kevin M. Middleton (\url{middletonk@missouri.edu}); Randall Pruim
 \references{
 Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
 Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
-\url{http://www.roberts-publishers.com/whitlock/}
+\url{http://www.roberts-publishers.com/biology/the-analysis-of-biological-data.html}
 }
 \keyword{package}
 

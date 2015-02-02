@@ -22,7 +22,7 @@ barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE, origin=
 xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
 }
 \references{
-\url{http://webapp.icpsr.umich.edu/cocoon/NACJD-STUDY/08488.xml}
+\url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 }
 \keyword{datasets}
 

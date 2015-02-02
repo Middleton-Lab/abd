@@ -6,8 +6,8 @@
 #' 
 #' \tabular{ll}{ Package: \tab abd\cr 
 #'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-6\cr 
-#'               Date: \tab 2014-03-25\cr 
+#'               Version: \tab 0.2-7\cr 
+#'               Date: \tab 2015-02-01\cr 
 #'               License: \tab GPL\cr 
 #'               LazyLoad: \tab yes\cr 
 #'               LazyData: \tab yes\cr }
@@ -19,7 +19,7 @@
 #' (\url{rpruim@@calvin.edu})
 #' @references Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
 #' Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
-#' \url{http://www.roberts-publishers.com/whitlock/}
+#' \url{http://www.roberts-publishers.com/biology/the-analysis-of-biological-data.html}
 #' @keywords package
 #' @import nlme lattice grid mosaic
 #' @examples
@@ -602,7 +602,7 @@ NULL
 #' @format A data frame with 15 observations on the following 2 variables.
 #' \describe{ \item{convictions}{number of convictions}
 #' \item{boys}{number of boys with given number of convictions} }
-#' @references \url{http://webapp.icpsr.umich.edu/cocoon/NACJD-STUDY/08488.xml}
+#' @references \url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 #' @source Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 #' Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university
 #' Consortium for Political and Social Research, Ann Arbor, MI.
@@ -632,7 +632,7 @@ NULL
 #' \describe{ \item{convicted}{a factor with levels \code{no} and
 #' \code{yes}} \item{income}{a factor with levels \code{adequate},
 #' \code{comfortable}, and \code{inadequate}} }
-#' @references \url{http://webapp.icpsr.umich.edu/cocoon/NACJD-STUDY/08488.xml}
+#' @references \url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 #' @source Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 #' Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university
 #' Consortium for Political and Social Research, Ann Arbor, MI.
@@ -1098,7 +1098,7 @@ NULL
 #' @format A data frame with 11 observations on the following 2 variables.
 #' \describe{ \item{taxon}{a character vector}
 #' \item{num.species}{a numeric vector} }
-#' @references \url{http://www.fws.gov/endangered/wildlife.html}
+#' @references \url{http://www.fws.gov/endangered/}
 #' @source U.S. Fish and Wildlife Service. 2001. Number of U.S. listed species
 #' per calendar year.
 #' @keywords datasets
@@ -2131,7 +2131,7 @@ NULL
 #' @docType data
 #' @format A data frame with 32 observations of one variable.  \describe{
 #' \item{biomass.ratio}{} }
-#' @references \url{http://www.nceas.ucsb.edu/~halpern/pdf/Halpern_EA_2003.pdf}
+#' @references \url{https://www.nceas.ucsb.edu/~halpern/pdf/Halpern_EA_2003.pdf}
 #' @source Halpern, B.S. 2003. The impact of marine reserves: do reserves work
 #' and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
 #' @keywords datasets
@@ -2761,7 +2761,7 @@ NULL
 #' \describe{ \item{hours}{a numeric vector} \item{count}{a
 #' numeric vector} }
 #' @source Pounder, D.J. 1995. Postmortem changes and time of death. University
-#' of Dundee. \url{http://www.dundee.ac.uk/forensicmedicine/llb/timedeath.htm}.
+#' of Dundee.
 #' @keywords datasets
 #' @examples
 #' 
@@ -2936,7 +2936,7 @@ NULL
 #' \item{monandrous.species}{a numeric vector}
 #' \item{difference}{a numeric vector}
 #' \item{taxon.pair}{identifier} }
-#' @references \url{http://www.egs.uu.se/evbiol/Persons/Urban/1.pdf}
+#' @references \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC27046/}
 #' @source Arnqvist, G., M. Edvardsson, U. Friberg, and T. Nilsson. 2000.
 #' Sexual conflict promotes speciation in insects. \emph{Proceedings of the
 #' National Academy of Sciences (USA)} 97: 10460-10464.

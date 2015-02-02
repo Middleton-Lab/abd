@@ -38,7 +38,7 @@ hist(SexualSelection$difference, breaks = 20)
 binom.test(n.neg, n, p = 0.5)
 }
 \references{
-\url{http://www.egs.uu.se/evbiol/Persons/Urban/1.pdf}
+\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC27046/}
 }
 \keyword{datasets}
 

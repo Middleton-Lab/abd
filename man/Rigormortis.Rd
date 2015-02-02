@@ -9,7 +9,7 @@
 numeric vector} }}
 \source{
 Pounder, D.J. 1995. Postmortem changes and time of death. University
-of Dundee. \url{http://www.dundee.ac.uk/forensicmedicine/llb/timedeath.htm}.
+of Dundee.
 }
 \description{
 Number of bodies reaching rigormortis in each hour after death.
