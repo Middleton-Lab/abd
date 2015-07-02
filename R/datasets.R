@@ -6,8 +6,8 @@
 #' 
 #' \tabular{ll}{ Package: \tab abd\cr 
 #'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-7\cr 
-#'               Date: \tab 2015-02-01\cr 
+#'               Version: \tab 0.2-8\cr 
+#'               Date: \tab 2015-07-02\cr 
 #'               License: \tab GPL\cr 
 #'               LazyLoad: \tab yes\cr 
 #'               LazyData: \tab yes\cr }
@@ -22,6 +22,7 @@
 #' \url{http://www.roberts-publishers.com/biology/the-analysis-of-biological-data.html}
 #' @keywords package
 #' @import nlme lattice grid mosaic
+#' @importFrom grDevices colorRampPalette gray
 #' @examples
 #' 
 #' trellis.par.set(theme=col.abd())  # set color theme
