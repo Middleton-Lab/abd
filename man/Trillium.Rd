@@ -11,7 +11,7 @@ numeric vector} }}
 \source{
 Jules, E.S. and B.J. Rathcke. 1999.  Mechanisms of reduced trillium
 recruitment along edges of old-growth forest fragments. \emph{Conservation
-Biology} 13:784-793
+Biology} 13: 784-793
 }
 \description{
 Recruitment of \emph{Trillium} and distance to nearest clearcut in eight
@@ -20,9 +20,6 @@ populations in southwestern Oregon.
 \examples{
 str(Trillium)
 splom(Trillium)
-}
-\references{
-\url{http://www.jstor.org/stable/2641693}
 }
 \keyword{datasets}
 

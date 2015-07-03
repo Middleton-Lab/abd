@@ -22,8 +22,5 @@ table(KenyaFinches$species)
 xyplot(beak.length ~ species, KenyaFinches)
 bwplot(beak.length ~ species, KenyaFinches)
 }
-\references{
-\url{http://www.jstor.org/pss/1942538}
-}
 \keyword{datasets}
 

@@ -20,8 +20,5 @@ the enamel for 20 samples.
 str(ToothAge)
 xyplot(actual ~ estimated, ToothAge)
 }
-\references{
-\url{http://www.nature.com/nature/journal/v437/n7057/full/437333a.html}
-}
 \keyword{datasets}
 

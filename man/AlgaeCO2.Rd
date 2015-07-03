@@ -21,8 +21,5 @@ carbon dioxide.
 AlgaeCO2
 xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p', 'a'))
 }
-\references{
-\url{http://www.nature.com/nature/journal/v431/n7008/full/nature02945.html}
-}
 \keyword{datasets}
 

@@ -21,8 +21,6 @@ xyplot(improvement ~ sleep, SleepAndPerformance)
 }
 \references{
 \url{http://www.ncbi.nlm.nih.gov/pubmed/15184907}
-
-\url{http://www.nature.com/nature/journal/v430/n6995/full/nature02663.html}
 }
 \keyword{datasets}
 

@@ -22,8 +22,5 @@ vasopressin-enhanced groups (\code{treatment}) of meadow voles
 xyplot(percent ~ treatment, VasopressinVoles, type=c('p','a'))
 bwplot(percent ~ treatment, VasopressinVoles)
 }
-\references{
-\url{http://www.nature.com/nature/journal/v429/n6993/full/nature02539.html}
-}
 \keyword{datasets}
 

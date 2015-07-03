@@ -18,8 +18,5 @@ for 20 species of carnivores.
 \examples{
 str(ZooMortality)
 }
-\references{
-\url{http://www.nature.com/nature/journal/v425/n6957/full/425473a.html}
-}
 \keyword{datasets}
 
