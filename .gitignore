@@ -1,7 +1,6 @@
 .DS_Store
 *.pdf
 .Rproj.user
-abd.Rproj
 *.Rcheck
 *.tar.gz
 *~
