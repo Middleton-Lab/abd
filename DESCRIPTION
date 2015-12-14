@@ -33,3 +33,4 @@ Collate:
     'histochart.R'
     'datasets.R'
     'themes.R'
+RoxygenNote: 5.0.1
