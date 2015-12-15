@@ -1,9 +1,9 @@
 #' Find data in \emph{Analysis of Biological Data}
-#' 
+#'
 #' A utility function to assist users to locate data sets in \emph{Analysis of
 #' Biological Data} within the \code{abd} package.
-#' 
-#' 
+#'
+#'
 #' @param \dots values for any of \code{chapters}, \code{types}, or
 #' \code{pattern}.  Which is meant will be inferred from the type of object
 #' supplied.  This allows users to specify these values in any order and
@@ -20,52 +20,53 @@
 #' @keywords datasets
 #' @export
 #' @examples
-#' 
+#'
 #' # find all data from examples in chapters 3 and 4
-#' abdData(3:4, 'Example')
-#' 
+#' abdData(3:4, "Example")
+#'
 #' # order doesn't matter
-#' abdData('Example', 3:4)
-#' 
+#' abdData("Example", 3:4)
+#'
 #' # look for data sets with Example in their name.
-#' abdData(pattern='Example')
-#' 
+#' abdData(pattern="Example")
+#'
 #' # look for data sets with Exercise in their name.
-#' abdData('Exercise')
-#' 
-abdData <- function(..., 
-                    chapters = 1:21, 
-                    types = c('Example', 'Problem'),
-                    numbers = 1:100, 
-                    pattern = '*',
+#' abdData("Exercise")
+#'
+abdData <- function(...,
+                    chapters = 1:21,
+                    types = c("Example", "Problem"),
+                    numbers = 1:100,
+                    pattern = "*",
                     ignore.case = TRUE) {
-  
+
   dots <- list(...)
-  
+
   for (x in dots) {
-    if ( all( x %in% c('Example','Problem') ) ) { 
-      types <- x 
-    } else { 
-      if (is.character(x)) { 
-        pattern <- x 
-      } else { 
-        if (is.numeric(x)) { 
-          chapters <- x 
-        } 
+    if ( all( x %in% c("Example","Problem") ) ) {
+      types <- x
+    } else {
+      if (is.character(x)) {
+        pattern <- x
+      } else {
+        if (is.numeric(x)) {
+          chapters <- x
+        }
       }
     }
   }
-  
+
   results <- with(
     abd::dataInfo,
-    dataInfo[chapter %in% chapters & 
+    dataInfo[chapter %in% chapters &
                type %in% types &
                number %in% numbers &
                grepl(pattern,
                      name,
                      ignore.case = ignore.case), ])
-  
-  if (prod(dim(results)) == 0) { return (NULL) }
+
+  if (prod(dim(results)) == 0) {
+    return (NULL)
+  }
   return(results)
 }
-

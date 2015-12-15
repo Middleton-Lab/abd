@@ -1,17 +1,17 @@
 #' Data sets from The Analysis of Biological Data
-#' 
+#'
 #' The \code{abd} package contains data sets and sample code for the book,
 #' \emph{The Analysis of Biological Data} by Michael C. Whitlock and Dolph
 #' Schluter (2009; Roberts and Company Publishers).
-#' 
-#' \tabular{ll}{ Package: \tab abd\cr 
-#'               Type: \tab Package\cr 
-#'               Version: \tab 0.2-8\cr 
-#'               Date: \tab 2015-07-02\cr 
-#'               License: \tab GPL\cr 
-#'               LazyLoad: \tab yes\cr 
+#'
+#' \tabular{ll}{ Package: \tab abd\cr
+#'               Type: \tab Package\cr
+#'               Version: \tab 0.2-8\cr
+#'               Date: \tab 2015-07-02\cr
+#'               License: \tab GPL\cr
+#'               LazyLoad: \tab yes\cr
 #'               LazyData: \tab yes\cr }
-#' 
+#'
 #' @name abd-package
 #' @aliases abd-package abd
 #' @docType package
@@ -24,21 +24,21 @@
 #' @import nlme lattice grid mosaic
 #' @importFrom grDevices colorRampPalette gray
 #' @examples
-#' 
+#'
 #' trellis.par.set(theme=col.abd())  # set color theme
 #' show.settings()
 #' abdData(3)                        # look for data sets in chapter 3
 #' abdData('Finch')                  # look for data sets with 'finch' in name
-#' 
+#'
 NULL
 
 
 #' \code{abd} Data Sets
-#' 
+#'
 #' Information about the location of data sets in \emph{Analysis of Biological
 #' Data}
-#' 
-#' 
+#'
+#'
 #' @name dataInfo
 #' @docType data
 #' @format A data frame with 143 observations on the following 5 variables.
@@ -50,19 +50,19 @@ NULL
 #' @seealso \code{\link{abdData}}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(dataInfo)
-#' 
+#'
 NULL
 
 
 #' Carbon Dioxide and Growth Rate in Algae
-#' 
+#'
 #' Growth rates of the unicellular alga \emph{Chlamydomonas} after 1,000
 #' generations of selection under \code{High} and \code{Normal} levels of
 #' carbon dioxide.
-#' 
-#' 
+#'
+#'
 #' @name AlgaeCO2
 #' @docType data
 #' @format A data frame with 14 observations on the following 2 variables.
@@ -73,10 +73,10 @@ NULL
 #' \emph{Nature} 431: 566-569.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' AlgaeCO2
 #' xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p', 'a'))
-#' 
+#'
 NULL
 
 
@@ -84,11 +84,11 @@ NULL
 
 
 #' Antilles Bird Immigration Dates
-#' 
+#'
 #' Approximate dates of immigration for 37 species of birds in the Lesser
 #' Antilles.
-#' 
-#' 
+#'
+#'
 #' @name Antilles
 #' @docType data
 #' @format A data frame with 37 observations of one variable. \describe{
@@ -101,10 +101,10 @@ NULL
 #' \emph{Science} 294: 1522-1524.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~immigration.date, Antilles,n=15)
 #' densityplot(~immigration.date, Antilles)
-#' 
+#'
 NULL
 
 
@@ -112,10 +112,10 @@ NULL
 
 
 #' Effects of Aspirin on Cancer Rates
-#' 
+#'
 #' Frequency of cancer in 39,876 women taking and not taking aspirin.
-#' 
-#' 
+#'
+#'
 #' @name Aspirin
 #' @docType data
 #' @format A data frame with 39876 observations on the following \describe{
@@ -129,9 +129,9 @@ NULL
 #' Association} 294: 47-55.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' demo(sec9.2)
-#' 
+#'
 NULL
 
 
@@ -139,12 +139,12 @@ NULL
 
 
 #' Foraging Gene Expression
-#' 
+#'
 #' Levels of expression of the foraging gene (\emph{for}; \code{Expression}) in
 #' two worker types (\code{type}) in three bee colonies (\code{colony}). Note
 #' that \code{colony} is not coded as a factor.
-#' 
-#' 
+#'
+#'
 #' @name BeeGenes
 #' @docType data
 #' @format A data frame with 6 observations on the following 3 variables.
@@ -156,11 +156,11 @@ NULL
 #' \emph{Science} 296: 741-744.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(BeeGenes)
 #' BeeGenes
 #' xtabs( expression ~ type + colony, BeeGenes )
-#' 
+#'
 NULL
 
 
@@ -168,10 +168,10 @@ NULL
 
 
 #' Bee Lifespans
-#' 
+#'
 #' Lifespan of 33 foraging honey bees.
-#' 
-#' 
+#'
+#'
 #' @name BeeLifespans
 #' @docType data
 #' @format A data frame with 33 observations on the following variable.
@@ -180,10 +180,10 @@ NULL
 #' of foraging honey bees. \emph{Insectes Sociaux} 44: 1-5.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~hours, BeeLifespans, n=10)
 #' densityplot(~hours, BeeLifespans)
-#' 
+#'
 NULL
 
 
@@ -191,11 +191,11 @@ NULL
 
 
 #' Beetle Wings and Horns
-#' 
+#'
 #' Relative size of the horns and wings in 19 female \emph{Onthophagus
 #' sagittarius} beetles.
-#' 
-#' 
+#'
+#'
 #' @name Beetles
 #' @docType data
 #' @format A data frame with 19 observations on the following 2 variables.
@@ -207,10 +207,10 @@ NULL
 #' animal structures. \emph{Science} 291: 1534-1536.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Beetles)
 #' xyplot(wing.mass ~ horn.size, Beetles)
-#' 
+#'
 NULL
 
 
@@ -218,10 +218,10 @@ NULL
 
 
 #' Sex Ratios in Birds
-#' 
+#'
 #' Correlation coefficient of sex ratio in bird offspring.
-#' 
-#' 
+#'
+#'
 #' @name BirdSexRatio
 #' @docType data
 #' @format A data frame with 15 observations of one variable \describe{
@@ -231,10 +231,10 @@ NULL
 #' sex ratio adjustment. \emph{Science} 295: 1695-1688.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~corr.coeff, BirdSexRatio, n = 10,
 #'   xlab = "Correlation Coefficient")
-#' 
+#'
 NULL
 
 
@@ -242,12 +242,12 @@ NULL
 
 
 #' Testosterone Levels in Blackbirds
-#' 
+#'
 #' Experimental manipulation of testosterone levels in male Red-winged
 #' Blackbirds (\emph{Agelaius phoeniceus}) and resulting changes in antibody
 #' levels
-#' 
-#' 
+#'
+#'
 #' @name Blackbirds
 #' @docType data
 #' @format A data frame with 13 observations on the following 6 variables.
@@ -260,13 +260,13 @@ NULL
 #' Ecology and Sociobiology} 45: 167-175.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Blackbirds
 #' xyplot(log.after ~ log.before, data = Blackbirds,
 #'   ylab = "log Antibody production after implant",
 #'   xlab = "log Antibody production before implant"
 #' )
-#' 
+#'
 NULL
 
 
@@ -274,10 +274,10 @@ NULL
 
 
 #' Heat Loss and Body Fat
-#' 
+#'
 #' Heat loss during exercise and relative body fat in 12 boys.
-#' 
-#' 
+#'
+#'
 #' @name BodyFatHeatLoss
 #' @docType data
 #' @format A data frame with 12 observations on the following 2 variables.
@@ -288,9 +288,9 @@ NULL
 #' swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(lossrate ~ leanness, BodyFatHeatLoss)
-#' 
+#'
 NULL
 
 
@@ -298,11 +298,11 @@ NULL
 
 
 #' Proteolipid Protein 1 Gene Expression
-#' 
+#'
 #' Expression levels of the proteolipid protein 1 gene (PLP1;
 #' \code{PLP1.expression}) in 45 individuals in one of three \code{group}s.
-#' 
-#' 
+#'
+#'
 #' @name BrainExpression
 #' @docType data
 #' @format A data frame with 45 observations on the following 2 variables.
@@ -315,9 +315,9 @@ NULL
 #' disorder. \emph{Lancet} 362(9386): 798-805.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' bwplot(PLP1.expression ~ group, BrainExpression)
-#' 
+#'
 NULL
 
 
@@ -325,13 +325,13 @@ NULL
 
 
 #' Salmon Survival in the Presence of Brook Trout
-#' 
+#'
 #' Total numbers of salmon released (\code{salmon.released}) and surviving
 #' (\code{salmon.surviving}) in 12 streams, 6 with brook trout \code{present}
 #' and 6 with brook trout \code{absent}. The proportion of salmon surviving
 #' (\code{proportion.surviving}) is given for each stream.
-#' 
-#' 
+#'
+#'
 #' @name BrookTrout
 #' @aliases BrookTrout BrookTrout2
 #' @docType data
@@ -350,15 +350,15 @@ NULL
 #' Biological Sciences} 269: 1663-1670.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(BrookTrout)
 #' str(BrookTrout2)
-#' 
+#'
 #' bwplot(proportion.surviving ~ trout, BrookTrout)
-#' 
+#'
 #' aggregate(proportion.surviving ~ trout, BrookTrout, FUN = favstats)
 #' summary(proportion.surviving ~ trout, BrookTrout, fun = favstats)
-#' 
+#'
 NULL
 
 
@@ -366,11 +366,11 @@ NULL
 
 
 #' Deaths from Horse Kicks
-#' 
+#'
 #' Numbers of deaths resulting from horse kicks per regiment-years for the
 #' Prussian army.
-#' 
-#' 
+#'
+#'
 #' @name Cavalry
 #' @docType data
 #' @format A data frame with 5 observations on the following 2 variables.
@@ -382,12 +382,12 @@ NULL
 #' Prentice-Hall: Englewood Cliffs, NJ.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Cavalry
 #' xyplot(count ~ deaths, Cavalry, type='h', lwd=4)
 #' barchart(count ~ deaths, Cavalry, horizontal = FALSE,
 #'          box.ratio = 1000, origin=0)
-#' 
+#'
 NULL
 
 
@@ -395,11 +395,11 @@ NULL
 
 
 #' Alarm Calls in Chickadees
-#' 
+#'
 #' Number of "dee" notes per call in Black-capped Chickadees (\emph{Poecile
 #' atricapilla}) for 13 predator species with differing body masses.
-#' 
-#' 
+#'
+#'
 #' @name Chickadees
 #' @docType data
 #' @format A data frame with 13 observations on the following 3 variables.
@@ -411,15 +411,15 @@ NULL
 #' \emph{Science} 308: 1934-1937.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Chickadees)
 #' Chickadees
-#' 
+#'
 #' xyplot(dees ~ mass, data = Chickadees,
 #'    xlab = "Predator body mass (kg)",
 #'    ylab = "'Dees' per call", type=c('p','r')
 #' )
-#' 
+#'
 NULL
 
 
@@ -427,10 +427,10 @@ NULL
 
 
 #' Brodmann's Area 44 in Chimps
-#' 
+#'
 #' Asymmetry of Brodmann's area 44 in 20 chimpanzees.
-#' 
-#' 
+#'
+#'
 #' @name ChimpBrains
 #' @docType data
 #' @format A data frame with 20 observations on the following 3 variables.
@@ -441,11 +441,11 @@ NULL
 #' great apes. \emph{Nature} 414: 505.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(asymmetry ~ sex, ChimpBrains)
 #' aggregate(asymmetry ~ sex, ChimpBrains, FUN = favstats)
 #' summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
-#' 
+#'
 NULL
 
 
@@ -453,11 +453,11 @@ NULL
 
 
 #' Cichlid Mating Preference
-#' 
+#'
 #' Preference index in F1 and F2 crosses of two species of cichlids from Lake
 #' Victoria, \emph{Pundamilia pundamilia} and \emph{P. nyererei}.
-#' 
-#' 
+#'
+#'
 #' @name Cichlids
 #' @docType data
 #' @format A data frame with 53 observations on the following 2 variables.
@@ -471,18 +471,18 @@ NULL
 #' London, Series B, Biological Sciences} 272: 237-245.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Cichlids)
 #'
 #' summary(preference ~ genotype, Cichlids, fun = favstats)
-#' 
+#'
 #' if (require(plyr)) {
 #' ddply(Cichlids, .(genotype),
 #'   function(df)c(mean = mean(df$preference),
 #'                 standard.deviation = sd(df$preference),
 #'                 n = length(df$preference)))
 #' }
-#' 
+#'
 NULL
 
 
@@ -490,12 +490,12 @@ NULL
 
 
 #' GnRH Levels in Cichlids
-#' 
+#'
 #' Levels of mRNA for gonadotropin-releasing hormone in cichlids
 #' (\emph{Haplochromis burtoni}) that are (\emph{n} = 5) and are not (\emph{n}
 #' = 6) territorial.
-#' 
-#' 
+#'
+#'
 #' @name CichlidsGnRH
 #' @docType data
 #' @format A data frame with 11 observations on the following 2 variables.
@@ -507,9 +507,9 @@ NULL
 #' 2567-2581.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(GnRH.mRNA ~ territorial, CichlidsGnRH, type=c('p','a'))
-#' 
+#'
 NULL
 
 
@@ -517,11 +517,11 @@ NULL
 
 
 #' Biomass Change in Rainforests near Clearcuts
-#' 
+#'
 #' Biomass change in 36 Amazonian rainforests following clearcuts ranging from
 #' 50 m to several kilometers.
-#' 
-#' 
+#'
+#'
 #' @name Clearcuts
 #' @docType data
 #' @format A data frame with 36 observations of one variable. \describe{
@@ -533,10 +533,10 @@ NULL
 #' fragments. \emph{Science} 278: 1117-1118.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Clearcuts)
 #' histogram(~biomass.change, Clearcuts)
-#' 
+#'
 NULL
 
 
@@ -544,12 +544,12 @@ NULL
 
 
 #' Effects of Cocaine on Dopamine Receptors
-#' 
+#'
 #' Percent of dopamine receptors blocked (\code{percent.bocked}) and the
 #' perceived level of high as determined by PET scans (\code{high}) in 34
 #' humans.
-#' 
-#' 
+#'
+#'
 #' @name CocaineDopamine
 #' @docType data
 #' @format A data frame with 34 observations on the following 2 variables.
@@ -563,10 +563,10 @@ NULL
 #' occupancy. \emph{Nature} 386: 827-830.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(CocaineDopamine)
 #' xyplot(high ~ percent.blocked, CocaineDopamine)
-#' 
+#'
 NULL
 
 
@@ -574,10 +574,10 @@ NULL
 
 
 #' Frequency of Convictions for a Cohort of English Boys
-#' 
+#'
 #' Data on frequency of convictions for a cohort of 395 boys.
-#' 
-#' 
+#'
+#'
 #' @name Convictions
 #' @docType data
 #' @format A data frame with 15 observations on the following 2 variables.
@@ -589,11 +589,11 @@ NULL
 #' Consortium for Political and Social Research, Ann Arbor, MI.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Convictions)
 #' barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE, origin=0)
 #' xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
-#' 
+#'
 NULL
 
 
@@ -601,11 +601,11 @@ NULL
 
 
 #' Convictions and Income Level in a Cohort of English Boys
-#' 
+#'
 #' Data reporting the number of individual with and without convictions per
 #' income level.
-#' 
-#' 
+#'
+#'
 #' @name ConvictionsAndIncome
 #' @docType data
 #' @format A data frame with 395 observations on the following 2 variables.
@@ -618,12 +618,12 @@ NULL
 #' Consortium for Political and Social Research, Ann Arbor, MI.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ConvictionsAndIncome)
 #' ConvictionsAndIncome
-#' 
+#'
 #' xtabs(~ convicted + income, data = ConvictionsAndIncome)
-#' 
+#'
 NULL
 
 
@@ -631,11 +631,11 @@ NULL
 
 
 #' Immunity and Sperm Viability in Crickets
-#' 
+#'
 #' Sperm viability and immune function, measured by lysozyme activity in
 #' crickets. Each observation is a mean for a single family of males.
-#' 
-#' 
+#'
+#'
 #' @name Crickets
 #' @docType data
 #' @format A data frame with 41 observations on the following 2 variables.
@@ -645,10 +645,10 @@ NULL
 #' sperm viability in male crickets. \emph{Science} 309: 2031.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Crickets
 #' xyplot(lysozyme ~ sperm.viability, Crickets)
-#' 
+#'
 NULL
 
 
@@ -656,10 +656,10 @@ NULL
 
 
 #' DEET and Mosquito Bites
-#' 
+#'
 #' Administered dose of DEET and number of mosquito bites for 52 women.
-#' 
-#' 
+#'
+#'
 #' @name DEET
 #' @docType data
 #' @format A data frame with 52 observations on the following 2 variables.
@@ -671,10 +671,10 @@ NULL
 #' Tropical Medicine and Hygiene} 60: 654-657.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(DEET)
 #' xyplot(bites ~ dose, DEET)
-#' 
+#'
 NULL
 
 
@@ -682,10 +682,10 @@ NULL
 
 
 #' Daphnia Longevity
-#' 
+#'
 #' Number of spores and host longevity in the crustacean \emph{Daphnia magna}.
-#' 
-#' 
+#'
+#'
 #' @name DaphniaLongevity
 #' @docType data
 #' @format A data frame with 32 observations on the following 2 variables.
@@ -698,10 +698,10 @@ NULL
 #' Biology} 4(7): e197
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(DaphniaLongevity)
 #' xyplot(sqrt.spores ~ longevity, DaphniaLongevity)
-#' 
+#'
 NULL
 
 
@@ -709,11 +709,11 @@ NULL
 
 
 #' Daphnia Resistance to Cyanobacteria
-#' 
+#'
 #' Resistance of \emph{Daphnia} eggs to different levels of cyanobacteria
 #' (\code{cyandensity}) from 1962-1997.
-#' 
-#' 
+#'
+#'
 #' @name DaphniaResistance
 #' @docType data
 #' @format A data frame with 32 observations on the following 2 variables.
@@ -724,19 +724,19 @@ NULL
 #' Post. 1999. Dormant eggs record rapid evolution. \emph{Nature} 401: 446.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(DaphniaResistance)
-#' 
-#' 
+#'
+#'
 #' bwplot(resistance ~ density, DaphniaResistance)
 #' # with such a small data set, we can display all the data
 #' # rather than a summary
 #' xyplot(resistance ~ density, DaphniaResistance)
-#' histogram( ~ resistance| density, DaphniaResistance, 
+#' histogram( ~ resistance| density, DaphniaResistance,
 #' 	strip=FALSE, strip.left = TRUE,
 #' 	layout=c(1,3)
 #' 	)
-#' 
+#'
 NULL
 
 
@@ -744,10 +744,10 @@ NULL
 
 
 #' Day of Birth
-#' 
+#'
 #' Day of the week for 350 U.S. births in 1999.
-#' 
-#' 
+#'
+#'
 #' @name DayOfBirth
 #' @docType data
 #' @format A data frame with 7 observations on the following 2 variables.
@@ -759,24 +759,24 @@ NULL
 #' Reports} Vol. 49, No. 1.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' DayOfBirth
 #' barchart( day ~ births, DayOfBirth, origin=0)
-#' 
+#'
 #' # Fix bad ordering of days
 #' DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
 #' barchart( oday ~ births, DayOfBirth, origin=0)
 #' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0)
-#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0, 
+#' barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0,
 #'  scales = list(x=list(rot=45)))
-#' 
+#'
 #' barplot(DayOfBirth$births,
 #'   ylim = c(0, 70),
 #'   names.arg = DayOfBirth$day,
 #'   las = 2,
 #'   mgp = c(3, 0.75, 0))
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -784,10 +784,10 @@ NULL
 
 
 #' Desert Bird Census Data
-#' 
+#'
 #' Census data for desert birds.
-#' 
-#' 
+#'
+#'
 #' @name DesertBirds
 #' @docType data
 #' @format A data frame with 43 observations on the following 2 variables.
@@ -799,12 +799,12 @@ NULL
 #' Patuxent Wildlife Research Center, Laurel, MD.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(DesertBirds)
 #' histogram(~ count, DesertBirds,
 #'   xlab = "Abundance"
 #'   )
-#' 
+#'
 NULL
 
 
@@ -812,11 +812,11 @@ NULL
 
 
 #' Dioecy vs. Monomorphism in Plants
-#' 
+#'
 #' Number of \code{dioecious} and \code{monomorphic} taxa among pairs of
 #' closely related plants.
-#' 
-#' 
+#'
+#'
 #' @name Dioecy
 #' @docType data
 #' @format A data frame with 28 observations on the following 3 variables.
@@ -827,9 +827,9 @@ NULL
 #' \emph{The American Naturalist} 156: 221-241.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(dioecious ~ monomorphic, Dioecy, alpha = 0.65, pch = 16)
-#' 
+#'
 NULL
 
 
@@ -837,11 +837,11 @@ NULL
 
 
 #' Dolphin Swimming Behavior
-#' 
+#'
 #' Percentage of time 8 sleeping dolphins from the Southern Hemisphere spent
 #' swimming clockwise.
-#' 
-#' 
+#'
+#'
 #' @name Dolphins
 #' @docType data
 #' @format A data frame with 8 observations on one variable. \describe{
@@ -853,11 +853,11 @@ NULL
 #' Behavior} 82: 919-926.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Dolphins
 #' hist(Dolphins$percent.clockwise)
 #' histogram(~ percent.clockwise, Dolphins)
-#' 
+#'
 NULL
 
 
@@ -865,30 +865,30 @@ NULL
 
 
 #' Heritability of Body Condition in Dung Beetles
-#' 
+#'
 #' Body condition (\code{offspring.condition}) in 36 dung beetles
 #' (\emph{Onthophagus taurus}) from 12 \code{male}s each mated to 3 different
 #' virgin females.
-#' 
-#' 
+#'
+#'
 #' @name DungBeetles
 #' @docType data
 #' @format A data frame with 36 observations on the following 2 variables.
 #' \describe{ \item{id}{a numeric vector}
 #' \item{offspring.condition}{a numeric vector} }
 #' @references \url{http://en.wikipedia.org/wiki/Dung_beetle}
-#' 
+#'
 #' \url{http://www.nature.com/nature/journal/v410/n6829/abs/410684a0.html}
 #' @source \emph{inferred from} Kotiaho, J.S., L.W. Simmons, and J.L. Tomkins.
 #' 2001. Towards a resolution of the lek paradox. \emph{Nature} 410: 684-686.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(DungBeetles)
-#' xyplot(offspring.condition ~ factor(id), DungBeetles, 
-#'   xlab='Dung Beetle', 
+#' xyplot(offspring.condition ~ factor(id), DungBeetles,
+#'   xlab='Dung Beetle',
 #'   ylab='offspring condition')
-#' 
+#'
 NULL
 
 
@@ -896,11 +896,11 @@ NULL
 
 
 #' Earthworm Diversity and Soil Nitrogen Levels
-#' 
+#'
 #' Number of earthworm species and total nitrogen content in the soil in 39
 #' hardwood forest plots.
-#' 
-#' 
+#'
+#'
 #' @name Earthworms
 #' @docType data
 #' @format A data frame with 39 observations on the following 2 variables.
@@ -913,11 +913,11 @@ NULL
 #' Biology} 19: 1075-1083.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Earthworms)
 #' xyplot(nitrogen ~ worm.species, Earthworms)
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -925,29 +925,29 @@ NULL
 
 
 #' Earwig Density and Forceps
-#' 
+#'
 #' Earwig (\emph{Forficula auricularia}) density and the proportion of trapped
 #' earwigs with abdominal forceps (used for fighting and courtship).
-#' 
-#' 
+#'
+#'
 #' @name Earwigs
 #' @docType data
 #' @format A data frame with 7 observations on the following 2 variables.
 #' \describe{ \item{density}{a numeric vector}
 #' \item{proportion.forceps}{a numeric vector} }
 #' @references \url{http://en.wikipedia.org/wiki/Forficula_auricularia}
-#' 
+#'
 #' \url{http://www.arkive.org/common-european-earwig/forficula-auricularia/}
-#' 
+#'
 #' \url{http://eol.org/pages/473785}
 #' @source Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the
 #' local evolution of a threshold dimorphism. \emph{Nature} 431: 1099-1103.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(proportion.forceps ~ density, data=Earwigs, type='h', lwd=6)
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -955,12 +955,12 @@ NULL
 
 
 #' Eelgrass Genotypes
-#' 
+#'
 #' Number of shoots (\code{shoots}) surviving in each of 32 experimental plots
 #' planted with 1, 3, or 6 different genotypes of eelgrass
 #' (\code{treatment.genotypes}).
-#' 
-#' 
+#'
+#'
 #' @name Eelgrass
 #' @docType data
 #' @format A data frame with 32 observations on the following 2 variables.
@@ -974,16 +974,16 @@ NULL
 #' 2826-2831.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Eelgrass
-#' 
+#'
 #' # Convert treatment.genotypes to a factor
 #' Eelgrass$genotypesF <-
 #'   factor(Eelgrass$genotypes)
 #' str(Eelgrass)
 #' xyplot(shoots ~ genotypes, Eelgrass)
 #' xyplot(shoots ~ genotypesF, Eelgrass)
-#' 
+#'
 NULL
 
 
@@ -991,11 +991,11 @@ NULL
 
 
 #' Diet Breadth in a Rainforest Community
-#' 
+#'
 #' Number of different species (\code{breadth}) in 127 species
 #' (\code{no.species}) in the rainforest community at El Verde, Puerto Rico
-#' 
-#' 
+#'
+#'
 #' @name ElVerde
 #' @docType data
 #' @format A data frame with 38 observations on the following 2 variables.
@@ -1005,10 +1005,10 @@ NULL
 #' Tropical Rainforest}. University of Chicago Press, Chicago.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' ElVerde
 #' xyplot(num.species ~ breadth, ElVerde, type='h',lwd=3)
-#' 
+#'
 NULL
 
 
@@ -1016,11 +1016,11 @@ NULL
 
 
 #' Electric Fish
-#' 
+#'
 #' Species abundance of electric fish upstream and downstream of the entrance
 #' of a tributary in the Amazon basin.
-#' 
-#' 
+#'
+#'
 #' @name ElectricFish
 #' @docType data
 #' @format A data frame with 12 observations on the following 3 variables.
@@ -1036,18 +1036,18 @@ NULL
 #' \emph{Science} 305: 1960-1962.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' ElectricFish
 #' require(grid)
 #' xyplot(species.upstream ~ species.downstream, data = ElectricFish,
 #'   panel=function(x, y, ...){
-#'     grid.text(ElectricFish$tributary, x=x, y=y, 
+#'     grid.text(ElectricFish$tributary, x=x, y=y,
 #'       rot = 45,
 #'       gp = gpar(cex=.6),
 #'       default.units = 'native')
 #'     }
 #'   )
-#' 
+#'
 NULL
 
 
@@ -1055,11 +1055,11 @@ NULL
 
 
 #' Endangered and Threatened Species
-#' 
+#'
 #' Frequency of taxon groups on the U.S. Fish and Wildlife Service list of
 #' endangered and threatened species (2002).
-#' 
-#' 
+#'
+#'
 #' @name EndangeredSpecies
 #' @docType data
 #' @format A data frame with 11 observations on the following 2 variables.
@@ -1070,10 +1070,10 @@ NULL
 #' per calendar year.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(EndangeredSpecies)
 #' EndangeredSpecies
-#' 
+#'
 NULL
 
 
@@ -1081,11 +1081,11 @@ NULL
 
 
 #' 2D:4D Finger Ratio
-#' 
+#'
 #' The ratio of the lengths of the index finger to the ring finger in 46 males
 #' and the number of CAG repeats for each.
-#' 
-#' 
+#'
+#'
 #' @name FingerRatio
 #' @docType data
 #' @format A data frame with 46 observations on the following 2 variables.
@@ -1098,13 +1098,13 @@ NULL
 #' androgen receptor gene. \emph{Evolution and Human Behavior} 24: 399-405.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(FingerRatio)
 #' xyplot(finger.ratio ~ CAGrepeats, FingerRatio,
 #'   xlab = "Number of CAG Repeats",
 #'   ylab = "2D:4D Ratio"
 #' )
-#' 
+#'
 NULL
 
 
@@ -1112,28 +1112,28 @@ NULL
 
 
 #' Spermatophore Mass in Fireflies
-#' 
+#'
 #' Measurements of spermatophore mass (milligrams) in 35 fireflies
 #' (\emph{Photinus ignitus}).
-#' 
-#' 
+#'
+#'
 #' @name Fireflies
 #' @docType data
 #' @format A data frame with 35 observations of one variable. \describe{
 #' \item{sp.mass}{} }
 #' @references
 #' \url{http://beheco.oxfordjournals.org/cgi/content/abstract/14/1/135}
-#' 
+#'
 #' \url{http://en.wikipedia.org/wiki/Firefly}
 #' @source \emph{inferred from} Cratsley, C.K. and S.M. Lewis. 2003. Female
 #' preference for male courtship flashes in \emph{Photinus ignitus} fireflies.
 #' \emph{Behavioral Ecology} 14: 135-140.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Fireflies)
 #' histogram(~sp.mass, Fireflies, n=12)
-#' 
+#'
 NULL
 
 
@@ -1141,11 +1141,11 @@ NULL
 
 
 #' Firefly Flash Duration
-#' 
+#'
 #' Flash duration (measured in milliseconds) of a sample of male fireflies
 #' (\emph{Photinus ignitus}; \emph{n} = 35).
-#' 
-#' 
+#'
+#'
 #' @name FireflyFlash
 #' @docType data
 #' @format A data frame with 35 observations of one variable. \describe{
@@ -1155,10 +1155,10 @@ NULL
 #' \emph{Behavioral Ecology} 14: 135-140.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(FireflyFlash)
 #' histogram(~flash, FireflyFlash)
-#' 
+#'
 NULL
 
 
@@ -1166,12 +1166,12 @@ NULL
 
 
 #' Testes Size in Flies
-#' 
+#'
 #' Testes size (square mm; \code{Testes.area}) in 8 populations of common
 #' yellow dung flies (\emph{Scathophaga stercoraria}) with different mating
 #' systems (\code{Mating.system}).
-#' 
-#' 
+#'
+#'
 #' @name FlyTestes
 #' @docType data
 #' @format A data frame with 8 observations on the following 2 variables.
@@ -1182,10 +1182,10 @@ NULL
 #' size evolution via sperm competition. \emph{Ecology Letters} 4: 10-13.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(FlyTestes)
 #' FlyTestes
-#' 
+#'
 NULL
 
 
@@ -1193,11 +1193,11 @@ NULL
 
 
 #' Forehead Patch Size in Collared Flycatachers
-#' 
+#'
 #' Forehead patch size in 30 male Collared Flycatachers measured in two
 #' consecutive years.
-#' 
-#' 
+#'
+#'
 #' @name FlycatcherPatch
 #' @docType data
 #' @format A data frame with 30 observations on the following 2 variables.
@@ -1208,10 +1208,10 @@ NULL
 #' \emph{Animal Behaviour} 61: 987-993.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(FlycatcherPatch)
 #' xyplot(patch99 ~ patch98, FlycatcherPatch)
-#' 
+#'
 NULL
 
 
@@ -1219,11 +1219,11 @@ NULL
 
 
 #' Gene Regulation in Saccharomyces
-#' 
+#'
 #' Number of genes regulated by 109 regulatory genes of \emph{Saccharomyces
 #' cerevisiae}.
-#' 
-#' 
+#'
+#'
 #' @name GeneRegulation
 #' @docType data
 #' @format A data frame with 26 observations on the following 2 variables.
@@ -1234,10 +1234,10 @@ NULL
 #' \emph{Nature Genetics} 31: 60-63.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(GeneRegulation)
 #' xyplot(count ~ genes.regulated, GeneRegulation, type='h', lwd=3)
-#' 
+#'
 NULL
 
 
@@ -1245,29 +1245,29 @@ NULL
 
 
 #' GlidingSnakes
-#' 
+#'
 #' Undulation rate (\emph{Hz}) of 8 paradise tree snakes (\emph{Chrysopelea
 #' paradisi}).
-#' 
-#' 
+#'
+#'
 #' @name GlidingSnakes
 #' @docType data
 #' @format A data frame with eight observations of one variable. \describe{
 #' \item{undulation.rate}{undulation rate} }
 #' @references
 #' \url{http://www.nature.com/nature/journal/v418/n6898/abs/418603a.html}
-#' 
+#'
 #' \url{http://www.flyingsnake.org/}
 #' @source Socha, J.J. 2002. Gliding flight in the paradise tree snake.
 #' \emph{Nature} 418: 603-604.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~undulation.rate , data=GlidingSnakes, n=7,
 #'   xlab = "Undulation rate (Hz)",
 #'   type='count')
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -1275,11 +1275,11 @@ NULL
 
 
 #' Godwit Arrival Dates
-#' 
+#'
 #' Arrival dates for males and females in 10 pairs of Black-tailed Godwits
 #' (\emph{Limosa limosa})
-#' 
-#' 
+#'
+#'
 #' @name GodwitArrival
 #' @docType data
 #' @format A data frame with 10 observations on the following 2 variables.
@@ -1291,9 +1291,9 @@ NULL
 #' 646.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(male~female, GodwitArrival, main='Arrival of Godwit pairs')
-#' 
+#'
 NULL
 
 
@@ -1301,12 +1301,12 @@ NULL
 
 
 #' Grassland Diversity
-#' 
+#'
 #' Species diversity in 10 experimental plots in the Park Grass Experiment at
 #' Rothamsted Experimental Station to which varying numbers of nutrients have
 #' been added.
-#' 
-#' 
+#'
+#'
 #' @name Grassland
 #' @docType data
 #' @format A data frame with 10 observations on the following 2 variables.
@@ -1317,9 +1317,9 @@ NULL
 #' reduced niche dimension. \emph{Nature} 446: 791-793.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(num.species ~ jitter(nutrients, amount=0.1), Grassland, pch=16)
-#' 
+#'
 NULL
 
 
@@ -1327,11 +1327,11 @@ NULL
 
 
 #' Malaria in Populations of Great Tit
-#' 
+#'
 #' Two-by-two contingency table of malaria (\emph{Plasmodium}) infection status
 #' in control and egg-removal populations of Great Tit (\emph{Parus major}).
-#' 
-#' 
+#'
+#'
 #' @name GreatTitMalaria
 #' @docType data
 #' @format A data frame with 65 observations on the following 2 variables.
@@ -1344,16 +1344,16 @@ NULL
 #' malaria resistance. \emph{Nature} 381: 565.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(GreatTitMalaria)
-#' 
+#'
 #' table(GreatTitMalaria)
-#' 
+#'
 #' if(require(vcd)) {
 #'   mosaic(~treatment + response, GreatTitMalaria)
 #' }
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -1361,10 +1361,10 @@ NULL
 
 
 #' Diversity in Urban Green Space
-#' 
+#'
 #' Measures of biodiversity in 15 urban green spaces in Sheffield, England.
-#' 
-#' 
+#'
+#'
 #' @name Greenspace
 #' @docType data
 #' @format A data frame with 15 observations on the following 6 variables.
@@ -1379,10 +1379,10 @@ NULL
 #' biodiversity. \emph{Biology Letters} 3: 390-394.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Greenspace)
 #' splom(Greenspace[,2:6])
-#' 
+#'
 NULL
 
 
@@ -1390,12 +1390,12 @@ NULL
 
 
 #' Ornamentation and Attractiveness in Guppies
-#' 
+#'
 #' The father's ornamentation (composite score of color and brightness) and
 #' son's attractiveness (relative rates of visits by females) in male guppies
 #' (\emph{Poecilia reticulata}).
-#' 
-#' 
+#'
+#'
 #' @name Guppies
 #' @docType data
 #' @format A data frame with 36 observations on the following 2 variables.
@@ -1407,14 +1407,14 @@ NULL
 #' between male sexual attractiveness and survival. \emph{Nature} 406: 67-70.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Guppies)
 #' xyplot(son.attract ~ father.ornament,
 #'   Guppies,
 #'   xlab = "Father's ornamentation",
 #'   ylab = "Son's attractiveness"
 #'   )
-#' 
+#'
 NULL
 
 
@@ -1422,11 +1422,11 @@ NULL
 
 
 #' Hemoglobin Levels in High Altitude Populations
-#' 
+#'
 #' Relative rates of hemoglobin concentration in four populations of humans
 #' living at different altitudes.
-#' 
-#' 
+#'
+#'
 #' @name Hemoglobin
 #' @docType data
 #' @format A data frame with 40 observations on the following 3 variables.
@@ -1441,12 +1441,12 @@ NULL
 #' Academy of Sciences (USA)} 99(26): 17215-17218.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Hemoglobin)
-#' 
+#'
 #' xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,
 #'   type ='h', lwd=4, layout=c(1,4))
-#' 
+#'
 NULL
 
 
@@ -1454,11 +1454,11 @@ NULL
 
 
 #' Memory and the Hippocampus
-#' 
+#'
 #' Spatial memory score (\code{memory}) and percent lesion of the hippocampus
 #' (\code{lesion}).
-#' 
-#' 
+#'
+#'
 #' @name HippocampusLesions
 #' @docType data
 #' @format A data frame with 57 observations on the following 2 variables.
@@ -1469,15 +1469,15 @@ NULL
 #' Academy of Sciences (USA)} 101: 14515-14520.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' HippocampusLesions
-#' 
+#'
 #' xyplot(memory ~ lesion, data = HippocampusLesions,
 #'   pch = 16, col = "red")
-#' 
+#'
 #' plot(memory ~ lesion, data = HippocampusLesions,
 #'   pch = 16, col = "red")
-#' 
+#'
 NULL
 
 
@@ -1485,12 +1485,12 @@ NULL
 
 
 #' Horn Length and Predation Status of Horned Lizards
-#' 
+#'
 #' Squamosal horn length (mm; \code{horn.length}) and predation status
 #' (\code{group}; living or killed) for 184 horned lizards (\emph{Phrynosoma
 #' mcalli}).
-#' 
-#' 
+#'
+#'
 #' @name HornedLizards
 #' @docType data
 #' @format A data frame with 184 observations on the following 2 variables.
@@ -1501,13 +1501,13 @@ NULL
 #' horned lizard got its horns. \emph{Science} 304: 65.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(HornedLizards)
-#' 
-#' histogram(~horn.length | group, HornedLizards, 
+#'
+#' histogram(~horn.length | group, HornedLizards,
 #'   layout=c(1,2),
 #'   xlab="Horn Length (mm)")
-#' 
+#'
 NULL
 
 
@@ -1515,17 +1515,17 @@ NULL
 
 
 #' Human Body Temperature
-#' 
+#'
 #' Body temperature for 25 randomly chosen health people
-#' 
-#' 
+#'
+#'
 #' @name HumanBodyTemp
 #' @docType data
 #' @format A data frame with 25 observations of one variable. \describe{
 #' \item{temp}{body temperature (degrees F)} }
 #' @references
 #' \url{http://www.amstat.org/publications/jse/v4n2/datasets.shoemaker.html}
-#' 
+#'
 #' Mackowiak, P.A., Wasserman, S.S., and Levine, M.M. 1992. A critical
 #' appraisal of 98.6 degrees F, the upper limit of the normal body temperature,
 #' and other legacies of Carl Reinhold August Wunderlich. \emph{Journal of the
@@ -1534,11 +1534,11 @@ NULL
 #' heart rate. \emph{Journal of Statistics Education} 4(2).
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~temp, HumanBodyTemp)
 #' stem(HumanBodyTemp$temp, scale = 2)
 #' favstats(HumanBodyTemp$temp)
-#' 
+#'
 NULL
 
 
@@ -1546,16 +1546,16 @@ NULL
 
 
 #' Human Gene Lengths
-#' 
+#'
 #' Lengths in number of nucleotides (\code{gene.length}) for 20,290 human genes
-#' 
-#' 
+#'
+#'
 #' @name HumanGeneLengths
 #' @docType data
 #' @format A data frame with 20,290 observations on the following variable.
 #' \describe{ \item{gene.length}{a numeric vector} }
 #' @references \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC540092/}
-#' 
+#'
 #' \url{http://www.ensembl.org/}
 #' @source Hubbard, T., D. Andrews, M. Caccamo, G. Cameron, Y. Chen, M. Clamp,
 #' L. Clarke, G. Coates, T. Cox, F. Cunningham, V. Curwen, T. Cutts, T. Down,
@@ -1569,11 +1569,11 @@ NULL
 #' 33: D447-D453.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(HumanGeneLengths)
 #' histogram(~ gene.length, HumanGeneLengths,
 #'           subset = gene.length < 15000)
-#' 
+#'
 NULL
 
 
@@ -1581,11 +1581,11 @@ NULL
 
 
 #' Intense Hurricanes
-#' 
+#'
 #' Number of hurricanes greater than or equal to category 3 on the
 #' Safir-Simpson scale during the 20th century.
-#' 
-#' 
+#'
+#'
 #' @name Hurricanes
 #' @docType data
 #' @format A data frame with 4 observations on the following 2 variables.
@@ -1599,9 +1599,9 @@ NULL
 #' \emph{NOAA Technical Memorandum NWS TPC-4}.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Hurricanes
-#' 
+#'
 NULL
 
 
@@ -1609,11 +1609,11 @@ NULL
 
 
 #' Iguana Body Length Changes
-#' 
+#'
 #' Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus
 #' cristatus}) that survived the 1992-1993 El Niño event.
-#' 
-#' 
+#'
+#'
 #' @name Iguanas
 #' @docType data
 #' @format A data frame with 64 observations of one variable. \describe{
@@ -1623,10 +1623,10 @@ NULL
 #' Niño. \emph{Nature} 403: 37-38.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Iguanas)
 #' histogram(~ change.in.length, Iguanas, n = 10)
-#' 
+#'
 NULL
 
 
@@ -1634,11 +1634,11 @@ NULL
 
 
 #' Intertidal Algae
-#' 
+#'
 #' Area coverage of red algae (\emph{Mazzaella parksii}) in two herbivore
 #' treatments (\code{herbivores}) at two tide levels (\code{height}).
-#' 
-#' 
+#'
+#'
 #' @name IntertidalAlgae
 #' @docType data
 #' @format A data frame with 64 observations on the following 3 variables.
@@ -1650,15 +1650,15 @@ NULL
 #' \emph{Ecology} 84: 1477-1488.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(IntertidalAlgae)
-#' 
+#'
 #' # Using * includes the main effects and the interaction
 #' aov.fit <- aov(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
 #' summary(aov.fit)
 #' lm.fit <- lm(sqrt.area ~ herbivores * height, data = IntertidalAlgae)
 #' anova(lm.fit)
-#' 
+#'
 NULL
 
 
@@ -1666,11 +1666,11 @@ NULL
 
 
 #' Circadian Rhythm Phase Shift
-#' 
+#'
 #' Shift in circadian rhythm (hours; \code{shift}) in three light treatments
 #' (\code{treatment}).
-#' 
-#' 
+#'
+#'
 #' @name JetLagKnees
 #' @docType data
 #' @format A data frame with 22 observations on the following 2 variables.
@@ -1682,9 +1682,9 @@ NULL
 #' knees. \emph{Science} 297: 571.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' demo(sec15.1)
-#' 
+#'
 NULL
 
 
@@ -1692,12 +1692,12 @@ NULL
 
 
 #' Body Mass and Beak Length in Three Species of Finches in Kenya
-#' 
+#'
 #' Data on body mass and beak length in three species of finches:
 #' Crimson-rumped waxbill (\code{CRU.WAXB}), Cutthroat finch (\code{CUTTHROA}),
 #' and White-browed sparrow weaver (\code{WB.SPARW}).
-#' 
-#' 
+#'
+#'
 #' @name KenyaFinches
 #' @docType data
 #' @format A data frame with 45 observations on the following 3 variables.
@@ -1708,11 +1708,11 @@ NULL
 #' continents: Kenya vs. Galapagos. \emph{Ecological Monographs} 58: 229-249.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' table(KenyaFinches$species)
 #' xyplot(beak.length ~ species, KenyaFinches)
 #' bwplot(beak.length ~ species, KenyaFinches)
-#' 
+#'
 NULL
 
 
@@ -1720,12 +1720,12 @@ NULL
 
 
 #' Brain Structure in Bilingual Humans
-#' 
+#'
 #' Proficiency score (summary of reading, writing, and speech) in subjects'
 #' second language and density of gray matter in the left inferior parietal
 #' region.
-#' 
-#' 
+#'
+#'
 #' @name LanguageBrains
 #' @docType data
 #' @format A data frame with 22 observations on the following 2 variables.
@@ -1736,10 +1736,10 @@ NULL
 #' bilingual brain. \emph{Nature} 431: 757.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(LanguageBrains)
 #' xyplot(proficiency ~ greymatter, LanguageBrains)
-#' 
+#'
 NULL
 
 
@@ -1747,11 +1747,11 @@ NULL
 
 
 #' Exploited Larval Fish
-#' 
+#'
 #' Age (\code{age}) and coefficient of variation (\code{cv}) in larval fish
 #' from exploited and unexploited species (\code{exploited}).
-#' 
-#' 
+#'
+#'
 #' @name LarvalFish
 #' @docType data
 #' @format A data frame with 28 observations on the following 3 variables.
@@ -1763,11 +1763,11 @@ NULL
 #' exploited species. \emph{Nature} 443: 859-862.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(LarvalFish)
 #' xyplot(cv ~ age | exploited, LarvalFish)
 #' xyplot(cv ~ age, groups=exploited, LarvalFish)
-#' 
+#'
 NULL
 
 
@@ -1775,11 +1775,11 @@ NULL
 
 
 #' Left-handedness and Rates of Violence
-#' 
+#'
 #' Prevalence of left-handedness (\code{percent.left}) and homicide rates
 #' (\code{murder}) for 8 societies.
-#' 
-#' 
+#'
+#'
 #' @name Lefthanded
 #' @docType data
 #' @format A data frame with 8 observations on the following 2 variables.
@@ -1792,11 +1792,11 @@ NULL
 #' London B} 272: 25-28.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Lefthanded)
 #' xyplot(murder.rate ~ percent.left, Lefthanded)
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -1804,11 +1804,11 @@ NULL
 
 
 #' Time to Reproduction in Female Lions
-#' 
+#'
 #' Time to reproduction (\code{Days}) based on whether death of previous cubs
 #' was due to infanticide (\code{New}) or accidental (\code{Same}).
-#' 
-#' 
+#'
+#'
 #' @name LionCubs
 #' @docType data
 #' @format A data frame with 14 observations on the following 2 variables.
@@ -1818,9 +1818,9 @@ NULL
 #' infanticide by incoming males. \emph{The American Naturalist} 121: 716-728.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(days.to.next.cub ~ cause.of.death, LionCubs)
-#' 
+#'
 NULL
 
 
@@ -1828,11 +1828,11 @@ NULL
 
 
 #' Lion Age and Nose Coloration
-#' 
+#'
 #' Ages (in years; \code{age}) of 32 male lions and relative coloration of
 #' their noses (\code{proportion.black}).
-#' 
-#' 
+#'
+#'
 #' @name LionNoses
 #' @docType data
 #' @format A data frame with 32 observations on the following 2 variables.
@@ -1844,9 +1844,9 @@ NULL
 #' Sustainable trophy hunting of African lions. \emph{Nature} 428: 175-178.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(age ~ proportion.black, LionNoses)
-#' 
+#'
 NULL
 
 
@@ -1854,11 +1854,11 @@ NULL
 
 
 #' Liver Preparation
-#' 
+#'
 #' The unbound fraction of taurocholate for each of five concentrations of
 #' administered taurocholate.
-#' 
-#' 
+#'
+#'
 #' @name LiverPreparation
 #' @docType data
 #' @format A data frame with 5 observations on the following 2 variables.
@@ -1871,11 +1871,11 @@ NULL
 #' of Pharmacokinetics and Pharmacodynamics} 16:397-411.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(LiverPreparation)
 #' xyplot(unbound.fraction ~ concentration, LiverPreparation)
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -1883,11 +1883,11 @@ NULL
 
 
 #' Bite Force in Collard Lizards
-#' 
+#'
 #' Bite force (N) and territory area in 11 male collared lizards
 #' (\emph{Crotaphytus collaris}).
-#' 
-#' 
+#'
+#'
 #' @name LizardBite
 #' @docType data
 #' @format A data frame with 11 observations on the following 2 variables.
@@ -1897,18 +1897,18 @@ NULL
 #' determines mating success and potential reproductive output in the collared
 #' lizard (\emph{Crotaphytus collaris}). \emph{The American Naturalist} 166:
 #' 426-436.
-#' @note In the original publication (Lappin and Husak, 
-#' 2005; Figure 3A), the data are presented in log-10 units. The 
+#' @note In the original publication (Lappin and Husak,
+#' 2005; Figure 3A), the data are presented in log-10 units. The
 #' data in \code{LizardBite} and in chapter 17, question 9 was
 #' back-transformed using \emph{e} (i.e., \code{exp()}). To recover the data
 #' from the original publication, use \code{10^(log(LizardBite$territory))}
 #' and \code{10^(log(LizardBite$bite))}.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(LizardBite)
 #' xyplot(territory ~ bite, LizardBite)
-#' 
+#'
 NULL
 
 
@@ -1916,13 +1916,13 @@ NULL
 
 
 #' Sprint Speeds in Canyon Lizards
-#' 
-#' Sprint speeds (\code{speed}) in 34 canyon lizards 
+#'
+#' Sprint speeds (\code{speed}) in 34 canyon lizards
 #' (\emph{Sceloporous merriami}) measured in
 #' successive years in Big Bend National Park. Note
 #' that \code{lizard} is not coded as a factor.
-#' 
-#' 
+#'
+#'
 #' @name LizardSprint
 #' @docType data
 #' @format A data frame with 68 observations on the following 2 variables.
@@ -1934,11 +1934,11 @@ NULL
 #' \emph{Sceloporus merriami}. \emph{Evolution} 42: 1116-1120.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~ speed, LizardSprint)
 #' Lizard2 <- aggregate(speed ~ lizard, LizardSprint, mean)
 #' histogram(~ speed, Lizard2)
-#' 
+#'
 NULL
 
 
@@ -1946,10 +1946,10 @@ NULL
 
 
 #' Lobster Orientation
-#' 
+#'
 #' Orientation of 15 lobsters relative to initial position.
-#' 
-#' 
+#'
+#'
 #' @name Lobsters
 #' @docType data
 #' @format A data frame with 15 observations of one variable. \describe{
@@ -1960,10 +1960,10 @@ NULL
 #' maps in spiny lobsters. \emph{Nature} 421: 60-63.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~ orientation, Lobsters)
 #' dotplot(~ orientation, Lobsters)
-#' 
+#'
 NULL
 
 
@@ -1971,11 +1971,11 @@ NULL
 
 
 #' Lodgepole Pine Cone Masses
-#' 
+#'
 #' Masses of cones of lodgepole pines (\code{conemass}) from 16 different
 #' habitat types (\code{habitat}) in western North America.
-#' 
-#' 
+#'
+#'
 #' @name LodgepolePines
 #' @docType data
 #' @format A data frame with 16 observations on the following 4 variables.
@@ -1985,7 +1985,7 @@ NULL
 #' or \code{mainland}} \item{squirrels}{\code{absent} or
 #' \code{present}} }
 #' @references \url{http://en.wikipedia.org/wiki/Lodgepole_pine}
-#' 
+#'
 #' \url{http://en.wikipedia.org/wiki/Red_crossbill}
 #' @source Edelaar, P. and C.W. Benkman. 2006. Replicated population divergence
 #' caused by localised coevolution? A test of three hypotheses in the Red
@@ -1993,11 +1993,11 @@ NULL
 #' 1651-1659.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' LodgepolePines
 #' str(LodgepolePines)
 #' xyplot(conemass ~ habitat, LodgepolePines)
-#' 
+#'
 NULL
 
 
@@ -2005,11 +2005,11 @@ NULL
 
 
 #' Autoimmune Reactivity in Lupus-prone Mice
-#' 
+#'
 #' Autoimmune reactivity (\code{dilution} at which reactivity could be
 #' detected) in three \code{treatment}s of lupus-prone mice.
-#' 
-#' 
+#'
+#'
 #' @name LupusMice
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -2021,9 +2021,9 @@ NULL
 #' \emph{Science} 307: 590-593.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(LupusMice)
-#' 
+#'
 NULL
 
 
@@ -2031,11 +2031,11 @@ NULL
 
 
 #' Population Cycles of Lynx in Canada 1752-1819
-#' 
+#'
 #' Number of lynx pelts (\code{pelts}) reported in Canada per year from 1752 to
 #' 1819.
-#' 
-#' 
+#'
+#'
 #' @name Lynx
 #' @docType data
 #' @format A data frame with 68 observations on the following 2 variables.
@@ -2045,9 +2045,9 @@ NULL
 #' the lynx in Canada. \emph{Journal of Animal Ecology} 11: 215-244.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(pelts ~ year, Lynx, type=c('p','l'))
-#' 
+#'
 NULL
 
 
@@ -2055,10 +2055,10 @@ NULL
 
 
 #' Marine Reserve Biomass
-#' 
+#'
 #' Relative biomass in 32 marine reserves.
-#' 
-#' 
+#'
+#'
 #' @name MarineReserve
 #' @docType data
 #' @format A data frame with 32 observations of one variable.  \describe{
@@ -2067,10 +2067,10 @@ NULL
 #' and does reserve size matter? \emph{Ecological Applications} 13: S117-S137.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(MarineReserve)
 #' histogram(~ biomass.ratio, MarineReserve)
-#' 
+#'
 NULL
 
 
@@ -2078,10 +2078,10 @@ NULL
 
 
 #' Mass Extinction Frequency
-#' 
+#'
 #' The frequency of mass extinctions in the fossil record.
-#' 
-#' 
+#'
+#'
 #' @name MassExtinctions
 #' @docType data
 #' @format A data frame with 21 observations on the following 2 variables.
@@ -2093,9 +2093,9 @@ NULL
 #' marine fossil record. \emph{Science} 215: 1501-1503.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' MassExtinctions
-#' 
+#'
 NULL
 
 
@@ -2103,12 +2103,12 @@ NULL
 
 
 #' Energy Expenditure in Mole Rats
-#' 
+#'
 #' Energy expenditure (\code{ln.energy}) in two castes (\code{caste}) of
 #' Damaraland mole rats (\emph{Cryptomys damarensis}) with body mass
 #' (\code{ln.mass}) as a covariate.
-#' 
-#' 
+#'
+#'
 #' @name MoleRats
 #' @docType data
 #' @format A data frame with 35 observations on the following 3 variables.
@@ -2123,9 +2123,9 @@ NULL
 #' 795-797.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' MoleRats
-#' 
+#'
 NULL
 
 
@@ -2133,10 +2133,10 @@ NULL
 
 
 #' Body Size in Anopheles Mosquitoes
-#' 
+#'
 #' Weights of female and male mosquitos (\emph{Anopheles darlingi})
-#' 
-#' 
+#'
+#'
 #' @name Mosquitoes
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -2149,9 +2149,9 @@ NULL
 #' 769-774.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(weight ~ sex, Mosquitoes)
-#' 
+#'
 NULL
 
 
@@ -2159,11 +2159,11 @@ NULL
 
 
 #' Mouse Empathy
-#' 
+#'
 #' Percentage of time spent stretching in three treatments of mice. Both
 #' \code{condition} and \code{treatment} code for the same variable.
-#' 
-#' 
+#'
+#'
 #' @name MouseEmpathy
 #' @docType data
 #' @format A data frame with 42 observations on the following 3 variables.
@@ -2177,14 +2177,14 @@ NULL
 #' 1967-1970.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(MouseEmpathy)
-#' 
+#'
 #' aov.fit <- aov(percent.stretching ~ treatment, data = MouseEmpathy)
 #' summary(aov.fit)
 #' lm.fit <- lm(percent.stretching ~ treatment, data = MouseEmpathy)
 #' anova(lm.fit)
-#' 
+#'
 NULL
 
 
@@ -2192,11 +2192,11 @@ NULL
 
 
 #' Cranial Capacity in Neanderthals and Modern Humans
-#' 
+#'
 #' Brain size (\code{lnbrain}) and body mass (\code{lnmass}) in Neanderthals
 #' and early modern humans (\code{species}).
-#' 
-#' 
+#'
+#'
 #' @name NeanderthalBrains
 #' @docType data
 #' @format A data frame with 39 observations on the following 3 variables.
@@ -2207,9 +2207,9 @@ NULL
 #' encephalization in Pleistocene \emph{Homo}. \emph{Nature} 387: 173-176.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(ln.brain ~ ln.mass, data=NeanderthalBrains, groups=species)
-#' 
+#'
 NULL
 
 
@@ -2217,12 +2217,12 @@ NULL
 
 
 #' Effects of Trimethadione on Lifespan in Nematodes
-#' 
+#'
 #' \code{lifespan} of the nematode \emph{Caenorhabditis elegans} in control and
 #' three experimental \code{treatment}s of the anticonvulsant drug
 #' trimethadione.
-#' 
-#' 
+#'
+#'
 #' @name NematodeLifespan
 #' @docType data
 #' @format A data frame with 200 observations on the following 2 variables.
@@ -2236,9 +2236,9 @@ NULL
 #' \emph{Science} 307: 258-262.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(NematodeLifespan)
-#' 
+#'
 NULL
 
 
@@ -2246,12 +2246,12 @@ NULL
 
 
 #' Photosynthesis in Neotropical Trees
-#' 
+#'
 #' Photosynthetic capacity (\code{photosynthetic.capacity}) and number of
 #' fruits produced in the previous season (\code{previous.fruits}) of 9 females
 #' of \emph{Ocotea tenera}.
-#' 
-#' 
+#'
+#'
 #' @name NeotropicalTrees
 #' @docType data
 #' @format A data frame with 9 observations on the following 2 variables.
@@ -2264,10 +2264,10 @@ NULL
 #' National Academy of Sciences (USA)} 101: 8051-8055.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(NeotropicalTrees)
 #' NeotropicalTrees
-#' 
+#'
 NULL
 
 
@@ -2275,12 +2275,12 @@ NULL
 
 
 #' Tetrodotoxin Resistance in Garter Snakes
-#' 
+#'
 #' Percent reduction in crawl speed (\code{resistance}) in the garter snake
 #' after injection of the neurotoxin tetrodotoxin from the rough-skinned newt
 #' (\emph{Taricha granulosa}).
-#' 
-#' 
+#'
+#'
 #' @name Newts
 #' @docType data
 #' @format A data frame with 12 observations on the following 2 variables.
@@ -2293,9 +2293,9 @@ NULL
 #' sodium channels. \emph{Science} 297: 1336-1339.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Newts
-#' 
+#'
 NULL
 
 
@@ -2303,12 +2303,12 @@ NULL
 
 
 #' No Smoking Day
-#' 
+#'
 #' Number of workplace injuries on No Smoking Day (\code{Injuries.on.NSD})
 #' compared to the same Wednesday in the previous year
 #' (\code{Injuries.before.NSD}) for 1987-1996.
-#' 
-#' 
+#'
+#'
 #' @name NoSmokingDay
 #' @docType data
 #' @format A data frame with 10 observations on the following 3 variables.
@@ -2320,9 +2320,9 @@ NULL
 #' withdrawal and accident rates. \emph{Nature} 394: 137.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' NoSmokingDay
-#' 
+#'
 NULL
 
 
@@ -2330,12 +2330,12 @@ NULL
 
 
 #' Atlantic Cod Recruits
-#' 
+#'
 #' Number (\eqn{\log_{10}}{log10} transformed) of Atlantic cod (\emph{Gadus
 #' morhua}) that recruited (grew to catchable size) in the North Sea over a 39
 #' years span.
-#' 
-#' 
+#'
+#'
 #' @name NorthSeaCod
 #' @docType data
 #' @format A data frame with 39 observations of one variable. \describe{
@@ -2347,9 +2347,9 @@ NULL
 #' North Sea. \emph{Nature} 426: 661-664.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' favstats(NorthSeaCod$log10.recruits)
-#' 
+#'
 NULL
 
 
@@ -2357,12 +2357,12 @@ NULL
 
 
 #' Ostrich Body and Brain Temperatures
-#' 
+#'
 #' Body and brain temperatures (\eqn{^{\circ}}{degrees }C) in free-ranging
 #' ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding
 #' Centre, Lichtenburg, South Africa.
-#' 
-#' 
+#'
+#'
 #' @name OstrichTemp
 #' @docType data
 #' @format A data frame with 6 observations on the following 3 variables.
@@ -2371,7 +2371,7 @@ NULL
 #' \eqn{^{\circ}}{degrees }C} \item{brain.temp}{a numeric vector of
 #' brain temperature in \eqn{^{\circ}}{degrees }C} }
 #' @references \url{http://jeb.biologists.org/cgi/content/abstract/206/7/1171}
-#' 
+#'
 #' \url{http://www.sa-venues.com/game-reserves/nwp_lichtenburg.htm}
 #' @source Fuller, A., P.R. Kamerman, S.K. Maloney, G. Mitchell, and D.
 #' Mitchell. 2003. Variability in brain and arterial blood temperatures in
@@ -2379,9 +2379,9 @@ NULL
 #' Experimental Biology} 206: 1171-1181.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(brain.temp ~ body.temp, OstrichTemp)
-#' 
+#'
 NULL
 
 
@@ -2389,11 +2389,11 @@ NULL
 
 
 #' Penguin Heart Rate
-#' 
+#'
 #' Slope of regressions of mass-specific metabolic rate on heart rate for three
 #' groups of Macaroni Penguins.
-#' 
-#' 
+#'
+#'
 #' @name Penguins
 #' @docType data
 #' @format A data frame with 24 observations on the following 2 variables.
@@ -2404,10 +2404,10 @@ NULL
 #' macaroni penguins. \emph{Journal of Experimental Biology} 204: 673-684.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Penguins)
 #' dotplot(slope ~ group, Penguins)
-#' 
+#'
 NULL
 
 
@@ -2415,11 +2415,11 @@ NULL
 
 
 #' Population Persistence Times
-#' 
+#'
 #' Persistence times (\code{generations}) in the annual plant \emph{Cardamine
 #' pensylvanica} in four experimental populations (\code{treatment}).
-#' 
-#' 
+#'
+#'
 #' @name PlantPersistence
 #' @docType data
 #' @format A data frame with 16 observations on the following 2 variables.
@@ -2431,9 +2431,9 @@ NULL
 #' Sciences (USA)} 102: 3726-3731.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(generations~treatment, PlantPersistence)
-#' 
+#'
 NULL
 
 
@@ -2441,11 +2441,11 @@ NULL
 
 
 #' Sterility in Hybrid Pollens
-#' 
+#'
 #' Genetic distance between pairs of species of the genus \emph{Silene} and
 #' proportion of their hybrid offspring that are sterile.
-#' 
-#' 
+#'
+#'
 #' @name Pollen
 #' @docType data
 #' @format A data frame with 23 observations on the following 2 variables.
@@ -2456,10 +2456,10 @@ NULL
 #' 1195-1208.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Pollen)
 #' xyplot(proportion.sterile ~ genetic.distance, Pollen)
-#' 
+#'
 NULL
 
 
@@ -2467,10 +2467,10 @@ NULL
 
 
 #' Powerball Tickets Sold
-#' 
+#'
 #' The number of Powerball tickets sold per day of the week for three years.
-#' 
-#' 
+#'
+#'
 #' @name Powerball
 #' @docType data
 #' @format A data frame with 7 observations on the following 2 variables.
@@ -2482,10 +2482,10 @@ NULL
 #' \emph{Chance News} 13.02.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Powerball
 #' xyplot(millions.of.tickets.sold ~ day, Powerball)
-#' 
+#'
 NULL
 
 
@@ -2493,10 +2493,10 @@ NULL
 
 
 #' Primate Metabolic Rates
-#' 
+#'
 #' Body mass (g) and metabolic rate (watts) for 17 species of primates.
-#' 
-#' 
+#'
+#'
 #' @name PrimateMetabolism
 #' @docType data
 #' @format A data frame with 17 observations on the following 2 variables.
@@ -2507,11 +2507,11 @@ NULL
 #' Experimental Biology} 160: 25-54.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(PrimateMetabolism)
 #' xyplot(bmr ~ mass, PrimateMetabolism)
 #' xyplot(bmr ~ mass, PrimateMetabolism, scales=list(log=TRUE))
-#' 
+#'
 NULL
 
 
@@ -2519,10 +2519,10 @@ NULL
 
 
 #' Primate White Blood Cell Counts and Promiscuity
-#' 
+#'
 #' White blood cell (WBC) counts in pairs of closely related primate species
-#' 
-#' 
+#'
+#'
 #' @name PrimateWBC
 #' @docType data
 #' @format A data frame with 9 observations on the following 2 variables.
@@ -2532,9 +2532,9 @@ NULL
 #' the primate immune system. \emph{Science} 290: 1168-1170.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(WBC.more ~ WBC.less, PrimateWBC)
-#' 
+#'
 NULL
 
 
@@ -2542,11 +2542,11 @@ NULL
 
 
 #' Progesterone and Exercise
-#' 
+#'
 #' Progesterone levels and rates of ventilation during submaximal exercise in
 #' 30 women.
-#' 
-#' 
+#'
+#'
 #' @name ProgesteroneExercise
 #' @docType data
 #' @format A data frame with 30 observations on the following 2 variables.
@@ -2559,10 +2559,10 @@ NULL
 #' Experimental Biology} 205: 233-239
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ProgesteroneExercise)
 #' xyplot(ventilation ~ progesterone, ProgesteroneExercise)
-#' 
+#'
 NULL
 
 
@@ -2570,12 +2570,12 @@ NULL
 
 
 #' Multiple Mating in Pseudoscorpions
-#' 
+#'
 #' Successful numbers of broods (\code{Number.of.successful.broods}) in two
 #' groups of female pseudoscrpions (\emph{Cordylochernes scorpioides}), one
 #' mated to the same male twice and one to two different males.
-#' 
-#' 
+#'
+#'
 #' @name Pseudoscorpions
 #' @docType data
 #' @format A data frame with 36 observations on the following 2 variables.
@@ -2587,11 +2587,11 @@ NULL
 #' of the National Academy of Sciences (USA)} 96: 10236-10241.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Pseudoscorpions)
 #' bwplot(successful.broods ~ treatment, Pseudoscorpions)
 #' aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
-#' 
+#'
 NULL
 
 
@@ -2599,12 +2599,12 @@ NULL
 
 
 #' Pufferfish Mimicry
-#' 
+#'
 #' Number of \code{predators} approaching models painted to resemble pufferfish
 #' (\emph{Canthigaster valentini}) across a range of similarities
 #' (\code{resemblance})
-#' 
-#' 
+#'
+#'
 #' @name Pufferfish
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -2612,20 +2612,20 @@ NULL
 #' \item{predators}{a numeric vector} }
 #' @references
 #' \url{http://rspb.royalsocietypublishing.org/content/270/1516/667.full.pdf}
-#' 
+#'
 #' \url{http://en.wikipedia.org/wiki/Canthigaster_valentini}
-#' 
+#'
 #' \url{http://www.fishbase.org/Summary/SpeciesSummary.php?id=6544}
 #' @source Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a
 #' tropical reef fish. \emph{Proceedings of the Royal Society of London Series
 #' B, Biological Sciences} 270: 667-672.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Pufferfish)
 #' xyplot(predators ~ jitter(resemblance, amount = 0.1), Pufferfish)
 #' Pufferfish
-#' 
+#'
 NULL
 
 
@@ -2633,11 +2633,11 @@ NULL
 
 
 #' Temperature Change and Meal Size in Rattlesnakes
-#' 
+#'
 #' Temperature change after a meal (% of body mass) in 17 South American
 #' rattlesnakes (\emph{Crotalus durissus}).
-#' 
-#' 
+#'
+#'
 #' @name Rattlesnakes
 #' @docType data
 #' @format A data frame with 17 observations on the following 2 variables.
@@ -2649,10 +2649,10 @@ NULL
 #' of Experimental Biology} 207: 579-585.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Rattlesnakes)
 #' xyplot(meal.size ~ temp.change, Rattlesnakes)
-#' 
+#'
 NULL
 
 
@@ -2660,10 +2660,10 @@ NULL
 
 
 #' Rigormortis and Time of Death
-#' 
+#'
 #' Number of bodies reaching rigormortis in each hour after death.
-#' 
-#' 
+#'
+#'
 #' @name Rigormortis
 #' @docType data
 #' @format A data frame with 12 observations on the following 2 variables.
@@ -2673,10 +2673,10 @@ NULL
 #' of Dundee.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(count ~ hours, Rigormortis, type='h', lwd=3)
 #' barchart(count ~ hours, Rigormortis, horizontal=FALSE, origin=0)
-#' 
+#'
 NULL
 
 
@@ -2684,12 +2684,12 @@ NULL
 
 
 #' Indian Rope Trick
-#' 
+#'
 #' Perceived impressiveness (\code{impressiveness}) of a written account of the
 #' Indian Rope Trick and the corresponding number of \code{year}s since it was
 #' witnessed.
-#' 
-#' 
+#'
+#'
 #' @name RopeTrick
 #' @docType data
 #' @format A data frame with 21 observations on the following 2 variables.
@@ -2700,10 +2700,10 @@ NULL
 #' \emph{Nature} 383: 212-213.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(impressiveness ~ years, RopeTrick)
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -2711,11 +2711,11 @@ NULL
 
 
 #' Sagebrush Cricket Mating Times
-#' 
+#'
 #' Time to mating (\code{time.to.mating}) in fed and unfed (\code{treatment})
 #' sagebrush crickets (\emph{Cyphoderris strepitans}).
-#' 
-#' 
+#'
+#'
 #' @name SagebrushCrickets
 #' @docType data
 #' @format A data frame with 24 observations on the following 2 variables.
@@ -2727,10 +2727,10 @@ NULL
 #' \emph{Behavioral Ecology} 10: 227-233.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' SagebrushCrickets
 #' str(SagebrushCrickets)
-#' 
+#'
 NULL
 
 
@@ -2738,11 +2738,11 @@ NULL
 
 
 #' Pacific Salmon Color
-#' 
+#'
 #' Skin color sockeye and kokanee morphs of the Pacific salmon
 #' (\emph{Oncorhynchus nerka}) raised in a low carotenoid environment.
-#' 
-#' 
+#'
+#'
 #' @name SalmonColor
 #' @docType data
 #' @format A data frame with 35 observations on the following 2 variables.
@@ -2754,11 +2754,11 @@ NULL
 #' sockeye salmon (\emph{Oncorhynchus nerka}). \emph{Evolution} 55: 380-391.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' SalmonColor
 #' histogram(~ skin.color | species, SalmonColor)
 #' bwplot(skin.color ~ species, SalmonColor)
-#' 
+#'
 NULL
 
 
@@ -2766,10 +2766,10 @@ NULL
 
 
 #' Number of Seedlings Per Quadrat
-#' 
+#'
 #' Data on frequency of seeding per quadrat for 80 hypothetical quadrats.
-#' 
-#' 
+#'
+#'
 #' @name Seedlings
 #' @docType data
 #' @format A data frame with 8 observations on the following 2 variables.
@@ -2777,9 +2777,9 @@ NULL
 #' numeric vector} }
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Seedlings
-#' 
+#'
 NULL
 
 
@@ -2787,15 +2787,15 @@ NULL
 
 
 #' Data for Meta-analysis
-#' 
+#'
 #' Data for meta-analysis on the relationship between testosterone and
 #' aggression.
-#' 
-#' 
+#'
+#'
 #' @name Selection
 #' @docType data
 #' @format A data frame with 814 observations on the following 8 variables.
-#' 
+#'
 #' \describe{ \item{species}{species investigated}
 #' \item{traitname}{trait investigated}
 #' \item{strength.of.selection}{strength of selection}
@@ -2809,7 +2809,7 @@ NULL
 #' Naturalist} 157: 245-261.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~ strength.of.selection, Selection,n=40)
 #' table(Selection$species) -> s
 #' table(s)
@@ -2817,7 +2817,7 @@ NULL
 #' table(Selection$traitname) -> t
 #' table(t)
 #' t[t>10] # most common traits
-#' 
+#'
 NULL
 
 
@@ -2825,13 +2825,13 @@ NULL
 
 
 #' Sexual Conflict
-#' 
+#'
 #' Number of species in each of two taxa in closely related taxon pairings and
 #' the difference between the two groups. One taxon has multiple matings
 #' (\code{polyandrous.species}) and one has only single matings
 #' (\code{monandrous.species}).
-#' 
-#' 
+#'
+#'
 #' @name SexualSelection
 #' @docType data
 #' @format A data frame with 25 observations on the following 4 variables.
@@ -2845,22 +2845,22 @@ NULL
 #' National Academy of Sciences (USA)} 97: 10460-10464.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' SexualSelection
-#' 
+#'
 #' histogram(~ difference, SexualSelection, n = 20)
-#' 
+#'
 #' hist(SexualSelection$difference, breaks = 20)
-#' 
+#'
 #' # Calculate the number of tests and the number of negative tests
 #' (n <- length(SexualSelection$difference))
 #' (n.neg <- sum(SexualSelection$difference < 0))
-#' 
+#'
 #' 2 * pbinom(q = n.neg, size = n, prob = 0.5)
-#' 
+#'
 #' # With a binomial test
 #' binom.test(n.neg, n, p = 0.5)
-#' 
+#'
 NULL
 
 
@@ -2868,10 +2868,10 @@ NULL
 
 
 #' Shad Parasites
-#' 
+#'
 #' Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
-#' 
-#' 
+#'
+#'
 #' @name ShadParasites
 #' @docType data
 #' @format A data frame with 7 observations on the following 2 variables.
@@ -2884,9 +2884,9 @@ NULL
 #' 117: 597-610.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' ShadParasites
-#' 
+#'
 NULL
 
 
@@ -2894,11 +2894,11 @@ NULL
 
 
 #' Seal Body Lengths and Age
-#' 
+#'
 #' Body length (cm) and age (days) for 9,665 female Northern fur seals
 #' (\emph{Callorhinus ursinus}).
-#' 
-#' 
+#'
+#'
 #' @name ShrinkingSeals
 #' @docType data
 #' @format A data frame with 9,665 observations on the following 2 variables.
@@ -2909,12 +2909,12 @@ NULL
 #' Zoology (London)} 238: 459-482.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ShrinkingSeals)
-#' 
+#'
 #' plot(ShrinkingSeals, pch = 16, cex = 0.5)
 #' xyplot(length ~ age, ShrinkingSeals, pch=16, alpha=0.65, cex=0.6)
-#' 
+#'
 NULL
 
 
@@ -2922,11 +2922,11 @@ NULL
 
 
 #' Ambient Temperature and O-Ring Failures
-#' 
+#'
 #' Data on \code{temperature} and number of O-ring \code{failures} for 23 space
 #' shuttle launches.
-#' 
-#' 
+#'
+#'
 #' @name ShuttleDisaster
 #' @docType data
 #' @format A data frame with 23 observations on the following 2 variables.
@@ -2934,19 +2934,19 @@ NULL
 #' \item{failures}{a numeric vector} }
 #' @references Tufte, E.R. 1997. \emph{Visual Explanations: Images and
 #' Quantities, Evidence and Narrative}. Graphics Press.
-#' 
+#'
 #' \url{http://www.edwardtufte.com/tufte/}
 #' @source Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk analysis of
 #' the Space Shuttle: Pre-Challenger prediction of failure. \emph{Journal of
 #' the American Statistical Association} 408: 945-957.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ShuttleDisaster)
 #' xyplot( jitter(failures, amount=0.1) ~ temperature, ShuttleDisaster,
 #'   ylab='number of failures'
 #'   )
-#' 
+#'
 NULL
 
 
@@ -2954,10 +2954,10 @@ NULL
 
 
 #' Rate of Speciation in Silverswords
-#' 
+#'
 #' Speciation "waiting times" in Hawaiian silverswords (\emph{Dubautia}).
-#' 
-#' 
+#'
+#'
 #' @name Silversword
 #' @docType data
 #' @format A data frame with 21 observations on the following variable.
@@ -2968,9 +2968,9 @@ NULL
 #' 95: 9402-9406.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Silversword
-#' 
+#'
 NULL
 
 
@@ -2978,11 +2978,11 @@ NULL
 
 
 #' Sleep and Learning
-#' 
+#'
 #' The increase in "slow-wave" sleep and improvements in spatial learning tasks
 #' in 10 humans.
-#' 
-#' 
+#'
+#'
 #' @name SleepAndPerformance
 #' @docType data
 #' @format A data frame with 10 observations on the following 2 variables.
@@ -2993,10 +2993,10 @@ NULL
 #' sleep and learning. \emph{Nature} 430: 78-81.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(SleepAndPerformance)
 #' xyplot(improvement ~ sleep, SleepAndPerformance)
-#' 
+#'
 NULL
 
 
@@ -3004,11 +3004,11 @@ NULL
 
 
 #' Body Masses of Female Sockeye Salmon
-#' 
+#'
 #' Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka};
 #' \url{http://www.nmfs.noaa.gov/pr/species/fish/sockeyesalmon.htm})
-#' 
-#' 
+#'
+#'
 #' @name SockeyeFemales
 #' @docType data
 #' @format A data frame with 228 observations of a single variable. \describe{
@@ -3018,10 +3018,10 @@ NULL
 #' within a population of salmon. \emph{Oikos} 85: 499-514.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(SockeyeFemales)
 #' summary(SockeyeFemales)
-#' 
+#'
 NULL
 
 
@@ -3029,10 +3029,10 @@ NULL
 
 
 #' Lifetime Reproductive Success in House Sparrows
-#' 
+#'
 #' A cross table of lifetime reproductive success (\code{LifetimeRS}) in female
 #' and male house sparrows \emph{Passer domesticus} in Norway.
-#' 
+#'
 #' @name Sparrows
 #' @docType data
 #' @format A data frame with 9 observations on the following 3 variables.
@@ -3044,9 +3044,9 @@ NULL
 #' of Animal Ecology} 73: 599-611.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Sparrows
-#' 
+#'
 NULL
 
 
@@ -3054,11 +3054,11 @@ NULL
 
 
 #' Social Spiders
-#' 
+#'
 #' Web height above ground (cm) and colony size for 17 colonies of the spider
 #' \emph{Cryptophora citricola} in Gabon.
-#' 
-#' 
+#'
+#'
 #' @name SpiderColonies
 #' @docType data
 #' @format A data frame with 17 observations on the following 3 variables.
@@ -3069,10 +3069,10 @@ NULL
 #' West Africa. \emph{Behavioral Ecology and Sociobiology} 5: 291-300.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(SpiderColonies)
 #' SpiderColonies
-#' 
+#'
 NULL
 
 
@@ -3080,11 +3080,11 @@ NULL
 
 
 #' Spider Running Speeds after Amputation
-#' 
+#'
 #' Data on speed before and after amputation of a pedipalp in the spider genus
 #' \emph{Tidarren}.
-#' 
-#' 
+#'
+#'
 #' @name SpiderSpeed
 #' @docType data
 #' @format A data frame with 32 observations on the following 2 variables.
@@ -3102,7 +3102,7 @@ NULL
 #' favstats(SpiderSpeed$speed.before)
 #' favstats(SpiderSpeed$speed.after)
 #' favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
-#' 
+#'
 NULL
 
 
@@ -3110,10 +3110,10 @@ NULL
 
 
 #' Eye Widths in Stalk-Eyed Flies
-#' 
+#'
 #' Eye width in 9 male stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}).
-#' 
-#' 
+#'
+#'
 #' @name Stalkies1
 #' @docType data
 #' @format a data frame with 9 observations of 1 variable \describe{
@@ -3121,9 +3121,9 @@ NULL
 #' @source Data provided by Kevin Fowler, University College, London.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Stalkies1
-#' 
+#'
 NULL
 
 
@@ -3131,11 +3131,11 @@ NULL
 
 
 #' Stalk-eyed Fly Eyespan
-#' 
+#'
 #' Eyespan width (mm; \code{Eye.span}) in 45 stalk-eyed flies
 #' (\emph{Cyrtodiopsis dalmanni}) fed a corn or cotton diet (\code{Food}).
-#' 
-#' 
+#'
+#'
 #' @name Stalkies2
 #' @docType data
 #' @format A data frame with 45 observations on the following 2 variables.
@@ -3146,11 +3146,11 @@ NULL
 #' \emph{Nature} 406: 186-188.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Stalkies2)
 #' xyplot(eye.span ~ food, Stalkies2)
 #' aggregate(eye.span ~ food, Stalkies2, FUN = favstats)
-#' 
+#'
 NULL
 
 
@@ -3158,12 +3158,12 @@ NULL
 
 
 #' Number of Lateral Plates in Sticklebacks
-#' 
+#'
 #' Number of lateral plates (\code{plates}) in threespine sticklebacks
 #' (\emph{Gasterosteus aculeatus}) with three different \emph{Ectodysplasin}
 #' genotypes (\code{mm}, \code{Mm}, and \code{MM}).
-#' 
-#' 
+#'
+#'
 #' @name SticklebackPlates
 #' @docType data
 #' @format A data frame with 344 observations on the following 2 variables.
@@ -3181,21 +3181,21 @@ NULL
 #' \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' aggregate(plates ~ genotype, SticklebackPlates, FUN = favstats)
-#' 
-#' histogram( ~ plates | genotype, SticklebackPlates, 
+#'
+#' histogram( ~ plates | genotype, SticklebackPlates,
 #'   layout = c(1,3),
 #'   n = 15,
 #'   xlab = "Number of Lateral Body Plates"
 #'   )
-#' 
-#' densityplot( ~ plates | genotype, SticklebackPlates, 
+#'
+#' densityplot( ~ plates | genotype, SticklebackPlates,
 #'   xlab = "Number of Lateral Body Plates",
 #'   layout = c(1,3)
 #'   )
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -3203,10 +3203,10 @@ NULL
 
 
 #' Mating Preferences in Sticklebacks
-#' 
+#'
 #' Mating preference in 9 populations of three-spined sticklebacks.
-#' 
-#' 
+#'
+#'
 #' @name SticklebackPreference
 #' @docType data
 #' @format A data frame with 9 observations of one variable. \describe{
@@ -3218,11 +3218,11 @@ NULL
 #' speciation. \emph{Nature} 429: 294-298.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' SticklebackPreference
 #' histogram(~ preference.index, SticklebackPreference)
 #' dotplot(~ preference.index, SticklebackPreference)
-#' 
+#'
 NULL
 
 
@@ -3230,10 +3230,10 @@ NULL
 
 
 #' Sumo Wrestling Wins
-#' 
+#'
 #' Counts of number of wins for sumo wrestlers.
-#' 
-#' 
+#'
+#'
 #' @name Sumo
 #' @docType data
 #' @format A data frame with 16 observations on the following 2 variables.
@@ -3244,9 +3244,9 @@ NULL
 #' 1594-1605.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(count ~ wins, Sumo, type='h', lwd=4)
-#' 
+#'
 NULL
 
 
@@ -3254,10 +3254,10 @@ NULL
 
 
 #' Syrup Swimming
-#' 
+#'
 #' Relative swimming speed (speed in syrup / speed in water) for 18 swimmers.
-#' 
-#' 
+#'
+#'
 #' @name SyrupSwimming
 #' @docType data
 #' @format A data frame with 18 observations of one variable. \describe{
@@ -3267,11 +3267,11 @@ NULL
 #' Slower in Syrup? \emph{AIChE Journal} 50: 2646-2647.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' SyrupSwimming
 #' histogram(~ relative.speed, SyrupSwimming)
 #' dotplot(~ relative.speed, SyrupSwimming)
-#' 
+#'
 NULL
 
 
@@ -3279,11 +3279,11 @@ NULL
 
 
 #' Causes of Teenage Deaths
-#' 
+#'
 #' Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages
 #' 15-19.
-#' 
-#' 
+#'
+#'
 #' @name TeenDeaths
 #' @docType data
 #' @format A data frame with 11 observations on the following 2 variables.
@@ -3294,23 +3294,23 @@ NULL
 #' Statistics; Hyattsville, Maryland.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(TeenDeaths)
 #' TeenDeaths
-#' 
-#' barchart(deaths ~ cause, TeenDeaths, 
+#'
+#' barchart(deaths ~ cause, TeenDeaths,
 #'   horizontal = FALSE,
 #'   ylab = "Number of Deaths",
 #'   xlab = "Cause of Death", origin=0,
 #'   scales = list(x = list(rot=45)))
-#' 
-#' barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+#'
+#' barchart(deaths~ordered(cause, levels=cause), TeenDeaths,
 #'   horizontal = FALSE,
 #'   ylab = "Number of Deaths",
 #'   xlab = "Cause of Death", origin=0,
 #'   scales=list(x=list(rot=45))
 #'   )
-#' 
+#'
 NULL
 
 
@@ -3318,11 +3318,11 @@ NULL
 
 
 #' Telomere Shortening
-#' 
+#'
 #' Telomere length (ratio) and years since their child's diagnosis with chronic
 #' illness.
-#' 
-#' 
+#'
+#'
 #' @name Telomeres
 #' @docType data
 #' @format A data frame with 39 observations on the following 2 variables.
@@ -3335,13 +3335,13 @@ NULL
 #' 101: 17312-17315.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(years ~ telomere.length, Telomeres,
 #'   xlab = "Time since diagnosis (years)",
 #'   ylab = "Telomere length (ratio)"
 #' )
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -3349,11 +3349,11 @@ NULL
 
 
 #' Hypoxanthine and Time Since Death
-#' 
+#'
 #' Hypoxanthine levels in the vitreous humour of the eye and time since death
 #' (hours) for 48 subjects.
-#' 
-#' 
+#'
+#'
 #' @name TimeOfDeath
 #' @docType data
 #' @format A data frame with 48 observations on the following 2 variables.
@@ -3364,9 +3364,9 @@ NULL
 #' Forensic Medicine and Pathology} 18: 158-162.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(hypoxanthine ~ hours, TimeOfDeath, type=c('p','r'))
-#' 
+#'
 NULL
 
 
@@ -3374,10 +3374,10 @@ NULL
 
 
 #' Right-handed Toads
-#' 
+#'
 #' Hypothetical probability of a toad being right-handed
-#' 
-#' 
+#'
+#'
 #' @name Toads
 #' @docType data
 #' @format A data frame with 19 observations on the following 2 variables.
@@ -3385,15 +3385,15 @@ NULL
 #' numeric vector} }
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Toads
 #' # generate this data manually
 #' cbind(0:18, dbinom(0:18, 18, 0.5))
 #' xyplot(prob ~ n.toads, Toads, type = 'h', lwd = 4)
 #' barchart(prob ~ n.toads, Toads, origin=0, horizontal=FALSE)
 #' plotDist('binom', params = list(18,0.5), kind = 'hist')
-#' 
-#' 
+#'
+#'
 NULL
 
 
@@ -3401,10 +3401,10 @@ NULL
 
 
 #' Flower Length in Tobacco Plants
-#' 
+#'
 #' Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
-#' 
-#' 
+#'
+#'
 #' @name Tobacco
 #' @docType data
 #' @format A data frame with 13 observations on the following 3 variables.
@@ -3414,15 +3414,15 @@ NULL
 #' of the number of F2 plants with flower lengths in this size range} }
 #' @seealso \code{\link{Tobacco2}}
 #' @references \url{http://www.genetics.org/content/vol1/issue2/}
-#' 
+#'
 #' \url{http://en.wikipedia.org/wiki/Nicotiana}
 #' @source East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 #' \emph{Genetics} 1: 164-176.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Tobacco
-#' 
+#'
 NULL
 
 
@@ -3430,10 +3430,10 @@ NULL
 
 
 #' Flower Length in Tobacco Plants
-#' 
+#'
 #' Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
-#' 
-#' 
+#'
+#'
 #' @name Tobacco2
 #' @docType data
 #' @format A data frame with 617 observations on the following 2 variables.
@@ -3441,16 +3441,16 @@ NULL
 #' \item{generation}{a factor with levels \code{F1} \code{F2}} }
 #' @seealso \code{\link{Tobacco}}
 #' @references \url{http://www.genetics.org/content/vol1/issue2/}
-#' 
+#'
 #' \url{http://en.wikipedia.org/wiki/Nicotiana}
 #' @source East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 #' \emph{Genetics} 1: 164-176.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xtabs(~ flower.length + generation, Tobacco2)
 #' bwplot(flower.length ~ generation, Tobacco2)
-#' 
+#'
 NULL
 
 
@@ -3458,11 +3458,11 @@ NULL
 
 
 #' Radioactive Teeth
-#' 
+#'
 #' Actual birth year and birth year estimated from relative radioactivity of
 #' the enamel for 20 samples.
-#' 
-#' 
+#'
+#'
 #' @name ToothAge
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -3473,10 +3473,10 @@ NULL
 #' 333-334.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ToothAge)
 #' xyplot(actual ~ estimated, ToothAge)
-#' 
+#'
 NULL
 
 
@@ -3484,11 +3484,11 @@ NULL
 
 
 #' Tree Seedlings and Sunflecks
-#' 
+#'
 #' Fleck duration (min) and relative seedling growth rate (mm/mm/week) for 21
 #' seedlings of \emph{Shorea leprosula}.
-#' 
-#' 
+#'
+#'
 #' @name TreeSeedlings
 #' @docType data
 #' @format A data frame with 21 observations on the following 2 variables.
@@ -3500,10 +3500,10 @@ NULL
 #' \emph{Journal of Experimental Botany} 56: 469-482.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(TreeSeedlings)
 #' splom(TreeSeedlings)
-#' 
+#'
 NULL
 
 
@@ -3511,12 +3511,12 @@ NULL
 
 
 #' Frequencies of Fish Eaten by Trematode Infection Level
-#' 
+#'
 #' Frequencies of killifish (\emph{Fundulus parvipinnis}) eaten by birds
 #' depending on level of infection by the trematode \emph{Euhaplorchis
 #' californiensis}.
-#' 
-#' 
+#'
+#'
 #' @name Trematodes
 #' @docType data
 #' @format A data frame with 141 observations on the following 2 variables.
@@ -3528,9 +3528,9 @@ NULL
 #' hosts. \emph{Ecology} 77: 1390-1397.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' demo(sec9.3)
-#' 
+#'
 NULL
 
 
@@ -3538,11 +3538,11 @@ NULL
 
 
 #' Trillium Recruitment near Clearcuts
-#' 
+#'
 #' Recruitment of \emph{Trillium} and distance to nearest clearcut in eight
 #' populations in southwestern Oregon.
-#' 
-#' 
+#'
+#'
 #' @name Trillium
 #' @docType data
 #' @format A data frame with 8 observations on the following 3 variables.
@@ -3554,10 +3554,10 @@ NULL
 #' Biology} 13: 784-793
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(Trillium)
 #' splom(Trillium)
-#' 
+#'
 NULL
 
 
@@ -3565,11 +3565,11 @@ NULL
 
 
 #' Truffle Distribution
-#' 
+#'
 #' Number of truffles per plot for 288 plots in an old growth forest in
 #' northeastern California.
-#' 
-#' 
+#'
+#'
 #' @name Truffles
 #' @docType data
 #' @format A data frame with 5 observations on the following 2 variables.
@@ -3581,11 +3581,11 @@ NULL
 #' California. \emph{Forest Ecology and Management} 96: 155-166.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Truffles
 #' xyplot(count ~ truffles, Truffles, type='h', lwd=4)
 #' barchart(count ~ truffles, Truffles, origin=0, horizontal=FALSE)
-#' 
+#'
 NULL
 
 
@@ -3593,11 +3593,11 @@ NULL
 
 
 #' Dietary Learning in Tsetse Flies
-#' 
+#'
 #' Dietary conditioning \code{treatment} and subsequent proportion of tsetse
 #' flies (\emph{Glossina palpalis}) feeding on cow blood in each of 13 cohorts.
-#' 
-#' 
+#'
+#'
 #' @name TsetseLearning
 #' @docType data
 #' @format A data frame with 13 observations on the following 2 variables.
@@ -3610,9 +3610,9 @@ NULL
 #' \emph{Biology Letters} 3: 113-116.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(proportion.cow ~ treatment, TsetseLearning)
-#' 
+#'
 NULL
 
 
@@ -3620,10 +3620,10 @@ NULL
 
 
 #' Number of Boys in Two-Child Families
-#' 
+#'
 #' The number of boys in a sample of 2,444 two-child families.
-#' 
-#' 
+#'
+#'
 #' @name TwoKids
 #' @docType data
 #' @format A data frame with 3 observations on the following 2 variables.
@@ -3635,29 +3635,29 @@ NULL
 #' the family? \emph{Chance Magazine} Fall 2001: 8-13.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' TwoKids
 #' observed <- TwoKids$count
 #' expected <- c(585.3, 1221.4, 637.3)
 #' chisq.test(observed, p = expected, rescale.p = TRUE)
-#' 
+#'
 #' # Alternate calculation, using Pr[male] = 0.512
 #' # and rbinom. See Figure 5.7-1
 #' n <- sum(observed)
 #' pr.m <- 0.512
 #' pr.f <- 0.488
-#' 
+#'
 #' # Calculate the probabilities of 0, 1, and 2 males
 #' (pr.0 <- pr.f^2)
 #' (pr.1 <- pr.m * pr.f + pr.f * pr.m)
 #' (pr.2 <- pr.m^2)
-#' 
+#'
 #' set.seed(1)
 #' (expected2 <- c(rbinom(1, n, pr.0),
 #'                 rbinom(1, n, pr.1),
 #'                 rbinom(1, n, pr.2)))
 #' chisq.test(observed, p = expected2, rescale.p = TRUE)
-#' 
+#'
 NULL
 
 
@@ -3665,10 +3665,10 @@ NULL
 
 
 #' Vampire Bat Bites
-#' 
+#'
 #' Numbers of cattle bitten by the cow's estrous cycle.
-#' 
-#' 
+#'
+#'
 #' @name VampireBites
 #' @docType data
 #' @format A data frame with 4 observations on the following 3 variables.
@@ -3679,9 +3679,9 @@ NULL
 #' and Ecology}. Johns Hopkins Press: Baltimore, MD.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' demo(sec9.4)
-#' 
+#'
 NULL
 
 
@@ -3689,11 +3689,11 @@ NULL
 
 
 #' Vasopressin Manipulation in the Meadow Vole
-#' 
+#'
 #' Time spent with a female (\code{percent}) in control and
 #' vasopressin-enhanced groups (\code{treatment}) of meadow voles
 #' (\emph{Microtus pennsylvanicus}).
-#' 
+#'
 #' @name VasopressinVoles
 #' @docType data
 #' @format A data frame with 31 observations on the following 2 variables.
@@ -3707,7 +3707,7 @@ NULL
 #' @examples
 #' xyplot(percent ~ treatment, VasopressinVoles, type=c('p','a'))
 #' bwplot(percent ~ treatment, VasopressinVoles)
-#' 
+#'
 NULL
 
 
@@ -3715,11 +3715,11 @@ NULL
 
 
 #' Climbing Vines
-#' 
+#'
 #' Number of \code{climbing} and \code{nonclimbing} species within closely
 #' related general of plants.
-#' 
-#' 
+#'
+#'
 #' @name Vines
 #' @docType data
 #' @format A data frame with 48 observations on the following 2 variables.
@@ -3732,9 +3732,9 @@ NULL
 #' of London, Series B, Biological Sciences} 271: 2011-2015.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(nonclimbing ~ climbing, Vines, scales=list(log=TRUE))
-#' 
+#'
 NULL
 
 
@@ -3742,10 +3742,10 @@ NULL
 
 
 #' Home Range Size in Field Voles
-#' 
+#'
 #' Home range size size in field voles (\emph{Microtus agrestis}).
-#' 
-#' 
+#'
+#'
 #' @name VoleDispersal
 #' @docType data
 #' @format A data frame with 5 observations on the following 3 variables.
@@ -3757,13 +3757,13 @@ NULL
 #' \emph{Oecologia} 86: 153-158.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xtabs(count~sex+homeranges,VoleDispersal)
 #' barchart( xtabs(count~sex+homeranges,VoleDispersal), origin=0, auto.key=TRUE)
 #' barchart(count~sex+homeranges,VoleDispersal, origin=0)
 #' barchart(count~sex,groups=homeranges,VoleDispersal, origin=0)
 #' barchart(count~sex,groups=homeranges,VoleDispersal, origin=0,stack=TRUE)
-#' 
+#'
 NULL
 
 
@@ -3771,12 +3771,12 @@ NULL
 
 
 #' Walking Stick Femur Length
-#' 
-#' Two measures of femur length \code{femur.length} for each of 25 
+#'
+#' Two measures of femur length \code{femur.length} for each of 25
 #' walking sticks (\emph{Timema cristinae}). Note that \code{specimen}
 #' is not coded as a factor.
-#' 
-#' 
+#'
+#'
 #' @name WalkingStickFemurs
 #' @docType data
 #' @format A data frame with 50 observations on the following 2 variables.
@@ -3789,9 +3789,9 @@ NULL
 #' the National Academy of Sciences (USA)} 103: 9090-9095.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' demo(sec15.6)
-#' 
+#'
 NULL
 
 
@@ -3799,11 +3799,11 @@ NULL
 
 
 #' Walking Stick Head Width
-#' 
+#'
 #' Two measures of head width (\code{head.width}) for each of 25 walking sticks
 #' (\emph{Timema cristinae}).
-#' 
-#' 
+#'
+#'
 #' @name WalkingStickHeads
 #' @docType data
 #' @format A data frame with 50 observations on the following 2 variables.
@@ -3816,10 +3816,10 @@ NULL
 #' the National Academy of Sciences (USA)} 103: 9090-9095.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' aggregate(head.width ~ specimen, data=WalkingStickHeads, mean) -> WS
 #' histogram(~ head.width, WS)
-#' 
+#'
 NULL
 
 
@@ -3827,11 +3827,11 @@ NULL
 
 
 #' Energetic Cost of Diving
-#' 
+#'
 #' Comparison of oxygen consumption in feeding vs. non-feeding dives of the
 #' same length in the Weddell seal (\emph{Leptonychotes weddellii}).
-#' 
-#' 
+#'
+#'
 #' @name WeddellSeals
 #' @docType data
 #' @format A data frame with 10 observations on the following 3 variables.
@@ -3845,9 +3845,9 @@ NULL
 #' 207: 973-982.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(oxygen.use.nonfeeding ~ oxygen.use.feeding, WeddellSeals)
-#' 
+#'
 NULL
 
 
@@ -3855,11 +3855,11 @@ NULL
 
 
 #' Presidential "Wills"
-#' 
+#'
 #' Number of times a presidential candidate said "will," "shall," or "going to"
 #' in presidential debates from 1960-2004 (years incomplete).
-#' 
-#' 
+#'
+#'
 #' @name WillsDebates
 #' @docType data
 #' @format A data frame with 8 observations on the following 6 variables.
@@ -3872,9 +3872,9 @@ NULL
 #' number of times will/shall used by two candidates} }
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' WillsDebates
-#' 
+#'
 NULL
 
 
@@ -3882,11 +3882,11 @@ NULL
 
 
 #' Presidential "Wills"
-#' 
+#'
 #' Number of times a presidential candidate said "will," "shall," or "going to"
 #' in presidential debates from 1960-2004 (years incomplete).
-#' 
-#' 
+#'
+#'
 #' @name WillsPresidents
 #' @docType data
 #' @format A data frame with 16 observations on the following 3 variables.
@@ -3899,9 +3899,9 @@ NULL
 #' @seealso \code{\link{WillsDebates}}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' WillsPresidents
-#' 
+#'
 NULL
 
 
@@ -3909,11 +3909,11 @@ NULL
 
 
 #' Wolf Tooth Measurements
-#' 
+#'
 #' Measurement (cm) of the distance between the canine and last molar teeth in
 #' 35 wolves.
-#' 
-#' 
+#'
+#'
 #' @name WolfTeeth
 #' @docType data
 #' @format A data frame with 35 observations of one variable.  \describe{
@@ -3925,9 +3925,9 @@ NULL
 #' Society, Series B} 263: 849-853.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' histogram(~ length, WolfTeeth)
-#' 
+#'
 NULL
 
 
@@ -3935,11 +3935,11 @@ NULL
 
 
 #' Inbreeding in Wolves
-#' 
+#'
 #' Inbreeding coefficient and the number of pups produced in 24 mated pairs of
 #' wolves (\emph{Canis lupus}) from 1983-2002.
-#' 
-#' 
+#'
+#'
 #' @name Wolves
 #' @docType data
 #' @format A data frame with 24 observations on the following 2 variables.
@@ -3950,10 +3950,10 @@ NULL
 #' wild wolf (\emph{Canis lupus}) population. \emph{Biology Letters} 1: 17-20.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Wolves
-#' xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves) 
-#' 
+#' xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves)
+#'
 NULL
 
 
@@ -3961,10 +3961,10 @@ NULL
 
 
 #' World Cup Goals
-#' 
+#'
 #' Number of goals per team during the 2002 World Cup.
-#' 
-#' 
+#'
+#'
 #' @name WorldCup
 #' @docType data
 #' @format A data frame with 7 observations on the following 2 variables.
@@ -3972,10 +3972,10 @@ NULL
 #' numeric vector} }
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xyplot(count ~ score, WorldCup, type='h', lwd=4)
 #' barchart(count ~ score, WorldCup, origin=0, horizontal=FALSE)
-#' 
+#'
 NULL
 
 
@@ -3983,10 +3983,10 @@ NULL
 
 
 #' Distribution of Wrasses
-#' 
+#'
 #' Number and sex of adult wrasses in a section of the Great Barrier Reef.
-#' 
-#' 
+#'
+#'
 #' @name WrasseSexes
 #' @docType data
 #' @format A data frame with 3 observations on the following 3 variables.
@@ -3994,9 +3994,9 @@ NULL
 #' numeric vector} \item{count}{a numeric vector} }
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' xtabs(count ~ males + females, WrasseSexes)
-#' 
+#'
 NULL
 
 
@@ -4004,10 +4004,10 @@ NULL
 
 
 #' Yeast Regulatory Genes
-#' 
+#'
 #' Number of genes regulated by 109 yeast regulatory genes.
-#' 
-#' 
+#'
+#'
 #' @name YeastGenes
 #' @docType data
 #' @format A data frame with 6 observations on the following 2 variables.
@@ -4018,10 +4018,10 @@ NULL
 #' \emph{Nature Genetics} 31: 60-63.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(YeastGenes)
 #' barchart(count ~ genes.controlled , origin=0, YeastGenes, horizontal=FALSE)
-#' 
+#'
 NULL
 
 
@@ -4029,11 +4029,11 @@ NULL
 
 
 #' Mate Preference in Zebra Finches
-#' 
+#'
 #' Percentage of time that a female spent next to a carotenoid-supplemented
 #' male Zebra Finch compared to his non-supplemented brother.
-#' 
-#' 
+#'
+#'
 #' @name ZebraFinchBeaks
 #' @docType data
 #' @format A numeric vector with 10 observations.
@@ -4044,9 +4044,9 @@ NULL
 #' Finches. \emph{Science} 300: 125-127.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' ZebraFinchBeaks
-#' 
+#'
 NULL
 
 
@@ -4054,12 +4054,12 @@ NULL
 
 
 #' Zebra Finch Carotenoids
-#' 
+#'
 #' Data on cell-mediated immunocompetence (\code{PHA}) and humoral immunity
 #' (\code{SRBC}) in Zebra Finches that received supplemental carotenoids
 #' (\code{CAROT}) and those that did not (\code{NO}).
-#' 
-#' 
+#'
+#'
 #' @name ZebraFinches
 #' @docType data
 #' @format A data frame with 20 observations on the following 3 variables.
@@ -4071,9 +4071,9 @@ NULL
 #' \emph{The American Naturalist} 162: 704-712.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' ZebraFinches
-#' 
+#'
 NULL
 
 
@@ -4081,11 +4081,11 @@ NULL
 
 
 #' Home Range Size and Mortality
-#' 
+#'
 #' Home range size (\eqn{\log_{10}}{log10}) and captive infant mortality (%)
 #' for 20 species of carnivores.
-#' 
-#' 
+#'
+#'
 #' @name ZooMortality
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -4095,9 +4095,9 @@ NULL
 #' carnivores. \emph{Nature} 425: 473-474.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' str(ZooMortality)
-#' 
+#'
 NULL
 
 
@@ -4105,12 +4105,12 @@ NULL
 
 
 #' Zooplankton Depredation
-#' 
+#'
 #' Diversity of zooplankton (\code{zooplankton}) prey in each of 5 replicate
 #' blocks (\code{block}) of three treatment levels (\code{treatment}). By
 #' default, \code{block} is not coded as a factor.
-#' 
-#' 
+#'
+#'
 #' @name Zooplankton
 #' @docType data
 #' @format A data frame with 15 observations on the following 3 variables.
@@ -4123,15 +4123,14 @@ NULL
 #' B, Biological Sciences} 274: 839-844.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' Zooplankton
-#' 
+#'
 #' Zooplankton$block <- factor(Zooplankton$block)
 #' str(Zooplankton)
-#' 
+#'
 #' aov.fit <- aov(zooplankton ~ block + treatment,
 #'   data = Zooplankton)
 #' summary(aov.fit)
-#' 
+#'
 NULL
-
