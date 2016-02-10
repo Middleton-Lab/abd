@@ -21,13 +21,13 @@ Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages
 str(TeenDeaths)
 TeenDeaths
 
-barchart(deaths ~ cause, TeenDeaths, 
+barchart(deaths ~ cause, TeenDeaths,
   horizontal = FALSE,
   ylab = "Number of Deaths",
   xlab = "Cause of Death", origin=0,
   scales = list(x = list(rot=45)))
 
-barchart(deaths~ordered(cause, levels=cause), TeenDeaths, 
+barchart(deaths~ordered(cause, levels=cause), TeenDeaths,
   horizontal = FALSE,
   ylab = "Number of Deaths",
   xlab = "Cause of Death", origin=0,

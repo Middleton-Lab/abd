@@ -19,7 +19,7 @@ wolves (\emph{Canis lupus}) from 1983-2002.
 \examples{
 
 Wolves
-xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves) 
+xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves)
 
 }
 \keyword{datasets}

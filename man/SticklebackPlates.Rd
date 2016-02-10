@@ -23,13 +23,13 @@ genotypes (\code{mm}, \code{Mm}, and \code{MM}).
 
 aggregate(plates ~ genotype, SticklebackPlates, FUN = favstats)
 
-histogram( ~ plates | genotype, SticklebackPlates, 
+histogram( ~ plates | genotype, SticklebackPlates,
   layout = c(1,3),
   n = 15,
   xlab = "Number of Lateral Body Plates"
   )
 
-densityplot( ~ plates | genotype, SticklebackPlates, 
+densityplot( ~ plates | genotype, SticklebackPlates,
   xlab = "Number of Lateral Body Plates",
   layout = c(1,3)
   )
