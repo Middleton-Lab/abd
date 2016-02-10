@@ -20,7 +20,7 @@ mcalli}).
 
 str(HornedLizards)
 
-histogram(~horn.length | group, HornedLizards, 
+histogram(~horn.length | group, HornedLizards,
   layout=c(1,2),
   xlab="Horn Length (mm)")
 

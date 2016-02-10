@@ -11,12 +11,12 @@ The \code{abd} package contains data sets and sample code for the book,
 Schluter (2009; Roberts and Company Publishers).
 }
 \details{
-\tabular{ll}{ Package: \tab abd\cr 
-              Type: \tab Package\cr 
-              Version: \tab 0.2-8\cr 
-              Date: \tab 2015-07-02\cr 
-              License: \tab GPL\cr 
-              LazyLoad: \tab yes\cr 
+\tabular{ll}{ Package: \tab abd\cr
+              Type: \tab Package\cr
+              Version: \tab 0.2-8\cr
+              Date: \tab 2015-07-02\cr
+              License: \tab GPL\cr
+              LazyLoad: \tab yes\cr
               LazyData: \tab yes\cr }
 }
 \examples{

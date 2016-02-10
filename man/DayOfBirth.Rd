@@ -24,7 +24,7 @@ barchart( day ~ births, DayOfBirth, origin=0)
 DayOfBirth$oday <- with(DayOfBirth, ordered(day, levels = day))
 barchart( oday ~ births, DayOfBirth, origin=0)
 barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0)
-barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0, 
+barchart( births ~ oday, DayOfBirth, horizontal = FALSE, origin=0,
  scales = list(x=list(rot=45)))
 
 barplot(DayOfBirth$births,

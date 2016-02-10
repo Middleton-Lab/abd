@@ -35,16 +35,16 @@ Biological Data} within the \code{abd} package.
 \examples{
 
 # find all data from examples in chapters 3 and 4
-abdData(3:4, 'Example')
+abdData(3:4, "Example")
 
 # order doesn't matter
-abdData('Example', 3:4)
+abdData("Example", 3:4)
 
 # look for data sets with Example in their name.
-abdData(pattern='Example')
+abdData(pattern="Example")
 
 # look for data sets with Exercise in their name.
-abdData('Exercise')
+abdData("Exercise")
 
 }
 \author{

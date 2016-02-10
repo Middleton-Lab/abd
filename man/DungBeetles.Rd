@@ -19,8 +19,8 @@ virgin females.
 \examples{
 
 str(DungBeetles)
-xyplot(offspring.condition ~ factor(id), DungBeetles, 
-  xlab='Dung Beetle', 
+xyplot(offspring.condition ~ factor(id), DungBeetles,
+  xlab='Dung Beetle',
   ylab='offspring condition')
 
 }
