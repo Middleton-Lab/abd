@@ -1,8 +1,8 @@
 Package: abd
 Type: Package
 Title: The Analysis of Biological Data
-Version: 0.2-8
-Date: 2015-07-02
+Version: 0.2-9
+Date: 2016-02-25
 Author: Kevin M. Middleton <middletonk@missouri.edu>, Randall Pruim
     <rpruim@calvin.edu>
 Maintainer: Kevin M. Middleton <middletonk@missouri.edu>
