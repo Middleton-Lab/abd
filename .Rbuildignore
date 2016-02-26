@@ -1,6 +1,4 @@
 ^\.Rproj\.user$
-^\abd\.Rproj$
-^\bin$
 ^builds$
 ^sandbox$
 ^\..*\.swp$
@@ -11,4 +9,6 @@
 ^README\.md$
 ^.DS\_Store$
 ^.travis.yml$
-^\travis-linter.sh$
+^abd\.Rproj$
+^bin$
+^travis-linter\.sh$
