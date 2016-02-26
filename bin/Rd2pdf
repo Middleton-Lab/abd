@@ -1,3 +1,0 @@
-#! /bin/bash
-bin/roxy -p "." --clean
-R CMD Rd2pdf --force --output=mosaic-manual.pdf --title="Mosaic Manual" --internals "."
