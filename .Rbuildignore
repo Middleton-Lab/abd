@@ -1,9 +1,6 @@
 ^\.Rproj\.user$
-^builds$
-^sandbox$
 ^\..*\.swp$
 ^\..*\.swo$
-^abd.*\.gz$
 ^\.gitignore$
 ^\.git$
 ^README\.md$
