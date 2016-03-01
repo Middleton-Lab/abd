@@ -1,3 +1,6 @@
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/abd?color=blue)](http://cran.r-project.org/web/packages/abd)
+[![RStudio_CRAN_mirror_downloads_badge](http://cranlogs.r-pkg.org/badges/grand-total/abd?color=blue)](http://cran.r-project.org/web/packages/abd)
+
 # Data sets from The Analysis of Biological Data
 
 ## Description
