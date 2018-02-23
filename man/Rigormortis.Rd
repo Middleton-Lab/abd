@@ -21,4 +21,3 @@ barchart(count ~ hours, Rigormortis, horizontal=FALSE, origin=0)
 
 }
 \keyword{datasets}
-

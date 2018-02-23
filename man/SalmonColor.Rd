@@ -25,4 +25,3 @@ bwplot(skin.color ~ species, SalmonColor)
 
 }
 \keyword{datasets}
-

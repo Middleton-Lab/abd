@@ -23,4 +23,3 @@ str(dataInfo)
 \code{\link{abdData}}
 }
 \keyword{datasets}
-

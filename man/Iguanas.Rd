@@ -24,4 +24,3 @@ histogram(~ change.in.length, Iguanas, n = 10)
 \url{http://en.wikipedia.org/wiki/Marine_iguana}
 }
 \keyword{datasets}
-

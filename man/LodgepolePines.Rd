@@ -33,4 +33,3 @@ xyplot(conemass ~ habitat, LodgepolePines)
 \url{http://en.wikipedia.org/wiki/Red_crossbill}
 }
 \keyword{datasets}
-

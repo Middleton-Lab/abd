@@ -22,4 +22,3 @@ xyplot(ln.brain ~ ln.mass, data=NeanderthalBrains, groups=species)
 
 }
 \keyword{datasets}
-

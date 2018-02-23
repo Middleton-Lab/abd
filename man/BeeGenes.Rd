@@ -26,4 +26,3 @@ xtabs( expression ~ type + colony, BeeGenes )
 
 }
 \keyword{datasets}
-

@@ -26,4 +26,3 @@ xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
 \url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 }
 \keyword{datasets}
-

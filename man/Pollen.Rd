@@ -23,4 +23,3 @@ xyplot(proportion.sterile ~ genetic.distance, Pollen)
 
 }
 \keyword{datasets}
-

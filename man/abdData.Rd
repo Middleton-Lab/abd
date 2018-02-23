@@ -8,6 +8,11 @@ abdData(..., chapters = 1:21, types = c("Example", "Problem"),
   numbers = 1:100, pattern = "*", ignore.case = TRUE)
 }
 \arguments{
+\item{\dots}{values for any of \code{chapters}, \code{types}, or
+\code{pattern}.  Which is meant will be inferred from the type of object
+supplied.  This allows users to specify these values in any order and
+without naming.}
+
 \item{chapters}{a numeric vector of chapters to search within}
 
 \item{types}{a sub-vector of c('Example','Problem')}
@@ -18,11 +23,6 @@ abdData(..., chapters = 1:21, types = c("Example", "Problem"),
 name of the data frame.}
 
 \item{ignore.case}{should case be ignored when matching pattern?}
-
-\item{\dots}{values for any of \code{chapters}, \code{types}, or
-\code{pattern}.  Which is meant will be inferred from the type of object
-supplied.  This allows users to specify these values in any order and
-without naming.}
 }
 \value{
 A data frame describing data sets from \code{abd} that match the
@@ -51,4 +51,3 @@ abdData("Exercise")
 Randall Pruim (\email{rpruim@calvin.edu})
 }
 \keyword{datasets}
-

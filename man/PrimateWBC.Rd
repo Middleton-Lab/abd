@@ -20,4 +20,3 @@ xyplot(WBC.more ~ WBC.less, PrimateWBC)
 
 }
 \keyword{datasets}
-

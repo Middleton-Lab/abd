@@ -25,4 +25,3 @@ favstats(NorthSeaCod$log10.recruits)
 \url{http://www.nature.com/nature/journal/v426/n6967/abs/nature02164.html}
 }
 \keyword{datasets}
-

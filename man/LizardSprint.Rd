@@ -29,4 +29,3 @@ histogram(~ speed, Lizard2)
 \url{http://en.wikipedia.org/wiki/Sceloporus_merriami}
 }
 \keyword{datasets}
-

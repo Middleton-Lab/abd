@@ -27,4 +27,3 @@ xyplot(murder.rate ~ percent.left, Lefthanded)
 \url{http://rspb.royalsocietypublishing.org/content/272/1558/25.abstract}
 }
 \keyword{datasets}
-

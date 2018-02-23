@@ -26,4 +26,3 @@ barchart(count~sex,groups=homeranges,VoleDispersal, origin=0,stack=TRUE)
 
 }
 \keyword{datasets}
-

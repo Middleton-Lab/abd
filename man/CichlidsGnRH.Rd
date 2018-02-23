@@ -26,4 +26,3 @@ xyplot(GnRH.mRNA ~ territorial, CichlidsGnRH, type=c('p','a'))
 \url{http://jeb.biologists.org/cgi/content/abstract/205/17/2567}
 }
 \keyword{datasets}
-

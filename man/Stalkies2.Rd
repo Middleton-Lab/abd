@@ -24,4 +24,3 @@ aggregate(eye.span ~ food, Stalkies2, FUN = favstats)
 
 }
 \keyword{datasets}
-

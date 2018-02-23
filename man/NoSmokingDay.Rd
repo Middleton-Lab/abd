@@ -26,4 +26,3 @@ NoSmokingDay
 \url{http://www.nosmokingday.org.uk/}
 }
 \keyword{datasets}
-

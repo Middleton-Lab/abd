@@ -24,4 +24,3 @@ xyplot(age ~ proportion.black, LionNoses)
 \url{http://www.nature.com/nature/journal/v428/n6979/abs/nature02395.html}
 }
 \keyword{datasets}
-

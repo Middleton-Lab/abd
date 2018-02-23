@@ -21,4 +21,3 @@ xyplot(pelts ~ year, Lynx, type=c('p','l'))
 
 }
 \keyword{datasets}
-

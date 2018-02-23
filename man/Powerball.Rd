@@ -24,4 +24,3 @@ xyplot(millions.of.tickets.sold ~ day, Powerball)
 \url{http://www.dartmouth.edu/~chance/chance_news/recent_news/chance_news_13.02.html}
 }
 \keyword{datasets}
-

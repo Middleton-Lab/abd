@@ -24,4 +24,3 @@ xyplot(proficiency ~ greymatter, LanguageBrains)
 
 }
 \keyword{datasets}
-

@@ -29,4 +29,3 @@ bwplot(flower.length ~ generation, Tobacco2)
 \code{\link{Tobacco}}
 }
 \keyword{datasets}
-

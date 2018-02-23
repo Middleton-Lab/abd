@@ -21,4 +21,3 @@ xyplot(count ~ wins, Sumo, type='h', lwd=4)
 
 }
 \keyword{datasets}
-

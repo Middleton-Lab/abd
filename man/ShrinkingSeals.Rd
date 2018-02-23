@@ -25,4 +25,3 @@ xyplot(length ~ age, ShrinkingSeals, pch=16, alpha=0.65, cex=0.6)
 
 }
 \keyword{datasets}
-

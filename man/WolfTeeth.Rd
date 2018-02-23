@@ -24,4 +24,3 @@ histogram(~ length, WolfTeeth)
 \url{http://rspb.royalsocietypublishing.org/content/263/1372/849.abstract}
 }
 \keyword{datasets}
-

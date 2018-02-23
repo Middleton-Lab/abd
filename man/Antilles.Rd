@@ -26,4 +26,3 @@ densityplot(~immigration.date, Antilles)
 \url{http://www.sciencemag.org/cgi/content/abstract/sci;294/5546/1522}
 }
 \keyword{datasets}
-

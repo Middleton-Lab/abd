@@ -25,4 +25,3 @@ xyplot(weight ~ sex, Mosquitoes)
 \url{http://www.bioline.org.br/request?oc95154}
 }
 \keyword{datasets}
-

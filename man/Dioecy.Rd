@@ -22,4 +22,3 @@ xyplot(dioecious ~ monomorphic, Dioecy, alpha = 0.65, pch = 16)
 
 }
 \keyword{datasets}
-

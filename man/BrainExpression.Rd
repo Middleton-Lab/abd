@@ -24,4 +24,3 @@ bwplot(PLP1.expression ~ group, BrainExpression)
 
 }
 \keyword{datasets}
-

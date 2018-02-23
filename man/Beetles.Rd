@@ -25,4 +25,3 @@ xyplot(wing.mass ~ horn.size, Beetles)
 \url{http://www.scienceonline.org/cgi/content/abstract/291/5508/1534}
 }
 \keyword{datasets}
-

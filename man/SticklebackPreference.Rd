@@ -25,4 +25,3 @@ dotplot(~ preference.index, SticklebackPreference)
 \url{http://www.nature.com/nature/journal/v429/n6989/abs/nature02556.html}
 }
 \keyword{datasets}
-

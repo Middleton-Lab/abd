@@ -32,4 +32,3 @@ histogram( ~ resistance| density, DaphniaResistance,
 
 }
 \keyword{datasets}
-

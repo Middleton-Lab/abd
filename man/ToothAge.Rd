@@ -23,4 +23,3 @@ xyplot(actual ~ estimated, ToothAge)
 
 }
 \keyword{datasets}
-

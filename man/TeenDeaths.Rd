@@ -36,4 +36,3 @@ barchart(deaths~ordered(cause, levels=cause), TeenDeaths,
 
 }
 \keyword{datasets}
-

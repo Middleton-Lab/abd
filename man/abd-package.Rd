@@ -2,8 +2,8 @@
 % Please edit documentation in R/datasets.R
 \docType{package}
 \name{abd-package}
-\alias{abd}
 \alias{abd-package}
+\alias{abd}
 \title{Data sets from The Analysis of Biological Data}
 \description{
 The \code{abd} package contains data sets and sample code for the book,
@@ -27,14 +27,13 @@ abdData(3)                        # look for data sets in chapter 3
 abdData('Finch')                  # look for data sets with 'finch' in name
 
 }
-\author{
-Kevin M. Middleton (\url{middletonk@missouri.edu}); Randall Pruim
-(\url{rpruim@calvin.edu})
-}
 \references{
 Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
 Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
 \url{http://www.roberts-publishers.com/biology/the-analysis-of-biological-data.html}
 }
+\author{
+Kevin M. Middleton (\url{middletonk@missouri.edu}); Randall Pruim
+(\url{rpruim@calvin.edu})
+}
 \keyword{package}
-

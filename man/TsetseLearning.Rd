@@ -25,4 +25,3 @@ xyplot(proportion.cow ~ treatment, TsetseLearning)
 \url{http://rsbl.royalsocietypublishing.org/content/3/2/113.full}
 }
 \keyword{datasets}
-

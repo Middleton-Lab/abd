@@ -30,4 +30,3 @@ Tobacco
 \code{\link{Tobacco2}}
 }
 \keyword{datasets}
-

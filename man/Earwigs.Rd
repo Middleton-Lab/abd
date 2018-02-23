@@ -29,4 +29,3 @@ xyplot(proportion.forceps ~ density, data=Earwigs, type='h', lwd=6)
 \url{http://eol.org/pages/473785}
 }
 \keyword{datasets}
-

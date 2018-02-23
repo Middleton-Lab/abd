@@ -21,4 +21,3 @@ histogram(~corr.coeff, BirdSexRatio, n = 10,
 
 }
 \keyword{datasets}
-

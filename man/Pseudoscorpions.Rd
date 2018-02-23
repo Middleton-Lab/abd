@@ -28,4 +28,3 @@ aggregate(successful.broods ~ treatment, Pseudoscorpions, favstats)
 \url{http://www.pnas.org/content/96/18/10236.long}
 }
 \keyword{datasets}
-

@@ -23,4 +23,3 @@ xyplot(lossrate ~ leanness, BodyFatHeatLoss)
 \url{http://www.ncbi.nlm.nih.gov/pubmed/4732330}
 }
 \keyword{datasets}
-

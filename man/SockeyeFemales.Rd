@@ -22,4 +22,3 @@ summary(SockeyeFemales)
 
 }
 \keyword{datasets}
-

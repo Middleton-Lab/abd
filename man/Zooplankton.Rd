@@ -32,4 +32,3 @@ summary(aov.fit)
 
 }
 \keyword{datasets}
-

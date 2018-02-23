@@ -30,4 +30,3 @@ xyplot(finger.ratio ~ CAGrepeats, FingerRatio,
 \url{http://en.wikipedia.org/wiki/Digit_ratio}
 }
 \keyword{datasets}
-

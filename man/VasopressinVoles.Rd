@@ -24,4 +24,3 @@ bwplot(percent ~ treatment, VasopressinVoles)
 
 }
 \keyword{datasets}
-

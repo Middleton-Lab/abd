@@ -23,4 +23,3 @@ dotplot(slope ~ group, Penguins)
 
 }
 \keyword{datasets}
-

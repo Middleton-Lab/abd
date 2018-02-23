@@ -23,4 +23,3 @@ xyplot(inbreeding.coefficient ~ jitter(pups, amount=0.15), Wolves)
 
 }
 \keyword{datasets}
-

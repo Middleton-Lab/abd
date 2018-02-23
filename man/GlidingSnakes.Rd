@@ -28,4 +28,3 @@ histogram(~undulation.rate , data=GlidingSnakes, n=7,
 \url{http://www.flyingsnake.org/}
 }
 \keyword{datasets}
-

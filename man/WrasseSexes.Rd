@@ -16,4 +16,3 @@ xtabs(count ~ males + females, WrasseSexes)
 
 }
 \keyword{datasets}
-

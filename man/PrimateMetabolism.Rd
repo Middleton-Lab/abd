@@ -25,4 +25,3 @@ xyplot(bmr ~ mass, PrimateMetabolism, scales=list(log=TRUE))
 \url{http://jeb.biologists.org/cgi/content/abstract/160/1/25}
 }
 \keyword{datasets}
-

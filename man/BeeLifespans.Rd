@@ -20,4 +20,3 @@ densityplot(~hours, BeeLifespans)
 
 }
 \keyword{datasets}
-

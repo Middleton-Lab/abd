@@ -22,4 +22,3 @@ xyplot(lysozyme ~ sperm.viability, Crickets)
 
 }
 \keyword{datasets}
-

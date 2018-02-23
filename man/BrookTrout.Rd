@@ -38,4 +38,3 @@ summary(proportion.surviving ~ trout, BrookTrout, fun = favstats)
 
 }
 \keyword{datasets}
-

@@ -44,4 +44,3 @@ ectodysplasin alleles. \emph{Science }307: 1928-33.
 \url{http://www.sciencemag.org/cgi/content/full/307/5717/1928}
 }
 \keyword{datasets}
-

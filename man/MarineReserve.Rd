@@ -20,4 +20,3 @@ histogram(~ biomass.ratio, MarineReserve)
 
 }
 \keyword{datasets}
-

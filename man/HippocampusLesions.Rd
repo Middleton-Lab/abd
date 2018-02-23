@@ -28,4 +28,3 @@ plot(memory ~ lesion, data = HippocampusLesions,
 
 }
 \keyword{datasets}
-

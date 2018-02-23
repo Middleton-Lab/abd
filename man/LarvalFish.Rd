@@ -25,4 +25,3 @@ xyplot(cv ~ age, groups=exploited, LarvalFish)
 
 }
 \keyword{datasets}
-

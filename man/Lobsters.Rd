@@ -23,4 +23,3 @@ dotplot(~ orientation, Lobsters)
 \url{http://www.unc.edu/depts/geomag/PDFGeomag/BolesandLohmann2003.pdf}
 }
 \keyword{datasets}
-

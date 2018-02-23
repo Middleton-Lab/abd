@@ -22,4 +22,3 @@ xyplot(num.species ~ breadth, ElVerde, type='h',lwd=3)
 
 }
 \keyword{datasets}
-

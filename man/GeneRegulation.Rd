@@ -23,4 +23,3 @@ xyplot(count ~ genes.regulated, GeneRegulation, type='h', lwd=3)
 
 }
 \keyword{datasets}
-

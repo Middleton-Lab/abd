@@ -27,4 +27,3 @@ splom(Greenspace[,2:6])
 \url{http://rsbl.royalsocietypublishing.org/content/3/4/390.abstract}
 }
 \keyword{datasets}
-

@@ -25,4 +25,3 @@ xyplot(num.species ~ jitter(nutrients, amount=0.1), Grassland, pch=16)
 \url{http://www.rothamsted.ac.uk/}
 }
 \keyword{datasets}
-

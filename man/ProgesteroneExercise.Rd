@@ -27,4 +27,3 @@ xyplot(ventilation ~ progesterone, ProgesteroneExercise)
 \url{http://jeb.biologists.org/cgi/content/abstract/205/2/233}
 }
 \keyword{datasets}
-

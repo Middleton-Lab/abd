@@ -22,4 +22,3 @@ barchart(count ~ genes.controlled , origin=0, YeastGenes, horizontal=FALSE)
 
 }
 \keyword{datasets}
-

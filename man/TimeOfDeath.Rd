@@ -22,4 +22,3 @@ xyplot(hypoxanthine ~ hours, TimeOfDeath, type=c('p','r'))
 
 }
 \keyword{datasets}
-

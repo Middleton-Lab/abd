@@ -27,4 +27,3 @@ histogram(~ count, DesertBirds,
 \url{http://www.mbr-pwrc.usgs.gov/bbs/}
 }
 \keyword{datasets}
-

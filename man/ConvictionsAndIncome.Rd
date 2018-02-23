@@ -29,4 +29,3 @@ xtabs(~ convicted + income, data = ConvictionsAndIncome)
 \url{http://www.icpsr.umich.edu/icpsrweb/NACJD/archive.jsp}
 }
 \keyword{datasets}
-

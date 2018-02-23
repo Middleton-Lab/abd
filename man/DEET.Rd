@@ -23,4 +23,3 @@ xyplot(bites ~ dose, DEET)
 
 }
 \keyword{datasets}
-

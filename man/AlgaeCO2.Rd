@@ -24,4 +24,3 @@ xyplot(growthrate ~ treatment, AlgaeCO2, type = c('p', 'a'))
 
 }
 \keyword{datasets}
-

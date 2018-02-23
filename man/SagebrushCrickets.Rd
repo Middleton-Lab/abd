@@ -24,4 +24,3 @@ str(SagebrushCrickets)
 
 }
 \keyword{datasets}
-

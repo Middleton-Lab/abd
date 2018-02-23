@@ -30,4 +30,3 @@ xyplot(years ~ telomere.length, Telomeres,
 \url{http://www.pnas.org/content/101/49/17312}
 }
 \keyword{datasets}
-

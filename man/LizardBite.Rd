@@ -32,4 +32,3 @@ xyplot(territory ~ bite, LizardBite)
 
 }
 \keyword{datasets}
-

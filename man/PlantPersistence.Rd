@@ -23,4 +23,3 @@ xyplot(generations~treatment, PlantPersistence)
 
 }
 \keyword{datasets}
-

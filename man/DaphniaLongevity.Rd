@@ -25,4 +25,3 @@ xyplot(sqrt.spores ~ longevity, DaphniaLongevity)
 \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0040197}
 }
 \keyword{datasets}
-

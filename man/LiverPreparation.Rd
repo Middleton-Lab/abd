@@ -28,4 +28,3 @@ xyplot(unbound.fraction ~ concentration, LiverPreparation)
 \url{http://www.ncbi.nlm.nih.gov/pubmed/3199317}
 }
 \keyword{datasets}
-

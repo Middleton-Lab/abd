@@ -25,4 +25,3 @@ xyplot(nonclimbing ~ climbing, Vines, scales=list(log=TRUE))
 \url{http://rspb.royalsocietypublishing.org/content/271/1552/2011.full.pdf}
 }
 \keyword{datasets}
-

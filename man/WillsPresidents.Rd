@@ -24,4 +24,3 @@ WillsPresidents
 \code{\link{WillsDebates}}
 }
 \keyword{datasets}
-

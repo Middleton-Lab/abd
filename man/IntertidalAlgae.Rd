@@ -29,4 +29,3 @@ anova(lm.fit)
 
 }
 \keyword{datasets}
-

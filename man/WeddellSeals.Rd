@@ -27,4 +27,3 @@ xyplot(oxygen.use.nonfeeding ~ oxygen.use.feeding, WeddellSeals)
 \url{http://jeb.biologists.org/cgi/content/full/207/6/973}
 }
 \keyword{datasets}
-

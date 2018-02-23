@@ -22,4 +22,3 @@ histogram(~flash, FireflyFlash)
 
 }
 \keyword{datasets}
-

@@ -27,4 +27,3 @@ xyplot(nitrogen ~ worm.species, Earthworms)
 \url{http://www3.interscience.wiley.com/journal/118701215/abstract}
 }
 \keyword{datasets}
-

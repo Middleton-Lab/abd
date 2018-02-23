@@ -17,4 +17,3 @@ barchart(count ~ score, WorldCup, origin=0, horizontal=FALSE)
 
 }
 \keyword{datasets}
-

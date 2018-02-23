@@ -26,4 +26,3 @@ barchart(count ~ deaths, Cavalry, horizontal = FALSE,
 
 }
 \keyword{datasets}
-

@@ -26,4 +26,3 @@ xyplot(meal.size ~ temp.change, Rattlesnakes)
 \url{http://jeb.biologists.org/cgi/content/abstract/207/4/579}
 }
 \keyword{datasets}
-

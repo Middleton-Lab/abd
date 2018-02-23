@@ -26,4 +26,3 @@ splom(TreeSeedlings)
 \url{http://jxb.oxfordjournals.org/cgi/content/short/56/411/469}
 }
 \keyword{datasets}
-

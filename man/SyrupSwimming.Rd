@@ -24,4 +24,3 @@ dotplot(~ relative.speed, SyrupSwimming)
 \url{http://www3.interscience.wiley.com/journal/109665380/issue}
 }
 \keyword{datasets}
-

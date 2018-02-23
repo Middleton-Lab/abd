@@ -23,4 +23,3 @@ xyplot(patch99 ~ patch98, FlycatcherPatch)
 
 }
 \keyword{datasets}
-

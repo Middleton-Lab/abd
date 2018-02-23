@@ -31,4 +31,3 @@ Quantities, Evidence and Narrative}. Graphics Press.
 \url{http://www.edwardtufte.com/tufte/}
 }
 \keyword{datasets}
-

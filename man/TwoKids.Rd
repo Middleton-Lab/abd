@@ -43,4 +43,3 @@ chisq.test(observed, p = expected2, rescale.p = TRUE)
 \url{http://www.dartmouth.edu/~chance/chance_news/recent_news/chance_news_10.11.html#item13}
 }
 \keyword{datasets}
-

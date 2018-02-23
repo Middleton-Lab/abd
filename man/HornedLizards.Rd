@@ -29,4 +29,3 @@ histogram(~horn.length | group, HornedLizards,
 \url{http://www.sciencemag.org/cgi/pdf_extract/304/5667/65}
 }
 \keyword{datasets}
-

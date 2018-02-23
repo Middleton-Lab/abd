@@ -25,4 +25,3 @@ xyplot(improvement ~ sleep, SleepAndPerformance)
 \url{http://www.ncbi.nlm.nih.gov/pubmed/15184907}
 }
 \keyword{datasets}
-

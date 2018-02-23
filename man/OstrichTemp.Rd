@@ -31,4 +31,3 @@ xyplot(brain.temp ~ body.temp, OstrichTemp)
 \url{http://www.sa-venues.com/game-reserves/nwp_lichtenburg.htm}
 }
 \keyword{datasets}
-

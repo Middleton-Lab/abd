@@ -26,4 +26,3 @@ histogram(~ head.width, WS)
 \url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}
 }
 \keyword{datasets}
-

@@ -31,4 +31,3 @@ xyplot(dees ~ mass, data = Chickadees,
 \url{http://www.sciencemag.org/cgi/content/short/308/5730/1934}
 }
 \keyword{datasets}
-

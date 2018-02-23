@@ -29,4 +29,3 @@ and other legacies of Carl Reinhold August Wunderlich. \emph{Journal of the
 American Medical Association} 268: 1578-1580.
 }
 \keyword{datasets}
-

@@ -25,4 +25,3 @@ histogram(~biomass.change, Clearcuts)
 \url{http://www.sciencemag.org/cgi/content/abstract/278/5340/1117}
 }
 \keyword{datasets}
-

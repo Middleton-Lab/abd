@@ -39,4 +39,3 @@ barplot(DayOfBirth$births,
 \url{http://cdc.gov/NCHS/products/nvsr.htm}
 }
 \keyword{datasets}
-

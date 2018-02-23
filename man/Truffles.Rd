@@ -27,4 +27,3 @@ barchart(count ~ truffles, Truffles, origin=0, horizontal=FALSE)
 \url{http://www.fs.fed.us/psw/publications/watersj/waters2.PDF}
 }
 \keyword{datasets}
-

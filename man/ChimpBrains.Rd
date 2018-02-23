@@ -23,4 +23,3 @@ summary(asymmetry ~ sex, ChimpBrains, fun = favstats)
 
 }
 \keyword{datasets}
-

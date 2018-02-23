@@ -26,4 +26,3 @@ demo(sec15.6)
 \url{http://www.sfu.ca/biology/faculty/crespi/pdfs/96-Nosil&Crespi2006PNAS.pdf}
 }
 \keyword{datasets}
-

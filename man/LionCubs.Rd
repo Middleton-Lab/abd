@@ -21,4 +21,3 @@ xyplot(days.to.next.cub ~ cause.of.death, LionCubs)
 
 }
 \keyword{datasets}
-

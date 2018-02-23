@@ -22,4 +22,3 @@ plotDist('binom', params = list(18,0.5), kind = 'hist')
 
 }
 \keyword{datasets}
-

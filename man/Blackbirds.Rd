@@ -29,4 +29,3 @@ xyplot(log.after ~ log.before, data = Blackbirds,
 
 }
 \keyword{datasets}
-

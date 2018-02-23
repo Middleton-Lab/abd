@@ -24,4 +24,3 @@ splom(Trillium)
 
 }
 \keyword{datasets}
-

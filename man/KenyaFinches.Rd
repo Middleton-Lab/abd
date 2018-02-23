@@ -25,4 +25,3 @@ bwplot(beak.length ~ species, KenyaFinches)
 
 }
 \keyword{datasets}
-

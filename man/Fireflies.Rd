@@ -27,4 +27,3 @@ histogram(~sp.mass, Fireflies, n=12)
 \url{http://en.wikipedia.org/wiki/Firefly}
 }
 \keyword{datasets}
-

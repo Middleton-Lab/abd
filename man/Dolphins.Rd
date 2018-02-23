@@ -27,4 +27,3 @@ histogram(~ percent.clockwise, Dolphins)
 \url{http://faculty.washington.edu/chudler/dolp.html}
 }
 \keyword{datasets}
-

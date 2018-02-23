@@ -28,4 +28,3 @@ favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
 \url{http://en.wikipedia.org/wiki/Pedipalp}, \url{http://en.wikipedia.org/wiki/Tidarren}, \url{http://www.pnas.org/content/101/14/4883}
 }
 \keyword{datasets}
-

@@ -30,4 +30,3 @@ xyplot(offspring.condition ~ factor(id), DungBeetles,
 \url{http://www.nature.com/nature/journal/v410/n6829/abs/410684a0.html}
 }
 \keyword{datasets}
-

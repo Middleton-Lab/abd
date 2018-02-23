@@ -30,4 +30,3 @@ xyplot(son.attract ~ father.ornament,
 \url{http://www.nature.com/nature/journal/v406/n6791/abs/406067a0.html}
 }
 \keyword{datasets}
-

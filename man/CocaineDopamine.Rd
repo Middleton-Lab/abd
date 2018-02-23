@@ -28,4 +28,3 @@ xyplot(high ~ percent.blocked, CocaineDopamine)
 \url{http://www.nature.com/nature/journal/v386/n6627/abs/386827a0.html}
 }
 \keyword{datasets}
-

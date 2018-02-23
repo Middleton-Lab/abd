@@ -31,4 +31,3 @@ xyplot(relative.frequency ~ hemoglobin | group, Hemoglobin,
 \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC139295/}
 }
 \keyword{datasets}
-

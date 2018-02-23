@@ -26,4 +26,3 @@ xyplot(impressiveness ~ years, RopeTrick)
 \url{http://www.richardwiseman.com/resources/ropeJSPR.pdf}
 }
 \keyword{datasets}
-

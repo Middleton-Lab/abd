@@ -37,4 +37,3 @@ xyplot(species.upstream ~ species.downstream, data = ElectricFish,
 \url{http://www.sciencemag.org/cgi/content/abstract/305/5692/1960}
 }
 \keyword{datasets}
-

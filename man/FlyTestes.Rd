@@ -26,4 +26,3 @@ FlyTestes
 \url{http://en.wikipedia.org/wiki/Scathophaga_stercoraria}
 }
 \keyword{datasets}
-

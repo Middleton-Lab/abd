@@ -25,4 +25,3 @@ xyplot(male~female, GodwitArrival, main='Arrival of Godwit pairs')
 \url{http://en.wikipedia.org/wiki/Black-tailed_godwit}
 }
 \keyword{datasets}
-

@@ -23,4 +23,3 @@ str(LupusMice)
 
 }
 \keyword{datasets}
-

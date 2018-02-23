@@ -35,4 +35,3 @@ histochart( dbinom(0:30, 30, 0.35) ~ 0:30 )
 Randall Pruim (\email{rpruim@calvin.edu})
 }
 \keyword{graphics}
-

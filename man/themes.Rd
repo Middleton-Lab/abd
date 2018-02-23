@@ -38,4 +38,3 @@ show.settings()
 Randall Pruim (\email{rpruim@calvin.edu})
 }
 \keyword{graphics}
-

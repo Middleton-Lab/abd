@@ -42,4 +42,3 @@ binom.test(n.neg, n, p = 0.5)
 \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC27046/}
 }
 \keyword{datasets}
-
