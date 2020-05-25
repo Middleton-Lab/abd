@@ -4,9 +4,11 @@
 \name{Pollen}
 \alias{Pollen}
 \title{Sterility in Hybrid Pollens}
-\format{A data frame with 23 observations on the following 2 variables.
+\format{
+A data frame with 23 observations on the following 2 variables.
 \describe{ \item{genetic.distance}{a numeric vector}
-\item{proportion.sterile}{a numeric vector} }}
+\item{proportion.sterile}{a numeric vector} }
+}
 \source{
 Moyle, L.C., M.S. Olson, and P. Tiffin. 2004. Patterns of
 reproductive isolation in three angiosperm genera. \emph{Evolution} 58:

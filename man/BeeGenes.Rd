@@ -4,10 +4,12 @@
 \name{BeeGenes}
 \alias{BeeGenes}
 \title{Foraging Gene Expression}
-\format{A data frame with 6 observations on the following 3 variables.
+\format{
+A data frame with 6 observations on the following 3 variables.
 \describe{ \item{type}{a factor with levels \code{forager}
 \code{nurse}} \item{colony}{a numeric identifier}
-\item{expression}{expression level of the \emph{for} gene} }}
+\item{expression}{expression level of the \emph{for} gene} }
+}
 \source{
 Ben-Shahar, Y., A. Robichon, M.B. Sokolowski, and G.E. Robinson.
 2002. Influence of gene action across different time scales on behavior.

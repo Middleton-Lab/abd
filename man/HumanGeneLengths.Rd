@@ -4,8 +4,10 @@
 \name{HumanGeneLengths}
 \alias{HumanGeneLengths}
 \title{Human Gene Lengths}
-\format{A data frame with 20,290 observations on the following variable.
-\describe{ \item{gene.length}{a numeric vector} }}
+\format{
+A data frame with 20,290 observations on the following variable.
+\describe{ \item{gene.length}{a numeric vector} }
+}
 \source{
 Hubbard, T., D. Andrews, M. Caccamo, G. Cameron, Y. Chen, M. Clamp,
 L. Clarke, G. Coates, T. Cox, F. Cunningham, V. Curwen, T. Cutts, T. Down,

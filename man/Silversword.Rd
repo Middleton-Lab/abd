@@ -4,8 +4,10 @@
 \name{Silversword}
 \alias{Silversword}
 \title{Rate of Speciation in Silverswords}
-\format{A data frame with 21 observations on the following variable.
-\describe{ \item{waiting.time}{a numeric vector} }}
+\format{
+A data frame with 21 observations on the following variable.
+\describe{ \item{waiting.time}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Baldwin, B. G. and M. J. Sanderson 1998. Age
 and rate of diversification of the Hawaiian silversword alliance

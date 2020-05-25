@@ -4,10 +4,12 @@
 \name{KenyaFinches}
 \alias{KenyaFinches}
 \title{Body Mass and Beak Length in Three Species of Finches in Kenya}
-\format{A data frame with 45 observations on the following 3 variables.
+\format{
+A data frame with 45 observations on the following 3 variables.
 \describe{ \item{species}{a factor with levels: \code{CRU.WAXB},
 \code{CUTTHROA}, and \code{WB.SPARW}} \item{mass}{mass (g)}
-\item{beak.length}{beak length (mm)} }}
+\item{beak.length}{beak length (mm)} }
+}
 \source{
 Schluter, D. 1988. The evolution of finch communities on islands and
 continents: Kenya vs. Galapagos. \emph{Ecological Monographs} 58: 229-249.

@@ -4,9 +4,11 @@
 \name{BodyFatHeatLoss}
 \alias{BodyFatHeatLoss}
 \title{Heat Loss and Body Fat}
-\format{A data frame with 12 observations on the following 2 variables.
+\format{
+A data frame with 12 observations on the following 2 variables.
 \describe{ \item{leanness}{a numeric vector}
-\item{lossrate}{a numeric vector} }}
+\item{lossrate}{a numeric vector} }
+}
 \source{
 Sloan, R.E.G. and W.R. Keatinge. 1973. Cooling rates of young people
 swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.

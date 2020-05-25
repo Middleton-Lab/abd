@@ -4,9 +4,11 @@
 \name{HornedLizards}
 \alias{HornedLizards}
 \title{Horn Length and Predation Status of Horned Lizards}
-\format{A data frame with 184 observations on the following 2 variables.
+\format{
+A data frame with 184 observations on the following 2 variables.
 \describe{ \item{horn.length}{a numeric vector}
-\item{group}{a numeric vector} }}
+\item{group}{a numeric vector} }
+}
 \source{
 Young, K.V., E.D. Brodie, Jr., and E.D. Brodie, III. 2004. How the
 horned lizard got its horns. \emph{Science} 304: 65.

@@ -4,9 +4,11 @@
 \name{GodwitArrival}
 \alias{GodwitArrival}
 \title{Godwit Arrival Dates}
-\format{A data frame with 10 observations on the following 2 variables.
+\format{
+A data frame with 10 observations on the following 2 variables.
 \describe{ \item{female}{a numeric vector} \item{male}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Gunnarsson, T.G., J.A. Gill, T. Sigurbjörnsson, and W.J. Sutherland.
 2004. Pair bonds: arrival synchrony in migratory birds. \emph{Nature} 431:

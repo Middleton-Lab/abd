@@ -4,10 +4,12 @@
 \name{BrainExpression}
 \alias{BrainExpression}
 \title{Proteolipid Protein 1 Gene Expression}
-\format{A data frame with 45 observations on the following 2 variables.
+\format{
+A data frame with 45 observations on the following 2 variables.
 \describe{ \item{group}{a factor with levels: \code{bipolar},
 \code{control}, and \code{schizo}} \item{PLP1.expression}{a numeric
-vector} }}
+vector} }
+}
 \source{
 \emph{inferred from} Tkachev, D., M.L. Mimmack, M.M. Ryan, M.
 Wayland, T. Freeman, P.B. Jones, M. Starkey, M.J. Webster, R.H. Yolken, S.

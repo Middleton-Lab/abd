@@ -4,9 +4,11 @@
 \name{SpiderColonies}
 \alias{SpiderColonies}
 \title{Social Spiders}
-\format{A data frame with 17 observations on the following 3 variables.
+\format{
+A data frame with 17 observations on the following 3 variables.
 \describe{ \item{colony}{identifier} \item{height}{height of
-web above ground (cm)} \item{spiders}{number of spiders in colony} }}
+web above ground (cm)} \item{spiders}{number of spiders in colony} }
+}
 \source{
 Rypstra, A. L. 1979. Foraging folks of spiders, a study of aggregate
 behavior in \emph{Cryptophora citricola} Forskal (Araneae: Araneidae) in

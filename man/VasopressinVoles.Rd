@@ -4,9 +4,11 @@
 \name{VasopressinVoles}
 \alias{VasopressinVoles}
 \title{Vasopressin Manipulation in the Meadow Vole}
-\format{A data frame with 31 observations on the following 2 variables.
+\format{
+A data frame with 31 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels \code{control} and
-\code{enhanced}} \item{percent}{a numeric vector} }}
+\code{enhanced}} \item{percent}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Lim, M.M., Z. Wang, D.E.
 Olazabal, X. Ren, E.F. Terwilliger, and L.J. Young. 2004.

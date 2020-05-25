@@ -4,10 +4,12 @@
 \name{VampireBites}
 \alias{VampireBites}
 \title{Vampire Bat Bites}
-\format{A data frame with 4 observations on the following 3 variables.
+\format{
+A data frame with 4 observations on the following 3 variables.
 \describe{ \item{estrous}{a factor with levels: \code{no} and
 \code{yes}} \item{bitten}{a factor with levels: \code{no} and
-\code{yes}} \item{count}{a numeric vector} }}
+\code{yes}} \item{count}{a numeric vector} }
+}
 \source{
 Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior
 and Ecology}. Johns Hopkins Press: Baltimore, MD.

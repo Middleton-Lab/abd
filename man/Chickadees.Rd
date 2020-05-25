@@ -4,9 +4,11 @@
 \name{Chickadees}
 \alias{Chickadees}
 \title{Alarm Calls in Chickadees}
-\format{A data frame with 13 observations on the following 3 variables.
+\format{
+A data frame with 13 observations on the following 3 variables.
 \describe{ \item{species}{a character vector} \item{mass}{a
-numeric vector} \item{dees}{a numeric vector} }}
+numeric vector} \item{dees}{a numeric vector} }
+}
 \source{
 Templeton, C.N., E. Greene, and K. Davis. 2005. Allometry of alarm
 calls: Black-capped Chickadees encode information about predator size.

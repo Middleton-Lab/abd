@@ -4,9 +4,11 @@
 \name{DungBeetles}
 \alias{DungBeetles}
 \title{Heritability of Body Condition in Dung Beetles}
-\format{A data frame with 36 observations on the following 2 variables.
+\format{
+A data frame with 36 observations on the following 2 variables.
 \describe{ \item{id}{a numeric vector}
-\item{offspring.condition}{a numeric vector} }}
+\item{offspring.condition}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Kotiaho, J.S., L.W. Simmons, and J.L. Tomkins.
 2001. Towards a resolution of the lek paradox. \emph{Nature} 410: 684-686.

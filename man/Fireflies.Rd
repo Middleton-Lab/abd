@@ -4,8 +4,10 @@
 \name{Fireflies}
 \alias{Fireflies}
 \title{Spermatophore Mass in Fireflies}
-\format{A data frame with 35 observations of one variable. \describe{
-\item{sp.mass}{} }}
+\format{
+A data frame with 35 observations of one variable. \describe{
+\item{sp.mass}{} }
+}
 \source{
 \emph{inferred from} Cratsley, C.K. and S.M. Lewis. 2003. Female
 preference for male courtship flashes in \emph{Photinus ignitus} fireflies.

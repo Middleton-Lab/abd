@@ -4,9 +4,11 @@
 \name{Tobacco2}
 \alias{Tobacco2}
 \title{Flower Length in Tobacco Plants}
-\format{A data frame with 617 observations on the following 2 variables.
+\format{
+A data frame with 617 observations on the following 2 variables.
 \describe{ \item{flower.length}{a numeric vector}
-\item{generation}{a factor with levels \code{F1} \code{F2}} }}
+\item{generation}{a factor with levels \code{F1} \code{F2}} }
+}
 \source{
 East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 \emph{Genetics} 1: 164-176.

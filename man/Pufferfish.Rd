@@ -4,9 +4,11 @@
 \name{Pufferfish}
 \alias{Pufferfish}
 \title{Pufferfish Mimicry}
-\format{A data frame with 20 observations on the following 2 variables.
+\format{
+A data frame with 20 observations on the following 2 variables.
 \describe{ \item{resemblance}{a numeric vector}
-\item{predators}{a numeric vector} }}
+\item{predators}{a numeric vector} }
+}
 \source{
 Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a
 tropical reef fish. \emph{Proceedings of the Royal Society of London Series

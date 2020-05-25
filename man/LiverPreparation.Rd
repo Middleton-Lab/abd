@@ -4,9 +4,11 @@
 \name{LiverPreparation}
 \alias{LiverPreparation}
 \title{Liver Preparation}
-\format{A data frame with 5 observations on the following 2 variables.
+\format{
+A data frame with 5 observations on the following 2 variables.
 \describe{ \item{concentration}{a numeric vector}
-\item{unbound.fraction}{a numeric vector} }}
+\item{unbound.fraction}{a numeric vector} }
+}
 \source{
 Smallwood, R.H., D.J. Morgan, G.W. Mihaly, and R.A. Smallwood. 1998.
 Effect of a protein binding change on unbound and total plasma

@@ -4,9 +4,11 @@
 \name{Convictions}
 \alias{Convictions}
 \title{Frequency of Convictions for a Cohort of English Boys}
-\format{A data frame with 15 observations on the following 2 variables.
+\format{
+A data frame with 15 observations on the following 2 variables.
 \describe{ \item{convictions}{number of convictions}
-\item{boys}{number of boys with given number of convictions} }}
+\item{boys}{number of boys with given number of convictions} }
+}
 \source{
 Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university

@@ -4,10 +4,12 @@
 \name{ZebraFinches}
 \alias{ZebraFinches}
 \title{Zebra Finch Carotenoids}
-\format{A data frame with 20 observations on the following 3 variables.
+\format{
+A data frame with 20 observations on the following 3 variables.
 \describe{ \item{treatment}{a factor with levels: \code{CAROT} and
 \code{NO}} \item{PHA}{a numeric vector} \item{SRBC}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 McGraw, K.J. and D.R. Ardia. 2003. Carotenoids, immunocompetence,
 and the information content of sexual colors: an experimental test.

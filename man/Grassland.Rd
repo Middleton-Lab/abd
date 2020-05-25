@@ -4,9 +4,11 @@
 \name{Grassland}
 \alias{Grassland}
 \title{Grassland Diversity}
-\format{A data frame with 10 observations on the following 2 variables.
+\format{
+A data frame with 10 observations on the following 2 variables.
 \describe{ \item{nutrients}{a numeric vector}
-\item{num.species}{a numeric vector} }}
+\item{num.species}{a numeric vector} }
+}
 \source{
 Harpole, W. S. and D. Tilman. 2007. Grassland species loss due to
 reduced niche dimension. \emph{Nature} 446: 791-793.

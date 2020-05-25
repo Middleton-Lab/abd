@@ -4,12 +4,14 @@
 \name{LodgepolePines}
 \alias{LodgepolePines}
 \title{Lodgepole Pine Cone Masses}
-\format{A data frame with 16 observations on the following 4 variables.
+\format{
+A data frame with 16 observations on the following 4 variables.
 \describe{ \item{habitat}{a factor with levels: \code{island
 absent}, \code{island present}, and \code{mainland present}}
 \item{conemass}{mass of cone} \item{location}{\code{island}
 or \code{mainland}} \item{squirrels}{\code{absent} or
-\code{present}} }}
+\code{present}} }
+}
 \source{
 Edelaar, P. and C.W. Benkman. 2006. Replicated population divergence
 caused by localised coevolution? A test of three hypotheses in the Red

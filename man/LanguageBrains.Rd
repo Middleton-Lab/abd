@@ -4,9 +4,11 @@
 \name{LanguageBrains}
 \alias{LanguageBrains}
 \title{Brain Structure in Bilingual Humans}
-\format{A data frame with 22 observations on the following 2 variables.
+\format{
+A data frame with 22 observations on the following 2 variables.
 \describe{ \item{proficiency}{a numeric vector}
-\item{greymatter}{a numeric vector} }}
+\item{greymatter}{a numeric vector} }
+}
 \source{
 Mechelli, A., J.T. Crinion, U. Noppeney, J. O'Doherty, J. Ashburner,
 R.S. Frackowiak, and C.J. Price. 2004. Structural plasticity in the

@@ -4,9 +4,11 @@
 \name{FlycatcherPatch}
 \alias{FlycatcherPatch}
 \title{Forehead Patch Size in Collared Flycatachers}
-\format{A data frame with 30 observations on the following 2 variables.
+\format{
+A data frame with 30 observations on the following 2 variables.
 \describe{ \item{patch98}{a numeric vector} \item{patch99}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Griffith, S.C. and B.C. Sheldon. 2001. Phenotypic plasticity in the
 expression of a sexually selected trait: neglected components of variation.

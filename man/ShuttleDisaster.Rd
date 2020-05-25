@@ -4,9 +4,11 @@
 \name{ShuttleDisaster}
 \alias{ShuttleDisaster}
 \title{Ambient Temperature and O-Ring Failures}
-\format{A data frame with 23 observations on the following 2 variables.
+\format{
+A data frame with 23 observations on the following 2 variables.
 \describe{ \item{temperature}{a numeric vector}
-\item{failures}{a numeric vector} }}
+\item{failures}{a numeric vector} }
+}
 \source{
 Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk analysis of
 the Space Shuttle: Pre-Challenger prediction of failure. \emph{Journal of

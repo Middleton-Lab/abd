@@ -4,9 +4,11 @@
 \name{Mosquitoes}
 \alias{Mosquitoes}
 \title{Body Size in Anopheles Mosquitoes}
-\format{A data frame with 20 observations on the following 2 variables.
+\format{
+A data frame with 20 observations on the following 2 variables.
 \describe{ \item{weight}{a numeric vector} \item{sex}{a
-factor with levels \code{female} and \code{male}} }}
+factor with levels \code{female} and \code{male}} }
+}
 \source{
 Lounibos, L.P., N. Nishimura, J. Conn, and R. Lourenco-de-Oliveira.
 1995. Life history correlates of adult size in the malaria vector

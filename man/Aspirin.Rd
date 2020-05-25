@@ -4,10 +4,12 @@
 \name{Aspirin}
 \alias{Aspirin}
 \title{Effects of Aspirin on Cancer Rates}
-\format{A data frame with 39876 observations on the following \describe{
+\format{
+A data frame with 39876 observations on the following \describe{
 \item{treatment}{a factor with levels \code{Aspirin} and
 \code{Placebo}} \item{cancer}{a factor with levels \code{no} and
-\code{yes}} }}
+\code{yes}} }
+}
 \source{
 Cook, N.R., I. Lee, J.M. Gaziano, D. Gordon, P.M. Ridker, J.E.
 Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the

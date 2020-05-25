@@ -4,10 +4,12 @@
 \name{Trematodes}
 \alias{Trematodes}
 \title{Frequencies of Fish Eaten by Trematode Infection Level}
-\format{A data frame with 141 observations on the following 2 variables.
+\format{
+A data frame with 141 observations on the following 2 variables.
 \describe{ \item{infection.status}{a factor with levels:
 \code{high}, \code{light}, and \code{uninfected}} \item{eaten}{a
-factor with levels: \code{no} and \code{yes}} }}
+factor with levels: \code{no} and \code{yes}} }
+}
 \source{
 Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of
 parasitized killifish increases susceptibility to predation by bird final

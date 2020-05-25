@@ -4,9 +4,11 @@
 \name{TeenDeaths}
 \alias{TeenDeaths}
 \title{Causes of Teenage Deaths}
-\format{A data frame with 11 observations on the following 2 variables.
+\format{
+A data frame with 11 observations on the following 2 variables.
 \describe{ \item{cause}{a character vector} \item{deaths}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Anderson, R.N. 2001. Deaths: Leading causes for 1999. \emph{National
 vital statistics reports} 49(11):1-88. National Center for Health

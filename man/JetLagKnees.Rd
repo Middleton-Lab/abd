@@ -4,9 +4,11 @@
 \name{JetLagKnees}
 \alias{JetLagKnees}
 \title{Circadian Rhythm Phase Shift}
-\format{A data frame with 22 observations on the following 2 variables.
+\format{
+A data frame with 22 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels \code{control},
-\code{eyes}, and \code{knee}} \item{shift}{a numeric vector} }}
+\code{eyes}, and \code{knee}} \item{shift}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Wright, K.P., Jr. and C.A. Czeisler 2002.
 Absence of circadian phase resetting in response to bright light behind the

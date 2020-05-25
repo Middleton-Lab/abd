@@ -5,7 +5,8 @@
 \alias{BrookTrout}
 \alias{BrookTrout2}
 \title{Salmon Survival in the Presence of Brook Trout}
-\format{\code{BrookTrout} is a data frame with 12 observations on the
+\format{
+\code{BrookTrout} is a data frame with 12 observations on the
 following 4 variables.  \code{BrookTrout2} is a different summary of the
 same study and gives survival rates for chinook in different years.
 \describe{ \item{trout}{a factor with levels \code{absent} and
@@ -13,7 +14,8 @@ same study and gives survival rates for chinook in different years.
 stream} \item{salmon.released}{a numeric vector of the total number
 of salmon released} \item{salmon.surviving}{a numeric vector of the
 number of salmon surviving} \item{proportion.surviving}{a numeric
-vector of the proportion of salmon surviving} }}
+vector of the proportion of salmon surviving} }
+}
 \source{
 Levin, P.S., S. Achord, B.E. Fiest, and R.W. Zabel. 2002.
 Non-indigenous brook trout and the demise of Pacific salmon: a forgotten

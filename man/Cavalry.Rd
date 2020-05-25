@@ -4,9 +4,11 @@
 \name{Cavalry}
 \alias{Cavalry}
 \title{Deaths from Horse Kicks}
-\format{A data frame with 5 observations on the following 2 variables.
+\format{
+A data frame with 5 observations on the following 2 variables.
 \describe{ \item{deaths}{a numeric vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Bortkiewicz, L. 1898. Das Gesetz der Kleinen Zahlen (Teubner,
 Leipzig), \emph{as cited in} Larson, R.J. and M.L. Marx. 1981. \emph{An

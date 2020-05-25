@@ -4,12 +4,14 @@
 \name{ElectricFish}
 \alias{ElectricFish}
 \title{Electric Fish}
-\format{A data frame with 12 observations on the following 3 variables.
+\format{
+A data frame with 12 observations on the following 3 variables.
 \describe{ \item{tributary}{a character vector}
 \item{species.upstream}{a numeric vector of the number of species of
 electric fish present upstream of the tributary}
 \item{species.downstream}{a numeric vector of the number of species
-of electric fish present downstream of the tributary} }}
+of electric fish present downstream of the tributary} }
+}
 \source{
 Fernandes, C.C., J. Podos, and J.G. Lundberg. 2004. Amazonian
 ecology: tributaries enhance the diversity of electric fishes.

@@ -4,11 +4,13 @@
 \name{Blackbirds}
 \alias{Blackbirds}
 \title{Testosterone Levels in Blackbirds}
-\format{A data frame with 13 observations on the following 6 variables.
+\format{
+A data frame with 13 observations on the following 6 variables.
 \describe{ \item{before}{a numeric vector} \item{after}{a
 numeric vector} \item{log.before}{a numeric vector}
 \item{log.after}{a numeric vector} \item{diff.in.logs}{a
-numeric vector} \item{diff}{a numeric vector} }}
+numeric vector} \item{diff}{a numeric vector} }
+}
 \source{
 Hasselquist, D., J.A. Marsh, P.W. Sherman, and J.C. Wingfield. 1999.
 Is avian immunocompetence suppressed by testosterone? \emph{Behavioral

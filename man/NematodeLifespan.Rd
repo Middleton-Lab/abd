@@ -4,10 +4,12 @@
 \name{NematodeLifespan}
 \alias{NematodeLifespan}
 \title{Effects of Trimethadione on Lifespan in Nematodes}
-\format{A data frame with 200 observations on the following 2 variables.
+\format{
+A data frame with 200 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels: \code{adult},
 \code{larva}, \code{larva+adult}, and \code{water}}
-\item{lifespan}{a numeric vector of lifespan} }}
+\item{lifespan}{a numeric vector of lifespan} }
+}
 \source{
 \emph{inferred from} Evason, K., C. Huang, I. Yamben, D.F. Covey,
 and K. Kornfeld. 2005. Anticonvulsant medications extend worm life-span.

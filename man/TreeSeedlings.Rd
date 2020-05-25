@@ -4,9 +4,11 @@
 \name{TreeSeedlings}
 \alias{TreeSeedlings}
 \title{Tree Seedlings and Sunflecks}
-\format{A data frame with 21 observations on the following 2 variables.
+\format{
+A data frame with 21 observations on the following 2 variables.
 \describe{ \item{fleck.duration}{a numeric vector}
-\item{growth}{a numeric vector} }}
+\item{growth}{a numeric vector} }
+}
 \source{
 Leakey, A.D.B., J.D. Scholes, and M.C. Press. 2005. Physiological
 and ecological significance of sunflecks for dipterocarp seedlings.

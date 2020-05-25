@@ -4,8 +4,10 @@
 \name{SockeyeFemales}
 \alias{SockeyeFemales}
 \title{Body Masses of Female Sockeye Salmon}
-\format{A data frame with 228 observations of a single variable. \describe{
-\item{mass}{body mass (kg)} }}
+\format{
+A data frame with 228 observations of a single variable. \describe{
+\item{mass}{body mass (kg)} }
+}
 \source{
 Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition dependence
 and adaptation-by-time: Breeding date, life history, and energy allocation

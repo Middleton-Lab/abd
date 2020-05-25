@@ -4,9 +4,11 @@
 \name{Earthworms}
 \alias{Earthworms}
 \title{Earthworm Diversity and Soil Nitrogen Levels}
-\format{A data frame with 39 observations on the following 2 variables.
+\format{
+A data frame with 39 observations on the following 2 variables.
 \describe{ \item{worm.species}{a numeric vector}
-\item{nitrogen}{a numeric vector} }}
+\item{nitrogen}{a numeric vector} }
+}
 \source{
 Gundale, M.J., W.M. Jolly, and T.H. Deluca. 2005. Susceptibility of
 a northern hardwood forest to exotic earthworm invasion. \emph{Conservation

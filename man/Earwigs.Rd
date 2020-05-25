@@ -4,9 +4,11 @@
 \name{Earwigs}
 \alias{Earwigs}
 \title{Earwig Density and Forceps}
-\format{A data frame with 7 observations on the following 2 variables.
+\format{
+A data frame with 7 observations on the following 2 variables.
 \describe{ \item{density}{a numeric vector}
-\item{proportion.forceps}{a numeric vector} }}
+\item{proportion.forceps}{a numeric vector} }
+}
 \source{
 Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the
 local evolution of a threshold dimorphism. \emph{Nature} 431: 1099-1103.

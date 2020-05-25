@@ -4,9 +4,11 @@
 \name{LizardSprint}
 \alias{LizardSprint}
 \title{Sprint Speeds in Canyon Lizards}
-\format{A data frame with 68 observations on the following 2 variables.
+\format{
+A data frame with 68 observations on the following 2 variables.
 \describe{ \item{lizard}{a numeric vector} \item{speed}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 \emph{inferred from} Huey, R.B. and A.E. Dunham. 1987. The
 repeatability of locomotor performance in natural populations of the lizard

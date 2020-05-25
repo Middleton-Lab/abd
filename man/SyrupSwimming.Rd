@@ -4,8 +4,10 @@
 \name{SyrupSwimming}
 \alias{SyrupSwimming}
 \title{Syrup Swimming}
-\format{A data frame with 18 observations of one variable. \describe{
-\item{relative.speed}{ratio of speed in syrup to speed in water} }}
+\format{
+A data frame with 18 observations of one variable. \describe{
+\item{relative.speed}{ratio of speed in syrup to speed in water} }
+}
 \source{
 Gettelfinger, B. and E. L. Cussler. 2004. Will Humans Swim Faster or
 Slower in Syrup? \emph{AIChE Journal} 50: 2646-2647.

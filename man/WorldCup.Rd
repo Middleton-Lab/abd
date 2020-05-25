@@ -4,9 +4,11 @@
 \name{WorldCup}
 \alias{WorldCup}
 \title{World Cup Goals}
-\format{A data frame with 7 observations on the following 2 variables.
+\format{
+A data frame with 7 observations on the following 2 variables.
 \describe{ \item{score}{a numeric vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \description{
 Number of goals per team during the 2002 World Cup.
 }

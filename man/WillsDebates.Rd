@@ -4,14 +4,16 @@
 \name{WillsDebates}
 \alias{WillsDebates}
 \title{Presidential "Wills"}
-\format{A data frame with 8 observations on the following 6 variables.
+\format{
+A data frame with 8 observations on the following 6 variables.
 \describe{ \item{year}{year of presidential debate(s)}
 \item{winner}{winner of the popular vote (may not be winner of
 election)} \item{loser}{loser of popular vote (may not be loser of
 election)} \item{winner.wills}{number of times will/shall used by
 winner during debates} \item{loser.wills}{number of times will/shall
 used by loser during debates} \item{diff.wills}{difference between
-number of times will/shall used by two candidates} }}
+number of times will/shall used by two candidates} }
+}
 \description{
 Number of times a presidential candidate said "will," "shall," or "going to"
 in presidential debates from 1960-2004 (years incomplete).

@@ -4,9 +4,11 @@
 \name{Stalkies2}
 \alias{Stalkies2}
 \title{Stalk-eyed Fly Eyespan}
-\format{A data frame with 45 observations on the following 2 variables.
+\format{
+A data frame with 45 observations on the following 2 variables.
 \describe{ \item{food}{a factor with levels \code{Corn}
-\code{Cotton}} \item{eye.span}{a numeric vector} }}
+\code{Cotton}} \item{eye.span}{a numeric vector} }
+}
 \source{
 David, P., T. Bjorksten, K. Fowler, and A. Pomiankowski. 2000.
 Condition-dependent signalling of genetic variation in stalk-eyed flies.

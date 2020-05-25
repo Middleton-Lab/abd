@@ -4,10 +4,12 @@
 \name{MoleRats}
 \alias{MoleRats}
 \title{Energy Expenditure in Mole Rats}
-\format{A data frame with 35 observations on the following 3 variables.
+\format{
+A data frame with 35 observations on the following 3 variables.
 \describe{ \item{caste}{a factor with levels \code{lazy} and
 \code{worker}} \item{ln.mass}{a numeric vector}
-\item{ln.energy}{a numeric vector} }}
+\item{ln.energy}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Scantlebury, M., J.R. Speakman, M.K.
 Oosthuizen, T.J. Roper and N.C. Bennett. 2006. Energetics reveals

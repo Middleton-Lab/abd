@@ -4,10 +4,12 @@
 \name{PlantPersistence}
 \alias{PlantPersistence}
 \title{Population Persistence Times}
-\format{A data frame with 16 observations on the following 2 variables.
+\format{
+A data frame with 16 observations on the following 2 variables.
 \describe{ \item{generations}{a numeric vector}
 \item{treatment}{a factor with levels: \code{Isolated},
-\code{Medium}, \code{Long}, and \code{Continuous}} }}
+\code{Medium}, \code{Long}, and \code{Continuous}} }
+}
 \source{
 Molofsky, J. and J.-B. Ferdy. 2005. Extinction dynamics in
 experimental metapopulations. \emph{Proceedings of the National Academy of

@@ -4,9 +4,11 @@
 \name{DesertBirds}
 \alias{DesertBirds}
 \title{Desert Bird Census Data}
-\format{A data frame with 43 observations on the following 2 variables.
+\format{
+A data frame with 43 observations on the following 2 variables.
 \describe{ \item{species}{a character vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Sauer, J.R., J.E. Hines, and J. Fallon. 2003. The North American
 breeding bird survey, results and analysis 1966-2002. Version 2003.1. USGS

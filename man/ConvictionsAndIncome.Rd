@@ -4,10 +4,12 @@
 \name{ConvictionsAndIncome}
 \alias{ConvictionsAndIncome}
 \title{Convictions and Income Level in a Cohort of English Boys}
-\format{A data frame with 395 observations on the following 2 variables.
+\format{
+A data frame with 395 observations on the following 2 variables.
 \describe{ \item{convicted}{a factor with levels \code{no} and
 \code{yes}} \item{income}{a factor with levels \code{adequate},
-\code{comfortable}, and \code{inadequate}} }}
+\code{comfortable}, and \code{inadequate}} }
+}
 \source{
 Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university

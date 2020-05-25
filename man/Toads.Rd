@@ -4,9 +4,11 @@
 \name{Toads}
 \alias{Toads}
 \title{Right-handed Toads}
-\format{A data frame with 19 observations on the following 2 variables.
+\format{
+A data frame with 19 observations on the following 2 variables.
 \describe{ \item{n.toads}{a numeric vector} \item{prob}{a
-numeric vector} }}
+numeric vector} }
+}
 \description{
 Hypothetical probability of a toad being right-handed
 }

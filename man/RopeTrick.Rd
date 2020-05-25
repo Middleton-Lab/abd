@@ -4,9 +4,11 @@
 \name{RopeTrick}
 \alias{RopeTrick}
 \title{Indian Rope Trick}
-\format{A data frame with 21 observations on the following 2 variables.
+\format{
+A data frame with 21 observations on the following 2 variables.
 \describe{ \item{years}{a numeric vector}
-\item{impressiveness}{a numeric vector} }}
+\item{impressiveness}{a numeric vector} }
+}
 \source{
 Wiseman, R. and P. Lamont. 1996. Unravelling the Indian rope-trick.
 \emph{Nature} 383: 212-213.

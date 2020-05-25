@@ -4,13 +4,15 @@
 \name{WillsPresidents}
 \alias{WillsPresidents}
 \title{Presidential "Wills"}
-\format{A data frame with 16 observations on the following 3 variables.
+\format{
+A data frame with 16 observations on the following 3 variables.
 \describe{ \item{candidate}{a character vector with the candidate's
 name} \item{winner}{a factor with levels \code{n} \code{y}
 indicating whether the candidate won the election \code{y} or not.}
 \item{wills}{a numeric vector} \item{loser.wills}{a numeric
 vector} \item{difference}{a numeric vector} \item{year}{a
-numeric vector} }}
+numeric vector} }
+}
 \description{
 Number of times a presidential candidate said "will," "shall," or "going to"
 in presidential debates from 1960-2004 (years incomplete).

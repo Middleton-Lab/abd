@@ -4,9 +4,11 @@
 \name{Powerball}
 \alias{Powerball}
 \title{Powerball Tickets Sold}
-\format{A data frame with 7 observations on the following 2 variables.
+\format{
+A data frame with 7 observations on the following 2 variables.
 \describe{ \item{day}{a character vector}
-\item{millions.of.tickets.sold}{a numeric vector} }}
+\item{millions.of.tickets.sold}{a numeric vector} }
+}
 \source{
 Oster, E. 2004. Dreaming big: Why do people play Powerball?
 \emph{Chance News} 13.02.

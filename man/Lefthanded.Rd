@@ -4,9 +4,11 @@
 \name{Lefthanded}
 \alias{Lefthanded}
 \title{Left-handedness and Rates of Violence}
-\format{A data frame with 8 observations on the following 2 variables.
+\format{
+A data frame with 8 observations on the following 2 variables.
 \describe{ \item{percent.left}{a numeric vector}
-\item{murder.rate}{a numeric vector} }}
+\item{murder.rate}{a numeric vector} }
+}
 \source{
 Faurie, C. and M. Raymond. 2005. Handedness, homicide and negative
 frequency-dependent selection. \emph{Proceedings of the Royal Society of

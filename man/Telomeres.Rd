@@ -4,9 +4,11 @@
 \name{Telomeres}
 \alias{Telomeres}
 \title{Telomere Shortening}
-\format{A data frame with 39 observations on the following 2 variables.
+\format{
+A data frame with 39 observations on the following 2 variables.
 \describe{ \item{years}{a numeric vector}
-\item{telomere.length}{a numeric vector} }}
+\item{telomere.length}{a numeric vector} }
+}
 \source{
 Epel, E.S., E.H. Blackburn, J. Lin, F.S. Dhabhar, N.E. Adler, J.D.
 Morrow, and R.M. Cawthon. 2004. Accelerated telomere shortening in response

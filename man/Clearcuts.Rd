@@ -4,8 +4,10 @@
 \name{Clearcuts}
 \alias{Clearcuts}
 \title{Biomass Change in Rainforests near Clearcuts}
-\format{A data frame with 36 observations of one variable. \describe{
-\item{biomass.change}{} }}
+\format{
+A data frame with 36 observations of one variable. \describe{
+\item{biomass.change}{} }
+}
 \source{
 Laurance, W.F., S.G. Laurance, L.V. Ferreira, J.M. Rankin-de Merona,
 C. Gascon, T.E. Lovejoy. 1997. Biomass collapse in Amazonian forest

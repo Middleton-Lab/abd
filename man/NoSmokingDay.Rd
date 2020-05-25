@@ -4,10 +4,12 @@
 \name{NoSmokingDay}
 \alias{NoSmokingDay}
 \title{No Smoking Day}
-\format{A data frame with 10 observations on the following 3 variables.
+\format{
+A data frame with 10 observations on the following 3 variables.
 \describe{ \item{year}{a numeric vector}
 \item{injuries.before.NSD}{a numeric vector}
-\item{injuries.on.NSD}{a numeric vector} }}
+\item{injuries.on.NSD}{a numeric vector} }
+}
 \source{
 Waters, A.J., M.J. Jarvis, and S.R. Sutton. 1998. Nicotine
 withdrawal and accident rates. \emph{Nature} 394: 137.

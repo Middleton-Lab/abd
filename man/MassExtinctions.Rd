@@ -4,9 +4,11 @@
 \name{MassExtinctions}
 \alias{MassExtinctions}
 \title{Mass Extinction Frequency}
-\format{A data frame with 21 observations on the following 2 variables.
+\format{
+A data frame with 21 observations on the following 2 variables.
 \describe{ \item{num.extinctions}{a numeric vector}
-\item{count}{a numeric vector} }}
+\item{count}{a numeric vector} }
+}
 \source{
 Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the
 marine fossil record. \emph{Science} 215: 1501-1503.

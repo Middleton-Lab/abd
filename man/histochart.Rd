@@ -4,8 +4,14 @@
 \alias{histochart}
 \title{Histogram from tabulated data}
 \usage{
-histochart(x, data = NULL, box.ratio = 100, origin = 0,
-  horizontal = FALSE, ...)
+histochart(
+  x,
+  data = NULL,
+  box.ratio = 100,
+  origin = 0,
+  horizontal = FALSE,
+  ...
+)
 }
 \arguments{
 \item{x}{formula of form \code{frequency ~ value}}

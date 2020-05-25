@@ -4,9 +4,11 @@
 \name{Vines}
 \alias{Vines}
 \title{Climbing Vines}
-\format{A data frame with 48 observations on the following 2 variables.
+\format{
+A data frame with 48 observations on the following 2 variables.
 \describe{ \item{climbing}{a numeric vector}
-\item{nonclimbing}{a numeric vector} }}
+\item{nonclimbing}{a numeric vector} }
+}
 \source{
 Gianoli, E. 2004. Evolution of a climbing habit promotes
 diversification in flowering plants. \emph{Proceedings of the Royal Society

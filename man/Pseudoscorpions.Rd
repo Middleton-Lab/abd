@@ -4,9 +4,11 @@
 \name{Pseudoscorpions}
 \alias{Pseudoscorpions}
 \title{Multiple Mating in Pseudoscorpions}
-\format{A data frame with 36 observations on the following 2 variables.
+\format{
+A data frame with 36 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels \code{DM}
-\code{SM}} \item{successful.broods}{a numeric vector} }}
+\code{SM}} \item{successful.broods}{a numeric vector} }
+}
 \source{
 Newcomer, S.D., J.A. Zeh, and D.W. Zeh. 1999. Genetic benefits
 enhance the reproductive success of polyandrous females. \emph{Proceedings

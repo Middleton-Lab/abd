@@ -4,9 +4,11 @@
 \name{NeotropicalTrees}
 \alias{NeotropicalTrees}
 \title{Photosynthesis in Neotropical Trees}
-\format{A data frame with 9 observations on the following 2 variables.
+\format{
+A data frame with 9 observations on the following 2 variables.
 \describe{ \item{previous.fruits}{a numeric vector}
-\item{photosynthetic.capacity}{a numeric vector} }}
+\item{photosynthetic.capacity}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Wheelwright, N.T. and B.A. Logan. 2004.
 Previous-year reproduction reduces photosynthetic capacity and slows

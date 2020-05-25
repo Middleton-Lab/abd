@@ -4,11 +4,13 @@
 \name{OstrichTemp}
 \alias{OstrichTemp}
 \title{Ostrich Body and Brain Temperatures}
-\format{A data frame with 6 observations on the following 3 variables.
+\format{
+A data frame with 6 observations on the following 3 variables.
 \describe{ \item{ostrich}{a numeric vector identifying ostrich
 number} \item{body.temp}{a numeric vector of body temperature in
 \eqn{^{\circ}}{degrees }C} \item{brain.temp}{a numeric vector of
-brain temperature in \eqn{^{\circ}}{degrees }C} }}
+brain temperature in \eqn{^{\circ}}{degrees }C} }
+}
 \source{
 Fuller, A., P.R. Kamerman, S.K. Maloney, G. Mitchell, and D.
 Mitchell. 2003. Variability in brain and arterial blood temperatures in

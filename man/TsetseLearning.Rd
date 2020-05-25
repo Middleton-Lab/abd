@@ -4,9 +4,11 @@
 \name{TsetseLearning}
 \alias{TsetseLearning}
 \title{Dietary Learning in Tsetse Flies}
-\format{A data frame with 13 observations on the following 2 variables.
+\format{
+A data frame with 13 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels \code{cow} and
-\code{lizard}} \item{proportion.cow}{a numeric vector} }}
+\code{lizard}} \item{proportion.cow}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Bouyer, J., M. Pruvot, Z. Bengaly, P.M. Guerin,
 and R. Lancelot. 2007. Learning influences host choice in tsetse.

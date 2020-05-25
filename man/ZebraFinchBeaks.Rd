@@ -4,7 +4,9 @@
 \name{ZebraFinchBeaks}
 \alias{ZebraFinchBeaks}
 \title{Mate Preference in Zebra Finches}
-\format{A numeric vector with 10 observations.}
+\format{
+A numeric vector with 10 observations.
+}
 \source{
 Blount, J.D., N.B. Metcalfe, T.R. Birkhead, P.F. Surai. 2003.
 Carotenoid modulation of immune function and sexual attractiveness in Zebra

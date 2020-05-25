@@ -4,8 +4,10 @@
 \name{NorthSeaCod}
 \alias{NorthSeaCod}
 \title{Atlantic Cod Recruits}
-\format{A data frame with 39 observations of one variable. \describe{
-\item{log10.recruits}{} }}
+\format{
+A data frame with 39 observations of one variable. \describe{
+\item{log10.recruits}{} }
+}
 \source{
 \emph{inferred from} Beaugrand, G., K.M. Brander, J.A. Lindley, S.
 Souissi, and P.C. Reid. 2003. Plankton effect on cod recruitment in the

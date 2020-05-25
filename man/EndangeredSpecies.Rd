@@ -4,9 +4,11 @@
 \name{EndangeredSpecies}
 \alias{EndangeredSpecies}
 \title{Endangered and Threatened Species}
-\format{A data frame with 11 observations on the following 2 variables.
+\format{
+A data frame with 11 observations on the following 2 variables.
 \describe{ \item{taxon}{a character vector}
-\item{num.species}{a numeric vector} }}
+\item{num.species}{a numeric vector} }
+}
 \source{
 U.S. Fish and Wildlife Service. 2001. Number of U.S. listed species
 per calendar year.

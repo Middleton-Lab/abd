@@ -4,9 +4,11 @@
 \name{SleepAndPerformance}
 \alias{SleepAndPerformance}
 \title{Sleep and Learning}
-\format{A data frame with 10 observations on the following 2 variables.
+\format{
+A data frame with 10 observations on the following 2 variables.
 \describe{ \item{sleep}{a numeric vector}
-\item{improvement}{a numeric vector} }}
+\item{improvement}{a numeric vector} }
+}
 \source{
 Huber, R., M.F. Ghilardi, M. Massimini, and G. Tononi. 2004. Local
 sleep and learning. \emph{Nature} 430: 78-81.

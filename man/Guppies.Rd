@@ -4,9 +4,11 @@
 \name{Guppies}
 \alias{Guppies}
 \title{Ornamentation and Attractiveness in Guppies}
-\format{A data frame with 36 observations on the following 2 variables.
+\format{
+A data frame with 36 observations on the following 2 variables.
 \describe{ \item{father.ornament}{a numeric vector}
-\item{son.attract}{a numeric vector} }}
+\item{son.attract}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Brooks, R. 2000. Negative genetic correlation
 between male sexual attractiveness and survival. \emph{Nature} 406: 67-70.

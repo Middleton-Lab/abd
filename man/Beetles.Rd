@@ -4,9 +4,11 @@
 \name{Beetles}
 \alias{Beetles}
 \title{Beetle Wings and Horns}
-\format{A data frame with 19 observations on the following 2 variables.
+\format{
+A data frame with 19 observations on the following 2 variables.
 \describe{ \item{horn.size}{a numeric vector}
-\item{wing.mass}{a numeric vector} }}
+\item{wing.mass}{a numeric vector} }
+}
 \source{
 Emlen, D.J. 2001. Costs and the diversification of exaggerated
 animal structures. \emph{Science} 291: 1534-1536.

@@ -4,9 +4,11 @@
 \name{Rigormortis}
 \alias{Rigormortis}
 \title{Rigormortis and Time of Death}
-\format{A data frame with 12 observations on the following 2 variables.
+\format{
+A data frame with 12 observations on the following 2 variables.
 \describe{ \item{hours}{a numeric vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Pounder, D.J. 1995. Postmortem changes and time of death. University
 of Dundee.

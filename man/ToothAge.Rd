@@ -4,9 +4,11 @@
 \name{ToothAge}
 \alias{ToothAge}
 \title{Radioactive Teeth}
-\format{A data frame with 20 observations on the following 2 variables.
+\format{
+A data frame with 20 observations on the following 2 variables.
 \describe{ \item{actual}{a numeric vector}
-\item{estimated}{a numeric vector} }}
+\item{estimated}{a numeric vector} }
+}
 \source{
 Spalding, K.L., B.A. Buchholz, L.-E. Bergman, H. Druid, and J.
 Frisén. 2005. Age written in teeth by nuclear tests. \emph{Nature} 437:

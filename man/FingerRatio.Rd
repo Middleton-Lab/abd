@@ -4,10 +4,12 @@
 \name{FingerRatio}
 \alias{FingerRatio}
 \title{2D:4D Finger Ratio}
-\format{A data frame with 46 observations on the following 2 variables.
+\format{
+A data frame with 46 observations on the following 2 variables.
 \describe{ \item{CAGrepeats}{a numeric vector of the number of CAG
 repeats} \item{finger.ratio}{a numeric vector of the ratio of digit
-2 to digit 4} }}
+2 to digit 4} }
+}
 \source{
 \emph{inferred from} Manning, J.T., P.E. Bundred, D.J. Newton, and
 B.F. Flanagan. 2003. The second to fourth digit ratio and variation in the

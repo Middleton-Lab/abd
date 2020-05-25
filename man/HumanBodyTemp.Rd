@@ -4,8 +4,10 @@
 \name{HumanBodyTemp}
 \alias{HumanBodyTemp}
 \title{Human Body Temperature}
-\format{A data frame with 25 observations of one variable. \describe{
-\item{temp}{body temperature (degrees F)} }}
+\format{
+A data frame with 25 observations of one variable. \describe{
+\item{temp}{body temperature (degrees F)} }
+}
 \source{
 Shoemaker, A. L. 1996. What's normal? -- Temperature, gender, and
 heart rate. \emph{Journal of Statistics Education} 4(2).

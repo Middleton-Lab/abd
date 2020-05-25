@@ -4,9 +4,11 @@
 \name{Antilles}
 \alias{Antilles}
 \title{Antilles Bird Immigration Dates}
-\format{A data frame with 37 observations of one variable. \describe{
+\format{
+A data frame with 37 observations of one variable. \describe{
 \item{immigration.date}{approximate immigration date (in millions of
-years)} }}
+years)} }
+}
 \source{
 \emph{inferred from} Ricklefs, R.E. and E. Bermingham. 2001.
 Nonequilibrium diversity dynamics of the Lesser Antillean avifauna.

@@ -4,10 +4,12 @@
 \name{WeddellSeals}
 \alias{WeddellSeals}
 \title{Energetic Cost of Diving}
-\format{A data frame with 10 observations on the following 3 variables.
+\format{
+A data frame with 10 observations on the following 3 variables.
 \describe{ \item{individual}{a numeric vector}
 \item{oxygen.use.nonfeeding}{a numeric vector}
-\item{oxygen.use.feeding}{a numeric vector} }}
+\item{oxygen.use.feeding}{a numeric vector} }
+}
 \source{
 Williams, T.M., L.A. Fuiman, M. Horning, and R.W. Davis. 2004. The
 cost of foraging by a marine predator, the Weddell seal \emph{Leptonychotes

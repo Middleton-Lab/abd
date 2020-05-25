@@ -4,10 +4,12 @@
 \name{Dioecy}
 \alias{Dioecy}
 \title{Dioecy vs. Monomorphism in Plants}
-\format{A data frame with 28 observations on the following 3 variables.
+\format{
+A data frame with 28 observations on the following 3 variables.
 \describe{ \item{dioecious}{a numeric vector}
 \item{monomorphic}{a numeric vector}
-\item{taxon.pair}{identifier for pair} }}
+\item{taxon.pair}{identifier for pair} }
+}
 \source{
 Heilbuth, J.C. 2000. Lower species richness in dioecious clades.
 \emph{The American Naturalist} 156: 221-241.

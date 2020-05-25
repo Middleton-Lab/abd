@@ -4,9 +4,11 @@
 \name{DayOfBirth}
 \alias{DayOfBirth}
 \title{Day of Birth}
-\format{A data frame with 7 observations on the following 2 variables.
+\format{
+A data frame with 7 observations on the following 2 variables.
 \describe{ \item{day}{a character vector} \item{births}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Ventura, S.J., J.A. Martin, S.C. Curtin, F. Menacker, and B.E.
 Hamilton. 2001. Births: final data for 1999. \emph{National Vital Statistics

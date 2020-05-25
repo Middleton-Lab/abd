@@ -4,9 +4,11 @@
 \name{ProgesteroneExercise}
 \alias{ProgesteroneExercise}
 \title{Progesterone and Exercise}
-\format{A data frame with 30 observations on the following 2 variables.
+\format{
+A data frame with 30 observations on the following 2 variables.
 \describe{ \item{progesterone}{a numeric vector}
-\item{ventilation}{a numeric vector} }}
+\item{ventilation}{a numeric vector} }
+}
 \source{
 Brutsaert, T.D., H. Spielvogel, E. Caceres, M. Araoz, R.T.
 Chatterton, V.J. Vitzthum. 2002. Effect of menstrual cycle phase on exercise

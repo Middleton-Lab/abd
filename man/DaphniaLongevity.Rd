@@ -4,9 +4,11 @@
 \name{DaphniaLongevity}
 \alias{DaphniaLongevity}
 \title{Daphnia Longevity}
-\format{A data frame with 32 observations on the following 2 variables.
+\format{
+A data frame with 32 observations on the following 2 variables.
 \describe{ \item{longevity}{a numeric vector}
-\item{sqrt.spores}{a numeric vector} }}
+\item{sqrt.spores}{a numeric vector} }
+}
 \source{
 Jensen, K.H., T.J. Little, A. Skorping, and D. Ebert. 2006.
 Empirical support for optimal virulence in a castrating parasite. \emph{PLoS

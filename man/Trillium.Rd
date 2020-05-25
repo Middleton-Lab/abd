@@ -4,10 +4,12 @@
 \name{Trillium}
 \alias{Trillium}
 \title{Trillium Recruitment near Clearcuts}
-\format{A data frame with 8 observations on the following 3 variables.
+\format{
+A data frame with 8 observations on the following 3 variables.
 \describe{ \item{population}{a numeric vector}
 \item{edge.dist}{a numeric vector} \item{recruitment}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Jules, E.S. and B.J. Rathcke. 1999.  Mechanisms of reduced trillium
 recruitment along edges of old-growth forest fragments. \emph{Conservation

@@ -4,11 +4,13 @@
 \name{MouseEmpathy}
 \alias{MouseEmpathy}
 \title{Mouse Empathy}
-\format{A data frame with 42 observations on the following 3 variables.
+\format{
+A data frame with 42 observations on the following 3 variables.
 \describe{ \item{treatment}{a factor with levels \code{Both
 Writhing}, \code{Isolated}, and \code{One Writhing}}
 \item{percent.stretching}{a numeric vector} \item{trt}{a
-factor with levels \code{bw}, \code{isolated}, and \code{ow}} }}
+factor with levels \code{bw}, \code{isolated}, and \code{ow}} }
+}
 \source{
 Langford, D.J., S.E. Crager, Z. Shehzah, S.B. Smith, S.G. Sotocinal,
 J.S. Levenstadt, M.L. Chande, D.J. Levitin, J.S. Mogill. 2006. Social

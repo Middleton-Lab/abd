@@ -4,10 +4,12 @@
 \name{VoleDispersal}
 \alias{VoleDispersal}
 \title{Home Range Size in Field Voles}
-\format{A data frame with 5 observations on the following 3 variables.
+\format{
+A data frame with 5 observations on the following 3 variables.
 \describe{ \item{homeranges}{a numeric vector}
 \item{count}{a numeric vector} \item{sex}{a factor with
-levels \code{female} and \code{male}} }}
+levels \code{female} and \code{male}} }
+}
 \source{
 Sandell, M., J. Agrell, S. Erlinge, and J. Nelson. 1991. Adult
 philopatry and dispersal in the field vole \emph{Microtus agrestis}.

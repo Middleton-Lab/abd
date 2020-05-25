@@ -4,9 +4,11 @@
 \name{Wolves}
 \alias{Wolves}
 \title{Inbreeding in Wolves}
-\format{A data frame with 24 observations on the following 2 variables.
+\format{
+A data frame with 24 observations on the following 2 variables.
 \describe{ \item{inbreeding.coefficient}{a numeric vector}
-\item{pups}{a numeric vector} }}
+\item{pups}{a numeric vector} }
+}
 \source{
 Liberg, O.H., H. Andrén, H.-C. Pedersen, H. Sand, D. Sejberg, P.
 Wabakken, M. Åkesson, and S. Bensch. 2005. Severe inbreeding depression in a

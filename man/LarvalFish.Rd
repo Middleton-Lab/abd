@@ -4,10 +4,12 @@
 \name{LarvalFish}
 \alias{LarvalFish}
 \title{Exploited Larval Fish}
-\format{A data frame with 28 observations on the following 3 variables.
+\format{
+A data frame with 28 observations on the following 3 variables.
 \describe{ \item{age}{a numeric vector} \item{cv}{a numeric
 vector} \item{exploited}{a factor with levels \code{no} and
-\code{yes}} }}
+\code{yes}} }
+}
 \source{
 Hsieh, C.H., C.S. Reiss, J.R. Hunter, J.R. Beddington, R.M. May, and
 G. Sugihara. 2006. Fishing elevates variability in the abundance of

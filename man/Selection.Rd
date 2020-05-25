@@ -4,7 +4,8 @@
 \name{Selection}
 \alias{Selection}
 \title{Data for Meta-analysis}
-\format{A data frame with 814 observations on the following 8 variables.
+\format{
+A data frame with 814 observations on the following 8 variables.
 
 \describe{ \item{species}{species investigated}
 \item{traitname}{trait investigated}
@@ -12,7 +13,8 @@
 \item{sample.size}{size of sample} \item{authors}{authors of
 publication} \item{year}{year of publication}
 \item{journal}{journal of publication}
-\item{volume.pages}{volume and pages} }}
+\item{volume.pages}{volume and pages} }
+}
 \source{
 Kingsolver, J.G., H.E. Hoekstra, J.M. Hoekstra, D. Berrigan, S.N.
 Vignieri, C.E. Hill, A. Hoang, P. Gibert, and P. Beerli. 2001. The strength

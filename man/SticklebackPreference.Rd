@@ -4,8 +4,10 @@
 \name{SticklebackPreference}
 \alias{SticklebackPreference}
 \title{Mating Preferences in Sticklebacks}
-\format{A data frame with 9 observations of one variable. \describe{
-\item{preference.index}{a numeric vector} }}
+\format{
+A data frame with 9 observations of one variable. \describe{
+\item{preference.index}{a numeric vector} }
+}
 \source{
 McKinnon, J. S., S. Mori, B.K. Blackman, L. David, D.M. Kingsley, L.
 Jamieson, J. Chou, and D. Schluter. 2004. Evidence for ecology's role in

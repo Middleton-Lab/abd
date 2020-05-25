@@ -4,9 +4,11 @@
 \name{CocaineDopamine}
 \alias{CocaineDopamine}
 \title{Effects of Cocaine on Dopamine Receptors}
-\format{A data frame with 34 observations on the following 2 variables.
+\format{
+A data frame with 34 observations on the following 2 variables.
 \describe{ \item{percent.blocked}{a numeric vector}
-\item{high}{a numeric vector} }}
+\item{high}{a numeric vector} }
+}
 \source{
 Volkow, N.D., G.-J. Wang, R.W. Foltin, J.S. Fowler, N.N. Abumrad, S.
 Vitkun, J. Logan, S.J. Gatley, N. Pappas, R. Hitzemann, and C.E. Shea. 1997.

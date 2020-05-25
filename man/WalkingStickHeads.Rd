@@ -4,9 +4,11 @@
 \name{WalkingStickHeads}
 \alias{WalkingStickHeads}
 \title{Walking Stick Head Width}
-\format{A data frame with 50 observations on the following 2 variables.
+\format{
+A data frame with 50 observations on the following 2 variables.
 \describe{ \item{specimen}{a factor with levels \code{1-25}}
-\item{head.width}{a numeric vector} }}
+\item{head.width}{a numeric vector} }
+}
 \source{
 Nosil, P. and B.J. Crespi. 2006. Experimental evidence that
 predation promotes divergence in adaptive radiation. \emph{Proceedings of

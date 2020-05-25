@@ -4,10 +4,12 @@
 \name{Eelgrass}
 \alias{Eelgrass}
 \title{Eelgrass Genotypes}
-\format{A data frame with 32 observations on the following 2 variables.
+\format{
+A data frame with 32 observations on the following 2 variables.
 \describe{ \item{genotypes}{a numeric vector of the number of
 genotypes planted in each plot} \item{shoots}{a numeric vector of
-the total number of shoots in each plot} }}
+the total number of shoots in each plot} }
+}
 \source{
 \emph{inferred from} Reusch, T.B.H., A. Ehlers, A. Hämmerli, and B.
 Worm. 2005. Ecosystem recovery after climatic extremes enhanced by genotypic

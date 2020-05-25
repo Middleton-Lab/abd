@@ -4,9 +4,11 @@
 \name{Truffles}
 \alias{Truffles}
 \title{Truffle Distribution}
-\format{A data frame with 5 observations on the following 2 variables.
+\format{
+A data frame with 5 observations on the following 2 variables.
 \describe{ \item{truffles}{a numeric vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Waters, J.R., K.S. McKelvey, D.L. Luoam, and C.J. Zabel. 1997.
 Truffle production in old-growth and mature fir stands in northeastern

@@ -4,9 +4,11 @@
 \name{Crickets}
 \alias{Crickets}
 \title{Immunity and Sperm Viability in Crickets}
-\format{A data frame with 41 observations on the following 2 variables.
+\format{
+A data frame with 41 observations on the following 2 variables.
 \describe{ \item{sperm.viability}{a numeric vector}
-\item{lysozyme}{a numeric vector} }}
+\item{lysozyme}{a numeric vector} }
+}
 \source{
 Simmons, L.W. and B. Roberts. 2005. Bacterial immunity traded for
 sperm viability in male crickets. \emph{Science} 309: 2031.

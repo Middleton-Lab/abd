@@ -4,9 +4,11 @@
 \name{PrimateMetabolism}
 \alias{PrimateMetabolism}
 \title{Primate Metabolic Rates}
-\format{A data frame with 17 observations on the following 2 variables.
+\format{
+A data frame with 17 observations on the following 2 variables.
 \describe{ \item{mass}{mass (g) } \item{bmr}{metabolic rate
-(watts)} }}
+(watts)} }
+}
 \source{
 Heusner, A.A. 1991. Size and power in mammals. \emph{Journal of
 Experimental Biology} 160: 25-54.

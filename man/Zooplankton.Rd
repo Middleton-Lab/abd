@@ -4,10 +4,12 @@
 \name{Zooplankton}
 \alias{Zooplankton}
 \title{Zooplankton Depredation}
-\format{A data frame with 15 observations on the following 3 variables.
+\format{
+A data frame with 15 observations on the following 3 variables.
 \describe{ \item{treatment}{a factor with levels \code{control},
 \code{high}, and \code{low}} \item{zooplankton}{a numeric vector}
-\item{block}{a numeric vector} }}
+\item{block}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Svanbäck, R. and D.I. Bolnick. 2007.
 Intraspecific competition drives increased resource use diversity within a

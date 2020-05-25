@@ -4,9 +4,11 @@
 \name{Sparrows}
 \alias{Sparrows}
 \title{Lifetime Reproductive Success in House Sparrows}
-\format{A data frame with 9 observations on the following 3 variables.
+\format{
+A data frame with 9 observations on the following 3 variables.
 \describe{ \item{lifetimeRS}{a numeric vector}
-\item{females}{a numeric vector} \item{males}{a numeric vector} }}
+\item{females}{a numeric vector} \item{males}{a numeric vector} }
+}
 \source{
 Jensen, H., B.-E. Saether, T.H. Ringsby, J. Tufto, S.C.
 Griffith, and H. Ellegren. 2004. Lifetime reproductive success in relation

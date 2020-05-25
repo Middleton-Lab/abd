@@ -4,8 +4,10 @@
 \name{WolfTeeth}
 \alias{WolfTeeth}
 \title{Wolf Tooth Measurements}
-\format{A data frame with 35 observations of one variable.  \describe{
-\item{length}{distance from canine to last molar teach (cm)} }}
+\format{
+A data frame with 35 observations of one variable.  \describe{
+\item{length}{distance from canine to last molar teach (cm)} }
+}
 \source{
 Whitlock, M. 1996. The heritability of fluctuating asymmetry and the
 genetic control of developmental stability. \emph{Proceedings of the Royal

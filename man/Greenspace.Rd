@@ -4,11 +4,13 @@
 \name{Greenspace}
 \alias{Greenspace}
 \title{Diversity in Urban Green Space}
-\format{A data frame with 15 observations on the following 6 variables.
+\format{
+A data frame with 15 observations on the following 6 variables.
 \describe{ \item{site}{a factor with levels \code{A} - \code{O}}
 \item{attachment}{a numeric vector} \item{area}{a numeric
 vector} \item{butterfly}{a numeric vector} \item{bird}{a
-numeric vector} \item{ln.plant}{a numeric vector} }}
+numeric vector} \item{ln.plant}{a numeric vector} }
+}
 \source{
 Fuller, R.A., K.N. Irvine, P. Devine-Wright, P.H. Warren, and K.J.
 Gaston. 2007. Psychological benefits of greenspace increase with

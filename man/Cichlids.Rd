@@ -4,9 +4,11 @@
 \name{Cichlids}
 \alias{Cichlids}
 \title{Cichlid Mating Preference}
-\format{A data frame with 53 observations on the following 2 variables.
+\format{
+A data frame with 53 observations on the following 2 variables.
 \describe{ \item{genotype}{a factor with levels \code{F1} and
-\code{F2}} \item{preference}{a numeric vector} }}
+\code{F2}} \item{preference}{a numeric vector} }
+}
 \source{
 Haeslery, M.P. and O. Seehausen. 2005. Inheritance of female mating
 preference in a sympatric sibling species pair of Lake Victoria cichlids:

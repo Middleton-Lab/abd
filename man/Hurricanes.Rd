@@ -4,9 +4,11 @@
 \name{Hurricanes}
 \alias{Hurricanes}
 \title{Intense Hurricanes}
-\format{A data frame with 4 observations on the following 2 variables.
+\format{
+A data frame with 4 observations on the following 2 variables.
 \describe{ \item{hurricanes}{a numeric vector}
-\item{count}{a numeric vector} }}
+\item{count}{a numeric vector} }
+}
 \source{
 Blake, E.S., E.N. Rappaport, J.D. Jarrell, and C.W. Landsea. 2005.
 The deadliest, costliest, and most intense United States tropical cyclones

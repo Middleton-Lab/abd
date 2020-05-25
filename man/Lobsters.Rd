@@ -4,8 +4,10 @@
 \name{Lobsters}
 \alias{Lobsters}
 \title{Lobster Orientation}
-\format{A data frame with 15 observations of one variable. \describe{
-\item{orientation}{} }}
+\format{
+A data frame with 15 observations of one variable. \describe{
+\item{orientation}{} }
+}
 \source{
 Boles, L.C. and K.J. Lohmann. 2003. True navigation and magnetic
 maps in spiny lobsters. \emph{Nature} 421: 60-63.

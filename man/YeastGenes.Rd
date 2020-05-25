@@ -4,9 +4,11 @@
 \name{YeastGenes}
 \alias{YeastGenes}
 \title{Yeast Regulatory Genes}
-\format{A data frame with 6 observations on the following 2 variables.
+\format{
+A data frame with 6 observations on the following 2 variables.
 \describe{ \item{genes.controlled}{a numeric vector}
-\item{count}{a numeric vector} }}
+\item{count}{a numeric vector} }
+}
 \source{
 Guelzim, N., S. Bottani, P. Bourgine and F. Képès. 2002. Topological
 and causal structure of the yeast transcriptional regulatory network.

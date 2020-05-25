@@ -4,8 +4,10 @@
 \name{GlidingSnakes}
 \alias{GlidingSnakes}
 \title{GlidingSnakes}
-\format{A data frame with eight observations of one variable. \describe{
-\item{undulation.rate}{undulation rate} }}
+\format{
+A data frame with eight observations of one variable. \describe{
+\item{undulation.rate}{undulation rate} }
+}
 \source{
 Socha, J.J. 2002. Gliding flight in the paradise tree snake.
 \emph{Nature} 418: 603-604.

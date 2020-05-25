@@ -4,9 +4,11 @@
 \name{Rattlesnakes}
 \alias{Rattlesnakes}
 \title{Temperature Change and Meal Size in Rattlesnakes}
-\format{A data frame with 17 observations on the following 2 variables.
+\format{
+A data frame with 17 observations on the following 2 variables.
 \describe{ \item{meal.size}{a numeric vector}
-\item{temp.change}{a numeric vector} }}
+\item{temp.change}{a numeric vector} }
+}
 \source{
 Tattersall, G.J., W.K. Milsom, A.S. Abe, S.P. Brito, and D.V.
 Andrade. 2004. The thermogenesis of digestion in rattlesnakes. \emph{Journal

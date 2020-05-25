@@ -4,9 +4,11 @@
 \name{SpiderSpeed}
 \alias{SpiderSpeed}
 \title{Spider Running Speeds after Amputation}
-\format{A data frame with 32 observations on the following 2 variables.
+\format{
+A data frame with 32 observations on the following 2 variables.
 \describe{ \item{speed.before}{speed (cm/s) before amputation }
-\item{speed.after}{speed (cm/s) after amputation } }}
+\item{speed.after}{speed (cm/s) after amputation } }
+}
 \source{
 Ramos, M., D.J. Irschick, and T.E. Christenson. 2004. Overcoming an
 evolutionary conflict: Removal of a reproductive organ greatly increases

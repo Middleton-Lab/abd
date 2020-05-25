@@ -4,11 +4,13 @@
 \name{Hemoglobin}
 \alias{Hemoglobin}
 \title{Hemoglobin Levels in High Altitude Populations}
-\format{A data frame with 40 observations on the following 3 variables.
+\format{
+A data frame with 40 observations on the following 3 variables.
 \describe{ \item{hemoglobin}{a numeric vector}
 \item{group}{a factor with levels: \code{Andes}, \code{Ethiopia},
 \code{Tibet}, and \code{USA}} \item{relative.frequency}{a numeric
-vector} }}
+vector} }
+}
 \source{
 \emph{inferred from} Beall, C.M., M.J. Decker, G.M. Bittenham, I.
 Kushner, A. Gebremedhin, K.P. Strohl. 2002. An Ethiopian pattern of human

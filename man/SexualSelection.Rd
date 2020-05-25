@@ -4,11 +4,13 @@
 \name{SexualSelection}
 \alias{SexualSelection}
 \title{Sexual Conflict}
-\format{A data frame with 25 observations on the following 4 variables.
+\format{
+A data frame with 25 observations on the following 4 variables.
 \describe{ \item{polyandrous.species}{a numeric vector}
 \item{monandrous.species}{a numeric vector}
 \item{difference}{a numeric vector}
-\item{taxon.pair}{identifier} }}
+\item{taxon.pair}{identifier} }
+}
 \source{
 Arnqvist, G., M. Edvardsson, U. Friberg, and T. Nilsson. 2000.
 Sexual conflict promotes speciation in insects. \emph{Proceedings of the

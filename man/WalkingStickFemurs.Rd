@@ -4,9 +4,11 @@
 \name{WalkingStickFemurs}
 \alias{WalkingStickFemurs}
 \title{Walking Stick Femur Length}
-\format{A data frame with 50 observations on the following 2 variables.
+\format{
+A data frame with 50 observations on the following 2 variables.
 \describe{ \item{specimen}{a integer denoting specimen number.}
-\item{femur.length}{a numeric vector of femur length} }}
+\item{femur.length}{a numeric vector of femur length} }
+}
 \source{
 Nosil, P. and B.J. Crespi. 2006. Experimental evidence that
 predation promotes divergence in adaptive radiation. \emph{Proceedings of

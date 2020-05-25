@@ -4,9 +4,11 @@
 \name{TwoKids}
 \alias{TwoKids}
 \title{Number of Boys in Two-Child Families}
-\format{A data frame with 3 observations on the following 2 variables.
+\format{
+A data frame with 3 observations on the following 2 variables.
 \describe{ \item{num.boys}{a numeric vector} \item{count}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Rodgers, J.L. and D. Doughty. 2001. Does having boys or girls run in
 the family? \emph{Chance Magazine} Fall 2001: 8-13.

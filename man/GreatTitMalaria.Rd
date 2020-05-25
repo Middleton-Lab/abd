@@ -4,10 +4,12 @@
 \name{GreatTitMalaria}
 \alias{GreatTitMalaria}
 \title{Malaria in Populations of Great Tit}
-\format{A data frame with 65 observations on the following 2 variables.
+\format{
+A data frame with 65 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels \code{Control} and
 \code{Egg removal}} \item{response}{a ordered factor with levels
-\code{No Malaria} and \code{Malaria}} }}
+\code{No Malaria} and \code{Malaria}} }
+}
 \source{
 Oppliger, A., P. Christe, and H. Richner. 1996. Clutch size and
 malaria resistance. \emph{Nature} 381: 565.

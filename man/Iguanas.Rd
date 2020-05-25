@@ -4,8 +4,10 @@
 \name{Iguanas}
 \alias{Iguanas}
 \title{Iguana Body Length Changes}
-\format{A data frame with 64 observations of one variable. \describe{
-\item{change.in.length}{} }}
+\format{
+A data frame with 64 observations of one variable. \describe{
+\item{change.in.length}{} }
+}
 \source{
 Wikelski, M. and C. Thom. 2000. Marine iguanas shrink to survive El
 Niño. \emph{Nature} 403: 37-38.

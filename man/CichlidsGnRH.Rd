@@ -4,9 +4,11 @@
 \name{CichlidsGnRH}
 \alias{CichlidsGnRH}
 \title{GnRH Levels in Cichlids}
-\format{A data frame with 11 observations on the following 2 variables.
+\format{
+A data frame with 11 observations on the following 2 variables.
 \describe{ \item{territorial}{a factor with levels \code{No} and
-\code{Yes}} \item{GnRH.mRNA}{a numeric vector} }}
+\code{Yes}} \item{GnRH.mRNA}{a numeric vector} }
+}
 \source{
 White, S.A., T. Nguyen, and R.D. Fernald. 2002. Social regulation of
 gonadotropin-releasing hormone. \emph{Journal of Experimental Biology} 205:

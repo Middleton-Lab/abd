@@ -4,9 +4,11 @@
 \name{DaphniaResistance}
 \alias{DaphniaResistance}
 \title{Daphnia Resistance to Cyanobacteria}
-\format{A data frame with 32 observations on the following 2 variables.
+\format{
+A data frame with 32 observations on the following 2 variables.
 \describe{ \item{density}{a factor with levels: \code{high},
-\code{low}, and \code{med}} \item{resistance}{a numeric vector} }}
+\code{low}, and \code{med}} \item{resistance}{a numeric vector} }
+}
 \source{
 \emph{inferred from} Hairston, N.G., Jr., W. Lampert, C.E. Cáceres,
 C.L. Holtmeier, L.J. Weider, U. Gaedke, J.M. Fischer, J.A. Fox, and D.M.

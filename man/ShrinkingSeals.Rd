@@ -4,9 +4,11 @@
 \name{ShrinkingSeals}
 \alias{ShrinkingSeals}
 \title{Seal Body Lengths and Age}
-\format{A data frame with 9,665 observations on the following 2 variables.
+\format{
+A data frame with 9,665 observations on the following 2 variables.
 \describe{ \item{age}{age (days)} \item{length}{body length
-(cm) } }}
+(cm) } }
+}
 \source{
 Trites, A.W. and M.A. Bigg. 1996. Physical growth of northern fur
 seals: seasonal fluctuations and migratory influences. \emph{Journal of

@@ -4,8 +4,14 @@
 \alias{abdData}
 \title{Find data in \emph{Analysis of Biological Data}}
 \usage{
-abdData(..., chapters = 1:21, types = c("Example", "Problem"),
-  numbers = 1:100, pattern = "*", ignore.case = TRUE)
+abdData(
+  ...,
+  chapters = 1:21,
+  types = c("Example", "Problem"),
+  numbers = 1:100,
+  pattern = "*",
+  ignore.case = TRUE
+)
 }
 \arguments{
 \item{\dots}{values for any of \code{chapters}, \code{types}, or

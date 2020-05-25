@@ -4,9 +4,11 @@
 \name{SticklebackPlates}
 \alias{SticklebackPlates}
 \title{Number of Lateral Plates in Sticklebacks}
-\format{A data frame with 344 observations on the following 2 variables.
+\format{
+A data frame with 344 observations on the following 2 variables.
 \describe{ \item{genotype}{a factor with levels \code{mm},
-\code{Mm}, and \code{MM}} \item{plates}{number of plates} }}
+\code{Mm}, and \code{MM}} \item{plates}{number of plates} }
+}
 \source{
 Colosimo, P.F., C.L. Peichel, K. Nereng, B.K. Blackman, M.D.
 Shapiro, D. Schluter, and D.M. Kingsley. 2004. The genetic architecture of

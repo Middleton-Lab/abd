@@ -4,9 +4,11 @@
 \name{ZooMortality}
 \alias{ZooMortality}
 \title{Home Range Size and Mortality}
-\format{A data frame with 20 observations on the following 2 variables.
+\format{
+A data frame with 20 observations on the following 2 variables.
 \describe{ \item{log.homerange}{a numeric vector}
-\item{mortality}{a numeric vector} }}
+\item{mortality}{a numeric vector} }
+}
 \source{
 Clubb, R. and G. Mason. 2003. Captivity effects on wide ranging
 carnivores. \emph{Nature} 425: 473-474.

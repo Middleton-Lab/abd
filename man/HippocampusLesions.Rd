@@ -4,9 +4,11 @@
 \name{HippocampusLesions}
 \alias{HippocampusLesions}
 \title{Memory and the Hippocampus}
-\format{A data frame with 57 observations on the following 2 variables.
+\format{
+A data frame with 57 observations on the following 2 variables.
 \describe{ \item{lesion}{a numeric vector} \item{memory}{a
-numeric vector} }}
+numeric vector} }
+}
 \source{
 Broadbent, N.J., L.R. Squire, and R.E. Clark. 2004. Spatial memory,
 recognition memory, and the hippocampus. \emph{Proceedings of the National

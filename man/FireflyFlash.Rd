@@ -4,8 +4,10 @@
 \name{FireflyFlash}
 \alias{FireflyFlash}
 \title{Firefly Flash Duration}
-\format{A data frame with 35 observations of one variable. \describe{
-\item{flash}{duration of flash (milliseconds)} }}
+\format{
+A data frame with 35 observations of one variable. \describe{
+\item{flash}{duration of flash (milliseconds)} }
+}
 \source{
 \emph{inferred from} Cratsley, C.K. and S.M. Lewis. 2003. Female
 preference for male courtship flashes in \emph{Photinus ignitus} fireflies.

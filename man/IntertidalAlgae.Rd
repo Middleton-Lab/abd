@@ -4,10 +4,12 @@
 \name{IntertidalAlgae}
 \alias{IntertidalAlgae}
 \title{Intertidal Algae}
-\format{A data frame with 64 observations on the following 3 variables.
+\format{
+A data frame with 64 observations on the following 3 variables.
 \describe{ \item{height}{a factor with levels \code{low} and
 \code{mid}} \item{herbivores}{a factor with levels \code{minus} and
-\code{plus}} \item{sqrt.area}{a numeric vector} }}
+\code{plus}} \item{sqrt.area}{a numeric vector} }
+}
 \source{
 Harley, C.D.G. 2003. Individualistic vertical responses of
 interacting species determine range limits across a horizontal gradient.

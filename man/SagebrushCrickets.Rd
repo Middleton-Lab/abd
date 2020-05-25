@@ -4,9 +4,11 @@
 \name{SagebrushCrickets}
 \alias{SagebrushCrickets}
 \title{Sagebrush Cricket Mating Times}
-\format{A data frame with 24 observations on the following 2 variables.
+\format{
+A data frame with 24 observations on the following 2 variables.
 \describe{ \item{treatment}{a factor with levels: \code{fed} and
-\code{starved}} \item{time.to.mating}{a numeric vector} }}
+\code{starved}} \item{time.to.mating}{a numeric vector} }
+}
 \source{
 Chadwick Johnson, J., T.M. Ivy, and S.K. Sakaluk. 1999. Female
 remating propensity contingent on sexual cannibalism in sagebrush crickets,

@@ -4,9 +4,11 @@
 \name{TimeOfDeath}
 \alias{TimeOfDeath}
 \title{Hypoxanthine and Time Since Death}
-\format{A data frame with 48 observations on the following 2 variables.
+\format{
+A data frame with 48 observations on the following 2 variables.
 \describe{ \item{hours}{a numeric vector}
-\item{hypoxanthine}{a numeric vector} }}
+\item{hypoxanthine}{a numeric vector} }
+}
 \source{
 James, R.A., P.A. Hoadley, and B.G. Sampson. 1997. Determination of
 postmortem interval by sampling vitreous humor. \emph{American Journal of
