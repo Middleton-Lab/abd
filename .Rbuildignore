@@ -7,3 +7,4 @@
 ^abd\.Rproj$
 ^bin$
 ^travis-linter\.sh$
+^\.github$
