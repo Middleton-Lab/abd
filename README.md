@@ -18,22 +18,20 @@ Kevin M. Middleton (University of Missouri); Randall Pruim (Calvin College)
 Whitlock, M.C. and D. Schluter. 2009. [*The Analysis of Biological 
 Data*][abdurl]. Roberts and Company Publishers. ISBN: 0981519407.
 
-[abdurl]:http://www.roberts-publishers.com/whitlock/
+[abdurl]:https://whitlockschluter.zoology.ubc.ca/
 
 ## Installation
 
 You can install the most recent version directly from github using
 `install_github()` from the [devtools
-package](https://github.com/hadley/devtools).
+package](https://cran.r-project.org/package=devtools).
 
 ```R
-require(devtools)
-install_github("abd", "kmiddleton")
+devtools::install_github("Middleton-Lab/abd")
 ```
 
 Note that if you are using Windows, you will first need to install
-Rtools. Start at <http://www.murdoch-sutherland.com/Rtools/> and
-follow the links to CRAN.
+[Rtools](https://cran.r-project.org/bin/windows/Rtools/.
 
 Stable release versions of `abd` are available via CRAN:
 
