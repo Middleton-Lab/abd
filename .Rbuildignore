@@ -3,8 +3,6 @@
 ^\.git$
 ^README\.md$
 ^.DS\_Store$
-^\.travis\.yml$
 ^abd\.Rproj$
 ^bin$
-^travis-linter\.sh$
 ^\.github$
