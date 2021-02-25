@@ -6,3 +6,6 @@
 ^abd\.Rproj$
 ^bin$
 ^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
