@@ -32,4 +32,4 @@ Collate:
     'histochart.R'
     'datasets.R'
     'themes.R'
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
