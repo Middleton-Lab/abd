@@ -1,1 +1,4 @@
-http://middleton-lab.github.io/abd/
+url: http://middleton-lab.github.io/abd/
+template:
+  bootstrap: 5
+
