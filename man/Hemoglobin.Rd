@@ -17,6 +17,9 @@ Kushner, A. Gebremedhin, K.P. Strohl. 2002. An Ethiopian pattern of human
 adaptation to high-altitude hypoxia. \emph{Proceeding of the National
 Academy of Sciences (USA)} 99(26): 17215-17218.
 }
+\usage{
+Hemoglobin
+}
 \description{
 Relative rates of hemoglobin concentration in four populations of humans
 living at different altitudes.

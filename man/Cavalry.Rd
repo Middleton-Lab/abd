@@ -15,6 +15,9 @@ Leipzig), \emph{as cited in} Larson, R.J. and M.L. Marx. 1981. \emph{An
 Introduction to Mathematical Statistics and its Applications}.
 Prentice-Hall: Englewood Cliffs, NJ.
 }
+\usage{
+Cavalry
+}
 \description{
 Numbers of deaths resulting from horse kicks per regiment-years for the
 Prussian army.

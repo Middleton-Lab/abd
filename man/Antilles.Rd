@@ -14,6 +14,9 @@ years)} }
 Nonequilibrium diversity dynamics of the Lesser Antillean avifauna.
 \emph{Science} 294: 1522-1524.
 }
+\usage{
+Antilles
+}
 \description{
 Approximate dates of immigration for 37 species of birds in the Lesser
 Antilles.

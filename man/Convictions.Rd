@@ -14,13 +14,17 @@ Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university
 Consortium for Political and Social Research, Ann Arbor, MI.
 }
+\usage{
+Convictions
+}
 \description{
 Data on frequency of convictions for a cohort of 395 boys.
 }
 \examples{
 
 str(Convictions)
-barchart(boys ~ as.factor(convictions), Convictions, horizontal = FALSE, origin=0)
+barchart(boys ~ as.factor(convictions), Convictions,
+         horizontal = FALSE, origin=0)
 xyplot( boys ~ convictions, Convictions, type = "h", lwd = 20)
 
 }

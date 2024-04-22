@@ -15,6 +15,9 @@ Vitkun, J. Logan, S.J. Gatley, N. Pappas, R. Hitzemann, and C.E. Shea. 1997.
 Relationship between subjective effects of cocaine and dopamine transporter
 occupancy. \emph{Nature} 386: 827-830.
 }
+\usage{
+CocaineDopamine
+}
 \description{
 Percent of dopamine receptors blocked (\code{percent.bocked}) and the
 perceived level of high as determined by PET scans (\code{high}) in 34

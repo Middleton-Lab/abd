@@ -13,6 +13,9 @@ A data frame with 36 observations on the following 2 variables.
 \emph{inferred from} Brooks, R. 2000. Negative genetic correlation
 between male sexual attractiveness and survival. \emph{Nature} 406: 67-70.
 }
+\usage{
+Guppies
+}
 \description{
 The father's ornamentation (composite score of color and brightness) and
 son's attractiveness (relative rates of visits by females) in male guppies

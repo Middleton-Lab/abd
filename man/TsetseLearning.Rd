@@ -14,6 +14,9 @@ A data frame with 13 observations on the following 2 variables.
 and R. Lancelot. 2007. Learning influences host choice in tsetse.
 \emph{Biology Letters} 3: 113-116.
 }
+\usage{
+TsetseLearning
+}
 \description{
 Dietary conditioning \code{treatment} and subsequent proportion of tsetse
 flies (\emph{Glossina palpalis}) feeding on cow blood in each of 13 cohorts.

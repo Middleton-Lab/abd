@@ -14,6 +14,9 @@ Gunnarsson, T.G., J.A. Gill, T. Sigurbjörnsson, and W.J. Sutherland.
 2004. Pair bonds: arrival synchrony in migratory birds. \emph{Nature} 431:
 646.
 }
+\usage{
+GodwitArrival
+}
 \description{
 Arrival dates for males and females in 10 pairs of Black-tailed Godwits
 (\emph{Limosa limosa})

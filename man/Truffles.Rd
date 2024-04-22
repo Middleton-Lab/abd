@@ -14,6 +14,9 @@ Waters, J.R., K.S. McKelvey, D.L. Luoam, and C.J. Zabel. 1997.
 Truffle production in old-growth and mature fir stands in northeastern
 California. \emph{Forest Ecology and Management} 96: 155-166.
 }
+\usage{
+Truffles
+}
 \description{
 Number of truffles per plot for 288 plots in an old growth forest in
 northeastern California.

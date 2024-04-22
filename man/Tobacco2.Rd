@@ -13,6 +13,9 @@ A data frame with 617 observations on the following 2 variables.
 East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 \emph{Genetics} 1: 164-176.
 }
+\usage{
+Tobacco2
+}
 \description{
 Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 }

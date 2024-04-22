@@ -15,6 +15,9 @@ Sandell, M., J. Agrell, S. Erlinge, and J. Nelson. 1991. Adult
 philopatry and dispersal in the field vole \emph{Microtus agrestis}.
 \emph{Oecologia} 86: 153-158.
 }
+\usage{
+VoleDispersal
+}
 \description{
 Home range size size in field voles (\emph{Microtus agrestis}).
 }

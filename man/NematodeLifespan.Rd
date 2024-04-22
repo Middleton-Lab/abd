@@ -15,6 +15,9 @@ A data frame with 200 observations on the following 2 variables.
 and K. Kornfeld. 2005. Anticonvulsant medications extend worm life-span.
 \emph{Science} 307: 258-262.
 }
+\usage{
+NematodeLifespan
+}
 \description{
 \code{lifespan} of the nematode \emph{Caenorhabditis elegans} in control and
 three experimental \code{treatment}s of the anticonvulsant drug

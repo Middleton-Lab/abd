@@ -13,6 +13,9 @@ Hendry, A.P., O.K. Berg, and T.P. Quinn. 1999. Condition dependence
 and adaptation-by-time: Breeding date, life history, and energy allocation
 within a population of salmon. \emph{Oikos} 85: 499-514.
 }
+\usage{
+SockeyeFemales
+}
 \description{
 Body Masses of 228 female Sockeye Salmon (\emph{Oncorhynchus nerka};
 \url{http://www.nmfs.noaa.gov/pr/species/fish/sockeyesalmon.htm})

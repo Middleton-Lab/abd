@@ -16,6 +16,9 @@ cost of foraging by a marine predator, the Weddell seal \emph{Leptonychotes
 weddellii}: pricing by the stroke. \emph{Journal of Experimental Biology}
 207: 973-982.
 }
+\usage{
+WeddellSeals
+}
 \description{
 Comparison of oxygen consumption in feeding vs. non-feeding dives of the
 same length in the Weddell seal (\emph{Leptonychotes weddellii}).

@@ -14,6 +14,9 @@ A data frame with 10 observations on the following 3 variables.
 Waters, A.J., M.J. Jarvis, and S.R. Sutton. 1998. Nicotine
 withdrawal and accident rates. \emph{Nature} 394: 137.
 }
+\usage{
+NoSmokingDay
+}
 \description{
 Number of workplace injuries on No Smoking Day (\code{Injuries.on.NSD})
 compared to the same Wednesday in the previous year

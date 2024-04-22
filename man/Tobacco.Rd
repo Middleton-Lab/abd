@@ -15,6 +15,9 @@ of the number of F2 plants with flower lengths in this size range} }
 East, E.M. 1916. Studies on size inheritance in \emph{Nicotiana}.
 \emph{Genetics} 1: 164-176.
 }
+\usage{
+Tobacco
+}
 \description{
 Distribution of flow lengths in F1 and F2 populations of \emph{Nicotiana}.
 }

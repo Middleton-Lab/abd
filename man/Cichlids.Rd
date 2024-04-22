@@ -15,6 +15,9 @@ preference in a sympatric sibling species pair of Lake Victoria cichlids:
 implications for speciation. \emph{Proceedings of the Royal Society of
 London, Series B, Biological Sciences} 272: 237-245.
 }
+\usage{
+Cichlids
+}
 \description{
 Preference index in F1 and F2 crosses of two species of cichlids from Lake
 Victoria, \emph{Pundamilia pundamilia} and \emph{P. nyererei}.

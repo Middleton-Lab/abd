@@ -1,8 +1,8 @@
 Package: abd
 Type: Package
 Title: The Analysis of Biological Data
-Version: 0.2-9
-Date: 2016-02-25
+Version: 0.2-10
+Date: 2024-04-21
 Author: Kevin M. Middleton <middletonk@missouri.edu>, Randall Pruim
     <rpruim@calvin.edu>
 Maintainer: Kevin M. Middleton <middletonk@missouri.edu>
@@ -32,5 +32,5 @@ Collate:
     'histochart.R'
     'datasets.R'
     'themes.R'
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.1
 URL: http://middleton-lab.github.io/abd/

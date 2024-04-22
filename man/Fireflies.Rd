@@ -13,6 +13,9 @@ A data frame with 35 observations of one variable. \describe{
 preference for male courtship flashes in \emph{Photinus ignitus} fireflies.
 \emph{Behavioral Ecology} 14: 135-140.
 }
+\usage{
+Fireflies
+}
 \description{
 Measurements of spermatophore mass (milligrams) in 35 fireflies
 (\emph{Photinus ignitus}).
@@ -20,7 +23,7 @@ Measurements of spermatophore mass (milligrams) in 35 fireflies
 \examples{
 
 str(Fireflies)
-histogram(~sp.mass, Fireflies, n=12)
+histogram(~ sp.mass, Fireflies, n = 12)
 
 }
 \references{

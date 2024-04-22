@@ -16,6 +16,9 @@ parallel armor plate reduction in threespine sticklebacks. \emph{PLoS
 Biology} 2: 635-641.
 \url{http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020109}
 }
+\usage{
+SticklebackPlates
+}
 \description{
 Number of lateral plates (\code{plates}) in threespine sticklebacks
 (\emph{Gasterosteus aculeatus}) with three different \emph{Ectodysplasin}

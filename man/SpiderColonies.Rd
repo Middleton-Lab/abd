@@ -14,6 +14,9 @@ Rypstra, A. L. 1979. Foraging folks of spiders, a study of aggregate
 behavior in \emph{Cryptophora citricola} Forskal (Araneae: Araneidae) in
 West Africa. \emph{Behavioral Ecology and Sociobiology} 5: 291-300.
 }
+\usage{
+SpiderColonies
+}
 \description{
 Web height above ground (cm) and colony size for 17 colonies of the spider
 \emph{Cryptophora citricola} in Gabon.

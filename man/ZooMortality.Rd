@@ -13,6 +13,9 @@ A data frame with 20 observations on the following 2 variables.
 Clubb, R. and G. Mason. 2003. Captivity effects on wide ranging
 carnivores. \emph{Nature} 425: 473-474.
 }
+\usage{
+ZooMortality
+}
 \description{
 Home range size (\eqn{\log_{10}}{log10}) and captive infant mortality (%)
 for 20 species of carnivores.

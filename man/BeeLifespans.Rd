@@ -12,6 +12,9 @@ A data frame with 33 observations on the following variable.
 \emph{inferred from} Visscher, P.K. and R. Dukas. 1997. Survivorship
 of foraging honey bees. \emph{Insectes Sociaux} 44: 1-5.
 }
+\usage{
+BeeLifespans
+}
 \description{
 Lifespan of 33 foraging honey bees.
 }

@@ -15,6 +15,9 @@ Chatterton, V.J. Vitzthum. 2002. Effect of menstrual cycle phase on exercise
 performance of high-altitude native women at 3600 m. \emph{Journal of
 Experimental Biology} 205: 233-239
 }
+\usage{
+ProgesteroneExercise
+}
 \description{
 Progesterone levels and rates of ventilation during submaximal exercise in
 30 women.

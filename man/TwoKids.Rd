@@ -13,6 +13,9 @@ numeric vector} }
 Rodgers, J.L. and D. Doughty. 2001. Does having boys or girls run in
 the family? \emph{Chance Magazine} Fall 2001: 8-13.
 }
+\usage{
+TwoKids
+}
 \description{
 The number of boys in a sample of 2,444 two-child families.
 }

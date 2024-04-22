@@ -13,12 +13,15 @@ offspring} }
 West, S.A. and B.C. Sheldon. 2002. Constraints in the evolution of
 sex ratio adjustment. \emph{Science} 295: 1695-1688.
 }
+\usage{
+BirdSexRatio
+}
 \description{
 Correlation coefficient of sex ratio in bird offspring.
 }
 \examples{
 
-histogram(~corr.coeff, BirdSexRatio, n = 10,
+histogram(~ corr.coeff, BirdSexRatio, n = 10,
   xlab = "Correlation Coefficient")
 
 }

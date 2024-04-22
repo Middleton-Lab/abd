@@ -22,6 +22,9 @@ Non-indigenous brook trout and the demise of Pacific salmon: a forgotten
 threat? \emph{Proceedings of the Royal Society of London, Series B,
 Biological Sciences} 269: 1663-1670.
 }
+\usage{
+BrookTrout
+}
 \description{
 Total numbers of salmon released (\code{salmon.released}) and surviving
 (\code{salmon.surviving}) in 12 streams, 6 with brook trout \code{present}

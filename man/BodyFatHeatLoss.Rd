@@ -13,6 +13,9 @@ A data frame with 12 observations on the following 2 variables.
 Sloan, R.E.G. and W.R. Keatinge. 1973. Cooling rates of young people
 swimming in cold water. \emph{Journal of Applied Physiology} 35: 371-375.
 }
+\usage{
+BodyFatHeatLoss
+}
 \description{
 Heat loss during exercise and relative body fat in 12 boys.
 }

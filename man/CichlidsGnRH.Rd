@@ -14,6 +14,9 @@ White, S.A., T. Nguyen, and R.D. Fernald. 2002. Social regulation of
 gonadotropin-releasing hormone. \emph{Journal of Experimental Biology} 205:
 2567-2581.
 }
+\usage{
+CichlidsGnRH
+}
 \description{
 Levels of mRNA for gonadotropin-releasing hormone in cichlids
 (\emph{Haplochromis burtoni}) that are (\emph{n} = 5) and are not (\emph{n}

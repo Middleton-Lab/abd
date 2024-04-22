@@ -15,6 +15,9 @@ Golenda, C.F., V.B. Solberg, R. Burge, J.M. Gambel, and R.A. Wirtz.
 of topical N,N-diethyl-\emph{m}-toluamide (DEET). \emph{American Journal of
 Tropical Medicine and Hygiene} 60: 654-657.
 }
+\usage{
+DEET
+}
 \description{
 Administered dose of DEET and number of mosquito bites for 52 women.
 }

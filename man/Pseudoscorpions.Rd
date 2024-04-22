@@ -14,6 +14,9 @@ Newcomer, S.D., J.A. Zeh, and D.W. Zeh. 1999. Genetic benefits
 enhance the reproductive success of polyandrous females. \emph{Proceedings
 of the National Academy of Sciences (USA)} 96: 10236-10241.
 }
+\usage{
+Pseudoscorpions
+}
 \description{
 Successful numbers of broods (\code{Number.of.successful.broods}) in two
 groups of female pseudoscrpions (\emph{Cordylochernes scorpioides}), one

@@ -13,6 +13,9 @@ numeric vector} }
 Pounder, D.J. 1995. Postmortem changes and time of death. University
 of Dundee.
 }
+\usage{
+Rigormortis
+}
 \description{
 Number of bodies reaching rigormortis in each hour after death.
 }

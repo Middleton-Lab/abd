@@ -14,6 +14,9 @@ Sauer, J.R., J.E. Hines, and J. Fallon. 2003. The North American
 breeding bird survey, results and analysis 1966-2002. Version 2003.1. USGS
 Patuxent Wildlife Research Center, Laurel, MD.
 }
+\usage{
+DesertBirds
+}
 \description{
 Census data for desert birds.
 }

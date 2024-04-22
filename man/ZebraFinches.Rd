@@ -15,6 +15,9 @@ McGraw, K.J. and D.R. Ardia. 2003. Carotenoids, immunocompetence,
 and the information content of sexual colors: an experimental test.
 \emph{The American Naturalist} 162: 704-712.
 }
+\usage{
+ZebraFinches
+}
 \description{
 Data on cell-mediated immunocompetence (\code{PHA}) and humoral immunity
 (\code{SRBC}) in Zebra Finches that received supplemental carotenoids

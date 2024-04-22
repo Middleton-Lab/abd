@@ -13,8 +13,8 @@ Schluter (2009; Roberts and Company Publishers).
 \details{
 \tabular{ll}{ Package: \tab abd\cr
               Type: \tab Package\cr
-              Version: \tab 0.2-9\cr
-              Date: \tab 2016-02-25\cr
+              Version: \tab 0.2-10\cr
+              Date: \tab 2024-04-21\cr
               License: \tab GPL\cr
               LazyLoad: \tab yes\cr
               LazyData: \tab yes\cr }
@@ -31,6 +31,13 @@ abdData('Finch')                  # look for data sets with 'finch' in name
 Whitlock, M.C. and D. Schluter. 2009. \emph{The Analysis of
 Biological Data}. Roberts and Company Publishers. ISBN: 0981519407.
 \url{http://www.roberts-publishers.com/biology/the-analysis-of-biological-data.html}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://middleton-lab.github.io/abd/}
+}
+
 }
 \author{
 Kevin M. Middleton (\url{middletonk@missouri.edu}); Randall Pruim

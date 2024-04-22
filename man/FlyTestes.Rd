@@ -13,6 +13,9 @@ A data frame with 8 observations on the following 2 variables.
 Hosken, D.J. and P.I. Ward. 2001.  Experimental evidence for testis
 size evolution via sperm competition. \emph{Ecology Letters} 4: 10-13.
 }
+\usage{
+FlyTestes
+}
 \description{
 Testes size (square mm; \code{Testes.area}) in 8 populations of common
 yellow dung flies (\emph{Scathophaga stercoraria}) with different mating

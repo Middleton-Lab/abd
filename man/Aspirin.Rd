@@ -16,6 +16,9 @@ Manson, C.H. Hennekens, and J.E. Buring. 2005. Low-dose aspirin in the
 primary prevention of cancer. \emph{Journal of the American Medical
 Association} 294: 47-55.
 }
+\usage{
+Aspirin
+}
 \description{
 Frequency of cancer in 39,876 women taking and not taking aspirin.
 }

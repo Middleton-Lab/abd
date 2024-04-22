@@ -15,6 +15,9 @@ Lafferty, K.D. and A.K. Morris. 1996. Altered behavior of
 parasitized killifish increases susceptibility to predation by bird final
 hosts. \emph{Ecology} 77: 1390-1397.
 }
+\usage{
+Trematodes
+}
 \description{
 Frequencies of killifish (\emph{Fundulus parvipinnis}) eaten by birds
 depending on level of infection by the trematode \emph{Euhaplorchis

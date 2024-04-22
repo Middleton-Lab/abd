@@ -14,6 +14,9 @@ winner during debates} \item{loser.wills}{number of times will/shall
 used by loser during debates} \item{diff.wills}{difference between
 number of times will/shall used by two candidates} }
 }
+\usage{
+WillsDebates
+}
 \description{
 Number of times a presidential candidate said "will," "shall," or "going to"
 in presidential debates from 1960-2004 (years incomplete).

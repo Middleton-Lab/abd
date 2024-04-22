@@ -13,6 +13,9 @@ A data frame with 38 observations on the following 2 variables.
 Waide R.B. and W.B. Reagan, eds. 1996. \emph{The Food Web of a
 Tropical Rainforest}. University of Chicago Press, Chicago.
 }
+\usage{
+ElVerde
+}
 \description{
 Number of different species (\code{breadth}) in 127 species
 (\code{no.species}) in the rainforest community at El Verde, Puerto Rico

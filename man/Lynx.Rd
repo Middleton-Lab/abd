@@ -13,6 +13,9 @@ numeric vector} }
 Elton, C. and M. Nicholson. 1942. The ten-year cycle in numbers of
 the lynx in Canada. \emph{Journal of Animal Ecology} 11: 215-244.
 }
+\usage{
+Lynx
+}
 \description{
 Number of lynx pelts (\code{pelts}) reported in Canada per year from 1752 to
 1819.

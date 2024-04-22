@@ -13,6 +13,9 @@ McKinnon, J. S., S. Mori, B.K. Blackman, L. David, D.M. Kingsley, L.
 Jamieson, J. Chou, and D. Schluter. 2004. Evidence for ecology's role in
 speciation. \emph{Nature} 429: 294-298.
 }
+\usage{
+SticklebackPreference
+}
 \description{
 Mating preference in 9 populations of three-spined sticklebacks.
 }

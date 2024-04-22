@@ -14,6 +14,9 @@ A data frame with 22 observations on the following 2 variables.
 Absence of circadian phase resetting in response to bright light behind the
 knees. \emph{Science} 297: 571.
 }
+\usage{
+JetLagKnees
+}
 \description{
 Shift in circadian rhythm (hours; \code{shift}) in three light treatments
 (\code{treatment}).

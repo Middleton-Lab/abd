@@ -15,6 +15,9 @@ The deadliest, costliest, and most intense United States tropical cyclones
 from 1851 to 2006 (and other frequently requested hurricane facts).
 \emph{NOAA Technical Memorandum NWS TPC-4}.
 }
+\usage{
+Hurricanes
+}
 \description{
 Number of hurricanes greater than or equal to category 3 on the
 Safir-Simpson scale during the 20th century.

@@ -14,6 +14,9 @@ Ventura, S.J., J.A. Martin, S.C. Curtin, F. Menacker, and B.E.
 Hamilton. 2001. Births: final data for 1999. \emph{National Vital Statistics
 Reports} Vol. 49, No. 1.
 }
+\usage{
+DayOfBirth
+}
 \description{
 Day of the week for 350 U.S. births in 1999.
 }

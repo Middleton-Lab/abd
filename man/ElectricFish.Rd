@@ -17,6 +17,9 @@ Fernandes, C.C., J. Podos, and J.G. Lundberg. 2004. Amazonian
 ecology: tributaries enhance the diversity of electric fishes.
 \emph{Science} 305: 1960-1962.
 }
+\usage{
+ElectricFish
+}
 \description{
 Species abundance of electric fish upstream and downstream of the entrance
 of a tributary in the Amazon basin.

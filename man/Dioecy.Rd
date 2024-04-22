@@ -14,6 +14,9 @@ A data frame with 28 observations on the following 3 variables.
 Heilbuth, J.C. 2000. Lower species richness in dioecious clades.
 \emph{The American Naturalist} 156: 221-241.
 }
+\usage{
+Dioecy
+}
 \description{
 Number of \code{dioecious} and \code{monomorphic} taxa among pairs of
 closely related plants.

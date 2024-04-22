@@ -13,6 +13,9 @@ A data frame with 11 observations on the following 2 variables.
 U.S. Fish and Wildlife Service. 2001. Number of U.S. listed species
 per calendar year.
 }
+\usage{
+EndangeredSpecies
+}
 \description{
 Frequency of taxon groups on the U.S. Fish and Wildlife Service list of
 endangered and threatened species (2002).

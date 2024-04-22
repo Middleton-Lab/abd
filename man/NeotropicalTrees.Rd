@@ -15,6 +15,9 @@ Previous-year reproduction reduces photosynthetic capacity and slows
 lifetime growth in females of a neotropical tree. \emph{Proceedings of the
 National Academy of Sciences (USA)} 101: 8051-8055.
 }
+\usage{
+NeotropicalTrees
+}
 \description{
 Photosynthetic capacity (\code{photosynthetic.capacity}) and number of
 fruits produced in the previous season (\code{previous.fruits}) of 9 females

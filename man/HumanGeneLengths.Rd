@@ -20,6 +20,9 @@ Stalker, R. Storey, S. Trevanion, A. Ureta-Vidal, J. Vogel, S. White, C.
 Woodwark, and E. Birne. 2005. Ensembl 2005. \emph{Nucleic Acids Research}
 33: D447-D453.
 }
+\usage{
+HumanGeneLengths
+}
 \description{
 Lengths in number of nucleotides (\code{gene.length}) for 20,290 human genes
 }

@@ -12,6 +12,9 @@ A data frame with 64 observations of one variable. \describe{
 Wikelski, M. and C. Thom. 2000. Marine iguanas shrink to survive El
 Niño. \emph{Nature} 403: 37-38.
 }
+\usage{
+Iguanas
+}
 \description{
 Body size change in 64 Galápagos marine iguanas (\emph{Amblyrhynchus
 cristatus}) that survived the 1992-1993 El Niño event.

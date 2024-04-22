@@ -16,6 +16,9 @@ Worm. 2005. Ecosystem recovery after climatic extremes enhanced by genotypic
 diversity. \emph{Proceedings of the National Academy of Sciences (USA)} 102:
 2826-2831.
 }
+\usage{
+Eelgrass
+}
 \description{
 Number of shoots (\code{shoots}) surviving in each of 32 experimental plots
 planted with 1, 3, or 6 different genotypes of eelgrass

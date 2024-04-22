@@ -14,6 +14,9 @@ Shaw, D.J., B.T. Grenfell, and A.P. Dobson. 1998. Patterns of
 macroparasite aggregation in wildlife host populations. \emph{Parasitology}
 117: 597-610.
 }
+\usage{
+ShadParasites
+}
 \description{
 Frequency of the nematode \emph{Camallanus oxycephalus} per fish.
 }

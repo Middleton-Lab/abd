@@ -13,6 +13,9 @@ A data frame with 21 observations on the following 2 variables.
 Wiseman, R. and P. Lamont. 1996. Unravelling the Indian rope-trick.
 \emph{Nature} 383: 212-213.
 }
+\usage{
+RopeTrick
+}
 \description{
 Perceived impressiveness (\code{impressiveness}) of a written account of the
 Indian Rope Trick and the corresponding number of \code{year}s since it was

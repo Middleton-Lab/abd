@@ -14,6 +14,9 @@ Caley, M.J. and D. Schluter. 2003. Predators favour mimicry in a
 tropical reef fish. \emph{Proceedings of the Royal Society of London Series
 B, Biological Sciences} 270: 667-672.
 }
+\usage{
+Pufferfish
+}
 \description{
 Number of \code{predators} approaching models painted to resemble pufferfish
 (\emph{Canthigaster valentini}) across a range of similarities

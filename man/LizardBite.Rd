@@ -15,6 +15,9 @@ determines mating success and potential reproductive output in the collared
 lizard (\emph{Crotaphytus collaris}). \emph{The American Naturalist} 166:
 426-436.
 }
+\usage{
+LizardBite
+}
 \description{
 Bite force (N) and territory area in 11 male collared lizards
 (\emph{Crotaphytus collaris}).

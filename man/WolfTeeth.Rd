@@ -13,6 +13,9 @@ Whitlock, M. 1996. The heritability of fluctuating asymmetry and the
 genetic control of developmental stability. \emph{Proceedings of the Royal
 Society, Series B} 263: 849-853.
 }
+\usage{
+WolfTeeth
+}
 \description{
 Measurement (cm) of the distance between the canine and last molar teeth in
 35 wolves.

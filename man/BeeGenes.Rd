@@ -15,6 +15,9 @@ Ben-Shahar, Y., A. Robichon, M.B. Sokolowski, and G.E. Robinson.
 2002. Influence of gene action across different time scales on behavior.
 \emph{Science} 296: 741-744.
 }
+\usage{
+BeeGenes
+}
 \description{
 Levels of expression of the foraging gene (\emph{for}; \code{Expression}) in
 two worker types (\code{type}) in three bee colonies (\code{colony}). Note

@@ -14,6 +14,9 @@ James, R.A., P.A. Hoadley, and B.G. Sampson. 1997. Determination of
 postmortem interval by sampling vitreous humor. \emph{American Journal of
 Forensic Medicine and Pathology} 18: 158-162.
 }
+\usage{
+TimeOfDeath
+}
 \description{
 Hypoxanthine levels in the vitreous humour of the eye and time since death
 (hours) for 48 subjects.

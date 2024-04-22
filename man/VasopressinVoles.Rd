@@ -15,6 +15,9 @@ Olazabal, X. Ren, E.F. Terwilliger, and L.J. Young. 2004.
 Enhanced partner preference in a promiscuous species by manipulating the
 expression of a single gene. \emph{Nature} 429: 754-757.
 }
+\usage{
+VasopressinVoles
+}
 \description{
 Time spent with a female (\code{percent}) in control and
 vasopressin-enhanced groups (\code{treatment}) of meadow voles

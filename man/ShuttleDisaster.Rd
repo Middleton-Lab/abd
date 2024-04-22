@@ -14,6 +14,9 @@ Dalal, S.R., E.B. Fowlkes, and B. Hoadley. 1989. Risk analysis of
 the Space Shuttle: Pre-Challenger prediction of failure. \emph{Journal of
 the American Statistical Association} 408: 945-957.
 }
+\usage{
+ShuttleDisaster
+}
 \description{
 Data on \code{temperature} and number of O-ring \code{failures} for 23 space
 shuttle launches.

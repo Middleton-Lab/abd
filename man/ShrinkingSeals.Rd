@@ -14,6 +14,9 @@ Trites, A.W. and M.A. Bigg. 1996. Physical growth of northern fur
 seals: seasonal fluctuations and migratory influences. \emph{Journal of
 Zoology (London)} 238: 459-482.
 }
+\usage{
+ShrinkingSeals
+}
 \description{
 Body length (cm) and age (days) for 9,665 female Northern fur seals
 (\emph{Callorhinus ursinus}).

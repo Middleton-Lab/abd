@@ -9,6 +9,9 @@ A data frame with 19 observations on the following 2 variables.
 \describe{ \item{n.toads}{a numeric vector} \item{prob}{a
 numeric vector} }
 }
+\usage{
+Toads
+}
 \description{
 Hypothetical probability of a toad being right-handed
 }

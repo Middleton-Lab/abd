@@ -12,6 +12,9 @@ A data frame with 25 observations of one variable. \describe{
 Shoemaker, A. L. 1996. What's normal? -- Temperature, gender, and
 heart rate. \emph{Journal of Statistics Education} 4(2).
 }
+\usage{
+HumanBodyTemp
+}
 \description{
 Body temperature for 25 randomly chosen health people
 }

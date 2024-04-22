@@ -16,6 +16,9 @@ Fuller, R.A., K.N. Irvine, P. Devine-Wright, P.H. Warren, and K.J.
 Gaston. 2007. Psychological benefits of greenspace increase with
 biodiversity. \emph{Biology Letters} 3: 390-394.
 }
+\usage{
+Greenspace
+}
 \description{
 Measures of biodiversity in 15 urban green spaces in Sheffield, England.
 }

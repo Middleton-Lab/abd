@@ -14,6 +14,9 @@ numeric vector} }
 repeatability of locomotor performance in natural populations of the lizard
 \emph{Sceloporus merriami}. \emph{Evolution} 42: 1116-1120.
 }
+\usage{
+LizardSprint
+}
 \description{
 Sprint speeds (\code{speed}) in 34 canyon lizards
 (\emph{Sceloporous merriami}) measured in

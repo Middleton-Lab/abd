@@ -17,6 +17,9 @@ Mitchell. 2003. Variability in brain and arterial blood temperatures in
 free-ranging ostriches in their natural habitat. \emph{Journal of
 Experimental Biology} 206: 1171-1181.
 }
+\usage{
+OstrichTemp
+}
 \description{
 Body and brain temperatures (\eqn{^{\circ}}{degrees }C) in free-ranging
 ostriches (\emph{Struthio camelus}) at the the Lichtenburg Game Breeding

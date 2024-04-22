@@ -14,6 +14,9 @@ with levels \code{neanderthal} \code{recent}} }
 Ruff, C.B., E. Trinkaus, and T.W. Holliday. 1997. Body mass and
 encephalization in Pleistocene \emph{Homo}. \emph{Nature} 387: 173-176.
 }
+\usage{
+NeanderthalBrains
+}
 \description{
 Brain size (\code{lnbrain}) and body mass (\code{lnmass}) in Neanderthals
 and early modern humans (\code{species}).

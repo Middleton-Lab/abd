@@ -13,6 +13,9 @@ A data frame with 19 observations on the following 2 variables.
 Emlen, D.J. 2001. Costs and the diversification of exaggerated
 animal structures. \emph{Science} 291: 1534-1536.
 }
+\usage{
+Beetles
+}
 \description{
 Relative size of the horns and wings in 19 female \emph{Onthophagus
 sagittarius} beetles.

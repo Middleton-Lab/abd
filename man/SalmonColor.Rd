@@ -15,6 +15,9 @@ secondary sexual color: phenotypic convergence promotes genetic divergence
 in carotenoid use between sympatric anadromous and nonanadromous morphs of
 sockeye salmon (\emph{Oncorhynchus nerka}). \emph{Evolution} 55: 380-391.
 }
+\usage{
+SalmonColor
+}
 \description{
 Skin color sockeye and kokanee morphs of the Pacific salmon
 (\emph{Oncorhynchus nerka}) raised in a low carotenoid environment.

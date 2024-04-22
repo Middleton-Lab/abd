@@ -15,6 +15,9 @@ Molofsky, J. and J.-B. Ferdy. 2005. Extinction dynamics in
 experimental metapopulations. \emph{Proceedings of the National Academy of
 Sciences (USA)} 102: 3726-3731.
 }
+\usage{
+PlantPersistence
+}
 \description{
 Persistence times (\code{generations}) in the annual plant \emph{Cardamine
 pensylvanica} in four experimental populations (\code{treatment}).

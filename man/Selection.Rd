@@ -21,6 +21,9 @@ Vignieri, C.E. Hill, A. Hoang, P. Gibert, and P. Beerli. 2001. The strength
 of phenotypic selection in natural populations. \emph{The American
 Naturalist} 157: 245-261.
 }
+\usage{
+Selection
+}
 \description{
 Data for meta-analysis on the relationship between testosterone and
 aggression.

@@ -11,6 +11,9 @@ a data frame with 9 observations of 1 variable \describe{
 \source{
 Data provided by Kevin Fowler, University College, London.
 }
+\usage{
+Stalkies1
+}
 \description{
 Eye width in 9 male stalk-eyed flies (\emph{Cyrtodiopsis dalmanni}).
 }

@@ -13,6 +13,9 @@ A data frame with 35 observations of one variable. \describe{
 preference for male courtship flashes in \emph{Photinus ignitus} fireflies.
 \emph{Behavioral Ecology} 14: 135-140.
 }
+\usage{
+FireflyFlash
+}
 \description{
 Flash duration (measured in milliseconds) of a sample of male fireflies
 (\emph{Photinus ignitus}; \emph{n} = 35).

@@ -14,6 +14,9 @@ Geffeney, S., E.D. Brodie, Jr., P.C. Ruben, and E.D. Brodie III.
 2002. Mechanisms of adaptation in a predator-prey arms race: TTX-resistant
 sodium channels. \emph{Science} 297: 1336-1339.
 }
+\usage{
+Newts
+}
 \description{
 Percent reduction in crawl speed (\code{resistance}) in the garter snake
 after injection of the neurotoxin tetrodotoxin from the rough-skinned newt

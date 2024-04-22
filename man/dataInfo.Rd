@@ -12,6 +12,9 @@ A data frame with 143 observations on the following 5 variables.
 \item{number}{example or problem number}
 \item{sub}{sub-problem: \code{} \code{a} \code{b} \code{c}} }
 }
+\usage{
+dataInfo
+}
 \description{
 Information about the location of data sets in \emph{Analysis of Biological
 Data}

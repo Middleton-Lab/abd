@@ -15,6 +15,9 @@ Griffith, and H. Ellegren. 2004. Lifetime reproductive success in relation
 to morphology in the House Sparrow \emph{Passer domesticus}. \emph{Journal
 of Animal Ecology} 73: 599-611.
 }
+\usage{
+Sparrows
+}
 \description{
 A cross table of lifetime reproductive success (\code{LifetimeRS}) in female
 and male house sparrows \emph{Passer domesticus} in Norway.

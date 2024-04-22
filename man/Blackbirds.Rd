@@ -16,6 +16,9 @@ Hasselquist, D., J.A. Marsh, P.W. Sherman, and J.C. Wingfield. 1999.
 Is avian immunocompetence suppressed by testosterone? \emph{Behavioral
 Ecology and Sociobiology} 45: 167-175.
 }
+\usage{
+Blackbirds
+}
 \description{
 Experimental manipulation of testosterone levels in male Red-winged
 Blackbirds (\emph{Agelaius phoeniceus}) and resulting changes in antibody

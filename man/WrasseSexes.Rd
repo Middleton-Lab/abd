@@ -9,6 +9,9 @@ A data frame with 3 observations on the following 3 variables.
 \describe{ \item{males}{a numeric vector} \item{females}{a
 numeric vector} \item{count}{a numeric vector} }
 }
+\usage{
+WrasseSexes
+}
 \description{
 Number and sex of adult wrasses in a section of the Great Barrier Reef.
 }

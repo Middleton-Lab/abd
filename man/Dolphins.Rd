@@ -14,6 +14,9 @@ Stafne, G.M. and P.R. Manger. 2004. Predominance of clockwise
 swimming during rest in Southern Hemisphere dolphins. \emph{Physiology and
 Behavior} 82: 919-926.
 }
+\usage{
+Dolphins
+}
 \description{
 Percentage of time 8 sleeping dolphins from the Southern Hemisphere spent
 swimming clockwise.

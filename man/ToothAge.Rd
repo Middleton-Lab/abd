@@ -14,6 +14,9 @@ Spalding, K.L., B.A. Buchholz, L.-E. Bergman, H. Druid, and J.
 Frisén. 2005. Age written in teeth by nuclear tests. \emph{Nature} 437:
 333-334.
 }
+\usage{
+ToothAge
+}
 \description{
 Actual birth year and birth year estimated from relative radioactivity of
 the enamel for 20 samples.

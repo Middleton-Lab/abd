@@ -13,6 +13,9 @@ A data frame with 7 observations on the following 2 variables.
 Oster, E. 2004. Dreaming big: Why do people play Powerball?
 \emph{Chance News} 13.02.
 }
+\usage{
+Powerball
+}
 \description{
 The number of Powerball tickets sold per day of the week for three years.
 }

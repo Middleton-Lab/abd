@@ -13,6 +13,9 @@ indicating whether the candidate won the election \code{y} or not.}
 vector} \item{difference}{a numeric vector} \item{year}{a
 numeric vector} }
 }
+\usage{
+WillsPresidents
+}
 \description{
 Number of times a presidential candidate said "will," "shall," or "going to"
 in presidential debates from 1960-2004 (years incomplete).

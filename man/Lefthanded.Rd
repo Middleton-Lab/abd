@@ -14,6 +14,9 @@ Faurie, C. and M. Raymond. 2005. Handedness, homicide and negative
 frequency-dependent selection. \emph{Proceedings of the Royal Society of
 London B} 272: 25-28.
 }
+\usage{
+Lefthanded
+}
 \description{
 Prevalence of left-handedness (\code{percent.left}) and homicide rates
 (\code{murder}) for 8 societies.

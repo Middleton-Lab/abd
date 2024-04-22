@@ -14,6 +14,9 @@ Green, J. A., P. J. Butler, A. J. Woakes, I. L. Boyd and R. L.
 Holder. 2001. Heart rate and rate of oxygen consumption of exercising
 macaroni penguins. \emph{Journal of Experimental Biology} 204: 673-684.
 }
+\usage{
+Penguins
+}
 \description{
 Slope of regressions of mass-specific metabolic rate on heart rate for three
 groups of Macaroni Penguins.

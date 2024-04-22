@@ -15,6 +15,9 @@ Effect of a protein binding change on unbound and total plasma
 concentrations for drugs of intermediate hepatic extraction. \emph{Journal
 of Pharmacokinetics and Pharmacodynamics} 16:397-411.
 }
+\usage{
+LiverPreparation
+}
 \description{
 The unbound fraction of taurocholate for each of five concentrations of
 administered taurocholate.

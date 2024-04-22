@@ -13,6 +13,9 @@ A data frame with 14 observations on the following 2 variables.
 Packer, C. and A.E. Pusey. 1983. Adaptations of female lions to
 infanticide by incoming males. \emph{The American Naturalist} 121: 716-728.
 }
+\usage{
+LionCubs
+}
 \description{
 Time to reproduction (\code{Days}) based on whether death of previous cubs
 was due to infanticide (\code{New}) or accidental (\code{Same}).

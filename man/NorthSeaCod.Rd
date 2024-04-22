@@ -13,6 +13,9 @@ A data frame with 39 observations of one variable. \describe{
 Souissi, and P.C. Reid. 2003. Plankton effect on cod recruitment in the
 North Sea. \emph{Nature} 426: 661-664.
 }
+\usage{
+NorthSeaCod
+}
 \description{
 Number (\eqn{\log_{10}}{log10} transformed) of Atlantic cod (\emph{Gadus
 morhua}) that recruited (grew to catchable size) in the North Sea over a 39

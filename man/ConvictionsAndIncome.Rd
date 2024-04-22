@@ -15,6 +15,9 @@ Farrington, D.P. 1994. \emph{Cambridge Study in Delinquent
 Development} [Great Britain], 1961-1981. 2nd ICPSR ed. Inter-university
 Consortium for Political and Social Research, Ann Arbor, MI.
 }
+\usage{
+ConvictionsAndIncome
+}
 \description{
 Data reporting the number of individual with and without convictions per
 income level.

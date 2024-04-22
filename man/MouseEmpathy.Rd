@@ -17,6 +17,9 @@ J.S. Levenstadt, M.L. Chande, D.J. Levitin, J.S. Mogill. 2006. Social
 modulation of pain as evidence for empathy in mice. \emph{Science} 312:
 1967-1970.
 }
+\usage{
+MouseEmpathy
+}
 \description{
 Percentage of time spent stretching in three treatments of mice. Both
 \code{condition} and \code{treatment} code for the same variable.

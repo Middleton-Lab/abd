@@ -14,6 +14,9 @@ A data frame with 65 observations on the following 2 variables.
 Oppliger, A., P. Christe, and H. Richner. 1996. Clutch size and
 malaria resistance. \emph{Nature} 381: 565.
 }
+\usage{
+GreatTitMalaria
+}
 \description{
 Two-by-two contingency table of malaria (\emph{Plasmodium}) infection status
 in control and egg-removal populations of Great Tit (\emph{Parus major}).

@@ -14,6 +14,9 @@ Gianoli, E. 2004. Evolution of a climbing habit promotes
 diversification in flowering plants. \emph{Proceedings of the Royal Society
 of London, Series B, Biological Sciences} 271: 2011-2015.
 }
+\usage{
+Vines
+}
 \description{
 Number of \code{climbing} and \code{nonclimbing} species within closely
 related general of plants.

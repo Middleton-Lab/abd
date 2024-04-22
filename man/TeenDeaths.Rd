@@ -14,6 +14,9 @@ Anderson, R.N. 2001. Deaths: Leading causes for 1999. \emph{National
 vital statistics reports} 49(11):1-88. National Center for Health
 Statistics; Hyattsville, Maryland.
 }
+\usage{
+TeenDeaths
+}
 \description{
 Data from Table 1 (p. 14) on causes of death for all races, both sexes, ages
 15-19.

@@ -13,6 +13,9 @@ A data frame with 21 observations on the following 2 variables.
 Raup, D.M. and J.J. Sepkoski, Jr. 1982. Mass extinctions in the
 marine fossil record. \emph{Science} 215: 1501-1503.
 }
+\usage{
+MassExtinctions
+}
 \description{
 The frequency of mass extinctions in the fossil record.
 }

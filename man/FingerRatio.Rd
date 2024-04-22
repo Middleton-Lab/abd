@@ -15,6 +15,9 @@ repeats} \item{finger.ratio}{a numeric vector of the ratio of digit
 B.F. Flanagan. 2003. The second to fourth digit ratio and variation in the
 androgen receptor gene. \emph{Evolution and Human Behavior} 24: 399-405.
 }
+\usage{
+FingerRatio
+}
 \description{
 The ratio of the lengths of the index finger to the ring finger in 46 males
 and the number of CAG repeats for each.

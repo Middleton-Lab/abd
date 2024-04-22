@@ -18,6 +18,9 @@ caused by localised coevolution? A test of three hypotheses in the Red
 Crossbill-lodgepole pine system. \emph{Journal of Evolutionary Biology} 19:
 1651-1659.
 }
+\usage{
+LodgepolePines
+}
 \description{
 Masses of cones of lodgepole pines (\code{conemass}) from 16 different
 habitat types (\code{habitat}) in western North America.

@@ -13,6 +13,9 @@ A data frame with 10 observations on the following 2 variables.
 Huber, R., M.F. Ghilardi, M. Massimini, and G. Tononi. 2004. Local
 sleep and learning. \emph{Nature} 430: 78-81.
 }
+\usage{
+SleepAndPerformance
+}
 \description{
 The increase in "slow-wave" sleep and improvements in spatial learning tasks
 in 10 humans.

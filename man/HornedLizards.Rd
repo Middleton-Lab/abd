@@ -13,6 +13,9 @@ A data frame with 184 observations on the following 2 variables.
 Young, K.V., E.D. Brodie, Jr., and E.D. Brodie, III. 2004. How the
 horned lizard got its horns. \emph{Science} 304: 65.
 }
+\usage{
+HornedLizards
+}
 \description{
 Squamosal horn length (mm; \code{horn.length}) and predation status
 (\code{group}; living or killed) for 184 horned lizards (\emph{Phrynosoma

@@ -14,6 +14,9 @@ Moyle, L.C., M.S. Olson, and P. Tiffin. 2004. Patterns of
 reproductive isolation in three angiosperm genera. \emph{Evolution} 58:
 1195-1208.
 }
+\usage{
+Pollen
+}
 \description{
 Genetic distance between pairs of species of the genus \emph{Silene} and
 proportion of their hybrid offspring that are sterile.

@@ -13,6 +13,9 @@ A data frame with 32 observations on the following 2 variables.
 Whitman, K., A.M. Starfield, H.S. Quadling and C. Packer. 2004.
 Sustainable trophy hunting of African lions. \emph{Nature} 428: 175-178.
 }
+\usage{
+LionNoses
+}
 \description{
 Ages (in years; \code{age}) of 32 male lions and relative coloration of
 their noses (\code{proportion.black}).

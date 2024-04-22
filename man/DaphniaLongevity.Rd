@@ -14,6 +14,9 @@ Jensen, K.H., T.J. Little, A. Skorping, and D. Ebert. 2006.
 Empirical support for optimal virulence in a castrating parasite. \emph{PLoS
 Biology} 4(7): e197
 }
+\usage{
+DaphniaLongevity
+}
 \description{
 Number of spores and host longevity in the crustacean \emph{Daphnia magna}.
 }

@@ -14,6 +14,9 @@ with levels \code{F} and \code{M}} \item{asymmetry}{asymmetry score}
 Cantalupo, C. and W.D. Hopkins. 2001. Asymmetric Broca's area in
 great apes. \emph{Nature} 414: 505.
 }
+\usage{
+ChimpBrains
+}
 \description{
 Asymmetry of Brodmann's area 44 in 20 chimpanzees.
 }

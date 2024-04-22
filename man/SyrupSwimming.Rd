@@ -12,6 +12,9 @@ A data frame with 18 observations of one variable. \describe{
 Gettelfinger, B. and E. L. Cussler. 2004. Will Humans Swim Faster or
 Slower in Syrup? \emph{AIChE Journal} 50: 2646-2647.
 }
+\usage{
+SyrupSwimming
+}
 \description{
 Relative swimming speed (speed in syrup / speed in water) for 18 swimmers.
 }

@@ -15,6 +15,9 @@ McGaha, T.L., B. Sorrentino, and J.V. Ravetch. 2005. Restoration of
 tolerance in lupus by targeted inhibitory receptor expression.
 \emph{Science} 307: 590-593.
 }
+\usage{
+LupusMice
+}
 \description{
 Autoimmune reactivity (\code{dilution} at which reactivity could be
 detected) in three \code{treatment}s of lupus-prone mice.

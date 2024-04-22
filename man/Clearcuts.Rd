@@ -13,6 +13,9 @@ Laurance, W.F., S.G. Laurance, L.V. Ferreira, J.M. Rankin-de Merona,
 C. Gascon, T.E. Lovejoy. 1997. Biomass collapse in Amazonian forest
 fragments. \emph{Science} 278: 1117-1118.
 }
+\usage{
+Clearcuts
+}
 \description{
 Biomass change in 36 Amazonian rainforests following clearcuts ranging from
 50 m to several kilometers.

@@ -15,6 +15,9 @@ Harley, C.D.G. 2003. Individualistic vertical responses of
 interacting species determine range limits across a horizontal gradient.
 \emph{Ecology} 84: 1477-1488.
 }
+\usage{
+IntertidalAlgae
+}
 \description{
 Area coverage of red algae (\emph{Mazzaella parksii}) in two herbivore
 treatments (\code{herbivores}) at two tide levels (\code{height}).

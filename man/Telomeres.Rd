@@ -15,6 +15,9 @@ Morrow, and R.M. Cawthon. 2004. Accelerated telomere shortening in response
 to life stress. \emph{Proceedings of the National Academy of Sciences (USA)}
 101: 17312-17315.
 }
+\usage{
+Telomeres
+}
 \description{
 Telomere length (ratio) and years since their child's diagnosis with chronic
 illness.

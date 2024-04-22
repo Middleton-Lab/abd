@@ -12,6 +12,9 @@ A data frame with eight observations of one variable. \describe{
 Socha, J.J. 2002. Gliding flight in the paradise tree snake.
 \emph{Nature} 418: 603-604.
 }
+\usage{
+GlidingSnakes
+}
 \description{
 Undulation rate (\emph{Hz}) of 8 paradise tree snakes (\emph{Chrysopelea
 paradisi}).

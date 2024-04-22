@@ -14,6 +14,9 @@ Gundale, M.J., W.M. Jolly, and T.H. Deluca. 2005. Susceptibility of
 a northern hardwood forest to exotic earthworm invasion. \emph{Conservation
 Biology} 19: 1075-1083.
 }
+\usage{
+Earthworms
+}
 \description{
 Number of earthworm species and total nitrogen content in the soil in 39
 hardwood forest plots.

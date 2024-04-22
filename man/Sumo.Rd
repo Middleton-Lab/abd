@@ -14,6 +14,9 @@ Duggan, M. and S.D. Leavitt. 2002. Winning isn't everything:
 Corruption in sumo wrestling. \emph{The American Economic Review} 92:
 1594-1605.
 }
+\usage{
+Sumo
+}
 \description{
 Counts of number of wins for sumo wrestlers.
 }

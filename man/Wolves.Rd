@@ -14,6 +14,9 @@ Liberg, O.H., H. Andrén, H.-C. Pedersen, H. Sand, D. Sejberg, P.
 Wabakken, M. Åkesson, and S. Bensch. 2005. Severe inbreeding depression in a
 wild wolf (\emph{Canis lupus}) population. \emph{Biology Letters} 1: 17-20.
 }
+\usage{
+Wolves
+}
 \description{
 Inbreeding coefficient and the number of pups produced in 24 mated pairs of
 wolves (\emph{Canis lupus}) from 1983-2002.

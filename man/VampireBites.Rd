@@ -14,6 +14,9 @@ A data frame with 4 observations on the following 3 variables.
 Turner, D.C. 1975. \emph{The Vampire Bat: a Field Study in Behavior
 and Ecology}. Johns Hopkins Press: Baltimore, MD.
 }
+\usage{
+VampireBites
+}
 \description{
 Numbers of cattle bitten by the cow's estrous cycle.
 }

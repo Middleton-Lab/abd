@@ -13,6 +13,9 @@ A data frame with 41 observations on the following 2 variables.
 Simmons, L.W. and B. Roberts. 2005. Bacterial immunity traded for
 sperm viability in male crickets. \emph{Science} 309: 2031.
 }
+\usage{
+Crickets
+}
 \description{
 Sperm viability and immune function, measured by lysozyme activity in
 crickets. Each observation is a mean for a single family of males.

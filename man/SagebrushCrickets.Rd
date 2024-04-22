@@ -15,6 +15,9 @@ remating propensity contingent on sexual cannibalism in sagebrush crickets,
 \emph{Cyphoderris strepitans}: a mechanism of cryptic female choice.
 \emph{Behavioral Ecology} 10: 227-233.
 }
+\usage{
+SagebrushCrickets
+}
 \description{
 Time to mating (\code{time.to.mating}) in fed and unfed (\code{treatment})
 sagebrush crickets (\emph{Cyphoderris strepitans}).

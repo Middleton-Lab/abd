@@ -15,6 +15,9 @@ Jules, E.S. and B.J. Rathcke. 1999.  Mechanisms of reduced trillium
 recruitment along edges of old-growth forest fragments. \emph{Conservation
 Biology} 13: 784-793
 }
+\usage{
+Trillium
+}
 \description{
 Recruitment of \emph{Trillium} and distance to nearest clearcut in eight
 populations in southwestern Oregon.

@@ -16,6 +16,9 @@ Intraspecific competition drives increased resource use diversity within a
 natural population. \emph{Proceedings of the Royal Society of London Series
 B, Biological Sciences} 274: 839-844.
 }
+\usage{
+Zooplankton
+}
 \description{
 Diversity of zooplankton (\code{zooplankton}) prey in each of 5 replicate
 blocks (\code{block}) of three treatment levels (\code{treatment}). By

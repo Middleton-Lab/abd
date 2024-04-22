@@ -14,6 +14,9 @@ Tattersall, G.J., W.K. Milsom, A.S. Abe, S.P. Brito, and D.V.
 Andrade. 2004. The thermogenesis of digestion in rattlesnakes. \emph{Journal
 of Experimental Biology} 207: 579-585.
 }
+\usage{
+Rattlesnakes
+}
 \description{
 Temperature change after a meal (% of body mass) in 17 South American
 rattlesnakes (\emph{Crotalus durissus}).

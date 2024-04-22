@@ -15,6 +15,9 @@ Hsieh, C.H., C.S. Reiss, J.R. Hunter, J.R. Beddington, R.M. May, and
 G. Sugihara. 2006. Fishing elevates variability in the abundance of
 exploited species. \emph{Nature} 443: 859-862.
 }
+\usage{
+LarvalFish
+}
 \description{
 Age (\code{age}) and coefficient of variation (\code{cv}) in larval fish
 from exploited and unexploited species (\code{exploited}).

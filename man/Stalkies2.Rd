@@ -14,6 +14,9 @@ David, P., T. Bjorksten, K. Fowler, and A. Pomiankowski. 2000.
 Condition-dependent signalling of genetic variation in stalk-eyed flies.
 \emph{Nature} 406: 186-188.
 }
+\usage{
+Stalkies2
+}
 \description{
 Eyespan width (mm; \code{Eye.span}) in 45 stalk-eyed flies
 (\emph{Cyrtodiopsis dalmanni}) fed a corn or cotton diet (\code{Food}).

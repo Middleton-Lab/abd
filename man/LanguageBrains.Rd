@@ -14,6 +14,9 @@ Mechelli, A., J.T. Crinion, U. Noppeney, J. O'Doherty, J. Ashburner,
 R.S. Frackowiak, and C.J. Price. 2004. Structural plasticity in the
 bilingual brain. \emph{Nature} 431: 757.
 }
+\usage{
+LanguageBrains
+}
 \description{
 Proficiency score (summary of reading, writing, and speech) in subjects'
 second language and density of gray matter in the left inferior parietal

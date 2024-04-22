@@ -14,6 +14,9 @@ Leakey, A.D.B., J.D. Scholes, and M.C. Press. 2005. Physiological
 and ecological significance of sunflecks for dipterocarp seedlings.
 \emph{Journal of Experimental Botany} 56: 469-482.
 }
+\usage{
+TreeSeedlings
+}
 \description{
 Fleck duration (min) and relative seedling growth rate (mm/mm/week) for 21
 seedlings of \emph{Shorea leprosula}.

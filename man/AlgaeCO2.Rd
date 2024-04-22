@@ -14,6 +14,9 @@ Collins, S. and G. Bell. 2004. Phenotypic consequences of 1,000
 generations of selection at elevated CO\eqn{_{2}}{2} in a green alga.
 \emph{Nature} 431: 566-569.
 }
+\usage{
+AlgaeCO2
+}
 \description{
 Growth rates of the unicellular alga \emph{Chlamydomonas} after 1,000
 generations of selection under \code{High} and \code{Normal} levels of

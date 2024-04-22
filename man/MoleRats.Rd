@@ -16,6 +16,9 @@ Oosthuizen, T.J. Roper and N.C. Bennett. 2006. Energetics reveals
 physiologically distinct castes in a eusocial mammal. \emph{Nature} 440:
 795-797.
 }
+\usage{
+MoleRats
+}
 \description{
 Energy expenditure (\code{ln.energy}) in two castes (\code{caste}) of
 Damaraland mole rats (\emph{Cryptomys damarensis}) with body mass

@@ -14,6 +14,9 @@ and rate of diversification of the Hawaiian silversword alliance
 (Compositae). \emph{Proceedings of the National Academy of Sciences (USA)}
 95: 9402-9406.
 }
+\usage{
+Silversword
+}
 \description{
 Speciation "waiting times" in Hawaiian silverswords (\emph{Dubautia}).
 }

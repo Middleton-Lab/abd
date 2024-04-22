@@ -13,6 +13,9 @@ A data frame with 9 observations on the following 2 variables.
 Nunn, C.L., J.L. Gittleman, and J. Antonovics. 2000. Promiscuity and
 the primate immune system. \emph{Science} 290: 1168-1170.
 }
+\usage{
+PrimateWBC
+}
 \description{
 White blood cell (WBC) counts in pairs of closely related primate species
 }

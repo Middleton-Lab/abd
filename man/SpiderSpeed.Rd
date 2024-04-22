@@ -15,6 +15,9 @@ evolutionary conflict: Removal of a reproductive organ greatly increases
 locomotor performance. \emph{Proceedings of the National Academy of Sciences
 (USA)} 101: 4883-4887.
 }
+\usage{
+SpiderSpeed
+}
 \description{
 Data on speed before and after amputation of a pedipalp in the spider genus
 \emph{Tidarren}.
@@ -27,6 +30,8 @@ favstats(SpiderSpeed$speed.after - SpiderSpeed$speed.before)
 
 }
 \references{
-\url{http://en.wikipedia.org/wiki/Pedipalp}, \url{http://en.wikipedia.org/wiki/Tidarren}, \url{http://www.pnas.org/content/101/14/4883}
+\url{http://en.wikipedia.org/wiki/Pedipalp}, 
+\url{http://en.wikipedia.org/wiki/Tidarren}, 
+\url{http://www.pnas.org/content/101/14/4883}
 }
 \keyword{datasets}

@@ -14,6 +14,9 @@ Broadbent, N.J., L.R. Squire, and R.E. Clark. 2004. Spatial memory,
 recognition memory, and the hippocampus. \emph{Proceedings of the National
 Academy of Sciences (USA)} 101: 14515-14520.
 }
+\usage{
+HippocampusLesions
+}
 \description{
 Spatial memory score (\code{memory}) and percent lesion of the hippocampus
 (\code{lesion}).

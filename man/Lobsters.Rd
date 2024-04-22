@@ -12,6 +12,9 @@ A data frame with 15 observations of one variable. \describe{
 Boles, L.C. and K.J. Lohmann. 2003. True navigation and magnetic
 maps in spiny lobsters. \emph{Nature} 421: 60-63.
 }
+\usage{
+Lobsters
+}
 \description{
 Orientation of 15 lobsters relative to initial position.
 }

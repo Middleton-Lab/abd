@@ -13,6 +13,9 @@ A data frame with 7 observations on the following 2 variables.
 Tomkins, J.L.  and G.S. Brown. 2004. Population density drives the
 local evolution of a threshold dimorphism. \emph{Nature} 431: 1099-1103.
 }
+\usage{
+Earwigs
+}
 \description{
 Earwig (\emph{Forficula auricularia}) density and the proportion of trapped
 earwigs with abdominal forceps (used for fighting and courtship).
