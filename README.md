@@ -1,8 +1,5 @@
 <!-- badges: start -->
-[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/abd?color=blue)](http://cran.r-project.org/web/packages/abd)
-[![RStudio_CRAN_mirror_downloads_badge](http://cranlogs.r-pkg.org/badges/grand-total/abd?color=blue)](https://cran.r-project.org/web/packages/abd)
-[![R build status](https://github.com/Middleton-Lab/abd/workflows/R-CMD-check/badge.svg)](https://github.com/Middleton-Lab/abd/actions)
-[![R-CMD-check](https://github.com/Middleton-Lab/abd/workflows/R-CMD-check/badge.svg)](https://github.com/Middleton-Lab/abd/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/abd)](https://CRAN.R-project.org/package=abd)
 <!-- badges: end -->
   
 # Data sets from The Analysis of Biological Data
