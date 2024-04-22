@@ -24,14 +24,14 @@ Data*][abdurl]. Roberts and Company Publishers. ISBN: 0981519407.
 ## Installation
 
 You can install the most recent version directly from github using
-`install_github()` from the [devtools
-package](https://cran.r-project.org/package=devtools).
+`install_github()` from the [remotes
+package](https://cran.r-project.org/package=remotes).
 
 ```R
-devtools::install_github("Middleton-Lab/abd")
+remotes::install_github("Middleton-Lab/abd")
 ```
 
-Note that if you are using Windows, you will first need to install
+Note that if you are using Windows, you may first need to install
 [Rtools](https://cran.r-project.org/bin/windows/Rtools/.
 
 Stable release versions of `abd` are available via CRAN:
