@@ -1,5 +1,5 @@
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/abd)](https://CRAN.R-project.org/package=abd)
+[![RStudio_CRAN_mirror_downloads_badge](http://cranlogs.r-pkg.org/badges/grand-total/abd?color=blue)](https://cran.r-project.org/web/packages/abd)
 <!-- badges: end -->
   
 # Data sets from The Analysis of Biological Data
